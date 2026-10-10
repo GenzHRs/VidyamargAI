@@ -64,6 +64,16 @@ export default function Sidebar({ portal }: SidebarProps) {
       try {
         const token = localStorage.getItem("token");
         if (!token) return;
+
+        // Respect explicit local theme selection above all else — single source of truth
+        const localTheme = localStorage.getItem("theme");
+        if (localTheme === "dark" || localTheme === "light") {
+          // Sync local theme to backend asynchronously
+          apiService.updatePreferences(localTheme as "dark" | "light").catch(() => {});
+          return;
+        }
+
+        // Fallback to backend preferences ONLY if no local choice exists
         const prefs = await apiService.getPreferences();
         if (prefs && prefs.theme && (prefs.theme === "dark" || prefs.theme === "light")) {
           setTheme(prefs.theme as "dark" | "light");
