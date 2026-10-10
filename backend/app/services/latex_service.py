@@ -15,6 +15,7 @@ import shutil
 import subprocess
 import tempfile
 from typing import Dict, Any, Optional, Tuple, List
+from app.services.project_normalizer import canonicalize_projects_list, clean_bullet_text
 
 logger = logging.getLogger("app.latex_service")
 
@@ -63,11 +64,14 @@ def is_latex_installed() -> bool:
     return shutil.which("pdflatex") is not None
 
 
-def render_resume_to_latex(data: Dict[str, Any], template_latex: str) -> str:
+def render_resume_to_latex(data: Dict[str, Any], template_latex: str = "") -> str:
     """
     Renders structured resume JSON data into a valid Overleaf-compatible LaTeX document.
     All dynamic values are escaped via escape_latex.
     """
+    if not template_latex:
+        from app.services.resume_templates_data import RESUME_TEMPLATES
+        template_latex = RESUME_TEMPLATES[0]["latex_template"]
     rendered = template_latex
 
     # 1. Personal Information
@@ -186,7 +190,7 @@ def render_resume_to_latex(data: Dict[str, Any], template_latex: str) -> str:
         rendered = exp_pattern.sub("", rendered)
 
     # 5. Projects Loop
-    projects_list = data.get("projects", [])
+    projects_list = canonicalize_projects_list(data.get("projects", []))
     proj_pattern = re.compile(r"<BLOCK:PROJECTS>(.*?)</BLOCK:PROJECTS>", re.DOTALL)
     if projects_list:
         def replace_projects(match):
@@ -200,8 +204,8 @@ def render_resume_to_latex(data: Dict[str, Any], template_latex: str) -> str:
             for proj in projects_list:
                 p_rendered = loop_template
                 p_rendered = p_rendered.replace("<VAR:PROJECT_NAME>", escape_latex(proj.get("name", proj.get("title", ""))))
-                p_rendered = p_rendered.replace("<VAR:PROJECT_TECH>", escape_latex(proj.get("technologies", proj.get("tech_stack", ""))))
-                dates = f"{proj.get('start_date', '')} {proj.get('end_date', '')}".strip()
+                p_rendered = p_rendered.replace("<VAR:PROJECT_TECH>", escape_latex(proj.get("tech_stack", proj.get("technologies", ""))))
+                dates = f"{proj.get('start_date', '')} {proj.get('end_date', '')}".strip() or proj.get("dates", "")
                 p_rendered = p_rendered.replace("<VAR:PROJECT_DATES>", escape_latex(dates))
                 link_text = ""
                 if proj.get("link") or proj.get("url"):
@@ -209,14 +213,12 @@ def render_resume_to_latex(data: Dict[str, Any], template_latex: str) -> str:
                 p_rendered = p_rendered.replace("<VAR:PROJECT_LINK>", link_text)
 
                 bullets_pattern = re.compile(r"<LOOP:PROJECT_BULLETS>(.*?)</LOOP:PROJECT_BULLETS>", re.DOTALL)
-                bullets = proj.get("bullets", proj.get("description", []))
-                if isinstance(bullets, str):
-                    bullets = [b.strip() for b in bullets.split("\n") if b.strip()]
+                bullets = proj.get("bullets") or []
                 if bullets:
                     b_match = bullets_pattern.search(p_rendered)
                     if b_match:
                         b_template = b_match.group(1)
-                        bullets_expanded = "".join(b_template.replace("<VAR:BULLET_TEXT>", escape_latex(b)) for b in bullets)
+                        bullets_expanded = "".join(b_template.replace("<VAR:BULLET_TEXT>", escape_latex(clean_bullet_text(str(b)))) for b in bullets if clean_bullet_text(str(b)))
                         p_rendered = bullets_pattern.sub(lambda _: bullets_expanded, p_rendered)
                 else:
                     p_rendered = bullets_pattern.sub("", p_rendered)
@@ -686,21 +688,21 @@ def _render_with_reportlab(data: Dict[str, Any], title: str = "", template_slug:
         story.append(Spacer(1, 4))
 
     # 5. Projects
-    projects = data.get("projects") or []
+    projects = canonicalize_projects_list(data.get("projects") or [])
     if projects and isinstance(projects, list):
         story.append(Paragraph("PROJECTS", section_style))
         for proj in projects:
             if not isinstance(proj, dict):
                 continue
             p_name = _to_clean_str(proj.get("name") or proj.get("title") or proj.get("project_name") or "")
-            tech_raw = proj.get("technologies") or proj.get("tech_stack") or ""
+            tech_raw = proj.get("tech_stack") or proj.get("technologies") or ""
             if isinstance(tech_raw, list):
                 tech = ", ".join(_to_clean_str(t) for t in tech_raw if _to_clean_str(t))
             else:
                 tech = _to_clean_str(tech_raw)
             start_d = _to_clean_str(proj.get("start_date") or "")
             end_d = _to_clean_str(proj.get("end_date") or proj.get("duration") or "")
-            dates = f"{start_d} {end_d}".strip()
+            dates = f"{start_d} {end_d}".strip() or _to_clean_str(proj.get("dates") or "")
 
             p_header = f"<b>{html.escape(p_name)}</b>" if p_name else ""
             if tech:
@@ -710,9 +712,17 @@ def _render_with_reportlab(data: Dict[str, Any], title: str = "", template_slug:
             if p_header:
                 story.append(Paragraph(p_header, item_header_style))
 
-            bullets = _to_clean_bullets(proj.get("bullets") or proj.get("responsibilities") or proj.get("features") or proj.get("description") or [])
+            # Render distinct overview description if present
+            p_desc = _to_clean_str(proj.get("description") or "")
+            if p_desc:
+                story.append(Paragraph(html.escape(p_desc), body_style))
+                story.append(Spacer(1, 1))
+
+            bullets = proj.get("bullets") or []
             for b in bullets:
-                story.append(Paragraph(f"&bull; {html.escape(b)}", bullet_style))
+                clean_b = clean_bullet_text(str(b))
+                if clean_b:
+                    story.append(Paragraph(f"&bull; {html.escape(clean_b)}", bullet_style))
             story.append(Spacer(1, 2))
         story.append(Spacer(1, 4))
 
@@ -901,14 +911,14 @@ def _render_with_pymupdf(data: Dict[str, Any], title: str = "", template_slug: s
             curr_y += 4.0
 
     # 5. Projects
-    projects = data.get("projects") or []
+    projects = canonicalize_projects_list(data.get("projects") or [])
     if projects and isinstance(projects, list):
         draw_section_heading("PROJECTS")
         for proj in projects:
             if not isinstance(proj, dict):
                 continue
             p_name = _to_clean_str(proj.get("name") or proj.get("title") or "")
-            tech_raw = proj.get("technologies") or proj.get("tech_stack") or ""
+            tech_raw = proj.get("tech_stack") or proj.get("technologies") or ""
             if isinstance(tech_raw, list):
                 tech = ", ".join(_to_clean_str(t) for t in tech_raw if _to_clean_str(t))
             else:
@@ -922,11 +932,19 @@ def _render_with_pymupdf(data: Dict[str, Any], title: str = "", template_slug: s
                 page.insert_text((margin_x, curr_y), proj_header, fontsize=10, fontname="helv", color=(0.05, 0.1, 0.25))
                 curr_y += 13.0
 
-            bullets = _to_clean_bullets(proj.get("bullets") or proj.get("responsibilities") or proj.get("description") or [])
-            for b in bullets:
+            p_desc = _to_clean_str(proj.get("description") or "")
+            if p_desc:
                 check_page_break(14.0)
-                page.insert_text((margin_x + 10, curr_y), f"- {b}", fontsize=9, fontname="helv", color=(0.2, 0.2, 0.2))
+                page.insert_text((margin_x + 5, curr_y), p_desc, fontsize=8.5, fontname="helv", color=(0.3, 0.3, 0.3))
                 curr_y += 12.0
+
+            bullets = proj.get("bullets") or []
+            for b in bullets:
+                clean_b = clean_bullet_text(str(b))
+                if clean_b:
+                    check_page_break(14.0)
+                    page.insert_text((margin_x + 10, curr_y), f"- {clean_b}", fontsize=9, fontname="helv", color=(0.2, 0.2, 0.2))
+                    curr_y += 12.0
             curr_y += 4.0
 
     # 6. Education

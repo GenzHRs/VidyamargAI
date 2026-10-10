@@ -890,6 +890,22 @@ export default function ResumeEditorPage({ params }: PageProps) {
                         />
                       </div>
                     </div>
+                    <div>
+                      <label className="block text-[11px] font-medium text-app-text mb-1">Bullet Points & Key Responsibilities (One per line)</label>
+                      <textarea
+                        rows={4}
+                        value={Array.isArray(proj.bullets) ? proj.bullets.join("\n") : ""}
+                        onChange={(e) => {
+                          const updated = [...projects];
+                          const lines = e.target.value.split("\n").filter((l) => l.trim().length > 0);
+                          updated[idx].bullets = lines;
+                          setProjects(updated);
+                          setSaveStatus("unsaved");
+                        }}
+                        placeholder="Built an AI-powered assistant...&#10;Implemented intent detection using...&#10;Developed recommendation system..."
+                        className="w-full text-xs px-3 py-2 rounded-lg border border-app-border bg-app-surface text-app-text leading-relaxed font-sans"
+                      />
+                    </div>
                   </div>
                 ))}
               </div>

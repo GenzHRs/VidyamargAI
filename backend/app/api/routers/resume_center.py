@@ -55,6 +55,7 @@ from app.services.resume_tailor_service import (
 )
 from app.services.resume_templates_data import seed_resume_templates
 from app.services.resume_context_service import ResumeContextService
+from app.services.project_normalizer import canonicalize_project, canonicalize_projects_list
 
 router = APIRouter(tags=["Resume Center"])
 
@@ -423,14 +424,20 @@ def convert_to_template_payload(extracted: Dict[str, Any]) -> Dict[str, Any]:
     # Projects
     proj_list = []
     for p in extracted.get("projects") or []:
-        bullets = list(p.get("responsibilities", []) or []) + list(p.get("features", []) or [])
-        if not bullets and p.get("description"):
-            bullets = [p.get("description")]
+        norm_p = canonicalize_project(p)
         proj_list.append({
-            "name": p.get("name") or "Project",
-            "tech_stack": ", ".join(p.get("technologies", [])) if isinstance(p.get("technologies"), list) else str(p.get("technologies") or ""),
-            "bullets": bullets or ["Designed and implemented project functionality."],
-            "link": p.get("link") or ""
+            "name": norm_p.get("name") or "Project",
+            "title": norm_p.get("name") or "Project",
+            "tech_stack": norm_p.get("tech_stack") or "",
+            "technologies": norm_p.get("technologies") or [],
+            "start_date": norm_p.get("start_date") or "",
+            "end_date": norm_p.get("end_date") or "",
+            "dates": norm_p.get("dates") or "",
+            "description": norm_p.get("description"),
+            "bullets": norm_p.get("bullets") or ["Designed and implemented project functionality."],
+            "responsibilities": norm_p.get("bullets") or ["Designed and implemented project functionality."],
+            "features": [],
+            "link": norm_p.get("link") or ""
         })
 
     # Certifications
@@ -496,7 +503,9 @@ def _get_consolidated_resume_data(resume: Resume, db: Session) -> Tuple[Dict[str
 
     structured = None
     if version and version.structured_data and isinstance(version.structured_data, dict) and any(version.structured_data.values()):
-        structured = version.structured_data
+        structured = dict(version.structured_data)
+        if "projects" in structured:
+            structured["projects"] = canonicalize_projects_list(structured["projects"])
     elif extraction and extraction.structured_data and isinstance(extraction.structured_data, dict):
         structured = convert_to_template_payload(extraction.structured_data)
 
@@ -537,12 +546,13 @@ def _get_consolidated_resume_data(resume: Resume, db: Session) -> Tuple[Dict[str
 
             projs = db.query(ResumeProject).filter(ResumeProject.resume_id == resume.id).order_by(ResumeProject.sort_order.asc()).all()
             proj_list = [
-                {
+                canonicalize_project({
                     "name": p.name,
                     "technologies": p.technologies or [],
                     "description": p.description or "",
-                    "link": p.project_url or ""
-                }
+                    "link": p.project_url or "",
+                    "bullets": p.responsibilities or []
+                })
                 for p in projs
             ]
 
@@ -1235,6 +1245,8 @@ def update_resume(
     tmpl = db.query(ResumeTemplate).filter(ResumeTemplate.id == resume.template_id).first()
 
     if payload.structured_data is not None:
+        if isinstance(payload.structured_data, dict) and "projects" in payload.structured_data:
+            payload.structured_data["projects"] = canonicalize_projects_list(payload.structured_data["projects"])
         latex_source = render_resume_to_latex(payload.structured_data, tmpl.latex_template if tmpl else "")
 
         if payload.create_new_version:
@@ -1349,6 +1361,9 @@ def create_resume_version(
     latest_v = db.query(ResumeVersion).filter(ResumeVersion.resume_id == resume.id).order_by(ResumeVersion.version_number.desc()).first()
     next_num = (latest_v.version_number + 1) if latest_v else 1
 
+    if payload.structured_data and isinstance(payload.structured_data, dict) and "projects" in payload.structured_data:
+        payload.structured_data["projects"] = canonicalize_projects_list(payload.structured_data["projects"])
+
     tmpl = db.query(ResumeTemplate).filter(ResumeTemplate.id == resume.template_id).first()
     latex_source = render_resume_to_latex(payload.structured_data, tmpl.latex_template if tmpl else "")
 
@@ -1461,6 +1476,17 @@ def compile_resume(
         if consolidated_data:
             version.structured_data = consolidated_data
             db.commit()
+
+    # Guarantee canonical project normalization and deduplication in version.structured_data
+    if version.structured_data and isinstance(version.structured_data, dict):
+        raw_projs = version.structured_data.get("projects")
+        if raw_projs:
+            canon_projs = canonicalize_projects_list(raw_projs)
+            if canon_projs != raw_projs:
+                updated_sd = dict(version.structured_data)
+                updated_sd["projects"] = canon_projs
+                version.structured_data = updated_sd
+                db.commit()
 
     tmpl = db.query(ResumeTemplate).filter(ResumeTemplate.id == resume.template_id).first()
     latex_source = render_resume_to_latex(version.structured_data, tmpl.latex_template if tmpl else "")
@@ -1581,6 +1607,15 @@ def download_resume_pdf(
 
         if version.structured_data:
             try:
+                if isinstance(version.structured_data, dict) and version.structured_data.get("projects"):
+                    raw_p = version.structured_data.get("projects")
+                    canon_p = canonicalize_projects_list(raw_p)
+                    if canon_p != raw_p:
+                        updated_sd = dict(version.structured_data)
+                        updated_sd["projects"] = canon_p
+                        version.structured_data = updated_sd
+                        db.commit()
+
                 tmpl = db.query(ResumeTemplate).filter(ResumeTemplate.id == resume.template_id).first()
                 if is_latex_installed():
                     latex_source = render_resume_to_latex(version.structured_data, tmpl.latex_template if tmpl else "")

@@ -17,6 +17,12 @@ import logging
 import re
 from datetime import datetime
 from typing import Dict, Any, List, Optional, Tuple
+from app.services.project_normalizer import (
+    canonicalize_project,
+    canonicalize_projects_list,
+    clean_bullet_text as canon_clean_bullet_text,
+    normalize_technologies_list as canon_normalize_technologies_list
+)
 
 logger = logging.getLogger("app.resume_extractor")
 
@@ -990,75 +996,18 @@ def normalize_technologies_list(tech_input: Any) -> List[str]:
 
 def clean_bullet_text(text: str) -> str:
     """Strips leading repeated bullet symbols and markers."""
-    if not text:
-        return ""
-    cleaned = re.sub(r"^[\ue000-\uf8ff•·∙○●▪■►▸▶◆◇★☆✦✧✓✔\s\-*–—]+\s*", "", text).strip()
-    return cleaned
+    return canon_clean_bullet_text(text)
 
 
 def normalize_and_deduplicate_project(proj: Dict[str, Any]) -> Dict[str, Any]:
     """
-    Normalizes a project dict:
+    Normalizes a project dict using the canonical project normalizer:
     1. Removes duplicate bullet items and strips repeated bullet markers.
     2. Tokenizes concatenated technology strings.
     3. Prevents paragraph description from repeating identical bullet point sentences.
+    4. Explicitly avoids duplicating bullets into features.
     """
-    if not isinstance(proj, dict):
-        return proj
-
-    p = dict(proj)
-
-    # 1. Clean bullet points & responsibilities
-    raw_bullets = p.get("responsibilities") or p.get("bullets") or p.get("features") or []
-    if isinstance(raw_bullets, str):
-        raw_bullets = [raw_bullets]
-
-    unique_bullets = []
-    seen_bullets = set()
-    for b in raw_bullets:
-        clean_b = clean_bullet_text(str(b))
-        if clean_b:
-            b_key = clean_b.lower()
-            if b_key not in seen_bullets:
-                seen_bullets.add(b_key)
-                unique_bullets.append(clean_b)
-
-    p["responsibilities"] = unique_bullets
-    p["bullets"] = unique_bullets
-    p["features"] = unique_bullets
-
-    # 2. Clean technologies using tokenization
-    raw_tech = p.get("technologies") or p.get("tech_stack") or []
-    p["technologies"] = normalize_technologies_list(raw_tech)
-
-    # 3. Deduplicate description vs bullets
-    raw_desc = str(p.get("description") or "").strip()
-    clean_desc = clean_bullet_text(raw_desc)
-
-    if clean_desc and unique_bullets:
-        joined_bullets = " ".join(unique_bullets)
-        dot_joined_bullets = ". ".join(unique_bullets)
-
-        norm_desc = re.sub(r"\s+", " ", clean_desc.lower().strip(" ."))
-        norm_joined = re.sub(r"\s+", " ", joined_bullets.lower().strip(" ."))
-        norm_dot_joined = re.sub(r"\s+", " ", dot_joined_bullets.lower().strip(" ."))
-
-        if norm_desc == norm_joined or norm_desc == norm_dot_joined:
-            p["description"] = None
-        else:
-            desc_sentences = [s.strip() for s in re.split(r"[.!?]\s*", clean_desc) if s.strip()]
-            all_in_bullets = True
-            for ds in desc_sentences:
-                ds_norm = re.sub(r"\s+", " ", ds.lower())
-                if not any(ds_norm in re.sub(r"\s+", " ", b.lower()) for b in unique_bullets):
-                    all_in_bullets = False
-                    break
-            if all_in_bullets:
-                p["description"] = None
-    elif not clean_desc and unique_bullets:
-        p["description"] = None
-
-    return p
+    return canonicalize_project(proj)
 
 
 def heuristic_comprehensive_parse(raw_text: str) -> Dict[str, Any]:
