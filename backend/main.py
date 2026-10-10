@@ -81,11 +81,21 @@ def check_db_connection():
             else:
                 tables = conn.execute(text("SELECT table_name FROM information_schema.tables WHERE table_schema='public'")).fetchall()
             table_names = [t[0] for t in tables]
+            
+            user_count = conn.execute(text("SELECT count(*) FROM users")).scalar() if "users" in table_names else 0
+            candidate_count = conn.execute(text("SELECT count(*) FROM candidates")).scalar() if "candidates" in table_names else 0
+            job_count = conn.execute(text("SELECT count(*) FROM jobs")).scalar() if "jobs" in table_names else 0
+
             return {
                 "connected": True,
                 "ping": result == 1,
                 "engine": engine.dialect.name,
                 "tables_count": len(table_names),
+                "counts": {
+                    "users": user_count,
+                    "candidates": candidate_count,
+                    "jobs": job_count
+                },
                 "tables": table_names
             }
     except Exception as e:
