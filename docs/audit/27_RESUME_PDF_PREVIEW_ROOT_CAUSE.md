@@ -201,3 +201,81 @@ Routes: 35/35 compiled without errors.
 | **Serverless / Vercel** | No (50MB function limit) | ReportLab vector renderer operates in-memory with zero OS dependencies. |
 
 Candidate isolation is strictly preserved across all endpoints (`403 Forbidden` on unauthorized access), and private storage paths are never exposed to clients.
+
+---
+
+## 6. Deployed Runtime ReportLab Missing Dependency Root Cause & Fix
+
+### Issue
+When compiled on the deployed Railway backend, the editor surfaced:
+```
+PDF rendering error: No module named 'reportlab'
+```
+
+### Root Cause
+1. **Dockerfile Build Target**:
+   The Railway production deployment builds using `Dockerfile` (or `backend/Dockerfile`), which executes:
+   ```dockerfile
+   COPY backend/requirements.txt backend/requirements-lock.txt ./
+   RUN pip install --no-cache-dir --user -r requirements-lock.txt
+   ```
+2. **Missing from Authoritative Manifests**:
+   Neither `backend/requirements-lock.txt`, `backend/requirements.txt`, nor `backend/pyproject.toml` declared `reportlab` or its prerequisite `pillow`.
+   Because `pip install` only installed from `requirements-lock.txt`, `reportlab` was never installed into `/root/.local` during the Docker image build.
+3. When `render_structured_data_to_pdf` ran in the deployed container, `from reportlab.lib.pagesizes import letter` raised `ModuleNotFoundError: No module named 'reportlab'`.
+
+### Resolution Applied
+
+#### 1. Manifest Updates
+- Added to `backend/requirements.txt`:
+  ```
+  reportlab>=4.2.0,<6
+  pillow>=10.4.0,<12
+  ```
+- Added to `backend/requirements-lock.txt`:
+  ```
+  pillow==10.4.0
+  reportlab==5.0.1
+  ```
+- Added to `backend/pyproject.toml`:
+  ```toml
+  reportlab = ">=4.2.0,<6"
+  pillow = ">=10.4.0,<12"
+  ```
+
+#### 2. Dockerfile Build Hardening
+Updated `Dockerfile` and `backend/Dockerfile` to install both manifests:
+```dockerfile
+RUN pip install --no-cache-dir --user -r requirements-lock.txt -r requirements.txt
+```
+This guarantees that all locked dependencies and any standard requirements are installed even if lockfile desynchronization occurs.
+
+#### 3. Defense-in-Depth PyMuPDF Vector Fallback
+In `backend/app/services/latex_service.py`:
+- Separated ReportLab generation into `_render_with_reportlab`.
+- Implemented an in-memory vector fallback `_render_with_pymupdf` using `pymupdf` (which has been present in `requirements-lock.txt` as `pymupdf==1.28.2`).
+- Wrapped `render_structured_data_to_pdf`:
+  ```python
+  def render_structured_data_to_pdf(data: Dict[str, Any], title: str = "", template_slug: str = "ats-classic") -> bytes:
+      try:
+          return _render_with_reportlab(data, title, template_slug)
+      except (ImportError, ModuleNotFoundError) as e:
+          logger.warning(f"ReportLab import failed ({e}), falling back to PyMuPDF standalone vector engine")
+          return _render_with_pymupdf(data, title, template_slug)
+  ```
+- Even if `reportlab` is absent in any container or serverless function, PyMuPDF seamlessly renders a valid, formatted vector PDF document.
+
+#### 4. Regression Tests Added
+Updated `backend/tests/test_resume_compilation.py` with:
+- `test_reportlab_and_pymupdf_dependencies_available`: Verifies runtime importability of `reportlab`, `PIL`, and `pymupdf`.
+- `test_pdf_rendering_fallback_when_reportlab_missing`: Mocks `ImportError` on ReportLab and asserts PyMuPDF outputs valid `%PDF-` bytes (>500 bytes).
+- `test_compilation_endpoint_resilient_without_reportlab`: Tests end-to-end `/resumes/{id}/compile` and `/preview/pdf` with ReportLab mocked as missing, confirming 200 OK and valid PDF bytes.
+
+**Test Run Results**:
+```
+collected 20 items
+backend/tests/test_resume_center.py ..........                           [ 50%]
+backend/tests/test_resume_compilation.py ..........                      [100%]
+====================== 20 passed, 463 warnings in 35.16s ======================
+```
+

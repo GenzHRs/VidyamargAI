@@ -323,7 +323,70 @@ def test_concurrent_compilation_safety(environment):
         assert data["status"] == "success"
         assert data["pdf_available"] is True
         assert data["pdf_size_bytes"] > 500
-        assert data["latest_pdf_url"] not in compiled_urls
         compiled_urls.add(data["latest_pdf_url"])
-
     assert len(compiled_urls) == 3
+
+
+def test_reportlab_and_pymupdf_dependencies_available():
+    """Verify ReportLab, Pillow, and PyMuPDF dependencies are installed and importable."""
+    import reportlab
+    import PIL
+    import pymupdf
+
+    assert reportlab.__version__ is not None
+    assert PIL.__version__ is not None
+    assert pymupdf.__version__ is not None
+
+
+def test_pdf_rendering_fallback_when_reportlab_missing():
+    """Verify that if ReportLab encounters an ImportError, PyMuPDF seamlessly generates the PDF."""
+    from unittest.mock import patch
+    from app.services.latex_service import render_structured_data_to_pdf
+
+    sample_data = {
+        "personal_info": {"full_name": "Zero-Downtime Engineer", "email": "zd@example.com"},
+        "summary": "Full stack engineer testing resilient fallback document engines.",
+        "skills": ["Python", "PyMuPDF", "ReportLab"],
+        "experience": [{"title": "Reliability Lead", "company": "VidyaMarg AI", "bullets": ["No single point of failure"]}]
+    }
+
+    # Simulate ReportLab missing
+    with patch("app.services.latex_service._render_with_reportlab", side_effect=ImportError("No module named 'reportlab'")):
+        pdf_bytes = render_structured_data_to_pdf(sample_data, "Fallback Resume", "ats-classic")
+        assert pdf_bytes is not None
+        assert isinstance(pdf_bytes, bytes)
+        assert len(pdf_bytes) > 500
+        assert pdf_bytes.startswith(b"%PDF-")
+
+
+def test_compilation_endpoint_resilient_without_reportlab(environment):
+    """Verify the /compile and /preview API endpoints succeed even if ReportLab was missing in the container."""
+    from unittest.mock import patch
+
+    client, db, owner, other, admin, candidate, tmp_path = environment
+    auth = headers(owner)
+
+    res = client.post("/api/v1/resumes", json={
+        "title": "Ultra-Resilient Resume",
+        "structured_data": {
+            "personal_info": {"full_name": "Resilient Tester", "email": "resilient@test.com"},
+            "skills": ["FastAPI", "Python"]
+        }
+    }, headers=auth)
+    resume_id = res.json()["id"]
+
+    # Even if ReportLab is missing in the runtime, compilation MUST succeed via PyMuPDF fallback
+    with patch("app.services.latex_service._render_with_reportlab", side_effect=ImportError("No module named 'reportlab'")):
+        comp_res = client.post(f"/api/v1/resumes/{resume_id}/compile", headers=auth)
+        assert comp_res.status_code == 200
+        data = comp_res.json()
+        assert data["status"] == "success"
+        assert data["pdf_available"] is True
+        assert data["latest_pdf_url"] is not None
+
+        # Preview endpoint returns valid PDF
+        preview_res = client.get(f"/api/v1/resumes/{resume_id}/preview/pdf", headers=auth)
+        assert preview_res.status_code == 200
+        assert preview_res.headers["content-type"] == "application/pdf"
+        assert preview_res.content.startswith(b"%PDF-")
+

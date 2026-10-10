@@ -95,6 +95,7 @@ passlib==1.7.4
 pip-requirements-parser==32.0.1
 pip_api==0.0.35
 pip_audit==2.10.1
+pillow==10.4.0
 platformdirs==4.12.3
 pluggy==1.6.0
 portalocker==3.2.0
@@ -125,6 +126,7 @@ python-multipart==0.0.32
 PyYAML==6.0.3
 qdrant-client==1.19.1
 redis==8.1.0
+reportlab==5.0.1
 requests==2.34.2
 requests-oauthlib==2.0.0
 requests-toolbelt==1.0.0

@@ -8,12 +8,15 @@ Guarantees:
 - Path masking in compile errors
 - Graceful degradation when pdflatex is not installed
 """
+import logging
 import os
 import re
 import shutil
 import subprocess
 import tempfile
 from typing import Dict, Any, Optional, Tuple, List
+
+logger = logging.getLogger("app.latex_service")
 
 # Maximum allowed LaTeX source size (1MB)
 MAX_LATEX_SOURCE_SIZE = 1 * 1024 * 1024
@@ -398,7 +401,7 @@ def _to_clean_bullets(raw: Any) -> List[str]:
     return [s] if s else []
 
 
-def render_structured_data_to_pdf(data: Dict[str, Any], title: str = "", template_slug: str = "ats-classic") -> bytes:
+def _render_with_reportlab(data: Dict[str, Any], title: str = "", template_slug: str = "ats-classic") -> bytes:
     """
     Renders structured resume JSON data into an authentic, template-matching PDF
     using ReportLab when a local pdflatex binary is not present on the host OS.
@@ -768,4 +771,220 @@ def render_structured_data_to_pdf(data: Dict[str, Any], title: str = "", templat
 
     doc.build(story)
     return buf.getvalue()
+
+
+def _render_with_pymupdf(data: Dict[str, Any], title: str = "", template_slug: str = "ats-classic") -> bytes:
+    """
+    Zero-dependency / PyMuPDF fallback renderer for generating clean ATS vector PDFs
+    when ReportLab is not installed or encounters an import failure in the container runtime.
+    """
+    import pymupdf
+
+    doc = pymupdf.open()
+    page_width, page_height = 612.0, 792.0  # Standard Letter
+    margin_x = 36.0
+    margin_y = 36.0
+
+    page = doc.new_page(width=page_width, height=page_height)
+    curr_y = margin_y + 16.0
+
+    def check_page_break(needed_height: float):
+        nonlocal page, curr_y
+        if curr_y + needed_height > page_height - margin_y:
+            page = doc.new_page(width=page_width, height=page_height)
+            curr_y = margin_y + 16.0
+
+    def draw_section_heading(heading_text: str):
+        nonlocal curr_y
+        check_page_break(32.0)
+        curr_y += 8.0
+        page.insert_text((margin_x, curr_y), heading_text, fontsize=10.5, fontname="helv", color=(0.1, 0.15, 0.3))
+        curr_y += 4.0
+        page.draw_line((margin_x, curr_y), (page_width - margin_x, curr_y), color=(0.2, 0.3, 0.5), width=0.75)
+        curr_y += 12.0
+
+    # 1. Personal Information Header
+    personal = data.get("personal_info") or {}
+    full_name = _to_clean_str(personal.get("full_name") or personal.get("name") or title or "Candidate Name")
+    page.insert_text((margin_x, curr_y), full_name, fontsize=18, fontname="helv", color=(0.0, 0.0, 0.0))
+    curr_y += 16.0
+
+    contacts = []
+    if personal.get("email"): contacts.append(_to_clean_str(personal["email"]))
+    if personal.get("phone"): contacts.append(_to_clean_str(personal["phone"]))
+    if personal.get("location") or personal.get("address"):
+        contacts.append(_to_clean_str(personal.get("location") or personal.get("address")))
+    if personal.get("linkedin"): contacts.append(_to_clean_str(personal["linkedin"]))
+    if personal.get("github"): contacts.append(_to_clean_str(personal["github"]))
+
+    if contacts:
+        contact_line = "  |  ".join(contacts)
+        page.insert_text((margin_x, curr_y), contact_line, fontsize=9.0, fontname="helv", color=(0.3, 0.3, 0.3))
+        curr_y += 12.0
+
+    page.draw_line((margin_x, curr_y), (page_width - margin_x, curr_y), color=(0.1, 0.15, 0.3), width=1.5)
+    curr_y += 10.0
+
+    # 2. Professional Summary
+    summary_text = _to_clean_str(data.get("summary") or data.get("professional_summary") or data.get("career_objective") or "")
+    if summary_text:
+        draw_section_heading("PROFESSIONAL SUMMARY")
+        check_page_break(25.0)
+        words = summary_text.split()
+        line = []
+        for word in words:
+            line.append(word)
+            test_line = " ".join(line)
+            if len(test_line) > 95:
+                page.insert_text((margin_x, curr_y), test_line, fontsize=9.5, fontname="helv", color=(0.15, 0.15, 0.15))
+                curr_y += 12.0
+                check_page_break(14.0)
+                line = []
+        if line:
+            page.insert_text((margin_x, curr_y), " ".join(line), fontsize=9.5, fontname="helv", color=(0.15, 0.15, 0.15))
+            curr_y += 14.0
+
+    # 3. Skills & Technologies
+    skills_data = data.get("skills")
+    if skills_data:
+        draw_section_heading("SKILLS & TECHNOLOGIES")
+        if isinstance(skills_data, dict):
+            for cat, items in skills_data.items():
+                cat_str = _to_clean_str(cat)
+                if isinstance(items, list):
+                    items_str = ", ".join(_to_clean_str(x) for x in items if _to_clean_str(x))
+                else:
+                    items_str = _to_clean_str(items)
+                if items_str:
+                    check_page_break(15.0)
+                    line_text = f"{cat_str}: {items_str}"
+                    page.insert_text((margin_x, curr_y), line_text, fontsize=9.5, fontname="helv", color=(0.15, 0.15, 0.15))
+                    curr_y += 13.0
+        elif isinstance(skills_data, list):
+            items_str = ", ".join(_to_clean_str(x) for x in skills_data if _to_clean_str(x))
+            if items_str:
+                check_page_break(15.0)
+                page.insert_text((margin_x, curr_y), items_str, fontsize=9.5, fontname="helv", color=(0.15, 0.15, 0.15))
+                curr_y += 13.0
+        elif isinstance(skills_data, str) and skills_data.strip():
+            check_page_break(15.0)
+            page.insert_text((margin_x, curr_y), skills_data.strip(), fontsize=9.5, fontname="helv", color=(0.15, 0.15, 0.15))
+            curr_y += 13.0
+
+    # 4. Work Experience
+    experience = data.get("experience") or data.get("work_experience") or []
+    if experience and isinstance(experience, list):
+        draw_section_heading("WORK EXPERIENCE")
+        for exp in experience:
+            if not isinstance(exp, dict):
+                continue
+            title_e = _to_clean_str(exp.get("title") or exp.get("designation") or exp.get("role") or "")
+            comp_e = _to_clean_str(exp.get("company") or exp.get("employer") or "")
+            dates_e = _to_clean_str(exp.get("dates") or f"{exp.get('start_date', '')} - {exp.get('end_date', '')}".strip(" -"))
+            loc_e = _to_clean_str(exp.get("location") or exp.get("employment_location") or "")
+
+            header_text = title_e
+            if comp_e: header_text += f" - {comp_e}"
+            if loc_e: header_text += f" ({loc_e})"
+            if dates_e: header_text += f"  [{dates_e}]"
+
+            if header_text:
+                check_page_break(20.0)
+                page.insert_text((margin_x, curr_y), header_text, fontsize=10, fontname="helv", color=(0.05, 0.1, 0.25))
+                curr_y += 13.0
+
+            bullets = _to_clean_bullets(exp.get("bullets") or exp.get("responsibilities") or exp.get("achievements") or [])
+            for b in bullets:
+                check_page_break(14.0)
+                page.insert_text((margin_x + 10, curr_y), f"- {b}", fontsize=9, fontname="helv", color=(0.2, 0.2, 0.2))
+                curr_y += 12.0
+            curr_y += 4.0
+
+    # 5. Projects
+    projects = data.get("projects") or []
+    if projects and isinstance(projects, list):
+        draw_section_heading("PROJECTS")
+        for proj in projects:
+            if not isinstance(proj, dict):
+                continue
+            p_name = _to_clean_str(proj.get("name") or proj.get("title") or "")
+            tech_raw = proj.get("technologies") or proj.get("tech_stack") or ""
+            if isinstance(tech_raw, list):
+                tech = ", ".join(_to_clean_str(t) for t in tech_raw if _to_clean_str(t))
+            else:
+                tech = _to_clean_str(tech_raw)
+
+            proj_header = p_name
+            if tech: proj_header += f" | {tech}"
+
+            if proj_header:
+                check_page_break(18.0)
+                page.insert_text((margin_x, curr_y), proj_header, fontsize=10, fontname="helv", color=(0.05, 0.1, 0.25))
+                curr_y += 13.0
+
+            bullets = _to_clean_bullets(proj.get("bullets") or proj.get("responsibilities") or proj.get("description") or [])
+            for b in bullets:
+                check_page_break(14.0)
+                page.insert_text((margin_x + 10, curr_y), f"- {b}", fontsize=9, fontname="helv", color=(0.2, 0.2, 0.2))
+                curr_y += 12.0
+            curr_y += 4.0
+
+    # 6. Education
+    education = data.get("education") or []
+    if education and isinstance(education, list):
+        draw_section_heading("EDUCATION")
+        for edu in education:
+            if not isinstance(edu, dict):
+                continue
+            degree = _to_clean_str(edu.get("degree") or edu.get("field_of_study") or "")
+            inst = _to_clean_str(edu.get("institution") or edu.get("university") or "")
+            dates = _to_clean_str(edu.get("dates") or f"{edu.get('start_date', '')} - {edu.get('end_date', '')}".strip(" -"))
+            gpa = _to_clean_str(edu.get("gpa") or edu.get("grade") or "")
+
+            edu_text = degree
+            if inst: edu_text += f" - {inst}"
+            if dates: edu_text += f" [{dates}]"
+            if gpa: edu_text += f" (GPA: {gpa})"
+
+            if edu_text:
+                check_page_break(16.0)
+                page.insert_text((margin_x, curr_y), edu_text, fontsize=9.5, fontname="helv", color=(0.1, 0.1, 0.1))
+                curr_y += 13.0
+
+    # 7. Certifications
+    certs = data.get("certifications") or []
+    if certs:
+        draw_section_heading("CERTIFICATIONS")
+        if isinstance(certs, list):
+            for c in certs:
+                if isinstance(c, dict):
+                    c_name = _to_clean_str(c.get("name") or c.get("title") or "")
+                    issuer = _to_clean_str(c.get("issuer") or "")
+                    c_text = f"{c_name} - {issuer}" if issuer else c_name
+                else:
+                    c_text = _to_clean_str(c)
+                if c_text:
+                    check_page_break(14.0)
+                    page.insert_text((margin_x + 10, curr_y), f"- {c_text}", fontsize=9, fontname="helv", color=(0.15, 0.15, 0.15))
+                    curr_y += 12.0
+        elif isinstance(certs, str) and certs.strip():
+            check_page_break(14.0)
+            page.insert_text((margin_x, curr_y), certs.strip(), fontsize=9.5, fontname="helv", color=(0.15, 0.15, 0.15))
+            curr_y += 12.0
+
+    return doc.tobytes()
+
+
+def render_structured_data_to_pdf(data: Dict[str, Any], title: str = "", template_slug: str = "ats-classic") -> bytes:
+    """
+    Renders structured resume JSON data into an authentic, template-matching PDF.
+    Attempts ReportLab first (primary Overleaf-grade renderer).
+    If ReportLab is unavailable or encounters an import failure, seamlessly falls back to PyMuPDF.
+    """
+    try:
+        return _render_with_reportlab(data, title, template_slug)
+    except (ImportError, ModuleNotFoundError) as e:
+        logger.warning(f"ReportLab import failed ({e}), falling back to PyMuPDF standalone vector engine")
+        return _render_with_pymupdf(data, title, template_slug)
+
 
