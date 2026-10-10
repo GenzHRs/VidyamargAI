@@ -173,26 +173,24 @@ export default function AiMentor({
   const [isListening, setIsListening] = useState(false);
   const recognitionRef = useRef<any>(null);
 
-  // Load configuration and bootstrap data
+  // Load configuration and bootstrap data in parallel to eliminate waterfall delays
   useEffect(() => {
     const init = async () => {
       try {
-        const cfg = await apiService.getAIMentorConfig();
-        setConfig(cfg);
-        if (cfg.ai_mentor_enabled) {
-          fetchProfileData();
-          fetchChatSessions();
-          fetchActivityFeed();
-          if (cfg.study_plan_enabled) fetchStudyPlans();
-          if (cfg.artifacts_enabled) fetchArtifacts();
+        const [cfgResult] = await Promise.allSettled([
+          apiService.getAIMentorConfig(),
+          fetchProfileData(),
+          fetchChatSessions(),
+          fetchActivityFeed(),
+          fetchStudyPlans(),
+          fetchArtifacts()
+        ]);
+
+        if (cfgResult.status === "fulfilled") {
+          setConfig(cfgResult.value);
         }
       } catch (err) {
         console.error("Error loading config, falling back to defaults:", err);
-        fetchProfileData();
-        fetchChatSessions();
-        fetchActivityFeed();
-        fetchStudyPlans();
-        fetchArtifacts();
       }
     };
     init();

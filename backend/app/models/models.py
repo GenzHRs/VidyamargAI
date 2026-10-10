@@ -258,6 +258,7 @@ class AIMentorSession(Base):
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
 Index("idx_ai_mentor_session_user", AIMentorSession.user_id)
+Index("idx_ai_mentor_session_user_active", AIMentorSession.user_id, AIMentorSession.is_deleted, AIMentorSession.updated_at)
 
 
 class AIMentorMessage(Base):
@@ -272,6 +273,8 @@ class AIMentorMessage(Base):
     is_archived = Column(Boolean, default=False)
     archived_at = Column(DateTime, nullable=True)
     created_at = Column(DateTime, default=datetime.utcnow)
+
+Index("idx_ai_mentor_message_session_created", AIMentorMessage.session_id, AIMentorMessage.created_at)
 
 Index("idx_ai_mentor_message_session", AIMentorMessage.session_id)
 Index("idx_ai_mentor_message_user", AIMentorMessage.user_id)
