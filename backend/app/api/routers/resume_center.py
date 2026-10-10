@@ -1455,6 +1455,13 @@ def compile_resume(
     if not version:
         raise HTTPException(status_code=400, detail="No structured data found for resume")
 
+    # If version.structured_data is empty or missing, fallback to consolidated extraction/profile data
+    if not version.structured_data or not isinstance(version.structured_data, dict) or not any(version.structured_data.values()):
+        consolidated_data, _ = _get_consolidated_resume_data(resume, db)
+        if consolidated_data:
+            version.structured_data = consolidated_data
+            db.commit()
+
     tmpl = db.query(ResumeTemplate).filter(ResumeTemplate.id == resume.template_id).first()
     latex_source = render_resume_to_latex(version.structured_data, tmpl.latex_template if tmpl else "")
     version.latex_source = latex_source
@@ -1472,32 +1479,45 @@ def compile_resume(
     )
     resume.latest_tex_url = tex_url
 
-    # Compile PDF (using pdflatex if available, or standalone PDF generator)
+    # Compile PDF (using pdflatex if available, or high-fidelity ReportLab engine)
     pdf_bytes = None
+    compiler_used = "latex" if is_latex_installed() else "reportlab"
+    compile_err = None
+
     if is_latex_installed():
         success, pdf_bytes, compile_err = compile_latex_to_pdf(latex_source)
-        if not success or not pdf_bytes:
-            db.commit()
-            raise HTTPException(
-                status_code=500,
-                detail=f"LaTeX compilation failed: {compile_err}"
-            )
+        if not success or not pdf_bytes or not pdf_bytes.startswith(b"%PDF"):
+            logger.warning(f"pdflatex compilation failed ({compile_err}), falling back to ReportLab generator")
+            try:
+                tmpl_slug = tmpl.slug if tmpl else "ats-classic"
+                pdf_bytes = render_structured_data_to_pdf(version.structured_data, resume.title, template_slug=tmpl_slug)
+                compiler_used = "reportlab_fallback"
+            except Exception as e:
+                db.commit()
+                raise HTTPException(
+                    status_code=500,
+                    detail=f"Resume PDF compilation failed: {compile_err or str(e)}"
+                )
     else:
         try:
             tmpl_slug = tmpl.slug if tmpl else "ats-classic"
             pdf_bytes = render_structured_data_to_pdf(version.structured_data, resume.title, template_slug=tmpl_slug)
         except Exception as e:
-            logger.warning(f"Standalone PDF fallback generation error: {e}")
+            logger.error(f"Standalone PDF fallback generation error: {e}", exc_info=True)
             db.commit()
-            return {
-                "status": "warning",
-                "latex_available": False,
-                "message": "LaTeX engine (pdflatex) is not installed on this server. Your Overleaf-compatible .tex source has been generated and saved for download.",
-                "latest_tex_url": tex_url,
-                "latex_source": latex_source
-            }
+            raise HTTPException(
+                status_code=500,
+                detail=f"PDF rendering error: {str(e)}"
+            )
 
-    # Save PDF privately
+    if not pdf_bytes or len(pdf_bytes) < 100 or not pdf_bytes.startswith(b"%PDF"):
+        db.commit()
+        raise HTTPException(
+            status_code=500,
+            detail="PDF compilation generated an invalid or empty document artifact."
+        )
+
+    # Save PDF privately in user-isolated storage
     pdf_filename = f"resume_{resume.id}_v{version.version_number}_{safe_base}.pdf"
     pdf_url = storage_service.upload_file(
         folder=f"{user_folder}/resumes",
@@ -1513,20 +1533,24 @@ def compile_resume(
 
     return {
         "status": "success",
-        "latex_available": True,
+        "latex_available": is_latex_installed(),
+        "pdf_available": True,
+        "compiler": compiler_used,
         "message": "Resume compiled successfully",
         "latest_pdf_url": pdf_url,
-        "latest_tex_url": tex_url
+        "latest_tex_url": tex_url,
+        "pdf_size_bytes": len(pdf_bytes)
     }
 
 
 @router.get("/resumes/{resume_id}/download/pdf")
 def download_resume_pdf(
     resume_id: int,
+    preview: bool = Query(False, description="Whether to serve inline for browser preview"),
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db)
 ):
-    """Authenticated endpoint to download compiled PDF."""
+    """Authenticated endpoint to download or preview compiled PDF."""
     candidate = _get_or_create_candidate(current_user, db)
     resume = db.query(Resume).filter(Resume.id == resume_id, Resume.deleted_at == None).first()
     if not resume:
@@ -1538,67 +1562,82 @@ def download_resume_pdf(
     if not version:
         version = db.query(ResumeVersion).filter(ResumeVersion.resume_id == resume.id).order_by(ResumeVersion.version_number.desc()).first()
 
-    # If PDF exists in storage, serve it
+    pdf_bytes = None
+    safe_name = _sanitize_filename(resume.title)
+
+    # 1. If PDF exists in storage, retrieve it
     if resume.latest_pdf_url:
         user_folder = get_user_folder_name(current_user)
         filename = resume.latest_pdf_url.split("/")[-1]
         pdf_bytes = storage_service.get_file_content(f"{user_folder}/resumes", filename)
-        if pdf_bytes:
-            safe_name = _sanitize_filename(resume.title)
-            return Response(
-                content=pdf_bytes,
-                media_type="application/pdf",
-                headers={
-                    "Content-Disposition": f'attachment; filename="{safe_name}.pdf"',
-                    "Cache-Control": "private, no-store, max-age=0"
-                }
-            )
 
-    # If not yet compiled, attempt on-the-fly compilation
-    if version and version.structured_data:
-        try:
-            pdf_bytes = None
-            tmpl = db.query(ResumeTemplate).filter(ResumeTemplate.id == resume.template_id).first()
-            if is_latex_installed():
-                latex_source = render_resume_to_latex(version.structured_data, tmpl.latex_template if tmpl else "")
-                success, pdf_bytes, _ = compile_latex_to_pdf(latex_source)
-            else:
-                tmpl_slug = tmpl.slug if tmpl else "ats-classic"
-                pdf_bytes = render_structured_data_to_pdf(version.structured_data, resume.title, template_slug=tmpl_slug)
-                success = True
-
-            if success and pdf_bytes:
-                # Also save to private storage for caching
-                user_folder = get_user_folder_name(current_user)
-                safe_base = _sanitize_filename(resume.title)
-                pdf_filename = f"resume_{resume.id}_v{version.version_number}_{safe_base}.pdf"
-                pdf_url = storage_service.upload_file(
-                    folder=f"{user_folder}/resumes",
-                    filename=pdf_filename,
-                    content=pdf_bytes,
-                    mime_type="application/pdf"
-                )
-                resume.latest_pdf_url = pdf_url
-                resume.status = "COMPILED"
-                version.pdf_file_url = pdf_url
+    # 2. If not yet in storage, attempt on-the-fly compilation
+    if not pdf_bytes and version:
+        if not version.structured_data or not isinstance(version.structured_data, dict) or not any(version.structured_data.values()):
+            consolidated_data, _ = _get_consolidated_resume_data(resume, db)
+            if consolidated_data:
+                version.structured_data = consolidated_data
                 db.commit()
 
-                safe_name = _sanitize_filename(resume.title)
-                return Response(
-                    content=pdf_bytes,
-                    media_type="application/pdf",
-                    headers={
-                        "Content-Disposition": f'attachment; filename="{safe_name}.pdf"',
-                        "Cache-Control": "private, no-store, max-age=0"
-                    }
-                )
-        except Exception as e:
-            logger.warning(f"On-the-fly PDF compilation failed: {e}")
+        if version.structured_data:
+            try:
+                tmpl = db.query(ResumeTemplate).filter(ResumeTemplate.id == resume.template_id).first()
+                if is_latex_installed():
+                    latex_source = render_resume_to_latex(version.structured_data, tmpl.latex_template if tmpl else "")
+                    success, pdf_bytes, _ = compile_latex_to_pdf(latex_source)
+                    if not success or not pdf_bytes or not pdf_bytes.startswith(b"%PDF"):
+                        tmpl_slug = tmpl.slug if tmpl else "ats-classic"
+                        pdf_bytes = render_structured_data_to_pdf(version.structured_data, resume.title, template_slug=tmpl_slug)
+                else:
+                    tmpl_slug = tmpl.slug if tmpl else "ats-classic"
+                    pdf_bytes = render_structured_data_to_pdf(version.structured_data, resume.title, template_slug=tmpl_slug)
 
-    raise HTTPException(
-        status_code=404,
-        detail="PDF not found. Please compile the resume first or download the .tex source."
+                if pdf_bytes and len(pdf_bytes) > 100 and pdf_bytes.startswith(b"%PDF"):
+                    # Cache in storage
+                    user_folder = get_user_folder_name(current_user)
+                    safe_base = _sanitize_filename(resume.title)
+                    pdf_filename = f"resume_{resume.id}_v{version.version_number}_{safe_base}.pdf"
+                    pdf_url = storage_service.upload_file(
+                        folder=f"{user_folder}/resumes",
+                        filename=pdf_filename,
+                        content=pdf_bytes,
+                        mime_type="application/pdf"
+                    )
+                    resume.latest_pdf_url = pdf_url
+                    resume.status = "COMPILED"
+                    version.pdf_file_url = pdf_url
+                    db.commit()
+            except Exception as e:
+                logger.warning(f"On-the-fly PDF compilation failed: {e}")
+
+    if not pdf_bytes or len(pdf_bytes) < 100 or not pdf_bytes.startswith(b"%PDF"):
+        raise HTTPException(
+            status_code=404,
+            detail="Resume PDF could not be generated. Please compile the resume from the editor."
+        )
+
+    disposition = f'inline; filename="{safe_name}.pdf"' if preview else f'attachment; filename="{safe_name}.pdf"'
+    return Response(
+        content=pdf_bytes,
+        media_type="application/pdf",
+        headers={
+            "Content-Disposition": disposition,
+            "Content-Type": "application/pdf",
+            "Cache-Control": "private, no-cache, no-store, must-revalidate",
+            "Pragma": "no-cache",
+            "Expires": "0"
+        }
     )
+
+
+@router.get("/resumes/{resume_id}/preview/pdf")
+def preview_resume_pdf(
+    resume_id: int,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    """Authenticated endpoint to preview compiled PDF inline."""
+    return download_resume_pdf(resume_id=resume_id, preview=True, current_user=current_user, db=db)
 
 
 @router.get("/resumes/{resume_id}/download/latex")

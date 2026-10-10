@@ -158,7 +158,7 @@ export default function ResumeEditorPage({ params }: PageProps) {
       // If compiled, try fetching PDF blob
       if (res.status.toUpperCase() === "COMPILED" || res.latest_pdf_url) {
         try {
-          const blob = await resumeCenterApi.downloadPdfBlob(resumeId);
+          const blob = await resumeCenterApi.downloadPdfBlob(resumeId, true);
           const url = URL.createObjectURL(blob);
           setPdfBlobUrl(url);
           setLatexAvailable(true);
@@ -262,26 +262,31 @@ export default function ResumeEditorPage({ params }: PageProps) {
       await handleSave(false);
 
       const result = await resumeCenterApi.compileResume(resumeId);
-      setLatexAvailable(result.latex_available);
+      setLatexAvailable(Boolean(result.latex_available));
 
       // Refresh LaTeX text
-      const tex = await resumeCenterApi.downloadLatexText(resumeId);
-      setLatexSource(tex);
+      try {
+        const tex = await resumeCenterApi.downloadLatexText(resumeId);
+        setLatexSource(tex);
+      } catch (e) {
+        // Optional LaTeX source
+      }
 
-      if (result.latex_available) {
-        const blob = await resumeCenterApi.downloadPdfBlob(resumeId);
+      // If compilation succeeded or PDF is available, load and display PDF preview
+      if (result.status === "success" || result.latest_pdf_url || result.pdf_available) {
+        const blob = await resumeCenterApi.downloadPdfBlob(resumeId, true);
         if (pdfBlobUrl) URL.revokeObjectURL(pdfBlobUrl);
         const newUrl = URL.createObjectURL(blob);
         setPdfBlobUrl(newUrl);
         setPreviewMode("pdf");
-        setSuccessMessage("Compiled to PDF successfully!");
+        setSuccessMessage(result.message || "Compiled to PDF successfully!");
       } else {
         setPreviewMode("latex");
-        setSuccessMessage("LaTeX source compiled! Ready for Overleaf export.");
+        setSuccessMessage(result.message || "LaTeX source generated! Ready for Overleaf export.");
       }
       setTimeout(() => setSuccessMessage(""), 4000);
     } catch (err: any) {
-      setErrorMessage(err.message || "Compilation failed");
+      setErrorMessage(err.message || "Compilation failed. Please verify your entries and retry.");
     } finally {
       setCompiling(false);
     }
@@ -957,6 +962,18 @@ export default function ResumeEditorPage({ params }: PageProps) {
               >
                 Download TeX
               </Button>
+              {pdfBlobUrl && (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => window.open(pdfBlobUrl, "_blank")}
+                  className="text-xs"
+                  title="Open PDF in new tab"
+                >
+                  <ExternalLink size={13} className="mr-1" />
+                  Pop-out
+                </Button>
+              )}
               <Button
                 size="sm"
                 onClick={downloadPdf}
@@ -970,31 +987,57 @@ export default function ResumeEditorPage({ params }: PageProps) {
           </div>
 
           {/* Preview Screen Container */}
-          <Card className="flex-1 bg-app-card border-app-border overflow-hidden rounded-2xl min-h-[500px] flex flex-col">
+          <Card className="relative flex-1 bg-app-card border-app-border overflow-hidden rounded-2xl min-h-[550px] flex flex-col">
+            {compiling && (
+              <div className="absolute inset-0 bg-app-card/85 backdrop-blur-xs z-20 flex flex-col items-center justify-center space-y-3 p-6 text-center">
+                <RefreshCw size={36} className="text-blue-500 animate-spin" />
+                <div className="space-y-1">
+                  <h4 className="text-sm font-bold text-app-text">Compiling Resume PDF</h4>
+                  <p className="text-xs text-app-text-muted max-w-xs">
+                    Rendering typography, ATS formatting, and document layout...
+                  </p>
+                </div>
+              </div>
+            )}
+
             {previewMode === "pdf" ? (
               pdfBlobUrl ? (
-                <iframe
-                  src={pdfBlobUrl}
-                  title="Resume PDF Preview"
-                  className="w-full h-full min-h-[550px] border-none rounded-2xl"
-                />
+                <div className="relative flex-1 w-full h-full min-h-[550px] bg-slate-900/5 dark:bg-slate-950/30 flex flex-col">
+                  <object
+                    data={`${pdfBlobUrl}#toolbar=1&view=FitH`}
+                    type="application/pdf"
+                    className="w-full flex-1 min-h-[550px] rounded-2xl"
+                  >
+                    <iframe
+                      src={`${pdfBlobUrl}#toolbar=1`}
+                      title="Resume PDF Preview"
+                      className="w-full flex-1 min-h-[550px] border-none rounded-2xl"
+                    />
+                  </object>
+                </div>
               ) : (
-                <div className="flex-1 flex flex-col items-center justify-center p-8 text-center space-y-3">
-                  <Terminal size={32} className="text-blue-500 animate-pulse" />
-                  <div className="space-y-1">
-                    <h4 className="text-sm font-bold text-app-text">Resume Not Yet Compiled</h4>
-                    <p className="text-xs text-app-text-muted max-w-sm">
-                      Click the &quot;Compile PDF&quot; button above to render this resume into an Overleaf-grade PDF document.
+                <div className="flex-1 flex flex-col items-center justify-center p-8 text-center space-y-4">
+                  <div className="w-14 h-14 rounded-2xl bg-blue-500/10 dark:bg-blue-500/20 flex items-center justify-center text-blue-600 dark:text-blue-400">
+                    <Terminal size={28} className={compiling ? "animate-spin" : ""} />
+                  </div>
+                  <div className="space-y-1.5 max-w-sm">
+                    <h4 className="text-base font-bold text-app-text">
+                      {errorMessage ? "Compilation Needs Attention" : "Resume Not Yet Compiled"}
+                    </h4>
+                    <p className="text-xs text-app-text-muted leading-relaxed">
+                      {errorMessage
+                        ? errorMessage
+                        : "Click the \"Compile PDF\" button above or \"Compile Now\" below to render this resume into an Overleaf-grade PDF document."}
                     </p>
                   </div>
                   <Button
                     size="sm"
                     onClick={handleCompile}
                     disabled={compiling}
-                    className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold"
+                    className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold px-4 py-2 shadow-sm transition-all hover:scale-[1.02] active:scale-[0.98]"
                   >
-                    <Terminal size={13} className="mr-1.5" />
-                    Compile Now
+                    <Terminal size={14} className="mr-1.5" />
+                    {errorMessage ? "Retry Compilation" : "Compile Now"}
                   </Button>
                 </div>
               )

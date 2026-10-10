@@ -716,9 +716,12 @@ class ResumeCenterApiService {
   async compileResume(resumeId: number): Promise<{
     status: string;
     latex_available: boolean;
+    pdf_available?: boolean;
+    compiler?: string;
     message: string;
     latest_pdf_url?: string;
     latest_tex_url?: string;
+    pdf_size_bytes?: number;
   }> {
     const res = await fetch(`${API_BASE_URL}/resumes/${resumeId}/compile`, {
       method: "POST",
@@ -732,16 +735,20 @@ class ResumeCenterApiService {
     return res.json();
   }
 
-  async downloadPdfBlob(resumeId: number): Promise<Blob> {
-    const res = await fetch(`${API_BASE_URL}/resumes/${resumeId}/download/pdf`, {
+  async downloadPdfBlob(resumeId: number, isPreview = false): Promise<Blob> {
+    const endpoint = isPreview
+      ? `${API_BASE_URL}/resumes/${resumeId}/preview/pdf`
+      : `${API_BASE_URL}/resumes/${resumeId}/download/pdf`;
+    const res = await fetch(endpoint, {
       headers: getAuthHeaders(),
       credentials: "include",
     });
     if (!res.ok) {
       const err = await res.json().catch(() => ({}));
-      throw new Error(err.detail || "PDF download failed. Please compile the resume first.");
+      throw new Error(err.detail || "PDF generation or download failed. Please compile the resume first.");
     }
-    return res.blob();
+    const buffer = await res.arrayBuffer();
+    return new Blob([buffer], { type: "application/pdf" });
   }
 
   async downloadLatexText(resumeId: number): Promise<string> {

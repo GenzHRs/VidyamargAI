@@ -366,6 +366,38 @@ def compile_latex_to_pdf(
             return False, None, f"LaTeX compilation process failure: {str(exc)}"
 
 
+def _to_clean_str(val: Any) -> str:
+    """Safely extracts a clean string from any value (string, dict, int, float, list)."""
+    if val is None:
+        return ""
+    if isinstance(val, str):
+        return val.strip()
+    if isinstance(val, dict):
+        for k in ("name", "title", "label", "text", "summary", "desc", "bullet", "value"):
+            if val.get(k):
+                return str(val[k]).strip()
+        return ", ".join(f"{k}: {v}" for k, v in val.items() if v)
+    return str(val).strip()
+
+
+def _to_clean_bullets(raw: Any) -> List[str]:
+    """Safely extracts a list of bullet strings from any input format."""
+    if not raw:
+        return []
+    if isinstance(raw, str):
+        return [s.strip() for s in re.split(r"[\r\n]+", raw) if s.strip()]
+    if isinstance(raw, list):
+        res = []
+        for item in raw:
+            s = _to_clean_str(item)
+            if s:
+                clean_s = re.sub(r"^[\ue000-\uf8ff•·∙○●▪■►▸▶◆◇★☆✦✧✓✔\s\-*–—]+\s*", "", s).strip()
+                res.append(clean_s if clean_s else s)
+        return res
+    s = _to_clean_str(raw)
+    return [s] if s else []
+
+
 def render_structured_data_to_pdf(data: Dict[str, Any], title: str = "", template_slug: str = "ats-classic") -> bytes:
     """
     Renders structured resume JSON data into an authentic, template-matching PDF
@@ -548,7 +580,7 @@ def render_structured_data_to_pdf(data: Dict[str, Any], title: str = "", templat
 
     # 1. Header (Personal Info)
     personal = data.get("personal_info", {})
-    name = personal.get("full_name") or personal.get("name") or "Candidate Resume"
+    name = _to_clean_str(personal.get("full_name") or personal.get("name") or "Candidate Resume")
     story.append(Paragraph(html.escape(name), title_style))
     story.append(Spacer(1, 2))
 
@@ -569,16 +601,16 @@ def render_structured_data_to_pdf(data: Dict[str, Any], title: str = "", templat
 
     contact_parts = []
     if personal.get("email"):
-        contact_parts.append(html.escape(personal["email"]))
+        contact_parts.append(html.escape(_to_clean_str(personal["email"])))
     if personal.get("phone"):
-        contact_parts.append(html.escape(personal["phone"]))
+        contact_parts.append(html.escape(_to_clean_str(personal["phone"])))
     loc = personal.get("location") or personal.get("address")
     if loc:
-        contact_parts.append(html.escape(loc))
+        contact_parts.append(html.escape(_to_clean_str(loc)))
     if personal.get("linkedin"):
-        contact_parts.append(f'<a href="{html.escape(personal["linkedin"])}"><u>LinkedIn</u></a>')
+        contact_parts.append(f'<a href="{html.escape(_to_clean_str(personal["linkedin"]))}"><u>LinkedIn</u></a>')
     if personal.get("github"):
-        contact_parts.append(f'<a href="{html.escape(personal["github"])}"><u>GitHub</u></a>')
+        contact_parts.append(f'<a href="{html.escape(_to_clean_str(personal["github"]))}"><u>GitHub</u></a>')
 
     if contact_parts:
         story.append(Paragraph(" &bull; ".join(contact_parts), contact_style))
@@ -588,7 +620,7 @@ def render_structured_data_to_pdf(data: Dict[str, Any], title: str = "", templat
 
     # 2. Professional Summary
     raw_summary = data.get("summary") or data.get("professional_summary") or data.get("career_objective")
-    summary = raw_summary.get("summary") if isinstance(raw_summary, dict) else str(raw_summary or "")
+    summary = _to_clean_str(raw_summary)
     if summary and summary.strip():
         story.append(Paragraph("PROFESSIONAL SUMMARY", section_style))
         story.append(Paragraph(html.escape(summary.strip()), body_style))
@@ -600,86 +632,114 @@ def render_structured_data_to_pdf(data: Dict[str, Any], title: str = "", templat
         story.append(Paragraph("TECHNICAL SKILLS", section_style))
         if isinstance(skills, dict):
             for cat, s_list in skills.items():
-                items_str = ", ".join(s_list) if isinstance(s_list, list) else str(s_list)
-                story.append(Paragraph(f"<b>{html.escape(cat)}:</b> {html.escape(items_str)}", body_style))
+                if isinstance(s_list, list):
+                    items = [_to_clean_str(x) for x in s_list if _to_clean_str(x)]
+                    items_str = ", ".join(items)
+                elif isinstance(s_list, str):
+                    items_str = s_list
+                else:
+                    items_str = _to_clean_str(s_list)
+                if items_str:
+                    story.append(Paragraph(f"<b>{html.escape(str(cat))}:</b> {html.escape(items_str)}", body_style))
         elif isinstance(skills, list):
-            story.append(Paragraph(html.escape(", ".join(skills)), body_style))
-        elif isinstance(skills, str):
-            story.append(Paragraph(html.escape(skills), body_style))
+            items = [_to_clean_str(x) for x in skills if _to_clean_str(x)]
+            if items:
+                story.append(Paragraph(html.escape(", ".join(items)), body_style))
+        elif isinstance(skills, str) and skills.strip():
+            story.append(Paragraph(html.escape(skills.strip()), body_style))
         story.append(Spacer(1, 4))
 
     # 4. Work Experience
     experience = data.get("experience") or data.get("work_experience") or []
-    if experience:
+    if experience and isinstance(experience, list):
         story.append(Paragraph("WORK EXPERIENCE", section_style))
         for exp in experience:
-            job_title = exp.get("title") or exp.get("role") or ""
-            company = exp.get("company") or ""
-            dates = f"{exp.get('start_date', '')} &ndash; {exp.get('end_date', 'Present')}".strip(" &ndash;")
-            loc_str = f" ({exp.get('location')})" if exp.get("location") else ""
+            if not isinstance(exp, dict):
+                continue
+            job_title = _to_clean_str(exp.get("title") or exp.get("role") or exp.get("designation") or "")
+            company = _to_clean_str(exp.get("company") or exp.get("employer") or "")
+            start_d = _to_clean_str(exp.get("start_date") or "")
+            end_d = _to_clean_str(exp.get("end_date") or ("Present" if exp.get("is_current") else ""))
+            dates = f"{start_d} &ndash; {end_d}".strip(" &ndash;") if (start_d or end_d) else ""
+            loc = _to_clean_str(exp.get("location") or exp.get("employment_location") or "")
+            loc_str = f" ({loc})" if loc else ""
 
-            header_text = f"<b>{html.escape(job_title)}</b>"
+            header_text = f"<b>{html.escape(job_title)}</b>" if job_title else ""
             if company:
-                header_text += f" &mdash; <i>{html.escape(company)}</i>{loc_str}"
+                if header_text:
+                    header_text += f" &mdash; <i>{html.escape(company)}</i>{loc_str}"
+                else:
+                    header_text = f"<b>{html.escape(company)}</b>{loc_str}"
             if dates:
                 header_text += f' <font color="#64748b">[{dates}]</font>'
 
-            story.append(Paragraph(header_text, item_header_style))
+            if header_text:
+                story.append(Paragraph(header_text, item_header_style))
 
-            bullets = exp.get("bullets") or exp.get("highlights") or exp.get("description") or []
-            if isinstance(bullets, str):
-                bullets = [b.strip() for b in bullets.split("\n") if b.strip()]
+            bullets = _to_clean_bullets(exp.get("bullets") or exp.get("responsibilities") or exp.get("highlights") or exp.get("description") or [])
             for b in bullets:
-                story.append(Paragraph(f"&bull; {html.escape(str(b))}", bullet_style))
+                story.append(Paragraph(f"&bull; {html.escape(b)}", bullet_style))
             story.append(Spacer(1, 2))
         story.append(Spacer(1, 4))
 
     # 5. Projects
     projects = data.get("projects") or []
-    if projects:
+    if projects and isinstance(projects, list):
         story.append(Paragraph("PROJECTS", section_style))
         for proj in projects:
-            p_name = proj.get("name") or proj.get("title") or ""
-            tech = proj.get("technologies") or proj.get("tech_stack") or ""
-            if isinstance(tech, list):
-                tech = ", ".join(str(t) for t in tech)
-            elif not isinstance(tech, str):
-                tech = str(tech)
-            dates = f"{proj.get('start_date', '')} {proj.get('end_date', '')}".strip()
+            if not isinstance(proj, dict):
+                continue
+            p_name = _to_clean_str(proj.get("name") or proj.get("title") or proj.get("project_name") or "")
+            tech_raw = proj.get("technologies") or proj.get("tech_stack") or ""
+            if isinstance(tech_raw, list):
+                tech = ", ".join(_to_clean_str(t) for t in tech_raw if _to_clean_str(t))
+            else:
+                tech = _to_clean_str(tech_raw)
+            start_d = _to_clean_str(proj.get("start_date") or "")
+            end_d = _to_clean_str(proj.get("end_date") or proj.get("duration") or "")
+            dates = f"{start_d} {end_d}".strip()
 
-            p_header = f"<b>{html.escape(p_name)}</b>"
+            p_header = f"<b>{html.escape(p_name)}</b>" if p_name else ""
             if tech:
                 p_header += f" <font color='#475569'>| <i>{html.escape(tech)}</i></font>"
             if dates:
                 p_header += f" <font color='#64748b'>[{dates}]</font>"
-            story.append(Paragraph(p_header, item_header_style))
+            if p_header:
+                story.append(Paragraph(p_header, item_header_style))
 
-            bullets = proj.get("bullets") or proj.get("description") or []
-            if isinstance(bullets, str):
-                bullets = [b.strip() for b in bullets.split("\n") if b.strip()]
+            bullets = _to_clean_bullets(proj.get("bullets") or proj.get("responsibilities") or proj.get("features") or proj.get("description") or [])
             for b in bullets:
-                story.append(Paragraph(f"&bull; {html.escape(str(b))}", bullet_style))
+                story.append(Paragraph(f"&bull; {html.escape(b)}", bullet_style))
             story.append(Spacer(1, 2))
         story.append(Spacer(1, 4))
 
     # 6. Education
     education = data.get("education") or []
-    if education:
+    if education and isinstance(education, list):
         story.append(Paragraph("EDUCATION", section_style))
         for edu in education:
-            degree = edu.get("degree") or ""
-            inst = edu.get("institution") or edu.get("university") or ""
-            dates = f"{edu.get('start_date', '')} &ndash; {edu.get('end_date', edu.get('graduation_year', ''))}".strip(" &ndash;")
-            gpa = f"GPA: {edu.get('gpa')}" if edu.get("gpa") else ""
+            if not isinstance(edu, dict):
+                continue
+            degree = _to_clean_str(edu.get("degree") or edu.get("field_of_study") or "")
+            inst = _to_clean_str(edu.get("institution") or edu.get("university") or edu.get("school") or "")
+            start_d = _to_clean_str(edu.get("start_date") or "")
+            end_d = _to_clean_str(edu.get("end_date") or edu.get("graduation_year") or "")
+            dates = f"{start_d} &ndash; {end_d}".strip(" &ndash;") if (start_d or end_d) else ""
+            gpa_raw = _to_clean_str(edu.get("gpa") or edu.get("grade") or "")
+            gpa = f"GPA: {gpa_raw}" if gpa_raw else ""
 
-            edu_header = f"<b>{html.escape(degree)}</b>"
+            edu_header = f"<b>{html.escape(degree)}</b>" if degree else ""
             if inst:
-                edu_header += f" &mdash; <i>{html.escape(inst)}</i>"
+                if edu_header:
+                    edu_header += f" &mdash; <i>{html.escape(inst)}</i>"
+                else:
+                    edu_header = f"<b>{html.escape(inst)}</b>"
             if dates:
                 edu_header += f' <font color="#64748b">[{dates}]</font>'
             if gpa:
                 edu_header += f' &bull; <font color="#475569">{gpa}</font>'
-            story.append(Paragraph(edu_header, item_header_style))
+            if edu_header:
+                story.append(Paragraph(edu_header, item_header_style))
         story.append(Spacer(1, 4))
 
     # 7. Certifications
@@ -688,9 +748,23 @@ def render_structured_data_to_pdf(data: Dict[str, Any], title: str = "", templat
         story.append(Paragraph("CERTIFICATIONS", section_style))
         if isinstance(certs, list):
             for c in certs:
-                story.append(Paragraph(f"&bull; {html.escape(str(c))}", bullet_style))
-        elif isinstance(certs, str):
-            story.append(Paragraph(html.escape(certs), body_style))
+                if isinstance(c, dict):
+                    c_name = _to_clean_str(c.get("name") or c.get("title") or "")
+                    issuer = _to_clean_str(c.get("issuer") or c.get("issuing_organization") or "")
+                    date_c = _to_clean_str(c.get("date") or c.get("issue_date") or "")
+                    c_text = c_name
+                    if issuer:
+                        c_text += f" &mdash; {issuer}"
+                    if date_c:
+                        c_text += f" ({date_c})"
+                    if c_text:
+                        story.append(Paragraph(f"&bull; {html.escape(c_text)}", bullet_style))
+                else:
+                    c_str = _to_clean_str(c)
+                    if c_str:
+                        story.append(Paragraph(f"&bull; {html.escape(c_str)}", bullet_style))
+        elif isinstance(certs, str) and certs.strip():
+            story.append(Paragraph(html.escape(certs.strip()), body_style))
 
     doc.build(story)
     return buf.getvalue()
