@@ -13,6 +13,7 @@ from sqlalchemy.pool import NullPool
 # WELL-DOCUMENTED EXCEPTION: Sync engine is ONLY for legacy sync scripts and workers.
 # To prevent PostgreSQL connection pool exhaustion (with asyncpg being the standard async path),
 # the sync engine uses NullPool to avoid maintaining an always-on parallel pool of idle connections.
+# PostgreSQL connection engine with NullPool for serverless/containerized stability
 if settings.DATABASE_URL.startswith("sqlite"):
     engine = create_engine(
         settings.DATABASE_URL,
@@ -20,8 +21,12 @@ if settings.DATABASE_URL.startswith("sqlite"):
         poolclass=NullPool
     )
 else:
+    pg_url = settings.DATABASE_URL.replace("postgres://", "postgresql://", 1).replace("postgresql+asyncpg://", "postgresql://", 1)
+    if pg_url.startswith("postgresql://"):
+        pg_url = pg_url.replace("postgresql://", "postgresql+psycopg2://", 1)
+
     engine = create_engine(
-        settings.DATABASE_URL.replace("postgres://", "postgresql://", 1).replace("postgresql+asyncpg://", "postgresql://", 1).replace("postgresql://", "postgresql+psycopg2://", 1),
+        pg_url,
         poolclass=NullPool,
         connect_args={
             "options": "-c search_path=vidyamarg,public -c idle_in_transaction_session_timeout=120000 -c lock_timeout=5000"

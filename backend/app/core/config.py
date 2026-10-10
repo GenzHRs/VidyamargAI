@@ -21,8 +21,8 @@ class Settings(BaseSettings):
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 15  # 15 minutes
     
-    # Database (Fallback to local SQLite if not provided in environment)
-    DATABASE_URL: str = "sqlite:///./vidyamarg.db"
+    # Database (Defaults to PostgreSQL)
+    DATABASE_URL: str = os.getenv("DATABASE_URL", "postgresql://postgres:postgres@localhost:5432/vidyamarg_ai")
     
     # Storage (MinIO / S3)
     MINIO_ENDPOINT: str = os.getenv("MINIO_ENDPOINT", "")
