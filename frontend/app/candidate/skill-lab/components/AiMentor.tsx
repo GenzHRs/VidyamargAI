@@ -173,11 +173,11 @@ export default function AiMentor({
   const [isListening, setIsListening] = useState(false);
   const recognitionRef = useRef<any>(null);
 
-  // Load configuration and bootstrap data in parallel to eliminate waterfall delays
+  // Load configuration and bootstrap data in parallel with robust status handling
   useEffect(() => {
     const init = async () => {
       try {
-        const [cfgResult] = await Promise.allSettled([
+        const results = await Promise.allSettled([
           apiService.getAIMentorConfig(),
           fetchProfileData(),
           fetchChatSessions(),
@@ -186,9 +186,17 @@ export default function AiMentor({
           fetchArtifacts()
         ]);
 
+        const [cfgResult] = results;
         if (cfgResult.status === "fulfilled") {
           setConfig(cfgResult.value);
         }
+
+        // Safely log any rejected background promises without interrupting UI render
+        results.forEach((res, i) => {
+          if (res.status === "rejected") {
+            console.warn(`AiMentor parallel bootstrap fetch #${i} rejected:`, res.reason);
+          }
+        });
       } catch (err) {
         console.error("Error loading config, falling back to defaults:", err);
       }
