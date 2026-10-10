@@ -29,7 +29,7 @@ else:
         pg_url,
         poolclass=NullPool,
         connect_args={
-            "options": "-c search_path=vidyamarg,public -c idle_in_transaction_session_timeout=120000 -c lock_timeout=5000"
+            "options": "-c idle_in_transaction_session_timeout=120000 -c lock_timeout=5000"
         }
     )
 

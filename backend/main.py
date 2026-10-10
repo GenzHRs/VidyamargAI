@@ -71,6 +71,26 @@ async def private_responses(request, call_next):
 def health():
     return {"status": "ok"}
 
+@app.get("/db-check")
+def check_db_connection():
+    try:
+        with engine.connect() as conn:
+            result = conn.execute(text("SELECT 1")).scalar()
+            if engine.dialect.name == "sqlite":
+                tables = conn.execute(text("SELECT name FROM sqlite_master WHERE type='table'")).fetchall()
+            else:
+                tables = conn.execute(text("SELECT table_name FROM information_schema.tables WHERE table_schema='public'")).fetchall()
+            table_names = [t[0] for t in tables]
+            return {
+                "connected": True,
+                "ping": result == 1,
+                "engine": engine.dialect.name,
+                "tables_count": len(table_names),
+                "tables": table_names
+            }
+    except Exception as e:
+        return JSONResponse({"connected": False, "error": str(e)}, status_code=500)
+
 @app.get("/ready")
 def readiness():
     try:
