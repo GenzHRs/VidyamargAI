@@ -10,6 +10,8 @@ import { Input } from "@/components/ui/Input";
 import { Alert } from "@/components/ui/Alert";
 import Link from "next/link";
 
+import { useGlobalTheme } from "@/utils/themeUtils";
+
 export default function CandidateSignup() {
   const router = useRouter();
   const { login, isAuthenticated, initialize } = useAuthStore();
@@ -20,43 +22,11 @@ export default function CandidateSignup() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
-  const [theme, setTheme] = useState<"dark" | "light">("light");
+  const { theme, toggleTheme } = useGlobalTheme();
 
   useEffect(() => {
     initialize();
   }, [initialize]);
-
-  // Sync theme state with localStorage & document root
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") as "dark" | "light" | null;
-    if (savedTheme) {
-      setTheme(savedTheme);
-      if (savedTheme === "light") {
-        document.documentElement.classList.add("light-theme");
-        document.documentElement.classList.remove("dark");
-      } else {
-        document.documentElement.classList.remove("light-theme");
-        document.documentElement.classList.add("dark");
-      }
-    } else {
-      document.documentElement.classList.add("light-theme");
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    const nextTheme = theme === "dark" ? "light" : "dark";
-    setTheme(nextTheme);
-    localStorage.setItem("theme", nextTheme);
-    if (nextTheme === "light") {
-      document.documentElement.classList.add("light-theme");
-      document.documentElement.classList.remove("dark");
-    } else {
-      document.documentElement.classList.remove("light-theme");
-      document.documentElement.classList.add("dark");
-    }
-  };
 
   useEffect(() => {
     if (isAuthenticated) {
