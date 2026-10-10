@@ -1689,49 +1689,6 @@ export default function JobAgentPage() {
               ) : <Icon.Play />}
               {runningAgent ? "Running..." : "Run Agent"}
             </button>
-
-            {/* Notifications */}
-            <div className="relative">
-              <button
-                id="notifications-btn"
-                onClick={() => setShowNotifications(!showNotifications)}
-                className="relative p-2 text-slate-400 hover:text-white bg-white/5 hover:bg-white/10 rounded-lg transition-colors border border-white/10"
-              >
-                <Icon.Bell />
-                {unreadCount > 0 && (
-                  <span className="absolute -top-1 -right-1 w-4 h-4 bg-violet-500 text-white text-xs rounded-full flex items-center justify-center font-bold">
-                    {unreadCount > 9 ? "9+" : unreadCount}
-                  </span>
-                )}
-              </button>
-
-              {/* Notifications dropdown */}
-              {showNotifications && (
-                <div className="absolute right-0 top-10 w-80 bg-[#13131a] border border-white/10 rounded-xl shadow-2xl z-50 overflow-hidden">
-                  <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
-                    <p className="text-sm font-semibold text-white">Notifications</p>
-                    {unreadCount > 0 && (
-                      <button onClick={handleMarkAllRead} className="text-xs text-violet-400 hover:text-violet-300">
-                        Mark all read
-                      </button>
-                    )}
-                  </div>
-                  <div className="max-h-80 overflow-y-auto">
-                    {notifications.length === 0 ? (
-                      <p className="text-slate-500 text-sm p-4 text-center">No notifications</p>
-                    ) : notifications.map(n => (
-                      <div key={n.id} className={`px-4 py-3 border-b border-white/5 ${!n.is_read ? "bg-violet-500/5" : ""}`}>
-                        <p className="text-xs font-medium text-white">{n.title}</p>
-                        <p className="text-xs text-slate-400 mt-0.5 line-clamp-2">{n.body}</p>
-                        <p className="text-xs text-slate-600 mt-1">
-                          {n.created_at ? new Date(n.created_at).toLocaleDateString() : ""}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
           </div>
         </div>
 
