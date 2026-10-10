@@ -212,6 +212,31 @@ def canonicalize_project(proj: Dict[str, Any]) -> Dict[str, Any]:
                 seen_bullet_keys.add(key)
                 canonical_bullets.append(clean_b)
 
+    # Merge accidental wrapped lines caused by newline splits within a single bullet sentence
+    merged_bullets: List[str] = []
+    for b in canonical_bullets:
+        b_clean = b.strip()
+        if not b_clean:
+            continue
+        if merged_bullets and not merged_bullets[-1].endswith(('.', '!', '?', ':')) and b_clean[0].islower():
+            if merged_bullets[-1].endswith("-"):
+                merged_bullets[-1] = merged_bullets[-1][:-1] + b_clean
+            else:
+                merged_bullets[-1] = merged_bullets[-1] + " " + b_clean
+        else:
+            merged_bullets.append(b_clean)
+
+    # Re-deduplicate merged bullets to guarantee unique canonical list
+    final_canonical_bullets: List[str] = []
+    final_seen_keys: Set[str] = set()
+    for b in merged_bullets:
+        key = _comparison_key(b)
+        if key and key not in final_seen_keys:
+            final_seen_keys.add(key)
+            final_canonical_bullets.append(b)
+
+    canonical_bullets = final_canonical_bullets
+
     # 3. Handle technologies
     raw_tech = proj.get("technologies") or proj.get("tech_stack") or []
     norm_tech = normalize_technologies_list(raw_tech)
