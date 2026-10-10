@@ -24,7 +24,7 @@ else:
         settings.DATABASE_URL.replace("postgres://", "postgresql://", 1).replace("postgresql+asyncpg://", "postgresql://", 1).replace("postgresql://", "postgresql+psycopg2://", 1),
         poolclass=NullPool,
         connect_args={
-            "options": "-c search_path=vidyamarg -c idle_in_transaction_session_timeout=120000 -c lock_timeout=5000"
+            "options": "-c search_path=vidyamarg,public -c idle_in_transaction_session_timeout=120000 -c lock_timeout=5000"
         }
     )
 
