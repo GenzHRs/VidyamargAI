@@ -374,7 +374,26 @@ def get_candidate_dashboard_summary(
         return cached
 
     # 1. Profile Data
-    profile_data = get_candidate_profile(current_user=current_user, db=db)
+    try:
+        profile_data = get_candidate_profile(current_user=current_user, db=db)
+    except Exception as e:
+        logger.warning(f"Error fetching candidate profile in dashboard summary: {e}")
+        db.rollback()
+        profile_data = {
+            "id": candidate.id,
+            "user_id": candidate.user_id,
+            "full_name": candidate.parsed_name or getattr(current_user, "full_name", "Candidate") or "Candidate",
+            "email": candidate.parsed_email or getattr(current_user, "email", "") or "",
+            "phone": candidate.phone or "",
+            "location": candidate.address or "",
+            "address": candidate.address or "",
+            "summary": candidate.summary or "",
+            "experiences": [],
+            "projects": [],
+            "skills": [],
+            "education": [],
+            "certifications": []
+        }
 
     # 2. Roles Data
     roles_data = {
@@ -385,62 +404,64 @@ def get_candidate_dashboard_summary(
         "future": [],
         "leadership": []
     }
-    cand_profile = db.query(CandidateProfile).filter(CandidateProfile.candidate_id == candidate.id).order_by(CandidateProfile.created_at.desc()).first()
-    if cand_profile and cand_profile.generated_roles:
-        r_data = _safe_json_loads(cand_profile.generated_roles)
-        if isinstance(r_data, list):
-            roles_data = {
-                "core": [{"role": r, "confidence": 90 - idx * 2} for idx, r in enumerate(r_data[:3])],
-                "related": [{"role": r, "confidence": 80 - idx * 2} for idx, r in enumerate(r_data[3:6])],
-                "adjacent": [{"role": r, "confidence": 75} for r in r_data[6:10]],
-                "transferable": [],
-                "future": [],
-                "leadership": []
-            }
-        elif isinstance(r_data, dict):
-            roles_data = r_data
+    try:
+        cand_profile = db.query(CandidateProfile).filter(CandidateProfile.candidate_id == candidate.id).order_by(CandidateProfile.created_at.desc()).first()
+        if cand_profile and cand_profile.generated_roles:
+            r_data = _safe_json_loads(cand_profile.generated_roles)
+            if isinstance(r_data, list):
+                roles_data = {
+                    "core": [{"role": r, "confidence": 90 - idx * 2} for idx, r in enumerate(r_data[:3])],
+                    "related": [{"role": r, "confidence": 80 - idx * 2} for idx, r in enumerate(r_data[3:6])],
+                    "adjacent": [{"role": r, "confidence": 75} for r in r_data[6:10]],
+                    "transferable": [],
+                    "future": [],
+                    "leadership": []
+                }
+            elif isinstance(r_data, dict):
+                roles_data = r_data
+    except Exception as e:
+        logger.warning(f"Error fetching candidate generated roles: {e}")
+        db.rollback()
 
     # 3. Skill Gaps Data
-    gaps_obj = db.query(SkillGapAnalysis).filter(SkillGapAnalysis.candidate_id == candidate.id).order_by(SkillGapAnalysis.created_at.desc()).first()
-    if gaps_obj:
-        curr_skills = gaps_obj.current_skills or (candidate.skills or "").split(", ")
-        missing_skills = gaps_obj.missing_skills or ["AWS", "Docker", "Kubernetes"]
-        skill_gaps_data = {
-            "current_skills": curr_skills,
-            "skills_present": curr_skills,
-            "required_skills": gaps_obj.target_role_skills or ["AWS", "Docker", "Kubernetes"],
-            "missing_skills": missing_skills,
-            "skill_gaps": missing_skills,
-            "overall_gap_score": gaps_obj.overall_gap_score or 45.0,
-        }
-    else:
-        curr_skills = (candidate.skills or "").split(", ") if candidate.skills else []
-        skill_gaps_data = {
-            "current_skills": curr_skills,
-            "skills_present": curr_skills,
-            "required_skills": ["AWS", "Docker", "Kubernetes"],
-            "missing_skills": ["AWS", "Docker", "Kubernetes"],
-            "skill_gaps": ["AWS", "Docker", "Kubernetes"],
-            "overall_gap_score": 45.0,
-        }
-
-    # 4. Career Readiness Metrics
-    courses_completed = 0
+    curr_skills = (candidate.skills or "").split(", ") if candidate.skills else []
+    skill_gaps_data = {
+        "current_skills": curr_skills,
+        "skills_present": curr_skills,
+        "required_skills": ["AWS", "Docker", "Kubernetes"],
+        "missing_skills": ["AWS", "Docker", "Kubernetes"],
+        "skill_gaps": ["AWS", "Docker", "Kubernetes"],
+        "overall_gap_score": 45.0,
+    }
     try:
-        enrollments = db.execute(text("SELECT progress FROM enrollments WHERE user_id=:user_id"), {"user_id": current_user.id}).fetchall()
-        courses_completed = sum(1 for e in enrollments if (e[0] or 0) >= 100.0)
-    except Exception:
-        pass
+        gaps_obj = db.query(SkillGapAnalysis).filter(SkillGapAnalysis.candidate_id == candidate.id).order_by(SkillGapAnalysis.created_at.desc()).first()
+        if gaps_obj:
+            curr_skills = getattr(gaps_obj, "current_skills", None) or curr_skills
+            missing_skills = getattr(gaps_obj, "missing_skills", None) or ["AWS", "Docker", "Kubernetes"]
+            req_skills = getattr(gaps_obj, "required_skills", None) or getattr(gaps_obj, "target_role_skills", None) or ["AWS", "Docker", "Kubernetes"]
+            skill_gaps_data = {
+                "current_skills": curr_skills,
+                "skills_present": curr_skills,
+                "required_skills": req_skills,
+                "missing_skills": missing_skills,
+                "skill_gaps": missing_skills,
+                "overall_gap_score": getattr(gaps_obj, "overall_gap_score", 45.0) or 45.0,
+            }
+    except Exception as e:
+        logger.warning(f"Error fetching skill gap analysis: {e}")
+        db.rollback()
 
+    # 4. Career Readiness Metrics (Query CourseProgress ORM model safely)
+    courses_completed = 0
     completed_items = 0
     try:
-        prog_res = db.execute(
-            text('SELECT "videoCompleted", "pdfCompleted", "quizCompleted", "writtenCompleted", "interviewCompleted" FROM user_progress WHERE "userId"=:user_id'),
-            {"user_id": current_user.id}
-        ).fetchall()
-        completed_items = sum(sum(1 for val in p if val) for p in prog_res)
-    except Exception:
-        pass
+        from app.models.models import CourseProgress
+        cp_records = db.query(CourseProgress).filter(CourseProgress.user_id == current_user.id).all()
+        courses_completed = sum(1 for cp in cp_records if (cp.overall_progress or 0) >= 100.0)
+        completed_items = sum(1 for cp in cp_records if (cp.overall_progress or 0) > 0)
+    except Exception as e:
+        logger.warning(f"Error querying course progress: {e}")
+        db.rollback()
 
     readiness_data = {
         "learning_streak": getattr(current_user, "user_streaks", 3) or 3,
@@ -452,17 +473,22 @@ def get_candidate_dashboard_summary(
     }
 
     # 5. Resumes List
-    from app.models.resume_center_models import Resume
-    db_resumes = db.query(Resume).filter(Resume.candidate_id == candidate.id, Resume.deleted_at == None).all()
-    resumes_data = [
-        {
-            "id": r.id,
-            "title": r.title,
-            "file_name": r.file_name,
-            "is_active": r.is_active,
-            "status": r.status
-        } for r in db_resumes
-    ]
+    resumes_data = []
+    try:
+        from app.models.resume_center_models import Resume
+        db_resumes = db.query(Resume).filter(Resume.candidate_id == candidate.id, Resume.deleted_at == None).all()
+        resumes_data = [
+            {
+                "id": r.id,
+                "title": r.title,
+                "file_name": r.file_name,
+                "is_active": r.is_active,
+                "status": r.status
+            } for r in db_resumes
+        ]
+    except Exception as e:
+        logger.warning(f"Error querying resumes: {e}")
+        db.rollback()
 
     result = {
         "profile": profile_data,
@@ -472,7 +498,11 @@ def get_candidate_dashboard_summary(
         "resumes": resumes_data
     }
 
-    set_cached_dashboard_summary(candidate.id, result)
+    try:
+        set_cached_dashboard_summary(candidate.id, result)
+    except Exception as e:
+        logger.debug(f"Redis cache set failed for candidate {candidate.id}: {e}")
+
     return result
 
 

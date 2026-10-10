@@ -24,10 +24,32 @@ export interface DashboardState {
 
 // 60 seconds cache freshness window for warm navigation
 const CACHE_STALE_TIME_MS = 60 * 1000;
+const STORAGE_KEY = "cached_candidate_dashboard_data";
+
+const loadCachedData = (): CareerData | null => {
+  if (typeof window === "undefined") return null;
+  try {
+    const raw = sessionStorage.getItem(STORAGE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    return parsed && typeof parsed === "object" ? parsed : null;
+  } catch {
+    return null;
+  }
+};
+
+const saveCachedData = (data: CareerData) => {
+  if (typeof window === "undefined") return;
+  try {
+    sessionStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  } catch {}
+};
+
+const initialCached = loadCachedData();
 
 export const useDashboardStore = create<DashboardState>((set, get) => ({
-  data: null,
-  lastFetched: null,
+  data: initialCached,
+  lastFetched: initialCached ? Date.now() : null,
   isInitialLoading: false,
   isBackgroundRefreshing: false,
   error: null,
@@ -58,15 +80,17 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
       // 4. Preferred fast path: single aggregated, Redis-cached endpoint
       try {
         const summary = await apiService.getDashboardSummary();
-        if (summary && summary.profile) {
+        if (summary && typeof summary === "object") {
+          const resolvedData: CareerData = {
+            profile: summary.profile || null,
+            roles: summary.roles || null,
+            skillGaps: summary.skillGaps || null,
+            readiness: summary.readiness || null,
+            resumes: Array.isArray(summary.resumes) ? summary.resumes : [],
+          };
+          saveCachedData(resolvedData);
           set({
-            data: {
-              profile: summary.profile,
-              roles: summary.roles,
-              skillGaps: summary.skillGaps,
-              readiness: summary.readiness,
-              resumes: Array.isArray(summary.resumes) ? summary.resumes : [],
-            },
+            data: resolvedData,
             lastFetched: Date.now(),
             isInitialLoading: false,
             isBackgroundRefreshing: false,
@@ -97,6 +121,7 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
           : (data?.resumes || []),
       };
 
+      saveCachedData(resolvedData);
       set({
         data: resolvedData,
         lastFetched: Date.now(),
@@ -115,10 +140,20 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
   },
 
   invalidateDashboard: () => {
+    if (typeof window !== "undefined") {
+      try {
+        sessionStorage.removeItem(STORAGE_KEY);
+      } catch {}
+    }
     set({ lastFetched: null });
   },
 
   reset: () => {
+    if (typeof window !== "undefined") {
+      try {
+        sessionStorage.removeItem(STORAGE_KEY);
+      } catch {}
+    }
     set({
       data: null,
       lastFetched: null,
