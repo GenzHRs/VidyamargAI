@@ -738,19 +738,20 @@ def sync_extraction_to_database(
 
     # 6. Populate ResumeProject
     for idx, proj in enumerate(structured_data.get("projects") or []):
+        canon_p = canonicalize_project(proj)
         db.add(ResumeProject(
             resume_id=resume.id,
-            name=proj.get("name") or "Project",
-            description=proj.get("description"),
-            problem=proj.get("problem"),
-            solution=proj.get("solution"),
-            technologies=proj.get("technologies", []),
-            responsibilities=proj.get("responsibilities", []),
-            features=proj.get("features", []),
-            results_metrics=proj.get("results_metrics", []),
-            duration=proj.get("duration"),
-            link=proj.get("link"),
-            project_type=proj.get("project_type"),
+            name=canon_p.get("name") or canon_p.get("title") or "Project",
+            description=canon_p.get("description"),
+            problem=canon_p.get("problem"),
+            solution=canon_p.get("solution"),
+            technologies=canon_p.get("technologies") or canon_p.get("tech_stack", []),
+            responsibilities=canon_p.get("bullets") or canon_p.get("responsibilities", []),
+            features=[],
+            results_metrics=canon_p.get("results_metrics", []),
+            duration=canon_p.get("dates") or canon_p.get("duration"),
+            link=canon_p.get("link"),
+            project_type=canon_p.get("project_type"),
             sort_order=idx,
             is_verified=resume.is_verified
         ))
@@ -2827,5 +2828,193 @@ async def save_optimized_as_resume(
         "ats_score": opt.ats_score,
         "pdf_url": pdf_url
     }
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# RESUME PROJECTS REPAIR & MAINTENANCE ENDPOINTS
+# ─────────────────────────────────────────────────────────────────────────────
+
+@router.get("/resumes/maintenance/inspect/{target_resume_id}")
+def inspect_resume_for_maintenance(
+    target_resume_id: int,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Diagnostic endpoint to inspect stored project data, bullet counts,
+    and canonicalization diffs for a specific resume.
+    """
+    resume = db.query(Resume).filter(Resume.id == target_resume_id).first()
+    if not resume:
+        raise HTTPException(status_code=404, detail="Resume not found")
+
+    cand = db.query(Candidate).filter(Candidate.id == resume.candidate_id).first()
+    cand_user = db.query(User).filter(User.id == cand.user_id).first() if cand else None
+
+    # Get active or latest version
+    version = None
+    if resume.current_version_id:
+        version = db.query(ResumeVersion).filter(ResumeVersion.id == resume.current_version_id).first()
+    if not version:
+        version = db.query(ResumeVersion).filter(ResumeVersion.resume_id == resume.id).order_by(ResumeVersion.version_number.desc()).first()
+
+    raw_projs = []
+    if version and version.structured_data and isinstance(version.structured_data, dict):
+        raw_projs = version.structured_data.get("projects") or []
+
+    canon_projs = canonicalize_projects_list(raw_projs)
+
+    # Check database table projects
+    db_projs = db.query(ResumeProject).filter(ResumeProject.resume_id == resume.id).all()
+    db_projs_list = [
+        {
+            "id": p.id,
+            "name": p.name,
+            "description": p.description,
+            "responsibilities_count": len(p.responsibilities or []),
+            "responsibilities": p.responsibilities or [],
+            "features_count": len(p.features or []),
+            "features": p.features or [],
+            "technologies": p.technologies or []
+        }
+        for p in db_projs
+    ]
+
+    return {
+        "resume_id": resume.id,
+        "title": resume.title,
+        "candidate_id": resume.candidate_id,
+        "user_email": cand_user.email if cand_user else None,
+        "user_id": cand_user.id if cand_user else None,
+        "status": resume.status,
+        "latest_pdf_url": resume.latest_pdf_url,
+        "version_number": version.version_number if version else None,
+        "raw_projects_count": len(raw_projs),
+        "raw_projects": raw_projs,
+        "canonical_projects": canon_projs,
+        "has_duplication_in_version": raw_projs != canon_projs,
+        "db_projects_table": db_projs_list
+    }
+
+
+@router.post("/resumes/maintenance/repair-projects")
+def run_repair_projects_endpoint(
+    apply: bool = Query(False, description="Apply changes to the database and invalidate stale caches. Default false (dry-run)."),
+    resume_id: Optional[int] = Query(None, description="Optional specific resume ID to target."),
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Triggers safe project deduplication repair and cache invalidation.
+    Supports dry-run preview and live commit with structured response.
+    """
+    import sys
+    from pathlib import Path
+    backend_root = str(Path(__file__).resolve().parent.parent.parent.parent)
+    if backend_root not in sys.path:
+        sys.path.insert(0, backend_root)
+
+    try:
+        from repair_resume_projects import repair_in_session
+    except ImportError:
+        raise HTTPException(status_code=500, detail="repair_resume_projects module not found")
+
+    result = repair_in_session(session=db, apply_changes=apply, target_resume_id=resume_id, log_output=False)
+    return result
+
+
+@router.post("/resumes/maintenance/compile/{target_resume_id}")
+def compile_resume_maintenance(
+    target_resume_id: int,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Direct maintenance compilation endpoint that ensures canonicalization,
+    re-renders LaTeX and fallback PDF, and invalidates/updates the cache.
+    """
+    resume = db.query(Resume).filter(Resume.id == target_resume_id).first()
+    if not resume:
+        raise HTTPException(status_code=404, detail="Resume not found")
+
+    version = None
+    if resume.current_version_id:
+        version = db.query(ResumeVersion).filter(ResumeVersion.id == resume.current_version_id).first()
+    if not version:
+        version = db.query(ResumeVersion).filter(ResumeVersion.resume_id == resume.id).order_by(ResumeVersion.version_number.desc()).first()
+    if not version:
+        raise HTTPException(status_code=400, detail="No resume version found")
+
+    # Ensure canonical projects in structured data
+    if version.structured_data and isinstance(version.structured_data, dict):
+        raw_projs = version.structured_data.get("projects") or []
+        canon_projs = canonicalize_projects_list(raw_projs)
+        updated_sd = dict(version.structured_data)
+        updated_sd["projects"] = canon_projs
+        version.structured_data = updated_sd
+
+    tmpl = db.query(ResumeTemplate).filter(ResumeTemplate.id == resume.template_id).first()
+    tmpl_slug = tmpl.slug if tmpl else "ats-classic"
+
+    # Render LaTeX
+    latex_source = render_resume_to_latex(version.structured_data, tmpl.latex_template if tmpl else "")
+    version.latex_source = latex_source
+
+    # Render PDF via fallback / reportlab
+    pdf_bytes = render_structured_data_to_pdf(version.structured_data, resume.title, template_slug=tmpl_slug)
+    user_folder = get_user_folder_name(current_user)
+    pdf_filename = f"resume_{resume.id}_v{version.version_number}_compiled.pdf"
+    pdf_url = storage_service.upload_file(
+        folder=f"{user_folder}/resumes",
+        filename=pdf_filename,
+        content=pdf_bytes,
+        mime_type="application/pdf"
+    )
+
+    resume.latest_pdf_url = pdf_url
+    resume.status = "COMPLETED"
+    version.pdf_file_url = pdf_url
+
+    db.commit()
+    db.refresh(resume)
+
+    return {
+        "message": "Resume successfully compiled with canonicalized projects.",
+        "resume_id": resume.id,
+        "title": resume.title,
+        "latest_pdf_url": pdf_url,
+        "pdf_size": len(pdf_bytes),
+        "projects_count": len(version.structured_data.get("projects", []))
+    }
+
+
+@router.get("/resumes/maintenance/preview-pdf/{target_resume_id}")
+def preview_pdf_maintenance(
+    target_resume_id: int,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Downloads the freshly compiled PDF bytes directly for verification.
+    """
+    resume = db.query(Resume).filter(Resume.id == target_resume_id).first()
+    if not resume:
+        raise HTTPException(status_code=404, detail="Resume not found")
+
+    version = None
+    if resume.current_version_id:
+        version = db.query(ResumeVersion).filter(ResumeVersion.id == resume.current_version_id).first()
+    if not version:
+        version = db.query(ResumeVersion).filter(ResumeVersion.resume_id == resume.id).order_by(ResumeVersion.version_number.desc()).first()
+
+    tmpl = db.query(ResumeTemplate).filter(ResumeTemplate.id == resume.template_id).first()
+    tmpl_slug = tmpl.slug if tmpl else "ats-classic"
+
+    pdf_bytes = render_structured_data_to_pdf(version.structured_data, resume.title, template_slug=tmpl_slug)
+    return Response(
+        content=pdf_bytes,
+        media_type="application/pdf",
+        headers={"Content-Disposition": f'inline; filename="resume_{resume.id}.pdf"'}
+    )
 
 

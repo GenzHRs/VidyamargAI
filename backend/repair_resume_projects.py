@@ -65,8 +65,12 @@ def preview_project_change(source: str, record_id: Any, before_proj: Dict[str, A
     print(f"================================================================================\n")
 
 
-def run_repair(apply_changes: bool = False, target_resume_id: int = None) -> None:
-    session = SessionLocal()
+def repair_in_session(
+    session,
+    apply_changes: bool = False,
+    target_resume_id: int = None,
+    log_output: bool = True
+) -> Dict[str, Any]:
     backup_data: Dict[str, List[Any]] = {
         "timestamp": datetime.utcnow().isoformat(),
         "resume_versions": [],
@@ -85,201 +89,257 @@ def run_repair(apply_changes: bool = False, target_resume_id: int = None) -> Non
     }
 
     affected_resume_ids: Set[int] = set()
+    changes_log: List[Dict[str, Any]] = []
 
-    try:
-        # 1. Inspect ResumeVersion records (The direct data source consumed by PDF compilation)
-        v_query = session.query(ResumeVersion)
-        if target_resume_id:
-            v_query = v_query.filter(ResumeVersion.resume_id == target_resume_id)
-        versions = v_query.all()
+    # 1. Inspect ResumeVersion records (The direct data source consumed by PDF compilation)
+    v_query = session.query(ResumeVersion)
+    if target_resume_id:
+        v_query = v_query.filter(ResumeVersion.resume_id == target_resume_id)
+    versions = v_query.all()
 
-        for ver in versions:
-            s_data = ver.structured_data
-            if not isinstance(s_data, dict) or "projects" not in s_data:
-                continue
+    for ver in versions:
+        s_data = ver.structured_data
+        if not isinstance(s_data, dict) or "projects" not in s_data:
+            continue
 
-            raw_projs = s_data.get("projects") or []
-            if not isinstance(raw_projs, list):
-                continue
+        raw_projs = s_data.get("projects") or []
+        if not isinstance(raw_projs, list):
+            continue
 
-            canon_projs = canonicalize_projects_list(raw_projs)
-            if canon_projs != raw_projs:
-                modified_counts["resume_versions"] += 1
-                affected_resume_ids.add(ver.resume_id)
+        canon_projs = canonicalize_projects_list(raw_projs)
+        if canon_projs != raw_projs:
+            modified_counts["resume_versions"] += 1
+            affected_resume_ids.add(ver.resume_id)
 
-                # Show preview for each changed project in this version
-                for orig_p, new_p in zip(raw_projs, canon_projs):
-                    if orig_p != new_p:
+            for orig_p, new_p in zip(raw_projs, canon_projs):
+                if orig_p != new_p:
+                    if log_output:
                         preview_project_change(f"ResumeVersion (v{ver.version_number})", ver.id, orig_p, new_p)
+                    changes_log.append({
+                        "source": f"ResumeVersion (v{ver.version_number})",
+                        "record_id": ver.id,
+                        "resume_id": ver.resume_id,
+                        "project_name": orig_p.get("name") or orig_p.get("title") or "Untitled Project",
+                        "before_bullets": orig_p.get("bullets") or orig_p.get("responsibilities") or [],
+                        "after_bullets": new_p.get("bullets") or [],
+                        "before_tech": orig_p.get("technologies") or orig_p.get("tech_stack") or [],
+                        "after_tech": new_p.get("tech_stack") or new_p.get("technologies") or []
+                    })
 
-                backup_data["resume_versions"].append({
-                    "version_id": ver.id,
-                    "resume_id": ver.resume_id,
-                    "version_number": ver.version_number,
-                    "structured_data": ver.structured_data,
-                    "latex_source": ver.latex_source,
-                    "pdf_file_url": ver.pdf_file_url
-                })
+            backup_data["resume_versions"].append({
+                "version_id": ver.id,
+                "resume_id": ver.resume_id,
+                "version_number": ver.version_number,
+                "structured_data": ver.structured_data,
+                "latex_source": ver.latex_source,
+                "pdf_file_url": ver.pdf_file_url
+            })
 
-                if apply_changes:
-                    updated_sd = dict(s_data)
-                    updated_sd["projects"] = canon_projs
-                    ver.structured_data = updated_sd
+            if apply_changes:
+                updated_sd = dict(s_data)
+                updated_sd["projects"] = canon_projs
+                ver.structured_data = updated_sd
 
-                    # Re-render LaTeX source for this version
-                    resume_rec = session.query(Resume).filter(Resume.id == ver.resume_id).first()
-                    tmpl = session.query(ResumeTemplate).filter(ResumeTemplate.id == resume_rec.template_id).first() if resume_rec else None
-                    ver.latex_source = render_resume_to_latex(updated_sd, tmpl.latex_template if tmpl else "")
+                # Re-render LaTeX source for this version
+                resume_rec = session.query(Resume).filter(Resume.id == ver.resume_id).first()
+                tmpl = session.query(ResumeTemplate).filter(ResumeTemplate.id == resume_rec.template_id).first() if resume_rec else None
+                ver.latex_source = render_resume_to_latex(updated_sd, tmpl.latex_template if tmpl else "")
+                ver.pdf_file_url = None
 
-                    # Invalidate cached compiled PDF for this version
-                    ver.pdf_file_url = None
+    # 2. Inspect ResumeProject table records
+    p_query = session.query(ResumeProject)
+    if target_resume_id:
+        p_query = p_query.filter(ResumeProject.resume_id == target_resume_id)
+    db_projects = p_query.all()
 
-        # 2. Inspect ResumeProject table records
-        p_query = session.query(ResumeProject)
-        if target_resume_id:
-            p_query = p_query.filter(ResumeProject.resume_id == target_resume_id)
-        db_projects = p_query.all()
+    for proj in db_projects:
+        proj_dict = {
+            "name": proj.name,
+            "description": proj.description,
+            "responsibilities": proj.responsibilities or [],
+            "bullets": proj.responsibilities or [],
+            "features": proj.features or [],
+            "technologies": proj.technologies or []
+        }
+        norm_proj = canonicalize_project(proj_dict)
 
-        for proj in db_projects:
-            proj_dict = {
-                "name": proj.name,
-                "description": proj.description,
-                "responsibilities": proj.responsibilities or [],
-                "bullets": proj.responsibilities or [],
-                "features": proj.features or [],
-                "technologies": proj.technologies or []
-            }
-            norm_proj = canonicalize_project(proj_dict)
+        changed = (
+            proj.description != norm_proj.get("description") or
+            proj.responsibilities != norm_proj.get("bullets") or
+            (proj.features is not None and len(proj.features) > 0) or
+            proj.technologies != norm_proj.get("technologies")
+        )
 
-            changed = (
-                proj.description != norm_proj.get("description") or
-                proj.responsibilities != norm_proj.get("bullets") or
-                proj.features != [] or
-                proj.technologies != norm_proj.get("technologies")
-            )
-
-            if changed:
-                modified_counts["resume_projects"] += 1
-                affected_resume_ids.add(proj.resume_id)
+        if changed:
+            modified_counts["resume_projects"] += 1
+            affected_resume_ids.add(proj.resume_id)
+            if log_output:
                 preview_project_change("ResumeProject Table", proj.id, proj_dict, norm_proj)
 
-                backup_data["resume_projects"].append({
-                    "id": proj.id,
-                    "resume_id": proj.resume_id,
-                    "name": proj.name,
-                    "description": proj.description,
-                    "responsibilities": proj.responsibilities,
-                    "features": proj.features,
-                    "technologies": proj.technologies
-                })
+            changes_log.append({
+                "source": "ResumeProject Table",
+                "record_id": proj.id,
+                "resume_id": proj.resume_id,
+                "project_name": proj.name or "Untitled Project",
+                "before_bullets": proj.responsibilities or [],
+                "after_bullets": norm_proj.get("bullets") or [],
+                "before_tech": proj.technologies or [],
+                "after_tech": norm_proj.get("technologies") or []
+            })
 
-                if apply_changes:
-                    proj.description = norm_proj.get("description")
-                    proj.responsibilities = norm_proj.get("bullets")
-                    proj.features = []
-                    proj.technologies = norm_proj.get("technologies")
+            backup_data["resume_projects"].append({
+                "id": proj.id,
+                "resume_id": proj.resume_id,
+                "name": proj.name,
+                "description": proj.description,
+                "responsibilities": proj.responsibilities,
+                "features": proj.features,
+                "technologies": proj.technologies
+            })
 
-        # 3. Inspect ResumeExtraction records
-        ext_query = session.query(ResumeExtraction)
-        if target_resume_id:
-            ext_query = ext_query.filter(ResumeExtraction.resume_id == target_resume_id)
-        extractions = ext_query.all()
+            if apply_changes:
+                proj.description = norm_proj.get("description")
+                proj.responsibilities = norm_proj.get("bullets")
+                proj.features = []
+                proj.technologies = norm_proj.get("technologies")
 
-        for ext in extractions:
-            s_data = ext.structured_data
-            if not isinstance(s_data, dict) or "projects" not in s_data:
-                continue
+    # 3. Inspect ResumeExtraction records
+    ext_query = session.query(ResumeExtraction)
+    if target_resume_id:
+        ext_query = ext_query.filter(ResumeExtraction.resume_id == target_resume_id)
+    extractions = ext_query.all()
 
-            projs = s_data.get("projects") or []
-            if not isinstance(projs, list):
-                continue
+    for ext in extractions:
+        s_data = ext.structured_data
+        if not isinstance(s_data, dict) or "projects" not in s_data:
+            continue
 
-            canon_projs = canonicalize_projects_list(projs)
-            if canon_projs != projs:
-                modified_counts["resume_extractions"] += 1
-                affected_resume_ids.add(ext.resume_id)
+        projs = s_data.get("projects") or []
+        if not isinstance(projs, list):
+            continue
 
-                for orig_p, new_p in zip(projs, canon_projs):
-                    if orig_p != new_p:
+        canon_projs = canonicalize_projects_list(projs)
+        if canon_projs != projs:
+            modified_counts["resume_extractions"] += 1
+            affected_resume_ids.add(ext.resume_id)
+
+            for orig_p, new_p in zip(projs, canon_projs):
+                if orig_p != new_p:
+                    if log_output:
                         preview_project_change("ResumeExtraction JSON", ext.id, orig_p, new_p)
 
-                backup_data["resume_extractions"].append({
-                    "id": ext.id,
-                    "resume_id": ext.resume_id,
-                    "structured_data_projects": projs
+            backup_data["resume_extractions"].append({
+                "id": ext.id,
+                "resume_id": ext.resume_id,
+                "structured_data_projects": projs
+            })
+
+            if apply_changes:
+                updated_data = dict(s_data)
+                updated_data["projects"] = canon_projs
+                ext.structured_data = updated_data
+
+    # 4. Inspect Candidate.projects records
+    cand_query = session.query(Candidate)
+    if target_resume_id:
+        target_res = session.query(Resume).filter(Resume.id == target_resume_id).first()
+        if target_res:
+            cand_query = cand_query.filter(Candidate.id == target_res.candidate_id)
+        else:
+            cand_query = cand_query.filter(Candidate.id == -1)
+
+    for cand in cand_query.all():
+        if not cand.projects:
+            continue
+        try:
+            cand_projs = json.loads(cand.projects) if isinstance(cand.projects, str) else cand.projects
+            if not isinstance(cand_projs, list):
+                continue
+
+            canon_cand_projs = canonicalize_projects_list(cand_projs)
+            if canon_cand_projs != cand_projs:
+                modified_counts["candidate_projects"] += 1
+                for orig_p, new_p in zip(cand_projs, canon_cand_projs):
+                    if orig_p != new_p:
+                        if log_output:
+                            preview_project_change("Candidate.projects Field", cand.id, orig_p, new_p)
+
+                backup_data["candidate_projects"].append({
+                    "candidate_id": cand.id,
+                    "projects": cand.projects
                 })
 
                 if apply_changes:
-                    updated_data = dict(s_data)
-                    updated_data["projects"] = canon_projs
-                    ext.structured_data = updated_data
+                    cand.projects = json.dumps(canon_cand_projs)
+        except Exception:
+            pass
 
-        # 4. Inspect Candidate.projects records
-        if not target_resume_id:
-            candidates = session.query(Candidate).all()
-            for cand in candidates:
-                if not cand.projects:
-                    continue
-                try:
-                    cand_projs = json.loads(cand.projects) if isinstance(cand.projects, str) else cand.projects
-                    if not isinstance(cand_projs, list):
-                        continue
-
-                    canon_cand_projs = canonicalize_projects_list(cand_projs)
-                    if canon_cand_projs != cand_projs:
-                        modified_counts["candidate_projects"] += 1
-                        for orig_p, new_p in zip(cand_projs, canon_cand_projs):
-                            if orig_p != new_p:
-                                preview_project_change("Candidate.projects Field", cand.id, orig_p, new_p)
-
-                        backup_data["candidate_projects"].append({
-                            "candidate_id": cand.id,
-                            "projects": cand.projects
-                        })
-
-                        if apply_changes:
-                            cand.projects = json.dumps(canon_cand_projs)
-                except Exception:
-                    pass
-
-        # 5. Invalidate cached generated PDF for affected resumes
-        for r_id in affected_resume_ids:
-            res_rec = session.query(Resume).filter(Resume.id == r_id).first()
-            if res_rec and res_rec.latest_pdf_url:
+    # 5. Invalidate cached generated PDF for affected resumes
+    for r_id in affected_resume_ids:
+        res_rec = session.query(Resume).filter(Resume.id == r_id).first()
+        if res_rec:
+            if res_rec.latest_pdf_url:
                 modified_counts["invalidated_resumes"] += 1
                 backup_data["invalidated_resumes"].append({
                     "resume_id": res_rec.id,
                     "latest_pdf_url": res_rec.latest_pdf_url
                 })
-                print(f"[CACHE INVALIDATION] Resume ID {r_id}: invalidating stale latest_pdf_url ({res_rec.latest_pdf_url})")
-                if apply_changes:
-                    res_rec.latest_pdf_url = None
-                    res_rec.status = "DRAFT"
+                if log_output:
+                    print(f"[CACHE INVALIDATION] Resume ID {r_id}: invalidating stale latest_pdf_url ({res_rec.latest_pdf_url})")
+            if apply_changes:
+                res_rec.latest_pdf_url = None
+                res_rec.status = "DRAFT"
 
-        total_affected = sum(modified_counts.values())
+    total_affected = sum(modified_counts.values())
+    backup_file = None
 
-        if apply_changes:
-            if total_affected > 0:
-                backup_dir = os.path.join(os.path.dirname(__file__), "backups")
-                os.makedirs(backup_dir, exist_ok=True)
-                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                backup_file = os.path.join(backup_dir, f"resume_projects_backup_{timestamp}.json")
-                with open(backup_file, "w", encoding="utf-8") as f:
-                    json.dump(backup_data, f, indent=2)
+    if apply_changes and total_affected > 0:
+        try:
+            backup_dir = os.path.join(os.path.dirname(__file__), "backups")
+            os.makedirs(backup_dir, exist_ok=True)
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            backup_file = os.path.join(backup_dir, f"resume_projects_backup_{timestamp}.json")
+            with open(backup_file, "w", encoding="utf-8") as f:
+                json.dump(backup_data, f, indent=2)
+        except Exception as be:
+            if log_output:
+                print(f"Warning: could not write local backup file: {be}")
 
-                session.commit()
-                print(f"\n[APPLIED REPAIRS SUCCESSFULLY]")
+        session.commit()
+        if log_output:
+            print(f"\n[APPLIED REPAIRS SUCCESSFULLY]")
+            if backup_file:
                 print(f"Saved backup of original data to: {backup_file}")
-                print(f"Summary of modified records: {json.dumps(modified_counts, indent=2)}")
-            else:
-                print("\n[NO AFFECTED RECORDS FOUND] All existing records are already normalized and clean.")
-        else:
+            print(f"Summary of modified records: {json.dumps(modified_counts, indent=2)}")
+    elif not apply_changes:
+        if log_output:
             print(f"\n[DRY RUN COMPLETED]")
             print(f"Total affected records identified: {total_affected}")
             print(f"Breakdown by category: {json.dumps(modified_counts, indent=2)}")
             if total_affected > 0:
                 print("Run with '--apply' to write backup, apply repairs, and invalidate stale PDF caches.")
 
+    return {
+        "applied": apply_changes,
+        "target_resume_id": target_resume_id,
+        "total_affected": total_affected,
+        "modified_counts": modified_counts,
+        "affected_resume_ids": sorted(list(affected_resume_ids)),
+        "backup_file": backup_file,
+        "backup_data": backup_data if total_affected > 0 else {},
+        "changes_log": changes_log
+    }
+
+
+def run_repair(apply_changes: bool = False, target_resume_id: int = None) -> Dict[str, Any]:
+    session = SessionLocal()
+    try:
+        return repair_in_session(
+            session=session,
+            apply_changes=apply_changes,
+            target_resume_id=target_resume_id,
+            log_output=True
+        )
     except Exception as e:
         session.rollback()
         print(f"Error during repair execution: {e}")
@@ -297,3 +357,4 @@ if __name__ == "__main__":
 
     should_apply = args.apply and not args.dry_run
     run_repair(apply_changes=should_apply, target_resume_id=args.resume_id)
+
