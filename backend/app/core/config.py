@@ -78,7 +78,12 @@ class Settings(BaseSettings):
     GROQ_FALLBACK_MODEL: str = "openai/gpt-oss-20b"
     ADMIN_REGISTRATION_KEY: str = ""
     HR_SYNC_SECRET: str = ""
-    CORS_ORIGINS: list[str] = ["http://localhost:3000", "http://127.0.0.1:3000"]
+    CORS_ORIGINS: list[str] = [
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "https://vidyamarg-ai-nzud.vercel.app",
+        "https://vidyamargai-production-2c1f.up.railway.app",
+    ]
     SCHEDULER_ENABLED: bool = False
     RATE_LIMIT_STORAGE_URI: str = "memory://"
     STORAGE_DIR: str = "storage"

@@ -41,8 +41,14 @@ async def lifespan(app):
 app = FastAPI(title="VidyaMarg AI Career OS API", version="2.0.1", lifespan=lifespan)
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
-app.add_middleware(CORSMiddleware, allow_origins=settings.CORS_ORIGINS,
-                   allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=settings.CORS_ORIGINS,
+    allow_origin_regex=r"https://.*\.vercel\.app",
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 app.include_router(legacy_api_router, prefix="/api/v1")
 app.include_router(candidate_router)
 app.include_router(sync_router, prefix="/api/v1")
@@ -78,7 +84,12 @@ async def websocket_endpoint(websocket: WebSocket, client_id: str):
     # Token is sent in the first frame, not a logged URL query parameter.
     from app.core.ws import manager
     origin = websocket.headers.get("origin")
-    if origin and origin not in settings.CORS_ORIGINS:
+    is_valid_origin = (
+        not origin 
+        or origin in settings.CORS_ORIGINS 
+        or (origin.startswith("https://") and origin.endswith(".vercel.app"))
+    )
+    if not is_valid_origin:
         await websocket.close(code=1008)
         return
     await websocket.accept()
