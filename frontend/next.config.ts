@@ -5,8 +5,8 @@ const nextConfig: NextConfig = {
   allowedDevOrigins: ["localhost", "127.0.0.1", "192.168.1.7"],
   env: {
     // Public values are embedded at build time.
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api/v1",
-    NEXT_PUBLIC_WS_URL: process.env.NEXT_PUBLIC_WS_URL || "ws://localhost:8000/ws",
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || "https://vidyamargai-production-2c1f.up.railway.app/api/v1",
+    NEXT_PUBLIC_WS_URL: process.env.NEXT_PUBLIC_WS_URL || "wss://vidyamargai-production-2c1f.up.railway.app/ws",
   },
   images: {
     formats: ["image/avif", "image/webp"],
