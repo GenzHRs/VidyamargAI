@@ -21,9 +21,11 @@ import {
   Link as LinkIcon,
 } from "lucide-react";
 
+import { useGlobalTheme } from "@/utils/themeUtils";
+
 export default function SettingsPage() {
   const { fullName, email, updateUser } = useAuthStore();
-  const [theme, setTheme] = useState<"dark" | "light">("light");
+  const { theme, setTheme } = useGlobalTheme();
   const [notifications, setNotifications] = useState({
     jobMatches: true,
     courseRecommendations: true,
@@ -36,22 +38,11 @@ export default function SettingsPage() {
   const [activeSection, setActiveSection] = useState<"profile" | "appearance" | "notifications" | "privacy">("profile");
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") as "dark" | "light" | null;
-    if (savedTheme) setTheme(savedTheme);
     apiService.getProfile().then(setProfile).catch(() => {});
   }, []);
 
   const applyTheme = (t: "dark" | "light") => {
     setTheme(t);
-    localStorage.setItem("theme", t);
-    if (t === "light") {
-      document.documentElement.classList.add("light-theme");
-      document.documentElement.classList.remove("dark");
-    } else {
-      document.documentElement.classList.remove("light-theme");
-      document.documentElement.classList.add("dark");
-    }
-    apiService.updatePreferences(t).catch(() => {});
   };
 
   const handleSave = async () => {

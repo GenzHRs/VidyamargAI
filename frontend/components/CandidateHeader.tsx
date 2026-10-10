@@ -13,6 +13,8 @@ import {
   Moon,
 } from "lucide-react";
 
+import { useGlobalTheme } from "@/utils/themeUtils";
+
 interface CandidateHeaderProps {
   /** Whether the AI agent panel is currently open — supplied by CandidateLayout. */
   isAgentOpen?: boolean;
@@ -25,45 +27,9 @@ export default function CandidateHeader({ isAgentOpen, onToggleAgent }: Candidat
   // Read unread badge from the global store — single source of truth.
   const hasAgentUnread = useGlobalAgentStore((state) => state.hasUnread);
 
-  const [theme, setTheme] = useState<"dark" | "light">("light");
+  const { theme, toggleTheme } = useGlobalTheme();
   const [unreadNotifications, setUnreadNotifications] = useState(0);
   const [notificationsOpen, setNotificationsOpen] = useState(false);
-
-  useEffect(() => {
-    // Initialise theme from localStorage.
-    const savedTheme = (localStorage.getItem("theme") as "dark" | "light") || "light";
-    setTheme(savedTheme);
-
-    // Listen for storage events so that the theme toggle in the agent panel
-    // (which writes to localStorage) is reflected here too.
-    const handleStorage = () => {
-      const t = (localStorage.getItem("theme") as "dark" | "light") || "light";
-      setTheme(t);
-    };
-    window.addEventListener("storage", handleStorage);
-    return () => window.removeEventListener("storage", handleStorage);
-  }, []);
-
-  const toggleTheme = async () => {
-    const nextTheme = theme === "dark" ? "light" : "dark";
-    setTheme(nextTheme);
-    localStorage.setItem("theme", nextTheme);
-
-    if (nextTheme === "light") {
-      document.documentElement.classList.add("light-theme");
-      document.documentElement.classList.remove("dark");
-    } else {
-      document.documentElement.classList.remove("light-theme");
-      document.documentElement.classList.add("dark");
-    }
-
-    try {
-      const token = localStorage.getItem("token");
-      if (token) await apiService.updatePreferences(nextTheme);
-    } catch (err) {
-      console.error("Failed to save theme preference:", err);
-    }
-  };
 
   const handleOpenAgent = () => {
     if (onToggleAgent) {

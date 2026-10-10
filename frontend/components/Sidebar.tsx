@@ -27,6 +27,8 @@ import {
   ChevronRight,
 } from "lucide-react";
 
+import { useGlobalTheme } from "@/utils/themeUtils";
+
 interface SidebarProps {
   portal: "candidate" | "admin";
 }
@@ -53,13 +55,7 @@ export default function Sidebar({ portal }: SidebarProps) {
   const pathname = usePathname();
   const router = useRouter();
   const { logout, fullName, email } = useAuthStore();
-  const [theme, setTheme] = useState<"dark" | "light">(() => {
-    if (typeof window !== "undefined") {
-      const saved = localStorage.getItem("theme");
-      if (saved === "dark" || saved === "light") return saved;
-    }
-    return "light";
-  });
+  const { theme, toggleTheme, setTheme } = useGlobalTheme();
   const [collapsed, setCollapsed] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -69,11 +65,8 @@ export default function Sidebar({ portal }: SidebarProps) {
         const token = localStorage.getItem("token");
         if (!token) return;
         const prefs = await apiService.getPreferences();
-        if (prefs && prefs.theme) {
-          const fetchedTheme = prefs.theme as "dark" | "light";
-          setTheme(fetchedTheme);
-          localStorage.setItem("theme", fetchedTheme);
-          applyTheme(fetchedTheme);
+        if (prefs && prefs.theme && (prefs.theme === "dark" || prefs.theme === "light")) {
+          setTheme(prefs.theme as "dark" | "light");
         }
       } catch (err) {
         console.error("Failed to fetch user preferences:", err);
@@ -82,43 +75,11 @@ export default function Sidebar({ portal }: SidebarProps) {
 
     fetchPreferences();
 
-    const savedTheme = localStorage.getItem("theme") as "dark" | "light" | null;
-    if (savedTheme) {
-      setTimeout(() => setTheme(savedTheme), 0);
-      applyTheme(savedTheme);
-    } else {
-      applyTheme("light");
-      localStorage.setItem("theme", "light");
-    }
-
     const savedCollapsed = localStorage.getItem("sidebar_collapsed");
     if (savedCollapsed === "true") {
       setTimeout(() => setCollapsed(true), 0);
     }
   }, []);
-
-  const applyTheme = (t: "dark" | "light") => {
-    if (t === "light") {
-      document.documentElement.classList.add("light-theme");
-      document.documentElement.classList.remove("dark");
-    } else {
-      document.documentElement.classList.remove("light-theme");
-      document.documentElement.classList.add("dark");
-    }
-  };
-
-  const toggleTheme = async () => {
-    const nextTheme = theme === "dark" ? "light" : "dark";
-    setTheme(nextTheme);
-    localStorage.setItem("theme", nextTheme);
-    applyTheme(nextTheme);
-    try {
-      const token = localStorage.getItem("token");
-      if (token) await apiService.updatePreferences(nextTheme);
-    } catch (err) {
-      console.error("Failed to save user theme preference:", err);
-    }
-  };
 
   const toggleCollapsed = () => {
     const next = !collapsed;
