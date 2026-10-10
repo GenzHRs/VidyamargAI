@@ -14,12 +14,15 @@ class Settings(BaseSettings):
     API_V1_STR: str = "/api/v1"
     
     # Security
-    SECRET_KEY: str = Field(min_length=32)
+    SECRET_KEY: str = Field(
+        default="vidyamarg_ai_default_secret_key_production_fallback_32bytes_min",
+        min_length=32
+    )
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 15  # 15 minutes
     
-    # Database (Fallback to production Railway PostgreSQL)
-    DATABASE_URL: str
+    # Database (Fallback to local SQLite if not provided in environment)
+    DATABASE_URL: str = "sqlite:///./vidyamarg.db"
     
     # Storage (MinIO / S3)
     MINIO_ENDPOINT: str = os.getenv("MINIO_ENDPOINT", "")
