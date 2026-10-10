@@ -6,10 +6,15 @@ import { apiService } from "@/services/api";
 export type ThemeMode = "dark" | "light";
 
 export const getStoredTheme = (): ThemeMode => {
-  if (typeof window === "undefined") return "dark";
+  if (typeof window === "undefined") return "light";
   const saved = localStorage.getItem("theme");
-  if (saved === "dark" || saved === "light") return saved;
-  if (window.matchMedia("(prefers-color-scheme: dark)").matches) return "dark";
+  if (saved === "dark") return "dark";
+  if (saved === "light") return "light";
+  // "system" or missing: resolve from prefers-color-scheme but do NOT persist yet
+  if (saved === "system") {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  // No value stored at all → default to light
   return "light";
 };
 

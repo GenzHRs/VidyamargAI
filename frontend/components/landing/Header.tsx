@@ -1,61 +1,30 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Sparkles, GraduationCap, Menu, X, Sun, Moon, Monitor } from "lucide-react";
+import { Sparkles, GraduationCap, Menu, X, Sun, Moon } from "lucide-react";
 import { usePageTransition } from "./PageTransitionOverlay";
 import { motion, AnimatePresence } from "framer-motion";
+import { useGlobalTheme } from "@/utils/themeUtils";
 
 export default function Header() {
   const { startTransition } = usePageTransition();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
-  const [theme, setTheme] = useState<"light" | "dark" | "system">("system");
+
+  // Single global theme source — reads/writes localStorage, applies class to <html>
+  const { theme, setTheme } = useGlobalTheme();
   const [themeDropdownOpen, setThemeDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const savedTheme = (localStorage.getItem("theme") as "light" | "dark" | "system") || "system";
-      setTheme(savedTheme);
-    }
-  }, []);
-
-  const handleThemeChange = (newTheme: "light" | "dark" | "system") => {
+  const handleThemeChange = (newTheme: "light" | "dark") => {
     setTheme(newTheme);
-    localStorage.setItem("theme", newTheme);
-    
-    const root = document.documentElement;
-    if (newTheme === "dark") {
-      root.classList.add("dark");
-      root.classList.remove("light-theme");
-    } else if (newTheme === "light") {
-      root.classList.add("light-theme");
-      root.classList.remove("dark");
-    } else {
-      const isDarkSystem = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      if (isDarkSystem) {
-        root.classList.add("dark");
-        root.classList.remove("light-theme");
-      } else {
-        root.classList.add("light-theme");
-        root.classList.remove("dark");
-      }
-    }
-    
-    // Notify other components (like CanvasBackground)
-    window.dispatchEvent(new Event("storage"));
     setThemeDropdownOpen(false);
   };
 
@@ -119,7 +88,7 @@ export default function Header() {
 
         {/* DESKTOP CTAS */}
         <div className="hidden md:flex items-center gap-4">
-          {/* Theme Dropdown */}
+          {/* Theme Dropdown — Light / Dark only */}
           <div className="relative">
             <button
               onClick={() => setThemeDropdownOpen(!themeDropdownOpen)}
@@ -129,7 +98,6 @@ export default function Header() {
             >
               {theme === "light" && <Sun className="w-4 h-4 text-amber-500" />}
               {theme === "dark" && <Moon className="w-4 h-4 text-purple-400" />}
-              {theme === "system" && <Monitor className="w-4 h-4 text-slate-400" />}
             </button>
             <AnimatePresence>
               {themeDropdownOpen && (
@@ -142,24 +110,17 @@ export default function Header() {
                 >
                   <button
                     onClick={() => handleThemeChange("light")}
-                    className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-heading font-bold text-slate-400 hover:text-white hover:bg-slate-905 transition-colors duration-150 cursor-pointer"
+                    className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-heading font-bold text-slate-400 hover:text-white hover:bg-slate-800 transition-colors duration-150 cursor-pointer"
                   >
                     <Sun className="w-3.5 h-3.5 text-amber-500" />
                     <span>Light</span>
                   </button>
                   <button
                     onClick={() => handleThemeChange("dark")}
-                    className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-heading font-bold text-slate-400 hover:text-white hover:bg-slate-905 transition-colors duration-150 cursor-pointer"
+                    className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-heading font-bold text-slate-400 hover:text-white hover:bg-slate-800 transition-colors duration-150 cursor-pointer"
                   >
                     <Moon className="w-3.5 h-3.5 text-purple-400" />
                     <span>Dark</span>
-                  </button>
-                  <button
-                    onClick={() => handleThemeChange("system")}
-                    className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-heading font-bold text-slate-400 hover:text-white hover:bg-slate-905 transition-colors duration-150 cursor-pointer"
-                  >
-                    <Monitor className="w-3.5 h-3.5 text-slate-400" />
-                    <span>System</span>
                   </button>
                 </motion.div>
               )}
@@ -213,7 +174,7 @@ export default function Header() {
                   {link.name}
                 </a>
               ))}
-               {/* Mobile Theme Selector Bar */}
+              {/* Mobile Theme Selector Bar — Light / Dark only */}
               <div className="flex items-center justify-between bg-muted/50 p-1 rounded-xl border border-border mb-2">
                 <button
                   onClick={() => handleThemeChange("light")}
@@ -236,17 +197,6 @@ export default function Header() {
                 >
                   <Moon className="w-3.5 h-3.5 text-purple-400" />
                   <span>Dark</span>
-                </button>
-                <button
-                  onClick={() => handleThemeChange("system")}
-                  className={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg text-xs font-heading font-bold transition-all ${
-                    theme === "system"
-                      ? "bg-background text-foreground shadow-md border border-border"
-                      : "text-muted-foreground hover:text-foreground"
-                  }`}
-                >
-                  <Monitor className="w-3.5 h-3.5 text-slate-400" />
-                  <span>System</span>
                 </button>
               </div>
 

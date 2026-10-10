@@ -53,10 +53,10 @@ export default function Home() {
   // Prevent flashing landing page if user session is being validated
   if (checkingAuth) {
     return (
-      <main className="min-h-screen bg-slate-950 flex flex-col items-center justify-center font-heading text-white">
+      <main className="min-h-screen bg-background flex flex-col items-center justify-center font-heading text-foreground">
         <div className="flex flex-col items-center gap-5">
           <div className="w-10 h-10 rounded-full border-2 border-purple-500 border-t-transparent animate-spin" />
-          <span className="text-purple-400 font-medium tracking-wide">Connecting to VidyaMarg AI...</span>
+          <span className="text-purple-500 font-medium tracking-wide">Connecting to VidyaMarg AI...</span>
         </div>
       </main>
     );

@@ -114,7 +114,8 @@ class AgentActionBridgeService {
               document.documentElement.classList.add("light-theme");
             }
             localStorage.setItem("theme", targetTheme);
-            window.dispatchEvent(new Event("storage"));
+            // Dispatch CustomEvent — this is what useGlobalTheme listens to
+            window.dispatchEvent(new CustomEvent("theme-change", { detail: targetTheme }));
           }
           apiService.updatePreferences(targetTheme).catch(() => {});
 

@@ -64,16 +64,16 @@ export default function AdminRegister() {
   };
 
   return (
-    <main className="min-h-screen h-screen overflow-hidden bg-slate-950 text-white flex justify-center items-center relative font-sans">
+    <main className="min-h-screen h-screen overflow-hidden bg-background text-foreground flex justify-center items-center relative font-sans">
       {/* Decorative Blur Backgrounds */}
       <div className="absolute top-[-10%] right-[-10%] w-1/2 h-1/2 bg-purple-600/10 rounded-full blur-120 pointer-events-none z-0" />
       <div className="absolute bottom-[-10%] left-[-10%] w-1/2 h-1/2 bg-indigo-600/10 rounded-full blur-120 pointer-events-none z-0" />
 
       {/* Grid Pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-30 pointer-events-none z-0" />
+      <div className="absolute inset-0 digital-grid-bg opacity-30 pointer-events-none z-0" />
 
       {/* Registration Card */}
-      <div className="w-full max-w-md bg-slate-900/40 border border-slate-800 backdrop-blur-xl p-8 rounded-2xl relative z-10 shadow-2xl flex flex-col gap-6">
+      <div className="w-full max-w-md bg-app-card border border-app-border backdrop-blur-xl p-8 rounded-2xl relative z-10 shadow-2xl flex flex-col gap-6">
         
         {/* Brand Header */}
         <div className="flex items-center gap-3">
@@ -86,8 +86,8 @@ export default function AdminRegister() {
           </div>
           <div>
             <div className="flex items-baseline gap-0.5">
-              <span className="text-white font-extrabold text-lg tracking-tight leading-none">Vidyamarg</span>
-              <span className="text-blue-400 font-extrabold text-lg tracking-tight leading-none italic">AI</span>
+              <span className="text-app-text font-extrabold text-lg tracking-tight leading-none">Vidyamarg</span>
+              <span className="text-blue-500 font-extrabold text-lg tracking-tight leading-none italic">AI</span>
             </div>
             <span className="block text-[8px] text-indigo-400 font-bold tracking-widest uppercase mt-0.5">Admin Management</span>
           </div>
@@ -118,7 +118,7 @@ export default function AdminRegister() {
               placeholder="e.g. Sebastian Ramirez"
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
-              className="bg-slate-950 border-slate-800 text-white focus:border-purple-500"
+              className="bg-app-surface border-app-border text-app-text focus:border-purple-500"
             />
           </div>
 
@@ -130,7 +130,7 @@ export default function AdminRegister() {
               placeholder="admin@company.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="bg-slate-950 border-slate-800 text-white focus:border-purple-500"
+              className="bg-app-surface border-app-border text-app-text focus:border-purple-500"
             />
           </div>
 
@@ -143,12 +143,12 @@ export default function AdminRegister() {
                 placeholder="••••••••"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="bg-slate-950 border-slate-800 text-white focus:border-purple-500 pr-10"
+                className="bg-app-surface border-app-border text-app-text focus:border-purple-500 pr-10"
               />
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white transition-colors p-1 cursor-pointer"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-app-text-muted hover:text-app-text transition-colors p-1 cursor-pointer"
               >
                 {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
               </button>
@@ -163,7 +163,7 @@ export default function AdminRegister() {
               placeholder="Enter the administrator key supplied by your organization"
               value={securityKey}
               onChange={(e) => setSecurityKey(e.target.value)}
-              className="bg-slate-950 border-slate-800 text-white focus:border-purple-500 font-mono text-center tracking-widest"
+              className="bg-app-surface border-app-border text-app-text focus:border-purple-500 font-mono text-center tracking-widest"
             />
           </div>
 
@@ -177,7 +177,7 @@ export default function AdminRegister() {
           </Button>
         </form>
 
-        <div className="text-center border-t border-slate-800 pt-4 flex flex-col gap-2">
+        <div className="text-center border-t border-app-border pt-4 flex flex-col gap-2">
           <Link 
             href="/admin-login" 
             className="text-xs text-purple-400 hover:underline font-bold"
