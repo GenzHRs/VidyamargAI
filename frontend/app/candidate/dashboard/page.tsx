@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useAuthStore } from "@/store/authStore";
+import { useDashboardStore } from "@/store/dashboardStore";
 import { apiService } from "@/services/api";
 import {
   FileText,
@@ -117,75 +118,119 @@ function CareerJourneyBar({ readiness }: { readiness: number }) {
   );
 }
 
+// ──────── Dashboard Skeleton (Instant Placeholders) ────────
+function DashboardSkeleton() {
+  return (
+    <div className="min-h-screen bg-app-bg text-app-text font-sans animate-pulse">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-6">
+        {/* Header Skeleton */}
+        <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+          <div className="space-y-2">
+            <div className="h-4 w-28 bg-gray-200 dark:bg-gray-800 rounded" />
+            <div className="h-8 w-64 bg-gray-200 dark:bg-gray-800 rounded-lg" />
+            <div className="h-4 w-48 bg-gray-200 dark:bg-gray-800 rounded" />
+          </div>
+          <div className="h-9 w-24 bg-gray-200 dark:bg-gray-800 rounded-xl" />
+        </div>
+
+        {/* Stats Grid Skeleton */}
+        <div className="grid cq-grid-stat gap-3 sm:gap-4">
+          {[1, 2, 3, 4].map((i) => (
+            <div key={i} className="h-24 bg-app-surface border border-app-border rounded-2xl p-5 flex items-center gap-4">
+              <div className="w-11 h-11 rounded-xl bg-gray-200 dark:bg-gray-800 shrink-0" />
+              <div className="space-y-2 flex-1">
+                <div className="h-3 w-16 bg-gray-200 dark:bg-gray-800 rounded" />
+                <div className="h-5 w-24 bg-gray-200 dark:bg-gray-800 rounded" />
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Journey Skeleton */}
+        <div className="bg-app-surface border border-app-border rounded-3xl p-6 sm:p-7 space-y-4">
+          <div className="h-5 w-44 bg-gray-200 dark:bg-gray-800 rounded" />
+          <div className="h-10 w-full bg-gray-100 dark:bg-gray-850 rounded-2xl" />
+        </div>
+
+        {/* 2-column cards Skeleton */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="h-72 bg-app-surface border border-app-border rounded-3xl p-6" />
+          <div className="h-72 bg-app-surface border border-app-border rounded-3xl p-6" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // ──────── Main Dashboard ────────
 export default function DashboardPage() {
   const router = useRouter();
   const { fullName } = useAuthStore();
-  const [data, setData] = useState<CareerData>({
-    profile: null,
-    roles: null,
-    skillGaps: null,
-    readiness: null,
-    resumes: [],
-  });
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const {
+    data,
+    isInitialLoading,
+    isBackgroundRefreshing,
+    error,
+    fetchDashboard,
+  } = useDashboardStore();
 
   const firstName = fullName ? fullName.split(" ")[0] : "there";
   const hour = new Date().getHours();
   const greeting = hour < 12 ? "Good morning" : hour < 17 ? "Good afternoon" : "Good evening";
 
-  const fetchDashboardData = async () => {
-    setLoading(true);
-    setError(null);
-    try {
-      const [profile, roles, skillGaps, readiness, resumes] = await Promise.allSettled([
-        apiService.getProfile(),
-        apiService.getResumeRoles(),
-        apiService.getResumeSkillGaps(),
-        apiService.getCareerReadiness(),
-        apiService.getResumes(),
-      ]);
-
-      setData({
-        profile: profile.status === "fulfilled" ? profile.value : null,
-        roles: roles.status === "fulfilled" ? roles.value : null,
-        skillGaps: skillGaps.status === "fulfilled" ? skillGaps.value : null,
-        readiness: readiness.status === "fulfilled" ? readiness.value : null,
-        resumes: resumes.status === "fulfilled" ? (Array.isArray(resumes.value) ? resumes.value : []) : [],
-      });
-    } catch (e) {
-      setError("Failed to load dashboard data.");
-    } finally {
-      setLoading(false);
-    }
-  };
-
   useEffect(() => {
-    fetchDashboardData();
-  }, []);
+    fetchDashboard();
+  }, [fetchDashboard]);
 
-  const hasResume = data.resumes.length > 0 || Boolean(data.profile?.personal_info?.name) || Boolean(data.profile?.skills) || Boolean(data.readiness?.resume_score);
-  const readinessScore = data.readiness?.career_readiness_score ?? 0;
-  const topSkills: string[] = data.skillGaps?.skills_present?.slice(0, 6) ?? [];
-  const missingSkills: string[] = data.skillGaps?.skill_gaps?.slice(0, 5) ?? [];
-  const recommendedRoles: string[] = data.roles?.roles?.slice(0, 4) ?? [];
-  const targetRole = data.roles?.target_role ?? data.roles?.roles?.[0] ?? null;
-  const resumeScore = data.readiness?.resume_score ?? null;
-  const profileCompletion = data.readiness?.profile_completion ?? null;
-  const coursesCompleted = data.readiness?.courses_completed ?? 0;
-  const learningStreak = data.readiness?.learning_streak ?? 0;
+  // First visit with no cached data: render responsive skeleton placeholder
+  if (isInitialLoading && !data) {
+    return <DashboardSkeleton />;
+  }
 
-  if (loading) {
+  // Essential failure with no existing data: render clear retry prompt
+  if (error && !data) {
     return (
-      <div className="min-h-screen bg-app-bg flex items-center justify-center">
-        <div className="flex flex-col items-center gap-4">
-          <div className="w-10 h-10 rounded-full border-4 border-t-blue-500 border-app-border animate-spin" />
-          <p className="text-sm text-app-text-muted">Loading your career dashboard…</p>
+      <div className="min-h-screen bg-app-bg flex items-center justify-center p-4">
+        <div className="max-w-md w-full bg-app-surface border border-app-border rounded-3xl p-8 text-center space-y-4 shadow-sm">
+          <div className="w-12 h-12 rounded-2xl bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 flex items-center justify-center mx-auto">
+            <AlertCircle size={24} />
+          </div>
+          <h2 className="text-lg font-bold text-app-text">Unable to load dashboard</h2>
+          <p className="text-sm text-app-text-muted">{error}</p>
+          <button
+            onClick={() => fetchDashboard({ forceRefresh: true })}
+            className="w-full py-2.5 px-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors text-sm"
+          >
+            Retry Loading
+          </button>
         </div>
       </div>
     );
   }
+
+  const currentData: CareerData = data || {
+    profile: null,
+    roles: null,
+    skillGaps: null,
+    readiness: null,
+    resumes: [],
+  };
+
+  const hasResume =
+    (currentData.resumes && currentData.resumes.length > 0) ||
+    Boolean(currentData.profile?.personal_info?.name) ||
+    Boolean(currentData.profile?.skills) ||
+    Boolean(currentData.readiness?.resume_score);
+
+  const readinessScore = currentData.readiness?.career_readiness_score ?? 0;
+  const topSkills: string[] = currentData.skillGaps?.skills_present?.slice(0, 6) ?? [];
+  const missingSkills: string[] = currentData.skillGaps?.skill_gaps?.slice(0, 5) ?? [];
+  const recommendedRoles: string[] = currentData.roles?.roles?.slice(0, 4) ?? [];
+  const targetRole = currentData.roles?.target_role ?? currentData.roles?.roles?.[0] ?? null;
+  const resumeScore = currentData.readiness?.resume_score ?? null;
+  const profileCompletion = currentData.readiness?.profile_completion ?? null;
+  const coursesCompleted = currentData.readiness?.courses_completed ?? 0;
+  const learningStreak = currentData.readiness?.learning_streak ?? 0;
 
   return (
     <div className="min-h-screen bg-app-bg text-app-text font-sans">
@@ -194,7 +239,14 @@ export default function DashboardPage() {
         {/* ── Top: Greeting + Quick Actions ── */}
         <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
           <div>
-            <p className="text-sm text-app-text-muted font-medium">{greeting} 👋</p>
+            <div className="flex items-center gap-2">
+              <p className="text-sm text-app-text-muted font-medium">{greeting} 👋</p>
+              {isBackgroundRefreshing && (
+                <span className="text-[11px] font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/40 px-2 py-0.5 rounded-full border border-blue-200/50 dark:border-blue-800/40 animate-pulse">
+                  Syncing latest data…
+                </span>
+              )}
+            </div>
             <h1 className="text-2xl sm:text-3xl font-bold text-app-text mt-0.5">
               Welcome back, {firstName}
             </h1>
@@ -205,11 +257,13 @@ export default function DashboardPage() {
             )}
           </div>
           <button
-            onClick={fetchDashboardData}
-            className="flex items-center gap-2 px-4 py-2 rounded-xl border border-app-border text-sm font-medium text-app-text-muted hover:text-app-text hover:bg-app-surface transition-colors self-start"
+            onClick={() => fetchDashboard({ forceRefresh: true })}
+            disabled={isBackgroundRefreshing}
+            className="flex items-center gap-2 px-4 py-2 rounded-xl border border-app-border text-sm font-medium text-app-text-muted hover:text-app-text hover:bg-app-surface transition-colors self-start disabled:opacity-60"
+            title="Refresh dashboard data"
           >
-            <RefreshCw size={14} />
-            Refresh
+            <RefreshCw size={14} className={isBackgroundRefreshing ? "animate-spin text-blue-500" : ""} />
+            <span>{isBackgroundRefreshing ? "Refreshing…" : "Refresh"}</span>
           </button>
         </div>
 
@@ -473,14 +527,14 @@ export default function DashboardPage() {
             </div>
 
             {/* Resume Stats */}
-            {data.resumes.length > 0 && (
+            {currentData.resumes.length > 0 && (
               <div className="bg-app-surface border border-app-border rounded-2xl p-5">
                 <div className="flex items-center gap-2 mb-3">
                   <Award size={15} className="text-amber-500" />
                   <h3 className="font-bold text-app-text text-sm">My Resumes</h3>
                 </div>
                 <div className="space-y-2">
-                  {data.resumes.slice(0, 3).map((r: any) => (
+                  {currentData.resumes.slice(0, 3).map((r: any) => (
                     <Link
                       key={r.id}
                       href={`/candidate/resumes`}
@@ -493,12 +547,12 @@ export default function DashboardPage() {
                       <CheckCircle size={12} className="ml-auto text-emerald-500 shrink-0" />
                     </Link>
                   ))}
-                  {data.resumes.length > 3 && (
+                  {currentData.resumes.length > 3 && (
                     <Link
                       href="/candidate/resumes"
                       className="text-xs text-blue-600 dark:text-blue-400 font-semibold hover:underline block text-center pt-1"
                     >
-                      +{data.resumes.length - 3} more resumes
+                      +{currentData.resumes.length - 3} more resumes
                     </Link>
                   )}
                 </div>

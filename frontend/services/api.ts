@@ -125,6 +125,26 @@ export const apiService = {
     return res.json();
   },
 
+  // Dashboard Summary (Single-Roundtrip, Redis-Cached)
+  async getDashboardSummary() {
+    const res = await customFetch(`${getBaseUrl()}/candidates/dashboard-summary`, {
+      headers: getHeaders(),
+    });
+    if (!res.ok) throw new Error("Failed to get dashboard summary");
+    return res.json();
+  },
+
+  async invalidateDashboardSummary() {
+    try {
+      await customFetch(`${getBaseUrl()}/candidates/dashboard-summary/invalidate`, {
+        method: "POST",
+        headers: getHeaders(),
+      });
+    } catch (e) {
+      // Non-critical background invalidation failure
+    }
+  },
+
   // Profile
   async getProfile() {
     const res = await customFetch(`${getBaseUrl()}/candidates/profile`, {

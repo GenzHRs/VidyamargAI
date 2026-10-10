@@ -12,8 +12,13 @@ interface AuthState {
   updateUser: (fullName: string, email?: string) => void;
 }
 
+import { useDashboardStore } from './dashboardStore';
+
 function clearPrivateCaches() {
   if (typeof window === 'undefined') return;
+  try {
+    useDashboardStore.getState().reset();
+  } catch (e) {}
   for (const key of Object.keys(localStorage)) {
     if (key.startsWith('cache_') || key === 'REACT_QUERY_OFFLINE_CACHE' || key === 'candidate_applied_email') localStorage.removeItem(key);
   }

@@ -192,7 +192,54 @@ def invalidate_candidate_context(candidate_id: int):
     """Invalidates all cached candidate context across Redis and local memory."""
     increment_candidate_context_revision(candidate_id)
     invalidate_resume_analysis(candidate_id)
+    invalidate_dashboard_summary(candidate_id)
     _LOCAL_CONTEXT_CACHE.pop(candidate_id, None)
+
+
+_LOCAL_DASHBOARD_CACHE = {}
+
+def get_cached_dashboard_summary(candidate_id: int) -> Optional[dict]:
+    global _redis_is_online
+    r = _get_redis()
+    key = f"candidate:{candidate_id}:dashboard_summary"
+    if r:
+        try:
+            val = r.get(key)
+            if val:
+                return json.loads(val)
+        except Exception as e:
+            _redis_is_online = False
+            logger.debug(f"Redis cache error reading dashboard summary for candidate {candidate_id}: {e}")
+    return _LOCAL_DASHBOARD_CACHE.get(candidate_id)
+
+def set_cached_dashboard_summary(candidate_id: int, data: dict):
+    global _redis_is_online
+    r = _get_redis()
+    key = f"candidate:{candidate_id}:dashboard_summary"
+    ttl = 300  # 5 minutes
+    if r:
+        try:
+            r.setex(key, ttl, json.dumps(data))
+            return
+        except Exception as e:
+            _redis_is_online = False
+            logger.debug(f"Redis cache error writing dashboard summary for candidate {candidate_id}: {e}")
+    try:
+        _LOCAL_DASHBOARD_CACHE[candidate_id] = json.loads(json.dumps(data))
+    except Exception:
+        _LOCAL_DASHBOARD_CACHE[candidate_id] = data
+
+def invalidate_dashboard_summary(candidate_id: int):
+    global _redis_is_online
+    r = _get_redis()
+    key = f"candidate:{candidate_id}:dashboard_summary"
+    if r:
+        try:
+            r.delete(key)
+        except Exception as e:
+            _redis_is_online = False
+            logger.debug(f"Redis cache error deleting dashboard summary for candidate {candidate_id}: {e}")
+    _LOCAL_DASHBOARD_CACHE.pop(candidate_id, None)
 
 
 def clear_all_local_caches():
@@ -200,5 +247,7 @@ def clear_all_local_caches():
     _LOCAL_RESUME_CACHE.clear()
     _LOCAL_CONTEXT_CACHE.clear()
     _LOCAL_REVISIONS.clear()
+    _LOCAL_DASHBOARD_CACHE.clear()
+
 
 

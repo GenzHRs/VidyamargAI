@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import { apiService } from "@/services/api";
 import { resumeCenterApi } from "@/services/resumeCenterApi";
+import { useDashboardStore } from "./dashboardStore";
 
 export interface ActiveResumeInfo {
   id: number;
@@ -95,6 +96,8 @@ export const useResumeStore = create<ResumeState>((set, get) => ({
     try {
       await apiService.setActiveResume(resumeId);
       await get().fetchActiveResume();
+      apiService.invalidateDashboardSummary();
+      useDashboardStore.getState().invalidateDashboard();
       return true;
     } catch (err: any) {
       console.error("Failed to set active resume:", err);
@@ -107,6 +110,8 @@ export const useResumeStore = create<ResumeState>((set, get) => ({
     try {
       const res = await resumeCenterApi.uploadResume(file);
       await get().fetchActiveResume();
+      apiService.invalidateDashboardSummary();
+      useDashboardStore.getState().invalidateDashboard();
       set({ isLoading: false });
       return {
         success: true,
