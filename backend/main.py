@@ -22,6 +22,12 @@ logger = logging.getLogger(__name__)
 
 @asynccontextmanager
 async def lifespan(app):
+    # Ensure database schema is initialized on PostgreSQL startup
+    try:
+        Base.metadata.create_all(bind=engine)
+    except Exception as e:
+        logger.warning(f"Database table initialization warning: {e}")
+
     task = None
     if settings.SCHEDULER_ENABLED:
         from app.core.scheduler import start_scheduler, run_periodic_job_sync
