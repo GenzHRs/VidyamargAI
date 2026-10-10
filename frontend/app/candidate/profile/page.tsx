@@ -524,8 +524,26 @@ export default function CandidateProfile() {
                   {projList.map((proj: any, idx: number) => {
                     const pName = proj.name || proj.project_name || "Project Name";
                     const pUrl = proj.url || proj.project_url || proj.link;
-                    const pTechs = parseList(proj.technologies);
-                    const pBullets = parseList(proj.responsibilities || proj.bullets);
+                    
+                    // Technology string tokenization
+                    let pTechs: string[] = [];
+                    const rawTech = proj.technologies || proj.tech_stack;
+                    if (Array.isArray(rawTech)) {
+                      pTechs = rawTech.flatMap((t: string) => typeof t === "string" ? t.split(/[,;|•·/\n]\s*/) : []);
+                    } else if (typeof rawTech === "string" && rawTech.trim()) {
+                      pTechs = rawTech.split(/[,;|•·/\n]\s*/);
+                    }
+                    pTechs = Array.from(new Set(pTechs.map((t: string) => t.trim()).filter(Boolean)));
+
+                    const rawBullets: string[] = parseList(proj.responsibilities || proj.bullets || proj.features);
+                    const pBullets = Array.from(new Set(rawBullets.map((b: string) => b.replace(/^[\ue000-\uf8ff•·∙○●▪■►▸▶◆◇★☆✦✧✓✔\s\-*–—]+\s*/, "").trim()).filter(Boolean)));
+
+                    // Description vs bullets deduplication check
+                    const pDesc = proj.description ? proj.description.replace(/^[\ue000-\uf8ff•·∙○●▪■►▸▶◆◇★☆✦✧✓✔\s\-*–—]+\s*/, "").trim() : "";
+                    const joinedBullets = pBullets.join(" ").toLowerCase().replace(/\s+/g, " ");
+                    const normDesc = pDesc.toLowerCase().replace(/\s+/g, " ");
+                    const isDescDuplicated = pBullets.length > 0 && normDesc && (joinedBullets.includes(normDesc) || normDesc.includes(joinedBullets) || pBullets.some(b => b.toLowerCase().includes(normDesc)));
+
                     const pDates = proj.start_date || proj.end_date 
                       ? `${proj.start_date || ""} ${proj.start_date && proj.end_date ? "-" : ""} ${proj.end_date || ""}`.trim()
                       : (proj.date || proj.duration || "");
@@ -549,9 +567,9 @@ export default function CandidateProfile() {
                               </a>
                             )}
                           </div>
-                          {proj.description && (
+                          {pDesc && !isDescDuplicated && (
                             <p className="text-xs text-gray-600 dark:text-gray-300 leading-relaxed">
-                              {proj.description}
+                              {pDesc}
                             </p>
                           )}
                           {pBullets.length > 0 && (

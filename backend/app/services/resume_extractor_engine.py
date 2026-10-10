@@ -917,11 +917,148 @@ def _parse_heuristic_projects(project_lines: List[str]) -> List[Dict[str, Any]]:
     if curr and (curr["bullets"] or curr["name"] != "Project" or curr["technologies"]):
         blocks.append(curr)
 
+    deduped_blocks = []
     for b in blocks:
-        b["description"] = " ".join(b["bullets"]) if b["bullets"] else None
-        b["technologies"] = list(dict.fromkeys(b["technologies"]))
+        deduped_blocks.append(normalize_and_deduplicate_project(b))
 
-    return blocks
+    return deduped_blocks
+
+
+KNOWN_TECH_TERMS = [
+    "FastAPI", "Python", "PostgreSQL", "Azure OCR", "Azure", "OCR", "NER", "Gemini LLM", "Gemini", "LLM",
+    "React", "Next.js", "Vue.js", "Vue", "Angular", "Node.js", "Express", "Django", "Flask", "Spring Boot",
+    "PyTorch", "TensorFlow", "Keras", "Scikit-Learn", "Pandas", "NumPy", "Docker", "Kubernetes", "K8s",
+    "MongoDB", "Redis", "SQLite", "MySQL", "Oracle", "AWS", "GCP", "OpenAI", "LangChain", "LlamaIndex",
+    "Qdrant", "ChromaDB", "Java", "C++", "C#", "Rust", "Go", "Golang", "TypeScript", "JavaScript",
+    "HTML", "CSS", "Tailwind", "Git", "GitHub", "CI/CD", "Linux", "Bash", "REST API", "REST", "GraphQL",
+    "gRPC", "Kafka", "RabbitMQ", "Spark", "Hadoop", "Airflow", "MLOps", "NLP", "LLMs", "RAG", "Computer Vision"
+]
+
+
+def normalize_technologies_list(tech_input: Any) -> List[str]:
+    """
+    Parses, tokenizes, and cleans technology strings and lists.
+    Handles concatenated tech stacks like 'FastAPIPythonPostgreSQLAzure OCRNERGemini LLM'
+    and splits them into structured lists: ['FastAPI', 'Python', 'PostgreSQL', 'Azure OCR', 'NER', 'Gemini LLM'].
+    """
+    if not tech_input:
+        return []
+
+    raw_items = []
+    if isinstance(tech_input, str):
+        if re.search(r"[,;|•·/\n]", tech_input):
+            raw_items = [t.strip() for t in re.split(r"[,;|•·/\n]\s*", tech_input) if t.strip()]
+        else:
+            raw_items = [tech_input.strip()]
+    elif isinstance(tech_input, list):
+        for item in tech_input:
+            if isinstance(item, str) and item.strip():
+                if re.search(r"[,;|•·/\n]", item):
+                    raw_items.extend([t.strip() for t in re.split(r"[,;|•·/\n]\s*", item) if t.strip()])
+                else:
+                    raw_items.append(item.strip())
+
+    final_techs = []
+    seen = set()
+
+    for item in raw_items:
+        sorted_terms = sorted(KNOWN_TECH_TERMS, key=len, reverse=True)
+        found_matches = []
+
+        for term in sorted_terms:
+            pattern = re.compile(re.escape(term), re.IGNORECASE)
+            for m in pattern.finditer(item):
+                start, end = m.span()
+                overlap = any(not (end <= s or start >= e) for s, e, _ in found_matches)
+                if not overlap:
+                    found_matches.append((start, end, term))
+
+        if len(found_matches) > 1:
+            found_matches.sort(key=lambda x: x[0])
+            for _, _, term in found_matches:
+                if term.lower() not in seen:
+                    seen.add(term.lower())
+                    final_techs.append(term)
+        else:
+            clean_item = re.sub(r"^[\ue000-\uf8ff•·∙○●▪■►▸▶◆◇★☆✦✧✓✔\s\-*–—]+\s*", "", item).strip()
+            if clean_item and clean_item.lower() not in seen:
+                seen.add(clean_item.lower())
+                final_techs.append(clean_item)
+
+    return final_techs
+
+
+def clean_bullet_text(text: str) -> str:
+    """Strips leading repeated bullet symbols and markers."""
+    if not text:
+        return ""
+    cleaned = re.sub(r"^[\ue000-\uf8ff•·∙○●▪■►▸▶◆◇★☆✦✧✓✔\s\-*–—]+\s*", "", text).strip()
+    return cleaned
+
+
+def normalize_and_deduplicate_project(proj: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Normalizes a project dict:
+    1. Removes duplicate bullet items and strips repeated bullet markers.
+    2. Tokenizes concatenated technology strings.
+    3. Prevents paragraph description from repeating identical bullet point sentences.
+    """
+    if not isinstance(proj, dict):
+        return proj
+
+    p = dict(proj)
+
+    # 1. Clean bullet points & responsibilities
+    raw_bullets = p.get("responsibilities") or p.get("bullets") or p.get("features") or []
+    if isinstance(raw_bullets, str):
+        raw_bullets = [raw_bullets]
+
+    unique_bullets = []
+    seen_bullets = set()
+    for b in raw_bullets:
+        clean_b = clean_bullet_text(str(b))
+        if clean_b:
+            b_key = clean_b.lower()
+            if b_key not in seen_bullets:
+                seen_bullets.add(b_key)
+                unique_bullets.append(clean_b)
+
+    p["responsibilities"] = unique_bullets
+    p["bullets"] = unique_bullets
+    p["features"] = unique_bullets
+
+    # 2. Clean technologies using tokenization
+    raw_tech = p.get("technologies") or p.get("tech_stack") or []
+    p["technologies"] = normalize_technologies_list(raw_tech)
+
+    # 3. Deduplicate description vs bullets
+    raw_desc = str(p.get("description") or "").strip()
+    clean_desc = clean_bullet_text(raw_desc)
+
+    if clean_desc and unique_bullets:
+        joined_bullets = " ".join(unique_bullets)
+        dot_joined_bullets = ". ".join(unique_bullets)
+
+        norm_desc = re.sub(r"\s+", " ", clean_desc.lower().strip(" ."))
+        norm_joined = re.sub(r"\s+", " ", joined_bullets.lower().strip(" ."))
+        norm_dot_joined = re.sub(r"\s+", " ", dot_joined_bullets.lower().strip(" ."))
+
+        if norm_desc == norm_joined or norm_desc == norm_dot_joined:
+            p["description"] = None
+        else:
+            desc_sentences = [s.strip() for s in re.split(r"[.!?]\s*", clean_desc) if s.strip()]
+            all_in_bullets = True
+            for ds in desc_sentences:
+                ds_norm = re.sub(r"\s+", " ", ds.lower())
+                if not any(ds_norm in re.sub(r"\s+", " ", b.lower()) for b in unique_bullets):
+                    all_in_bullets = False
+                    break
+            if all_in_bullets:
+                p["description"] = None
+    elif not clean_desc and unique_bullets:
+        p["description"] = None
+
+    return p
 
 
 def heuristic_comprehensive_parse(raw_text: str) -> Dict[str, Any]:
@@ -1364,6 +1501,15 @@ def _normalize_and_validate_extraction(
         else:
             normalized_exps.append(exp)
     data["work_experience"] = normalized_exps
+
+    # Audit and normalize all project entries (deduplicate paragraphs vs bullets, tokenize concatenated technologies)
+    normalized_projects = []
+    for proj in data.get("projects", []):
+        if isinstance(proj, dict):
+            normalized_projects.append(normalize_and_deduplicate_project(proj))
+        else:
+            normalized_projects.append(proj)
+    data["projects"] = normalized_projects
 
     # Check work experience date consistency
     for idx, exp in enumerate(data.get("work_experience", [])):
