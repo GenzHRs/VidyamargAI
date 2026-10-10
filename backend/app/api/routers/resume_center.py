@@ -425,6 +425,7 @@ def convert_to_template_payload(extracted: Dict[str, Any]) -> Dict[str, Any]:
     proj_list = []
     for p in extracted.get("projects") or []:
         norm_p = canonicalize_project(p)
+        proj_link = norm_p.get("link") or p.get("link") or p.get("repo_url") or p.get("demo_url") or ""
         proj_list.append({
             "name": norm_p.get("name") or "Project",
             "title": norm_p.get("name") or "Project",
@@ -437,14 +438,24 @@ def convert_to_template_payload(extracted: Dict[str, Any]) -> Dict[str, Any]:
             "bullets": norm_p.get("bullets") or ["Designed and implemented project functionality."],
             "responsibilities": norm_p.get("bullets") or ["Designed and implemented project functionality."],
             "features": [],
-            "link": norm_p.get("link") or ""
+            "link": proj_link,
+            "repo_url": norm_p.get("repo_url") or p.get("repo_url") or "",
+            "demo_url": norm_p.get("demo_url") or p.get("demo_url") or ""
         })
 
     # Certifications
     certs_list = []
     for c in extracted.get("certifications") or []:
         if isinstance(c, dict):
-            certs_list.append(c.get("name") or "Certification")
+            cert_name = c.get("name") or "Certification"
+            issuer = c.get("issuer") or c.get("issuing_organization") or ""
+            cred_url = c.get("credential_url") or ""
+            if cred_url:
+                certs_list.append(f"{cert_name} ({issuer}) - {cred_url}" if issuer else f"{cert_name} - {cred_url}")
+            elif issuer:
+                certs_list.append(f"{cert_name} - {issuer}")
+            else:
+                certs_list.append(cert_name)
         else:
             certs_list.append(str(c))
 
@@ -469,7 +480,8 @@ def convert_to_template_payload(extracted: Dict[str, Any]) -> Dict[str, Any]:
             "github": pi.get("github_url") or pi.get("github") or "",
             "github_url": pi.get("github_url") or pi.get("github") or "",
             "portfolio": pi.get("portfolio_url") or pi.get("portfolio") or "",
-            "portfolio_url": pi.get("portfolio_url") or pi.get("portfolio") or ""
+            "portfolio_url": pi.get("portfolio_url") or pi.get("portfolio") or "",
+            "custom_links": pi.get("custom_links") or []
         },
         "summary": summary_text,
         "professional_summary": ps if isinstance(ps, dict) else {"summary": summary_text},
@@ -841,7 +853,9 @@ async def upload_resume_file(
 
     # 5. Comprehensive structured extraction
     pdf_bytes = content if ext == ".pdf" else None
-    structured_data = extract_structured_with_ai(raw_text, pdf_bytes)
+    structured_data = extract_structured_with_ai(raw_text, pdf_bytes, layout_info)
+    if "hyperlinks" in structured_data:
+        layout_info["hyperlinks"] = structured_data["hyperlinks"]
 
     # 6. Resolve template
     chosen_template_id = template_id
@@ -1033,6 +1047,45 @@ def get_resume_extraction(
                 } for sec in sections
             ]
         }
+    }
+
+
+@router.get("/resumes/{resume_id}/hyperlinks")
+def get_resume_hyperlinks(
+    resume_id: int,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Returns extracted hyperlinks for a resume with classifications,
+    validation status, and entity associations.
+    """
+    candidate = _get_or_create_candidate(current_user, db)
+    resume = db.query(Resume).filter(Resume.id == resume_id, Resume.deleted_at == None).first()
+    if not resume:
+        raise HTTPException(status_code=404, detail="Resume not found")
+    _verify_resume_ownership(resume, current_user, candidate)
+
+    extraction = db.query(ResumeExtraction).filter(ResumeExtraction.resume_id == resume.id).first()
+    layout_info = (extraction.layout_info if extraction else {}) or {}
+    links = layout_info.get("hyperlinks", [])
+    if not links and extraction and extraction.structured_data:
+        links = extraction.structured_data.get("hyperlinks", [])
+
+    by_type: Dict[str, int] = {}
+    by_validation: Dict[str, int] = {}
+    for link in links:
+        t = link.get("link_type", "other")
+        v = link.get("validation_status", "valid")
+        by_type[t] = by_type.get(t, 0) + 1
+        by_validation[v] = by_validation.get(v, 0) + 1
+
+    return {
+        "resume_id": resume.id,
+        "total_hyperlinks": len(links),
+        "by_type": by_type,
+        "by_validation_status": by_validation,
+        "hyperlinks": links
     }
 
 

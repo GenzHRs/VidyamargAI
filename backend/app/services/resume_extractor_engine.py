@@ -27,7 +27,18 @@ from app.services.project_normalizer import (
 logger = logging.getLogger("app.resume_extractor")
 
 MAX_RESUME_UPLOAD_SIZE = 10 * 1024 * 1024  # 10MB
-ALLOWED_RESUME_EXTENSIONS = {".pdf", ".docx", ".txt", ".tex"}
+ALLOWED_RESUME_EXTENSIONS = {
+    ".pdf", ".docx", ".doc", ".odt", ".rtf", ".txt", ".tex",
+    ".html", ".htm", ".png", ".jpg", ".jpeg", ".tiff", ".tif", ".pptx"
+}
+
+from app.services.hyperlink_extractor import (
+    create_hyperlink_record,
+    associate_links_with_resume_entities,
+    classify_link_type,
+    normalize_url,
+    validate_url
+)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -40,7 +51,8 @@ def validate_resume_upload(
     content_type: Optional[str] = None
 ) -> Tuple[bool, str, str, str]:
     """
-    Validates file extension, size, MIME type, and magic bytes.
+    Validates file extension, size, MIME type, magic bytes, and encryption/corruption.
+    Rejects password-protected PDFs and decompression bombs with explicit error messages.
     Computes SHA-256 integrity hash for duplicate detection.
     Returns: (is_valid, error_msg, sha256_hash, ext)
     """
@@ -52,15 +64,72 @@ def validate_resume_upload(
 
     ext = "." + filename.rsplit(".", 1)[-1].lower() if "." in filename else ""
     if ext not in ALLOWED_RESUME_EXTENSIONS:
-        return False, f"Unsupported file type '{ext}'. Allowed formats: PDF, DOCX, TXT, TEX.", "", ""
+        return (
+            False,
+            f"Unsupported file type '{ext}'. Supported formats: PDF, DOCX, DOC, ODT, RTF, HTML, TXT, TEX, Images (PNG, JPEG, TIFF), PPTX.",
+            "",
+            ""
+        )
 
-    # Magic byte verification
+    # Magic byte verification & security checks
     if ext == ".pdf":
         if not content.startswith(b"%PDF-"):
             return False, "Invalid PDF signature. The file appears corrupted or disguised.", "", ""
-    elif ext == ".docx":
+        # Check for encrypted or password-protected PDF
+        try:
+            import fitz
+            doc = fitz.open(stream=content, filetype="pdf")
+            if doc.is_encrypted or doc.needs_pass:
+                doc.close()
+                return False, "Encrypted or password-protected PDF detected. Please remove password protection before uploading.", "", ""
+            doc.close()
+        except Exception as e:
+            err_str = str(e).lower()
+            if "password" in err_str or "encrypted" in err_str:
+                return False, "Encrypted or password-protected PDF detected. Please remove password protection before uploading.", "", ""
+            return False, f"Corrupted or unreadable PDF: {str(e)}", "", ""
+
+    elif ext in (".docx", ".odt", ".pptx"):
         if not content.startswith(b"PK\x03\x04"):
-            return False, "Invalid DOCX signature (not a valid Word XML package).", "", ""
+            return False, f"Invalid {ext.upper().lstrip('.')} signature (not a valid Zip package).", "", ""
+        # Zip bomb / decompression limit check
+        try:
+            import zipfile
+            with zipfile.ZipFile(io.BytesIO(content)) as zf:
+                total_uncompressed = sum(info.file_size for info in zf.infolist())
+                if total_uncompressed > 50 * 1024 * 1024:  # 50MB decompression limit
+                    return False, "Decompression limit exceeded (possible zip bomb).", "", ""
+                if len(content) > 0 and (total_uncompressed / len(content)) > 100:
+                    return False, "Excessive compression ratio detected.", "", ""
+        except Exception as e:
+            return False, f"Corrupted {ext.upper().lstrip('.')} archive: {str(e)}", "", ""
+
+    elif ext == ".doc":
+        # Legacy binary Word document (OLE compound file) or RTF disguised as DOC
+        if not (content.startswith(b"\xd0\xcf\x11\xe0\xa1\xb1\x1a\xe1") or content.startswith(b"{\\rtf")):
+            return False, "Invalid legacy Word (.doc) signature.", "", ""
+
+    elif ext == ".rtf":
+        if not content.startswith(b"{\\rtf"):
+            return False, "Invalid RTF document header.", "", ""
+
+    elif ext in (".png", ".jpg", ".jpeg", ".tiff", ".tif"):
+        try:
+            from PIL import Image
+            with Image.open(io.BytesIO(content)) as img:
+                img.verify()
+        except Exception as e:
+            return False, f"Corrupted or invalid image file: {str(e)}", "", ""
+
+    elif ext in (".html", ".htm"):
+        try:
+            content.decode("utf-8")
+        except UnicodeDecodeError:
+            try:
+                content.decode("latin-1")
+            except Exception:
+                return False, "HTML file cannot be decoded as valid text.", "", ""
+
     elif ext in (".txt", ".tex"):
         try:
             content.decode("utf-8")
@@ -78,40 +147,47 @@ def validate_resume_upload(
 # 2. DOCUMENT PARSING & LAYOUT-AWARE EXTRACTION
 # ─────────────────────────────────────────────────────────────────────────────
 
-def extract_document_content(
-    filename: str,
-    content: bytes,
-    ext: str
-) -> Dict[str, Any]:
-    """
-    Extracts raw text, detects reading order for multi-column layouts,
-    extracts embedded hyperlinks, and detects scanned pages.
-    Returns:
-    {
-      "raw_text": str,
-      "page_count": int,
-      "layout_info": {
-        "columns_detected": bool,
-        "scanned_pages": list[int],
-        "hyperlinks": list[dict],
-        "tables_count": int
-      }
-    }
-    """
-    if ext == ".pdf":
-        return _extract_pdf_layout_aware(content)
-    elif ext == ".docx":
-        return _extract_docx_with_tables(content)
-    elif ext == ".tex":
-        return _extract_tex_clean(content)
-    else:
-        return _extract_plain_text(content)
+def _recover_plaintext_hyperlinks(text: str, existing_links: List[Dict[str, Any]], format_name: str) -> None:
+    """Discovers plaintext URLs and emails in extracted text without dropping metadata."""
+    seen_urls = {normalize_url(l["url"]) for l in existing_links if l.get("url")}
+
+    # Match URLs in text
+    for m in re.finditer(r"(?:https?://|www\.)[^\s<>\"'()]+", text, re.IGNORECASE):
+        raw_url = m.group(0).strip(".,;()")
+        norm = normalize_url(raw_url)
+        if norm and norm not in seen_urls:
+            seen_urls.add(norm)
+            nearby = text[max(0, m.start() - 50):min(len(text), m.end() + 50)].strip()
+            existing_links.append(create_hyperlink_record(
+                url=norm,
+                label=raw_url,
+                source_format=format_name,
+                source_page=1,
+                nearby_text=nearby,
+                extraction_method="regex_pattern"
+            ))
+
+    # Match email addresses
+    for m in re.finditer(r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,7}\b", text):
+        email_str = m.group(0)
+        norm_mailto = normalize_url(f"mailto:{email_str}")
+        if norm_mailto not in seen_urls:
+            seen_urls.add(norm_mailto)
+            existing_links.append(create_hyperlink_record(
+                url=norm_mailto,
+                label=email_str,
+                source_format=format_name,
+                source_page=1,
+                nearby_text=email_str,
+                extraction_method="mailto_scheme"
+            ))
 
 
 def _extract_pdf_layout_aware(content: bytes) -> Dict[str, Any]:
     """
-    Extracts text using PyMuPDF (fitz) with column-aware reading order,
-    annotation hyperlink recovery, and OCR fallback for scanned pages.
+    Extracts text using PyMuPDF with column-aware reading order,
+    spatial hyperlink annotation mapping with visible label recovery,
+    and OCR fallback for scanned pages.
     """
     import fitz  # PyMuPDF
 
@@ -119,53 +195,102 @@ def _extract_pdf_layout_aware(content: bytes) -> Dict[str, Any]:
     page_count = len(doc)
     page_texts: List[str] = []
     scanned_pages: List[int] = []
-    hyperlinks: List[Dict[str, str]] = []
+    hyperlinks: List[Dict[str, Any]] = []
     multi_column_detected = False
 
     for page_idx in range(page_count):
         page = doc[page_idx]
+        page_width = page.rect.width
+        page_height = page.rect.height
 
-        # 1. Recover embedded hyperlinks (LinkedIn, GitHub, Portfolio URLs)
+        # 1. Recover embedded hyperlinks with exact visible labels via spatial bounding boxes
         try:
             links = page.get_links()
             for l in links:
                 uri = l.get("uri")
-                if uri and uri.startswith(("http://", "https://", "mailto:")):
-                    hyperlinks.append({"page": page_idx + 1, "uri": uri})
+                if uri and uri.startswith(("http://", "https://", "mailto:", "tel:")):
+                    link_rect = l.get("from")
+                    visible_label = ""
+                    nearby_context = ""
+                    if link_rect:
+                        # Pad rect by 2pt for ascenders/descenders
+                        padded_rect = fitz.Rect(
+                            max(0, link_rect.x0 - 2),
+                            max(0, link_rect.y0 - 2),
+                            min(page_width, link_rect.x1 + 2),
+                            min(page_height, link_rect.y1 + 2)
+                        )
+                        visible_label = page.get_text("text", clip=padded_rect).strip()
+                        # Get broader surrounding block text
+                        broad_rect = fitz.Rect(
+                            max(0, link_rect.x0 - 60),
+                            max(0, link_rect.y0 - 20),
+                            min(page_width, link_rect.x1 + 60),
+                            min(page_height, link_rect.y1 + 20)
+                        )
+                        nearby_context = page.get_text("text", clip=broad_rect).strip()
+
+                    hyperlinks.append(create_hyperlink_record(
+                        url=uri,
+                        label=visible_label,
+                        source_format="pdf",
+                        source_page=page_idx + 1,
+                        nearby_text=nearby_context,
+                        extraction_method="pdf_uri_annotation"
+                    ))
         except Exception as e:
             logger.debug(f"Link extraction error on page {page_idx + 1}: {e}")
 
-        # 2. Layout-aware block extraction
+        # 2. Geometry-aware block extraction & Column Separation
         blocks = page.get_text("blocks")  # (x0, y0, x1, y1, text, block_no, block_type)
-        page_width = page.rect.width
-
-        # Filter text blocks only (block_type == 0)
         text_blocks = [b for b in blocks if len(b) >= 5 and b[4].strip() and b[6] == 0]
 
-        # Multi-column heuristic: check if blocks are distributed across left and right halves
-        left_blocks = [b for b in text_blocks if b[2] <= page_width * 0.58]
-        right_blocks = [b for b in text_blocks if b[0] >= page_width * 0.42]
+        # Column candidates: left sidebar vs right main column
+        col_left = [b for b in text_blocks if b[2] <= page_width * 0.45]
+        col_right = [b for b in text_blocks if b[0] >= page_width * 0.35]
 
-        if len(left_blocks) >= 3 and len(right_blocks) >= 3:
+        is_multi_col = len(col_left) >= 2 and len(col_right) >= 2
+        min_col_top = page_height
+        if is_multi_col:
+            min_col_top = min(min(b[1] for b in col_left), min(b[1] for b in col_right))
+
+        header_blocks = []
+        footer_blocks = []
+        body_blocks = []
+
+        for b in text_blocks:
+            if b[1] >= page_height * 0.90:
+                footer_blocks.append(b)
+            elif is_multi_col and b[3] <= min_col_top + 5:
+                # Top header preceding column split
+                header_blocks.append(b)
+            elif not is_multi_col and b[3] <= page_height * 0.15 and b[2] >= page_width * 0.40:
+                header_blocks.append(b)
+            else:
+                body_blocks.append(b)
+
+        if is_multi_col:
             multi_column_detected = True
-            # Sort left column top-to-bottom, then right column top-to-bottom
-            left_blocks.sort(key=lambda b: (b[1], b[0]))
-            right_blocks.sort(key=lambda b: (b[1], b[0]))
-            # Remaining header or full-width blocks
-            full_blocks = [b for b in text_blocks if b not in left_blocks and b not in right_blocks]
-            full_blocks.sort(key=lambda b: b[1])
+            left_blocks = [b for b in body_blocks if b[2] <= page_width * 0.45]
+            right_blocks = [b for b in body_blocks if b[0] >= page_width * 0.35]
+            middle_blocks = [b for b in body_blocks if b not in left_blocks and b not in right_blocks]
 
-            ordered_blocks = full_blocks + left_blocks + right_blocks
+            header_blocks.sort(key=lambda b: (b[1], b[0]))
+            left_blocks.sort(key=lambda b: (b[1], b[0]))
+            middle_blocks.sort(key=lambda b: (b[1], b[0]))
+            right_blocks.sort(key=lambda b: (b[1], b[0]))
+            footer_blocks.sort(key=lambda b: (b[1], b[0]))
+
+            # Reading order: Top Header -> Left Sidebar -> Middle -> Right Main Column -> Footer
+            ordered_blocks = header_blocks + left_blocks + middle_blocks + right_blocks + footer_blocks
         else:
-            # Standard single column or top-to-bottom flow
             ordered_blocks = sorted(text_blocks, key=lambda b: (b[1], b[0]))
 
         extracted_page_str = "\n".join([b[4].strip() for b in ordered_blocks if b[4].strip()])
 
-        # 3. Check for Scanned / Image-only page
+        # 3. Check for Scanned / Image-only page (< 50 selectable characters)
         if len(extracted_page_str.strip()) < 50:
             scanned_pages.append(page_idx + 1)
-            # Try OCR fallback on this page
             ocr_text = _attempt_ocr_on_page(page)
             if ocr_text:
                 extracted_page_str = ocr_text
@@ -173,13 +298,10 @@ def _extract_pdf_layout_aware(content: bytes) -> Dict[str, Any]:
         page_texts.append(extracted_page_str)
 
     doc.close()
-
     raw_text = "\n\n".join(page_texts).strip()
 
-    # Append any unique hyperlinks found to assist contact detection
-    if hyperlinks:
-        unique_uris = list(dict.fromkeys([h["uri"] for h in hyperlinks]))
-        raw_text += "\n\n--- EXTRACTED HYPERLINKS ---\n" + "\n".join(unique_uris)
+    # Recover any plaintext URLs in raw text
+    _recover_plaintext_hyperlinks(raw_text, hyperlinks, "pdf")
 
     return {
         "raw_text": raw_text,
@@ -188,7 +310,8 @@ def _extract_pdf_layout_aware(content: bytes) -> Dict[str, Any]:
             "columns_detected": multi_column_detected,
             "scanned_pages": scanned_pages,
             "hyperlinks": hyperlinks,
-            "tables_count": 0
+            "tables_count": 0,
+            "format": "pdf"
         }
     }
 
@@ -222,63 +345,325 @@ def _attempt_ocr_on_page(page) -> str:
 
 
 def _extract_docx_with_tables(content: bytes) -> Dict[str, Any]:
-    """Extracts DOCX paragraphs, table rows, headers, footers, and hyperlinks."""
+    """
+    Extracts DOCX paragraphs, table rows, headers, footers, textboxes,
+    and w:hyperlink relationship targets with visible run labels.
+    """
     import docx
 
     doc = docx.Document(io.BytesIO(content))
     text_chunks: List[str] = []
-    tables_found = 0
+    hyperlinks: List[Dict[str, Any]] = []
+    tables_found = len(doc.tables)
 
-    # 1. Headers & Footers (contact details often live here)
+    def extract_hyperlinks_from_p(p_elem):
+        for child in p_elem:
+            if child.tag.endswith("hyperlink"):
+                rel_id = child.attrib.get("{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id")
+                if rel_id and rel_id in doc.part.rels:
+                    target_url = doc.part.rels[rel_id].target_ref
+                    label_text = "".join(child.itertext()).strip()
+                    if target_url:
+                        hyperlinks.append(create_hyperlink_record(
+                            url=target_url,
+                            label=label_text,
+                            source_format="docx",
+                            source_page=1,
+                            nearby_text="".join(p_elem.itertext())[:200],
+                            extraction_method="docx_relationship"
+                        ))
+
+    # 1. Headers & Footers
     for section in doc.sections:
-        try:
-            for p in section.header.paragraphs:
-                if p.text.strip():
-                    text_chunks.append(p.text.strip())
-        except Exception:
-            pass
+        for container in (section.header, section.footer):
+            try:
+                for p in container.paragraphs:
+                    txt = p.text.strip()
+                    if txt:
+                        text_chunks.append(txt)
+                        extract_hyperlinks_from_p(p._p)
+            except Exception:
+                pass
 
-    # 2. Main document paragraphs
+    # 2. Main document paragraphs & hyperlinks
     for p in doc.paragraphs:
         if p.text.strip():
             text_chunks.append(p.text.strip())
+            extract_hyperlinks_from_p(p._p)
 
-    # 3. Tables (skill matrices, work tables, project grids)
+    # 3. Tables (logical row and column order)
     for table in doc.tables:
-        tables_found += 1
         table_rows = []
         for row in table.rows:
-            row_cells = [cell.text.strip() for cell in row.cells if cell.text.strip()]
-            # deduplicate repeated merged cells
-            seen = set()
-            dedup_cells = [c for c in row_cells if not (c in seen or seen.add(c))]
-            if dedup_cells:
-                table_rows.append(" | ".join(dedup_cells))
+            row_cells = []
+            for cell in row.cells:
+                ctext = cell.text.strip()
+                if ctext and ctext not in row_cells:
+                    row_cells.append(ctext)
+                for cp in cell.paragraphs:
+                    extract_hyperlinks_from_p(cp._p)
+            if row_cells:
+                table_rows.append(" | ".join(row_cells))
         if table_rows:
             text_chunks.append("\n" + "\n".join(table_rows) + "\n")
 
-    # 4. Hyperlinks extraction from document relationships
-    hyperlinks = []
+    # 4. Text Boxes (w:txbxContent in document XML body)
     try:
-        for rel in doc.part.rels.values():
-            if "hyperlink" in rel.reltype and rel.target_ref.startswith(("http", "mailto")):
-                hyperlinks.append({"uri": rel.target_ref})
-    except Exception:
-        pass
+        body_xml = doc._element.body
+        for txbx in body_xml.iter():
+            if txbx.tag.endswith("txbxContent"):
+                box_text = "".join(txbx.itertext()).strip()
+                if box_text and box_text not in "\n".join(text_chunks):
+                    text_chunks.append(box_text)
+                    extract_hyperlinks_from_p(txbx)
+    except Exception as e:
+        logger.debug(f"Textbox extraction note: {e}")
 
     raw_text = "\n".join(text_chunks).strip()
-    if hyperlinks:
-        unique_uris = list(dict.fromkeys([h["uri"] for h in hyperlinks]))
-        raw_text += "\n\n--- EXTRACTED HYPERLINKS ---\n" + "\n".join(unique_uris)
+    _recover_plaintext_hyperlinks(raw_text, hyperlinks, "docx")
 
     return {
         "raw_text": raw_text,
-        "page_count": max(1, len(text_chunks) // 40),
+        "page_count": max(1, len(text_chunks) // 35),
         "layout_info": {
             "columns_detected": False,
             "scanned_pages": [],
             "hyperlinks": hyperlinks,
-            "tables_count": tables_found
+            "tables_count": tables_found,
+            "format": "docx"
+        }
+    }
+
+
+def _extract_odt_content(content: bytes) -> Dict[str, Any]:
+    """Extracts OpenDocument Text (ODT) headings, paragraphs, tables, and hyperlinks."""
+    import zipfile
+    import xml.etree.ElementTree as ET
+
+    text_chunks: List[str] = []
+    hyperlinks: List[Dict[str, Any]] = []
+    tables_count = 0
+
+    try:
+        with zipfile.ZipFile(io.BytesIO(content)) as zf:
+            content_xml = zf.read("content.xml")
+
+        tree = ET.fromstring(content_xml)
+        for elem in tree.iter():
+            tag = elem.tag
+            if tag.endswith("}a"):
+                url = elem.attrib.get("{http://www.w3.org/1999/xlink}href")
+                label = "".join(elem.itertext()).strip()
+                if url:
+                    hyperlinks.append(create_hyperlink_record(
+                        url=url,
+                        label=label,
+                        source_format="odt",
+                        source_page=1,
+                        extraction_method="odt_xlink"
+                    ))
+            elif tag.endswith(("}h", "}p")):
+                txt = "".join(elem.itertext()).strip()
+                if txt:
+                    text_chunks.append(txt)
+            elif tag.endswith("}table"):
+                tables_count += 1
+    except Exception as e:
+        logger.warning(f"ODT parse error: {e}")
+
+    raw_text = "\n".join(text_chunks).strip()
+    _recover_plaintext_hyperlinks(raw_text, hyperlinks, "odt")
+
+    return {
+        "raw_text": raw_text,
+        "page_count": max(1, len(text_chunks) // 35),
+        "layout_info": {
+            "columns_detected": False,
+            "scanned_pages": [],
+            "hyperlinks": hyperlinks,
+            "tables_count": tables_count,
+            "format": "odt"
+        }
+    }
+
+
+def _extract_rtf_content(content: bytes) -> Dict[str, Any]:
+    """Extracts RTF document text and HYPERLINK fields."""
+    try:
+        text = content.decode("utf-8")
+    except UnicodeDecodeError:
+        text = content.decode("latin-1", errors="replace")
+
+    hyperlinks: List[Dict[str, Any]] = []
+    link_pattern = re.compile(r'\{\\field\{\\\*\\fldinst\{HYPERLINK\s+"([^"]+)"\}\}\{\\fldrslt\s+([^{}]+)\}\}', re.IGNORECASE)
+    for m in link_pattern.finditer(text):
+        url, label = m.group(1), m.group(2).strip()
+        hyperlinks.append(create_hyperlink_record(
+            url=url,
+            label=label,
+            source_format="rtf",
+            source_page=1,
+            extraction_method="rtf_field"
+        ))
+
+    # Strip RTF control words
+    cleaned = re.sub(r"\{\\(fonttbl|colortbl|stylesheet)[^{}]*\}", "", text)
+    cleaned = re.sub(r"\\(par|line)\b", "\n", cleaned)
+    cleaned = re.sub(r"\\\'([0-9a-fA-F]{2})", lambda m: bytes.fromhex(m.group(1)).decode("latin-1", errors="ignore"), cleaned)
+    cleaned = re.sub(r"\\[a-zA-Z0-9\-]+ ?", "", cleaned)
+    cleaned = re.sub(r"[{}]", "", cleaned)
+
+    lines = [l.strip() for l in cleaned.split("\n") if l.strip()]
+    raw_text = "\n".join(lines).strip()
+    _recover_plaintext_hyperlinks(raw_text, hyperlinks, "rtf")
+
+    return {
+        "raw_text": raw_text,
+        "page_count": max(1, len(lines) // 35),
+        "layout_info": {
+            "columns_detected": False,
+            "scanned_pages": [],
+            "hyperlinks": hyperlinks,
+            "tables_count": 0,
+            "format": "rtf"
+        }
+    }
+
+
+def _extract_html_content(content: bytes) -> Dict[str, Any]:
+    """Extracts HTML resume exports preserving semantic structure and hyperlinks."""
+    from bs4 import BeautifulSoup
+
+    try:
+        html_str = content.decode("utf-8")
+    except UnicodeDecodeError:
+        html_str = content.decode("latin-1", errors="replace")
+
+    soup = BeautifulSoup(html_str, "html.parser")
+    for s in soup(["script", "style", "noscript", "meta", "link"]):
+        s.decompose()
+
+    hyperlinks: List[Dict[str, Any]] = []
+    for a in soup.find_all("a", href=True):
+        href = a["href"].strip()
+        label = a.get_text().strip()
+        if href.startswith(("http", "mailto:", "tel:")):
+            hyperlinks.append(create_hyperlink_record(
+                url=href,
+                label=label,
+                source_format="html",
+                source_page=1,
+                nearby_text=a.parent.get_text()[:200] if a.parent else "",
+                extraction_method="html_anchor"
+            ))
+
+    text_chunks: List[str] = []
+    for elem in soup.find_all(["h1", "h2", "h3", "h4", "h5", "h6", "p", "li", "tr"]):
+        txt = elem.get_text().strip()
+        if txt and txt not in text_chunks:
+            text_chunks.append(txt)
+
+    if not text_chunks:
+        text_chunks = [soup.get_text().strip()]
+
+    raw_text = "\n".join(text_chunks).strip()
+    _recover_plaintext_hyperlinks(raw_text, hyperlinks, "html")
+
+    return {
+        "raw_text": raw_text,
+        "page_count": max(1, len(text_chunks) // 35),
+        "layout_info": {
+            "columns_detected": False,
+            "scanned_pages": [],
+            "hyperlinks": hyperlinks,
+            "tables_count": len(soup.find_all("table")),
+            "format": "html"
+        }
+    }
+
+
+def _extract_image_content(content: bytes) -> Dict[str, Any]:
+    """Converts image resumes (PNG, JPEG, TIFF) to PDF in memory and extracts text via layout engine + OCR."""
+    import fitz
+
+    # Open image with fitz and convert to single-page PDF document
+    img_doc = fitz.open(stream=content)
+    pdf_bytes = img_doc.convert_to_pdf()
+    img_doc.close()
+
+    result = _extract_pdf_layout_aware(pdf_bytes)
+    result["layout_info"]["format"] = "image"
+    return result
+
+
+def _extract_doc_content(content: bytes) -> Dict[str, Any]:
+    """Extracts text streams from legacy Word 97-2003 binary documents."""
+    text_pieces = []
+    raw_str = content.decode("latin-1", errors="ignore")
+    printable_chunks = re.findall(r"[\x20-\x7E\xA0-\xFF]{4,}", raw_str)
+    for chunk in printable_chunks:
+        if not any(noise in chunk for noise in ("WordDocument", "Root Entry", "CompObj", "SummaryInformation")):
+            text_pieces.append(chunk.strip())
+
+    raw_text = "\n".join(text_pieces).strip()
+    hyperlinks: List[Dict[str, Any]] = []
+    _recover_plaintext_hyperlinks(raw_text, hyperlinks, "doc")
+
+    return {
+        "raw_text": raw_text,
+        "page_count": max(1, len(text_pieces) // 35),
+        "layout_info": {
+            "columns_detected": False,
+            "scanned_pages": [],
+            "hyperlinks": hyperlinks,
+            "tables_count": 0,
+            "format": "doc"
+        }
+    }
+
+
+def _extract_pptx_content(content: bytes) -> Dict[str, Any]:
+    """Extracts PowerPoint resume content across slides, tables, and hyperlinks."""
+    import zipfile
+    import xml.etree.ElementTree as ET
+
+    text_chunks: List[str] = []
+    hyperlinks: List[Dict[str, Any]] = []
+
+    try:
+        with zipfile.ZipFile(io.BytesIO(content)) as zf:
+            slide_files = sorted([f for f in zf.namelist() if f.startswith("ppt/slides/slide") and f.endswith(".xml")])
+            for s_idx, sf in enumerate(slide_files, 1):
+                raw_xml = zf.read(sf)
+                try:
+                    tree = ET.fromstring(raw_xml)
+                    for elem in tree.iter():
+                        if elem.tag.endswith("}t"):
+                            txt = (elem.text or "").strip()
+                            if txt:
+                                text_chunks.append(txt)
+                except Exception as ex:
+                    # Regex fallback for imperfect or non-standard PPTX XML
+                    xml_str = raw_xml.decode("utf-8", errors="ignore")
+                    matches = re.findall(r"<[a-zA-Z0-9_:]*t[^>]*>(.*?)</[a-zA-Z0-9_:]*t>", xml_str)
+                    for m in matches:
+                        if m.strip():
+                            text_chunks.append(m.strip())
+    except Exception as e:
+        logger.warning(f"PPTX parse note: {e}")
+
+    raw_text = "\n".join(text_chunks).strip()
+    _recover_plaintext_hyperlinks(raw_text, hyperlinks, "pptx")
+
+    return {
+        "raw_text": raw_text,
+        "page_count": max(1, len(text_chunks) // 20),
+        "layout_info": {
+            "columns_detected": False,
+            "scanned_pages": [],
+            "hyperlinks": hyperlinks,
+            "tables_count": 0,
+            "format": "pptx"
         }
     }
 
@@ -295,10 +680,20 @@ def _extract_tex_clean(content: bytes) -> Dict[str, Any]:
         if line.strip():
             clean_lines.append(line.strip())
 
+    raw_text = "\n".join(clean_lines).strip()
+    hyperlinks: List[Dict[str, Any]] = []
+    _recover_plaintext_hyperlinks(raw_text, hyperlinks, "tex")
+
     return {
-        "raw_text": "\n".join(clean_lines).strip(),
+        "raw_text": raw_text,
         "page_count": 1,
-        "layout_info": {"columns_detected": False, "scanned_pages": [], "hyperlinks": [], "tables_count": 0}
+        "layout_info": {
+            "columns_detected": False,
+            "scanned_pages": [],
+            "hyperlinks": hyperlinks,
+            "tables_count": 0,
+            "format": "tex"
+        }
     }
 
 
@@ -308,11 +703,54 @@ def _extract_plain_text(content: bytes) -> Dict[str, Any]:
     except UnicodeDecodeError:
         text = content.decode("latin-1", errors="replace")
 
+    raw_text = text.strip()
+    hyperlinks: List[Dict[str, Any]] = []
+    _recover_plaintext_hyperlinks(raw_text, hyperlinks, "txt")
+
     return {
-        "raw_text": text.strip(),
+        "raw_text": raw_text,
         "page_count": max(1, len(text.split("\n")) // 50),
-        "layout_info": {"columns_detected": False, "scanned_pages": [], "hyperlinks": [], "tables_count": 0}
+        "layout_info": {
+            "columns_detected": False,
+            "scanned_pages": [],
+            "hyperlinks": hyperlinks,
+            "tables_count": 0,
+            "format": "txt"
+        }
     }
+
+
+def extract_document_content(
+    filename: str,
+    content: bytes,
+    ext: str
+) -> Dict[str, Any]:
+    """
+    Universal router dispatching to format-specific layout-aware parsers.
+    Extracts raw text, reconstructs multi-column reading order,
+    extracts first-class hyperlinks, and detects scanned pages.
+    """
+    ext_lower = ext.lower()
+    if ext_lower == ".pdf":
+        return _extract_pdf_layout_aware(content)
+    elif ext_lower == ".docx":
+        return _extract_docx_with_tables(content)
+    elif ext_lower == ".doc":
+        return _extract_doc_content(content)
+    elif ext_lower == ".odt":
+        return _extract_odt_content(content)
+    elif ext_lower == ".rtf":
+        return _extract_rtf_content(content)
+    elif ext_lower in (".html", ".htm"):
+        return _extract_html_content(content)
+    elif ext_lower in (".png", ".jpg", ".jpeg", ".tiff", ".tif"):
+        return _extract_image_content(content)
+    elif ext_lower == ".pptx":
+        return _extract_pptx_content(content)
+    elif ext_lower == ".tex":
+        return _extract_tex_clean(content)
+    else:
+        return _extract_plain_text(content)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -463,21 +901,25 @@ Return ONLY a valid JSON object matching the following comprehensive schema:
 
 def extract_structured_with_ai(
     raw_text: str,
-    pdf_bytes: Optional[bytes] = None
+    pdf_bytes: Optional[bytes] = None,
+    layout_info: Optional[Dict[str, Any]] = None
 ) -> Dict[str, Any]:
     """
     Invokes external AI provider with strict JSON output.
     Gracefully falls back to heuristic extraction if unconfigured or unreachable.
     Performs multi-pass safety merging to guarantee NO projects or companies are omitted.
+    Associates layout-extracted hyperlinks with structured entities.
     """
     from app.services.ai_provider import ai_provider_service
+
+    links = (layout_info or {}).get("hyperlinks", [])
 
     # Check if AI provider is available
     if not (ai_provider_service.is_gemini_configured() or
             ai_provider_service.is_nvidia_configured() or
             ai_provider_service.is_groq_configured()):
         logger.info("AI provider not configured. Using high-fidelity 2-pass heuristic parser.")
-        return heuristic_comprehensive_parse(raw_text)
+        return heuristic_comprehensive_parse(raw_text, layout_info)
 
     prompt = f"{EXTRACTION_SYSTEM_PROMPT}\n\nRESUME TEXT TO EXTRACT:\n{raw_text[:14000]}"
 
@@ -502,7 +944,7 @@ def extract_structured_with_ai(
 
         if parsed and isinstance(parsed, dict) and "personal_info" in parsed:
             # Multi-pass safety merge with heuristic 2-pass extraction to ensure NO projects or companies are lost
-            heuristic_data = heuristic_comprehensive_parse(raw_text)
+            heuristic_data = heuristic_comprehensive_parse(raw_text, layout_info)
             
             # 1. Merge projects
             ai_projs = parsed.get("projects") or []
@@ -528,12 +970,15 @@ def extract_structured_with_ai(
                         ai_exps.append(he)
                 parsed["work_experience"] = ai_exps
 
-            return _normalize_and_validate_extraction(parsed, raw_text)
+            norm_result = _normalize_and_validate_extraction(parsed, raw_text)
+            if links:
+                norm_result, _ = associate_links_with_resume_entities(links, norm_result)
+            return norm_result
 
     except Exception as e:
         logger.error(f"AI structured parsing failed: {e}. Falling back to 2-pass heuristic engine.")
 
-    return heuristic_comprehensive_parse(raw_text)
+    return heuristic_comprehensive_parse(raw_text, layout_info)
 
 
 def _clean_and_parse_json(raw_json: str) -> Optional[Dict[str, Any]]:
@@ -1010,11 +1455,15 @@ def normalize_and_deduplicate_project(proj: Dict[str, Any]) -> Dict[str, Any]:
     return canonicalize_project(proj)
 
 
-def heuristic_comprehensive_parse(raw_text: str) -> Dict[str, Any]:
+def heuristic_comprehensive_parse(
+    raw_text: str,
+    layout_info: Optional[Dict[str, Any]] = None
+) -> Dict[str, Any]:
     """
     Offline deterministic parser that extracts all contact information,
     categorizes skills, splits experience and education, and captures custom sections.
     Guarantees that no data is lost even without AI API keys.
+    Associates layout-extracted hyperlinks with structured entities.
     """
     structured: Dict[str, Any] = {
         "personal_info": {
@@ -1397,7 +1846,11 @@ def heuristic_comprehensive_parse(raw_text: str) -> Dict[str, Any]:
                         structured["personal_info"]["state"] = loc_parts[1]
                     break
 
-    return _normalize_and_validate_extraction(structured, raw_text)
+    res = _normalize_and_validate_extraction(structured, raw_text)
+    links = (layout_info or {}).get("hyperlinks", [])
+    if links:
+        res, _ = associate_links_with_resume_entities(links, res)
+    return res
 
 
 # ─────────────────────────────────────────────────────────────────────────────
