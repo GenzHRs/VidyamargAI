@@ -1,0 +1,54 @@
+{
+  "test_id": "rw_45",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Maya Patel",
+    "email": "maya.patel@fintechcore.com",
+    "phone": "+1-415-555-0142",
+    "location": "San Francisco, CA"
+  },
+  "professional_summary": "Accomplished infrastructure engineering leader with 7+ years of progressive growth at Stripe Technologies, advancing from Software Engineer to Staff Infrastructure Architect.",
+  "work_experience": [
+    {
+      "employer": "Stripe Technologies",
+      "designation": "Staff Infrastructure Architect",
+      "start_date": "2022",
+      "end_date": "Present"
+    },
+    {
+      "employer": "Stripe Technologies",
+      "designation": "Senior Systems Engineer",
+      "start_date": "2019",
+      "end_date": "2022"
+    },
+    {
+      "employer": "Stripe Technologies",
+      "designation": "Software Engineer II",
+      "start_date": "2017",
+      "end_date": "2019"
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of California, Berkeley",
+      "degree": "B.S. in Electrical Engineering & Computer Science",
+      "graduation_year": "2017"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "Go",
+      "Java",
+      "Python",
+      "Ruby",
+      "SQL",
+      "Kafka",
+      "Redis",
+      "PostgreSQL",
+      "Kubernetes",
+      "Envoy",
+      "Terraform",
+      "AWS"
+    ]
+  }
+}

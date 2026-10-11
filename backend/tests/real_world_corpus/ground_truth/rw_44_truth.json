@@ -1,0 +1,56 @@
+{
+  "test_id": "rw_44",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Danielle Vance",
+    "email": "danielle.vance@cloudsec.io",
+    "phone": "+1-206-555-0199",
+    "location": "Seattle, WA",
+    "linkedin": "https://linkedin.com/in/daniellevance"
+  },
+  "professional_summary": "Pragmatic cloud security architect with 10+ years establishing zero-trust access fabrics, automated container compliance gates, and multi-region AWS/Kubernetes landing zones.",
+  "work_experience": [
+    {
+      "employer": "Apex Security Solutions",
+      "designation": "Principal Cloud Architect",
+      "start_date": "2020",
+      "end_date": "Present"
+    },
+    {
+      "employer": "CloudScale Networks",
+      "designation": "Senior DevOps Security Engineer",
+      "start_date": "2016",
+      "end_date": "2020"
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Washington",
+      "degree": "B.S. Informatics",
+      "graduation_year": "2014"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "AWS",
+      "Terraform",
+      "Kubernetes",
+      "Docker",
+      "Vault",
+      "Falco",
+      "Trivy",
+      "Python",
+      "Go",
+      "GitLab CI"
+    ]
+  },
+  "projects": [
+    {
+      "name": "KubeArmor-Automate",
+      "technologies": [
+        "eBPF",
+        "Kubernetes"
+      ]
+    }
+  ]
+}

@@ -99,6 +99,12 @@ def evaluate_single_fixture(fixture_meta: Dict[str, Any], db) -> Dict[str, Any]:
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
+            "strict_precision": 0.0,
+            "strict_recall": 0.0,
+            "strict_f1": 0.0,
+            "normalized_precision": 0.0,
+            "normalized_recall": 0.0,
+            "normalized_f1": 0.0,
             "exact_match_score": 0.0,
             "hyperlink_precision": 1.0,
             "pdf_retention_rate": 0.0
@@ -128,6 +134,12 @@ def evaluate_single_fixture(fixture_meta: Dict[str, Any], db) -> Dict[str, Any]:
             result["metrics"]["precision"] = 1.0
             result["metrics"]["recall"] = 1.0
             result["metrics"]["f1"] = 1.0
+            result["metrics"]["strict_precision"] = 1.0
+            result["metrics"]["strict_recall"] = 1.0
+            result["metrics"]["strict_f1"] = 1.0
+            result["metrics"]["normalized_precision"] = 1.0
+            result["metrics"]["normalized_recall"] = 1.0
+            result["metrics"]["normalized_f1"] = 1.0
             result["metrics"]["exact_match_score"] = 1.0
             return result
         else:
@@ -345,7 +357,7 @@ def evaluate_single_fixture(fixture_meta: Dict[str, Any], db) -> Dict[str, Any]:
         name_present = gt_pi["full_name"].lower() in norm_rendered
         m["pdf_retention_rate"] = 1.0 if name_present else 0.5
 
-    # Calculate overall metrics
+    # Calculate overall strict metrics
     exp_f = max(1, m["fields_expected"])
     corr_f = m["fields_correct"]
     m["recall"] = round(corr_f / exp_f, 3)
@@ -354,8 +366,244 @@ def evaluate_single_fixture(fixture_meta: Dict[str, Any], db) -> Dict[str, Any]:
     m["f1"] = round((2 * p * r) / max(0.001, (p + r)), 3)
     m["exact_match_score"] = round(corr_f / exp_f, 3)
 
+    # Calculate normalized/fuzzy metrics side-by-side
+    norm_m = compute_normalized_metrics(truth, structured, layout_info, rendered_text)
+    result["normalized_metrics"] = norm_m
+    m["strict_recall"] = m["recall"]
+    m["strict_precision"] = m["precision"]
+    m["strict_f1"] = m["f1"]
+    m["normalized_recall"] = norm_m["recall"]
+    m["normalized_precision"] = norm_m["precision"]
+    m["normalized_f1"] = norm_m["f1"]
+
     result["actual_status"] = "success" if m["recall"] >= 0.65 else "partial"
     return result
+
+
+def compute_normalized_metrics(
+    truth: Dict[str, Any],
+    structured: Dict[str, Any],
+    layout_info: Dict[str, Any],
+    rendered_text: str = ""
+) -> Dict[str, Any]:
+    """
+    Computes normalized/fuzzy evaluation metrics.
+    - Skills: checks against flattened all_raw_skills and all category lists in structured['skills'].
+    - Phone: normalizes by digits (E.164 / last 10 digits).
+    - Location: checks city / state / token containment.
+    - Work Experience: checks employer, title, and token overlap.
+    - Education: checks institution and degree.
+    - Projects: checks project names and tech stack.
+    - Hyperlinks: URL normalized (scheme & trailing slash agnostic).
+    """
+    import re
+    nm = {
+        "fields_expected": 0,
+        "fields_correct": 0.0,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+    }
+
+    if truth.get("expected_status") == "rejected":
+        nm["fields_expected"] = 1
+        nm["fields_correct"] = 1.0
+        nm["precision"] = 1.0
+        nm["recall"] = 1.0
+        nm["f1"] = 1.0
+        return nm
+
+    # 1. Personal Info
+    gt_pi = truth.get("personal_info") or {}
+    act_pi = structured.get("personal_info") or {}
+
+    if "full_name" in gt_pi and gt_pi["full_name"]:
+        nm["fields_expected"] += 1
+        gt_name = str(gt_pi["full_name"]).lower().strip()
+        act_name = str(act_pi.get("full_name") or "").lower().strip()
+        if gt_name == act_name:
+            nm["fields_correct"] += 1.0
+        elif gt_name in act_name or act_name in gt_name or any(p in act_name for p in gt_name.split() if len(p) > 2):
+            nm["fields_correct"] += 0.8
+        elif not act_name:
+            nm["fields_missing"] += 1
+        else:
+            nm["fields_incorrect"] += 1
+
+    if "email" in gt_pi and gt_pi["email"]:
+        nm["fields_expected"] += 1
+        gt_email = str(gt_pi["email"]).lower().strip()
+        act_email = str(act_pi.get("email") or "").lower().strip()
+        act_all_emails = [str(e).lower().strip() for e in act_pi.get("additional_emails", [])]
+        if gt_email == act_email or gt_email in act_all_emails:
+            nm["fields_correct"] += 1.0
+        elif not act_email:
+            nm["fields_missing"] += 1
+        else:
+            nm["fields_incorrect"] += 1
+
+    if "phone" in gt_pi and gt_pi["phone"]:
+        nm["fields_expected"] += 1
+        gt_digits = re.sub(r"\D", "", str(gt_pi["phone"]))[-10:]
+        act_digits = re.sub(r"\D", "", str(act_pi.get("phone") or ""))[-10:]
+        act_add_digits = [re.sub(r"\D", "", str(p))[-10:] for p in act_pi.get("additional_phones", [])]
+        if (gt_digits and gt_digits == act_digits) or (gt_digits and gt_digits in act_add_digits):
+            nm["fields_correct"] += 1.0
+        elif act_digits and (gt_digits in act_digits or act_digits in gt_digits):
+            nm["fields_correct"] += 0.8
+        elif not act_digits:
+            nm["fields_missing"] += 1
+        else:
+            nm["fields_incorrect"] += 1
+
+    if "location" in gt_pi and gt_pi["location"]:
+        nm["fields_expected"] += 1
+        gt_loc = str(gt_pi["location"]).lower().strip()
+        act_loc = str(act_pi.get("location") or "").lower().strip()
+        act_city = str(act_pi.get("city") or "").lower().strip()
+        act_state = str(act_pi.get("state") or "").lower().strip()
+        combined_act = f"{act_loc} {act_city} {act_state}".strip()
+        gt_tokens = [t.strip(" ,.") for t in gt_loc.split() if len(t) > 1]
+        match_count = sum(1 for t in gt_tokens if t in combined_act)
+        if gt_loc in combined_act or combined_act in gt_loc:
+            nm["fields_correct"] += 1.0
+        elif match_count >= 1:
+            nm["fields_correct"] += 0.8
+        elif not act_loc and not act_city:
+            nm["fields_missing"] += 1
+        else:
+            nm["fields_incorrect"] += 1
+
+    # 2. Professional Summary
+    if "professional_summary" in truth and truth["professional_summary"]:
+        nm["fields_expected"] += 1
+        gt_s = str(truth["professional_summary"]).lower().strip()
+        act_s = str(structured.get("professional_summary") or structured.get("summary") or "").lower().strip()
+        if gt_s[:30] in act_s or act_s[:30] in gt_s:
+            nm["fields_correct"] += 1.0
+        elif act_s and len(act_s) > 20:
+            gt_words = set(re.findall(r"\w+", gt_s))
+            act_words = set(re.findall(r"\w+", act_s))
+            jaccard = len(gt_words & act_words) / max(1, len(gt_words | act_words))
+            if jaccard >= 0.3:
+                nm["fields_correct"] += 0.8
+            else:
+                nm["fields_correct"] += 0.5
+        else:
+            nm["fields_missing"] += 1
+
+    # 3. Work Experience
+    gt_exp = truth.get("work_experience") or []
+    act_exp = structured.get("work_experience") or []
+    if gt_exp:
+        nm["fields_expected"] += len(gt_exp)
+        act_employers = [str(e.get("employer") or e.get("company") or "").lower().strip() for e in act_exp]
+        act_desigs = [str(e.get("designation") or e.get("role") or "").lower().strip() for e in act_exp]
+        for e in gt_exp:
+            gt_emp = str(e.get("employer") or e.get("company") or "").lower().strip()
+            gt_desig = str(e.get("designation") or e.get("role") or "").lower().strip()
+            emp_matched = any(gt_emp in a or a in gt_emp for a in act_employers if a)
+            desig_matched = any(gt_desig in d or d in gt_desig for d in act_desigs if d)
+            if emp_matched and desig_matched:
+                nm["fields_correct"] += 1.0
+            elif emp_matched:
+                nm["fields_correct"] += 0.8
+            elif act_exp:
+                nm["fields_correct"] += 0.4
+            else:
+                nm["fields_missing"] += 1
+
+    # 4. Education
+    gt_edu = truth.get("education") or []
+    act_edu = structured.get("education") or []
+    if gt_edu:
+        nm["fields_expected"] += len(gt_edu)
+        act_insts = [str(ed.get("institution") or ed.get("school") or "").lower().strip() for ed in act_edu]
+        act_degs = [str(ed.get("degree") or "").lower().strip() for ed in act_edu]
+        for ed in gt_edu:
+            gt_inst = str(ed.get("institution") or ed.get("school") or "").lower().strip()
+            gt_deg = str(ed.get("degree") or "").lower().strip()
+            inst_matched = any(gt_inst in a or a in gt_inst for a in act_insts if a)
+            deg_matched = any(gt_deg in d or d in gt_deg for d in act_degs if d)
+            if inst_matched and deg_matched:
+                nm["fields_correct"] += 1.0
+            elif inst_matched:
+                nm["fields_correct"] += 0.8
+            elif act_edu:
+                nm["fields_correct"] += 0.4
+            else:
+                nm["fields_missing"] += 1
+
+    # 5. Technical Skills (FLATTEN ALL CATEGORIES + RAW SKILLS)
+    gt_skills = (truth.get("skills") or {}).get("technical") or []
+    if not gt_skills and isinstance(truth.get("skills"), list):
+        gt_skills = truth["skills"]
+
+    extracted_skill_pool = set()
+    raw_skills_val = structured.get("skills")
+    if isinstance(raw_skills_val, dict):
+        for k, v in raw_skills_val.items():
+            if isinstance(v, list):
+                for s in v:
+                    if s:
+                        extracted_skill_pool.add(str(s).lower().strip())
+    elif isinstance(raw_skills_val, list):
+        for s in raw_skills_val:
+            if s:
+                extracted_skill_pool.add(str(s).lower().strip())
+
+    if gt_skills:
+        nm["fields_expected"] += 1
+        gt_norm = [str(s).lower().strip() for s in gt_skills]
+        matches = 0
+        for gs in gt_norm:
+            if gs in extracted_skill_pool or any(gs in es or es in gs for es in extracted_skill_pool):
+                matches += 1
+        recall_rate = matches / max(1, len(gt_norm))
+        if recall_rate >= 0.7:
+            nm["fields_correct"] += 1.0
+        elif recall_rate > 0:
+            nm["fields_correct"] += round(recall_rate, 3)
+        else:
+            nm["fields_missing"] += 1
+
+    # 6. Projects
+    gt_projs = truth.get("projects") or []
+    act_projs = structured.get("projects") or []
+    if gt_projs:
+        nm["fields_expected"] += len(gt_projs)
+        act_proj_names = [str(p.get("name") or p.get("title") or "").lower().strip() for p in act_projs]
+        for gp in gt_projs:
+            gp_name = str(gp.get("name") or gp.get("title") or "").lower().strip()
+            if any(gp_name in ap or ap in gp_name for ap in act_proj_names if ap):
+                nm["fields_correct"] += 1.0
+            elif act_projs:
+                nm["fields_correct"] += 0.5
+            else:
+                nm["fields_missing"] += 1
+
+    # 7. Hyperlinks
+    gt_links = truth.get("hyperlinks") or []
+    if gt_links:
+        nm["fields_expected"] += len(gt_links)
+        act_links = layout_info.get("hyperlinks") or []
+        act_urls = {re.sub(r"^https?://", "", str(l.get("url") or "")).lower().rstrip("/") for l in act_links}
+        for l in gt_links:
+            exp_u = re.sub(r"^https?://", "", str(l.get("url") or "")).lower().rstrip("/")
+            if any(exp_u in au or au in exp_u for au in act_urls if au):
+                nm["fields_correct"] += 1.0
+            else:
+                nm["fields_missing"] += 1
+
+    exp_f = max(1, nm["fields_expected"])
+    corr_f = nm["fields_correct"]
+    nm["recall"] = round(corr_f / exp_f, 3)
+    nm["precision"] = round(corr_f / max(1, corr_f + nm["fields_incorrect"]), 3)
+    p, r = nm["precision"], nm["recall"]
+    nm["f1"] = round((2 * p * r) / max(0.001, (p + r)), 3)
+    return nm
 
 
 def run_full_evaluation():
@@ -382,11 +630,18 @@ def run_full_evaluation():
 
         fmt = res["format"]
         if fmt not in format_metrics:
-            format_metrics[fmt] = {"count": 0, "recalls": [], "precisions": [], "f1s": []}
+            format_metrics[fmt] = {
+                "count": 0,
+                "strict_recalls": [], "strict_precisions": [], "strict_f1s": [],
+                "norm_recalls": [], "norm_precisions": [], "norm_f1s": []
+            }
         format_metrics[fmt]["count"] += 1
-        format_metrics[fmt]["recalls"].append(res["metrics"]["recall"])
-        format_metrics[fmt]["precisions"].append(res["metrics"]["precision"])
-        format_metrics[fmt]["f1s"].append(res["metrics"]["f1"])
+        format_metrics[fmt]["strict_recalls"].append(res["metrics"]["strict_recall"])
+        format_metrics[fmt]["strict_precisions"].append(res["metrics"]["strict_precision"])
+        format_metrics[fmt]["strict_f1s"].append(res["metrics"]["strict_f1"])
+        format_metrics[fmt]["norm_recalls"].append(res["metrics"]["normalized_recall"])
+        format_metrics[fmt]["norm_precisions"].append(res["metrics"]["normalized_precision"])
+        format_metrics[fmt]["norm_f1s"].append(res["metrics"]["normalized_f1"])
 
         if res["actual_status"] == "success":
             total_passed += 1
@@ -398,14 +653,18 @@ def run_full_evaluation():
             total_failed += 1
             status_tag = "[FAIL]   "
 
-        logger.info(f"{status_tag} {res['test_id']}: {res['file_name']} | Format: {fmt:5s} | Recall: {res['metrics']['recall']:.2f} | F1: {res['metrics']['f1']:.2f}")
+        logger.info(f"{status_tag} {res['test_id']}: {res['file_name']} | Format: {fmt:5s} | Strict Recall: {res['metrics']['strict_recall']:.2f} | Norm Recall: {res['metrics']['normalized_recall']:.2f} | Norm F1: {res['metrics']['normalized_f1']:.2f}")
 
     db.close()
 
     # Aggregate Benchmark Report
-    avg_recall = sum(r["metrics"]["recall"] for r in all_results) / total_expected
-    avg_precision = sum(r["metrics"]["precision"] for r in all_results) / total_expected
-    avg_f1 = sum(r["metrics"]["f1"] for r in all_results) / total_expected
+    avg_strict_recall = sum(r["metrics"]["strict_recall"] for r in all_results) / total_expected
+    avg_strict_precision = sum(r["metrics"]["strict_precision"] for r in all_results) / total_expected
+    avg_strict_f1 = sum(r["metrics"]["strict_f1"] for r in all_results) / total_expected
+
+    avg_norm_recall = sum(r["metrics"]["normalized_recall"] for r in all_results) / total_expected
+    avg_norm_precision = sum(r["metrics"]["normalized_precision"] for r in all_results) / total_expected
+    avg_norm_f1 = sum(r["metrics"]["normalized_f1"] for r in all_results) / total_expected
 
     benchmark_summary = {
         "timestamp": os.path.getmtime(MANIFEST_PATH),
@@ -414,14 +673,22 @@ def run_full_evaluation():
         "total_partial": total_partial,
         "total_failed": total_failed,
         "pass_rate": round(total_passed / total_expected, 3),
-        "overall_precision": round(avg_precision, 3),
-        "overall_recall": round(avg_recall, 3),
-        "overall_f1": round(avg_f1, 3),
+        "overall_precision": round(avg_strict_precision, 3),
+        "overall_recall": round(avg_strict_recall, 3),
+        "overall_f1": round(avg_strict_f1, 3),
+        "overall_strict_precision": round(avg_strict_precision, 3),
+        "overall_strict_recall": round(avg_strict_recall, 3),
+        "overall_strict_f1": round(avg_strict_f1, 3),
+        "overall_normalized_precision": round(avg_norm_precision, 3),
+        "overall_normalized_recall": round(avg_norm_recall, 3),
+        "overall_normalized_f1": round(avg_norm_f1, 3),
         "format_breakdown": {
             fmt: {
                 "count": data["count"],
-                "mean_recall": round(sum(data["recalls"]) / data["count"], 3),
-                "mean_f1": round(sum(data["f1s"]) / data["count"], 3)
+                "strict_mean_recall": round(sum(data["strict_recalls"]) / data["count"], 3),
+                "strict_mean_f1": round(sum(data["strict_f1s"]) / data["count"], 3),
+                "normalized_mean_recall": round(sum(data["norm_recalls"]) / data["count"], 3),
+                "normalized_mean_f1": round(sum(data["norm_f1s"]) / data["count"], 3)
             } for fmt, data in format_metrics.items()
         },
         "results": all_results
@@ -431,14 +698,14 @@ def run_full_evaluation():
         json.dump(benchmark_summary, f, indent=2)
 
     logger.info("=" * 70)
-    logger.info("EVALUATION BENCHMARK SUMMARY")
+    logger.info("EVALUATION BENCHMARK SUMMARY (STRICT vs NORMALIZED)")
     logger.info(f"Total Fixtures Tested: {total_expected}")
     logger.info(f"Passed:                {total_passed} ({total_passed/total_expected*100:.1f}%)")
     logger.info(f"Partial:               {total_partial}")
     logger.info(f"Failed:                {total_failed}")
-    logger.info(f"Mean Precision:        {avg_precision:.3f}")
-    logger.info(f"Mean Recall:           {avg_recall:.3f}")
-    logger.info(f"Mean F1 Score:         {avg_f1:.3f}")
+    logger.info(f"Strict Mean Precision: {avg_strict_precision:.3f} | Normalized: {avg_norm_precision:.3f}")
+    logger.info(f"Strict Mean Recall:    {avg_strict_recall:.3f} | Normalized: {avg_norm_recall:.3f}")
+    logger.info(f"Strict Mean F1 Score:  {avg_strict_f1:.3f} | Normalized: {avg_norm_f1:.3f}")
     logger.info(f"Results saved to:      {RESULTS_PATH}")
     logger.info("=" * 70)
 

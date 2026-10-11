@@ -977,5 +977,189 @@
     ],
     "verification_status": "verified",
     "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_41_edge_unsupported.xyz"
+  },
+  {
+    "test_id": "rw_42",
+    "file_name": "rw_42_5plus_page_cv.pdf",
+    "format": "pdf",
+    "layout_category": "5+ Page Executive CV",
+    "page_count": 5,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": true,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "professional_summary",
+      "work_experience",
+      "education",
+      "skills",
+      "projects"
+    ],
+    "known_challenges": [
+      "Document length >14,000 chars",
+      "Prompt truncation defense",
+      "Multi-page publication list"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_42_5plus_page_cv.pdf"
+  },
+  {
+    "test_id": "rw_43",
+    "file_name": "rw_43_three_column_layout.pdf",
+    "format": "pdf",
+    "layout_category": "Three-Column Complex Magazine",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": true,
+    "expected_fields": [
+      "personal_info",
+      "professional_summary",
+      "work_experience",
+      "education",
+      "skills",
+      "projects"
+    ],
+    "known_challenges": [
+      "Three vertical columns",
+      "Narrow gutters",
+      "Multi-column interleave risk"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_43_three_column_layout.pdf"
+  },
+  {
+    "test_id": "rw_44",
+    "file_name": "rw_44_two_column_full_width_header.pdf",
+    "format": "pdf",
+    "layout_category": "Two-Column with Full-Width Header",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": true,
+    "has_tables": false,
+    "has_columns": true,
+    "expected_fields": [
+      "personal_info",
+      "professional_summary",
+      "work_experience",
+      "education",
+      "skills",
+      "projects"
+    ],
+    "known_challenges": [
+      "Full-width header atop two columns",
+      "Vertical sweep interference",
+      "Left sidebar split"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_44_two_column_full_width_header.pdf"
+  },
+  {
+    "test_id": "rw_45",
+    "file_name": "rw_45_single_employer_promotions.pdf",
+    "format": "pdf",
+    "layout_category": "Single-Employer Career Progression",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "professional_summary",
+      "work_experience",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "3 consecutive internal promotions",
+      "Hierarchical single company",
+      "Role timeline flattening risk"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_45_single_employer_promotions.pdf"
+  },
+  {
+    "test_id": "rw_46",
+    "file_name": "rw_46_rtl_arabic_hebrew.pdf",
+    "format": "pdf",
+    "layout_category": "RTL Multilingual Arabic-English",
+    "page_count": 1,
+    "language": "ar/en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "professional_summary",
+      "work_experience",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "Right-to-left glyphs",
+      "Bilingual text extraction",
+      "Unicode bidirectional embedding"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_46_rtl_arabic_hebrew.pdf"
+  },
+  {
+    "test_id": "rw_47",
+    "file_name": "rw_47_cjk_multilingual.pdf",
+    "format": "pdf",
+    "layout_category": "CJK Japanese-English Multilingual",
+    "page_count": 1,
+    "language": "ja/en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "professional_summary",
+      "work_experience",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "Multi-byte CJK glyphs",
+      "Non-space-delimited tokens",
+      "Bilingual headings"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_47_cjk_multilingual.pdf"
+  },
+  {
+    "test_id": "rw_48",
+    "file_name": "rw_48_acroform_form_fields.pdf",
+    "format": "pdf",
+    "layout_category": "Interactive AcroForm Fields",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "professional_summary",
+      "work_experience",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "Interactive widget form fields",
+      "AcroForm text stream extraction"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_48_acroform_form_fields.pdf"
   }
 ]

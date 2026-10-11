@@ -1,0 +1,46 @@
+{
+  "test_id": "rw_47",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Kenji Takahashi",
+    "email": "kenji.takahashi@tokyo-ai.jp",
+    "phone": "+81-3-5555-0199",
+    "location": "Tokyo, Japan"
+  },
+  "professional_summary": "AI systems architect with 9+ years delivering low-latency machine learning inference pipelines and distributed robotics perception models in Tokyo.",
+  "work_experience": [
+    {
+      "employer": "Rakuten AI Laboratories",
+      "designation": "Principal Machine Learning Architect",
+      "start_date": "2020",
+      "end_date": "Present"
+    },
+    {
+      "employer": "Sony Robotics Technologies",
+      "designation": "Senior Systems Engineer",
+      "start_date": "2016",
+      "end_date": "2020"
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Tokyo",
+      "degree": "Master of Information Science and Technology",
+      "graduation_year": "2016"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "PyTorch",
+      "TensorRT",
+      "Triton",
+      "C++",
+      "Python",
+      "ROS 2",
+      "Docker",
+      "CUDA",
+      "Linux",
+      "Git"
+    ]
+  }
+}

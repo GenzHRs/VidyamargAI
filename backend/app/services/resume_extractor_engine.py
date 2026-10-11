@@ -185,409 +185,71 @@ def _recover_plaintext_hyperlinks(text: str, existing_links: List[Dict[str, Any]
 
 def _extract_pdf_layout_aware(content: bytes) -> Dict[str, Any]:
     """
-    Extracts text using PyMuPDF with column-aware reading order (Left/Right sidebar and 50/50),
-    spatial hyperlink annotation mapping with visible label recovery via word-level intersection,
-    running header/footer suppression across multi-page documents,
-    and OCR fallback for scanned pages.
+    Layout-aware PDF extraction powered by Stage 2 Multi-Modal & Multi-Layout engine:
+    - 1, 2, and 3 column detection with full-width banner header isolation
+    - Multi-page running header/footer suppression
+    - Spatial hyperlink extraction with visible label recovery
+    - Font-size hierarchy extraction
+    - High-resolution 300 DPI OpenCV preprocessing and dual-path vision/OCR for scanned & mixed pages
     """
-    import fitz  # PyMuPDF
-    import unicodedata
+    from app.services.page_extractors import extract_document_stage2, ColumnLayoutType
+    from app.services.document_classifier import PageType
 
-    doc = fitz.open(stream=content, filetype="pdf")
-    page_count = len(doc)
-    page_texts: List[str] = []
-    scanned_pages: List[int] = []
-    hyperlinks: List[Dict[str, Any]] = []
-    page_layouts: List[Dict[str, Any]] = []
-    multi_column_detected = False
+    stage2_res = extract_document_stage2(content, "resume.pdf")
 
-    # Extract raw blocks and links across all pages
-    all_pages_blocks: List[List[Any]] = []
-    top_margin_lines: Dict[int, List[str]] = {}
-    bot_margin_lines: Dict[int, List[str]] = {}
+    page_layouts = []
+    scanned_pages = []
+    for p in stage2_res.pages:
+        if p.ocr_used or p.page_type == PageType.SCANNED:
+            scanned_pages.append(p.page_number)
+        page_layouts.append({
+            "page": p.page_number,
+            "column_layout": p.column_layout.value if hasattr(p.column_layout, "value") else str(p.column_layout),
+            "gutters": p.gutters,
+            "ocr_used": p.ocr_used
+        })
 
-    for page_idx in range(page_count):
-        page = doc[page_idx]
-        page_width = page.rect.width
-        page_height = page.rect.height
-
-        # 1. Recover embedded hyperlinks with exact visible labels via spatial bounding boxes & word intersection
-        try:
-            links = page.get_links()
-            all_page_words = page.get_text("words")  # (x0, y0, x1, y1, word, block_no, line_no, word_no)
-            for l in links:
-                uri = l.get("uri")
-                if uri and uri.startswith(("http://", "https://", "mailto:", "tel:")):
-                    link_rect = l.get("from")
-                    visible_label = ""
-                    nearby_context = ""
-                    if link_rect:
-                        # Pad rect by 3pt
-                        padded_rect = fitz.Rect(
-                            max(0, link_rect.x0 - 3),
-                            max(0, link_rect.y0 - 3),
-                            min(page_width, link_rect.x1 + 3),
-                            min(page_height, link_rect.y1 + 3)
-                        )
-                        visible_label = page.get_text("text", clip=padded_rect).strip()
-                        if not visible_label and all_page_words:
-                            # Word-level intersection fallback
-                            overlapping_words = [
-                                w[4] for w in all_page_words
-                                if not (w[2] < link_rect.x0 - 3 or w[0] > link_rect.x1 + 3 or
-                                        w[3] < link_rect.y0 - 3 or w[1] > link_rect.y1 + 3)
-                            ]
-                            if overlapping_words:
-                                visible_label = " ".join(overlapping_words).strip()
-
-                        # Broader surrounding block text for entity association
-                        broad_rect = fitz.Rect(
-                            max(0, link_rect.x0 - 100),
-                            max(0, link_rect.y0 - 35),
-                            min(page_width, link_rect.x1 + 100),
-                            min(page_height, link_rect.y1 + 35)
-                        )
-                        nearby_context = page.get_text("text", clip=broad_rect).strip()
-
-                    hyperlinks.append(create_hyperlink_record(
-                        url=uri,
-                        label=visible_label,
-                        source_format="pdf",
-                        source_page=page_idx + 1,
-                        nearby_text=nearby_context,
-                        extraction_method="pdf_uri_annotation"
-                    ))
-        except Exception as e:
-            logger.debug(f"Link extraction error on page {page_idx + 1}: {e}")
-
-        # 2. Extract text blocks and collect margins for recurring header/footer detection
-        blocks = page.get_text("blocks")
-        text_blocks = [b for b in blocks if len(b) >= 5 and b[4].strip() and b[6] == 0]
-        all_pages_blocks.append(text_blocks)
-
-        top_lines = [b[4].strip() for b in text_blocks if b[3] <= page_height * 0.08]
-        bot_lines = [b[4].strip() for b in text_blocks if b[1] >= page_height * 0.92]
-        top_margin_lines[page_idx] = top_lines
-        bot_margin_lines[page_idx] = bot_lines
-
-    # Detect recurring running headers / footers across multi-page documents
-    recurring_noise_patterns = set()
-    if page_count > 1:
-        for p_idx in range(1, page_count):
-            for line in top_margin_lines.get(p_idx, []):
-                norm_l = line.lower().strip()
-                if re.search(r"^(page\s+\d+(\s+of\s+\d+)?|\d+\s*/\s*\d+|page\s*\d+)$", norm_l):
-                    recurring_noise_patterns.add(line)
-                elif any(norm_l in prev_l.lower() or prev_l.lower() in norm_l for prev_l in top_margin_lines.get(0, [])):
-                    recurring_noise_patterns.add(line)
-            for line in bot_margin_lines.get(p_idx, []):
-                norm_l = line.lower().strip()
-                if re.search(r"^(page\s+\d+(\s+of\s+\d+)?|\d+\s*/\s*\d+|page\s*\d+)$", norm_l):
-                    recurring_noise_patterns.add(line)
-                elif any(norm_l in prev_l.lower() or prev_l.lower() in norm_l for prev_l in bot_margin_lines.get(0, [])):
-                    recurring_noise_patterns.add(line)
-
-    # Reconstruct reading order per page
-    for page_idx in range(page_count):
-        page = doc[page_idx]
-        page_width = page.rect.width
-        page_height = page.rect.height
-        text_blocks = all_pages_blocks[page_idx]
-
-        if not text_blocks:
-            scanned_pages.append(page_idx + 1)
-            ocr_text = _attempt_ocr_on_page(page)
-            page_texts.append(ocr_text)
-            continue
-
-        # Separate headers and footers
-        header_blocks = [
-            b for b in text_blocks
-            if b[1] <= page_height * 0.05 or (b[3] <= page_height * 0.08 and b[2] - b[0] >= page_width * 0.50)
-        ]
-        footer_blocks = [b for b in text_blocks if b[1] >= page_height * 0.90]
-        body_blocks = [b for b in text_blocks if b not in header_blocks and b not in footer_blocks]
-
-        # Dynamic Gutter / Column Boundary Detection across body blocks
-        best_split_x = None
-        best_score = -999
-        is_multi_col = False
-
-        if len(body_blocks) >= 4:
-            # Sweep X from 25% to 75% of page width in steps of 10pt
-            step = 10
-            start_x = int(page_width * 0.25)
-            end_x = int(page_width * 0.75)
-
-            for cand_x in range(start_x, end_x, step):
-                left_cand = [b for b in body_blocks if b[2] <= cand_x + 5]
-                right_cand = [b for b in body_blocks if b[0] >= cand_x - 5]
-                spanning_cand = [b for b in body_blocks if b not in left_cand and b not in right_cand]
-
-                if len(left_cand) >= 2 and len(right_cand) >= 2:
-                    score = len(left_cand) + len(right_cand) - (len(spanning_cand) * 3)
-                    if score > best_score and len(spanning_cand) <= len(body_blocks) * 0.35:
-                        best_score = score
-                        best_split_x = cand_x
-
-            if best_split_x is not None and best_score >= 4:
-                is_multi_col = True
-                multi_column_detected = True
-
-        if is_multi_col and best_split_x is not None:
-            col_type = "left_sidebar" if best_split_x <= page_width * 0.45 else ("right_sidebar" if best_split_x >= page_width * 0.55 else "two_column")
-            page_layouts.append({
-                "page": page_idx + 1,
-                "column_layout": col_type,
-                "gutter_x": best_split_x,
-                "confidence": 0.95
-            })
-        else:
-            page_layouts.append({
-                "page": page_idx + 1,
-                "column_layout": "single_column",
-                "gutter_x": None,
-                "confidence": 0.99
-            })
-
-        if is_multi_col and best_split_x is not None:
-            left_col = [b for b in body_blocks if b[2] <= best_split_x + 5]
-            right_col = [b for b in body_blocks if b[0] >= best_split_x - 5]
-            spanning_mid = [b for b in body_blocks if b not in left_col and b not in right_col]
-
-            header_blocks.sort(key=lambda b: (b[1], b[0]))
-            left_col.sort(key=lambda b: (b[1], b[0]))
-            spanning_mid.sort(key=lambda b: (b[1], b[0]))
-            right_col.sort(key=lambda b: (b[1], b[0]))
-            footer_blocks.sort(key=lambda b: (b[1], b[0]))
-
-            # Reading Order:
-            # - Left Sidebar (best_split_x <= 0.45): Header -> Left Sidebar -> Spanning -> Right Main -> Footer
-            # - Right Sidebar (best_split_x >= 0.55): Header -> Left Main -> Spanning -> Right Sidebar -> Footer
-            # - 50/50 Balanced: Header -> Left -> Spanning -> Right -> Footer
-            ordered_blocks = header_blocks + left_col + spanning_mid + right_col + footer_blocks
-        else:
-            ordered_blocks = sorted(text_blocks, key=lambda b: (b[1], b[0]))
-
-        # Filter out recurring noise lines and empty blocks
-        clean_lines = []
-        for b in ordered_blocks:
-            t = b[4].strip()
-            if not t:
-                continue
-            if t in recurring_noise_patterns:
-                continue
-            # Strip isolated page numbers
-            if page_count > 1 and re.match(r"^(page\s+\d+(\s+of\s+\d+)?|\d+\s*/\s*\d+|page\s*\d+)$", t, re.I):
-                continue
-            clean_lines.append(t)
-
-        extracted_page_str = unicodedata.normalize("NFKD", "\n".join(clean_lines).strip())
-
-        # Check for Scanned / Image-only page (< 20 words or < 100 characters)
-        word_count = len(extracted_page_str.split())
-        char_count = len(extracted_page_str.strip())
-        if word_count < 20 or char_count < 100:
-            scanned_pages.append(page_idx + 1)
-            ocr_text = _attempt_ocr_on_page(page)
-            if ocr_text and len(ocr_text.strip()) > len(extracted_page_str.strip()):
-                extracted_page_str = unicodedata.normalize("NFKD", ocr_text)
-
-        page_texts.append(extracted_page_str)
-
-    doc.close()
-    raw_text = "\n\n".join(page_texts).strip()
-
-    # Recover any plaintext URLs in raw text
-    _recover_plaintext_hyperlinks(raw_text, hyperlinks, "pdf")
+    multi_column = any(p.column_layout != ColumnLayoutType.SINGLE_COLUMN for p in stage2_res.pages)
 
     return {
-        "raw_text": raw_text,
-        "page_count": page_count,
+        "raw_text": stage2_res.raw_text,
+        "page_count": stage2_res.page_count,
         "layout_info": {
-            "columns_detected": multi_column_detected,
+            "columns_detected": multi_column,
             "page_layouts": page_layouts,
             "scanned_pages": scanned_pages,
-            "hyperlinks": hyperlinks,
-            "tables_count": 0,
-            "format": "pdf"
+            "hyperlinks": stage2_res.hyperlinks,
+            "tables_count": stage2_res.tables_count,
+            "format": "pdf",
+            "ocr_applied_pages": stage2_res.ocr_applied_pages,
+            "font_hierarchy_summary": stage2_res.font_hierarchy_summary
         }
     }
 
 
-def _attempt_ocr_on_page(page) -> str:
-    """Runs OCR on page pixmap with multiple OCR engine fallbacks."""
-    try:
-        pix = page.get_pixmap(dpi=150)
-        img_bytes = pix.tobytes("png")
-
-        # 1. Try PyMuPDF native OCR if available
-        try:
-            tp = page.get_textpage_ocr(language="eng", dpi=150, full=True)
-            ocr_out = tp.extractText().strip()
-            if len(ocr_out) > 10:
-                return ocr_out
-        except Exception:
-            pass
-
-        # 2. Try PaddleOCR if available
-        try:
-            from paddleocr import PaddleOCR
-            import numpy as np
-            from PIL import Image
-
-            try:
-                ocr = PaddleOCR(use_textline_orientation=True, lang="en")
-            except Exception:
-                try:
-                    ocr = PaddleOCR(use_angle_cls=True, lang="en")
-                except Exception:
-                    ocr = PaddleOCR(lang="en")
-
-            image = Image.open(io.BytesIO(img_bytes)).convert("RGB")
-            img_np = np.array(image)
-            result = ocr.ocr(img_np)
-            if result and result[0]:
-                lines = []
-                for item in result[0]:
-                    if isinstance(item, (list, tuple)) and len(item) > 1 and isinstance(item[1], (list, tuple)):
-                        lines.append(item[1][0])
-                    elif isinstance(item, dict) and "transcription" in item:
-                        lines.append(item["transcription"])
-                ocr_out = "\n".join(lines).strip()
-                if len(ocr_out) > 10:
-                    return ocr_out
-        except Exception as ocr_err:
-            logger.debug(f"PaddleOCR fallback note: {ocr_err}")
-
-        # 3. Try pytesseract if available
-        try:
-            import pytesseract
-            from PIL import Image
-
-            image = Image.open(io.BytesIO(img_bytes)).convert("RGB")
-            tess_text = pytesseract.image_to_string(image)
-            if tess_text and len(tess_text.strip()) > 10:
-                return tess_text.strip()
-        except Exception:
-            pass
-
-    except Exception as e:
-        logger.warning(f"OCR rendering error: {e}")
-
-    return ""
-
-
 def _extract_docx_with_tables(content: bytes) -> Dict[str, Any]:
     """
-    Extracts DOCX paragraphs, table rows, headers, footers, textboxes,
-    and w:hyperlink relationship targets with visible run labels.
+    Stage 2 DOCX extraction preserving document element order:
+    - Paragraphs with inline hyperlinks
+    - Table cell structure preserved (| delimiter)
+    - DrawingML and VML textboxes
+    - Section headers and footers
+    - Embedded image OCR extraction
     """
-    import docx
+    from app.services.page_extractors import extract_document_stage2
 
-    doc = docx.Document(io.BytesIO(content))
-    text_chunks: List[str] = []
-    hyperlinks: List[Dict[str, Any]] = []
-    tables_found = len(doc.tables)
-
-    def extract_hyperlinks_from_p(p_elem):
-        for child in p_elem:
-            if child.tag.endswith("hyperlink"):
-                rel_id = child.attrib.get("{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id")
-                if rel_id and rel_id in doc.part.rels:
-                    target_url = doc.part.rels[rel_id].target_ref
-                    label_text = "".join(child.itertext()).strip()
-                    if target_url:
-                        hyperlinks.append(create_hyperlink_record(
-                            url=target_url,
-                            label=label_text,
-                            source_format="docx",
-                            source_page=1,
-                            nearby_text="".join(p_elem.itertext())[:200],
-                            extraction_method="docx_relationship"
-                        ))
-
-    # 1. Headers & Footers
-    for section in doc.sections:
-        for container in (section.header, section.footer):
-            try:
-                for p in container.paragraphs:
-                    txt = p.text.strip()
-                    if txt:
-                        text_chunks.append(txt)
-                        extract_hyperlinks_from_p(p._p)
-            except Exception:
-                pass
-
-    # 2. Main document body elements (preserving true reading order between paragraphs and tables)
-    try:
-        from docx.text.paragraph import Paragraph
-        from docx.table import Table
-        for child in doc._element.body:
-            if child.tag.endswith("p"):
-                p = Paragraph(child, doc)
-                txt = p.text.strip()
-                if txt:
-                    text_chunks.append(txt)
-                    extract_hyperlinks_from_p(child)
-            elif child.tag.endswith("tbl"):
-                table = Table(child, doc)
-                table_rows = []
-                for row in table.rows:
-                    row_cells = []
-                    for cell in row.cells:
-                        ctext = cell.text.strip()
-                        if ctext and ctext not in row_cells:
-                            row_cells.append(ctext)
-                        for cp in cell.paragraphs:
-                            extract_hyperlinks_from_p(cp._p)
-                    if row_cells:
-                        table_rows.append(" | ".join(row_cells))
-                if table_rows:
-                    text_chunks.append("\n" + "\n".join(table_rows) + "\n")
-    except Exception as docx_order_err:
-        logger.debug(f"Body element iteration fallback: {docx_order_err}")
-        for p in doc.paragraphs:
-            if p.text.strip():
-                text_chunks.append(p.text.strip())
-                extract_hyperlinks_from_p(p._p)
-        for table in doc.tables:
-            table_rows = []
-            for row in table.rows:
-                row_cells = []
-                for cell in row.cells:
-                    ctext = cell.text.strip()
-                    if ctext and ctext not in row_cells:
-                        row_cells.append(ctext)
-                if row_cells:
-                    table_rows.append(" | ".join(row_cells))
-            if table_rows:
-                text_chunks.append("\n" + "\n".join(table_rows) + "\n")
-
-    # 4. Text Boxes (w:txbxContent in document XML body)
-    try:
-        body_xml = doc._element.body
-        for txbx in body_xml.iter():
-            if txbx.tag.endswith("txbxContent"):
-                box_text = "".join(txbx.itertext()).strip()
-                if box_text and box_text not in "\n".join(text_chunks):
-                    text_chunks.append(box_text)
-                    extract_hyperlinks_from_p(txbx)
-    except Exception as e:
-        logger.debug(f"Textbox extraction note: {e}")
-
-    raw_text = "\n".join(text_chunks).strip()
-    _recover_plaintext_hyperlinks(raw_text, hyperlinks, "docx")
+    stage2_res = extract_document_stage2(content, "resume.docx")
 
     return {
-        "raw_text": raw_text,
-        "page_count": max(1, len(text_chunks) // 35),
+        "raw_text": stage2_res.raw_text,
+        "page_count": stage2_res.page_count,
         "layout_info": {
             "columns_detected": False,
             "scanned_pages": [],
-            "hyperlinks": hyperlinks,
-            "tables_count": tables_found,
-            "format": "docx"
+            "hyperlinks": stage2_res.hyperlinks,
+            "tables_count": stage2_res.tables_count,
+            "format": "docx",
+            "ocr_applied_pages": stage2_res.ocr_applied_pages
         }
     }
 

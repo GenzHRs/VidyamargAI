@@ -1,0 +1,1771 @@
+{
+  "timestamp": 1791651631.7952197,
+  "total_fixtures": 41,
+  "total_passed": 36,
+  "total_partial": 5,
+  "total_failed": 0,
+  "pass_rate": 0.878,
+  "overall_precision": 0.997,
+  "overall_recall": 0.769,
+  "overall_f1": 0.86,
+  "format_breakdown": {
+    "pdf": {
+      "count": 28,
+      "mean_recall": 0.783,
+      "mean_f1": 0.872
+    },
+    "docx": {
+      "count": 3,
+      "mean_recall": 0.84,
+      "mean_f1": 0.912
+    },
+    "doc": {
+      "count": 1,
+      "mean_recall": 0.85,
+      "mean_f1": 0.919
+    },
+    "rtf": {
+      "count": 1,
+      "mean_recall": 0.714,
+      "mean_f1": 0.833
+    },
+    "odt": {
+      "count": 1,
+      "mean_recall": 0.786,
+      "mean_f1": 0.88
+    },
+    "txt": {
+      "count": 1,
+      "mean_recall": 0.811,
+      "mean_f1": 0.896
+    },
+    "html": {
+      "count": 1,
+      "mean_recall": 0.722,
+      "mean_f1": 0.788
+    },
+    "png": {
+      "count": 1,
+      "mean_recall": 0.457,
+      "mean_f1": 0.627
+    },
+    "jpg": {
+      "count": 1,
+      "mean_recall": 0.457,
+      "mean_f1": 0.627
+    },
+    "tiff": {
+      "count": 1,
+      "mean_recall": 0.457,
+      "mean_f1": 0.627
+    },
+    "pptx": {
+      "count": 1,
+      "mean_recall": 0.833,
+      "mean_f1": 0.909
+    },
+    "xyz": {
+      "count": 1,
+      "mean_recall": 1.0,
+      "mean_f1": 1.0
+    }
+  },
+  "results": [
+    {
+      "test_id": "rw_01",
+      "file_name": "rw_01_pdf_selectable.pdf",
+      "format": "pdf",
+      "layout_category": "ATS Standard Chronological",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Correct",
+        "personal_info.location": "Partially Extracted",
+        "professional_summary": "Correct",
+        "experience[0].apex cloud tech": "Partially Extracted",
+        "experience[1].nexus core syst": "Partially Extracted",
+        "education[0].university of t": "Partially Extracted",
+        "skills.technical": "Missing",
+        "hyperlink.https://github.com/s": "Correct"
+      },
+      "metrics": {
+        "fields_expected": 10,
+        "fields_correct": 7.3,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.73,
+        "f1": 0.844,
+        "exact_match_score": 0.73,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_02",
+      "file_name": "rw_02_pdf_scanned_ocr.pdf",
+      "format": "pdf",
+      "layout_category": "Scanned Bitmap Document",
+      "expected_status": "success",
+      "actual_status": "partial",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Partially Extracted",
+        "personal_info.email": "Partially Extracted",
+        "personal_info.phone": "Partially Extracted",
+        "personal_info.location": "Partially Extracted",
+        "professional_summary": "Partially Extracted",
+        "experience[0].summit analytic": "Missing",
+        "education[0].university of w": "Missing",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 8,
+        "fields_correct": 3.9000000000000004,
+        "fields_missing": 3,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.488,
+        "f1": 0.656,
+        "exact_match_score": 0.488,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 0.5
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_03",
+      "file_name": "rw_03_pdf_mixed_text_image.pdf",
+      "format": "pdf",
+      "layout_category": "Hybrid Vector-Raster PDF",
+      "expected_status": "success",
+      "actual_status": "partial",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Partially Extracted",
+        "personal_info.location": "Correct",
+        "professional_summary": "Partially Extracted",
+        "experience[0].visionlab ai": "Missing",
+        "education[0].uc berkeley": "Missing",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 8,
+        "fields_correct": 4.5,
+        "fields_missing": 3,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.562,
+        "f1": 0.72,
+        "exact_match_score": 0.562,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_04",
+      "file_name": "rw_04_docx_paragraphs.docx",
+      "format": "docx",
+      "layout_category": "Standard DOCX Document",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Partially Extracted",
+        "personal_info.location": "Correct",
+        "professional_summary": "Correct",
+        "experience[0].cloudscale oper": "Correct",
+        "education[0].illinois instit": "Partially Extracted",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 8,
+        "fields_correct": 6.3,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.787,
+        "f1": 0.881,
+        "exact_match_score": 0.787,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_05",
+      "file_name": "rw_05_docx_tables_nested.docx",
+      "format": "docx",
+      "layout_category": "DOCX Tabular Layout",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Correct",
+        "personal_info.location": "Correct",
+        "experience[0].infosys limited": "Correct",
+        "experience[1].wipro technolog": "Correct",
+        "education[0].indian institut": "Correct",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 8,
+        "fields_correct": 7,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.875,
+        "f1": 0.933,
+        "exact_match_score": 0.875,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_06",
+      "file_name": "rw_06_docx_hyperlinks_styled.docx",
+      "format": "docx",
+      "layout_category": "DOCX Hyperlinked Document",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.location": "Correct",
+        "skills.technical": "Missing",
+        "hyperlink.https://github.com/a": "Correct",
+        "hyperlink.https://linkedin.com": "Correct"
+      },
+      "metrics": {
+        "fields_expected": 7,
+        "fields_correct": 6,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.857,
+        "f1": 0.923,
+        "exact_match_score": 0.857,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_07",
+      "file_name": "rw_07_doc_legacy.doc",
+      "format": "doc",
+      "layout_category": "Legacy Word 97-2003 Binary",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Partially Extracted",
+        "personal_info.location": "Correct",
+        "professional_summary": "Correct",
+        "experience[0].delta data syst": "Correct",
+        "education[0].georgia institu": "Correct",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 8,
+        "fields_correct": 6.8,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.85,
+        "f1": 0.919,
+        "exact_match_score": 0.85,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_08",
+      "file_name": "rw_08_rtf_formatted.rtf",
+      "format": "rtf",
+      "layout_category": "Rich Text Format",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.location": "Correct",
+        "experience[0].spotify": "Correct",
+        "education[0].rhode island sc": "Correct",
+        "skills.technical": "Missing",
+        "hyperlink.https://racheladams.": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 7,
+        "fields_correct": 5,
+        "fields_missing": 2,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.714,
+        "f1": 0.833,
+        "exact_match_score": 0.714,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_09",
+      "file_name": "rw_09_odt_standard.odt",
+      "format": "odt",
+      "layout_category": "OpenDocument Text (.odt)",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.location": "Correct",
+        "experience[0].frontier aerosp": "Correct",
+        "education[0].university of c": "Partially Extracted",
+        "skills.technical": "Missing",
+        "hyperlink.https://github.com/c": "Correct"
+      },
+      "metrics": {
+        "fields_expected": 7,
+        "fields_correct": 5.5,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.786,
+        "f1": 0.88,
+        "exact_match_score": 0.786,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_10",
+      "file_name": "rw_10_txt_plain.txt",
+      "format": "txt",
+      "layout_category": "Plain ASCII Text",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Partially Extracted",
+        "personal_info.location": "Correct",
+        "professional_summary": "Correct",
+        "experience[0].sentinel cyberd": "Correct",
+        "education[0].northeastern un": "Partially Extracted",
+        "skills.technical": "Missing",
+        "hyperlink.https://github.com/e": "Correct"
+      },
+      "metrics": {
+        "fields_expected": 9,
+        "fields_correct": 7.3,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.811,
+        "f1": 0.896,
+        "exact_match_score": 0.811,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_11",
+      "file_name": "rw_11_html_export.html",
+      "format": "html",
+      "layout_category": "Semantic HTML Export",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.location": "Incorrect",
+        "professional_summary": "Correct",
+        "experience[0].starlight inter": "Correct",
+        "education[0].oregon state un": "Partially Extracted",
+        "skills.technical": "Missing",
+        "hyperlink.https://lucasscott.d": "Correct",
+        "hyperlink.https://github.com/l": "Correct"
+      },
+      "metrics": {
+        "fields_expected": 9,
+        "fields_correct": 6.5,
+        "fields_missing": 1,
+        "fields_incorrect": 1,
+        "fields_duplicated": 0,
+        "precision": 0.867,
+        "recall": 0.722,
+        "f1": 0.788,
+        "exact_match_score": 0.722,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_12",
+      "file_name": "rw_12_image_png.png",
+      "format": "png",
+      "layout_category": "Raster Image (PNG)",
+      "expected_status": "success",
+      "actual_status": "partial",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Partially Extracted",
+        "personal_info.email": "Partially Extracted",
+        "personal_info.phone": "Partially Extracted",
+        "personal_info.location": "Partially Extracted",
+        "experience[0].biogen health": "Missing",
+        "education[0].uc san diego": "Missing",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 7,
+        "fields_correct": 3.2,
+        "fields_missing": 3,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.457,
+        "f1": 0.627,
+        "exact_match_score": 0.457,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 0.5
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_13",
+      "file_name": "rw_13_image_jpg.jpg",
+      "format": "jpg",
+      "layout_category": "Raster Image (JPEG)",
+      "expected_status": "success",
+      "actual_status": "partial",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Partially Extracted",
+        "personal_info.email": "Partially Extracted",
+        "personal_info.phone": "Partially Extracted",
+        "personal_info.location": "Partially Extracted",
+        "experience[0].biogen health": "Missing",
+        "education[0].uc san diego": "Missing",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 7,
+        "fields_correct": 3.2,
+        "fields_missing": 3,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.457,
+        "f1": 0.627,
+        "exact_match_score": 0.457,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 0.5
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_14",
+      "file_name": "rw_14_image_tiff.tiff",
+      "format": "tiff",
+      "layout_category": "Raster Image (TIFF)",
+      "expected_status": "success",
+      "actual_status": "partial",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Partially Extracted",
+        "personal_info.email": "Partially Extracted",
+        "personal_info.phone": "Partially Extracted",
+        "personal_info.location": "Partially Extracted",
+        "experience[0].biogen health": "Missing",
+        "education[0].uc san diego": "Missing",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 7,
+        "fields_correct": 3.2,
+        "fields_missing": 3,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.457,
+        "f1": 0.627,
+        "exact_match_score": 0.457,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 0.5
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_15",
+      "file_name": "rw_15_pptx_slides.pptx",
+      "format": "pptx",
+      "layout_category": "PowerPoint Presentation Slide",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.location": "Correct",
+        "experience[0].energygrid syst": "Correct",
+        "education[0].texas a&m unive": "Correct",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 6,
+        "fields_correct": 5,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.833,
+        "f1": 0.909,
+        "exact_match_score": 0.833,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_16",
+      "file_name": "rw_16_ats_single_column_chronological.pdf",
+      "format": "pdf",
+      "layout_category": "ATS Single-Column Chronological",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Partially Extracted",
+        "personal_info.location": "Correct",
+        "professional_summary": "Correct",
+        "experience[0].capital one": "Partially Extracted",
+        "experience[1].jpmorgan chase": "Partially Extracted",
+        "education[0].university of n": "Partially Extracted",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 9,
+        "fields_correct": 6.3,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.824,
+        "exact_match_score": 0.7,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_17",
+      "file_name": "rw_17_ats_reverse_chronological.pdf",
+      "format": "pdf",
+      "layout_category": "ATS Reverse Chronological",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Partially Extracted",
+        "personal_info.location": "Correct",
+        "experience[0].healthtrust sof": "Partially Extracted",
+        "experience[1].hca healthcare": "Partially Extracted",
+        "education[0].vanderbilt univ": "Partially Extracted",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 8,
+        "fields_correct": 5.3,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.662,
+        "f1": 0.797,
+        "exact_match_score": 0.662,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_18",
+      "file_name": "rw_18_ats_functional_skills_focused.pdf",
+      "format": "pdf",
+      "layout_category": "Functional Skills-Focused Layout",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Partially Extracted",
+        "personal_info.location": "Correct",
+        "experience[0].vanguard tech": "Partially Extracted",
+        "education[0].nyu": "Partially Extracted",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 7,
+        "fields_correct": 4.8,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.686,
+        "f1": 0.814,
+        "exact_match_score": 0.686,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_19",
+      "file_name": "rw_19_ats_combination_hybrid.pdf",
+      "format": "pdf",
+      "layout_category": "Hybrid Combination Layout",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.location": "Correct",
+        "experience[0].anthropic ai": "Correct",
+        "education[0].ucla": "Missing",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 6,
+        "fields_correct": 4,
+        "fields_missing": 2,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.667,
+        "f1": 0.8,
+        "exact_match_score": 0.667,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_20",
+      "file_name": "rw_20_academic_cv_publications.pdf",
+      "format": "pdf",
+      "layout_category": "Academic CV Layout",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.location": "Correct",
+        "experience[0].university of o": "Missing",
+        "education[0].university of c": "Correct"
+      },
+      "metrics": {
+        "fields_expected": 5,
+        "fields_correct": 4,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.889,
+        "exact_match_score": 0.8,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_21",
+      "file_name": "rw_21_executive_leadership.pdf",
+      "format": "pdf",
+      "layout_category": "Executive Leadership Format",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Partially Extracted",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Partially Extracted",
+        "personal_info.location": "Correct",
+        "professional_summary": "Partially Extracted",
+        "experience[0].saas velocity c": "Missing",
+        "education[0].wharton school ": "Correct"
+      },
+      "metrics": {
+        "fields_expected": 7,
+        "fields_correct": 5.3,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.757,
+        "f1": 0.862,
+        "exact_match_score": 0.757,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_22",
+      "file_name": "rw_22_entry_level_graduate.pdf",
+      "format": "pdf",
+      "layout_category": "Entry-Level Graduate Resume",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Partially Extracted",
+        "personal_info.location": "Correct",
+        "experience[0].cisco systems": "Partially Extracted",
+        "education[0].san jose state ": "Partially Extracted",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 7,
+        "fields_correct": 4.8,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.686,
+        "f1": 0.814,
+        "exact_match_score": 0.686,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_23",
+      "file_name": "rw_23_technical_systems_architect.pdf",
+      "format": "pdf",
+      "layout_category": "Technical Systems Architect",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.location": "Correct",
+        "experience[0].amazon web serv": "Partially Extracted",
+        "education[0].purdue universi": "Partially Extracted",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 6,
+        "fields_correct": 4.0,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.667,
+        "f1": 0.8,
+        "exact_match_score": 0.667,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_24",
+      "file_name": "rw_24_career_change_transition.pdf",
+      "format": "pdf",
+      "layout_category": "Career Change Transition",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Partially Extracted",
+        "personal_info.location": "Correct",
+        "professional_summary": "Partially Extracted",
+        "experience[0].deloitte": "Correct",
+        "education[0].ohio state univ": "Partially Extracted"
+      },
+      "metrics": {
+        "fields_expected": 7,
+        "fields_correct": 6.0,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.857,
+        "f1": 0.923,
+        "exact_match_score": 0.857,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_25",
+      "file_name": "rw_25_modern_two_column_balanced.pdf",
+      "format": "pdf",
+      "layout_category": "Modern Two-Column Balanced",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Partially Extracted",
+        "experience[0].paymatrix solut": "Correct",
+        "experience[1].zeno labs": "Correct",
+        "education[0].northwestern un": "Correct",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 7,
+        "fields_correct": 5.8,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.829,
+        "f1": 0.907,
+        "exact_match_score": 0.829,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_26",
+      "file_name": "rw_26_modern_left_sidebar_skills_contact.pdf",
+      "format": "pdf",
+      "layout_category": "Modern Left Sidebar",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Partially Extracted",
+        "personal_info.location": "Partially Extracted",
+        "experience[0].cloudharbor tec": "Partially Extracted",
+        "education[0].stanford univer": "Correct",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 7,
+        "fields_correct": 5.1,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.729,
+        "f1": 0.843,
+        "exact_match_score": 0.729,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_27",
+      "file_name": "rw_27_modern_right_sidebar.pdf",
+      "format": "pdf",
+      "layout_category": "Modern Right Sidebar",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.location": "Correct",
+        "experience[0].tesla motors": "Partially Extracted",
+        "education[0].rice university": "Correct",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 6,
+        "fields_correct": 4.5,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.857,
+        "exact_match_score": 0.75,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_28",
+      "file_name": "rw_28_modern_canva_decorative_headings.pdf",
+      "format": "pdf",
+      "layout_category": "Canva Stylized Layout",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.location": "Correct",
+        "professional_summary": "Partially Extracted",
+        "experience[0].armani group": "Partially Extracted",
+        "education[0].politecnico di ": "Partially Extracted"
+      },
+      "metrics": {
+        "fields_expected": 6,
+        "fields_correct": 4.7,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.783,
+        "f1": 0.878,
+        "exact_match_score": 0.783,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_29",
+      "file_name": "rw_29_modern_icon_contact_skillbars.pdf",
+      "format": "pdf",
+      "layout_category": "Icon Contact & Graphical Skillbars",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Partially Extracted",
+        "personal_info.location": "Partially Extracted",
+        "experience[0].raymond james": "Partially Extracted",
+        "education[0].university of s": "Partially Extracted",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 7,
+        "fields_correct": 4.6,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.657,
+        "f1": 0.793,
+        "exact_match_score": 0.657,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_30",
+      "file_name": "rw_30_complex_multipage_repeated_headers.pdf",
+      "format": "pdf",
+      "layout_category": "Multi-page Repeated Running Headers",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.location": "Correct",
+        "experience[0].morgan stanley": "Correct",
+        "experience[1].goldman sachs": "Partially Extracted",
+        "education[0].columbia univer": "Partially Extracted"
+      },
+      "metrics": {
+        "fields_expected": 6,
+        "fields_correct": 5.0,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.833,
+        "f1": 0.909,
+        "exact_match_score": 0.833,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_31",
+      "file_name": "rw_31_complex_tables_education_experience.pdf",
+      "format": "pdf",
+      "layout_category": "PDF Tabular Cells",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.location": "Correct",
+        "experience[0].dassault syst\u00e8m": "Partially Extracted",
+        "education[0].\u00e9cole polytechn": "Partially Extracted"
+      },
+      "metrics": {
+        "fields_expected": 5,
+        "fields_correct": 4.0,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.889,
+        "exact_match_score": 0.8,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_32",
+      "file_name": "rw_32_complex_unconventional_headings.pdf",
+      "format": "pdf",
+      "layout_category": "Unconventional Headings Layout",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.location": "Correct",
+        "professional_summary": "Partially Extracted",
+        "experience[0].acorn finance": "Partially Extracted",
+        "education[0].university of i": "Partially Extracted"
+      },
+      "metrics": {
+        "fields_expected": 6,
+        "fields_correct": 4.7,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.783,
+        "f1": 0.878,
+        "exact_match_score": 0.783,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_33",
+      "file_name": "rw_33_edge_multijob_same_company.pdf",
+      "format": "pdf",
+      "layout_category": "Multi-Job Same Company Promotion",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.location": "Correct",
+        "experience[0].google llc": "Correct",
+        "experience[1].google llc": "Correct",
+        "experience[2].google llc": "Correct",
+        "education[0].carnegie mellon": "Partially Extracted"
+      },
+      "metrics": {
+        "fields_expected": 7,
+        "fields_correct": 6.5,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.929,
+        "f1": 0.963,
+        "exact_match_score": 0.929,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_34",
+      "file_name": "rw_34_edge_multiproject_same_tech.pdf",
+      "format": "pdf",
+      "layout_category": "Multi-Project Shared Tech Stack",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.location": "Correct",
+        "education[0].arizona state u": "Partially Extracted"
+      },
+      "metrics": {
+        "fields_expected": 4,
+        "fields_correct": 3.5,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.875,
+        "f1": 0.933,
+        "exact_match_score": 0.875,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_35",
+      "file_name": "rw_35_edge_split_urls_anchor_mismatch.pdf",
+      "format": "pdf",
+      "layout_category": "Hyperlink Label Mismatch",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.location": "Correct",
+        "hyperlink.https://demo.hypersc": "Correct"
+      },
+      "metrics": {
+        "fields_expected": 4,
+        "fields_correct": 4,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match_score": 1.0,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_36",
+      "file_name": "rw_36_edge_unicode_hyphenated_ligatures.pdf",
+      "format": "pdf",
+      "layout_category": "Unicode Ligatures & Hyphenated Lines",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.location": "Correct",
+        "experience[0].affiliated syst": "Correct",
+        "education[0].trinity college": "Partially Extracted"
+      },
+      "metrics": {
+        "fields_expected": 5,
+        "fields_correct": 4.5,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.947,
+        "exact_match_score": 0.9,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_37",
+      "file_name": "rw_37_edge_prompt_injection_security.pdf",
+      "format": "pdf",
+      "layout_category": "Adversarial Prompt Injection Defense",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.location": "Correct",
+        "experience[0].encom corporati": "Partially Extracted",
+        "education[0].mit": "Partially Extracted"
+      },
+      "metrics": {
+        "fields_expected": 5,
+        "fields_correct": 4.0,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.889,
+        "exact_match_score": 0.8,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ]
+    },
+    {
+      "test_id": "rw_38",
+      "file_name": "rw_38_edge_corrupted.pdf",
+      "format": "pdf",
+      "layout_category": "Corrupted Binary File",
+      "expected_status": "rejected",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "rejection_validation"
+      ],
+      "field_classifications": {
+        "rejection_handling": "Correct"
+      },
+      "metrics": {
+        "fields_expected": 1,
+        "fields_correct": 1,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match_score": 1.0,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 0.0
+      },
+      "errors": []
+    },
+    {
+      "test_id": "rw_39",
+      "file_name": "rw_39_edge_empty.pdf",
+      "format": "pdf",
+      "layout_category": "Zero-byte Empty Document",
+      "expected_status": "rejected",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "rejection_validation"
+      ],
+      "field_classifications": {
+        "rejection_handling": "Correct"
+      },
+      "metrics": {
+        "fields_expected": 1,
+        "fields_correct": 1,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match_score": 1.0,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 0.0
+      },
+      "errors": []
+    },
+    {
+      "test_id": "rw_40",
+      "file_name": "rw_40_edge_encrypted.pdf",
+      "format": "pdf",
+      "layout_category": "Encrypted Password-Protected Document",
+      "expected_status": "rejected",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "rejection_validation"
+      ],
+      "field_classifications": {
+        "rejection_handling": "Correct"
+      },
+      "metrics": {
+        "fields_expected": 1,
+        "fields_correct": 1,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match_score": 1.0,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 0.0
+      },
+      "errors": []
+    },
+    {
+      "test_id": "rw_41",
+      "file_name": "rw_41_edge_unsupported.xyz",
+      "format": "xyz",
+      "layout_category": "Unsupported File Extension",
+      "expected_status": "rejected",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "rejection_validation"
+      ],
+      "field_classifications": {
+        "rejection_handling": "Correct"
+      },
+      "metrics": {
+        "fields_expected": 1,
+        "fields_correct": 1,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match_score": 1.0,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 0.0
+      },
+      "errors": []
+    }
+  ]
+}

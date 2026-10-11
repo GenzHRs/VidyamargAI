@@ -1,0 +1,46 @@
+{
+  "test_id": "rw_48",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Nathan Drake",
+    "email": "nathan.drake@unchartedsec.io",
+    "phone": "+1-650-555-0133",
+    "location": "Palo Alto, CA"
+  },
+  "professional_summary": "Senior Cybersecurity Operations Consultant with 9+ years managing red-team offensive penetration simulations, threat hunting, and incident response.",
+  "work_experience": [
+    {
+      "employer": "Uncharted Security Solutions",
+      "designation": "Lead Penetration Tester",
+      "start_date": "2020",
+      "end_date": "Present"
+    },
+    {
+      "employer": "BlackWatch Cybernetics",
+      "designation": "Security Analyst",
+      "start_date": "2016",
+      "end_date": "2020"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Stanford University",
+      "degree": "B.S. in Symbolic Systems",
+      "graduation_year": "2016"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "Python",
+      "Bash",
+      "Wireshark",
+      "Metasploit",
+      "Burp Suite",
+      "Splunk",
+      "Ghidra",
+      "Linux",
+      "Docker",
+      "AWS"
+    ]
+  }
+}

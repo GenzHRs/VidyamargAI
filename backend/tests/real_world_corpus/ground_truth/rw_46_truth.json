@@ -1,0 +1,45 @@
+{
+  "test_id": "rw_46",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Tariq Al-Mansoor",
+    "email": "tariq.mansoor@gulftech.ae",
+    "phone": "+971-50-555-0188",
+    "location": "Dubai, United Arab Emirates"
+  },
+  "professional_summary": "Senior cloud systems engineer with 8+ years designing scalable AWS and Azure enterprise cloud architectures across the MENA region.",
+  "work_experience": [
+    {
+      "employer": "Emirates Cloud Telecom",
+      "designation": "Lead Cloud Solutions Architect",
+      "start_date": "2021",
+      "end_date": "Present"
+    },
+    {
+      "employer": "Gulf Cyber Systems",
+      "designation": "Senior Systems Engineer",
+      "start_date": "2017",
+      "end_date": "2021"
+    }
+  ],
+  "education": [
+    {
+      "institution": "American University of Sharjah",
+      "degree": "B.S. Computer Engineering",
+      "graduation_year": "2017"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "AWS",
+      "Azure",
+      "Terraform",
+      "Docker",
+      "Kubernetes",
+      "Python",
+      "Bash",
+      "PostgreSQL",
+      "Redis"
+    ]
+  }
+}

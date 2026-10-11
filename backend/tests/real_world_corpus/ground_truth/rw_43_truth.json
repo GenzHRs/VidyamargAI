@@ -1,0 +1,59 @@
+{
+  "test_id": "rw_43",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Carlos Morales",
+    "email": "carlos.m@devmobile.io",
+    "phone": "+1-415-555-0177",
+    "location": "San Francisco, CA"
+  },
+  "professional_summary": "Senior mobile systems developer with 6+ years shipping high-performance cross-platform iOS and Android applications.",
+  "work_experience": [
+    {
+      "employer": "AppVelocity Inc",
+      "designation": "Senior Mobile Lead",
+      "start_date": "2021",
+      "end_date": "Present"
+    },
+    {
+      "employer": "Veloce Technologies",
+      "designation": "Software Engineer",
+      "start_date": "2018",
+      "end_date": "2021"
+    }
+  ],
+  "education": [
+    {
+      "institution": "San Jose State University",
+      "degree": "B.S. Software Engineering",
+      "graduation_year": "2018"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "Flutter",
+      "Dart",
+      "Swift",
+      "Kotlin",
+      "TypeScript",
+      "React Native",
+      "GraphQL",
+      "Firebase"
+    ]
+  },
+  "projects": [
+    {
+      "name": "SyncMesh Mobile",
+      "technologies": [
+        "Flutter"
+      ]
+    },
+    {
+      "name": "CryptoVault Wallet",
+      "technologies": [
+        "Swift",
+        "Kotlin"
+      ]
+    }
+  ]
+}

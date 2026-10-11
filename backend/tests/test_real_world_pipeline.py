@@ -42,8 +42,8 @@ def manifest():
 
 
 def test_corpus_manifest_and_ground_truth_integrity(manifest):
-    """Verifies that all 41 fixtures and ground truth files exist and match."""
-    assert len(manifest) == 41, f"Expected 41 fixtures in manifest, found {len(manifest)}"
+    """Verifies that all corpus fixtures (including Phase 0 additions) and ground truth files exist and match."""
+    assert len(manifest) >= 41, f"Expected at least 41 fixtures in manifest, found {len(manifest)}"
 
     for entry in manifest:
         test_id = entry["test_id"]

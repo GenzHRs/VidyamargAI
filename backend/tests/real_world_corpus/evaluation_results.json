@@ -1,73 +1,103 @@
 {
-  "timestamp": 1791651631.7952197,
-  "total_fixtures": 41,
-  "total_passed": 36,
-  "total_partial": 5,
+  "timestamp": 1791712222.5540483,
+  "total_fixtures": 48,
+  "total_passed": 39,
+  "total_partial": 9,
   "total_failed": 0,
-  "pass_rate": 0.878,
-  "overall_precision": 0.997,
-  "overall_recall": 0.769,
-  "overall_f1": 0.86,
+  "pass_rate": 0.812,
+  "overall_precision": 0.981,
+  "overall_recall": 0.767,
+  "overall_f1": 0.856,
+  "overall_strict_precision": 0.981,
+  "overall_strict_recall": 0.767,
+  "overall_strict_f1": 0.856,
+  "overall_normalized_precision": 0.989,
+  "overall_normalized_recall": 0.826,
+  "overall_normalized_f1": 0.895,
   "format_breakdown": {
     "pdf": {
-      "count": 28,
-      "mean_recall": 0.783,
-      "mean_f1": 0.872
+      "count": 35,
+      "strict_mean_recall": 0.766,
+      "strict_mean_f1": 0.854,
+      "normalized_mean_recall": 0.802,
+      "normalized_mean_f1": 0.879
     },
     "docx": {
       "count": 3,
-      "mean_recall": 0.84,
-      "mean_f1": 0.912
+      "strict_mean_recall": 0.84,
+      "strict_mean_f1": 0.912,
+      "normalized_mean_recall": 0.967,
+      "normalized_mean_f1": 0.982
     },
     "doc": {
       "count": 1,
-      "mean_recall": 0.85,
-      "mean_f1": 0.919
+      "strict_mean_recall": 0.85,
+      "strict_mean_f1": 0.919,
+      "normalized_mean_recall": 0.975,
+      "normalized_mean_f1": 0.987
     },
     "rtf": {
       "count": 1,
-      "mean_recall": 0.714,
-      "mean_f1": 0.833
+      "strict_mean_recall": 0.714,
+      "strict_mean_f1": 0.833,
+      "normalized_mean_recall": 0.829,
+      "normalized_mean_f1": 0.907
     },
     "odt": {
       "count": 1,
-      "mean_recall": 0.786,
-      "mean_f1": 0.88
+      "strict_mean_recall": 0.786,
+      "strict_mean_f1": 0.88,
+      "normalized_mean_recall": 0.914,
+      "normalized_mean_f1": 0.955
     },
     "txt": {
       "count": 1,
-      "mean_recall": 0.811,
-      "mean_f1": 0.896
+      "strict_mean_recall": 0.811,
+      "strict_mean_f1": 0.896,
+      "normalized_mean_recall": 0.911,
+      "normalized_mean_f1": 0.953
     },
     "html": {
       "count": 1,
-      "mean_recall": 0.722,
-      "mean_f1": 0.788
+      "strict_mean_recall": 0.722,
+      "strict_mean_f1": 0.788,
+      "normalized_mean_recall": 0.911,
+      "normalized_mean_f1": 0.953
     },
     "png": {
       "count": 1,
-      "mean_recall": 0.457,
-      "mean_f1": 0.627
+      "strict_mean_recall": 0.586,
+      "strict_mean_f1": 0.739,
+      "normalized_mean_recall": 0.714,
+      "normalized_mean_f1": 0.833
     },
     "jpg": {
       "count": 1,
-      "mean_recall": 0.457,
-      "mean_f1": 0.627
+      "strict_mean_recall": 0.586,
+      "strict_mean_f1": 0.739,
+      "normalized_mean_recall": 0.714,
+      "normalized_mean_f1": 0.833
     },
     "tiff": {
       "count": 1,
-      "mean_recall": 0.457,
-      "mean_f1": 0.627
+      "strict_mean_recall": 0.586,
+      "strict_mean_f1": 0.739,
+      "normalized_mean_recall": 0.714,
+      "normalized_mean_f1": 0.833
     },
     "pptx": {
       "count": 1,
-      "mean_recall": 0.833,
-      "mean_f1": 0.909
+      "strict_mean_recall": 0.833,
+      "strict_mean_f1": 0.909,
+      "normalized_mean_recall": 1.0,
+      "normalized_mean_f1": 1.0
     },
     "xyz": {
       "count": 1,
-      "mean_recall": 1.0,
-      "mean_f1": 1.0
+      "strict_mean_recall": 1.0,
+      "strict_mean_f1": 1.0,
+      "normalized_mean_recall": 1.0,
+      "normalized_mean_f1": 1.0
     }
   },
   "results": [
@@ -109,13 +139,28 @@
         "precision": 1.0,
         "recall": 0.73,
         "f1": 0.844,
+        "strict_precision": 1.0,
+        "strict_recall": 0.73,
+        "strict_f1": 0.844,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.836,
+        "normalized_f1": 0.911,
         "exact_match_score": 0.73,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 11,
+        "fields_correct": 9.200000000000001,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.836,
+        "f1": 0.911
+      }
     },
     {
       "test_id": "rw_02",
@@ -135,31 +180,46 @@
         "pdf_text_recovery"
       ],
       "field_classifications": {
-        "personal_info.full_name": "Partially Extracted",
-        "personal_info.email": "Partially Extracted",
+        "personal_info.full_name": "Incorrect",
+        "personal_info.email": "Incorrect",
         "personal_info.phone": "Partially Extracted",
         "personal_info.location": "Partially Extracted",
-        "professional_summary": "Partially Extracted",
-        "experience[0].summit analytic": "Missing",
-        "education[0].university of w": "Missing",
+        "professional_summary": "Correct",
+        "experience[0].summit analytic": "Correct",
+        "education[0].university of w": "Correct",
         "skills.technical": "Missing"
       },
       "metrics": {
         "fields_expected": 8,
-        "fields_correct": 3.9000000000000004,
-        "fields_missing": 3,
-        "fields_incorrect": 0,
+        "fields_correct": 4.6,
+        "fields_missing": 1,
+        "fields_incorrect": 2,
         "fields_duplicated": 0,
-        "precision": 1.0,
-        "recall": 0.488,
-        "f1": 0.656,
-        "exact_match_score": 0.488,
+        "precision": 0.697,
+        "recall": 0.575,
+        "f1": 0.63,
+        "strict_precision": 0.697,
+        "strict_recall": 0.575,
+        "strict_f1": 0.63,
+        "normalized_precision": 0.868,
+        "normalized_recall": 0.825,
+        "normalized_f1": 0.846,
+        "exact_match_score": 0.575,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 0.5
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 8,
+        "fields_correct": 6.6,
+        "fields_missing": 0,
+        "fields_incorrect": 1,
+        "precision": 0.868,
+        "recall": 0.825,
+        "f1": 0.846
+      }
     },
     {
       "test_id": "rw_03",
@@ -167,7 +227,7 @@
       "format": "pdf",
       "layout_category": "Hybrid Vector-Raster PDF",
       "expected_status": "success",
-      "actual_status": "partial",
+      "actual_status": "success",
       "pipeline_stages_passed": [
         "file_validation",
         "document_extraction",
@@ -184,26 +244,41 @@
         "personal_info.phone": "Partially Extracted",
         "personal_info.location": "Correct",
         "professional_summary": "Partially Extracted",
-        "experience[0].visionlab ai": "Missing",
-        "education[0].uc berkeley": "Missing",
+        "experience[0].visionlab ai": "Partially Extracted",
+        "education[0].uc berkeley": "Correct",
         "skills.technical": "Missing"
       },
       "metrics": {
         "fields_expected": 8,
-        "fields_correct": 4.5,
-        "fields_missing": 3,
+        "fields_correct": 6.0,
+        "fields_missing": 1,
         "fields_incorrect": 0,
         "fields_duplicated": 0,
         "precision": 1.0,
-        "recall": 0.562,
-        "f1": 0.72,
-        "exact_match_score": 0.562,
+        "recall": 0.75,
+        "f1": 0.857,
+        "strict_precision": 1.0,
+        "strict_recall": 0.75,
+        "strict_f1": 0.857,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.838,
+        "normalized_f1": 0.912,
+        "exact_match_score": 0.75,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 8,
+        "fields_correct": 6.7,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.838,
+        "f1": 0.912
+      }
     },
     {
       "test_id": "rw_04",
@@ -241,13 +316,28 @@
         "precision": 1.0,
         "recall": 0.787,
         "f1": 0.881,
+        "strict_precision": 1.0,
+        "strict_recall": 0.787,
+        "strict_f1": 0.881,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.9,
+        "normalized_f1": 0.947,
         "exact_match_score": 0.787,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 8,
+        "fields_correct": 7.2,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.947
+      }
     },
     {
       "test_id": "rw_05",
@@ -285,13 +375,28 @@
         "precision": 1.0,
         "recall": 0.875,
         "f1": 0.933,
+        "strict_precision": 1.0,
+        "strict_recall": 0.875,
+        "strict_f1": 0.933,
+        "normalized_precision": 1.0,
+        "normalized_recall": 1.0,
+        "normalized_f1": 1.0,
         "exact_match_score": 0.875,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 8,
+        "fields_correct": 8.0,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
     },
     {
       "test_id": "rw_06",
@@ -327,13 +432,28 @@
         "precision": 1.0,
         "recall": 0.857,
         "f1": 0.923,
+        "strict_precision": 1.0,
+        "strict_recall": 0.857,
+        "strict_f1": 0.923,
+        "normalized_precision": 1.0,
+        "normalized_recall": 1.0,
+        "normalized_f1": 1.0,
         "exact_match_score": 0.857,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 8,
+        "fields_correct": 8.0,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
     },
     {
       "test_id": "rw_07",
@@ -371,13 +491,28 @@
         "precision": 1.0,
         "recall": 0.85,
         "f1": 0.919,
+        "strict_precision": 1.0,
+        "strict_recall": 0.85,
+        "strict_f1": 0.919,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.975,
+        "normalized_f1": 0.987,
         "exact_match_score": 0.85,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 8,
+        "fields_correct": 7.8,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.975,
+        "f1": 0.987
+      }
     },
     {
       "test_id": "rw_08",
@@ -414,13 +549,28 @@
         "precision": 1.0,
         "recall": 0.714,
         "f1": 0.833,
+        "strict_precision": 1.0,
+        "strict_recall": 0.714,
+        "strict_f1": 0.833,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.829,
+        "normalized_f1": 0.907,
         "exact_match_score": 0.714,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 7,
+        "fields_correct": 5.8,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.829,
+        "f1": 0.907
+      }
     },
     {
       "test_id": "rw_09",
@@ -457,13 +607,28 @@
         "precision": 1.0,
         "recall": 0.786,
         "f1": 0.88,
+        "strict_precision": 1.0,
+        "strict_recall": 0.786,
+        "strict_f1": 0.88,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.914,
+        "normalized_f1": 0.955,
         "exact_match_score": 0.786,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 7,
+        "fields_correct": 6.4,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.914,
+        "f1": 0.955
+      }
     },
     {
       "test_id": "rw_10",
@@ -502,13 +667,28 @@
         "precision": 1.0,
         "recall": 0.811,
         "f1": 0.896,
+        "strict_precision": 1.0,
+        "strict_recall": 0.811,
+        "strict_f1": 0.896,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.911,
+        "normalized_f1": 0.953,
         "exact_match_score": 0.811,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 9,
+        "fields_correct": 8.2,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.911,
+        "f1": 0.953
+      }
     },
     {
       "test_id": "rw_11",
@@ -547,13 +727,28 @@
         "precision": 0.867,
         "recall": 0.722,
         "f1": 0.788,
+        "strict_precision": 0.867,
+        "strict_recall": 0.722,
+        "strict_f1": 0.788,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.911,
+        "normalized_f1": 0.953,
         "exact_match_score": 0.722,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 9,
+        "fields_correct": 8.2,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.911,
+        "f1": 0.953
+      }
     },
     {
       "test_id": "rw_12",
@@ -574,29 +769,44 @@
       ],
       "field_classifications": {
         "personal_info.full_name": "Partially Extracted",
-        "personal_info.email": "Partially Extracted",
+        "personal_info.email": "Correct",
         "personal_info.phone": "Partially Extracted",
-        "personal_info.location": "Partially Extracted",
+        "personal_info.location": "Correct",
         "experience[0].biogen health": "Missing",
-        "education[0].uc san diego": "Missing",
+        "education[0].uc san diego": "Partially Extracted",
         "skills.technical": "Missing"
       },
       "metrics": {
         "fields_expected": 7,
-        "fields_correct": 3.2,
-        "fields_missing": 3,
+        "fields_correct": 4.1,
+        "fields_missing": 2,
         "fields_incorrect": 0,
         "fields_duplicated": 0,
         "precision": 1.0,
-        "recall": 0.457,
-        "f1": 0.627,
-        "exact_match_score": 0.457,
+        "recall": 0.586,
+        "f1": 0.739,
+        "strict_precision": 1.0,
+        "strict_recall": 0.586,
+        "strict_f1": 0.739,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.714,
+        "normalized_f1": 0.833,
+        "exact_match_score": 0.586,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 0.5
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 7,
+        "fields_correct": 5.0,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.714,
+        "f1": 0.833
+      }
     },
     {
       "test_id": "rw_13",
@@ -617,29 +827,44 @@
       ],
       "field_classifications": {
         "personal_info.full_name": "Partially Extracted",
-        "personal_info.email": "Partially Extracted",
+        "personal_info.email": "Correct",
         "personal_info.phone": "Partially Extracted",
-        "personal_info.location": "Partially Extracted",
+        "personal_info.location": "Correct",
         "experience[0].biogen health": "Missing",
-        "education[0].uc san diego": "Missing",
+        "education[0].uc san diego": "Partially Extracted",
         "skills.technical": "Missing"
       },
       "metrics": {
         "fields_expected": 7,
-        "fields_correct": 3.2,
-        "fields_missing": 3,
+        "fields_correct": 4.1,
+        "fields_missing": 2,
         "fields_incorrect": 0,
         "fields_duplicated": 0,
         "precision": 1.0,
-        "recall": 0.457,
-        "f1": 0.627,
-        "exact_match_score": 0.457,
+        "recall": 0.586,
+        "f1": 0.739,
+        "strict_precision": 1.0,
+        "strict_recall": 0.586,
+        "strict_f1": 0.739,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.714,
+        "normalized_f1": 0.833,
+        "exact_match_score": 0.586,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 0.5
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 7,
+        "fields_correct": 5.0,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.714,
+        "f1": 0.833
+      }
     },
     {
       "test_id": "rw_14",
@@ -660,29 +885,44 @@
       ],
       "field_classifications": {
         "personal_info.full_name": "Partially Extracted",
-        "personal_info.email": "Partially Extracted",
+        "personal_info.email": "Correct",
         "personal_info.phone": "Partially Extracted",
-        "personal_info.location": "Partially Extracted",
+        "personal_info.location": "Correct",
         "experience[0].biogen health": "Missing",
-        "education[0].uc san diego": "Missing",
+        "education[0].uc san diego": "Partially Extracted",
         "skills.technical": "Missing"
       },
       "metrics": {
         "fields_expected": 7,
-        "fields_correct": 3.2,
-        "fields_missing": 3,
+        "fields_correct": 4.1,
+        "fields_missing": 2,
         "fields_incorrect": 0,
         "fields_duplicated": 0,
         "precision": 1.0,
-        "recall": 0.457,
-        "f1": 0.627,
-        "exact_match_score": 0.457,
+        "recall": 0.586,
+        "f1": 0.739,
+        "strict_precision": 1.0,
+        "strict_recall": 0.586,
+        "strict_f1": 0.739,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.714,
+        "normalized_f1": 0.833,
+        "exact_match_score": 0.586,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 0.5
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 7,
+        "fields_correct": 5.0,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.714,
+        "f1": 0.833
+      }
     },
     {
       "test_id": "rw_15",
@@ -718,13 +958,28 @@
         "precision": 1.0,
         "recall": 0.833,
         "f1": 0.909,
+        "strict_precision": 1.0,
+        "strict_recall": 0.833,
+        "strict_f1": 0.909,
+        "normalized_precision": 1.0,
+        "normalized_recall": 1.0,
+        "normalized_f1": 1.0,
         "exact_match_score": 0.833,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 6,
+        "fields_correct": 6.0,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
     },
     {
       "test_id": "rw_16",
@@ -763,13 +1018,28 @@
         "precision": 1.0,
         "recall": 0.7,
         "f1": 0.824,
+        "strict_precision": 1.0,
+        "strict_recall": 0.7,
+        "strict_f1": 0.824,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.778,
+        "normalized_f1": 0.875,
         "exact_match_score": 0.7,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 9,
+        "fields_correct": 7.000000000000001,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.778,
+        "f1": 0.875
+      }
     },
     {
       "test_id": "rw_17",
@@ -807,13 +1077,28 @@
         "precision": 1.0,
         "recall": 0.662,
         "f1": 0.797,
+        "strict_precision": 1.0,
+        "strict_recall": 0.662,
+        "strict_f1": 0.797,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.75,
+        "normalized_f1": 0.857,
         "exact_match_score": 0.662,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 8,
+        "fields_correct": 6.000000000000001,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.857
+      }
     },
     {
       "test_id": "rw_18",
@@ -850,13 +1135,28 @@
         "precision": 1.0,
         "recall": 0.686,
         "f1": 0.814,
+        "strict_precision": 1.0,
+        "strict_recall": 0.686,
+        "strict_f1": 0.814,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.8,
+        "normalized_f1": 0.889,
         "exact_match_score": 0.686,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 7,
+        "fields_correct": 5.6000000000000005,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.889
+      }
     },
     {
       "test_id": "rw_19",
@@ -892,13 +1192,28 @@
         "precision": 1.0,
         "recall": 0.667,
         "f1": 0.8,
+        "strict_precision": 1.0,
+        "strict_recall": 0.667,
+        "strict_f1": 0.8,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.733,
+        "normalized_f1": 0.846,
         "exact_match_score": 0.667,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 6,
+        "fields_correct": 4.3999999999999995,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.733,
+        "f1": 0.846
+      }
     },
     {
       "test_id": "rw_20",
@@ -933,13 +1248,28 @@
         "precision": 1.0,
         "recall": 0.8,
         "f1": 0.889,
+        "strict_precision": 1.0,
+        "strict_recall": 0.8,
+        "strict_f1": 0.889,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.76,
+        "normalized_f1": 0.864,
         "exact_match_score": 0.8,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 5,
+        "fields_correct": 3.8,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.76,
+        "f1": 0.864
+      }
     },
     {
       "test_id": "rw_21",
@@ -976,13 +1306,28 @@
         "precision": 1.0,
         "recall": 0.757,
         "f1": 0.862,
+        "strict_precision": 1.0,
+        "strict_recall": 0.757,
+        "strict_f1": 0.862,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.7,
+        "normalized_f1": 0.824,
         "exact_match_score": 0.757,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 7,
+        "fields_correct": 4.8999999999999995,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.824
+      }
     },
     {
       "test_id": "rw_22",
@@ -1019,13 +1364,28 @@
         "precision": 1.0,
         "recall": 0.686,
         "f1": 0.814,
+        "strict_precision": 1.0,
+        "strict_recall": 0.686,
+        "strict_f1": 0.814,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.825,
+        "normalized_f1": 0.904,
         "exact_match_score": 0.686,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 8,
+        "fields_correct": 6.6000000000000005,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.825,
+        "f1": 0.904
+      }
     },
     {
       "test_id": "rw_23",
@@ -1061,13 +1421,28 @@
         "precision": 1.0,
         "recall": 0.667,
         "f1": 0.8,
+        "strict_precision": 1.0,
+        "strict_recall": 0.667,
+        "strict_f1": 0.8,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.8,
+        "normalized_f1": 0.889,
         "exact_match_score": 0.667,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 6,
+        "fields_correct": 4.8,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.889
+      }
     },
     {
       "test_id": "rw_24",
@@ -1104,13 +1479,28 @@
         "precision": 1.0,
         "recall": 0.857,
         "f1": 0.923,
+        "strict_precision": 1.0,
+        "strict_recall": 0.857,
+        "strict_f1": 0.923,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.688,
+        "normalized_f1": 0.815,
         "exact_match_score": 0.857,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 8,
+        "fields_correct": 5.5,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.688,
+        "f1": 0.815
+      }
     },
     {
       "test_id": "rw_25",
@@ -1147,13 +1537,28 @@
         "precision": 1.0,
         "recall": 0.829,
         "f1": 0.907,
+        "strict_precision": 1.0,
+        "strict_recall": 0.829,
+        "strict_f1": 0.907,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.975,
+        "normalized_f1": 0.987,
         "exact_match_score": 0.829,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 8,
+        "fields_correct": 7.8,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.975,
+        "f1": 0.987
+      }
     },
     {
       "test_id": "rw_26",
@@ -1161,7 +1566,7 @@
       "format": "pdf",
       "layout_category": "Modern Left Sidebar",
       "expected_status": "success",
-      "actual_status": "success",
+      "actual_status": "partial",
       "pipeline_stages_passed": [
         "file_validation",
         "document_extraction",
@@ -1173,7 +1578,7 @@
         "pdf_text_recovery"
       ],
       "field_classifications": {
-        "personal_info.full_name": "Correct",
+        "personal_info.full_name": "Incorrect",
         "personal_info.email": "Correct",
         "personal_info.phone": "Partially Extracted",
         "personal_info.location": "Partially Extracted",
@@ -1183,20 +1588,35 @@
       },
       "metrics": {
         "fields_expected": 7,
-        "fields_correct": 5.1,
+        "fields_correct": 4.1,
         "fields_missing": 1,
-        "fields_incorrect": 0,
+        "fields_incorrect": 1,
         "fields_duplicated": 0,
-        "precision": 1.0,
-        "recall": 0.729,
-        "f1": 0.843,
-        "exact_match_score": 0.729,
+        "precision": 0.804,
+        "recall": 0.586,
+        "f1": 0.678,
+        "strict_precision": 0.804,
+        "strict_recall": 0.586,
+        "strict_f1": 0.678,
+        "normalized_precision": 0.861,
+        "normalized_recall": 0.775,
+        "normalized_f1": 0.816,
+        "exact_match_score": 0.586,
         "hyperlink_precision": 1.0,
-        "pdf_retention_rate": 1.0
+        "pdf_retention_rate": 0.5
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 8,
+        "fields_correct": 6.199999999999999,
+        "fields_missing": 0,
+        "fields_incorrect": 1,
+        "precision": 0.861,
+        "recall": 0.775,
+        "f1": 0.816
+      }
     },
     {
       "test_id": "rw_27",
@@ -1232,13 +1652,28 @@
         "precision": 1.0,
         "recall": 0.75,
         "f1": 0.857,
+        "strict_precision": 1.0,
+        "strict_recall": 0.75,
+        "strict_f1": 0.857,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.914,
+        "normalized_f1": 0.955,
         "exact_match_score": 0.75,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 7,
+        "fields_correct": 6.4,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.914,
+        "f1": 0.955
+      }
     },
     {
       "test_id": "rw_28",
@@ -1274,13 +1709,28 @@
         "precision": 1.0,
         "recall": 0.783,
         "f1": 0.878,
+        "strict_precision": 1.0,
+        "strict_recall": 0.783,
+        "strict_f1": 0.878,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.717,
+        "normalized_f1": 0.835,
         "exact_match_score": 0.783,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 6,
+        "fields_correct": 4.3,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.717,
+        "f1": 0.835
+      }
     },
     {
       "test_id": "rw_29",
@@ -1317,13 +1767,28 @@
         "precision": 1.0,
         "recall": 0.657,
         "f1": 0.793,
+        "strict_precision": 1.0,
+        "strict_recall": 0.657,
+        "strict_f1": 0.793,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.8,
+        "normalized_f1": 0.889,
         "exact_match_score": 0.657,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 7,
+        "fields_correct": 5.6000000000000005,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.889
+      }
     },
     {
       "test_id": "rw_30",
@@ -1359,13 +1824,28 @@
         "precision": 1.0,
         "recall": 0.833,
         "f1": 0.909,
+        "strict_precision": 1.0,
+        "strict_recall": 0.833,
+        "strict_f1": 0.909,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.767,
+        "normalized_f1": 0.868,
         "exact_match_score": 0.833,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 6,
+        "fields_correct": 4.6000000000000005,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.767,
+        "f1": 0.868
+      }
     },
     {
       "test_id": "rw_31",
@@ -1400,13 +1880,28 @@
         "precision": 1.0,
         "recall": 0.8,
         "f1": 0.889,
+        "strict_precision": 1.0,
+        "strict_recall": 0.8,
+        "strict_f1": 0.889,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.76,
+        "normalized_f1": 0.864,
         "exact_match_score": 0.8,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 5,
+        "fields_correct": 3.8,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.76,
+        "f1": 0.864
+      }
     },
     {
       "test_id": "rw_32",
@@ -1442,13 +1937,28 @@
         "precision": 1.0,
         "recall": 0.783,
         "f1": 0.878,
+        "strict_precision": 1.0,
+        "strict_recall": 0.783,
+        "strict_f1": 0.878,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.614,
+        "normalized_f1": 0.761,
         "exact_match_score": 0.783,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 7,
+        "fields_correct": 4.3,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.614,
+        "f1": 0.761
+      }
     },
     {
       "test_id": "rw_33",
@@ -1485,13 +1995,28 @@
         "precision": 1.0,
         "recall": 0.929,
         "f1": 0.963,
+        "strict_precision": 1.0,
+        "strict_recall": 0.929,
+        "strict_f1": 0.963,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.914,
+        "normalized_f1": 0.955,
         "exact_match_score": 0.929,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 7,
+        "fields_correct": 6.4,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.914,
+        "f1": 0.955
+      }
     },
     {
       "test_id": "rw_34",
@@ -1525,13 +2050,28 @@
         "precision": 1.0,
         "recall": 0.875,
         "f1": 0.933,
+        "strict_precision": 1.0,
+        "strict_recall": 0.875,
+        "strict_f1": 0.933,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.9,
+        "normalized_f1": 0.947,
         "exact_match_score": 0.875,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 6,
+        "fields_correct": 5.4,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.947
+      }
     },
     {
       "test_id": "rw_35",
@@ -1565,13 +2105,28 @@
         "precision": 1.0,
         "recall": 1.0,
         "f1": 1.0,
+        "strict_precision": 1.0,
+        "strict_recall": 1.0,
+        "strict_f1": 1.0,
+        "normalized_precision": 1.0,
+        "normalized_recall": 1.0,
+        "normalized_f1": 1.0,
         "exact_match_score": 1.0,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 5,
+        "fields_correct": 5.0,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
     },
     {
       "test_id": "rw_36",
@@ -1606,13 +2161,28 @@
         "precision": 1.0,
         "recall": 0.9,
         "f1": 0.947,
+        "strict_precision": 1.0,
+        "strict_recall": 0.9,
+        "strict_f1": 0.947,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.84,
+        "normalized_f1": 0.913,
         "exact_match_score": 0.9,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 5,
+        "fields_correct": 4.2,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.84,
+        "f1": 0.913
+      }
     },
     {
       "test_id": "rw_37",
@@ -1647,13 +2217,28 @@
         "precision": 1.0,
         "recall": 0.8,
         "f1": 0.889,
+        "strict_precision": 1.0,
+        "strict_recall": 0.8,
+        "strict_f1": 0.889,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.76,
+        "normalized_f1": 0.864,
         "exact_match_score": 0.8,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 1.0
       },
       "errors": [
         "Database persistence note: 'email' is an invalid keyword argument for Candidate"
-      ]
+      ],
+      "normalized_metrics": {
+        "fields_expected": 5,
+        "fields_correct": 3.8,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.76,
+        "f1": 0.864
+      }
     },
     {
       "test_id": "rw_38",
@@ -1677,6 +2262,12 @@
         "precision": 1.0,
         "recall": 1.0,
         "f1": 1.0,
+        "strict_precision": 1.0,
+        "strict_recall": 1.0,
+        "strict_f1": 1.0,
+        "normalized_precision": 1.0,
+        "normalized_recall": 1.0,
+        "normalized_f1": 1.0,
         "exact_match_score": 1.0,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 0.0
@@ -1705,6 +2296,12 @@
         "precision": 1.0,
         "recall": 1.0,
         "f1": 1.0,
+        "strict_precision": 1.0,
+        "strict_recall": 1.0,
+        "strict_f1": 1.0,
+        "normalized_precision": 1.0,
+        "normalized_recall": 1.0,
+        "normalized_f1": 1.0,
         "exact_match_score": 1.0,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 0.0
@@ -1733,6 +2330,12 @@
         "precision": 1.0,
         "recall": 1.0,
         "f1": 1.0,
+        "strict_precision": 1.0,
+        "strict_recall": 1.0,
+        "strict_f1": 1.0,
+        "normalized_precision": 1.0,
+        "normalized_recall": 1.0,
+        "normalized_f1": 1.0,
         "exact_match_score": 1.0,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 0.0
@@ -1761,11 +2364,443 @@
         "precision": 1.0,
         "recall": 1.0,
         "f1": 1.0,
+        "strict_precision": 1.0,
+        "strict_recall": 1.0,
+        "strict_f1": 1.0,
+        "normalized_precision": 1.0,
+        "normalized_recall": 1.0,
+        "normalized_f1": 1.0,
         "exact_match_score": 1.0,
         "hyperlink_precision": 1.0,
         "pdf_retention_rate": 0.0
       },
       "errors": []
+    },
+    {
+      "test_id": "rw_42",
+      "file_name": "rw_42_5plus_page_cv.pdf",
+      "format": "pdf",
+      "layout_category": "5+ Page Executive CV",
+      "expected_status": "success",
+      "actual_status": "partial",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Partially Extracted",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Correct",
+        "personal_info.location": "Correct",
+        "professional_summary": "Partially Extracted",
+        "experience[0].quantum ai labs": "Missing",
+        "experience[1].neuraledge syst": "Missing",
+        "experience[2].apex distribute": "Missing",
+        "experience[3].vanguard cybern": "Missing",
+        "experience[4].solaria informa": "Missing",
+        "education[0].massachusetts i": "Correct",
+        "education[1].stanford univer": "Correct",
+        "education[2].cornell univers": "Correct",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 14,
+        "fields_correct": 7.5,
+        "fields_missing": 6,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.536,
+        "f1": 0.698,
+        "strict_precision": 1.0,
+        "strict_recall": 0.536,
+        "strict_f1": 0.698,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.465,
+        "normalized_f1": 0.635,
+        "exact_match_score": 0.536,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ],
+      "normalized_metrics": {
+        "fields_expected": 17,
+        "fields_correct": 7.8999999999999995,
+        "fields_missing": 8,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.465,
+        "f1": 0.635
+      }
+    },
+    {
+      "test_id": "rw_43",
+      "file_name": "rw_43_three_column_layout.pdf",
+      "format": "pdf",
+      "layout_category": "Three-Column Complex Magazine",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Correct",
+        "personal_info.location": "Incorrect",
+        "professional_summary": "Correct",
+        "experience[0].appvelocity inc": "Correct",
+        "experience[1].veloce technolo": "Partially Extracted",
+        "education[0].san jose state ": "Correct",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 9,
+        "fields_correct": 6.5,
+        "fields_missing": 1,
+        "fields_incorrect": 1,
+        "fields_duplicated": 0,
+        "precision": 0.867,
+        "recall": 0.722,
+        "f1": 0.788,
+        "strict_precision": 0.867,
+        "strict_recall": 0.722,
+        "strict_f1": 0.788,
+        "normalized_precision": 0.904,
+        "normalized_recall": 0.855,
+        "normalized_f1": 0.879,
+        "exact_match_score": 0.722,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ],
+      "normalized_metrics": {
+        "fields_expected": 11,
+        "fields_correct": 9.4,
+        "fields_missing": 0,
+        "fields_incorrect": 1,
+        "precision": 0.904,
+        "recall": 0.855,
+        "f1": 0.879
+      }
+    },
+    {
+      "test_id": "rw_44",
+      "file_name": "rw_44_two_column_full_width_header.pdf",
+      "format": "pdf",
+      "layout_category": "Two-Column with Full-Width Header",
+      "expected_status": "success",
+      "actual_status": "partial",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Correct",
+        "personal_info.location": "Correct",
+        "professional_summary": "Partially Extracted",
+        "experience[0].apex security s": "Missing",
+        "experience[1].cloudscale netw": "Missing",
+        "education[0].university of w": "Correct",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 9,
+        "fields_correct": 5.7,
+        "fields_missing": 3,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.633,
+        "f1": 0.775,
+        "strict_precision": 1.0,
+        "strict_recall": 0.633,
+        "strict_f1": 0.775,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.59,
+        "normalized_f1": 0.742,
+        "exact_match_score": 0.633,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ],
+      "normalized_metrics": {
+        "fields_expected": 10,
+        "fields_correct": 5.8999999999999995,
+        "fields_missing": 3,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.59,
+        "f1": 0.742
+      }
+    },
+    {
+      "test_id": "rw_45",
+      "file_name": "rw_45_single_employer_promotions.pdf",
+      "format": "pdf",
+      "layout_category": "Single-Employer Career Progression",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Correct",
+        "personal_info.location": "Correct",
+        "professional_summary": "Correct",
+        "experience[0].stripe technolo": "Correct",
+        "experience[1].stripe technolo": "Correct",
+        "experience[2].stripe technolo": "Correct",
+        "education[0].university of c": "Correct",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 10,
+        "fields_correct": 9,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.947,
+        "strict_precision": 1.0,
+        "strict_recall": 0.9,
+        "strict_f1": 0.947,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.96,
+        "normalized_f1": 0.98,
+        "exact_match_score": 0.9,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ],
+      "normalized_metrics": {
+        "fields_expected": 10,
+        "fields_correct": 9.6,
+        "fields_missing": 0,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.96,
+        "f1": 0.98
+      }
+    },
+    {
+      "test_id": "rw_46",
+      "file_name": "rw_46_rtl_arabic_hebrew.pdf",
+      "format": "pdf",
+      "layout_category": "RTL Multilingual Arabic-English",
+      "expected_status": "success",
+      "actual_status": "partial",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Partially Extracted",
+        "personal_info.location": "Correct",
+        "professional_summary": "Partially Extracted",
+        "experience[0].emirates cloud ": "Missing",
+        "experience[1].gulf cyber syst": "Missing",
+        "education[0].american univer": "Correct",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 9,
+        "fields_correct": 5.5,
+        "fields_missing": 3,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.611,
+        "f1": 0.759,
+        "strict_precision": 1.0,
+        "strict_recall": 0.611,
+        "strict_f1": 0.759,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.7,
+        "normalized_f1": 0.824,
+        "exact_match_score": 0.611,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ],
+      "normalized_metrics": {
+        "fields_expected": 9,
+        "fields_correct": 6.3,
+        "fields_missing": 2,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.824
+      }
+    },
+    {
+      "test_id": "rw_47",
+      "file_name": "rw_47_cjk_multilingual.pdf",
+      "format": "pdf",
+      "layout_category": "CJK Japanese-English Multilingual",
+      "expected_status": "success",
+      "actual_status": "success",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Correct",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Partially Extracted",
+        "personal_info.location": "Correct",
+        "professional_summary": "Correct",
+        "experience[0].rakuten ai labo": "Partially Extracted",
+        "experience[1].sony robotics t": "Partially Extracted",
+        "education[0].university of t": "Correct",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 9,
+        "fields_correct": 6.8,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "fields_duplicated": 0,
+        "precision": 1.0,
+        "recall": 0.756,
+        "f1": 0.861,
+        "strict_precision": 1.0,
+        "strict_recall": 0.756,
+        "strict_f1": 0.861,
+        "normalized_precision": 1.0,
+        "normalized_recall": 0.756,
+        "normalized_f1": 0.861,
+        "exact_match_score": 0.756,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ],
+      "normalized_metrics": {
+        "fields_expected": 9,
+        "fields_correct": 6.800000000000001,
+        "fields_missing": 1,
+        "fields_incorrect": 0,
+        "precision": 1.0,
+        "recall": 0.756,
+        "f1": 0.861
+      }
+    },
+    {
+      "test_id": "rw_48",
+      "file_name": "rw_48_acroform_form_fields.pdf",
+      "format": "pdf",
+      "layout_category": "Interactive AcroForm Fields",
+      "expected_status": "success",
+      "actual_status": "partial",
+      "pipeline_stages_passed": [
+        "file_validation",
+        "document_extraction",
+        "structured_extraction",
+        "hyperlink_association",
+        "normalization",
+        "template_payload_conversion",
+        "pdf_compilation",
+        "pdf_text_recovery"
+      ],
+      "field_classifications": {
+        "personal_info.full_name": "Incorrect",
+        "personal_info.email": "Correct",
+        "personal_info.phone": "Correct",
+        "personal_info.location": "Partially Extracted",
+        "professional_summary": "Correct",
+        "experience[0].uncharted secur": "Partially Extracted",
+        "experience[1].blackwatch cybe": "Partially Extracted",
+        "education[0].stanford univer": "Partially Extracted",
+        "skills.technical": "Missing"
+      },
+      "metrics": {
+        "fields_expected": 9,
+        "fields_correct": 5.3,
+        "fields_missing": 1,
+        "fields_incorrect": 1,
+        "fields_duplicated": 0,
+        "precision": 0.841,
+        "recall": 0.589,
+        "f1": 0.693,
+        "strict_precision": 0.841,
+        "strict_recall": 0.589,
+        "strict_f1": 0.693,
+        "normalized_precision": 0.861,
+        "normalized_recall": 0.689,
+        "normalized_f1": 0.765,
+        "exact_match_score": 0.589,
+        "hyperlink_precision": 1.0,
+        "pdf_retention_rate": 1.0
+      },
+      "errors": [
+        "Database persistence note: 'email' is an invalid keyword argument for Candidate"
+      ],
+      "normalized_metrics": {
+        "fields_expected": 9,
+        "fields_correct": 6.200000000000001,
+        "fields_missing": 0,
+        "fields_incorrect": 1,
+        "precision": 0.861,
+        "recall": 0.689,
+        "f1": 0.765
+      }
     }
   ]
 }

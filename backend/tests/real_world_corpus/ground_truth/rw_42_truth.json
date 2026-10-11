@@ -1,0 +1,100 @@
+{
+  "test_id": "rw_42",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Aris Thorne",
+    "email": "aris.thorne@quantumai.org",
+    "phone": "+1-617-555-0199",
+    "location": "Cambridge, MA",
+    "linkedin": "https://linkedin.com/in/aristhorne"
+  },
+  "professional_summary": "Distinguished AI research director and executive engineering leader with 22+ years architecting scalable autonomous computing systems.",
+  "work_experience": [
+    {
+      "employer": "Quantum AI Labs",
+      "designation": "Vice President of Research & Engineering",
+      "start_date": "2020",
+      "end_date": "Present"
+    },
+    {
+      "employer": "NeuralEdge Systems",
+      "designation": "Senior Director of Distributed Systems",
+      "start_date": "2016",
+      "end_date": "2020"
+    },
+    {
+      "employer": "Apex Distributed Networks",
+      "designation": "Lead Infrastructure Architect",
+      "start_date": "2011",
+      "end_date": "2016"
+    },
+    {
+      "employer": "Vanguard Cybernetics",
+      "designation": "Principal Software Engineer",
+      "start_date": "2006",
+      "end_date": "2011"
+    },
+    {
+      "employer": "Solaria Information Systems",
+      "designation": "Senior Software Engineer",
+      "start_date": "2002",
+      "end_date": "2006"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Massachusetts Institute of Technology",
+      "degree": "Ph.D. in Computer Science & Artificial Intelligence"
+    },
+    {
+      "institution": "Stanford University",
+      "degree": "Master of Science in Computer Science"
+    },
+    {
+      "institution": "Cornell University",
+      "degree": "Bachelor of Science in Electrical Engineering & Computer Science"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "PyTorch",
+      "TensorFlow",
+      "CUDA",
+      "C++",
+      "Rust",
+      "Python",
+      "Kubernetes",
+      "Ray",
+      "Slurm",
+      "gRPC"
+    ]
+  },
+  "projects": [
+    {
+      "name": "Project TensorWeave",
+      "technologies": [
+        "Python",
+        "C++",
+        "CUDA",
+        "Triton"
+      ]
+    },
+    {
+      "name": "Project ChronosMesh",
+      "technologies": [
+        "Rust",
+        "Raft",
+        "gRPC",
+        "DPDK"
+      ]
+    },
+    {
+      "name": "Project EdgeSentry",
+      "technologies": [
+        "C",
+        "Assembly",
+        "TensorFlow Lite"
+      ]
+    }
+  ]
+}
