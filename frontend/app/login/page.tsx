@@ -136,7 +136,7 @@ export default function CandidateLogin() {
     }
   };
 
-  if (isTestingModeConfigured && !isExited && !isAuthenticated) {
+  if (isTestingModeConfigured && !isAuthenticated) {
     return (
       <main className="min-h-screen bg-background flex flex-col items-center justify-center font-sans text-foreground">
         <div className="flex flex-col items-center gap-5 p-8 bg-card border border-border rounded-3xl shadow-lg max-w-sm text-center">
@@ -145,16 +145,6 @@ export default function CandidateLogin() {
             <h2 className="text-base font-bold text-foreground">Testing Mode Active</h2>
             <p className="text-xs text-muted-foreground mt-1">Connecting test candidate session and opening dashboard...</p>
           </div>
-          <button
-            onClick={() => {
-              sessionStorage.setItem("disable_testing_mode", "true");
-              sessionStorage.setItem("disable_dev_mode", "true");
-              setIsExited(true);
-            }}
-            className="text-[11px] text-amber-600 dark:text-amber-400 hover:underline font-semibold mt-2 cursor-pointer"
-          >
-            Cancel and open standard login form
-          </button>
         </div>
       </main>
     );

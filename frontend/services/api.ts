@@ -22,6 +22,15 @@ const customFetch = async (input: RequestInfo | URL, init?: RequestInit): Promis
     const timeoutId = setTimeout(() => controller.abort(), 15000);
     const combinedSignal = init?.signal || controller.signal;
 
+    const bypassEnv = process.env.NEXT_PUBLIC_DEV_AUTH_BYPASS || process.env.NEXT_PUBLIC_DEV_MODE;
+    const isBypassConfigured = bypassEnv === "true" || bypassEnv === "1";
+
+    if (isBypassConfigured && !urlStr.includes("/auth/") && typeof window !== "undefined") {
+      if (!useAuthStore.getState().isInitialized) {
+        await useAuthStore.getState().initialize();
+      }
+    }
+
     try {
       const res = await fetch(input, {
         credentials: "include",
@@ -32,6 +41,15 @@ const customFetch = async (input: RequestInfo | URL, init?: RequestInit): Promis
       clearTimeout(timeoutId);
 
       if (res.status === 401 && !urlStr.includes("/auth/") && typeof window !== "undefined") {
+        if (isBypassConfigured) {
+          console.warn(`[customFetch] 401 on ${urlStr} in testing mode; refreshing dev session without redirect`);
+          try {
+            await useAuthStore.getState().resumeDevMode();
+            return res;
+          } catch (e) {
+            // non-fatal
+          }
+        }
         useAuthStore.getState().logout();
         if (window.location.pathname !== "/login") window.location.href = "/login";
       }

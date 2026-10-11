@@ -37,21 +37,66 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      {
-        source: "/auth/login",
-        destination: "/login",
-        permanent: false,
-      },
-      {
-        source: "/auth/signup",
-        destination: "/signup",
-        permanent: false,
-      },
-      {
-        source: "/auth/register",
-        destination: "/signup",
-        permanent: false,
-      },
+      ...(isBypassActiveBuild
+        ? [
+            {
+              source: "/",
+              destination: "/candidate/dashboard",
+              permanent: false,
+            },
+            {
+              source: "/login",
+              destination: "/candidate/dashboard",
+              permanent: false,
+            },
+            {
+              source: "/signup",
+              destination: "/candidate/dashboard",
+              permanent: false,
+            },
+            {
+              source: "/candidate",
+              destination: "/candidate/dashboard",
+              permanent: false,
+            },
+            {
+              source: "/auth/login",
+              destination: "/candidate/dashboard",
+              permanent: false,
+            },
+            {
+              source: "/auth/signup",
+              destination: "/candidate/dashboard",
+              permanent: false,
+            },
+            {
+              source: "/auth/register",
+              destination: "/candidate/dashboard",
+              permanent: false,
+            },
+          ]
+        : [
+            {
+              source: "/auth/login",
+              destination: "/login",
+              permanent: false,
+            },
+            {
+              source: "/auth/signup",
+              destination: "/signup",
+              permanent: false,
+            },
+            {
+              source: "/auth/register",
+              destination: "/signup",
+              permanent: false,
+            },
+            {
+              source: "/candidate",
+              destination: "/candidate/dashboard",
+              permanent: false,
+            },
+          ]),
       {
         source: "/candidate/learning",
         destination: "/candidate/skill-lab",

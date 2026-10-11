@@ -8,6 +8,7 @@ interface AuthState {
   fullName: string | null;
   email: string | null;
   isAuthenticated: boolean;
+  isInitialized: boolean;
   isDevUser: boolean;
   login: (token: string, role: string, fullName: string, email: string, isDevUser?: boolean) => void;
   logout: () => void;
@@ -38,14 +39,15 @@ const getInitialAuthState = () => {
       const email = localStorage.getItem('email');
       const isDev = email === 'dev.candidate@vidyamarg.local' || localStorage.getItem('is_dev_mode') === 'true';
       if (token) {
-        return { token, role, fullName, email, isAuthenticated: true, isDevUser: isDev };
+        return { token, role, fullName, email, isAuthenticated: true, isInitialized: false, isDevUser: isDev };
       }
     } catch {}
   }
-  return { token: null, role: null, fullName: null, email: null, isAuthenticated: false, isDevUser: false };
+  return { token: null, role: null, fullName: null, email: null, isAuthenticated: false, isInitialized: false, isDevUser: false };
 };
 
 const initialAuth = getInitialAuthState();
+let initPromise: Promise<void> | null = null;
 
 export const useAuthStore = create<AuthState>((set, get) => ({
   ...initialAuth,
@@ -69,6 +71,7 @@ export const useAuthStore = create<AuthState>((set, get) => ({
       fullName,
       email,
       isAuthenticated: true,
+      isInitialized: true,
       isDevUser: isDevUser || email === 'dev.candidate@vidyamarg.local'
     });
   },
@@ -88,6 +91,7 @@ export const useAuthStore = create<AuthState>((set, get) => ({
       fullName: null,
       email: null,
       isAuthenticated: false,
+      isInitialized: true,
       isDevUser: false
     });
   },
@@ -95,55 +99,69 @@ export const useAuthStore = create<AuthState>((set, get) => ({
   initialize: async () => {
     if (typeof window === 'undefined') return;
 
-    try {
-      const token = localStorage.getItem('token');
-      const role = localStorage.getItem('role');
-      const fullName = localStorage.getItem('fullName');
-      const email = localStorage.getItem('email');
-
-      // 1. Existing saved session in localStorage
-      if (token && role && fullName && email) {
-        const isDev = email === 'dev.candidate@vidyamarg.local' || localStorage.getItem('is_dev_mode') === 'true';
-        set({
-          token,
-          role,
-          fullName,
-          email,
-          isAuthenticated: true,
-          isDevUser: isDev
-        });
-        return;
-      }
-
-      // 2. Testing Mode / DEV_AUTH_BYPASS Auto-Session Bootstrap
-      const bypassEnv = process.env.NEXT_PUBLIC_DEV_AUTH_BYPASS || process.env.NEXT_PUBLIC_DEV_MODE;
-      const isBypassConfigured = bypassEnv === 'true' || bypassEnv === '1';
-      const isTemporarilyDisabled =
-        sessionStorage.getItem('disable_dev_mode') === 'true' ||
-        sessionStorage.getItem('disable_testing_mode') === 'true';
-
-      if (isBypassConfigured && !isTemporarilyDisabled) {
-        const session = await apiService.getDevSession();
-        if (session && session.access_token && session.user) {
-          const user = session.user;
-          localStorage.setItem('token', session.access_token);
-          localStorage.setItem('role', user.role);
-          localStorage.setItem('fullName', user.full_name);
-          localStorage.setItem('email', user.email);
-          localStorage.setItem('is_dev_mode', 'true');
-          set({
-            token: session.access_token,
-            role: user.role,
-            fullName: user.full_name,
-            email: user.email,
-            isAuthenticated: true,
-            isDevUser: true
-          });
-        }
-      }
-    } catch (err) {
-      console.warn('Testing mode initialization notice:', err);
+    if (initPromise) {
+      return initPromise;
     }
+
+    initPromise = (async () => {
+      try {
+        const token = localStorage.getItem('token');
+        const role = localStorage.getItem('role');
+        const fullName = localStorage.getItem('fullName');
+        const email = localStorage.getItem('email');
+
+        // 1. Existing saved session in localStorage
+        if (token && role && fullName && email) {
+          const isDev = email === 'dev.candidate@vidyamarg.local' || localStorage.getItem('is_dev_mode') === 'true';
+          set({
+            token,
+            role,
+            fullName,
+            email,
+            isAuthenticated: true,
+            isInitialized: true,
+            isDevUser: isDev
+          });
+          return;
+        }
+
+        // 2. Testing Mode / DEV_AUTH_BYPASS Auto-Session Bootstrap
+        const bypassEnv = process.env.NEXT_PUBLIC_DEV_AUTH_BYPASS || process.env.NEXT_PUBLIC_DEV_MODE;
+        const isBypassConfigured = bypassEnv === 'true' || bypassEnv === '1';
+        const isTemporarilyDisabled =
+          sessionStorage.getItem('disable_dev_mode') === 'true' ||
+          sessionStorage.getItem('disable_testing_mode') === 'true';
+
+        if (isBypassConfigured && !isTemporarilyDisabled) {
+          const session = await apiService.getDevSession();
+          if (session && session.access_token && session.user) {
+            const user = session.user;
+            localStorage.setItem('token', session.access_token);
+            localStorage.setItem('role', user.role);
+            localStorage.setItem('fullName', user.full_name);
+            localStorage.setItem('email', user.email);
+            localStorage.setItem('is_dev_mode', 'true');
+            set({
+              token: session.access_token,
+              role: user.role,
+              fullName: user.full_name,
+              email: user.email,
+              isAuthenticated: true,
+              isInitialized: true,
+              isDevUser: true
+            });
+            return;
+          }
+        }
+      } catch (err) {
+        console.warn('Testing mode initialization notice:', err);
+      } finally {
+        set({ isInitialized: true });
+        initPromise = null;
+      }
+    })();
+
+    return initPromise;
   },
 
   updateUser: (fullName, email) => {

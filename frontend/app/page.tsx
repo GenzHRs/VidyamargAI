@@ -69,14 +69,14 @@ export default function Home() {
     }
   }, [isAuthenticated, router, checkingAuth]);
 
-  // Prevent flashing landing page if user session is being validated
-  if (checkingAuth) {
+  // Prevent flashing landing page if user session is being validated or testing mode is active
+  if (checkingAuth || isTestingModeConfigured) {
     return (
       <main className="min-h-screen bg-background flex flex-col items-center justify-center font-heading text-foreground">
         <div className="flex flex-col items-center gap-5">
           <div className="w-10 h-10 rounded-full border-2 border-purple-500 border-t-transparent animate-spin" />
           <span className="text-purple-500 font-medium tracking-wide">
-            {isTestingModeConfigured ? "Entering VidyaMarg AI (Testing Mode)..." : "Connecting to VidyaMarg AI..."}
+            {isTestingModeConfigured ? "Opening VidyaMarg AI Dashboard..." : "Connecting to VidyaMarg AI..."}
           </span>
         </div>
       </main>

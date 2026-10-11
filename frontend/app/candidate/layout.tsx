@@ -36,6 +36,14 @@ export default function CandidateLayout({
   const closeAgent = useGlobalAgentStore((state) => state.close);
   const setOwnerEmail = useGlobalAgentStore((state) => state.setOwnerEmail);
 
+  const isInitialized = useAuthStore((state) => state.isInitialized);
+
+  const isBypassConfigured =
+    process.env.NEXT_PUBLIC_DEV_AUTH_BYPASS === "true" ||
+    process.env.NEXT_PUBLIC_DEV_MODE === "true" ||
+    process.env.NEXT_PUBLIC_DEV_AUTH_BYPASS === "1" ||
+    process.env.NEXT_PUBLIC_DEV_MODE === "1";
+
   useEffect(() => {
     let active = true;
     initialize().finally(() => {
@@ -60,12 +68,27 @@ export default function CandidateLayout({
   }, [mounted, isAuthenticated, email, setOwnerEmail]);
 
   useEffect(() => {
-    if (mounted && !isAuthenticated) {
-      router.replace("/login");
+    if (mounted && isInitialized && !isAuthenticated) {
+      if (!isBypassConfigured) {
+        router.replace("/login");
+      }
     }
-  }, [mounted, isAuthenticated, router]);
+  }, [mounted, isInitialized, isAuthenticated, router, isBypassConfigured]);
 
-  if (mounted && !isAuthenticated) {
+  if (!mounted || !isInitialized) {
+    return (
+      <div className="h-screen w-full bg-app-bg flex flex-col items-center justify-center font-sans text-app-text">
+        <div className="flex flex-col items-center gap-4">
+          <div className="w-10 h-10 rounded-full border-2 border-blue-500 border-t-transparent animate-spin" />
+          <span className="text-sm font-medium text-app-text-muted">
+            Opening VidyaMarg AI Workspace...
+          </span>
+        </div>
+      </div>
+    );
+  }
+
+  if (mounted && !isAuthenticated && !isBypassConfigured) {
     return null;
   }
 

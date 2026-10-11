@@ -86,9 +86,21 @@ export default function Sidebar({ portal = "candidate" }: SidebarProps) {
     localStorage.setItem("sidebar_collapsed", String(next));
   };
 
-  const handleLogout = () => {
+  const handleLogout = async () => {
+    const isBypassConfigured =
+      process.env.NEXT_PUBLIC_DEV_AUTH_BYPASS === "true" ||
+      process.env.NEXT_PUBLIC_DEV_MODE === "true" ||
+      process.env.NEXT_PUBLIC_DEV_AUTH_BYPASS === "1" ||
+      process.env.NEXT_PUBLIC_DEV_MODE === "1";
+
+    if (isBypassConfigured) {
+      await useAuthStore.getState().resumeDevMode();
+      router.push("/candidate/dashboard");
+      return;
+    }
+
     logout();
-    router.push("/");
+    router.push("/login");
   };
 
   const handleProfileClick = () => {

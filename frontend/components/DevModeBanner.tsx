@@ -2,11 +2,11 @@
 
 import { useAuthStore } from "@/store/authStore";
 import { useRouter } from "next/navigation";
-import { LogOut, Terminal, ShieldAlert } from "lucide-react";
+import { RefreshCw, Terminal, ShieldAlert } from "lucide-react";
 
 export default function DevModeBanner() {
   const router = useRouter();
-  const { isDevUser, email, exitDevMode } = useAuthStore();
+  const { isDevUser, email, resumeDevMode } = useAuthStore();
 
   const isDevModeEnv =
     process.env.NEXT_PUBLIC_DEV_AUTH_BYPASS === "true" ||
@@ -19,9 +19,9 @@ export default function DevModeBanner() {
     return null;
   }
 
-  const handleExitDevMode = () => {
-    exitDevMode();
-    router.push("/login");
+  const handleResetSession = async () => {
+    await resumeDevMode();
+    router.replace("/candidate/dashboard");
   };
 
   return (
@@ -45,15 +45,15 @@ export default function DevModeBanner() {
 
       <div className="flex items-center gap-3">
         <span className="text-[10px] text-amber-700/80 dark:text-amber-300/80 hidden md:inline font-medium">
-          Local testing active (authentication bypassed for candidate portal)
+          Authorized testing active (landing, login, and signup bypassed)
         </span>
         <button
-          onClick={handleExitDevMode}
-          className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-amber-600 hover:bg-amber-700 text-white rounded-lg text-[11px] font-bold transition-all shadow-xs cursor-pointer"
-          title="Exit Development Mode to test normal Login and Signup screens"
+          onClick={handleResetSession}
+          className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-amber-600/85 hover:bg-amber-600 text-white rounded-lg text-[11px] font-bold transition-all shadow-xs cursor-pointer"
+          title="Refresh seeded test candidate data"
         >
-          <LogOut size={12} />
-          <span>Exit to Normal Login</span>
+          <RefreshCw size={11} />
+          <span>Reset Test Data</span>
         </button>
       </div>
     </div>
