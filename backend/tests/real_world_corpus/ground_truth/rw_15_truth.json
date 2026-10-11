@@ -1,0 +1,38 @@
+{
+  "test_id": "rw_15",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Brian O'Connor",
+    "email": "brian.oconnor@example.com",
+    "location": "Dallas, TX"
+  },
+  "work_experience": [
+    {
+      "employer": "EnergyGrid Systems",
+      "designation": "Firmware Architect",
+      "start_date": "2019",
+      "end_date": "Present",
+      "responsibilities": [
+        "Designed smart meter sensor firmware deploying over 500k units."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Texas A&M University",
+      "degree": "BS in Electrical Engineering",
+      "graduation_year": "2017"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "C",
+      "ARM Cortex",
+      "FreeRTOS",
+      "Zigbee",
+      "PCB Design",
+      "I2C",
+      "SPI"
+    ]
+  }
+}

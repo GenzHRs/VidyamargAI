@@ -13,14 +13,14 @@ from app.core.config import settings
 from app.core.database import get_db
 from app.core.security import (
     get_password_hash, verify_password, create_access_token,
-    get_current_user, get_current_admin
+    get_current_user
 )
 from app.core.ws import manager
 from app.models.models import (
     User, Candidate, CandidateResume, CandidateProfile,
     Notification, AuditLog, EmailNotification, Message,
     CourseProgress, LearningEvent,
-    VideoAnalytics, CourseAnalytics, OTP,
+    OTP,
     AIMentorSession, AIMentorMessage, AIMentorStudyPlan, AIMentorInsight, AIMentorArtifact, AIMentorUsage, UserCareerProfile, UserConsent,
     MCPChatSession, MCPChatMessage
 )

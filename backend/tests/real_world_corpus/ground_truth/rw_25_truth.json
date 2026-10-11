@@ -1,0 +1,56 @@
+{
+  "test_id": "rw_25",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Amara Okafor",
+    "professional_title": "Full Stack Developer",
+    "email": "amara.okafor@example.com",
+    "phone": "312-555-0177"
+  },
+  "work_experience": [
+    {
+      "employer": "PayMatrix Solutions",
+      "designation": "Frontend Developer",
+      "start_date": "2021",
+      "end_date": "Present",
+      "responsibilities": [
+        "Built responsive payment checkout flows serving 2M users monthly."
+      ]
+    },
+    {
+      "employer": "Zeno Labs",
+      "designation": "Junior Engineer",
+      "start_date": "2019",
+      "end_date": "2021",
+      "responsibilities": [
+        "Created UI component library."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "CryptVault Wallet",
+      "bullets": [
+        "Non-custodial Web3 wallet."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Northwestern University",
+      "degree": "BS in Computer Science",
+      "graduation_year": "2019"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Node.js",
+      "TailwindCSS",
+      "GraphQL",
+      "PostgreSQL"
+    ]
+  }
+}

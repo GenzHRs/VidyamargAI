@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { useAuthStore } from "@/store/authStore";
 import { useResumeStore } from "@/store/resumeStore";
@@ -60,7 +60,7 @@ const INTERVIEW_TYPES: { id: InterviewType; label: string; desc: string }[] = [
 
 const DIFFICULTIES: Difficulty[] = ["Beginner", "Intermediate", "Advanced", "Expert"];
 
-export default function InterviewRoomPage() {
+function InterviewRoomContent() {
   const searchParams = useSearchParams();
   const { fullName } = useAuthStore();
   const { activeResume, hasResume, isLoading: loadingResumes } = useResumeStore();
@@ -704,4 +704,12 @@ Return ONLY a JSON object with this exact structure:
   }
 
   return null;
+}
+
+export default function InterviewRoomPage() {
+  return (
+    <Suspense fallback={null}>
+      <InterviewRoomContent />
+    </Suspense>
+  );
 }

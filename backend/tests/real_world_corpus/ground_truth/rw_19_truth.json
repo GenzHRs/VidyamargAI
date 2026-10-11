@@ -1,0 +1,36 @@
+{
+  "test_id": "rw_19",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Zoe Kravitz",
+    "email": "zoe.kravitz@example.com",
+    "location": "Los Angeles, CA"
+  },
+  "work_experience": [
+    {
+      "employer": "Anthropic AI",
+      "designation": "Member of Technical Staff",
+      "start_date": "2022",
+      "end_date": "Present",
+      "responsibilities": [
+        "Optimized reinforcement learning from human feedback (RLHF) pipelines."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "UCLA",
+      "degree": "PhD in Artificial Intelligence",
+      "graduation_year": "2022"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "Enterprise AI Architecture",
+      "LLM Fine-Tuning",
+      "Distributed Training",
+      "Python",
+      "PyTorch"
+    ]
+  }
+}

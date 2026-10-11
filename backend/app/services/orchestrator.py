@@ -146,6 +146,13 @@ def call_nvidia(messages, json_mode: bool = False) -> str:
     return res_text
 
 def extract_text_from_pdf(pdf_bytes: bytes) -> str:
+    try:
+        from app.services.resume_extractor_engine import extract_pdf_layout_aware
+        res = extract_pdf_layout_aware(pdf_bytes)
+        if res.get("raw_text", "").strip():
+            return res["raw_text"]
+    except Exception as e:
+        logger.warning(f"Layout-aware text extraction failed in extract_text_from_pdf: {e}")
     import io
     from pypdf import PdfReader
     if not pdf_bytes.startswith(b"%PDF-"):
@@ -155,62 +162,175 @@ def extract_text_from_pdf(pdf_bytes: bytes) -> str:
 
 
 def fallback_pymupdf_pipeline(pdf_bytes: bytes) -> dict:
-    """Extract observed text only; offline parsing cannot establish career eligibility."""
-    import fitz
-    with fitz.open(stream=pdf_bytes, filetype="pdf") as document:
-        text = "\n".join(page.get_text() for page in document)
-    result = fallback_parse_resume_text(text)
-    result["analysis_status"] = "partial"
-    result["analysis_method"] = "local_text_extraction"
-    result["limitations"] = ["AI analysis unavailable; education, experience, scores and eligibility were not inferred."]
-    result["parsed_json"] = {
-        "personal_info": {"name": result["name"], "email": result["email"], "phone": result["phone"]},
-        "career_classification": {}, "skills": [], "skill_graph_edges": [], "career_dna": {},
-        "roles": {}, "career_paths": [], "opportunities": {}, "career_risk_analysis": {},
-        "resume_improvements": {},
-    }
-    return result
+    """Uses the Universal Layout-Aware Engine with offline zero-hallucination heuristic parsing."""
+    try:
+        from app.services.resume_extractor_engine import extract_document_content, extract_structured_with_ai
+        from app.api.helpers import map_static_intel_to_legacy_schema
+        doc_res = extract_document_content("resume.pdf", pdf_bytes, ".pdf")
+        raw_text = doc_res["raw_text"]
+        layout_info = doc_res["layout_info"]
+        structured = extract_structured_with_ai(raw_text, pdf_bytes, layout_info)
+        
+        pi = structured.get("personal_info") or {}
+        ps = structured.get("professional_summary") or {}
+        summary_val = ps.get("summary") if isinstance(ps, dict) else str(ps or "")
+        
+        edu_list = []
+        for ed in structured.get("education") or []:
+            edu_list.append({
+                "degree": ed.get("degree") or "",
+                "specialization": ed.get("field_of_study") or "",
+                "institution": ed.get("institution") or "",
+                "start_year": str(ed.get("start_date") or ""),
+                "end_year": str(ed.get("graduation_year") or ed.get("end_date") or ""),
+                "cgpa": str(ed.get("grade") or ""),
+                "location": ed.get("location") or ""
+            })
+            
+        exp_list = []
+        for exp in structured.get("work_experience") or []:
+            exp_list.append({
+                "company_name": exp.get("employer") or exp.get("company") or "",
+                "job_title": exp.get("designation") or exp.get("role") or "",
+                "start_date": exp.get("start_date") or "",
+                "end_date": exp.get("end_date") or "",
+                "is_current": bool(exp.get("is_current")),
+                "responsibilities": exp.get("responsibilities") or [],
+                "achievements": exp.get("achievements") or [],
+                "technologies_used": exp.get("technologies") or []
+            })
+            
+        proj_list = []
+        for p in structured.get("projects") or []:
+            proj_list.append({
+                "project_name": p.get("name") or p.get("title") or "",
+                "description": p.get("description") or "",
+                "technologies_used": p.get("technologies") or p.get("tech_stack") or [],
+                "responsibilities": p.get("bullets") or p.get("responsibilities") or [],
+                "project_url": p.get("link") or p.get("repo_url") or ""
+            })
+            
+        intel = {
+            "personal_info": {
+                "full_name": pi.get("full_name") or pi.get("name") or "",
+                "email": pi.get("email") or "",
+                "phone": pi.get("phone") or "",
+                "location": pi.get("location") or "",
+                "linkedin_url": pi.get("linkedin_url") or pi.get("linkedin") or "",
+                "github_url": pi.get("github_url") or pi.get("github") or "",
+                "portfolio_url": pi.get("portfolio_url") or pi.get("portfolio") or ""
+            },
+            "education": edu_list,
+            "experience": exp_list,
+            "skills": structured.get("skills") or {},
+            "projects": proj_list,
+            "certifications": structured.get("certifications") or [],
+            "summary": summary_val
+        }
+        mapped = map_static_intel_to_legacy_schema(intel)
+        mapped["analysis_status"] = "completed"
+        mapped["analysis_method"] = "universal_layout_aware_engine"
+        return mapped
+    except Exception as e:
+        logger.error(f"Universal layout-aware fallback failed: {e}")
+        import fitz
+        with fitz.open(stream=pdf_bytes, filetype="pdf") as document:
+            text = "\n".join(page.get_text() for page in document)
+        result = fallback_parse_resume_text(text)
+        result["analysis_status"] = "partial"
+        result["analysis_method"] = "local_text_extraction"
+        return result
 
 
 def fallback_parse_resume_text(text: str) -> dict:
-    import re
-    # Extract email
-    email_match = re.search(r'[\w\.-]+@[\w\.-]+\.\w+', text)
-    email = email_match.group(0) if email_match else ""
-    
-    # Extract phone
-    phone_match = re.search(r'\+?\d[\d -]{8,12}\d', text)
-    phone = phone_match.group(0) if phone_match else ""
-    
-    # Extract name (first non-empty line)
-    lines = [line.strip() for line in text.split('\n') if line.strip()]
-    name = lines[0] if lines else ""
-    
-    # Find matching skills from common list
-    common_skills = [
-        "Python", "FastAPI", "React", "TypeScript", "JavaScript", "SQL", "PostgreSQL",
-        "Docker", "AWS", "Node", "HTML", "CSS", "Next.js", "Java", "C++", "Git", "Kubernetes"
-    ]
-    matched = []
-    for skill in common_skills:
-        if re.search(r'\b' + re.escape(skill) + r'\b', text, re.IGNORECASE):
-            matched.append(skill)
+    try:
+        from app.services.resume_extractor_engine import extract_structured_with_ai
+        from app.api.helpers import map_static_intel_to_legacy_schema
+        structured = extract_structured_with_ai(text, None, None)
+        pi = structured.get("personal_info") or {}
+        ps = structured.get("professional_summary") or {}
+        summary_val = ps.get("summary") if isinstance(ps, dict) else str(ps or "")
+        
+        edu_list = []
+        for ed in structured.get("education") or []:
+            edu_list.append({
+                "degree": ed.get("degree") or "",
+                "specialization": ed.get("field_of_study") or "",
+                "institution": ed.get("institution") or "",
+                "start_year": str(ed.get("start_date") or ""),
+                "end_year": str(ed.get("graduation_year") or ed.get("end_date") or ""),
+                "cgpa": str(ed.get("grade") or ""),
+                "location": ed.get("location") or ""
+            })
             
-    skills_str = ", ".join(matched)
-    
-    return {
-        "name": name,
-        "email": email,
-        "phone": phone,
-        "skills": skills_str,
-        "experience": json.dumps([]),
-        "education": json.dumps([]),
-        "projects": json.dumps([]),
-        "certifications": "",
-        "github": "",
-        "linkedin": "",
-        "portfolio": ""
-    }
+        exp_list = []
+        for exp in structured.get("work_experience") or []:
+            exp_list.append({
+                "company_name": exp.get("employer") or exp.get("company") or "",
+                "job_title": exp.get("designation") or exp.get("role") or "",
+                "start_date": exp.get("start_date") or "",
+                "end_date": exp.get("end_date") or "",
+                "is_current": bool(exp.get("is_current")),
+                "responsibilities": exp.get("responsibilities") or [],
+                "achievements": exp.get("achievements") or [],
+                "technologies_used": exp.get("technologies") or []
+            })
+            
+        proj_list = []
+        for p in structured.get("projects") or []:
+            proj_list.append({
+                "project_name": p.get("name") or p.get("title") or "",
+                "description": p.get("description") or "",
+                "technologies_used": p.get("technologies") or p.get("tech_stack") or [],
+                "responsibilities": p.get("bullets") or p.get("responsibilities") or [],
+                "project_url": p.get("link") or p.get("repo_url") or ""
+            })
+            
+        intel = {
+            "personal_info": {
+                "full_name": pi.get("full_name") or pi.get("name") or "",
+                "email": pi.get("email") or "",
+                "phone": pi.get("phone") or "",
+                "location": pi.get("location") or "",
+                "linkedin_url": pi.get("linkedin_url") or pi.get("linkedin") or "",
+                "github_url": pi.get("github_url") or pi.get("github") or "",
+                "portfolio_url": pi.get("portfolio_url") or pi.get("portfolio") or ""
+            },
+            "education": edu_list,
+            "experience": exp_list,
+            "skills": structured.get("skills") or {},
+            "projects": proj_list,
+            "certifications": structured.get("certifications") or [],
+            "summary": summary_val
+        }
+        return map_static_intel_to_legacy_schema(intel)
+    except Exception as e:
+        logger.error(f"Fallback parse resume text error: {e}")
+        import re
+        email_match = re.search(r'[\w\.-]+@[\w\.-]+\.\w+', text)
+        email = email_match.group(0) if email_match else ""
+        phone_match = re.search(r'\+?\d[\d -]{8,12}\d', text)
+        phone = phone_match.group(0) if phone_match else ""
+        lines = [line.strip() for line in text.split('\n') if line.strip()]
+        name = lines[0] if lines else ""
+        common_skills = [
+            "Python", "FastAPI", "React", "TypeScript", "JavaScript", "SQL", "PostgreSQL",
+            "Docker", "AWS", "Node", "HTML", "CSS", "Next.js", "Java", "C++", "Git", "Kubernetes"
+        ]
+        matched = [s for s in common_skills if re.search(r'\b' + re.escape(s) + r'\b', text, re.IGNORECASE)]
+        return {
+            "name": name,
+            "email": email,
+            "phone": phone,
+            "skills": ", ".join(matched),
+            "experience": json.dumps([]),
+            "education": json.dumps([]),
+            "projects": json.dumps([]),
+            "certifications": "",
+            "github": "",
+            "linkedin": "",
+            "portfolio": ""
+        }
 
 
 
@@ -260,6 +380,33 @@ class AgentOrchestrator:
         db.add(resume)
         db.commit()
         db.refresh(resume)
+
+        # Create/sync modern Resume record for universal compatibility
+        try:
+            from app.models.resume_center_models import Resume as ModernResume, ResumeTemplate
+            classic_tmpl = db.query(ResumeTemplate).filter(ResumeTemplate.is_active == True).first()
+            modern_resume = ModernResume(
+                candidate_id=candidate_id,
+                title=f"Uploaded Resume ({filename})",
+                source_type="upload",
+                template_id=classic_tmpl.id if classic_tmpl else 1,
+                original_file_url=resume_url,
+                latest_pdf_url=resume_url,
+                file_name=filename,
+                file_type="PDF",
+                file_size=len(file_content),
+                status="active",
+                extraction_status="extracting",
+                is_active=True,
+                created_at=datetime.utcnow(),
+                updated_at=datetime.utcnow()
+            )
+            db.add(modern_resume)
+            db.flush()
+            candidate.active_resume_id = modern_resume.id
+            db.commit()
+        except Exception as modern_err:
+            logger.warning(f"Could not initialize modern Resume record: {modern_err}")
         
         candidate.status = "Resume Uploaded"
         candidate.current_step = "Apply"
@@ -470,6 +617,48 @@ class AgentOrchestrator:
             
             profile.parsed_metadata = json.dumps(data)
             db.commit()
+
+            # Also sync modern Resume Center records if a modern Resume exists
+            try:
+                from app.models.resume_center_models import Resume as ModernResume, ResumeVersion
+                from app.api.routers.resume_center import sync_extraction_to_database, convert_to_template_payload
+                from app.services.resume_context_service import ResumeContextService
+                from app.services.resume_extractor_engine import extract_document_content, extract_structured_with_ai
+                
+                modern_resume = db.query(ModernResume).filter(
+                    ModernResume.candidate_id == candidate.id,
+                    ModernResume.deleted_at == None
+                ).order_by(ModernResume.id.desc()).first()
+                
+                if modern_resume:
+                    doc_res = extract_document_content("resume.pdf", pdf_bytes, ".pdf") if pdf_bytes else {"raw_text": profile.resume_text or "", "layout_info": {}, "page_count": 1}
+                    structured_ext = extract_structured_with_ai(doc_res["raw_text"], pdf_bytes, doc_res.get("layout_info", {}))
+                    sync_extraction_to_database(db, modern_resume, structured_ext, doc_res["raw_text"], doc_res.get("layout_info"))
+                    modern_resume.extraction_status = "extracted"
+                    template_data = convert_to_template_payload(structured_ext)
+                    
+                    # Update or create ResumeVersion
+                    existing_ver = db.query(ResumeVersion).filter(ResumeVersion.resume_id == modern_resume.id).first()
+                    if not existing_ver:
+                        new_ver = ResumeVersion(
+                            resume_id=modern_resume.id,
+                            version_number=1,
+                            structured_data=template_data,
+                            latex_source="",
+                            change_summary="Synchronized parsed extraction",
+                            created_by=candidate.user_id,
+                            created_at=datetime.utcnow()
+                        )
+                        db.add(new_ver)
+                        db.flush()
+                        modern_resume.current_version_id = new_ver.id
+                    else:
+                        existing_ver.structured_data = template_data
+                        
+                    db.commit()
+                    ResumeContextService.replace_active_resume(db, candidate.id, modern_resume.id, template_data)
+            except Exception as modern_sync_err:
+                logger.warning(f"Could not synchronize modern Resume Center records: {modern_sync_err}")
 
             # Set status to building profile
             candidate.resume_status = "building_profile"

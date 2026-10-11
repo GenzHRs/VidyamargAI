@@ -1,0 +1,37 @@
+{
+  "test_id": "rw_30",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Victoria Sterling",
+    "email": "victoria.sterling@example.com",
+    "location": "New York, NY"
+  },
+  "work_experience": [
+    {
+      "employer": "Morgan Stanley",
+      "designation": "Vice President of Engineering",
+      "start_date": "2020",
+      "end_date": "Present",
+      "responsibilities": [
+        "Oversee development of prime brokerage risk calculation engine.",
+        "Direct 3 distributed engineering squads comprising 28 staff engineers."
+      ]
+    },
+    {
+      "employer": "Goldman Sachs",
+      "designation": "Senior Quant Developer",
+      "start_date": "2015",
+      "end_date": "2020",
+      "responsibilities": [
+        "Formulated algorithmic execution strategies in C++."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Columbia University",
+      "degree": "Master of Science in Financial Engineering",
+      "graduation_year": "2015"
+    }
+  ]
+}

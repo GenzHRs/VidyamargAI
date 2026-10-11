@@ -35,8 +35,8 @@ legacy_table_names = {
     "interviews", "interview_results", "assessments", "assessment_attempts",
     "written_assessments", "written_assessment_attempts", "final_assessments",
     "final_assessment_attempts", "screening_results", "agent_activities",
-    "agent_memory", "vector_memory", "workflow_runs", "workflow_steps",
-    "workflow_events", "browser_sessions", "browser_cookies", "application_history",
+    "vector_memory", "workflow_runs", "workflow_steps",
+    "workflow_events", "application_history",
     "video_analytics", "readiness_scores", "career_health_snapshots",
     "mcp_chat_messages", "mcp_chat_sessions", "mcp_audit_logs",
     "search_history", "cleanup_audit_backup", "circuit_breaker_states",
@@ -46,13 +46,11 @@ legacy_table_names = {
     "jobs_pool", "job_pool_matches", "recommendation_memories",
     "offers", "candidate_rankings", "fraud_logs", "recruiters",
     # Previously archived
-    "agent_health", "ai_mentor_artifacts", "ai_mentor_insights", "ai_mentor_messages",
-    "ai_mentor_sessions", "ai_mentor_study_plans", "ai_mentor_usage", "candidate_preferences",
+    "agent_health", "candidate_preferences",
     "categories", "company_intelligence_cache", "company_profiles",
-    "course_analytics", "email_notifications",  "job_agent_logs",
-    "job_source_tracking", "learning_events",
-    "messages", "module_progress", "module_quiz_attempts", "module_quizzes",
-    "topic_progress", "topic_quiz_attempts", "topic_quizzes", "user_career_profiles"
+    "course_analytics", "job_agent_logs",
+    "module_progress", "module_quiz_attempts", "module_quizzes",
+    "topic_progress", "topic_quiz_attempts", "topic_quizzes"
 }
 
 from app.core.config import settings

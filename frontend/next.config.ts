@@ -1,5 +1,19 @@
 import type { NextConfig } from "next";
 
+// Build-time Security Guard: Reject unauthorized auth bypass on public production Vercel builds
+const isProdVercelBuild = process.env.VERCEL_ENV === "production";
+const isBypassActiveBuild =
+  process.env.NEXT_PUBLIC_DEV_AUTH_BYPASS === "true" || process.env.NEXT_PUBLIC_DEV_MODE === "true";
+const isAuthorizedTestingBuild =
+  process.env.NEXT_PUBLIC_DEV_AUTH_BYPASS_DEPLOYMENT === "authorized_testing";
+
+if (isProdVercelBuild && isBypassActiveBuild && !isAuthorizedTestingBuild) {
+  throw new Error(
+    "CRITICAL BUILD SECURITY ERROR: NEXT_PUBLIC_DEV_AUTH_BYPASS is active on a public production Vercel deployment without authorization! " +
+    "To protect candidate data, set NEXT_PUBLIC_DEV_AUTH_BYPASS=false, or for an authorized test deployment specify NEXT_PUBLIC_DEV_AUTH_BYPASS_DEPLOYMENT=authorized_testing."
+  );
+}
+
 const nextConfig: NextConfig = {
   /* config options here */
   allowedDevOrigins: ["localhost", "127.0.0.1", "192.168.1.7"],
@@ -37,6 +51,11 @@ const nextConfig: NextConfig = {
         source: "/auth/register",
         destination: "/signup",
         permanent: false,
+      },
+      {
+        source: "/candidate/learning",
+        destination: "/candidate/skill-lab",
+        permanent: true,
       },
     ];
   },

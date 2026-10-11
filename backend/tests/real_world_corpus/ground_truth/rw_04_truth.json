@@ -1,0 +1,43 @@
+{
+  "test_id": "rw_04",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Marcus Vance",
+    "email": "marcus.vance@example.com",
+    "phone": "312-555-0199",
+    "location": "Chicago, IL"
+  },
+  "professional_summary": "DevOps and Cloud Infrastructure Architect with 8+ years specializing in AWS, Kubernetes, and GitOps CI/CD automation.",
+  "work_experience": [
+    {
+      "employer": "CloudScale Operations",
+      "designation": "Principal Cloud Engineer",
+      "start_date": "2020",
+      "end_date": "Present",
+      "responsibilities": [
+        "Architected multi-region Kubernetes infrastructure spanning 4 AWS regions with zero downtime.",
+        "Cut cloud infrastructure spend by $340k annually via automated spot-instance orchestration."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Illinois Institute of Technology",
+      "degree": "Bachelor of Science in Information Technology",
+      "graduation_year": "2016"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "Kubernetes",
+      "Terraform",
+      "AWS",
+      "Docker",
+      "ArgoCD",
+      "Prometheus",
+      "Grafana",
+      "Python",
+      "Bash"
+    ]
+  }
+}

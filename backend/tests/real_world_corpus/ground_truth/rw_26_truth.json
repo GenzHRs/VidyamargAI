@@ -1,0 +1,47 @@
+{
+  "test_id": "rw_26",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Nathan Drake",
+    "professional_title": "Senior Backend Engineer",
+    "email": "nathan@example.com",
+    "phone": "415-555-0166",
+    "location": "San Francisco, CA"
+  },
+  "work_experience": [
+    {
+      "employer": "CloudHarbor Technologies",
+      "designation": "Senior Engineer",
+      "start_date": "2020",
+      "end_date": "Present",
+      "responsibilities": [
+        "Built high-concurrency websocket cluster handling 50k active client sessions.",
+        "Reduced database connection overhead by 60% through PgBouncer integration."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Redis Mesh Gateway",
+      "start_date": "2023",
+      "bullets": [
+        "Implemented dynamic sharded Redis routing layer."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Stanford University",
+      "degree": "BS in Symbolic Systems",
+      "graduation_year": "2017"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "Python",
+      "Django",
+      "Docker",
+      "AWS"
+    ]
+  }
+}

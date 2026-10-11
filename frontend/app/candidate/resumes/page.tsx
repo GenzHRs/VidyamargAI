@@ -3,6 +3,7 @@
 import { useEffect, useState, useMemo } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useQuery, useQueryClient, keepPreviousData } from "@tanstack/react-query";
 import { 
   Upload, FilePlus2, FileEdit, Sparkles, Download, 
   Trash2, Eye, RefreshCw, FileText, Search, Filter, 
@@ -18,8 +19,36 @@ import { Modal } from "@/components/ui/Modal";
 import { Alert } from "@/components/ui/Alert";
 import { EmptyState } from "@/components/ui/EmptyState";
 
+const getInitialResumes = (): ResumeItem[] => {
+  if (typeof window !== "undefined") {
+    try {
+      const cached = localStorage.getItem("cache_candidate_resumes");
+      if (cached) {
+        const parsed = JSON.parse(cached);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      }
+    } catch {}
+
+    const storeActive = useResumeStore.getState().activeResume;
+    if (storeActive) {
+      return [{
+        id: storeActive.id,
+        title: storeActive.title || "Master Resume",
+        source_type: storeActive.source_type || "uploaded",
+        version_number: 1,
+        is_active: true,
+        status: storeActive.status || "active",
+        created_at: storeActive.created_at || new Date().toISOString(),
+        updated_at: storeActive.updated_at || new Date().toISOString(),
+      }];
+    }
+  }
+  return [];
+};
+
 export default function ResumeCenterDashboard() {
   const router = useRouter();
+  const queryClient = useQueryClient();
   const {
     activeResume,
     primaryDesignation,
@@ -29,8 +58,46 @@ export default function ResumeCenterDashboard() {
     isLoading: isStoreLoading
   } = useResumeStore();
 
-  const [resumes, setResumes] = useState<ResumeItem[]>([]);
-  const [loading, setLoading] = useState(true);
+  const {
+    data: resumes = [],
+    isLoading: isQueryLoading,
+    isFetching,
+    isError,
+    error: queryError,
+    refetch: refetchResumes,
+  } = useQuery<ResumeItem[]>({
+    queryKey: ["candidate", "resumes"],
+    queryFn: async ({ signal }) => {
+      const list = await resumeCenterApi.getResumes(undefined, undefined, signal);
+      if (Array.isArray(list) && typeof window !== "undefined") {
+        try {
+          localStorage.setItem("cache_candidate_resumes", JSON.stringify(list));
+        } catch {}
+      }
+      return list;
+    },
+    initialData: () => getInitialResumes(),
+    placeholderData: keepPreviousData,
+    staleTime: 60 * 1000,
+  });
+
+  type ResumePageState = "initial" | "loading" | "success" | "empty" | "error";
+
+  const pageState: ResumePageState = useMemo(() => {
+    if (isError && resumes.length === 0) {
+      return "error";
+    }
+    if (isQueryLoading && resumes.length === 0) {
+      return "loading";
+    }
+    if (!isQueryLoading && !isError && resumes.length === 0) {
+      return "empty";
+    }
+    if (resumes.length > 0) {
+      return "success";
+    }
+    return "initial";
+  }, [isQueryLoading, isError, resumes.length]);
   const [searchQuery, setSearchQuery] = useState("");
   const [statusFilter, setStatusFilter] = useState("all");
   const [errorMessage, setErrorMessage] = useState("");
@@ -45,21 +112,18 @@ export default function ResumeCenterDashboard() {
 
   const fetchResumes = async () => {
     try {
-      setLoading(true);
       setErrorMessage("");
-      const data = await resumeCenterApi.getResumes();
-      setResumes(data);
-      await fetchActiveResume();
+      await refetchResumes();
+      await fetchActiveResume({ forceRefresh: true });
     } catch (err: any) {
       setErrorMessage(err.message || "Failed to load resumes");
-    } finally {
-      setLoading(false);
     }
   };
 
   useEffect(() => {
-    fetchResumes();
-  }, []);
+    fetchActiveResume();
+  }, [fetchActiveResume]);
+
 
   const handleReplaceFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -260,6 +324,14 @@ export default function ResumeCenterDashboard() {
       {errorMessage && (
         <Alert variant="error" className="animate-in fade-in slide-in-from-top-2">
           {errorMessage}
+        </Alert>
+      )}
+      {isError && resumes.length > 0 && (
+        <Alert variant="warning" className="flex items-center justify-between animate-in fade-in slide-in-from-top-2">
+          <span>Unable to sync latest resume updates: {(queryError as Error)?.message || "Service unavailable"}. Showing cached data.</span>
+          <Button size="sm" variant="outline" onClick={() => refetchResumes()} className="text-xs ml-4">
+            Retry Sync
+          </Button>
         </Alert>
       )}
 
@@ -547,43 +619,69 @@ export default function ResumeCenterDashboard() {
               className="text-xs"
               title="Refresh"
             >
-              <RefreshCw size={13} className={loading ? "animate-spin" : ""} />
+              <RefreshCw size={13} className={isFetching ? "animate-spin" : ""} />
             </Button>
           </div>
         </div>
 
-        {loading ? (
+        {pageState === "loading" ? (
           <div className="p-12 text-center text-app-text-muted space-y-3 bg-app-card rounded-2xl border border-app-border">
             <RefreshCw size={24} className="animate-spin mx-auto text-blue-600" />
-            <p className="text-xs font-semibold">Loading resumes from secure storage...</p>
+            <p className="text-xs font-semibold">Connecting to secure resume repository...</p>
           </div>
-        ) : filteredResumes.length === 0 ? (
+        ) : pageState === "error" ? (
+          <div className="p-8 text-center bg-red-500/10 border border-red-500/30 rounded-2xl space-y-3">
+            <AlertCircle className="w-10 h-10 text-red-500 mx-auto" />
+            <h3 className="text-sm font-bold text-app-text">Unable to Load Resumes</h3>
+            <p className="text-xs text-app-text-muted max-w-md mx-auto">
+              {(queryError as Error)?.message || errorMessage || "The resume service is currently unreachable. Please check your connection."}
+            </p>
+            <div className="flex justify-center gap-3 pt-2">
+              <Button
+                onClick={() => {
+                  setErrorMessage("");
+                  refetchResumes();
+                }}
+                className="bg-blue-600 hover:bg-blue-500 text-white text-xs"
+              >
+                <RefreshCw size={13} className="mr-1.5" />
+                Retry
+              </Button>
+              <Link href="/candidate/resumes/upload">
+                <Button variant="outline" className="text-xs">
+                  <Upload size={13} className="mr-1.5" />
+                  Upload New Resume
+                </Button>
+              </Link>
+            </div>
+          </div>
+        ) : pageState === "empty" ? (
           <EmptyState
-            title={resumes.length === 0 ? "No resumes yet" : "No matching resumes found"}
-            description={
-              resumes.length === 0
-                ? "Upload your current resume or create a fresh one using an ATS-optimized Overleaf LaTeX template."
-                : "Try adjusting your search query or status filter."
-            }
+            title="No resumes yet"
+            description="Upload your current resume or create a fresh one using an ATS-optimized Overleaf LaTeX template."
             icon={<FileText size={36} className="text-blue-500" />}
             action={
-              resumes.length === 0 ? (
-                <div className="flex flex-wrap gap-3 mt-4">
-                  <Link href="/candidate/resumes/upload">
-                    <Button className="bg-blue-600 hover:bg-blue-700 text-white text-xs">
-                      <Upload size={14} className="mr-1.5" />
-                      Upload Existing Resume
-                    </Button>
-                  </Link>
-                  <Link href="/candidate/resumes/templates">
-                    <Button variant="outline" className="text-xs">
-                      <Layers size={14} className="mr-1.5" />
-                      Browse Templates
-                    </Button>
-                  </Link>
-                </div>
-              ) : undefined
+              <div className="flex flex-wrap gap-3 mt-4">
+                <Link href="/candidate/resumes/upload">
+                  <Button className="bg-blue-600 hover:bg-blue-700 text-white text-xs">
+                    <Upload size={14} className="mr-1.5" />
+                    Upload Existing Resume
+                  </Button>
+                </Link>
+                <Link href="/candidate/resumes/templates">
+                  <Button variant="outline" className="text-xs">
+                    <Layers size={14} className="mr-1.5" />
+                    Browse Templates
+                  </Button>
+                </Link>
+              </div>
             }
+          />
+        ) : filteredResumes.length === 0 ? (
+          <EmptyState
+            title="No matching resumes found"
+            description="Try adjusting your search query or status filter."
+            icon={<FileText size={36} className="text-blue-500" />}
           />
         ) : (
           <div className="overflow-hidden rounded-2xl border border-app-border bg-app-card shadow-sm">

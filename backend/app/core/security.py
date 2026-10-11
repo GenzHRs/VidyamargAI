@@ -90,6 +90,15 @@ def get_current_user(
     user = db.query(User).filter(User.email == email).first()
     if user is None:
         raise credentials_exception
+
+    # Security boundary: Reject dev test identity when Dev Mode is disabled or in production
+    if user.email == "dev.candidate@vidyamarg.local" and not settings.is_dev_mode_allowed:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Development test identity is not permitted in this environment.",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+
     return user
 
 def get_current_admin(

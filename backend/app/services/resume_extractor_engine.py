@@ -185,27 +185,36 @@ def _recover_plaintext_hyperlinks(text: str, existing_links: List[Dict[str, Any]
 
 def _extract_pdf_layout_aware(content: bytes) -> Dict[str, Any]:
     """
-    Extracts text using PyMuPDF with column-aware reading order,
-    spatial hyperlink annotation mapping with visible label recovery,
+    Extracts text using PyMuPDF with column-aware reading order (Left/Right sidebar and 50/50),
+    spatial hyperlink annotation mapping with visible label recovery via word-level intersection,
+    running header/footer suppression across multi-page documents,
     and OCR fallback for scanned pages.
     """
     import fitz  # PyMuPDF
+    import unicodedata
 
     doc = fitz.open(stream=content, filetype="pdf")
     page_count = len(doc)
     page_texts: List[str] = []
     scanned_pages: List[int] = []
     hyperlinks: List[Dict[str, Any]] = []
+    page_layouts: List[Dict[str, Any]] = []
     multi_column_detected = False
+
+    # Extract raw blocks and links across all pages
+    all_pages_blocks: List[List[Any]] = []
+    top_margin_lines: Dict[int, List[str]] = {}
+    bot_margin_lines: Dict[int, List[str]] = {}
 
     for page_idx in range(page_count):
         page = doc[page_idx]
         page_width = page.rect.width
         page_height = page.rect.height
 
-        # 1. Recover embedded hyperlinks with exact visible labels via spatial bounding boxes
+        # 1. Recover embedded hyperlinks with exact visible labels via spatial bounding boxes & word intersection
         try:
             links = page.get_links()
+            all_page_words = page.get_text("words")  # (x0, y0, x1, y1, word, block_no, line_no, word_no)
             for l in links:
                 uri = l.get("uri")
                 if uri and uri.startswith(("http://", "https://", "mailto:", "tel:")):
@@ -213,20 +222,30 @@ def _extract_pdf_layout_aware(content: bytes) -> Dict[str, Any]:
                     visible_label = ""
                     nearby_context = ""
                     if link_rect:
-                        # Pad rect by 2pt for ascenders/descenders
+                        # Pad rect by 3pt
                         padded_rect = fitz.Rect(
-                            max(0, link_rect.x0 - 2),
-                            max(0, link_rect.y0 - 2),
-                            min(page_width, link_rect.x1 + 2),
-                            min(page_height, link_rect.y1 + 2)
+                            max(0, link_rect.x0 - 3),
+                            max(0, link_rect.y0 - 3),
+                            min(page_width, link_rect.x1 + 3),
+                            min(page_height, link_rect.y1 + 3)
                         )
                         visible_label = page.get_text("text", clip=padded_rect).strip()
-                        # Get broader surrounding block text
+                        if not visible_label and all_page_words:
+                            # Word-level intersection fallback
+                            overlapping_words = [
+                                w[4] for w in all_page_words
+                                if not (w[2] < link_rect.x0 - 3 or w[0] > link_rect.x1 + 3 or
+                                        w[3] < link_rect.y0 - 3 or w[1] > link_rect.y1 + 3)
+                            ]
+                            if overlapping_words:
+                                visible_label = " ".join(overlapping_words).strip()
+
+                        # Broader surrounding block text for entity association
                         broad_rect = fitz.Rect(
-                            max(0, link_rect.x0 - 60),
-                            max(0, link_rect.y0 - 20),
-                            min(page_width, link_rect.x1 + 60),
-                            min(page_height, link_rect.y1 + 20)
+                            max(0, link_rect.x0 - 100),
+                            max(0, link_rect.y0 - 35),
+                            min(page_width, link_rect.x1 + 100),
+                            min(page_height, link_rect.y1 + 35)
                         )
                         nearby_context = page.get_text("text", clip=broad_rect).strip()
 
@@ -241,59 +260,138 @@ def _extract_pdf_layout_aware(content: bytes) -> Dict[str, Any]:
         except Exception as e:
             logger.debug(f"Link extraction error on page {page_idx + 1}: {e}")
 
-        # 2. Geometry-aware block extraction & Column Separation
-        blocks = page.get_text("blocks")  # (x0, y0, x1, y1, text, block_no, block_type)
+        # 2. Extract text blocks and collect margins for recurring header/footer detection
+        blocks = page.get_text("blocks")
         text_blocks = [b for b in blocks if len(b) >= 5 and b[4].strip() and b[6] == 0]
+        all_pages_blocks.append(text_blocks)
 
-        # Column candidates: left sidebar vs right main column
-        col_left = [b for b in text_blocks if b[2] <= page_width * 0.45]
-        col_right = [b for b in text_blocks if b[0] >= page_width * 0.35]
+        top_lines = [b[4].strip() for b in text_blocks if b[3] <= page_height * 0.08]
+        bot_lines = [b[4].strip() for b in text_blocks if b[1] >= page_height * 0.92]
+        top_margin_lines[page_idx] = top_lines
+        bot_margin_lines[page_idx] = bot_lines
 
-        is_multi_col = len(col_left) >= 2 and len(col_right) >= 2
-        min_col_top = page_height
-        if is_multi_col:
-            min_col_top = min(min(b[1] for b in col_left), min(b[1] for b in col_right))
+    # Detect recurring running headers / footers across multi-page documents
+    recurring_noise_patterns = set()
+    if page_count > 1:
+        for p_idx in range(1, page_count):
+            for line in top_margin_lines.get(p_idx, []):
+                norm_l = line.lower().strip()
+                if re.search(r"^(page\s+\d+(\s+of\s+\d+)?|\d+\s*/\s*\d+|page\s*\d+)$", norm_l):
+                    recurring_noise_patterns.add(line)
+                elif any(norm_l in prev_l.lower() or prev_l.lower() in norm_l for prev_l in top_margin_lines.get(0, [])):
+                    recurring_noise_patterns.add(line)
+            for line in bot_margin_lines.get(p_idx, []):
+                norm_l = line.lower().strip()
+                if re.search(r"^(page\s+\d+(\s+of\s+\d+)?|\d+\s*/\s*\d+|page\s*\d+)$", norm_l):
+                    recurring_noise_patterns.add(line)
+                elif any(norm_l in prev_l.lower() or prev_l.lower() in norm_l for prev_l in bot_margin_lines.get(0, [])):
+                    recurring_noise_patterns.add(line)
 
-        header_blocks = []
-        footer_blocks = []
-        body_blocks = []
+    # Reconstruct reading order per page
+    for page_idx in range(page_count):
+        page = doc[page_idx]
+        page_width = page.rect.width
+        page_height = page.rect.height
+        text_blocks = all_pages_blocks[page_idx]
 
-        for b in text_blocks:
-            if b[1] >= page_height * 0.90:
-                footer_blocks.append(b)
-            elif is_multi_col and b[3] <= min_col_top + 5:
-                # Top header preceding column split
-                header_blocks.append(b)
-            elif not is_multi_col and b[3] <= page_height * 0.15 and b[2] >= page_width * 0.40:
-                header_blocks.append(b)
-            else:
-                body_blocks.append(b)
+        if not text_blocks:
+            scanned_pages.append(page_idx + 1)
+            ocr_text = _attempt_ocr_on_page(page)
+            page_texts.append(ocr_text)
+            continue
 
-        if is_multi_col:
-            multi_column_detected = True
-            left_blocks = [b for b in body_blocks if b[2] <= page_width * 0.45]
-            right_blocks = [b for b in body_blocks if b[0] >= page_width * 0.35]
-            middle_blocks = [b for b in body_blocks if b not in left_blocks and b not in right_blocks]
+        # Separate headers and footers
+        header_blocks = [
+            b for b in text_blocks
+            if b[1] <= page_height * 0.05 or (b[3] <= page_height * 0.08 and b[2] - b[0] >= page_width * 0.50)
+        ]
+        footer_blocks = [b for b in text_blocks if b[1] >= page_height * 0.90]
+        body_blocks = [b for b in text_blocks if b not in header_blocks and b not in footer_blocks]
+
+        # Dynamic Gutter / Column Boundary Detection across body blocks
+        best_split_x = None
+        best_score = -999
+        is_multi_col = False
+
+        if len(body_blocks) >= 4:
+            # Sweep X from 25% to 75% of page width in steps of 10pt
+            step = 10
+            start_x = int(page_width * 0.25)
+            end_x = int(page_width * 0.75)
+
+            for cand_x in range(start_x, end_x, step):
+                left_cand = [b for b in body_blocks if b[2] <= cand_x + 5]
+                right_cand = [b for b in body_blocks if b[0] >= cand_x - 5]
+                spanning_cand = [b for b in body_blocks if b not in left_cand and b not in right_cand]
+
+                if len(left_cand) >= 2 and len(right_cand) >= 2:
+                    score = len(left_cand) + len(right_cand) - (len(spanning_cand) * 3)
+                    if score > best_score and len(spanning_cand) <= len(body_blocks) * 0.35:
+                        best_score = score
+                        best_split_x = cand_x
+
+            if best_split_x is not None and best_score >= 4:
+                is_multi_col = True
+                multi_column_detected = True
+
+        if is_multi_col and best_split_x is not None:
+            col_type = "left_sidebar" if best_split_x <= page_width * 0.45 else ("right_sidebar" if best_split_x >= page_width * 0.55 else "two_column")
+            page_layouts.append({
+                "page": page_idx + 1,
+                "column_layout": col_type,
+                "gutter_x": best_split_x,
+                "confidence": 0.95
+            })
+        else:
+            page_layouts.append({
+                "page": page_idx + 1,
+                "column_layout": "single_column",
+                "gutter_x": None,
+                "confidence": 0.99
+            })
+
+        if is_multi_col and best_split_x is not None:
+            left_col = [b for b in body_blocks if b[2] <= best_split_x + 5]
+            right_col = [b for b in body_blocks if b[0] >= best_split_x - 5]
+            spanning_mid = [b for b in body_blocks if b not in left_col and b not in right_col]
 
             header_blocks.sort(key=lambda b: (b[1], b[0]))
-            left_blocks.sort(key=lambda b: (b[1], b[0]))
-            middle_blocks.sort(key=lambda b: (b[1], b[0]))
-            right_blocks.sort(key=lambda b: (b[1], b[0]))
+            left_col.sort(key=lambda b: (b[1], b[0]))
+            spanning_mid.sort(key=lambda b: (b[1], b[0]))
+            right_col.sort(key=lambda b: (b[1], b[0]))
             footer_blocks.sort(key=lambda b: (b[1], b[0]))
 
-            # Reading order: Top Header -> Left Sidebar -> Middle -> Right Main Column -> Footer
-            ordered_blocks = header_blocks + left_blocks + middle_blocks + right_blocks + footer_blocks
+            # Reading Order:
+            # - Left Sidebar (best_split_x <= 0.45): Header -> Left Sidebar -> Spanning -> Right Main -> Footer
+            # - Right Sidebar (best_split_x >= 0.55): Header -> Left Main -> Spanning -> Right Sidebar -> Footer
+            # - 50/50 Balanced: Header -> Left -> Spanning -> Right -> Footer
+            ordered_blocks = header_blocks + left_col + spanning_mid + right_col + footer_blocks
         else:
             ordered_blocks = sorted(text_blocks, key=lambda b: (b[1], b[0]))
 
-        extracted_page_str = "\n".join([b[4].strip() for b in ordered_blocks if b[4].strip()])
+        # Filter out recurring noise lines and empty blocks
+        clean_lines = []
+        for b in ordered_blocks:
+            t = b[4].strip()
+            if not t:
+                continue
+            if t in recurring_noise_patterns:
+                continue
+            # Strip isolated page numbers
+            if page_count > 1 and re.match(r"^(page\s+\d+(\s+of\s+\d+)?|\d+\s*/\s*\d+|page\s*\d+)$", t, re.I):
+                continue
+            clean_lines.append(t)
 
-        # 3. Check for Scanned / Image-only page (< 50 selectable characters)
-        if len(extracted_page_str.strip()) < 50:
+        extracted_page_str = unicodedata.normalize("NFKD", "\n".join(clean_lines).strip())
+
+        # Check for Scanned / Image-only page (< 20 words or < 100 characters)
+        word_count = len(extracted_page_str.split())
+        char_count = len(extracted_page_str.strip())
+        if word_count < 20 or char_count < 100:
             scanned_pages.append(page_idx + 1)
             ocr_text = _attempt_ocr_on_page(page)
-            if ocr_text:
-                extracted_page_str = ocr_text
+            if ocr_text and len(ocr_text.strip()) > len(extracted_page_str.strip()):
+                extracted_page_str = unicodedata.normalize("NFKD", ocr_text)
 
         page_texts.append(extracted_page_str)
 
@@ -308,6 +406,7 @@ def _extract_pdf_layout_aware(content: bytes) -> Dict[str, Any]:
         "page_count": page_count,
         "layout_info": {
             "columns_detected": multi_column_detected,
+            "page_layouts": page_layouts,
             "scanned_pages": scanned_pages,
             "hyperlinks": hyperlinks,
             "tables_count": 0,
@@ -317,26 +416,61 @@ def _extract_pdf_layout_aware(content: bytes) -> Dict[str, Any]:
 
 
 def _attempt_ocr_on_page(page) -> str:
-    """Runs OCR on page pixmap when selectable text is missing."""
+    """Runs OCR on page pixmap with multiple OCR engine fallbacks."""
     try:
         pix = page.get_pixmap(dpi=150)
         img_bytes = pix.tobytes("png")
 
-        # Try PaddleOCR if available
+        # 1. Try PyMuPDF native OCR if available
+        try:
+            tp = page.get_textpage_ocr(language="eng", dpi=150, full=True)
+            ocr_out = tp.extractText().strip()
+            if len(ocr_out) > 10:
+                return ocr_out
+        except Exception:
+            pass
+
+        # 2. Try PaddleOCR if available
         try:
             from paddleocr import PaddleOCR
             import numpy as np
             from PIL import Image
 
-            ocr = PaddleOCR(use_angle_cls=True, lang="en", show_log=False)
+            try:
+                ocr = PaddleOCR(use_textline_orientation=True, lang="en")
+            except Exception:
+                try:
+                    ocr = PaddleOCR(use_angle_cls=True, lang="en")
+                except Exception:
+                    ocr = PaddleOCR(lang="en")
+
             image = Image.open(io.BytesIO(img_bytes)).convert("RGB")
             img_np = np.array(image)
-            result = ocr.ocr(img_np, cls=True)
+            result = ocr.ocr(img_np)
             if result and result[0]:
-                lines = [line[1][0] for line in result[0] if line and len(line) > 1]
-                return "\n".join(lines).strip()
+                lines = []
+                for item in result[0]:
+                    if isinstance(item, (list, tuple)) and len(item) > 1 and isinstance(item[1], (list, tuple)):
+                        lines.append(item[1][0])
+                    elif isinstance(item, dict) and "transcription" in item:
+                        lines.append(item["transcription"])
+                ocr_out = "\n".join(lines).strip()
+                if len(ocr_out) > 10:
+                    return ocr_out
         except Exception as ocr_err:
-            logger.debug(f"PaddleOCR fallback not run or encountered error: {ocr_err}")
+            logger.debug(f"PaddleOCR fallback note: {ocr_err}")
+
+        # 3. Try pytesseract if available
+        try:
+            import pytesseract
+            from PIL import Image
+
+            image = Image.open(io.BytesIO(img_bytes)).convert("RGB")
+            tess_text = pytesseract.image_to_string(image)
+            if tess_text and len(tess_text.strip()) > 10:
+                return tess_text.strip()
+        except Exception:
+            pass
 
     except Exception as e:
         logger.warning(f"OCR rendering error: {e}")
@@ -385,27 +519,50 @@ def _extract_docx_with_tables(content: bytes) -> Dict[str, Any]:
             except Exception:
                 pass
 
-    # 2. Main document paragraphs & hyperlinks
-    for p in doc.paragraphs:
-        if p.text.strip():
-            text_chunks.append(p.text.strip())
-            extract_hyperlinks_from_p(p._p)
-
-    # 3. Tables (logical row and column order)
-    for table in doc.tables:
-        table_rows = []
-        for row in table.rows:
-            row_cells = []
-            for cell in row.cells:
-                ctext = cell.text.strip()
-                if ctext and ctext not in row_cells:
-                    row_cells.append(ctext)
-                for cp in cell.paragraphs:
-                    extract_hyperlinks_from_p(cp._p)
-            if row_cells:
-                table_rows.append(" | ".join(row_cells))
-        if table_rows:
-            text_chunks.append("\n" + "\n".join(table_rows) + "\n")
+    # 2. Main document body elements (preserving true reading order between paragraphs and tables)
+    try:
+        from docx.text.paragraph import Paragraph
+        from docx.table import Table
+        for child in doc._element.body:
+            if child.tag.endswith("p"):
+                p = Paragraph(child, doc)
+                txt = p.text.strip()
+                if txt:
+                    text_chunks.append(txt)
+                    extract_hyperlinks_from_p(child)
+            elif child.tag.endswith("tbl"):
+                table = Table(child, doc)
+                table_rows = []
+                for row in table.rows:
+                    row_cells = []
+                    for cell in row.cells:
+                        ctext = cell.text.strip()
+                        if ctext and ctext not in row_cells:
+                            row_cells.append(ctext)
+                        for cp in cell.paragraphs:
+                            extract_hyperlinks_from_p(cp._p)
+                    if row_cells:
+                        table_rows.append(" | ".join(row_cells))
+                if table_rows:
+                    text_chunks.append("\n" + "\n".join(table_rows) + "\n")
+    except Exception as docx_order_err:
+        logger.debug(f"Body element iteration fallback: {docx_order_err}")
+        for p in doc.paragraphs:
+            if p.text.strip():
+                text_chunks.append(p.text.strip())
+                extract_hyperlinks_from_p(p._p)
+        for table in doc.tables:
+            table_rows = []
+            for row in table.rows:
+                row_cells = []
+                for cell in row.cells:
+                    ctext = cell.text.strip()
+                    if ctext and ctext not in row_cells:
+                        row_cells.append(ctext)
+                if row_cells:
+                    table_rows.append(" | ".join(row_cells))
+            if table_rows:
+                text_chunks.append("\n" + "\n".join(table_rows) + "\n")
 
     # 4. Text Boxes (w:txbxContent in document XML body)
     try:
@@ -506,14 +663,37 @@ def _extract_rtf_content(content: bytes) -> Dict[str, Any]:
             extraction_method="rtf_field"
         ))
 
-    # Strip RTF control words
-    cleaned = re.sub(r"\{\\(fonttbl|colortbl|stylesheet)[^{}]*\}", "", text)
-    cleaned = re.sub(r"\\(par|line)\b", "\n", cleaned)
-    cleaned = re.sub(r"\\\'([0-9a-fA-F]{2})", lambda m: bytes.fromhex(m.group(1)).decode("latin-1", errors="ignore"), cleaned)
-    cleaned = re.sub(r"\\[a-zA-Z0-9\-]+ ?", "", cleaned)
-    cleaned = re.sub(r"[{}]", "", cleaned)
+    # Strip RTF header tables with nested braces (fonttbl, colortbl, stylesheet, info)
+    for header_tbl in ("fonttbl", "colortbl", "stylesheet", "info"):
+        while f"\\{header_tbl}" in text:
+            start_pos = text.find(f"\\{header_tbl}")
+            open_pos = text.rfind("{", 0, start_pos)
+            if open_pos == -1:
+                break
+            depth = 1
+            idx = open_pos + 1
+            while idx < len(text) and depth > 0:
+                if text[idx] == "{":
+                    depth += 1
+                elif text[idx] == "}":
+                    depth -= 1
+                idx += 1
+            text = text[:open_pos] + " " + text[idx:]
 
-    lines = [l.strip() for l in cleaned.split("\n") if l.strip()]
+    # Replace RTF field results with their plain visible label
+    text = re.sub(r"\{\\field\{\\\*\\fldinst\{[^{}]*\}\}\{\\fldrslt\s*([^{}]*)\}\}", r"\1", text)
+
+    # Convert RTF paragraph/line breaks to newline
+    text = re.sub(r"\\(par|line)\b", "\n", text)
+    # Convert hex escapes \'xx
+    text = re.sub(r"\\\'([0-9a-fA-F]{2})", lambda m: bytes.fromhex(m.group(1)).decode("latin-1", errors="ignore"), text)
+    # Strip remaining RTF control words: \word123 or \* or \~
+    text = re.sub(r"\\[a-zA-Z]+-?\d* ?", " ", text)
+    text = re.sub(r"\\[^a-zA-Z0-9\s] ?", " ", text)
+    # Strip braces
+    text = re.sub(r"[{}]", " ", text)
+
+    lines = [re.sub(r"\s+", " ", l).strip() for l in text.split("\n") if l.strip()]
     raw_text = "\n".join(lines).strip()
     _recover_plaintext_hyperlinks(raw_text, hyperlinks, "rtf")
 
@@ -1026,14 +1206,15 @@ DESIGNATION_KEYWORDS = {
 }
 
 
-def _extract_company_and_designation(raw_str: str) -> Tuple[str, str]:
+def _extract_company_and_designation(raw_str: str) -> Tuple[Optional[str], Optional[str]]:
     """
     Deterministically separates Company / Employer from Job Designation / Role.
     Uses regex boundary splitting (dashes, pipes, at, commas) and keyword classification
     to guarantee that Company and Designation are never reversed.
+    Returns (employer, designation) where unidentifiable elements are None (zero-hallucination).
     """
     if not raw_str or not raw_str.strip():
-        return "Company", "Role"
+        return None, None
 
     cleaned = re.sub(
         r"((?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s+\d{4}|\b20\d{2}\b|\b19\d{2}\b)\s*[-–—to\s]*\s*(present|current|(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s+\d{4}|\b20\d{2}\b|\b19\d{2}\b)?",
@@ -1043,7 +1224,7 @@ def _extract_company_and_designation(raw_str: str) -> Tuple[str, str]:
     ).strip(" -–—|@,[]()")
 
     if not cleaned:
-        return "Company", "Role"
+        return None, None
 
     # 1. Handle "Role at Company" or "Role @ Company"
     at_match = re.search(r"^(.+?)\s+(?:at|@)\s+(.+)$", cleaned, re.I)
@@ -1077,18 +1258,18 @@ def _extract_company_and_designation(raw_str: str) -> Tuple[str, str]:
     # Single line without separator
     words = set(re.findall(r"\w+", cleaned.lower()))
     if words & DESIGNATION_KEYWORDS:
-        return "Company", cleaned
+        return None, cleaned
     elif words & COMPANY_KEYWORDS:
-        return cleaned, "Role"
+        return cleaned, None
 
-    return cleaned, "Role"
+    return cleaned, None
 
 
 def normalize_experience_entry(exp: Dict[str, Any]) -> Dict[str, Any]:
     """
     Audits and normalizes an experience entry dict.
     If employer looks like a Job Designation and designation looks like a Company Name,
-    swaps them to canonical order. Ensures canonical aliases exist.
+    swaps them to canonical order. Ensures canonical aliases exist without inventing placeholders.
     """
     if not isinstance(exp, dict):
         return exp
@@ -1096,7 +1277,7 @@ def normalize_experience_entry(exp: Dict[str, Any]) -> Dict[str, Any]:
     emp = str(exp.get("employer") or exp.get("company") or "").strip()
     des = str(exp.get("designation") or exp.get("role") or exp.get("job_title") or exp.get("title") or "").strip()
 
-    if emp and des and emp != "Company" and des != "Role":
+    if emp and des:
         emp_words = set(re.findall(r"\w+", emp.lower()))
         des_words = set(re.findall(r"\w+", des.lower()))
 
@@ -1114,12 +1295,12 @@ def normalize_experience_entry(exp: Dict[str, Any]) -> Dict[str, Any]:
         if should_swap:
             emp, des = des, emp
 
-    exp["employer"] = emp or "Company"
-    exp["company"] = emp or "Company"
-    exp["designation"] = des or "Role"
-    exp["role"] = des or "Role"
-    exp["title"] = des or "Role"
-    exp["job_title"] = des or "Role"
+    exp["employer"] = emp
+    exp["company"] = emp
+    exp["designation"] = des
+    exp["role"] = des
+    exp["title"] = des
+    exp["job_title"] = des
 
     return exp
 
@@ -1127,6 +1308,7 @@ def normalize_experience_entry(exp: Dict[str, Any]) -> Dict[str, Any]:
 def _parse_heuristic_experience(exp_lines: List[str]) -> List[Dict[str, Any]]:
     """
     Extracts ALL work experience / company entries without dropping or collapsing previous employers.
+    Supports multi-role company blocks (inheriting parent employer name across subsequent promotions).
     Separates company, designation, start/end dates, location, responsibilities, technologies.
     """
     if not exp_lines:
@@ -1139,6 +1321,7 @@ def _parse_heuristic_experience(exp_lines: List[str]) -> List[Dict[str, Any]]:
 
     jobs: List[Dict[str, Any]] = []
     curr_job: Optional[Dict[str, Any]] = None
+    active_company: Optional[str] = None
 
     for idx_l, line in enumerate(exp_lines):
         line_str = line.strip()
@@ -1151,14 +1334,35 @@ def _parse_heuristic_experience(exp_lines: List[str]) -> List[Dict[str, Any]]:
 
         prev_line = exp_lines[idx_l - 1].strip() if idx_l > 0 else ""
 
+        # Standalone company heading detection (e.g. "Google" or "Amazon AWS" preceding multiple roles)
+        if not date_match and not is_bullet and len(clean_text.split()) <= 6 and not clean_text.endswith("."):
+            words_clean = set(re.findall(r"\w+", clean_text.lower()))
+            is_known_company = (
+                bool(words_clean & COMPANY_KEYWORDS)
+                or any(k in clean_text.lower() for k in (
+                    "google", "microsoft", "amazon", "apple", "meta", "netflix", "uber",
+                    "salesforce", "oracle", "ibm", "intel", "cisco", "adobe", "stripe",
+                    "airbnb", "twitter", "linkedin", "spotify", "cloudops", "technologies",
+                    "solutions", "systems", "labs", "inc", "corp", "llc", "ltd"
+                ))
+            ) and not bool(words_clean & DESIGNATION_KEYWORDS)
+            if is_known_company:
+                active_company = clean_text
+
         is_new_job = False
-        if date_match and (curr_job is None or len(curr_job.get("responsibilities", [])) > 0):
-            is_new_job = True
+        if date_match:
+            if (
+                curr_job is None
+                or len(curr_job.get("responsibilities", [])) > 0
+                or bool(curr_job.get("start_date"))
+                or (curr_job.get("employer") and any(sep in line_str for sep in ("|", "—", "–", " - ")))
+            ):
+                is_new_job = True
         elif not is_bullet and curr_job and len(curr_job.get("responsibilities", [])) >= 2 and len(clean_text.split()) <= 8 and not clean_text.endswith("."):
             is_new_job = True
 
         if is_new_job:
-            if curr_job and (curr_job["responsibilities"] or curr_job["employer"] != "Company" or curr_job["designation"] != "Role"):
+            if curr_job and (curr_job.get("responsibilities") or curr_job.get("employer") or curr_job.get("designation")):
                 jobs.append(normalize_experience_entry(curr_job))
 
             # Determine whether target_str is on current line or prev_line
@@ -1172,13 +1376,19 @@ def _parse_heuristic_experience(exp_lines: List[str]) -> List[Dict[str, Any]]:
 
             employer, designation = _extract_company_and_designation(target_str)
 
+            # Inherit active_company if employer missing in multi-job company structure
+            if not employer and active_company:
+                employer = active_company
+            elif employer:
+                active_company = employer
+
             curr_job = {
-                "employer": employer,
-                "company": employer,
-                "designation": designation,
-                "role": designation,
-                "job_title": designation,
-                "title": designation,
+                "employer": employer or "",
+                "company": employer or "",
+                "designation": designation or "",
+                "role": designation or "",
+                "job_title": designation or "",
+                "title": designation or "",
                 "employment_location": None,
                 "start_date": date_match.group(1) if date_match else None,
                 "end_date": date_match.group(2) if date_match else None,
@@ -1190,22 +1400,21 @@ def _parse_heuristic_experience(exp_lines: List[str]) -> List[Dict[str, Any]]:
                 "metrics": [],
                 "original_text": line_str
             }
-
-            if date_match and not curr_job["start_date"]:
-                curr_job["start_date"] = date_match.group(1)
-                curr_job["end_date"] = date_match.group(2)
-                curr_job["is_current"] = "present" in date_match.group(2).lower() or "current" in date_match.group(2).lower()
             continue
 
         if curr_job is None:
             emp, des = _extract_company_and_designation(line_str)
+            if not emp and active_company:
+                emp = active_company
+            elif emp:
+                active_company = emp
             curr_job = {
-                "employer": emp,
-                "company": emp,
-                "designation": des,
-                "role": des,
-                "job_title": des,
-                "title": des,
+                "employer": emp or "",
+                "company": emp or "",
+                "designation": des or "",
+                "role": des or "",
+                "job_title": des or "",
+                "title": des or "",
                 "employment_location": None,
                 "start_date": None,
                 "end_date": None,
@@ -1232,21 +1441,22 @@ def _parse_heuristic_experience(exp_lines: List[str]) -> List[Dict[str, Any]]:
             else:
                 curr_job["responsibilities"].append(clean_text)
         else:
-            if any(k in clean_text.lower() for k in ("india", "usa", "us", "uk", "hyderabad", "bangalore", "bengaluru", "mumbai", "delhi", "pune", "chennai", "noida", "gurgaon", "guntur", "andhra", "remote", "hybrid", "onsite", "california", "new york", "london", "singapore", "ca", "ny", "tx", "wa")) or ("," in clean_text and len(clean_text.split()) <= 4 and not clean_text.endswith(".")):
+            if any(k in clean_text.lower() for k in ("india", "usa", "us", "uk", "hyderabad", "bangalore", "bengaluru", "mumbai", "delhi", "pune", "chennai", "noida", "gurgaon", "guntur", "andhra", "remote", "hybrid", "onsite", "california", "new york", "london", "singapore", "austin", "seattle", "boston", "chicago", "ca", "ny", "tx", "wa")) or ("," in clean_text and len(clean_text.split()) <= 4 and not clean_text.endswith(".")):
                 if not curr_job.get("employment_location"):
                     curr_job["employment_location"] = clean_text
-            elif curr_job["employer"] == "Company" or curr_job["designation"] == "Role":
+            elif not curr_job.get("employer") or not curr_job.get("designation"):
                 emp, des = _extract_company_and_designation(clean_text)
-                if emp != "Company":
+                if emp and not curr_job.get("employer"):
                     curr_job["employer"] = emp
                     curr_job["company"] = emp
-                if des != "Role":
+                    active_company = emp
+                if des and not curr_job.get("designation"):
                     curr_job["designation"] = des
                     curr_job["role"] = des
                     curr_job["job_title"] = des
                     curr_job["title"] = des
 
-    if curr_job and (curr_job["responsibilities"] or curr_job["employer"] != "Company" or curr_job["designation"] != "Role"):
+    if curr_job and (curr_job.get("responsibilities") or curr_job.get("employer") or curr_job.get("designation")):
         jobs.append(normalize_experience_entry(curr_job))
 
     return jobs
@@ -1257,7 +1467,7 @@ def _parse_heuristic_projects(project_lines: List[str]) -> List[Dict[str, Any]]:
     High-fidelity 2-pass project parser.
     Detects boundaries by explicit titles, numbers, Tech: stack lines, or date ranges.
     Resolves backward headings when dates or Tech: lines precede or follow a project title.
-    Returns array of ALL detected projects with name, duration, technologies, bullets, responsibilities.
+    Preserves all bullet points, cleans dates/URLs from project names, and links repositories.
     """
     if not project_lines:
         return []
@@ -1311,17 +1521,34 @@ def _parse_heuristic_projects(project_lines: List[str]) -> List[Dict[str, Any]]:
             if curr and (curr["bullets"] or curr["name"] != "Project" or curr["technologies"]):
                 blocks.append(curr)
 
+            # Extract any embedded link or date range from project heading
+            h_clean = heading_title or "Project"
+            proj_link = None
+            url_match = re.search(r"https?://\S+", h_clean)
+            if url_match:
+                proj_link = url_match.group(0).rstrip(".,;()")
+                h_clean = h_clean.replace(url_match.group(0), "").strip()
+
+            d_match = date_regex.search(h_clean)
+            proj_dates = None
+            if d_match:
+                proj_dates = d_match.group(0)
+                h_clean = re.sub(date_regex, "", h_clean).strip()
+
+            clean_name = h_clean.strip(" -–—|()[]:").strip() or "Project"
+
             curr = {
-                "name": heading_title or "Project",
-                "duration": date_match.group(0) if date_match else None,
-                "start_date": date_match.group(1) if date_match else None,
-                "end_date": date_match.group(2) if date_match else None,
+                "name": clean_name,
+                "duration": proj_dates or (date_match.group(0) if date_match else None),
+                "start_date": d_match.group(1) if d_match else (date_match.group(1) if date_match else None),
+                "end_date": d_match.group(2) if d_match else (date_match.group(2) if date_match else None),
                 "technologies": [],
                 "description": "",
                 "responsibilities": [],
                 "bullets": [],
                 "achievements": [],
-                "results_metrics": []
+                "results_metrics": [],
+                "link": proj_link
             }
 
             if tech_match:
@@ -1341,8 +1568,14 @@ def _parse_heuristic_projects(project_lines: List[str]) -> List[Dict[str, Any]]:
                 "responsibilities": [],
                 "bullets": [],
                 "achievements": [],
-                "results_metrics": []
+                "results_metrics": [],
+                "link": None
             }
+
+        # Check for link inside project lines
+        line_url = re.search(r"https?://\S+", line)
+        if line_url and not curr.get("link"):
+            curr["link"] = line_url.group(0).rstrip(".,;()")
 
         if date_match and not curr["duration"]:
             curr["duration"] = date_match.group(0)
@@ -1575,13 +1808,14 @@ def heuristic_comprehensive_parse(
     # Section regex definitions
     section_patterns = {
         "summary": re.compile(r"^(professional\s+summary|summary|profile|about\s+me|career\s+objective|objective|executive\s+summary)", re.I),
-        "experience": re.compile(r"^(work\s+experience|professional\s+experience|experience|employment\s+history|career\s+history|work\s+history|internships?)", re.I),
-        "skills": re.compile(r"^(technical\s+skills|skills|core\s+competencies|technologies|tools\s+&\s+technologies|skills\s+&\s+abilities|key\s+skills)", re.I),
-        "projects": re.compile(r"^(projects|key\s+projects|featured\s+projects|personal\s+projects|academic\s+projects)", re.I),
-        "education": re.compile(r"^(education|academic\s+background|academics|qualifications|educational\s+qualifications)", re.I),
-        "certifications": re.compile(r"^(certifications?|licenses?|courses?|professional\s+certifications?|trainings?|awards?\s*(?:&|and)\s*certifications?|certifications?\s*(?:&|and)\s*awards?)", re.I),
-        "achievements": re.compile(r"^(achievements?|awards?|honors?|extracurricular(\s+activities)?)", re.I),
-        "languages": re.compile(r"^(languages?|spoken\s+languages?)", re.I)
+        "experience": re.compile(r"^(work\s+experience|professional\s+experience|experience|employment(\s+history)?|career(\s+history)?|work\s+history|internships?|relevant\s+experience|professional\s+background|industry\s+experience|career\s+milestones.*)", re.I),
+        "skills": re.compile(r"^(technical\s+skills|skills|core\s+competencies|technologies|tools\s+&\s+technologies|skills\s+&\s+abilities|key\s+skills|technical\s+expertise|proficiencies|technical\s+toolkit.*|competencies|skills\s+&\s+tools|toolkit)", re.I),
+        "projects": re.compile(r"^(projects|key\s+projects|featured\s+projects|personal\s+projects|academic\s+projects|notable\s+projects|selected\s+projects|portfolio|client\s+engagements|recent\s+projects|key\s+initiatives.*)", re.I),
+        "education": re.compile(r"^(education|academic\s+background|academics|scholastic(\s+background|\s+credentials)?|qualifications|educational\s+qualifications|academic\s+qualifications|degrees?|education\s+&\s+credentials)", re.I),
+        "certifications": re.compile(r"^(certifications?|licenses?|courses?|professional\s+certifications?|trainings?|awards?\s*(?:&|and)\s*certifications?|certifications?\s*(?:&|and)\s*awards?|credentials|licenses?\s*(?:&|and)\s*certifications?)", re.I),
+        "achievements": re.compile(r"^(achievements?|awards?|honors?|extracurricular(\s+activities)?|honors?\s*(?:&|and)\s*awards?|awards?\s*(?:&|and)\s*honors?|recognitions?)", re.I),
+        "publications": re.compile(r"^(publications?|patents?|papers?|works?\s+published|published\s+works?|scholarly\s+articles?|research\s+papers?|publications?\s*(?:&|and)\s*patents?|talks\s*(?:&|and)\s*publications?|scholarly\s+works?)", re.I),
+        "languages": re.compile(r"^(languages?|spoken\s+languages?|language\s+proficiencies?)", re.I)
     }
 
     known_custom_headings = {
@@ -1611,7 +1845,23 @@ def heuristic_comprehensive_parse(
     section_buffers: Dict[str, List[str]] = {k: [] for k in section_patterns}
     custom_buffers: Dict[str, List[str]] = {}
 
-    for line in lines:
+    for idx_l, line in enumerate(lines):
+        # 1. Check for inline section label (e.g. "Experience: Company - Role" or "Skills: Python, Go")
+        inline_match = re.match(r"^(experience|work experience|education|skills|technical skills|projects|summary|professional summary)\s*:\s*(.+)$", line, re.I)
+        if inline_match:
+            sec_name = inline_match.group(1).lower().strip()
+            rest_of_line = inline_match.group(2).strip()
+            matched_inline = False
+            for sec_key, pat in section_patterns.items():
+                if pat.match(sec_name):
+                    current_sec = sec_key
+                    if rest_of_line:
+                        section_buffers[current_sec].append(rest_of_line)
+                    matched_inline = True
+                    break
+            if matched_inline:
+                continue
+
         cleaned_h = line.strip(" :#*-").lower()
         has_list_separators = ("," in line) or (";" in line) or (":" in line and not line.endswith(":"))
         matched = False
@@ -1625,21 +1875,21 @@ def heuristic_comprehensive_parse(
         if matched:
             continue
 
-        # Detect unknown section heading (must be after header block and not contain inline lists)
+        # Detect unknown section heading (valid even if before recognized sections)
         is_custom_heading = (
-            current_sec is not None
+            idx_l >= 2
             and not has_list_separators
             and not line.endswith(".")
             and len(line.split()) <= 4
+            and not any(k in cleaned_h for k in ("@", "http", ".com", ".dev", "+", "github", "linkedin", "|"))
             and (
                 cleaned_h in known_custom_headings
                 or any(cleaned_h.startswith(k) for k in known_custom_headings)
-                or (line.isupper() and len(line) < 30)
-                or line.endswith(":")
+                or (line.isupper() and len(line) < 30 and len(line) > 3)
+                or (line.endswith(":") and len(line.split()) <= 3)
             )
         )
         if is_custom_heading:
-            # New custom section
             current_sec = f"custom_{cleaned_h}"
             if current_sec not in custom_buffers:
                 custom_buffers[current_sec] = []
@@ -1664,7 +1914,7 @@ def heuristic_comprehensive_parse(
         "frameworks_libraries": {
             "react", "next.js", "vue", "angular", "node.js", "express", "fastapi", "django", "flask",
             "spring", "spring boot", "tailwind", "pytorch", "tensorflow", "keras", "dotnet", ".net",
-            "scikit-learn", "pandas", "numpy", "matplotlib", "seaborn", "opencv"
+            "scikit-learn", "pandas", "numpy", "matplotlib", "seaborn", "opencv", "scipy"
         },
         "databases": {
             "postgresql", "postgres", "mysql", "mongodb", "redis", "sqlite", "elasticsearch", "cassandra",
@@ -1724,6 +1974,18 @@ def heuristic_comprehensive_parse(
                 if not categorized:
                     structured["skills"]["other_skills"].append(item)
 
+    if not all_raw_skills:
+        for cat, keywords in skill_vocab.items():
+            for kw in keywords:
+                if len(kw) <= 1:
+                    continue
+                m = re.search(r"\b" + re.escape(kw) + r"\b", raw_text, re.IGNORECASE)
+                if m:
+                    actual_text = raw_text[m.start():m.end()]
+                    if actual_text not in all_raw_skills:
+                        all_raw_skills.append(actual_text)
+                        structured["skills"][cat].append(actual_text)
+
     structured["skills"]["all_raw_skills"] = list(dict.fromkeys(all_raw_skills))
 
     # Populate Experience using 2-pass company parser
@@ -1734,7 +1996,7 @@ def heuristic_comprehensive_parse(
     if section_buffers["projects"]:
         structured["projects"] = _parse_heuristic_projects(section_buffers["projects"])
 
-    # Populate Education (supporting multiple institutions / degrees)
+    # Populate Education (supporting multiple institutions / degrees with zero-hallucination)
     if section_buffers["education"]:
         curr_edu = None
         for edu_l in section_buffers["education"]:
@@ -1745,8 +2007,8 @@ def heuristic_comprehensive_parse(
 
             should_split = False
             if curr_edu:
-                has_deg = curr_edu["degree"] != "Degree"
-                has_inst = curr_edu["institution"] != "University / Institution"
+                has_deg = bool(curr_edu.get("degree"))
+                has_inst = bool(curr_edu.get("institution"))
                 if is_deg and has_deg:
                     should_split = True
                 elif is_inst and has_inst:
@@ -1758,9 +2020,9 @@ def heuristic_comprehensive_parse(
 
             if not curr_edu:
                 curr_edu = {
-                    "degree": "Degree",
+                    "degree": None,
                     "field_of_study": None,
-                    "institution": "University / Institution",
+                    "institution": None,
                     "location": None,
                     "start_date": None,
                     "end_date": None,
@@ -1779,14 +2041,30 @@ def heuristic_comprehensive_parse(
                     curr_edu["start_date"] = date_range[0]
                     curr_edu["end_date"] = date_range[-1]
 
-            if is_deg and curr_edu["degree"] == "Degree":
+            if (" - " in edu_l or " | " in edu_l) and not (curr_edu["degree"] and curr_edu["institution"]):
+                split_parts = re.split(r"\s*[-–—|]\s*", edu_l, maxsplit=1)
+                p0, p1 = split_parts[0].strip(), split_parts[1].strip()
+                p0_inst = any(k in p0.lower() for k in ("institute", "college", "school", "university", "academy", "stanford", "harvard", "mit", "berkeley", "iit", "nit", "bits", "polytechnic"))
+                p1_inst = any(k in p1.lower() for k in ("institute", "college", "school", "university", "academy", "stanford", "harvard", "mit", "berkeley", "iit", "nit", "bits", "polytechnic"))
+                p0_deg = any(k in p0.lower() for k in ("btech", "b.tech", "bachelor", "master", "ph.d", "degree", "bs", "ms", "b.s", "m.s"))
+                p1_deg = any(k in p1.lower() for k in ("btech", "b.tech", "bachelor", "master", "ph.d", "degree", "bs", "ms", "b.s", "m.s"))
+                if p0_inst and not curr_edu["institution"]:
+                    curr_edu["institution"] = p0
+                elif p1_inst and not curr_edu["institution"]:
+                    curr_edu["institution"] = p1
+                if p1_deg and not curr_edu["degree"]:
+                    curr_edu["degree"] = p1
+                elif p0_deg and not curr_edu["degree"]:
+                    curr_edu["degree"] = p0
+
+            if is_deg and not curr_edu["degree"]:
                 curr_edu["degree"] = edu_l
-            elif is_inst and curr_edu["institution"] == "University / Institution":
+            elif is_inst and not curr_edu["institution"]:
                 curr_edu["institution"] = edu_l
             elif not curr_edu["location"] and any(k in edu_l.lower() for k in ("pradesh", "guntur", "dachepalle", "delhi", "bangalore", "mumbai", "hyderabad", "boston", "seattle", "austin", "chicago")):
                 curr_edu["location"] = edu_l
 
-        if curr_edu and (curr_edu["degree"] != "Degree" or curr_edu["institution"] != "University / Institution"):
+        if curr_edu and (curr_edu.get("degree") or curr_edu.get("institution")):
             structured["education"].append(curr_edu)
 
     # Populate Certifications
@@ -1814,6 +2092,40 @@ def heuristic_comprehensive_parse(
                 curr_cert["description"] = (curr_cert["description"] + " " + c_l).strip()
         if curr_cert:
             structured["certifications"].append(curr_cert)
+
+    # Populate Publications
+    if section_buffers.get("publications"):
+        for pub_l in section_buffers["publications"]:
+            if pub_l.strip():
+                url_m = re.search(r"https?://\S+", pub_l)
+                url_val = url_m.group(0).rstrip(".,;()") if url_m else None
+                clean_t = pub_l.replace(url_val, "").strip(" -–—|()") if url_val else pub_l.strip(" -–—|()")
+                structured["publications"].append({
+                    "title": clean_t,
+                    "publisher": None,
+                    "date": None,
+                    "url": url_val
+                })
+
+    # Populate Languages
+    if section_buffers.get("languages"):
+        for lang_l in section_buffers["languages"]:
+            for token in re.split(r"[,;|•·]\s*", lang_l):
+                t_clean = token.strip(" -*•")
+                if t_clean:
+                    prof_m = re.search(r"\((.+?)\)", t_clean)
+                    lang_name = re.sub(r"\(.+?\)", "", t_clean).strip()
+                    structured["languages"].append({
+                        "language": lang_name,
+                        "proficiency": prof_m.group(1).strip() if prof_m else None
+                    })
+
+    # Populate Achievements
+    if section_buffers.get("achievements"):
+        for ach_l in section_buffers["achievements"]:
+            clean_ach = ach_l.lstrip("-•*–— ").strip()
+            if clean_ach:
+                structured["achievements"].append(clean_ach)
 
     # Populate Custom Sections
     for c_key, c_lines in custom_buffers.items():
@@ -1863,19 +2175,32 @@ def _normalize_and_validate_extraction(
 ) -> Dict[str, Any]:
     """
     Validates completeness, checks for contradictory dates,
-    computes confidence score, and attaches warnings.
+    computes field-level confidence scores, extraction coverage, and attaches warnings.
     """
     warnings: List[str] = data.get("extraction_warnings", []) or []
     missing_fields: List[str] = []
+    field_confidence: Dict[str, float] = {}
+    field_level_review: Dict[str, Dict[str, Any]] = {}
 
     pi = data.get("personal_info") or {}
+    pi_score = 1.0
     if not pi.get("full_name") or pi.get("full_name") in ("Candidate", "null", ""):
         missing_fields.append("full_name")
         warnings.append("Full name could not be reliably determined. Please review and enter your name.")
-
+        pi_score -= 0.4
     if not pi.get("email"):
         missing_fields.append("email")
         warnings.append("No email address found in the document.")
+        pi_score -= 0.3
+    if not pi.get("phone"):
+        missing_fields.append("phone")
+        pi_score -= 0.2
+    field_confidence["personal_info"] = max(0.1, round(pi_score, 2))
+    field_level_review["personal_info"] = {
+        "status": "high" if pi_score >= 0.8 else ("medium" if pi_score >= 0.5 else "needs_review"),
+        "confidence": field_confidence["personal_info"],
+        "issues": [w for w in warnings if "name" in w.lower() or "email" in w.lower()]
+    }
 
     # ── Project & Work Experience Completeness Audit ──
     tech_lines = re.findall(r"(?:tech\s*stack|technologies|tech|tools|stack)\s*[:\-]", raw_text, re.I)
@@ -1895,7 +2220,7 @@ def _normalize_and_validate_extraction(
             f"Extraction Completeness Alert: Document contains {len(exp_dates)} employment date ranges, but only {extracted_exps} company experience entry was extracted."
         )
 
-    # Audit and normalize all work_experience entries (ensure Company & Designation are never reversed)
+    # Audit and normalize all work_experience entries
     normalized_exps = []
     for exp in data.get("work_experience", []):
         if isinstance(exp, dict):
@@ -1904,7 +2229,30 @@ def _normalize_and_validate_extraction(
             normalized_exps.append(exp)
     data["work_experience"] = normalized_exps
 
-    # Audit and normalize all project entries (deduplicate paragraphs vs bullets, tokenize concatenated technologies)
+    exp_score = 1.0 if normalized_exps else 0.0
+    # Check work experience date consistency
+    for idx, exp in enumerate(normalized_exps):
+        s_date = exp.get("start_date")
+        e_date = exp.get("end_date")
+        if s_date and e_date and not exp.get("is_current"):
+            try:
+                s_year = int(re.search(r"\b(20\d{2}|19\d{2})\b", str(s_date)).group(0))
+                e_year = int(re.search(r"\b(20\d{2}|19\d{2})\b", str(e_date)).group(0))
+                if s_year > e_year:
+                    exp_score -= 0.15
+                    warnings.append(f"Work Experience entry #{idx + 1} ({exp.get('employer', 'Job')}): Start date ({s_date}) is after end date ({e_date}).")
+            except Exception:
+                pass
+
+    field_confidence["work_experience"] = max(0.0, round(exp_score, 2))
+    field_level_review["work_experience"] = {
+        "status": "high" if exp_score >= 0.85 else ("medium" if exp_score >= 0.5 else "needs_review"),
+        "confidence": field_confidence["work_experience"],
+        "count": len(normalized_exps),
+        "issues": [w for w in warnings if "experience" in w.lower() or "employment" in w.lower()]
+    }
+
+    # Audit and normalize all project entries
     normalized_projects = []
     for proj in data.get("projects", []):
         if isinstance(proj, dict):
@@ -1913,18 +2261,14 @@ def _normalize_and_validate_extraction(
             normalized_projects.append(proj)
     data["projects"] = normalized_projects
 
-    # Check work experience date consistency
-    for idx, exp in enumerate(data.get("work_experience", [])):
-        s_date = exp.get("start_date")
-        e_date = exp.get("end_date")
-        if s_date and e_date and not exp.get("is_current"):
-            try:
-                s_year = int(re.search(r"\b(20\d{2}|19\d{2})\b", str(s_date)).group(0))
-                e_year = int(re.search(r"\b(20\d{2}|19\d{2})\b", str(e_date)).group(0))
-                if s_year > e_year:
-                    warnings.append(f"Work Experience entry #{idx + 1} ({exp.get('employer', 'Job')}): Start date ({s_date}) is after end date ({e_date}).")
-            except Exception:
-                pass
+    proj_score = 1.0 if normalized_projects else (0.8 if not expected_projects else 0.2)
+    field_confidence["projects"] = max(0.0, round(proj_score, 2))
+    field_level_review["projects"] = {
+        "status": "high" if proj_score >= 0.8 else ("medium" if proj_score >= 0.5 else "needs_review"),
+        "confidence": field_confidence["projects"],
+        "count": len(normalized_projects),
+        "issues": [w for w in warnings if "project" in w.lower()]
+    }
 
     # Skills check
     skills = data.get("skills") or {}
@@ -1932,24 +2276,67 @@ def _normalize_and_validate_extraction(
     if total_skills == 0:
         missing_fields.append("skills")
         warnings.append("No categorized skills were detected.")
+        skills_score = 0.0
+    else:
+        skills_score = min(1.0, 0.4 + (total_skills * 0.06))
+
+    field_confidence["skills"] = round(skills_score, 2)
+    field_level_review["skills"] = {
+        "status": "high" if skills_score >= 0.8 else ("medium" if skills_score >= 0.5 else "needs_review"),
+        "confidence": field_confidence["skills"],
+        "total_skills": total_skills
+    }
+
+    # Education check
+    edus = data.get("education") or []
+    edu_score = 1.0 if edus else 0.0
+    field_confidence["education"] = round(edu_score, 2)
+    field_level_review["education"] = {
+        "status": "high" if edu_score >= 0.8 else "needs_review",
+        "confidence": field_confidence["education"],
+        "count": len(edus)
+    }
+
+    # Calculate extraction text coverage vs raw document non-whitespace characters
+    raw_chars = len(re.sub(r"\s+", "", raw_text)) or 1
+    extracted_text_pieces = []
+    if pi.get("full_name"): extracted_text_pieces.append(pi["full_name"])
+    if pi.get("email"): extracted_text_pieces.append(pi["email"])
+    for s_list in skills.values():
+        if isinstance(s_list, list): extracted_text_pieces.extend(str(s) for s in s_list)
+    for exp in normalized_exps:
+        extracted_text_pieces.extend([str(exp.get("employer", "")), str(exp.get("designation", ""))])
+        extracted_text_pieces.extend(str(r) for r in exp.get("responsibilities", []))
+    for pr in normalized_projects:
+        extracted_text_pieces.append(str(pr.get("name", "")))
+        extracted_text_pieces.extend(str(b) for b in pr.get("bullets", []))
+    for ed in edus:
+        extracted_text_pieces.extend([str(ed.get("degree", "")), str(ed.get("institution", ""))])
+
+    extracted_chars = sum(len(re.sub(r"\s+", "", p)) for p in extracted_text_pieces)
+    coverage = min(1.0, extracted_chars / raw_chars)
 
     # Calculate overall confidence score
-    confidence = 1.0
-    if "full_name" in missing_fields:
-        confidence -= 0.25
-    if "email" in missing_fields:
-        confidence -= 0.15
-    if "phone" in missing_fields:
-        confidence -= 0.10
-    if total_skills == 0:
-        confidence -= 0.20
-    if not data.get("work_experience") and not data.get("education"):
-        confidence -= 0.25
-
+    confidence = (
+        field_confidence["personal_info"] * 0.25 +
+        field_confidence["work_experience"] * 0.25 +
+        field_confidence["projects"] * 0.20 +
+        field_confidence["skills"] * 0.15 +
+        field_confidence["education"] * 0.15
+    )
     confidence = max(0.2, min(1.0, round(confidence, 2)))
 
     data["confidence_score"] = confidence
+    data["field_confidence"] = field_confidence
+    data["extraction_coverage"] = round(coverage, 2)
+    data["field_level_review"] = field_level_review
     data["missing_fields"] = missing_fields
     data["extraction_warnings"] = warnings
 
     return data
+
+
+# Public convenience aliases
+extract_pdf_layout_aware = _extract_pdf_layout_aware
+extract_docx_content = _extract_docx_with_tables
+

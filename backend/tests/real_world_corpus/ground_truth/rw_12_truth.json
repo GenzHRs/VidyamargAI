@@ -1,0 +1,39 @@
+{
+  "test_id": "rw_12",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Sophia Martinez",
+    "email": "sophia.martinez@example.com",
+    "phone": "619-555-0122",
+    "location": "San Diego, CA"
+  },
+  "work_experience": [
+    {
+      "employer": "BioGen Health",
+      "designation": "QA Automation Lead",
+      "start_date": "2020",
+      "end_date": "Present",
+      "responsibilities": [
+        "Developed end-to-end Cypress and Playwright testing frameworks."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "UC San Diego",
+      "degree": "BS in Cognitive Science",
+      "graduation_year": "2018"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "Cypress",
+      "Playwright",
+      "Selenium",
+      "JavaScript",
+      "Python",
+      "Jest",
+      "CI/CD"
+    ]
+  }
+}

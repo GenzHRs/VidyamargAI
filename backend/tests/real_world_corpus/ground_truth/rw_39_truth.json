@@ -1,0 +1,5 @@
+{
+  "test_id": "rw_39",
+  "expected_status": "rejected",
+  "rejection_reason": "Uploaded file is empty (0 bytes)."
+}

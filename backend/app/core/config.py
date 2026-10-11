@@ -88,6 +88,45 @@ class Settings(BaseSettings):
     RATE_LIMIT_STORAGE_URI: str = "memory://"
     STORAGE_DIR: str = "storage"
 
+    # Environment, Testing & Development Auth Bypass (Strictly defaults to disabled)
+    ENVIRONMENT: str = os.getenv("ENVIRONMENT", "development").lower()
+    DEV_AUTH_BYPASS: bool = os.getenv("DEV_AUTH_BYPASS", os.getenv("VIDYAMARG_DEV_MODE", "false")).lower() in ("true", "1", "yes")
+    VIDYAMARG_DEV_MODE: bool = DEV_AUTH_BYPASS
+    DEV_AUTH_BYPASS_DEPLOYMENT: str = os.getenv("DEV_AUTH_BYPASS_DEPLOYMENT", "").lower()
+
+    @property
+    def is_dev_mode_allowed(self) -> bool:
+        """
+        Testing Auth Bypass is permitted ONLY when explicitly enabled.
+        Fails closed if:
+        1. DEV_AUTH_BYPASS is False.
+        2. In production or prod environments, UNLESS DEV_AUTH_BYPASS_DEPLOYMENT == 'authorized_testing'.
+        3. When cloud production markers are present (RAILWAY_ENVIRONMENT, VERCEL_ENV == 'production'),
+           UNLESS DEV_AUTH_BYPASS_DEPLOYMENT == 'authorized_testing'.
+        4. Environment is unknown or contradictory.
+        """
+        if not self.DEV_AUTH_BYPASS:
+            return False
+            
+        env_clean = (self.ENVIRONMENT or "").strip().lower()
+        is_cloud_prod = bool(os.getenv("RAILWAY_ENVIRONMENT") or os.getenv("VERCEL_ENV") == "production")
+        is_authorized_testing = self.DEV_AUTH_BYPASS_DEPLOYMENT == "authorized_testing"
+
+        # Production environments strictly require explicit authorized testing designation
+        if env_clean in ("production", "prod") or is_cloud_prod:
+            return is_authorized_testing
+
+        # Staging / testing / development / local
+        if env_clean in ("development", "dev", "local", "staging", "test", "testing"):
+            return True
+
+        # Fail closed for any ambiguous/unknown environment
+        return False
+
+    @property
+    def is_dev_bypass_allowed(self) -> bool:
+        return self.is_dev_mode_allowed
+
     model_config = SettingsConfigDict(case_sensitive=True, extra="ignore")
 
     @field_validator("DATABASE_URL")

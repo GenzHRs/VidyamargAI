@@ -12,3 +12,5 @@ storage/
 *.tsbuildinfo
 .pytest_cache/
 .venv/
+*.bak
+backend/scratch_*

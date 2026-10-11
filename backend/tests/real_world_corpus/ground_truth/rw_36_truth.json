@@ -1,0 +1,27 @@
+{
+  "test_id": "rw_36",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Fiona Flannigan",
+    "email": "fiona.flannigan@example.com",
+    "location": "Dublin, Ireland"
+  },
+  "work_experience": [
+    {
+      "employer": "Affiliated Systems",
+      "designation": "Senior Flight Controller",
+      "start_date": "2020",
+      "end_date": "Present",
+      "responsibilities": [
+        "Optimized efficient dataflow profiles in distributed aerodynamic simulations."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Trinity College Dublin",
+      "degree": "Bachelor of Engineering",
+      "graduation_year": "2019"
+    }
+  ]
+}

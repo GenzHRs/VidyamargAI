@@ -1,0 +1,24 @@
+{
+  "test_id": "rw_35",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Simon Belov",
+    "email": "simon.belov@example.com",
+    "location": "Seattle, WA"
+  },
+  "projects": [
+    {
+      "name": "HyperScale Gateway",
+      "live_url": "https://demo.hyperscale.io/v2/login",
+      "bullets": [
+        "Built high-availability reverse proxy routing 100k requests/second."
+      ]
+    }
+  ],
+  "hyperlinks": [
+    {
+      "url": "https://demo.hyperscale.io/v2/login",
+      "label": "Live System Demo"
+    }
+  ]
+}

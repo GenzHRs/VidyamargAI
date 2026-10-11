@@ -1,0 +1,5 @@
+{
+  "test_id": "rw_38",
+  "expected_status": "rejected",
+  "rejection_reason": "Corrupted or unreadable PDF"
+}

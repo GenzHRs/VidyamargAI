@@ -1,0 +1,45 @@
+{
+  "test_id": "rw_33",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Rajesh Kannan",
+    "email": "rajesh.kannan@example.com",
+    "location": "Mountain View, CA"
+  },
+  "work_experience": [
+    {
+      "employer": "Google LLC",
+      "designation": "Staff Software Engineer",
+      "start_date": "2022",
+      "end_date": "Present",
+      "responsibilities": [
+        "Technical lead for BigQuery storage engine compression optimizations."
+      ]
+    },
+    {
+      "employer": "Google LLC",
+      "designation": "Senior Software Engineer",
+      "start_date": "2019",
+      "end_date": "2022",
+      "responsibilities": [
+        "Implemented distributed column encoding protocols saving 40 PB storage."
+      ]
+    },
+    {
+      "employer": "Google LLC",
+      "designation": "Software Engineer III",
+      "start_date": "2016",
+      "end_date": "2019",
+      "responsibilities": [
+        "Built Borg cluster scheduling telemetry integrations."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Carnegie Mellon University",
+      "degree": "MS in Computer Science",
+      "graduation_year": "2016"
+    }
+  ]
+}

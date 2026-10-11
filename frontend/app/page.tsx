@@ -27,28 +27,47 @@ import Footer from "@/components/landing/Footer";
 
 export default function Home() {
   const router = useRouter();
-  const { isAuthenticated, role, initialize } = useAuthStore();
+  const { isAuthenticated, role, initialize, resumeDevMode } = useAuthStore();
   const [checkingAuth, setCheckingAuth] = useState(true);
 
-  // Initialize and check active user session
+  const isTestingModeConfigured =
+    process.env.NEXT_PUBLIC_DEV_AUTH_BYPASS === "true" ||
+    process.env.NEXT_PUBLIC_DEV_MODE === "true" ||
+    process.env.NEXT_PUBLIC_DEV_AUTH_BYPASS === "1" ||
+    process.env.NEXT_PUBLIC_DEV_MODE === "1";
+
+  // Initialize and check active user session / testing mode
   useEffect(() => {
+    let active = true;
     const checkSession = async () => {
+      const isExited =
+        typeof window !== "undefined" &&
+        (sessionStorage.getItem("disable_dev_mode") === "true" ||
+         sessionStorage.getItem("disable_testing_mode") === "true");
+
+      if (isTestingModeConfigured && !isExited) {
+        const ok = await resumeDevMode();
+        if (ok && active) {
+          router.replace("/candidate/dashboard");
+          return;
+        }
+      }
+
       await initialize();
-      setCheckingAuth(false);
+      if (active) setCheckingAuth(false);
     };
     checkSession();
-  }, [initialize]);
+    return () => {
+      active = false;
+    };
+  }, [initialize, resumeDevMode, isTestingModeConfigured, router]);
 
   // Handle auto-redirection for active sessions
   useEffect(() => {
     if (!checkingAuth && isAuthenticated) {
-      if (role === "admin" || role === "super_admin") {
-        router.push("/admin");
-      } else {
-        router.push("/candidate");
-      }
+      router.replace("/candidate/dashboard");
     }
-  }, [isAuthenticated, role, router, checkingAuth]);
+  }, [isAuthenticated, router, checkingAuth]);
 
   // Prevent flashing landing page if user session is being validated
   if (checkingAuth) {
@@ -56,7 +75,9 @@ export default function Home() {
       <main className="min-h-screen bg-background flex flex-col items-center justify-center font-heading text-foreground">
         <div className="flex flex-col items-center gap-5">
           <div className="w-10 h-10 rounded-full border-2 border-purple-500 border-t-transparent animate-spin" />
-          <span className="text-purple-500 font-medium tracking-wide">Connecting to VidyaMarg AI...</span>
+          <span className="text-purple-500 font-medium tracking-wide">
+            {isTestingModeConfigured ? "Entering VidyaMarg AI (Testing Mode)..." : "Connecting to VidyaMarg AI..."}
+          </span>
         </div>
       </main>
     );

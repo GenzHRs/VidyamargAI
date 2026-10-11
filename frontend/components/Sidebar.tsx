@@ -22,15 +22,13 @@ import {
   PanelLeftOpen,
   Menu,
   X,
-  Users,
-  BarChart3,
   ChevronRight,
 } from "lucide-react";
 
 import { useGlobalTheme } from "@/utils/themeUtils";
 
 interface SidebarProps {
-  portal: "candidate" | "admin";
+  portal?: "candidate";
 }
 
 const candidateLinks = [
@@ -44,17 +42,10 @@ const candidateLinks = [
   { name: "Settings", href: "/candidate/settings", icon: Settings },
 ];
 
-const adminLinks = [
-  { name: "Overview", href: "/admin", icon: LayoutDashboard },
-  { name: "Students", href: "/admin/candidates", icon: Users },
-  { name: "Course Management", href: "/admin/courses", icon: BookOpen },
-  { name: "Analytics", href: "/admin/analytics", icon: BarChart3 },
-];
-
-export default function Sidebar({ portal }: SidebarProps) {
+export default function Sidebar({ portal = "candidate" }: SidebarProps) {
   const pathname = usePathname();
   const router = useRouter();
-  const { logout, fullName, email } = useAuthStore();
+  const { logout, fullName, email, isDevUser } = useAuthStore();
   const { theme, toggleTheme, setTheme } = useGlobalTheme();
   const [collapsed, setCollapsed] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -68,8 +59,6 @@ export default function Sidebar({ portal }: SidebarProps) {
         // Respect explicit local theme selection above all else — single source of truth
         const localTheme = localStorage.getItem("theme");
         if (localTheme === "dark" || localTheme === "light") {
-          // Sync local theme to backend asynchronously
-          apiService.updatePreferences(localTheme as "dark" | "light").catch(() => {});
           return;
         }
 
@@ -103,10 +92,10 @@ export default function Sidebar({ portal }: SidebarProps) {
   };
 
   const handleProfileClick = () => {
-    if (portal === "candidate") router.push("/candidate/profile");
+    router.push("/candidate/profile");
   };
 
-  const activeLinks = portal === "candidate" ? candidateLinks : adminLinks;
+  const activeLinks = candidateLinks;
   const userInitial = fullName ? fullName[0].toUpperCase() : "U";
   const displayName = fullName || "User";
   const displayEmail = email || "";
@@ -187,7 +176,7 @@ export default function Sidebar({ portal }: SidebarProps) {
                   (onProfileClick || handleProfileClick)();
                 }
               }}
-              className={`w-9 h-9 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 text-white flex items-center justify-center font-bold text-sm cursor-pointer transition-all ${
+              className={`w-9 h-9 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 text-white flex items-center justify-center font-bold text-sm cursor-pointer transition-all relative ${
                 isProfileActive
                   ? "ring-2 ring-blue-500 dark:ring-blue-400 shadow-md scale-105"
                   : "hover:ring-2 hover:ring-blue-400/50"
@@ -195,6 +184,9 @@ export default function Sidebar({ portal }: SidebarProps) {
               title={`View Profile (${displayName})`}
             >
               {userInitial}
+              {(isDevUser || email === "dev.candidate@vidyamarg.local") && (
+                <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-amber-500 border-2 border-white dark:border-slate-900" title="Dev Test User" />
+              )}
             </div>
             <button
               onClick={(e) => {
@@ -225,18 +217,28 @@ export default function Sidebar({ portal }: SidebarProps) {
             }`}
           >
             <div
-              className={`w-9 h-9 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 text-white flex items-center justify-center font-bold text-sm shrink-0 transition-all ${
+              className={`w-9 h-9 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 text-white flex items-center justify-center font-bold text-sm shrink-0 transition-all relative ${
                 isProfileActive
                   ? "ring-2 ring-blue-500 dark:ring-blue-400 shadow-xs"
                   : "group-hover:ring-2 group-hover:ring-blue-400/40"
               }`}
             >
               {userInitial}
+              {(isDevUser || email === "dev.candidate@vidyamarg.local") && (
+                <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-amber-500 border-2 border-white dark:border-slate-900" title="Dev Test User" />
+              )}
             </div>
             <div className="flex-1 min-w-0">
-              <p className={`text-xs font-semibold truncate ${isProfileActive ? "text-blue-600 dark:text-blue-400 font-bold" : "text-app-text"}`}>
-                {displayName}
-              </p>
+              <div className="flex items-center gap-1.5">
+                <p className={`text-xs font-semibold truncate ${isProfileActive ? "text-blue-600 dark:text-blue-400 font-bold" : "text-app-text"}`}>
+                  {displayName}
+                </p>
+                {(isDevUser || email === "dev.candidate@vidyamarg.local") && (
+                  <span className="px-1.5 py-0.5 rounded text-[8px] font-extrabold uppercase bg-amber-500/20 text-amber-600 dark:text-amber-400 border border-amber-500/30 shrink-0">
+                    TEST CANDIDATE
+                  </span>
+                )}
+              </div>
               <p className={`text-[10px] truncate ${isProfileActive ? "text-blue-500/80 dark:text-blue-300/80" : "text-app-text-muted"}`}>
                 {displayEmail}
               </p>
@@ -273,7 +275,7 @@ export default function Sidebar({ portal }: SidebarProps) {
     </div>
   );
 
-  const homePath = portal === "candidate" ? "/candidate/dashboard" : "/admin";
+  const homePath = "/candidate/dashboard";
 
   return (
     <>

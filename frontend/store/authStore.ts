@@ -1,4 +1,6 @@
 import { create } from 'zustand';
+import { useDashboardStore } from './dashboardStore';
+import { apiService } from '@/services/api';
 
 interface AuthState {
   token: string | null;
@@ -6,13 +8,14 @@ interface AuthState {
   fullName: string | null;
   email: string | null;
   isAuthenticated: boolean;
-  login: (token: string, role: string, fullName: string, email: string) => void;
+  isDevUser: boolean;
+  login: (token: string, role: string, fullName: string, email: string, isDevUser?: boolean) => void;
   logout: () => void;
-  initialize: () => void;
+  initialize: () => Promise<void>;
   updateUser: (fullName: string, email?: string) => void;
+  exitDevMode: () => void;
+  resumeDevMode: () => Promise<boolean>;
 }
-
-import { useDashboardStore } from './dashboardStore';
 
 function clearPrivateCaches() {
   if (typeof window === 'undefined') return;
@@ -20,43 +23,129 @@ function clearPrivateCaches() {
     useDashboardStore.getState().reset();
   } catch (e) {}
   for (const key of Object.keys(localStorage)) {
-    if (key.startsWith('cache_') || key === 'REACT_QUERY_OFFLINE_CACHE' || key === 'candidate_applied_email') localStorage.removeItem(key);
+    if (key.startsWith('cache_') || key === 'REACT_QUERY_OFFLINE_CACHE' || key === 'candidate_applied_email') {
+      localStorage.removeItem(key);
+    }
   }
 }
 
-export const useAuthStore = create<AuthState>((set) => ({
-  token: null,
-  role: null,
-  fullName: null,
-  email: null,
-  isAuthenticated: false,
-  login: (token, role, fullName, email) => {
-    clearPrivateCaches();
-    localStorage.setItem('token', token);
-    localStorage.setItem('role', role);
-    localStorage.setItem('fullName', fullName);
-    localStorage.setItem('email', email);
-    set({ token, role, fullName, email, isAuthenticated: true });
-  },
-  logout: () => {
-    clearPrivateCaches();
-    localStorage.removeItem('token');
-    localStorage.removeItem('role');
-    localStorage.removeItem('fullName');
-    localStorage.removeItem('email');
-    set({ token: null, role: null, fullName: null, email: null, isAuthenticated: false });
-  },
-  initialize: () => {
-    if (typeof window !== 'undefined') {
+const getInitialAuthState = () => {
+  if (typeof window !== 'undefined') {
+    try {
       const token = localStorage.getItem('token');
       const role = localStorage.getItem('role');
       const fullName = localStorage.getItem('fullName');
       const email = localStorage.getItem('email');
-      if (token && role && fullName && email) {
-        set({ token, role, fullName, email, isAuthenticated: true });
+      const isDev = email === 'dev.candidate@vidyamarg.local' || localStorage.getItem('is_dev_mode') === 'true';
+      if (token) {
+        return { token, role, fullName, email, isAuthenticated: true, isDevUser: isDev };
+      }
+    } catch {}
+  }
+  return { token: null, role: null, fullName: null, email: null, isAuthenticated: false, isDevUser: false };
+};
+
+const initialAuth = getInitialAuthState();
+
+export const useAuthStore = create<AuthState>((set, get) => ({
+  ...initialAuth,
+
+  login: (token, role, fullName, email, isDevUser = false) => {
+    clearPrivateCaches();
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('token', token);
+      localStorage.setItem('role', role);
+      localStorage.setItem('fullName', fullName);
+      localStorage.setItem('email', email);
+      if (isDevUser || email === 'dev.candidate@vidyamarg.local') {
+        localStorage.setItem('is_dev_mode', 'true');
+      } else {
+        localStorage.removeItem('is_dev_mode');
       }
     }
+    set({
+      token,
+      role,
+      fullName,
+      email,
+      isAuthenticated: true,
+      isDevUser: isDevUser || email === 'dev.candidate@vidyamarg.local'
+    });
   },
+
+  logout: () => {
+    clearPrivateCaches();
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('token');
+      localStorage.removeItem('role');
+      localStorage.removeItem('fullName');
+      localStorage.removeItem('email');
+      localStorage.removeItem('is_dev_mode');
+    }
+    set({
+      token: null,
+      role: null,
+      fullName: null,
+      email: null,
+      isAuthenticated: false,
+      isDevUser: false
+    });
+  },
+
+  initialize: async () => {
+    if (typeof window === 'undefined') return;
+
+    try {
+      const token = localStorage.getItem('token');
+      const role = localStorage.getItem('role');
+      const fullName = localStorage.getItem('fullName');
+      const email = localStorage.getItem('email');
+
+      // 1. Existing saved session in localStorage
+      if (token && role && fullName && email) {
+        const isDev = email === 'dev.candidate@vidyamarg.local' || localStorage.getItem('is_dev_mode') === 'true';
+        set({
+          token,
+          role,
+          fullName,
+          email,
+          isAuthenticated: true,
+          isDevUser: isDev
+        });
+        return;
+      }
+
+      // 2. Testing Mode / DEV_AUTH_BYPASS Auto-Session Bootstrap
+      const bypassEnv = process.env.NEXT_PUBLIC_DEV_AUTH_BYPASS || process.env.NEXT_PUBLIC_DEV_MODE;
+      const isBypassConfigured = bypassEnv === 'true' || bypassEnv === '1';
+      const isTemporarilyDisabled =
+        sessionStorage.getItem('disable_dev_mode') === 'true' ||
+        sessionStorage.getItem('disable_testing_mode') === 'true';
+
+      if (isBypassConfigured && !isTemporarilyDisabled) {
+        const session = await apiService.getDevSession();
+        if (session && session.access_token && session.user) {
+          const user = session.user;
+          localStorage.setItem('token', session.access_token);
+          localStorage.setItem('role', user.role);
+          localStorage.setItem('fullName', user.full_name);
+          localStorage.setItem('email', user.email);
+          localStorage.setItem('is_dev_mode', 'true');
+          set({
+            token: session.access_token,
+            role: user.role,
+            fullName: user.full_name,
+            email: user.email,
+            isAuthenticated: true,
+            isDevUser: true
+          });
+        }
+      }
+    } catch (err) {
+      console.warn('Testing mode initialization notice:', err);
+    }
+  },
+
   updateUser: (fullName, email) => {
     if (typeof window !== 'undefined') {
       localStorage.setItem('fullName', fullName);
@@ -68,6 +157,38 @@ export const useAuthStore = create<AuthState>((set) => ({
       set({ fullName, email });
     } else {
       set({ fullName });
+    }
+  },
+
+  exitDevMode: () => {
+    if (typeof window !== 'undefined') {
+      sessionStorage.setItem('disable_dev_mode', 'true');
+      sessionStorage.setItem('disable_testing_mode', 'true');
+    }
+    get().logout();
+  },
+
+  resumeDevMode: async () => {
+    if (typeof window !== 'undefined') {
+      sessionStorage.removeItem('disable_dev_mode');
+      sessionStorage.removeItem('disable_testing_mode');
+    }
+    try {
+      const session = await apiService.getDevSession();
+      if (session && session.access_token && session.user) {
+        get().login(
+          session.access_token,
+          session.user.role,
+          session.user.full_name,
+          session.user.email,
+          true
+        );
+        return true;
+      }
+      return false;
+    } catch (err) {
+      console.error('Failed to resume development mode:', err);
+      return false;
     }
   }
 }));

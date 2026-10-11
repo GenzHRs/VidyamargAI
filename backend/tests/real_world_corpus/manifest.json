@@ -1,0 +1,981 @@
+[
+  {
+    "test_id": "rw_01",
+    "file_name": "rw_01_pdf_selectable.pdf",
+    "format": "pdf",
+    "layout_category": "ATS Standard Chronological",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": true,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "professional_summary",
+      "work_experience",
+      "projects",
+      "education",
+      "skills",
+      "hyperlinks"
+    ],
+    "known_challenges": [
+      "Standard baseline",
+      "Multi-role timeline",
+      "Link extraction"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_01_pdf_selectable.pdf"
+  },
+  {
+    "test_id": "rw_02",
+    "file_name": "rw_02_pdf_scanned_ocr.pdf",
+    "format": "pdf",
+    "layout_category": "Scanned Bitmap Document",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": true,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "professional_summary",
+      "work_experience",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "Zero selectable text",
+      "OCR trigger",
+      "Textline orientation"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_02_pdf_scanned_ocr.pdf"
+  },
+  {
+    "test_id": "rw_03",
+    "file_name": "rw_03_pdf_mixed_text_image.pdf",
+    "format": "pdf",
+    "layout_category": "Hybrid Vector-Raster PDF",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": true,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "professional_summary",
+      "work_experience",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "Mixed vector text and raster OCR"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_03_pdf_mixed_text_image.pdf"
+  },
+  {
+    "test_id": "rw_04",
+    "file_name": "rw_04_docx_paragraphs.docx",
+    "format": "docx",
+    "layout_category": "Standard DOCX Document",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "professional_summary",
+      "work_experience",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "Standard DOCX paragraph and bullet list extraction"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_04_docx_paragraphs.docx"
+  },
+  {
+    "test_id": "rw_05",
+    "file_name": "rw_05_docx_tables_nested.docx",
+    "format": "docx",
+    "layout_category": "DOCX Tabular Layout",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": true,
+    "has_columns": true,
+    "expected_fields": [
+      "personal_info",
+      "work_experience",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "Table grid extraction"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_05_docx_tables_nested.docx"
+  },
+  {
+    "test_id": "rw_06",
+    "file_name": "rw_06_docx_hyperlinks_styled.docx",
+    "format": "docx",
+    "layout_category": "DOCX Hyperlinked Document",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": true,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "projects",
+      "skills",
+      "hyperlinks"
+    ],
+    "known_challenges": [
+      "DOCX relationship ID resolution"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_06_docx_hyperlinks_styled.docx"
+  },
+  {
+    "test_id": "rw_07",
+    "file_name": "rw_07_doc_legacy.doc",
+    "format": "doc",
+    "layout_category": "Legacy Word 97-2003 Binary",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "professional_summary",
+      "work_experience",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "Binary stream parsing",
+      "OLE metadata suppression"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_07_doc_legacy.doc"
+  },
+  {
+    "test_id": "rw_08",
+    "file_name": "rw_08_rtf_formatted.rtf",
+    "format": "rtf",
+    "layout_category": "Rich Text Format",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": true,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "work_experience",
+      "education",
+      "skills",
+      "hyperlinks"
+    ],
+    "known_challenges": [
+      "RTF control word stripping",
+      "RTF HYPERLINK recovery"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_08_rtf_formatted.rtf"
+  },
+  {
+    "test_id": "rw_09",
+    "file_name": "rw_09_odt_standard.odt",
+    "format": "odt",
+    "layout_category": "OpenDocument Text (.odt)",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": true,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "work_experience",
+      "education",
+      "skills",
+      "hyperlinks"
+    ],
+    "known_challenges": [
+      "ODT XML tree parsing",
+      "xlink attributes"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_09_odt_standard.odt"
+  },
+  {
+    "test_id": "rw_10",
+    "file_name": "rw_10_txt_plain.txt",
+    "format": "txt",
+    "layout_category": "Plain ASCII Text",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": true,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "professional_summary",
+      "work_experience",
+      "education",
+      "skills",
+      "certifications",
+      "hyperlinks"
+    ],
+    "known_challenges": [
+      "Regex URL recovery",
+      "Text boundary segmentation"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_10_txt_plain.txt"
+  },
+  {
+    "test_id": "rw_11",
+    "file_name": "rw_11_html_export.html",
+    "format": "html",
+    "layout_category": "Semantic HTML Export",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": true,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "professional_summary",
+      "work_experience",
+      "education",
+      "skills",
+      "hyperlinks"
+    ],
+    "known_challenges": [
+      "HTML DOM parsing",
+      "Anchor extraction"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_11_html_export.html"
+  },
+  {
+    "test_id": "rw_12",
+    "file_name": "rw_12_image_png.png",
+    "format": "png",
+    "layout_category": "Raster Image (PNG)",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": true,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "work_experience",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "Image-to-PDF OCR pipeline"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_12_image_png.png"
+  },
+  {
+    "test_id": "rw_13",
+    "file_name": "rw_13_image_jpg.jpg",
+    "format": "jpg",
+    "layout_category": "Raster Image (JPEG)",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": true,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "work_experience",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "Image-to-PDF OCR pipeline"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_13_image_jpg.jpg"
+  },
+  {
+    "test_id": "rw_14",
+    "file_name": "rw_14_image_tiff.tiff",
+    "format": "tiff",
+    "layout_category": "Raster Image (TIFF)",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": true,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "work_experience",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "Image-to-PDF OCR pipeline"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_14_image_tiff.tiff"
+  },
+  {
+    "test_id": "rw_15",
+    "file_name": "rw_15_pptx_slides.pptx",
+    "format": "pptx",
+    "layout_category": "PowerPoint Presentation Slide",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "work_experience",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "PPTX XML slide text parsing"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_15_pptx_slides.pptx"
+  },
+  {
+    "test_id": "rw_16",
+    "file_name": "rw_16_ats_single_column_chronological.pdf",
+    "format": "pdf",
+    "layout_category": "ATS Single-Column Chronological",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "test_id",
+      "expected_status",
+      "personal_info",
+      "professional_summary",
+      "work_experience",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "ATS Single-Column Chronological"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_16_ats_single_column_chronological.pdf"
+  },
+  {
+    "test_id": "rw_17",
+    "file_name": "rw_17_ats_reverse_chronological.pdf",
+    "format": "pdf",
+    "layout_category": "ATS Reverse Chronological",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "test_id",
+      "expected_status",
+      "personal_info",
+      "work_experience",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "ATS Reverse Chronological"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_17_ats_reverse_chronological.pdf"
+  },
+  {
+    "test_id": "rw_18",
+    "file_name": "rw_18_ats_functional_skills_focused.pdf",
+    "format": "pdf",
+    "layout_category": "Functional Skills-Focused Layout",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "test_id",
+      "expected_status",
+      "personal_info",
+      "work_experience",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "Functional Skills-Focused Layout"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_18_ats_functional_skills_focused.pdf"
+  },
+  {
+    "test_id": "rw_19",
+    "file_name": "rw_19_ats_combination_hybrid.pdf",
+    "format": "pdf",
+    "layout_category": "Hybrid Combination Layout",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "test_id",
+      "expected_status",
+      "personal_info",
+      "work_experience",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "Hybrid Combination Layout"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_19_ats_combination_hybrid.pdf"
+  },
+  {
+    "test_id": "rw_20",
+    "file_name": "rw_20_academic_cv_publications.pdf",
+    "format": "pdf",
+    "layout_category": "Academic CV Layout",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "test_id",
+      "expected_status",
+      "personal_info",
+      "work_experience",
+      "education",
+      "publications"
+    ],
+    "known_challenges": [
+      "Academic CV Layout"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_20_academic_cv_publications.pdf"
+  },
+  {
+    "test_id": "rw_21",
+    "file_name": "rw_21_executive_leadership.pdf",
+    "format": "pdf",
+    "layout_category": "Executive Leadership Format",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "test_id",
+      "expected_status",
+      "personal_info",
+      "professional_summary",
+      "work_experience",
+      "education"
+    ],
+    "known_challenges": [
+      "Executive Leadership Format"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_21_executive_leadership.pdf"
+  },
+  {
+    "test_id": "rw_22",
+    "file_name": "rw_22_entry_level_graduate.pdf",
+    "format": "pdf",
+    "layout_category": "Entry-Level Graduate Resume",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "test_id",
+      "expected_status",
+      "personal_info",
+      "work_experience",
+      "projects",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "Entry-Level Graduate Resume"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_22_entry_level_graduate.pdf"
+  },
+  {
+    "test_id": "rw_23",
+    "file_name": "rw_23_technical_systems_architect.pdf",
+    "format": "pdf",
+    "layout_category": "Technical Systems Architect",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "test_id",
+      "expected_status",
+      "personal_info",
+      "work_experience",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "Technical Systems Architect"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_23_technical_systems_architect.pdf"
+  },
+  {
+    "test_id": "rw_24",
+    "file_name": "rw_24_career_change_transition.pdf",
+    "format": "pdf",
+    "layout_category": "Career Change Transition",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "test_id",
+      "expected_status",
+      "personal_info",
+      "professional_summary",
+      "projects",
+      "work_experience",
+      "education"
+    ],
+    "known_challenges": [
+      "Career Change Transition"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_24_career_change_transition.pdf"
+  },
+  {
+    "test_id": "rw_25",
+    "file_name": "rw_25_modern_two_column_balanced.pdf",
+    "format": "pdf",
+    "layout_category": "Modern Two-Column Balanced",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": true,
+    "expected_fields": [
+      "personal_info",
+      "work_experience",
+      "projects",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "Balanced 50/50 column gutter detection"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_25_modern_two_column_balanced.pdf"
+  },
+  {
+    "test_id": "rw_26",
+    "file_name": "rw_26_modern_left_sidebar_skills_contact.pdf",
+    "format": "pdf",
+    "layout_category": "Modern Left Sidebar",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": true,
+    "expected_fields": [
+      "personal_info",
+      "work_experience",
+      "projects",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "Left sidebar geometry sweep",
+      "Separation of skills from experience bullets"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_26_modern_left_sidebar_skills_contact.pdf"
+  },
+  {
+    "test_id": "rw_27",
+    "file_name": "rw_27_modern_right_sidebar.pdf",
+    "format": "pdf",
+    "layout_category": "Modern Right Sidebar",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": true,
+    "expected_fields": [
+      "personal_info",
+      "work_experience",
+      "projects",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "Right sidebar gutter boundary calculation"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_27_modern_right_sidebar.pdf"
+  },
+  {
+    "test_id": "rw_28",
+    "file_name": "rw_28_modern_canva_decorative_headings.pdf",
+    "format": "pdf",
+    "layout_category": "Canva Stylized Layout",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "test_id",
+      "expected_status",
+      "personal_info",
+      "professional_summary",
+      "work_experience",
+      "education"
+    ],
+    "known_challenges": [
+      "Canva Stylized Layout"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_28_modern_canva_decorative_headings.pdf"
+  },
+  {
+    "test_id": "rw_29",
+    "file_name": "rw_29_modern_icon_contact_skillbars.pdf",
+    "format": "pdf",
+    "layout_category": "Icon Contact & Graphical Skillbars",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "test_id",
+      "expected_status",
+      "personal_info",
+      "work_experience",
+      "education",
+      "skills"
+    ],
+    "known_challenges": [
+      "Icon Contact & Graphical Skillbars"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_29_modern_icon_contact_skillbars.pdf"
+  },
+  {
+    "test_id": "rw_30",
+    "file_name": "rw_30_complex_multipage_repeated_headers.pdf",
+    "format": "pdf",
+    "layout_category": "Multi-page Repeated Running Headers",
+    "page_count": 2,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "work_experience",
+      "education"
+    ],
+    "known_challenges": [
+      "Page 2 running header suppression"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_30_complex_multipage_repeated_headers.pdf"
+  },
+  {
+    "test_id": "rw_31",
+    "file_name": "rw_31_complex_tables_education_experience.pdf",
+    "format": "pdf",
+    "layout_category": "PDF Tabular Cells",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": true,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "work_experience",
+      "education"
+    ],
+    "known_challenges": [
+      "Cell boundary text isolation"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_31_complex_tables_education_experience.pdf"
+  },
+  {
+    "test_id": "rw_32",
+    "file_name": "rw_32_complex_unconventional_headings.pdf",
+    "format": "pdf",
+    "layout_category": "Unconventional Headings Layout",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "test_id",
+      "expected_status",
+      "personal_info",
+      "professional_summary",
+      "work_experience",
+      "projects",
+      "education"
+    ],
+    "known_challenges": [
+      "Unconventional Headings Layout"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_32_complex_unconventional_headings.pdf"
+  },
+  {
+    "test_id": "rw_33",
+    "file_name": "rw_33_edge_multijob_same_company.pdf",
+    "format": "pdf",
+    "layout_category": "Multi-Job Same Company Promotion",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "test_id",
+      "expected_status",
+      "personal_info",
+      "work_experience",
+      "education"
+    ],
+    "known_challenges": [
+      "Multi-Job Same Company Promotion"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_33_edge_multijob_same_company.pdf"
+  },
+  {
+    "test_id": "rw_34",
+    "file_name": "rw_34_edge_multiproject_same_tech.pdf",
+    "format": "pdf",
+    "layout_category": "Multi-Project Shared Tech Stack",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "test_id",
+      "expected_status",
+      "personal_info",
+      "projects",
+      "education"
+    ],
+    "known_challenges": [
+      "Multi-Project Shared Tech Stack"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_34_edge_multiproject_same_tech.pdf"
+  },
+  {
+    "test_id": "rw_35",
+    "file_name": "rw_35_edge_split_urls_anchor_mismatch.pdf",
+    "format": "pdf",
+    "layout_category": "Hyperlink Label Mismatch",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": true,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "personal_info",
+      "projects",
+      "hyperlinks"
+    ],
+    "known_challenges": [
+      "Exact target URL preservation despite distinct visible anchor text"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_35_edge_split_urls_anchor_mismatch.pdf"
+  },
+  {
+    "test_id": "rw_36",
+    "file_name": "rw_36_edge_unicode_hyphenated_ligatures.pdf",
+    "format": "pdf",
+    "layout_category": "Unicode Ligatures & Hyphenated Lines",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "test_id",
+      "expected_status",
+      "personal_info",
+      "work_experience",
+      "education"
+    ],
+    "known_challenges": [
+      "Unicode Ligatures & Hyphenated Lines"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_36_edge_unicode_hyphenated_ligatures.pdf"
+  },
+  {
+    "test_id": "rw_37",
+    "file_name": "rw_37_edge_prompt_injection_security.pdf",
+    "format": "pdf",
+    "layout_category": "Adversarial Prompt Injection Defense",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [
+      "test_id",
+      "expected_status",
+      "personal_info",
+      "work_experience",
+      "education"
+    ],
+    "known_challenges": [
+      "Adversarial Prompt Injection Defense"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_37_edge_prompt_injection_security.pdf"
+  },
+  {
+    "test_id": "rw_38",
+    "file_name": "rw_38_edge_corrupted.pdf",
+    "format": "pdf",
+    "layout_category": "Corrupted Binary File",
+    "page_count": 0,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [],
+    "known_challenges": [
+      "Safe rejection without unhandled crash"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_38_edge_corrupted.pdf"
+  },
+  {
+    "test_id": "rw_39",
+    "file_name": "rw_39_edge_empty.pdf",
+    "format": "pdf",
+    "layout_category": "Zero-byte Empty Document",
+    "page_count": 0,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [],
+    "known_challenges": [
+      "Empty payload validation check"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_39_edge_empty.pdf"
+  },
+  {
+    "test_id": "rw_40",
+    "file_name": "rw_40_edge_encrypted.pdf",
+    "format": "pdf",
+    "layout_category": "Encrypted Password-Protected Document",
+    "page_count": 1,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [],
+    "known_challenges": [
+      "Password protection detection"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_40_edge_encrypted.pdf"
+  },
+  {
+    "test_id": "rw_41",
+    "file_name": "rw_41_edge_unsupported.xyz",
+    "format": "xyz",
+    "layout_category": "Unsupported File Extension",
+    "page_count": 0,
+    "language": "en",
+    "is_scanned": false,
+    "has_hyperlinks": false,
+    "has_tables": false,
+    "has_columns": false,
+    "expected_fields": [],
+    "known_challenges": [
+      "Explicit format boundary rejection"
+    ],
+    "verification_status": "verified",
+    "file_path": "C:\\Users\\Shiva\\Downloads\\VidyamargAI_Production_Release\\VidyamargAI\\backend\\tests\\real_world_corpus\\fixtures\\rw_41_edge_unsupported.xyz"
+  }
+]

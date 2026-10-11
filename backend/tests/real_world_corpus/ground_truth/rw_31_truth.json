@@ -1,0 +1,27 @@
+{
+  "test_id": "rw_31",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Lucas Moreau",
+    "email": "lucas.moreau@example.com",
+    "location": "Paris, France"
+  },
+  "work_experience": [
+    {
+      "employer": "Dassault Syst\u00e8mes",
+      "designation": "CAD Kernel Engineer",
+      "start_date": "2020",
+      "end_date": "Present",
+      "responsibilities": [
+        "Implemented parametric spline curve evaluation routines in modern C++20."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "\u00c9cole Polytechnique",
+      "degree": "MSc in Applied Mathematics",
+      "graduation_year": "2018"
+    }
+  ]
+}

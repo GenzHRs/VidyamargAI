@@ -1,0 +1,47 @@
+{
+  "test_id": "rw_27",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Jessica Alverez",
+    "email": "jessica.alverez@example.com",
+    "location": "Austin, TX"
+  },
+  "work_experience": [
+    {
+      "employer": "Tesla Motors",
+      "designation": "Embedded Firmware Engineer",
+      "start_date": "2020",
+      "end_date": "Present",
+      "responsibilities": [
+        "Engineered real-time battery thermal management controllers in C++."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "CAN Bus Diagnostic Sniffer",
+      "start_date": "2022",
+      "bullets": [
+        "Open source vehicle network protocol analyzer."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Rice University",
+      "degree": "BS in Electrical Eng",
+      "graduation_year": "2019"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "C",
+      "C++",
+      "RTOS",
+      "CAN",
+      "Python",
+      "Linux",
+      "Git"
+    ]
+  }
+}

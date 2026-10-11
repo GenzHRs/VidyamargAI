@@ -1,0 +1,42 @@
+{
+  "test_id": "rw_24",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Hannah Abbott",
+    "email": "hannah.abbott@example.com",
+    "phone": "614-555-0182",
+    "location": "Columbus, OH"
+  },
+  "professional_summary": "Former Financial Auditor transitioning to Data Engineering after completing rigorous bootcamp training.",
+  "projects": [
+    {
+      "name": "Financial Fraud Pipeline",
+      "start_date": "2024",
+      "bullets": [
+        "Built streaming Kafka and PySpark ETL pipeline identifying anomalous transactions."
+      ],
+      "technologies": [
+        "Kafka",
+        "PySpark"
+      ]
+    }
+  ],
+  "work_experience": [
+    {
+      "employer": "Deloitte",
+      "designation": "Senior Financial Auditor",
+      "start_date": "2019",
+      "end_date": "2023",
+      "responsibilities": [
+        "Conducted SOX compliance audits for Fortune 500 consumer accounts."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Ohio State University",
+      "degree": "BS in Accounting",
+      "graduation_year": "2019"
+    }
+  ]
+}

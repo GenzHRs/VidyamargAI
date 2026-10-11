@@ -1,0 +1,42 @@
+{
+  "test_id": "rw_34",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Timothy Cruz",
+    "email": "timothy.cruz@example.com",
+    "location": "Phoenix, AZ"
+  },
+  "projects": [
+    {
+      "name": "Echo Commerce Platform",
+      "start_date": "2023",
+      "bullets": [
+        "Built multi-tenant storefront backend handling inventory state syncing."
+      ],
+      "technologies": [
+        "React",
+        "Node.js",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "name": "Falcon Analytics Dashboard",
+      "start_date": "2022",
+      "bullets": [
+        "Designed timeseries metrics visualization displaying server throughput."
+      ],
+      "technologies": [
+        "React",
+        "Node.js",
+        "PostgreSQL"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Arizona State University",
+      "degree": "BS in Computer Science",
+      "graduation_year": "2022"
+    }
+  ]
+}

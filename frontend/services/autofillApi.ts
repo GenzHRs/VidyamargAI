@@ -3,7 +3,7 @@
  * Provides frontend methods for AI Application Form filling and entitlement checks.
  */
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api/v1";
+import { getBaseUrl } from "@/services/api";
 
 function getAuthHeaders(): HeadersInit {
   const headers: Record<string, string> = {
@@ -43,7 +43,7 @@ export interface SemanticQuestionResponse {
 
 export const autofillApi = {
   async checkEntitlement(): Promise<{ can_autofill: boolean; subscription_tier: string; message: string }> {
-    const res = await fetch(`${API_BASE_URL}/applications/autofill/status`, {
+    const res = await fetch(`${getBaseUrl()}/applications/autofill/status`, {
       headers: getAuthHeaders(),
     });
     if (!res.ok) throw new Error("Failed to check entitlement");
@@ -51,7 +51,7 @@ export const autofillApi = {
   },
 
   async mapForm(targetUrl?: string, fields?: Array<{ id?: string; name?: string; label?: string }>): Promise<AutofillMapResponse> {
-    const res = await fetch(`${API_BASE_URL}/applications/autofill/map`, {
+    const res = await fetch(`${getBaseUrl()}/applications/autofill/map`, {
       method: "POST",
       headers: getAuthHeaders(),
       body: JSON.stringify({
@@ -67,7 +67,7 @@ export const autofillApi = {
   },
 
   async answerQuestion(question: string): Promise<SemanticQuestionResponse> {
-    const res = await fetch(`${API_BASE_URL}/applications/autofill/semantic-question`, {
+    const res = await fetch(`${getBaseUrl()}/applications/autofill/semantic-question`, {
       method: "POST",
       headers: getAuthHeaders(),
       body: JSON.stringify({ question })

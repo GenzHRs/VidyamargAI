@@ -1,0 +1,17 @@
+EMILY WATSON
+emily.watson@example.com | 617-555-0177 | Boston, MA
+https://github.com/ewatson
+
+SUMMARY
+Senior Cybersecurity Analyst with 6+ years specializing in SOC operations, threat hunting, and incident response.
+
+WORK EXPERIENCE
+Sentinel CyberDefense — Lead Security Operations Analyst (2020 - Present)
+- Investigated and mitigated over 450 critical enterprise security alerts using Splunk and CrowdStrike.
+- Automated incident triage playbooks reducing mean-time-to-remediate (MTTR) by 65%.
+
+EDUCATION
+Northeastern University — Bachelor of Science in Cybersecurity (2018)
+
+SKILLS & CERTIFICATIONS
+Splunk, CrowdStrike, Wireshark, Python, Bash, CISSP, CEH, Incident Response

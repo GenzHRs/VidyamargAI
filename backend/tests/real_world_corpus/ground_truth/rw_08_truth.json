@@ -1,0 +1,44 @@
+{
+  "test_id": "rw_08",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Rachel Adams",
+    "email": "rachel.adams@example.com",
+    "location": "New York, NY",
+    "portfolio": "https://racheladams.design"
+  },
+  "work_experience": [
+    {
+      "employer": "Spotify",
+      "designation": "Senior Product Designer",
+      "start_date": "2021",
+      "end_date": "Present",
+      "responsibilities": [
+        "Redesigned collaborative playlist curation UI for 120M active users."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Rhode Island School of Design",
+      "degree": "BFA in Graphic Design",
+      "graduation_year": "2019"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "Figma",
+      "Design Systems",
+      "Prototyping",
+      "User Research",
+      "HTML",
+      "CSS"
+    ]
+  },
+  "hyperlinks": [
+    {
+      "url": "https://racheladams.design",
+      "label": "Portfolio: racheladams.design"
+    }
+  ]
+}

@@ -22,6 +22,16 @@ logger = logging.getLogger(__name__)
 
 @asynccontextmanager
 async def lifespan(app):
+    # Production Startup Guard: Refuse to boot if DEV_AUTH_BYPASS is rejected by environment security policy
+    if settings.DEV_AUTH_BYPASS:
+        if not settings.is_dev_mode_allowed:
+            raise RuntimeError(
+                "CRITICAL SECURITY CONFIGURATION ERROR: DEV_AUTH_BYPASS is enabled but rejected by environment security policy! "
+                "In production/staging environments, DEV_AUTH_BYPASS_DEPLOYMENT='authorized_testing' is strictly required. "
+                "Server refuses to boot. Disable DEV_AUTH_BYPASS=false."
+            )
+        logger.warning("⚠️  TESTING AUTH BYPASS ACTIVE: Testing enabled with seeded test candidate.")
+
     # Ensure database schema is initialized on PostgreSQL startup
     try:
         Base.metadata.create_all(bind=engine)

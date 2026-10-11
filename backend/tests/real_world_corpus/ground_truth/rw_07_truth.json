@@ -1,0 +1,39 @@
+{
+  "test_id": "rw_07",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "David Miller",
+    "email": "david.miller@example.com",
+    "phone": "404-555-0133",
+    "location": "Atlanta, GA"
+  },
+  "professional_summary": "Enterprise Database Administrator with 12 years managing mission-critical Oracle and PostgreSQL instances.",
+  "work_experience": [
+    {
+      "employer": "Delta Data Systems",
+      "designation": "Lead DBA",
+      "start_date": "2018",
+      "end_date": "Present",
+      "responsibilities": [
+        "Automated multi-region failover and disaster recovery procedures."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Georgia Institute of Technology",
+      "degree": "Bachelor of Science in Computer Science",
+      "graduation_year": "2012"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "Oracle",
+      "PostgreSQL",
+      "MySQL",
+      "Linux",
+      "Shell Scripting",
+      "Performance Tuning"
+    ]
+  }
+}

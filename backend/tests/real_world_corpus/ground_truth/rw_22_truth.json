@@ -1,0 +1,53 @@
+{
+  "test_id": "rw_22",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Chloe Zhao",
+    "email": "chloe.zhao@example.com",
+    "phone": "408-555-0112",
+    "location": "San Jose, CA"
+  },
+  "work_experience": [
+    {
+      "employer": "Cisco Systems",
+      "designation": "Software Engineer Intern",
+      "start_date": "Summer 2023",
+      "end_date": "Summer 2023",
+      "responsibilities": [
+        "Automated test suites in Python for router configuration APIs."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "AI Campus Assistant",
+      "start_date": "2024",
+      "bullets": [
+        "Built campus guidance RAG chatbot using LangChain and FastAPI."
+      ],
+      "technologies": [
+        "LangChain",
+        "FastAPI"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "San Jose State University",
+      "degree": "BS in Software Engineering",
+      "graduation_year": "2024",
+      "gpa": "3.92"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "Python",
+      "Java",
+      "JavaScript",
+      "FastAPI",
+      "Git",
+      "SQL",
+      "Docker"
+    ]
+  }
+}

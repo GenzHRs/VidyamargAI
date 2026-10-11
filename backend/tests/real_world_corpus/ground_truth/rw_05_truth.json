@@ -1,0 +1,42 @@
+{
+  "test_id": "rw_05",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Priya Sharma",
+    "email": "priya.sharma@example.com",
+    "phone": "+91-98765-43210",
+    "location": "Bengaluru, India"
+  },
+  "work_experience": [
+    {
+      "employer": "Infosys Limited",
+      "designation": "Lead Data Scientist",
+      "start_date": "2021",
+      "end_date": "Present"
+    },
+    {
+      "employer": "Wipro Technologies",
+      "designation": "Data Engineer",
+      "start_date": "2018",
+      "end_date": "2021"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Indian Institute of Science",
+      "degree": "Master of Technology in Computational Data Science",
+      "graduation_year": "2018"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "Python",
+      "PySpark",
+      "Snowflake",
+      "dbt",
+      "SQL",
+      "Machine Learning",
+      "Apache Kafka"
+    ]
+  }
+}

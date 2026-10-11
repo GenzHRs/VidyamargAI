@@ -100,11 +100,12 @@ export default function ResumeEditorPage({ params }: PageProps) {
     }
   };
 
-  // Initial Data Fetch
+  // Initial Data Fetch with decoupled preview loading
   const loadResumeData = async () => {
     try {
       setLoading(true);
       setErrorMessage("");
+
       const [res, tpls, vers] = await Promise.all([
         resumeCenterApi.getResume(resumeId),
         resumeCenterApi.getTemplates(),
@@ -147,28 +148,26 @@ export default function ResumeEditorPage({ params }: PageProps) {
         );
       }
 
-      // Load LaTeX text
-      try {
-        const tex = await resumeCenterApi.downloadLatexText(resumeId);
-        setLatexSource(tex);
-      } catch (e) {
-        // May not be compiled yet
-      }
+      // Unblock the editor form immediately so candidate can edit right away
+      setLoading(false);
 
-      // If compiled, try fetching PDF blob
+      // Load LaTeX text asynchronously
+      resumeCenterApi.downloadLatexText(resumeId)
+        .then((tex) => setLatexSource(tex))
+        .catch(() => {});
+
+      // If compiled, load PDF blob asynchronously in background
       if (res.status.toUpperCase() === "COMPILED" || res.latest_pdf_url) {
-        try {
-          const blob = await resumeCenterApi.downloadPdfBlob(resumeId, true);
-          const url = URL.createObjectURL(blob);
-          setPdfBlobUrl(url);
-          setLatexAvailable(true);
-        } catch (e) {
-          // No compiled PDF available yet
-        }
+        resumeCenterApi.downloadPdfBlob(resumeId, true)
+          .then((blob) => {
+            const url = URL.createObjectURL(blob);
+            setPdfBlobUrl(url);
+            setLatexAvailable(true);
+          })
+          .catch(() => {});
       }
     } catch (err: any) {
       setErrorMessage(err.message || "Failed to load resume");
-    } finally {
       setLoading(false);
     }
   };

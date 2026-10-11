@@ -15,7 +15,6 @@ from app.core.database import get_db
 from app.core.config import settings
 from app.core.security import (
     get_current_user,
-    get_current_admin,
     generate_refresh_token,
     hash_token,
     create_access_token
@@ -40,16 +39,12 @@ def signup(request: Request, user_in: schemas.UserCreate, db: Session = Depends(
         raise HTTPException(status_code=400, detail="Email already registered")
         
     role = (user_in.role or "candidate").strip().lower()
-    if role not in ["candidate", "admin", "super_admin"]:
-        role = "candidate"
-
     if role in ["admin", "super_admin"]:
-        expected_key = settings.ADMIN_REGISTRATION_KEY
-        if not expected_key or not secrets.compare_digest(user_in.security_key or "", expected_key):
-            raise HTTPException(
-                status_code=403,
-                detail="Invalid Administrative Security Key. Access blocked."
-            )
+        raise HTTPException(
+            status_code=403,
+            detail="Administrative registration is disabled. VidyaMarg AI is a candidate-only platform."
+        )
+    role = "candidate"
 
     hashed_pwd = get_password_hash(user_in.password)
     user = User(
@@ -577,9 +572,59 @@ def update_user_preferences(
 
 
 
+# ----------------- TESTING MODE & DEV AUTH BYPASS -----------------
 
-# ----------------- JOBS -----------------
+@router.get("/auth/dev-status")
+@router.get("/auth/bypass-status")
+def get_dev_mode_status():
+    """Returns whether Testing Mode / DEV_AUTH_BYPASS is permitted in this environment."""
+    return {
+        "bypass_enabled": settings.is_dev_mode_allowed,
+        "dev_mode_enabled": settings.is_dev_mode_allowed,
+        "environment": settings.ENVIRONMENT,
+        "deployment": settings.DEV_AUTH_BYPASS_DEPLOYMENT,
+        "test_user": "dev.candidate@vidyamarg.local" if settings.is_dev_mode_allowed else None
+    }
 
-import re
-from typing import Tuple
 
+@router.post("/auth/dev-session")
+@router.post("/auth/bypass-session")
+def request_dev_mode_session(response: Response, db: Session = Depends(get_db)):
+    """
+    Returns an authenticated development session and valid JWT token for the seeded test candidate.
+    Strictly blocked in production or unverified environments.
+    """
+    from app.services.dev_mode_service import DevModeService
+    if not settings.is_dev_mode_allowed:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Testing Mode / DEV_AUTH_BYPASS is disabled or rejected by environment policy."
+        )
+    session_data = DevModeService.create_dev_session(db)
+
+    # Set cookies for cookie-based clients
+    csrf_token = secrets.token_hex(32)
+    response.set_cookie(
+        key="access_token",
+        value=session_data["access_token"],
+        httponly=True,
+        samesite="lax",
+        secure=False
+    )
+    if "refresh_token" in session_data:
+        response.set_cookie(
+            key="refresh_token",
+            value=session_data["refresh_token"],
+            httponly=True,
+            samesite="lax",
+            secure=False
+        )
+    response.set_cookie(
+        key="csrf_token",
+        value=csrf_token,
+        httponly=False,
+        samesite="lax",
+        secure=False
+    )
+    session_data["csrf_token"] = csrf_token
+    return session_data

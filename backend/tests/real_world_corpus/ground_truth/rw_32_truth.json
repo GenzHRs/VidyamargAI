@@ -1,0 +1,37 @@
+{
+  "test_id": "rw_32",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Maya Lin",
+    "email": "maya.lin@example.com",
+    "location": "Chicago, IL"
+  },
+  "professional_summary": "Full-lifecycle product designer and design systems advocate with 6+ years in fintech.",
+  "work_experience": [
+    {
+      "employer": "Acorn Finance",
+      "designation": "Lead UX Architect",
+      "start_date": "2021",
+      "end_date": "Present",
+      "responsibilities": [
+        "Championed design tokens system accelerating team velocity by 3x."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Krypton Design System",
+      "start_date": "2022",
+      "bullets": [
+        "Open-source accessible web component library."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Illinois Urbana-Champaign",
+      "degree": "BS in Human Factors",
+      "graduation_year": "2018"
+    }
+  ]
+}

@@ -10,6 +10,7 @@ import CandidateHeader from "@/components/CandidateHeader";
 import AskVidyamargAgent from "@/components/AskVidyamargAgent";
 
 import { AgentActionBridge } from "@/services/agentActionBridge";
+import DevModeBanner from "@/components/DevModeBanner";
 
 export default function CandidateLayout({
   children,
@@ -36,8 +37,13 @@ export default function CandidateLayout({
   const setOwnerEmail = useGlobalAgentStore((state) => state.setOwnerEmail);
 
   useEffect(() => {
-    initialize();
-    setMounted(true);
+    let active = true;
+    initialize().finally(() => {
+      if (active) setMounted(true);
+    });
+    return () => {
+      active = false;
+    };
   }, [initialize]);
 
   useEffect(() => {
@@ -55,36 +61,35 @@ export default function CandidateLayout({
 
   useEffect(() => {
     if (mounted && !isAuthenticated) {
-      router.push("/");
+      router.replace("/login");
     }
   }, [mounted, isAuthenticated, router]);
 
-  if (!mounted || !isAuthenticated) {
-    return (
-      <div className="min-h-screen bg-background flex items-center justify-center">
-        <div className="w-8 h-8 rounded-full border-4 border-t-primary border-muted animate-spin" />
-      </div>
-    );
+  if (mounted && !isAuthenticated) {
+    return null;
   }
 
   return (
-    <div className="h-screen w-full bg-app-bg flex flex-row overflow-hidden relative font-sans transition-colors duration-300">
-      <Sidebar portal="candidate" />
+    <div className="h-screen w-full bg-app-bg flex flex-col overflow-hidden relative font-sans transition-colors duration-300">
+      <DevModeBanner />
+      <div className="flex-1 flex flex-row min-h-0 overflow-hidden relative">
+        <Sidebar portal="candidate" />
 
-      {/* Main content column — min-w-0 prevents it from overflowing the flex container */}
-      <div className="flex-1 flex flex-col min-w-0 h-full overflow-hidden relative">
-        <CandidateHeader
-          isAgentOpen={isAgentOpen}
-          onToggleAgent={toggleAgent}
-        />
-        <main className="flex-1 min-w-0 min-h-0 overflow-y-auto overflow-x-hidden bg-app-bg text-app-text transition-colors duration-300 font-sans pb-16 sm:pb-0 workspace-container">
-          {children}
-        </main>
+        {/* Main content column — min-w-0 prevents it from overflowing the flex container */}
+        <div className="flex-1 flex flex-col min-w-0 h-full overflow-hidden relative">
+          <CandidateHeader
+            isAgentOpen={isAgentOpen}
+            onToggleAgent={toggleAgent}
+          />
+          <main className="flex-1 min-w-0 min-h-0 overflow-y-auto overflow-x-hidden bg-app-bg text-app-text transition-colors duration-300 font-sans pb-16 sm:pb-0 workspace-container">
+            {children}
+          </main>
+        </div>
+
+        {/* AI Agent panel — always mounted so conversation persists across navigations.
+            The panel renders null internally when closed, keeping the mount stable. */}
+        <AskVidyamargAgent isOpen={isAgentOpen} onClose={closeAgent} />
       </div>
-
-      {/* AI Agent panel — always mounted so conversation persists across navigations.
-          The panel renders null internally when closed, keeping the mount stable. */}
-      <AskVidyamargAgent isOpen={isAgentOpen} onClose={closeAgent} />
     </div>
   );
 }

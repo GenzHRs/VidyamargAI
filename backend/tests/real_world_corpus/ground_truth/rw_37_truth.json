@@ -1,0 +1,27 @@
+{
+  "test_id": "rw_37",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Kevin Flynn",
+    "email": "kevin.flynn@example.com",
+    "location": "Boston, MA"
+  },
+  "work_experience": [
+    {
+      "employer": "ENCOM Corporation",
+      "designation": "Security Architect",
+      "start_date": "2020",
+      "end_date": "Present",
+      "responsibilities": [
+        "Implemented grid access firewall protections preventing unauthorized system intrusion."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "MIT",
+      "degree": "BS in Electrical Engineering and Computer Science",
+      "graduation_year": "2018"
+    }
+  ]
+}

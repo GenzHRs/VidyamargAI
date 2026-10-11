@@ -1,0 +1,30 @@
+{
+  "test_id": "rw_21",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Howard Sterling",
+    "professional_title": "Chief Technology Officer",
+    "email": "howard.sterling@example.com",
+    "phone": "305-555-0144",
+    "location": "Miami, FL"
+  },
+  "professional_summary": "Chief Technology Officer with 15+ years scaling B2B SaaS ARR from $5M to $120M.",
+  "work_experience": [
+    {
+      "employer": "SaaS Velocity Corp",
+      "designation": "Chief Technology Officer",
+      "start_date": "2018",
+      "end_date": "Present",
+      "responsibilities": [
+        "Managed $35M annual engineering OPEX budget and 140 engineers globally."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Wharton School of the University of Pennsylvania",
+      "degree": "MBA",
+      "graduation_year": "2010"
+    }
+  ]
+}

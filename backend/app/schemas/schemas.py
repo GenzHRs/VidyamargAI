@@ -119,18 +119,6 @@ class CandidateResponse(BaseModel):
     class Config:
         from_attributes = True
 
-class CandidateHackathonUpdate(BaseModel):
-    hackathon_team: Optional[str] = None
-    assigned_mentor: Optional[str] = None
-    hackathon_problem: Optional[str] = None
-    hackathon_members: Optional[str] = None
-
-class AdminMessageCreate(BaseModel):
-    candidate_id: int
-    chat_id: str
-    sender: str
-    sender_name: str
-    text: str
 
 
 class JobCreate(BaseModel):
@@ -457,26 +445,6 @@ class CandidateJobsDashboardResponse(BaseModel):
     referral_opportunities: int
     company_career_jobs: int
 
-class AdminJobsDashboardResponse(BaseModel):
-    active_jobs: int
-    jobs_collected_today: int
-    hiring_posts_extracted: int
-    duplicate_jobs_removed: int
-    source_performance: List[dict]
-
-
-class TelegramSourceCreate(BaseModel):
-    channel_name: str
-    active: Optional[bool] = True
-
-class TelegramSourceResponse(BaseModel):
-    id: int
-    channel_name: str
-    active: bool
-    last_checked: Optional[datetime] = None
-
-    class Config:
-        from_attributes = True
 
 
 class ForgotPasswordRequest(BaseModel):
@@ -612,12 +580,6 @@ class AIMentorRiskResponse(BaseModel):
     reason: str
 
 
-class AIMentorAnalyticsResponse(BaseModel):
-    average_health_score: float
-    difficult_topics: List[dict]
-    most_requested_actions: List[dict]
-    total_artifacts_generated: int
-    engagement_rate: float
 
 
 # MCP Chat schemas (imported from mcp_schemas for router compatibility)

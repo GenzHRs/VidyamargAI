@@ -1,0 +1,49 @@
+{
+  "test_id": "rw_16",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Jonathan Reed",
+    "email": "jonathan.reed@example.com",
+    "phone": "(214) 555-0192",
+    "location": "Plano, TX"
+  },
+  "professional_summary": "Senior Backend Engineer with 9 years architecting resilient Java and Spring microservices.",
+  "work_experience": [
+    {
+      "employer": "Capital One",
+      "designation": "Lead Java Engineer",
+      "start_date": "2019",
+      "end_date": "Present",
+      "responsibilities": [
+        "Led cloud migration of real-time card authorization engine processing $12B annual volume."
+      ]
+    },
+    {
+      "employer": "JPMorgan Chase",
+      "designation": "Software Engineer",
+      "start_date": "2015",
+      "end_date": "2019",
+      "responsibilities": [
+        "Developed RESTful trading services handling 15,000 requests per second."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of North Texas",
+      "degree": "BS in Computer Science",
+      "graduation_year": "2015"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "Java",
+      "Spring Boot",
+      "Kafka",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "PostgreSQL"
+    ]
+  }
+}

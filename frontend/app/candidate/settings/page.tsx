@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useAuthStore } from "@/store/authStore";
 import { apiService } from "@/services/api";
+import { useQuery, keepPreviousData } from "@tanstack/react-query";
 import {
   Settings,
   User,
@@ -34,12 +35,16 @@ export default function SettingsPage() {
   });
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
-  const [profile, setProfile] = useState<any>(null);
+
+  const { data: profile = null } = useQuery({
+    queryKey: ["candidate", "profile"],
+    queryFn: () => apiService.getProfile(),
+    placeholderData: keepPreviousData,
+    staleTime: 60 * 1000,
+  });
+
   const [activeSection, setActiveSection] = useState<"profile" | "appearance" | "notifications" | "privacy">("profile");
 
-  useEffect(() => {
-    apiService.getProfile().then(setProfile).catch(() => {});
-  }, []);
 
   const applyTheme = (t: "dark" | "light") => {
     setTheme(t);

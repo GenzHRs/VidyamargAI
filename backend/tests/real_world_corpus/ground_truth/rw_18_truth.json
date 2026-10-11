@@ -1,0 +1,41 @@
+{
+  "test_id": "rw_18",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Trevor Noah",
+    "email": "trevor.noah@example.com",
+    "phone": "212-555-0199",
+    "location": "New York, NY"
+  },
+  "work_experience": [
+    {
+      "employer": "Vanguard Tech",
+      "designation": "Site Reliability Engineer",
+      "start_date": "2020",
+      "end_date": "Present",
+      "responsibilities": [
+        "Maintained 99.999% SLA across multi-region trading infrastructure."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "NYU",
+      "degree": "Bachelor of Science in Information Systems",
+      "graduation_year": "2019"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "AWS",
+      "Google Cloud",
+      "Terraform",
+      "Docker",
+      "Kubernetes",
+      "Datadog",
+      "PagerDuty",
+      "Chaos Engineering",
+      "Prometheus"
+    ]
+  }
+}

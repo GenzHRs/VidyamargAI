@@ -12,7 +12,6 @@ const getApiBaseUrl = (): string => {
   return "http://localhost:8000/api/v1";
 };
 
-const API_BASE_URL = getApiBaseUrl();
 
 function getCsrfToken(): string | null {
   if (typeof document === "undefined") return null;
@@ -33,6 +32,41 @@ function getAuthHeaders(): HeadersInit {
     headers["X-CSRF-Token"] = csrf;
   }
   return headers;
+}
+
+export async function fetchWithTimeout(
+  url: string,
+  options: RequestInit = {},
+  timeoutMs: number = 10000
+): Promise<Response> {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
+  let combinedSignal: AbortSignal = controller.signal;
+  if (options.signal) {
+    if (options.signal.aborted) {
+      clearTimeout(timeoutId);
+      throw new Error("Request was aborted");
+    }
+    options.signal.addEventListener("abort", () => {
+      controller.abort();
+    });
+  }
+
+  try {
+    const res = await fetch(url, {
+      ...options,
+      signal: combinedSignal,
+    });
+    return res;
+  } catch (error: any) {
+    if (error?.name === "AbortError") {
+      throw new Error(`Request timed out after ${timeoutMs / 1000}s`);
+    }
+    throw error;
+  } finally {
+    clearTimeout(timeoutId);
+  }
 }
 
 export interface PersonalInfo {
@@ -433,12 +467,17 @@ export interface JDOptimizeResponse {
 
 class ResumeCenterApiService {
   // ── TEMPLATES ─────────────────────────────────────────────────────────────
-  async getTemplates(): Promise<ResumeTemplateItem[]> {
+  async getTemplates(signal?: AbortSignal): Promise<ResumeTemplateItem[]> {
     try {
-      const res = await fetch(`${API_BASE_URL}/resume-templates`, {
-        headers: getAuthHeaders(),
-        credentials: "include",
-      });
+      const res = await fetchWithTimeout(
+        `${getApiBaseUrl()}/resume-templates`,
+        {
+          headers: getAuthHeaders(),
+          credentials: "include",
+          signal,
+        },
+        10000
+      );
       if (!res.ok) return [];
       return res.json();
     } catch (err) {
@@ -447,50 +486,67 @@ class ResumeCenterApiService {
     }
   }
 
-  async getTemplate(id: number): Promise<ResumeTemplateItem> {
-    const res = await fetch(`${API_BASE_URL}/resume-templates/${id}`, {
-      headers: getAuthHeaders(),
-      credentials: "include",
-    });
+  async getTemplate(id: number, signal?: AbortSignal): Promise<ResumeTemplateItem> {
+    const res = await fetchWithTimeout(
+      `${getApiBaseUrl()}/resume-templates/${id}`,
+      {
+        headers: getAuthHeaders(),
+        credentials: "include",
+        signal,
+      },
+      10000
+    );
     if (!res.ok) throw new Error("Failed to load resume template details");
     return res.json();
   }
 
   // ── RESUMES CRUD ──────────────────────────────────────────────────────────
-  async getResumes(search?: string, statusFilter?: string): Promise<ResumeItem[]> {
-    try {
-      const headers = getAuthHeaders() as Record<string, string>;
-      if (!headers["Authorization"]) {
-        return [];
-      }
-      const params = new URLSearchParams();
-      if (search) params.set("search", search);
-      if (statusFilter) params.set("status_filter", statusFilter);
-      const qs = params.toString() ? `?${params.toString()}` : "";
-
-      const res = await fetch(`${API_BASE_URL}/resumes${qs}`, {
-        headers,
-        credentials: "include",
-      });
-      if (!res.ok) {
-        if (res.status === 401 && typeof window !== "undefined") {
-          localStorage.removeItem("token");
-          window.location.href = "/login";
-        }
-        return [];
-      }
-      return res.json();
-    } catch (err) {
-      console.warn("getResumes fetch warning:", err);
+  async getResumes(search?: string, statusFilter?: string, signal?: AbortSignal): Promise<ResumeItem[]> {
+    const headers = getAuthHeaders() as Record<string, string>;
+    if (!headers["Authorization"]) {
       return [];
     }
+    const params = new URLSearchParams();
+    if (search) params.set("search", search);
+    if (statusFilter) params.set("status_filter", statusFilter);
+    const qs = params.toString() ? `?${params.toString()}` : "";
+
+    const res = await fetchWithTimeout(
+      `${getApiBaseUrl()}/resumes${qs}`,
+      {
+        headers,
+        credentials: "include",
+        signal,
+      },
+      10000
+    );
+
+    if (res.status === 401) {
+      if (typeof window !== "undefined") {
+        localStorage.removeItem("token");
+        window.location.href = "/login";
+      }
+      throw new Error("Session expired. Please log in again.");
+    }
+
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.detail || `Failed to fetch resumes from server (HTTP ${res.status})`);
+    }
+
+    return res.json();
   }
 
-  async getResume(id: number): Promise<ResumeItem> {
-    const res = await fetch(`${API_BASE_URL}/resumes/${id}`, {
-      headers: getAuthHeaders(),
-      credentials: "include",
-    });
+  async getResume(id: number, signal?: AbortSignal): Promise<ResumeItem> {
+    const res = await fetchWithTimeout(
+      `${getApiBaseUrl()}/resumes/${id}`,
+      {
+        headers: getAuthHeaders(),
+        credentials: "include",
+        signal,
+      },
+      10000
+    );
     if (!res.ok) throw new Error("Failed to load resume");
     return res.json();
   }
@@ -503,7 +559,7 @@ class ResumeCenterApiService {
     const headers = getAuthHeaders() as Record<string, string>;
     headers["Content-Type"] = "application/json";
 
-    const res = await fetch(`${API_BASE_URL}/resumes`, {
+    const res = await fetch(`${getApiBaseUrl()}/resumes`, {
       method: "POST",
       headers,
       credentials: "include",
@@ -530,7 +586,7 @@ class ResumeCenterApiService {
     const headers = getAuthHeaders() as Record<string, string>;
     headers["Content-Type"] = "application/json";
 
-    const res = await fetch(`${API_BASE_URL}/resumes/${id}`, {
+    const res = await fetch(`${getApiBaseUrl()}/resumes/${id}`, {
       method: "PATCH",
       headers,
       credentials: "include",
@@ -544,7 +600,7 @@ class ResumeCenterApiService {
   }
 
   async deleteResume(id: number): Promise<{ message: string; id: number }> {
-    const res = await fetch(`${API_BASE_URL}/resumes/${id}`, {
+    const res = await fetch(`${getApiBaseUrl()}/resumes/${id}`, {
       method: "DELETE",
       headers: getAuthHeaders(),
       credentials: "include",
@@ -589,7 +645,7 @@ class ResumeCenterApiService {
     const csrf = getCsrfToken();
     if (csrf) headers["X-CSRF-Token"] = csrf;
 
-    const res = await fetch(`${API_BASE_URL}/resumes/upload`, {
+    const res = await fetch(`${getApiBaseUrl()}/resumes/upload`, {
       method: "POST",
       headers,
       credentials: "include",
@@ -622,7 +678,7 @@ class ResumeCenterApiService {
     structured_data: ComprehensiveExtractedProfile;
     normalized?: any;
   }> {
-    const res = await fetch(`${API_BASE_URL}/resumes/${resumeId}/extraction`, {
+    const res = await fetch(`${getApiBaseUrl()}/resumes/${resumeId}/extraction`, {
       headers: getAuthHeaders(),
       credentials: "include",
     });
@@ -643,7 +699,7 @@ class ResumeCenterApiService {
     const headers = getAuthHeaders() as Record<string, string>;
     headers["Content-Type"] = "application/json";
 
-    const res = await fetch(`${API_BASE_URL}/resumes/${resumeId}/extraction/verify`, {
+    const res = await fetch(`${getApiBaseUrl()}/resumes/${resumeId}/extraction/verify`, {
       method: "PUT",
       headers,
       credentials: "include",
@@ -664,7 +720,7 @@ class ResumeCenterApiService {
     profile_data?: ComprehensiveExtractedProfile;
     template_compatible_data?: StructuredResumeData;
   }> {
-    const res = await fetch(`${API_BASE_URL}/candidate/profile-data`, {
+    const res = await fetch(`${getApiBaseUrl()}/candidate/profile-data`, {
       headers: getAuthHeaders(),
       credentials: "include",
     });
@@ -674,7 +730,7 @@ class ResumeCenterApiService {
 
   // ── VERSIONS ──────────────────────────────────────────────────────────────
   async getVersions(resumeId: number): Promise<ResumeVersionItem[]> {
-    const res = await fetch(`${API_BASE_URL}/resumes/${resumeId}/versions`, {
+    const res = await fetch(`${getApiBaseUrl()}/resumes/${resumeId}/versions`, {
       headers: getAuthHeaders(),
       credentials: "include",
     });
@@ -689,7 +745,7 @@ class ResumeCenterApiService {
     const headers = getAuthHeaders() as Record<string, string>;
     headers["Content-Type"] = "application/json";
 
-    const res = await fetch(`${API_BASE_URL}/resumes/${resumeId}/versions`, {
+    const res = await fetch(`${getApiBaseUrl()}/resumes/${resumeId}/versions`, {
       method: "POST",
       headers,
       credentials: "include",
@@ -703,7 +759,7 @@ class ResumeCenterApiService {
     resumeId: number,
     versionId: number
   ): Promise<{ message: string; new_version_id: number; new_version_number: number }> {
-    const res = await fetch(`${API_BASE_URL}/resumes/${resumeId}/versions/${versionId}/restore`, {
+    const res = await fetch(`${getApiBaseUrl()}/resumes/${resumeId}/versions/${versionId}/restore`, {
       method: "POST",
       headers: getAuthHeaders(),
       credentials: "include",
@@ -723,7 +779,7 @@ class ResumeCenterApiService {
     latest_tex_url?: string;
     pdf_size_bytes?: number;
   }> {
-    const res = await fetch(`${API_BASE_URL}/resumes/${resumeId}/compile`, {
+    const res = await fetch(`${getApiBaseUrl()}/resumes/${resumeId}/compile`, {
       method: "POST",
       headers: getAuthHeaders(),
       credentials: "include",
@@ -737,8 +793,8 @@ class ResumeCenterApiService {
 
   async downloadPdfBlob(resumeId: number, isPreview = false): Promise<Blob> {
     const endpoint = isPreview
-      ? `${API_BASE_URL}/resumes/${resumeId}/preview/pdf`
-      : `${API_BASE_URL}/resumes/${resumeId}/download/pdf`;
+      ? `${getApiBaseUrl()}/resumes/${resumeId}/preview/pdf`
+      : `${getApiBaseUrl()}/resumes/${resumeId}/download/pdf`;
     const res = await fetch(endpoint, {
       headers: getAuthHeaders(),
       credentials: "include",
@@ -752,7 +808,7 @@ class ResumeCenterApiService {
   }
 
   async downloadLatexText(resumeId: number): Promise<string> {
-    const res = await fetch(`${API_BASE_URL}/resumes/${resumeId}/download/latex`, {
+    const res = await fetch(`${getApiBaseUrl()}/resumes/${resumeId}/download/latex`, {
       headers: getAuthHeaders(),
       credentials: "include",
     });
@@ -770,7 +826,7 @@ class ResumeCenterApiService {
     const headers = getAuthHeaders() as Record<string, string>;
     headers["Content-Type"] = "application/json";
 
-    const res = await fetch(`${API_BASE_URL}/resume-tailoring/analyze-jd`, {
+    const res = await fetch(`${getApiBaseUrl()}/resume-tailoring/analyze-jd`, {
       method: "POST",
       headers,
       credentials: "include",
@@ -801,7 +857,7 @@ class ResumeCenterApiService {
     const headers = getAuthHeaders() as Record<string, string>;
     headers["Content-Type"] = "application/json";
 
-    const res = await fetch(`${API_BASE_URL}/resume-tailoring/generate`, {
+    const res = await fetch(`${getApiBaseUrl()}/resume-tailoring/generate`, {
       method: "POST",
       headers,
       credentials: "include",
@@ -826,7 +882,7 @@ class ResumeCenterApiService {
     const headers = getAuthHeaders() as Record<string, string>;
     headers["Content-Type"] = "application/json";
 
-    const res = await fetch(`${API_BASE_URL}/resume-tailoring/${resumeId}/approve`, {
+    const res = await fetch(`${getApiBaseUrl()}/resume-tailoring/${resumeId}/approve`, {
       method: "POST",
       headers,
       credentials: "include",
@@ -840,7 +896,7 @@ class ResumeCenterApiService {
   }
 
   async getSourceResumeForTailoring(resumeId: number): Promise<SourceResumeForTailoring> {
-    const res = await fetch(`${API_BASE_URL}/resume-tailoring/source/${resumeId}`, {
+    const res = await fetch(`${getApiBaseUrl()}/resume-tailoring/source/${resumeId}`, {
       headers: getAuthHeaders(),
       credentials: "include",
     });
@@ -859,7 +915,7 @@ class ResumeCenterApiService {
     const headers = getAuthHeaders() as Record<string, string>;
     headers["Content-Type"] = "application/json";
 
-    const res = await fetch(`${API_BASE_URL}/resume-tailoring/render-template`, {
+    const res = await fetch(`${getApiBaseUrl()}/resume-tailoring/render-template`, {
       method: "POST",
       headers,
       credentials: "include",
@@ -873,11 +929,11 @@ class ResumeCenterApiService {
   }
 
   getTailoredPreviewUrl(sourceResumeId: number, templateId: number): string {
-    return `${API_BASE_URL}/resume-tailoring/preview/${sourceResumeId}/${templateId}`;
+    return `${getApiBaseUrl()}/resume-tailoring/preview/${sourceResumeId}/${templateId}`;
   }
 
   async fetchTailoredPreviewBlob(sourceResumeId: number, templateId: number): Promise<Blob> {
-    const res = await fetch(`${API_BASE_URL}/resume-tailoring/preview/${sourceResumeId}/${templateId}`, {
+    const res = await fetch(`${getApiBaseUrl()}/resume-tailoring/preview/${sourceResumeId}/${templateId}`, {
       headers: getAuthHeaders(),
       credentials: "include",
     });
@@ -897,7 +953,7 @@ class ResumeCenterApiService {
     const headers = getAuthHeaders() as Record<string, string>;
     headers["Content-Type"] = "application/json";
 
-    const res = await fetch(`${API_BASE_URL}/resume-tailoring/save`, {
+    const res = await fetch(`${getApiBaseUrl()}/resume-tailoring/save`, {
       method: "POST",
       headers,
       credentials: "include",
@@ -919,7 +975,7 @@ class ResumeCenterApiService {
     const headers = getAuthHeaders() as Record<string, string>;
     headers["Content-Type"] = "application/json";
 
-    const res = await fetch(`${API_BASE_URL}/resumes/ai-enhance`, {
+    const res = await fetch(`${getApiBaseUrl()}/resumes/ai-enhance`, {
       method: "POST",
       headers,
       credentials: "include",
@@ -937,7 +993,7 @@ class ResumeCenterApiService {
     const headers = getAuthHeaders() as Record<string, string>;
     headers["Content-Type"] = "application/json";
 
-    const res = await fetch(`${API_BASE_URL}/resume/optimize`, {
+    const res = await fetch(`${getApiBaseUrl()}/resume/optimize`, {
       method: "POST",
       headers,
       credentials: "include",
@@ -951,7 +1007,7 @@ class ResumeCenterApiService {
   }
 
   async getOptimization(id: number): Promise<JDOptimizeResponse> {
-    const res = await fetch(`${API_BASE_URL}/resume/optimize/${id}`, {
+    const res = await fetch(`${getApiBaseUrl()}/resume/optimize/${id}`, {
       headers: getAuthHeaders(),
       credentials: "include",
     });
@@ -960,11 +1016,11 @@ class ResumeCenterApiService {
   }
 
   getOptimizedPdfUrl(optimizationId: number): string {
-    return `${API_BASE_URL}/resume/optimize/${optimizationId}/download/pdf`;
+    return `${getApiBaseUrl()}/resume/optimize/${optimizationId}/download/pdf`;
   }
 
   getOptimizedDocxUrl(optimizationId: number): string {
-    return `${API_BASE_URL}/resume/optimize/${optimizationId}/download/docx`;
+    return `${getApiBaseUrl()}/resume/optimize/${optimizationId}/download/docx`;
   }
 
   async saveOptimizedResume(optimizationId: number, data: {
@@ -975,7 +1031,7 @@ class ResumeCenterApiService {
     const headers = getAuthHeaders() as Record<string, string>;
     headers["Content-Type"] = "application/json";
 
-    const res = await fetch(`${API_BASE_URL}/resume/optimize/${optimizationId}/save-as-resume`, {
+    const res = await fetch(`${getApiBaseUrl()}/resume/optimize/${optimizationId}/save-as-resume`, {
       method: "POST",
       headers,
       credentials: "include",
@@ -990,7 +1046,7 @@ class ResumeCenterApiService {
 
   async prepareApplication(optimizationId: number): Promise<PreparedApplication> {
     const headers = getAuthHeaders() as Record<string, string>;
-    const res = await fetch(`${API_BASE_URL}/resume/optimize/${optimizationId}/prepare-application`, {
+    const res = await fetch(`${getApiBaseUrl()}/resume/optimize/${optimizationId}/prepare-application`, {
       method: "POST",
       headers,
       credentials: "include",
@@ -1005,7 +1061,7 @@ class ResumeCenterApiService {
   async confirmApplication(optimizationId: number, data: { confirmed_fields?: Record<string, any>; user_acknowledged: boolean }): Promise<{ status: string; message: string; prepared_application: PreparedApplication }> {
     const headers = getAuthHeaders() as Record<string, string>;
     headers["Content-Type"] = "application/json";
-    const res = await fetch(`${API_BASE_URL}/resume/optimize/${optimizationId}/confirm-application`, {
+    const res = await fetch(`${getApiBaseUrl()}/resume/optimize/${optimizationId}/confirm-application`, {
       method: "POST",
       headers,
       credentials: "include",
@@ -1019,7 +1075,7 @@ class ResumeCenterApiService {
   }
 
   async getApplicationResumeSnapshot(applicationId: number): Promise<JDOptimizeResponse> {
-    const res = await fetch(`${API_BASE_URL}/applications/${applicationId}/resume-snapshot`, {
+    const res = await fetch(`${getApiBaseUrl()}/applications/${applicationId}/resume-snapshot`, {
       headers: getAuthHeaders(),
       credentials: "include",
     });
@@ -1033,7 +1089,7 @@ class ResumeCenterApiService {
   async approveOptimization(optimizationId: number, data: { user_acknowledged: boolean; notes?: string; accepted_warnings?: string[] }): Promise<{ status: string; message: string; optimization_id: number; approved_at: string; approval_hash: string; optimization: JDOptimizeResponse }> {
     const headers = getAuthHeaders() as Record<string, string>;
     headers["Content-Type"] = "application/json";
-    const res = await fetch(`${API_BASE_URL}/resume/optimize/${optimizationId}/approve`, {
+    const res = await fetch(`${getApiBaseUrl()}/resume/optimize/${optimizationId}/approve`, {
       method: "POST",
       headers,
       credentials: "include",

@@ -46,7 +46,15 @@ export default function ResumeIntelligenceDashboard() {
   // Layout and Tab States
   const [activeTab, setActiveTab] = useState<string>("overview");
   const [activeDrawerTab, setActiveDrawerTab] = useState<string>("personal");
-  const [loading, setLoading] = useState(true);
+  // Career Intelligence Data States - Synchronous 0ms load from cache
+  const cachedIntel = typeof window !== "undefined" ? (() => {
+    try {
+      const c = localStorage.getItem("cache_resume_intelligence");
+      return c ? JSON.parse(c) : null;
+    } catch { return null; }
+  })() : null;
+
+  const [loading, setLoading] = useState(false);
   const [uploading, setUploading] = useState(false);
   const [uploadStep, setUploadStep] = useState(0);
   const [uploadProgress, setUploadProgress] = useState(0);
@@ -60,17 +68,16 @@ export default function ResumeIntelligenceDashboard() {
   const [showPreviewModal, setShowPreviewModal] = useState(false);
   const [analysisLoading, setAnalysisLoading] = useState(false);
 
-  // Career Intelligence Data States
-  const [profile, setProfile] = useState<any>(null);
-  const [versions, setVersions] = useState<any[]>([]);
-  const [careerDna, setCareerDna] = useState<any>(null);
-  const [skillsGraph, setSkillsGraph] = useState<any>(null);
-  const [roles, setRoles] = useState<any>(null);
-  const [careerPaths, setCareerPaths] = useState<any[]>([]);
-  const [skillGaps, setSkillGaps] = useState<any>(null);
-  const [opportunities, setOpportunities] = useState<any>(null);
-  const [marketIntel, setMarketIntel] = useState<any>(null);
-  const [improvements, setImprovements] = useState<any>(null);
+  const [profile, setProfile] = useState<any>(cachedIntel?.profile || null);
+  const [versions, setVersions] = useState<any[]>(cachedIntel?.versions || []);
+  const [careerDna, setCareerDna] = useState<any>(cachedIntel?.careerDna || null);
+  const [skillsGraph, setSkillsGraph] = useState<any>(cachedIntel?.skillsGraph || null);
+  const [roles, setRoles] = useState<any>(cachedIntel?.roles || null);
+  const [careerPaths, setCareerPaths] = useState<any[]>(cachedIntel?.careerPaths || []);
+  const [skillGaps, setSkillGaps] = useState<any>(cachedIntel?.skillGaps || null);
+  const [opportunities, setOpportunities] = useState<any>(cachedIntel?.opportunities || null);
+  const [marketIntel, setMarketIntel] = useState<any>(cachedIntel?.marketIntel || null);
+  const [improvements, setImprovements] = useState<any>(cachedIntel?.improvements || null);
 
   // Loading Job Agent
   const [agentCreating, setAgentCreating] = useState(false);
@@ -104,27 +111,54 @@ export default function ResumeIntelligenceDashboard() {
       setVersions(resumeList || []);
 
       if (resumeList && resumeList.length > 0) {
-        const [
-          profData,
-          dnaData,
-          skillsData,
-          rolesData,
-          pathsData,
-          gapsData,
-          oppsData,
-          marketData,
-          impData
-        ] = await Promise.all([
-          apiService.getResumeProfile(),
-          apiService.getResumeCareerDna(),
-          apiService.getResumeSkills(),
-          apiService.getResumeRoles(),
-          apiService.getResumeCareerPaths(),
-          apiService.getResumeSkillGaps(),
-          apiService.getResumeOpportunities(),
-          apiService.getResumeMarketIntelligence(),
-          apiService.getResumeImprovements()
-        ]);
+        let bundle: any = null;
+        try {
+          bundle = await apiService.getResumeIntelligenceBundle();
+        } catch {
+          // Fallback to individual endpoints if bundle fails
+          const [
+            profData,
+            dnaData,
+            skillsData,
+            rolesData,
+            pathsData,
+            gapsData,
+            oppsData,
+            marketData,
+            impData
+          ] = await Promise.all([
+            apiService.getResumeProfile().catch(() => null),
+            apiService.getResumeCareerDna().catch(() => null),
+            apiService.getResumeSkills().catch(() => null),
+            apiService.getResumeRoles().catch(() => null),
+            apiService.getResumeCareerPaths().catch(() => null),
+            apiService.getResumeSkillGaps().catch(() => null),
+            apiService.getResumeOpportunities().catch(() => null),
+            apiService.getResumeMarketIntelligence().catch(() => null),
+            apiService.getResumeImprovements().catch(() => null)
+          ]);
+          bundle = {
+            profile: profData,
+            career_dna: dnaData,
+            skills: skillsData,
+            roles: rolesData,
+            career_paths: pathsData,
+            skill_gaps: gapsData,
+            opportunities: oppsData,
+            market_intelligence: marketData,
+            improvements: impData,
+          };
+        }
+
+        const profData = bundle.profile;
+        const dnaData = bundle.career_dna;
+        const skillsData = bundle.skills;
+        const rolesData = bundle.roles;
+        const pathsData = bundle.career_paths;
+        const gapsData = bundle.skill_gaps;
+        const oppsData = bundle.opportunities;
+        const marketData = bundle.market_intelligence;
+        const impData = bundle.improvements;
 
         setProfile(profData);
         setCareerDna(dnaData);
@@ -465,17 +499,6 @@ export default function ResumeIntelligenceDashboard() {
     
     return candidateSkills.slice(0, 3);
   };
-
-  if (loading && !uploading) {
-    return (
-      <div className="flex-1 min-h-screen bg-slate-955 text-slate-100 p-6 md:p-8 flex items-center justify-center">
-        <div className="text-center space-y-4">
-          <Loader2 className="animate-spin text-violet-500 mx-auto" size={40} />
-          <p className="text-sm font-semibold text-slate-400">Loading Career Intelligence Operating System...</p>
-        </div>
-      </div>
-    );
-  }
 
   if (versions.length === 0) {
     return (

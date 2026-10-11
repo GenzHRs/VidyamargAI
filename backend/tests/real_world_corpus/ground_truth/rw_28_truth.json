@@ -1,0 +1,29 @@
+{
+  "test_id": "rw_28",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "ISABELLA ROSSI",
+    "professional_title": "Lead Graphic & Brand Designer",
+    "email": "isabella.rossi@example.com",
+    "location": "Milan, Italy"
+  },
+  "professional_summary": "Creative director with 8 years crafting award-winning corporate brand identities across Europe.",
+  "work_experience": [
+    {
+      "employer": "Armani Group",
+      "designation": "Senior Art Director",
+      "start_date": "2019",
+      "end_date": "Present",
+      "responsibilities": [
+        "Directed international luxury campaigns generating 40M social media impressions."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Politecnico di Milano",
+      "degree": "Master of Design",
+      "graduation_year": "2017"
+    }
+  ]
+}

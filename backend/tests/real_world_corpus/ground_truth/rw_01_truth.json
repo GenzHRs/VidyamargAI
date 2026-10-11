@@ -1,0 +1,76 @@
+{
+  "test_id": "rw_01",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Sarah Jenkins",
+    "professional_title": "Senior Full Stack Engineer",
+    "email": "sarah.jenkins@example.com",
+    "phone": "+1-512-555-0144",
+    "location": "Austin, TX",
+    "github": "https://github.com/sjenkins"
+  },
+  "professional_summary": "Results-driven engineer with 7+ years developing scalable distributed cloud services and reactive frontend SPAs.",
+  "work_experience": [
+    {
+      "employer": "Apex Cloud Technologies",
+      "designation": "Staff Software Engineer",
+      "start_date": "2021",
+      "end_date": "Present",
+      "responsibilities": [
+        "Architected event-driven microservices ingestion pipeline processing 25M events daily with 99.99% uptime.",
+        "Mentored 8 junior and mid-level engineers across distributed design patterns and code quality standards."
+      ]
+    },
+    {
+      "employer": "Nexus Core Systems",
+      "designation": "Software Engineer",
+      "start_date": "2018",
+      "end_date": "2021",
+      "responsibilities": [
+        "Implemented reactive dashboard modules in React and TypeScript reducing initial load times by 42%."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Distributed Cache Mesh",
+      "start_date": "2023",
+      "bullets": [
+        "Designed decentralized in-memory caching cluster using Go, Raft consensus, and gRPC."
+      ],
+      "technologies": [
+        "Go",
+        "gRPC",
+        "Raft"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Texas at Austin",
+      "degree": "Bachelor of Science in Computer Science",
+      "graduation_year": "2018",
+      "gpa": "3.85"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "Python",
+      "Go",
+      "TypeScript",
+      "Java",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "PostgreSQL",
+      "Redis"
+    ]
+  },
+  "hyperlinks": [
+    {
+      "url": "https://github.com/sjenkins",
+      "label": "GitHub: github.com/sjenkins"
+    }
+  ]
+}

@@ -147,6 +147,9 @@ def associate_links_with_resume_entities(
     
     Returns updated (structured_data, enriched_hyperlinks).
     """
+    if isinstance(hyperlinks, dict) and isinstance(structured_data, list):
+        hyperlinks, structured_data = structured_data, hyperlinks
+
     if not hyperlinks or not isinstance(structured_data, dict):
         return structured_data, hyperlinks or []
 
@@ -173,45 +176,71 @@ def associate_links_with_resume_entities(
         nearby = (link.get("nearby_text") or "").lower()
         associated = None
 
+        # 0. Check if already explicitly associated by layout parser
+        if link.get("associated_entity"):
+            associated = link["associated_entity"]
+
         # 1. Personal Profile Links
-        if l_type == "linkedin" and not pi.get("linkedin_url"):
+        if not associated and l_type == "linkedin" and not pi.get("linkedin_url"):
             pi["linkedin_url"] = norm_u
             associated = "personal_info.linkedin_url"
-        elif l_type == "github" and not pi.get("github_url"):
+        elif not associated and l_type == "github" and not pi.get("github_url") and norm_u.count("/") <= 4:
             pi["github_url"] = norm_u
             associated = "personal_info.github_url"
-        elif l_type == "portfolio" and not pi.get("portfolio_url"):
+        elif not associated and l_type == "portfolio" and not pi.get("portfolio_url"):
             pi["portfolio_url"] = norm_u
             associated = "personal_info.portfolio_url"
-        elif l_type == "email" and not pi.get("email"):
+        elif not associated and l_type == "email" and not pi.get("email"):
             clean_email = norm_u.replace("mailto:", "")
             pi["email"] = clean_email
             associated = "personal_info.email"
         
         # 2. Project Link Association
-        if not associated and l_type in ("project_repo", "project_demo", "other"):
+        if not associated and l_type in ("project_repo", "project_demo", "other", "github"):
             projs = structured_data.get("projects") or []
             for p in projs:
-                p_name = (p.get("name") or p.get("title") or "").lower()
-                # Check if link was near project name or project already has matching name
-                if p_name and (p_name in nearby or p_name in label.lower() or nearby in p_name):
+                p_name = (p.get("name") or p.get("title") or "").strip().lower()
+                if not p_name or p_name == "project":
+                    continue
+                # Match via nearby text, label, or URL slug
+                slug_p = re.sub(r"[^\w]+", "-", p_name)
+                url_path = norm_u.lower()
+                bullets_text = " ".join(p.get("bullets", []) or p.get("responsibilities", [])).lower()
+                
+                name_match = (p_name in nearby or p_name in label.lower() or nearby in p_name)
+                slug_match = (len(slug_p) > 3 and (slug_p in url_path or slug_p.replace("-", "") in url_path))
+                bullet_match = (label.lower() in bullets_text if len(label) > 4 else False) or (norm_u.lower() in bullets_text)
+
+                if name_match or slug_match or bullet_match:
                     if not p.get("link"):
                         p["link"] = norm_u
+                        p["url"] = norm_u
                         associated = f"projects[{p.get('name')}].link"
                         break
 
         # 3. Certification Credential Link Association
-        if not associated and l_type == "credential":
+        if not associated and l_type in ("credential", "other"):
             certs = structured_data.get("certifications") or []
             for c in certs:
-                c_name = (c.get("name") or "").lower()
-                if c_name and (c_name in nearby or c_name in label.lower()):
+                c_name = (c.get("name") or "").strip().lower()
+                if c_name and (c_name in nearby or c_name in label.lower() or any(w in norm_u.lower() for w in c_name.split() if len(w) > 4)):
                     if not c.get("credential_url"):
                         c["credential_url"] = norm_u
                         associated = f"certifications[{c.get('name')}].credential_url"
                         break
 
-        # 4. Fallback: Add to Custom Links if relevant and unique
+        # 4. Publication Link Association
+        if not associated and any(k in norm_u.lower() for k in ("doi.org", "arxiv.org", "ieeexplore", "acm.org", "springer.com", "researchgate")):
+            pubs = structured_data.get("publications") or []
+            for pub in pubs:
+                pub_title = (pub.get("title") or "").strip().lower()
+                if pub_title and (pub_title in nearby or pub_title in label.lower()):
+                    if not pub.get("url"):
+                        pub["url"] = norm_u
+                        associated = f"publications[{pub.get('title')}].url"
+                        break
+
+        # 5. Fallback: Add to Custom Links if relevant and unique
         if not associated and norm_u not in seen_urls and l_type not in ("email", "phone"):
             pi["custom_links"].append({"label": label, "url": norm_u})
             seen_urls.add(norm_u)

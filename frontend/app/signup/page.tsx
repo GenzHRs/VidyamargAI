@@ -14,7 +14,7 @@ import { useGlobalTheme } from "@/utils/themeUtils";
 
 export default function CandidateSignup() {
   const router = useRouter();
-  const { login, isAuthenticated, initialize } = useAuthStore();
+  const { login, isAuthenticated, initialize, resumeDevMode } = useAuthStore();
   
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -24,13 +24,36 @@ export default function CandidateSignup() {
   const [showPassword, setShowPassword] = useState(false);
   const { theme, toggleTheme } = useGlobalTheme();
 
+  const isTestingModeConfigured =
+    process.env.NEXT_PUBLIC_DEV_AUTH_BYPASS === "true" ||
+    process.env.NEXT_PUBLIC_DEV_MODE === "true" ||
+    process.env.NEXT_PUBLIC_DEV_AUTH_BYPASS === "1" ||
+    process.env.NEXT_PUBLIC_DEV_MODE === "1";
+
+  const [isExited, setIsExited] = useState(false);
+
   useEffect(() => {
-    initialize();
-  }, [initialize]);
+    if (typeof window !== "undefined") {
+      const exited =
+        sessionStorage.getItem("disable_dev_mode") === "true" ||
+        sessionStorage.getItem("disable_testing_mode") === "true";
+      setIsExited(exited);
+
+      if (isTestingModeConfigured && !exited) {
+        resumeDevMode().then((ok) => {
+          if (ok) {
+            router.replace("/candidate/dashboard");
+          }
+        });
+      } else {
+        initialize();
+      }
+    }
+  }, [isTestingModeConfigured, resumeDevMode, initialize, router]);
 
   useEffect(() => {
     if (isAuthenticated) {
-      router.push("/candidate");
+      router.replace("/candidate/dashboard");
     }
   }, [isAuthenticated, router]);
 
@@ -62,6 +85,30 @@ export default function CandidateSignup() {
       setLoading(false);
     }
   };
+
+  if (isTestingModeConfigured && !isExited && !isAuthenticated) {
+    return (
+      <main className="min-h-screen bg-background flex flex-col items-center justify-center font-sans text-foreground">
+        <div className="flex flex-col items-center gap-5 p-8 bg-card border border-border rounded-3xl shadow-lg max-w-sm text-center">
+          <div className="w-10 h-10 rounded-full border-2 border-amber-500 border-t-transparent animate-spin" />
+          <div>
+            <h2 className="text-base font-bold text-foreground">Testing Mode Active</h2>
+            <p className="text-xs text-muted-foreground mt-1">Connecting test candidate session and opening dashboard...</p>
+          </div>
+          <button
+            onClick={() => {
+              sessionStorage.setItem("disable_testing_mode", "true");
+              sessionStorage.setItem("disable_dev_mode", "true");
+              setIsExited(true);
+            }}
+            className="text-[11px] text-amber-600 dark:text-amber-400 hover:underline font-semibold mt-2 cursor-pointer"
+          >
+            Cancel and open standard registration form
+          </button>
+        </div>
+      </main>
+    );
+  }
 
   return (
     <main className="min-h-screen lg:h-screen lg:overflow-hidden bg-background text-foreground flex relative font-sans">
@@ -201,6 +248,31 @@ export default function CandidateSignup() {
                 Join VidyamargAI to access custom LMS courses, assessments, and AI-led interviews.
               </p>
             </div>
+
+            {isTestingModeConfigured && (
+              <div className="p-3 bg-amber-500/10 border border-amber-500/30 rounded-xl mb-4 text-center">
+                <p className="text-xs text-amber-600 dark:text-amber-400 font-semibold mb-2">
+                  🛠️ Testing Mode Available
+                </p>
+                <Button
+                  type="button"
+                  variant="outline"
+                  onClick={async () => {
+                    setLoading(true);
+                    const ok = await resumeDevMode();
+                    if (ok) {
+                      router.replace("/candidate/dashboard");
+                    } else {
+                      setError("Failed to initialize test candidate session.");
+                    }
+                    setLoading(false);
+                  }}
+                  className="w-full text-xs font-bold border-amber-500/40 text-amber-700 dark:text-amber-300 hover:bg-amber-500/20"
+                >
+                  ⚡ Enter via Testing Mode (Test Candidate)
+                </Button>
+              </div>
+            )}
 
             <form onSubmit={handleSubmit} className="flex flex-col gap-4 lg:gap-3 xl:gap-4">
               {error && (

@@ -23,7 +23,7 @@ from fastapi import (
 )
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, joinedload, selectinload
 
 from app.core.config import settings
 from app.core.database import get_db
@@ -320,6 +320,9 @@ def list_candidate_resumes(
     query = db.query(Resume).filter(
         Resume.candidate_id == target_candidate_id,
         Resume.deleted_at == None
+    ).options(
+        joinedload(Resume.template),
+        selectinload(Resume.versions)
     )
 
     if search:
@@ -331,7 +334,7 @@ def list_candidate_resumes(
 
     response_list = []
     for r in resumes:
-        latest_version = db.query(ResumeVersion).filter(ResumeVersion.resume_id == r.id).order_by(ResumeVersion.version_number.desc()).first()
+        latest_version = r.versions[0] if r.versions else None
         response_list.append({
             "id": r.id,
             "title": r.title,
@@ -397,8 +400,8 @@ def convert_to_template_payload(extracted: Dict[str, Any]) -> Dict[str, Any]:
         bullets = list(e.get("responsibilities", []) or []) + list(e.get("achievements", []) or [])
         if not bullets and e.get("original_text"):
             bullets = [e.get("original_text")]
-        title = e.get("designation") or e.get("title") or e.get("role") or e.get("job_title") or "Software Engineer"
-        company = e.get("employer") or e.get("company") or "Company"
+        title = e.get("designation") or e.get("title") or e.get("role") or e.get("job_title") or ""
+        company = e.get("employer") or e.get("company") or ""
         exp_list.append({
             "title": title,
             "designation": title,
@@ -407,15 +410,15 @@ def convert_to_template_payload(extracted: Dict[str, Any]) -> Dict[str, Any]:
             "location": e.get("employment_location") or e.get("location") or "",
             "start_date": e.get("start_date") or "",
             "end_date": e.get("end_date") or ("Present" if e.get("is_current") else ""),
-            "bullets": bullets or ["Key contributor to team deliverables."]
+            "bullets": bullets or []
         })
 
     # Education
     edu_list = []
     for ed in extracted.get("education") or []:
         edu_list.append({
-            "degree": ed.get("degree") or "Bachelor of Technology",
-            "institution": ed.get("institution") or "University",
+            "degree": ed.get("degree") or "",
+            "institution": ed.get("institution") or "",
             "location": ed.get("location") or "",
             "graduation_year": ed.get("graduation_year") or ed.get("end_date") or "",
             "gpa": ed.get("grade") or ""
@@ -427,16 +430,16 @@ def convert_to_template_payload(extracted: Dict[str, Any]) -> Dict[str, Any]:
         norm_p = canonicalize_project(p)
         proj_link = norm_p.get("link") or p.get("link") or p.get("repo_url") or p.get("demo_url") or ""
         proj_list.append({
-            "name": norm_p.get("name") or "Project",
-            "title": norm_p.get("name") or "Project",
+            "name": norm_p.get("name") or "",
+            "title": norm_p.get("name") or "",
             "tech_stack": norm_p.get("tech_stack") or "",
             "technologies": norm_p.get("technologies") or [],
             "start_date": norm_p.get("start_date") or "",
             "end_date": norm_p.get("end_date") or "",
             "dates": norm_p.get("dates") or "",
             "description": norm_p.get("description"),
-            "bullets": norm_p.get("bullets") or ["Designed and implemented project functionality."],
-            "responsibilities": norm_p.get("bullets") or ["Designed and implemented project functionality."],
+            "bullets": norm_p.get("bullets") or [],
+            "responsibilities": norm_p.get("bullets") or [],
             "features": [],
             "link": proj_link,
             "repo_url": norm_p.get("repo_url") or p.get("repo_url") or "",
@@ -469,7 +472,7 @@ def convert_to_template_payload(extracted: Dict[str, Any]) -> Dict[str, Any]:
 
     return {
         "personal_info": {
-            "full_name": pi.get("full_name") or pi.get("name") or "Candidate",
+            "full_name": pi.get("full_name") or pi.get("name") or "",
             "professional_title": pi.get("professional_title") or pi.get("title") or "",
             "title": pi.get("professional_title") or pi.get("title") or "",
             "email": pi.get("email") or "",
@@ -713,8 +716,8 @@ def sync_extraction_to_database(
     for idx, exp in enumerate(structured_data.get("work_experience") or []):
         db.add(ResumeExperience(
             resume_id=resume.id,
-            employer=exp.get("employer") or "Company",
-            designation=exp.get("designation") or "Role",
+            employer=exp.get("employer") or exp.get("company") or "",
+            designation=exp.get("designation") or exp.get("role") or "",
             employment_location=exp.get("employment_location"),
             start_date=exp.get("start_date"),
             end_date=exp.get("end_date"),
@@ -733,9 +736,9 @@ def sync_extraction_to_database(
     for idx, edu in enumerate(structured_data.get("education") or []):
         db.add(ResumeEducation(
             resume_id=resume.id,
-            degree=edu.get("degree") or "Degree",
+            degree=edu.get("degree") or "",
             field_of_study=edu.get("field_of_study"),
-            institution=edu.get("institution") or "University",
+            institution=edu.get("institution") or "",
             location=edu.get("location"),
             start_date=edu.get("start_date"),
             end_date=edu.get("end_date"),
@@ -753,7 +756,7 @@ def sync_extraction_to_database(
         canon_p = canonicalize_project(proj)
         db.add(ResumeProject(
             resume_id=resume.id,
-            name=canon_p.get("name") or canon_p.get("title") or "Project",
+            name=canon_p.get("name") or canon_p.get("title") or "",
             description=canon_p.get("description"),
             problem=canon_p.get("problem"),
             solution=canon_p.get("solution"),

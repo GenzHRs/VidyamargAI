@@ -142,19 +142,19 @@ def test_candidate_admin_access_separation(environment):
     owner_token = create_access_token(owner.email, "candidate")
     admin_token = create_access_token(admin.email, "admin")
 
-    # Candidate attempting admin endpoint
+    # Candidate attempting removed admin endpoint -> 404
     candidate_resp = client.get(
         "/api/v1/admin/dashboard",
         headers={"Authorization": f"Bearer {owner_token}"}
     )
-    assert candidate_resp.status_code == 403
+    assert candidate_resp.status_code == 404
 
-    # Admin accessing admin endpoint
+    # Admin accessing removed admin endpoint -> 404
     admin_resp = client.get(
         "/api/v1/admin/dashboard",
         headers={"Authorization": f"Bearer {admin_token}"}
     )
-    assert admin_resp.status_code == 200
+    assert admin_resp.status_code == 404
 
 def test_reset_password_does_not_leak_email_existence(environment):
     client, db, owner, other, admin, candidate, _ = environment

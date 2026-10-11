@@ -1,0 +1,36 @@
+{
+  "test_id": "rw_29",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Derrick Brooks",
+    "email": "derrick.brooks@example.com",
+    "phone": "813-555-0155",
+    "location": "Tampa, FL"
+  },
+  "work_experience": [
+    {
+      "employer": "Raymond James",
+      "designation": "Cloud Database Engineer",
+      "start_date": "2020",
+      "end_date": "Present",
+      "responsibilities": [
+        "Automated zero-downtime database upgrades on AWS Aurora PostgreSQL."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of South Florida",
+      "degree": "BS in Computer Information Systems",
+      "graduation_year": "2019"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "PostgreSQL",
+      "Python",
+      "AWS",
+      "Docker"
+    ]
+  }
+}

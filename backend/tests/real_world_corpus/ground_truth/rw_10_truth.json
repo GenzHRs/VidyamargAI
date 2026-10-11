@@ -1,0 +1,51 @@
+{
+  "test_id": "rw_10",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Emily Watson",
+    "email": "emily.watson@example.com",
+    "phone": "617-555-0177",
+    "location": "Boston, MA",
+    "github": "https://github.com/ewatson"
+  },
+  "professional_summary": "Senior Cybersecurity Analyst with 6+ years specializing in SOC operations, threat hunting, and incident response.",
+  "work_experience": [
+    {
+      "employer": "Sentinel CyberDefense",
+      "designation": "Lead Security Operations Analyst",
+      "start_date": "2020",
+      "end_date": "Present",
+      "responsibilities": [
+        "Investigated and mitigated over 450 critical enterprise security alerts using Splunk and CrowdStrike.",
+        "Automated incident triage playbooks reducing mean-time-to-remediate (MTTR) by 65%."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Northeastern University",
+      "degree": "Bachelor of Science in Cybersecurity",
+      "graduation_year": "2018"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "Splunk",
+      "CrowdStrike",
+      "Wireshark",
+      "Python",
+      "Bash",
+      "Incident Response"
+    ]
+  },
+  "certifications": [
+    "CISSP",
+    "CEH"
+  ],
+  "hyperlinks": [
+    {
+      "url": "https://github.com/ewatson",
+      "label": "https://github.com/ewatson"
+    }
+  ]
+}

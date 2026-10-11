@@ -1,19 +1,64 @@
 import { useAuthStore } from "@/store/authStore";
 
-// Private data is cached only by the identity-scoped React Query provider.
+// In-flight GET request registry for transparent request deduplication across components
+const inFlightGetMap = new Map<string, Promise<Response>>();
+
 const customFetch = async (input: RequestInfo | URL, init?: RequestInit): Promise<Response> => {
-  try {
-    const res = await fetch(input, { credentials: "include", ...init, cache: "no-store" });
-    if (res.status === 401 && !input.toString().includes("/auth/") && typeof window !== "undefined") {
-      useAuthStore.getState().logout();
-      if (window.location.pathname !== "/login") window.location.href = "/login";
+  const method = (init?.method || "GET").toUpperCase();
+  const urlStr = input.toString();
+
+  // Deduplicate concurrent identical GET requests
+  if (method === "GET") {
+    const existingPromise = inFlightGetMap.get(urlStr);
+    if (existingPromise) {
+      const res = await existingPromise;
+      return res.clone();
     }
-    return res;
-  } catch (error: any) {
-    console.warn(`[customFetch] Network request to ${input.toString()} failed:`, error);
-    throw new Error(error?.message || "Network error: Unable to connect to VidyaMarg backend API");
   }
+
+  const fetchPromise = (async () => {
+    // 15 second bounded timeout
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 15000);
+    const combinedSignal = init?.signal || controller.signal;
+
+    try {
+      const res = await fetch(input, {
+        credentials: "include",
+        ...init,
+        signal: combinedSignal,
+        cache: "no-store",
+      });
+      clearTimeout(timeoutId);
+
+      if (res.status === 401 && !urlStr.includes("/auth/") && typeof window !== "undefined") {
+        useAuthStore.getState().logout();
+        if (window.location.pathname !== "/login") window.location.href = "/login";
+      }
+      return res;
+    } catch (error: any) {
+      clearTimeout(timeoutId);
+      if (error?.name === "AbortError") {
+        console.warn(`[customFetch] Request to ${urlStr} timed out after 15s`);
+      } else {
+        console.warn(`[customFetch] Network request to ${urlStr} failed:`, error);
+      }
+      throw new Error(error?.message || "Network error: Unable to connect to VidyaMarg backend API");
+    } finally {
+      if (method === "GET") {
+        inFlightGetMap.delete(urlStr);
+      }
+    }
+  })();
+
+  if (method === "GET") {
+    inFlightGetMap.set(urlStr, fetchPromise);
+  }
+
+  const res = await fetchPromise;
+  return res.clone();
 };
+
 
 export const getBaseUrl = () => {
   if (process.env.NEXT_PUBLIC_API_URL) {
@@ -111,8 +156,27 @@ export const apiService = {
     return res.json();
   },
 
+  async getDevStatus() {
+    try {
+      const res = await customFetch(`${getBaseUrl()}/auth/dev-status`);
+      if (!res.ok) return { dev_mode_enabled: false };
+      return res.json();
+    } catch {
+      return { dev_mode_enabled: false };
+    }
+  },
 
-
+  async getDevSession() {
+    const res = await customFetch(`${getBaseUrl()}/auth/dev-session`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.detail || "Failed to establish development session");
+    }
+    return res.json();
+  },
 
   async logout(refreshToken?: string) {
     const res = await customFetch(`${getBaseUrl()}/auth/logout`, {
@@ -345,6 +409,15 @@ export const apiService = {
     return res.json();
   },
 
+  async getResumeIntelligenceBundle() {
+    const res = await customFetch(`${getBaseUrl()}/resume/intelligence-bundle`, {
+      headers: getHeaders(),
+    });
+    if (!res.ok) throw new Error("Failed to load resume intelligence bundle");
+    return res.json();
+  },
+
+
 
 
 
@@ -422,24 +495,6 @@ export const apiService = {
     return res.json();
   },
 
-  // Admin Dashboard & Rankings
-  async getAdminMetrics() {
-    const res = await customFetch(`${getBaseUrl()}/admin/dashboard`, {
-      headers: getHeaders(),
-    });
-    if (!res.ok) throw new Error("Failed to fetch metrics");
-    return res.json();
-  },
-
-
-
-  async getCandidates() {
-    const res = await customFetch(`${getBaseUrl()}/admin/candidates`, {
-      headers: getHeaders(),
-    });
-    if (!res.ok) throw new Error("Failed to fetch candidates");
-    return res.json();
-  },
 
   // Notifications
   async getNotifications() {
@@ -493,41 +548,6 @@ export const apiService = {
     return res.json();
   },
 
-  async generateCourse(role: string, level: string, duration: string, goal: string, description?: string) {
-    const res = await customFetch(`${getBaseUrl()}/courses/generate`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json", ...getHeaders() },
-      body: JSON.stringify({ topic: role, role, level, duration, goal, description }),
-    });
-    if (!res.ok) {
-      const err = await res.json().catch(() => ({ detail: "Failed to generate course" }));
-      let detailMsg = "Failed to generate course";
-      if (err.detail) {
-        if (typeof err.detail === "string") {
-          detailMsg = err.detail;
-        } else if (Array.isArray(err.detail)) {
-          detailMsg = err.detail.map((e: any) => e.msg || JSON.stringify(e)).join(", ");
-        } else {
-          detailMsg = typeof err.detail === "object" ? JSON.stringify(err.detail) : String(err.detail);
-        }
-      }
-      throw new Error(detailMsg);
-    }
-    return res.json();
-  },
-
-  async createCourse(title: string, instructor: string, category: string, level: string, description: string, duration: string) {
-    const res = await customFetch(`${getBaseUrl()}/courses/create`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json", ...getHeaders() },
-      body: JSON.stringify({ title, instructor, category, level, description, duration }),
-    });
-    if (!res.ok) {
-      const err = await res.json().catch(() => ({ detail: "Failed to create course" }));
-      throw new Error(err.detail || "Failed to create course");
-    }
-    return res.json();
-  },
 
   async getCourseCurriculum(courseId: string | number) {
     const res = await customFetch(`${getBaseUrl()}/courses/${courseId}/curriculum`, {
@@ -633,42 +653,6 @@ export const apiService = {
       body: JSON.stringify({ chat_id: chatId, text }),
     });
     if (!res.ok) throw new Error("Failed to send message");
-    return res.json();
-  },
-
-  async saveHackathonAssignment(candidateId: number, data: any) {
-    const res = await customFetch(`${getBaseUrl()}/candidates/${candidateId}/hackathon`, {
-      method: "PUT",
-      headers: { "Content-Type": "application/json", ...getHeaders() },
-      body: JSON.stringify(data),
-    });
-    if (!res.ok) throw new Error("Failed to save hackathon assignment");
-    return res.json();
-  },
-
-  async sendAdminMessage(candidateId: number, chatId: string, sender: string, senderName: string, text: string) {
-    const res = await customFetch(`${getBaseUrl()}/admin/messages`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json", ...getHeaders() },
-      body: JSON.stringify({ candidate_id: candidateId, chat_id: chatId, sender, sender_name: senderName, text }),
-    });
-    if (!res.ok) throw new Error("Failed to send admin message");
-    return res.json();
-  },
-
-  async getAdminCandidateMessages(candidateId: number) {
-    const res = await customFetch(`${getBaseUrl()}/admin/candidates/${candidateId}/messages`, {
-      headers: getHeaders(),
-    });
-    if (!res.ok) throw new Error("Failed to fetch candidate messages");
-    return res.json();
-  },
-
-  async getCandidateFiles(candidateId: number) {
-    const res = await customFetch(`${getBaseUrl()}/admin/candidates/${candidateId}/files`, {
-      headers: getHeaders(),
-    });
-    if (!res.ok) return [];
     return res.json();
   },
 
@@ -825,13 +809,6 @@ export const apiService = {
     return res.json();
   },
 
-  async getAIMentorAnalytics() {
-    const res = await customFetch(`${getBaseUrl()}/ai-mentor/analytics`, {
-      headers: getHeaders(),
-    });
-    if (!res.ok) throw new Error("Failed to get AI mentor analytics");
-    return res.json();
-  },
 
   async getAIMentorSessions() {
     const res = await customFetch(`${getBaseUrl()}/ai-mentor/sessions`, {

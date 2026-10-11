@@ -1,0 +1,49 @@
+{
+  "test_id": "rw_17",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Claire Bennett",
+    "email": "claire.bennett@example.com",
+    "phone": "(615) 555-0188",
+    "location": "Nashville, TN"
+  },
+  "work_experience": [
+    {
+      "employer": "HealthTrust Software",
+      "designation": "Staff Mobile Architect",
+      "start_date": "2022",
+      "end_date": "Present",
+      "responsibilities": [
+        "Led Flutter cross-platform architecture used by 450k healthcare clinicians."
+      ]
+    },
+    {
+      "employer": "HCA Healthcare",
+      "designation": "Senior iOS Engineer",
+      "start_date": "2018",
+      "end_date": "2022",
+      "responsibilities": [
+        "Shipped Swift patient telehealth portal app maintaining 4.9 App Store rating."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Vanderbilt University",
+      "degree": "BS in Computer Engineering",
+      "graduation_year": "2018"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "Swift",
+      "Kotlin",
+      "Flutter",
+      "Dart",
+      "iOS",
+      "Android",
+      "GraphQL",
+      "CI/CD"
+    ]
+  }
+}

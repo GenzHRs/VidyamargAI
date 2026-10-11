@@ -1,0 +1,48 @@
+{
+  "test_id": "rw_06",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Alexander Wright",
+    "email": "alex.wright@example.com",
+    "location": "London, UK",
+    "github": "https://github.com/alexwright",
+    "linkedin": "https://linkedin.com/in/alexwright"
+  },
+  "projects": [
+    {
+      "name": "Vector Search Engine",
+      "github_url": "https://github.com/alexwright/vector-engine",
+      "bullets": [
+        "Built custom HNSW vector indexing engine in Rust serving 10k QPS at sub-5ms latency."
+      ],
+      "technologies": [
+        "Rust",
+        "HNSW"
+      ]
+    }
+  ],
+  "skills": {
+    "technical": [
+      "Rust",
+      "C++",
+      "Go",
+      "Distributed Systems",
+      "SIMD",
+      "WebAssembly"
+    ]
+  },
+  "hyperlinks": [
+    {
+      "url": "https://github.com/alexwright",
+      "label": "GitHub Profile"
+    },
+    {
+      "url": "https://linkedin.com/in/alexwright",
+      "label": "LinkedIn Network"
+    },
+    {
+      "url": "https://github.com/alexwright/vector-engine",
+      "label": "View Repository"
+    }
+  ]
+}

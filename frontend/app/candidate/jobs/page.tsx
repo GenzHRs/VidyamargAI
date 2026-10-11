@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useCallback, useMemo } from "react";
+import { useEffect, useState, useCallback, useMemo, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { apiService } from "@/services/api";
@@ -232,16 +232,76 @@ function JobCard({
   );
 }
 
-export default function JobsPage() {
+import { useQuery, useQueryClient, keepPreviousData } from "@tanstack/react-query";
+
+function JobsContent() {
   const searchParams = useSearchParams();
   const roleParam = searchParams.get("role") || "";
+  const queryClient = useQueryClient();
   const { activeResume, primaryDesignation, targetRoles, structuredData, fetchActiveResume } = useResumeStore();
 
-  const [recommendedJobs, setRecommendedJobs] = useState<Job[]>([]);
-  const [allCatalogJobs, setAllCatalogJobs] = useState<Job[]>([]);
-  const [loading, setLoading] = useState(true);
+  const getCachedJobs = (key: string): Job[] => {
+    if (typeof window !== "undefined") {
+      try {
+        const cached = localStorage.getItem(key);
+        if (cached) {
+          const parsed = JSON.parse(cached);
+          if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        }
+      } catch {}
+    }
+    return [];
+  };
+
+  const {
+    data: recommendedJobs = [],
+    isLoading: loadingRec,
+    refetch: refetchRec,
+  } = useQuery<Job[]>({
+    queryKey: ["jobs", "recommended"],
+    queryFn: async () => {
+      try {
+        const res = await apiService.getRecommendedJobs();
+        const list = Array.isArray(res) ? res : [];
+        if (typeof window !== "undefined" && list.length > 0) {
+          try { localStorage.setItem("cache_jobs_recommended", JSON.stringify(list)); } catch {}
+        }
+        return list;
+      } catch {
+        return getCachedJobs("cache_jobs_recommended");
+      }
+    },
+    initialData: () => getCachedJobs("cache_jobs_recommended"),
+    placeholderData: keepPreviousData,
+    staleTime: 60 * 1000,
+  });
+
+  const {
+    data: allCatalogJobs = [],
+    isLoading: loadingCatalog,
+    refetch: refetchCatalog,
+  } = useQuery<Job[]>({
+    queryKey: ["jobs", "catalog"],
+    queryFn: async () => {
+      try {
+        const res = await apiService.getAllJobs();
+        const list = Array.isArray(res) ? res : [];
+        if (typeof window !== "undefined" && list.length > 0) {
+          try { localStorage.setItem("cache_jobs_catalog", JSON.stringify(list)); } catch {}
+        }
+        return list;
+      } catch {
+        return getCachedJobs("cache_jobs_catalog");
+      }
+    },
+    initialData: () => getCachedJobs("cache_jobs_catalog"),
+    placeholderData: keepPreviousData,
+    staleTime: 60 * 1000,
+  });
+
+  const loading = (loadingRec && recommendedJobs.length === 0) && (loadingCatalog && allCatalogJobs.length === 0);
   const [error, setError] = useState<string | null>(null);
-  const [hasResume, setHasResume] = useState<boolean | null>(null);
+  const hasResume = useResumeStore((state) => state.hasResume || Boolean(state.activeResume));
 
   const [search, setSearch] = useState(roleParam);
   const [locationFilter, setLocationFilter] = useState("");
@@ -274,29 +334,19 @@ export default function JobsPage() {
   }, [structuredData]);
 
   const fetchJobs = useCallback(async () => {
-    setLoading(true);
     setError(null);
     try {
-      const resumes = await apiService.getResumes().catch(() => []);
-      setHasResume(Array.isArray(resumes) && resumes.length > 0);
-
-      const [recRes, allRes] = await Promise.all([
-        apiService.getRecommendedJobs().catch(() => []),
-        apiService.getAllJobs().catch(() => []),
-      ]);
-      setRecommendedJobs(Array.isArray(recRes) ? recRes : []);
-      setAllCatalogJobs(Array.isArray(allRes) ? allRes : []);
-    } catch (e: any) {
+      await Promise.all([refetchRec(), refetchCatalog()]);
+      await fetchActiveResume({ forceRefresh: true });
+    } catch {
       setError("Unable to load jobs right now. Please try again.");
-    } finally {
-      setLoading(false);
     }
-  }, []);
+  }, [refetchRec, refetchCatalog, fetchActiveResume]);
 
   useEffect(() => {
-    fetchJobs();
     fetchActiveResume();
-  }, []);
+  }, [fetchActiveResume]);
+
 
   const handleSave = (id: string | number) => {
     setSavedJobs((prev) => {
@@ -676,12 +726,17 @@ export default function JobsPage() {
         </div>
 
         {/* Jobs List */}
-        {loading ? (
-          <div className="flex flex-col items-center justify-center py-16 gap-3">
-            <div className="w-8 h-8 rounded-full border-4 border-t-blue-500 border-app-border animate-spin" />
-            <p className="text-sm text-app-text-muted">Finding your best job matches…</p>
+        {loading && displayJobs.length === 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 animate-pulse">
+            {[1, 2, 3, 4].map((i) => (
+              <div key={i} className="bg-app-surface border border-app-border rounded-2xl p-5 space-y-3">
+                <div className="h-5 w-48 bg-gray-200 dark:bg-gray-800 rounded" />
+                <div className="h-4 w-32 bg-gray-200 dark:bg-gray-800 rounded" />
+                <div className="h-10 w-full bg-gray-100 dark:bg-gray-850 rounded-xl" />
+              </div>
+            ))}
           </div>
-        ) : error ? (
+        ) : error && displayJobs.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-16 gap-3 text-center">
             <AlertCircle size={32} className="text-red-400" />
             <p className="text-sm text-app-text-muted">{error}</p>
@@ -764,5 +819,13 @@ export default function JobsPage() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function JobsPage() {
+  return (
+    <Suspense fallback={null}>
+      <JobsContent />
+    </Suspense>
   );
 }

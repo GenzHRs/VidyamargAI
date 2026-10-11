@@ -1,0 +1,5 @@
+{
+  "test_id": "rw_41",
+  "expected_status": "rejected",
+  "rejection_reason": "Unsupported file type '.xyz'"
+}

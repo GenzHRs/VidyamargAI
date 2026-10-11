@@ -1,0 +1,5 @@
+{
+  "test_id": "rw_40",
+  "expected_status": "rejected",
+  "rejection_reason": "Encrypted or password-protected PDF detected."
+}

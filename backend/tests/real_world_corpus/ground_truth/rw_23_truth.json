@@ -1,0 +1,38 @@
+{
+  "test_id": "rw_23",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Vikram Malhotra",
+    "email": "vikram.malhotra@example.com",
+    "location": "Seattle, WA"
+  },
+  "work_experience": [
+    {
+      "employer": "Amazon Web Services",
+      "designation": "Principal Systems Architect",
+      "start_date": "2019",
+      "end_date": "Present",
+      "responsibilities": [
+        "Designed DynamoDB storage tier replication protocol reducing tail p99 by 18ms."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Purdue University",
+      "degree": "MS in Computer Science",
+      "graduation_year": "2012"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "C++",
+      "Rust",
+      "Distributed Systems",
+      "Paxos",
+      "Raft",
+      "Kernel Tuning",
+      "Linux"
+    ]
+  }
+}

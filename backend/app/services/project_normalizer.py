@@ -13,6 +13,8 @@ import string
 from typing import Any, Dict, List, Optional, Set
 
 
+import unicodedata
+
 KNOWN_TECH_TERMS = [
     "FastAPI", "Python", "PostgreSQL", "Azure OCR", "Azure", "OCR", "NER", "Gemini LLM", "Gemini", "LLM",
     "React", "Next.js", "Vue.js", "Vue", "Angular", "Node.js", "Express", "Django", "Flask", "Spring Boot",
@@ -21,7 +23,10 @@ KNOWN_TECH_TERMS = [
     "Qdrant", "ChromaDB", "Java", "C++", "C#", "Rust", "Go", "Golang", "TypeScript", "JavaScript",
     "HTML", "CSS", "Tailwind", "Git", "GitHub", "CI/CD", "Linux", "Bash", "REST API", "REST", "GraphQL",
     "gRPC", "Kafka", "RabbitMQ", "Spark", "Hadoop", "Airflow", "MLOps", "NLP", "LLMs", "RAG", "Computer Vision",
-    "Kotlin", "Android", "AccessibilityService", "NVIDIA API", "NVIDIA"
+    "Kotlin", "Android", "AccessibilityService", "NVIDIA API", "NVIDIA", "OpenCV", "SciPy", "Matplotlib",
+    "Seaborn", "Elasticsearch", "Cassandra", "DynamoDB", "Snowflake", "Terraform", "Ansible", "Helm",
+    "Prometheus", "Grafana", "Jenkins", "Svelte", "Transformers", "SQLAlchemy", "Pydantic", "PyMuPDF",
+    "ReportLab", "PaddleOCR", "Tesseract"
 ]
 
 
@@ -29,12 +34,14 @@ def clean_bullet_text(text: str) -> str:
     """
     Cleans leading bullet glyphs, numbering patterns, and excessive whitespace.
     Preserves all internal wording, punctuation, and capitalization.
+    Normalizes unicode ligatures (e.g. fi, fl) via NFKD.
     """
     if not text:
         return ""
-    s = str(text).strip()
-    # Strip bullet glyphs, dashes, asterisks
-    s = re.sub(r"^[\ue000-\uf8ff•·∙○●▪■►▸▶◆◇★☆✦✧✓✔\s\-*–—]+\s*", "", s).strip()
+    # Normalize unicode ligatures and special spaces
+    s = unicodedata.normalize("NFKD", str(text)).strip()
+    # Strip bullet glyphs, dashes, asterisks, checkmarks, arrows
+    s = re.sub(r"^[\ue000-\uf8ff•·∙○●▪■►▸▶◆◇★☆✦✧✓✔➢❖➔⁃◦‣\s\-*–—]+\s*", "", s).strip()
     # Strip numeric prefixes like "1.", "1)", "(1)", "[1]"
     s = re.sub(r"^(?:\(?\d+[.)\]]|\b[a-zA-Z][.)\]])\s*", "", s).strip()
     # Collapse multiple internal spaces
@@ -272,8 +279,8 @@ def canonicalize_project(proj: Dict[str, Any]) -> Dict[str, Any]:
         "end_date": end_date,
         "dates": dates,
         "description": final_description or None,
-        "bullets": canonical_bullets or ["Designed and implemented project functionality."],
-        "responsibilities": canonical_bullets or ["Designed and implemented project functionality."],
+        "bullets": canonical_bullets,
+        "responsibilities": canonical_bullets,
         "features": [],  # explicitly cleared so legacy concatenation never re-duplicates
         "technologies": norm_tech,
         "tech_stack": tech_str,

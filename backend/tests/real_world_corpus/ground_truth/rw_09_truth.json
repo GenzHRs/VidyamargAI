@@ -1,0 +1,44 @@
+{
+  "test_id": "rw_09",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Carlos Hernandez",
+    "email": "carlos.hernandez@example.com",
+    "location": "Denver, CO",
+    "github": "https://github.com/chernandez"
+  },
+  "work_experience": [
+    {
+      "employer": "Frontier Aerospace",
+      "designation": "Flight Software Engineer",
+      "start_date": "2021",
+      "end_date": "Present",
+      "responsibilities": [
+        "Developed embedded C++ telemetry controllers for suborbital launch vehicles."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Colorado Boulder",
+      "degree": "BS in Aerospace Engineering",
+      "graduation_year": "2020"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "C++",
+      "Embedded Linux",
+      "RTOS",
+      "Python",
+      "Git",
+      "MATLAB"
+    ]
+  },
+  "hyperlinks": [
+    {
+      "url": "https://github.com/chernandez",
+      "label": "GitHub"
+    }
+  ]
+}

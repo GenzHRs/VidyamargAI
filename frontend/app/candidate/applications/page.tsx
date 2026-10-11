@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { useQuery, keepPreviousData } from "@tanstack/react-query";
 import { apiService } from "@/services/api";
 import {
   Send,
@@ -40,26 +41,41 @@ const STATUS_CONFIG: Record<string, { label: string; color: string; icon: any }>
   withdrawn: { label: "Withdrawn", color: "bg-slate-100 dark:bg-slate-800 text-slate-500", icon: XCircle },
 };
 
+const getInitialApplications = (): Application[] => {
+  if (typeof window !== "undefined") {
+    try {
+      const cached = localStorage.getItem("cache_candidate_applications");
+      if (cached) {
+        const parsed = JSON.parse(cached);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      }
+    } catch {}
+  }
+  return [];
+};
+
 export default function ApplicationsPage() {
-  const [applications, setApplications] = useState<Application[]>([]);
-  const [loading, setLoading] = useState(true);
+  const { data: applications = [], isLoading } = useQuery<Application[]>({
+    queryKey: ["candidate", "applications"],
+    queryFn: async () => {
+      try {
+        const res = await apiService.getApplications?.();
+        const list = Array.isArray(res) ? res : [];
+        if (typeof window !== "undefined" && list.length > 0) {
+          try { localStorage.setItem("cache_candidate_applications", JSON.stringify(list)); } catch {}
+        }
+        return list;
+      } catch {
+        return getInitialApplications();
+      }
+    },
+    initialData: () => getInitialApplications(),
+    placeholderData: keepPreviousData,
+    staleTime: 60 * 1000,
+  });
   const [search, setSearch] = useState("");
   const [statusFilter, setStatusFilter] = useState("All");
 
-  useEffect(() => {
-    // Try to fetch applications — fall back gracefully
-    const fetchApps = async () => {
-      try {
-        const res = await apiService.getApplications?.();
-        setApplications(Array.isArray(res) ? res : []);
-      } catch {
-        setApplications([]);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchApps();
-  }, []);
 
   const filtered = applications.filter((a) => {
     const matchSearch = !search ||
@@ -125,12 +141,7 @@ export default function ApplicationsPage() {
         </div>
 
         {/* Content */}
-        {loading ? (
-          <div className="flex items-center justify-center py-16 gap-3">
-            <Loader2 size={24} className="animate-spin text-blue-500" />
-            <span className="text-sm text-app-text-muted">Loading applications…</span>
-          </div>
-        ) : filtered.length === 0 ? (
+        {filtered.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-16 gap-4 text-center">
             <Send size={36} className="text-app-text-muted/30" />
             <div>

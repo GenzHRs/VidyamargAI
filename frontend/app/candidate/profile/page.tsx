@@ -1,21 +1,120 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
+import Link from "next/link";
 import { apiService } from "@/services/api";
 import { useAuthStore } from "@/store/authStore";
-import { useQueryClient } from "@tanstack/react-query";
+import { useResumeStore } from "@/store/resumeStore";
+import { useQuery, useQueryClient, keepPreviousData } from "@tanstack/react-query";
 import { 
   User, Globe, CheckCircle, Phone, MapPin, Link2, Code2, 
-  Briefcase, GraduationCap, Award, Edit3, Target, Sparkles, Languages
+  Briefcase, GraduationCap, Award, Edit3, Target, Sparkles, Languages,
+  AlertCircle, RefreshCw
 } from "lucide-react";
+
+const getInitialProfileData = () => {
+  if (typeof window !== "undefined") {
+    try {
+      const cached = localStorage.getItem("cache_candidate_profile");
+      if (cached) {
+        const parsed = JSON.parse(cached);
+        if (parsed && typeof parsed === "object") return parsed;
+      }
+    } catch {}
+
+    const authFullName = localStorage.getItem("fullName") || "";
+    const authEmail = localStorage.getItem("email") || "";
+    
+    try {
+      const resumeStore = useResumeStore.getState();
+      const sData = resumeStore.structuredData || {};
+      const personal = sData.personal_info || {};
+      const activeRes = resumeStore.activeResume;
+
+      return {
+        personal_info: {
+          full_name: personal.full_name || personal.name || authFullName,
+          email: personal.email || authEmail,
+          phone: personal.phone || "",
+          location: personal.location || personal.address || "",
+          linkedin_url: personal.linkedin_url || personal.linkedin || "",
+          github_url: personal.github_url || personal.github || "",
+          portfolio_url: personal.portfolio_url || personal.portfolio || "",
+        },
+        parsed_name: personal.full_name || personal.name || authFullName,
+        parsed_email: personal.email || authEmail,
+        phone: personal.phone || "",
+        address: personal.location || personal.address || "",
+        active_resume_id: activeRes?.id,
+        professional: {
+          summary: sData.professional_summary?.summary || sData.summary || "",
+          primary_designation: resumeStore.primaryDesignation || "",
+          target_roles: resumeStore.targetRoles || [],
+          role_evidence: resumeStore.roleEvidence || [],
+        },
+        skills: sData.skills || [],
+        experience: sData.experience || sData.work_experience || [],
+        education: sData.education || [],
+        projects: sData.projects || [],
+        certifications: sData.certifications || [],
+      };
+    } catch {
+      return {
+        personal_info: { full_name: authFullName, email: authEmail },
+        parsed_name: authFullName,
+        parsed_email: authEmail,
+      };
+    }
+  }
+  return null;
+};
 
 export default function CandidateProfile() {
   const queryClient = useQueryClient();
   const { fullName, email, updateUser } = useAuthStore();
   
-  // Canonical Raw Profile Payload from Backend
-  const [profileData, setProfileData] = useState<any>(null);
-  const [isLoading, setIsLoading] = useState(true);
+  // Canonical Raw Profile Payload from Backend - loads instantly (0ms) from cache
+  const [profileData, setProfileData] = useState<any>(getInitialProfileData);
+
+  const { 
+    data: remoteProfile, 
+    isLoading: isQueryLoading, 
+    isFetching,
+    isError, 
+    error: queryError, 
+    refetch: refetchProfile 
+  } = useQuery({
+    queryKey: ["candidate", "profile"],
+    queryFn: async () => {
+      const res = await apiService.getProfile();
+      if (res && typeof window !== "undefined") {
+        try {
+          localStorage.setItem("cache_candidate_profile", JSON.stringify(res));
+        } catch {}
+      }
+      return res;
+    },
+    initialData: () => getInitialProfileData(),
+    placeholderData: keepPreviousData,
+    staleTime: 60 * 1000,
+  });
+
+  type ProfilePageState = "initial" | "loading" | "success" | "empty" | "error";
+
+  const activeData = remoteProfile || profileData;
+
+  const pageState: ProfilePageState = useMemo(() => {
+    if (isError && !activeData) {
+      return "error";
+    }
+    if (isQueryLoading && !activeData) {
+      return "loading";
+    }
+    if (activeData) {
+      return "success";
+    }
+    return "initial";
+  }, [isQueryLoading, isError, activeData]);
 
   // Form edit states
   const [phone, setPhone] = useState("");
@@ -35,12 +134,10 @@ export default function CandidateProfile() {
   const [saveSuccess, setSaveSuccess] = useState(false);
   const [error, setError] = useState("");
 
-  const loadProfile = async () => {
-    setIsLoading(true);
-    try {
-      const data = await apiService.getProfile();
-      setProfileData(data);
-      
+  useEffect(() => {
+    if (remoteProfile) {
+      setProfileData(remoteProfile);
+      const data = remoteProfile;
       const newName = data.personal_info?.full_name || data.parsed_name || data.user?.full_name;
       const newEmail = data.personal_info?.email || data.parsed_email || data.user?.email;
       if (newName && (newName !== fullName || newEmail !== email)) {
@@ -65,18 +162,9 @@ export default function CandidateProfile() {
 
       const projArr = data.projects || data.projects_list || [];
       setProjects(Array.isArray(projArr) ? JSON.stringify(projArr, null, 2) : String(projArr));
-
-    } catch (err) {
-      console.error("Failed to load profile:", err);
-      setError("Failed to load active resume profile.");
-    } finally {
-      setIsLoading(false);
     }
-  };
+  }, [remoteProfile, fullName, email, updateUser]);
 
-  useEffect(() => {
-    loadProfile();
-  }, []);
 
   const handleSaveProfile = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -106,8 +194,8 @@ export default function CandidateProfile() {
       }
 
       // Invalidate React Query caches
-      queryClient.invalidateQueries();
-      await loadProfile();
+      queryClient.invalidateQueries({ queryKey: ["candidate", "profile"] });
+      await refetchProfile();
       setTimeout(() => setSaveSuccess(false), 3000);
     } catch (err: any) {
       setError(err.message || "Failed to update profile details.");
@@ -251,9 +339,50 @@ export default function CandidateProfile() {
         </div>
       )}
 
-      {isLoading ? (
-        <div className="flex items-center justify-center p-12">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600"></div>
+      {isError && activeData && (
+        <div className="p-3 mb-6 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-700 dark:text-amber-400 text-xs font-medium flex items-center justify-between">
+          <span>Unable to sync live profile: {(queryError as Error)?.message || "Server unreachable"}. Showing cached profile data.</span>
+          <button
+            onClick={() => refetchProfile()}
+            className="px-3 py-1 bg-amber-600/20 hover:bg-amber-600/30 text-amber-800 dark:text-amber-300 rounded-lg text-xs font-bold transition-colors cursor-pointer"
+          >
+            Retry Sync
+          </button>
+        </div>
+      )}
+
+      {pageState === "loading" ? (
+        <div className="flex flex-col items-center justify-center p-16 space-y-4 text-center bg-white dark:bg-card border border-gray-200 dark:border-gray-800 rounded-3xl">
+          <div className="w-10 h-10 rounded-full border-4 border-indigo-600 border-t-transparent animate-spin" />
+          <h3 className="text-sm font-bold text-gray-900 dark:text-white">Loading candidate profile...</h3>
+          <p className="text-xs text-gray-500 max-w-sm">
+            Retrieving candidate details from secure database.
+          </p>
+        </div>
+      ) : pageState === "error" ? (
+        <div className="p-8 text-center bg-red-500/10 border border-red-500/30 rounded-3xl space-y-3 my-6">
+          <AlertCircle className="w-10 h-10 text-red-500 mx-auto" />
+          <h3 className="text-sm font-bold text-gray-900 dark:text-white">Unable to Load Candidate Profile</h3>
+          <p className="text-xs text-gray-500 dark:text-gray-400 max-w-md mx-auto">
+            {(queryError as Error)?.message || error || "Failed to connect to profile service. Please check your connection."}
+          </p>
+          <div className="flex justify-center gap-3 pt-2">
+            <button
+              onClick={() => {
+                setError("");
+                refetchProfile();
+              }}
+              className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-semibold flex items-center gap-1.5 cursor-pointer"
+            >
+              <RefreshCw size={13} />
+              Retry
+            </button>
+            <Link href="/candidate/resumes">
+              <button className="px-4 py-2 border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl text-xs font-semibold text-gray-700 dark:text-gray-200">
+                Go to Resumes
+              </button>
+            </Link>
+          </div>
         </div>
       ) : !isEditMode ? (
         // --- VIEW PROFILE MODE ---
@@ -268,7 +397,14 @@ export default function CandidateProfile() {
                 {nameToDisplay ? nameToDisplay[0].toUpperCase() : "?"}
               </div>
               <div>
-                <h2 className="text-lg font-bold text-gray-950 dark:text-white">{nameToDisplay}</h2>
+                <div className="flex flex-wrap items-center justify-center gap-2">
+                  <h2 className="text-lg font-bold text-gray-950 dark:text-white">{nameToDisplay}</h2>
+                  {(emailToDisplay === "dev.candidate@vidyamarg.local" || (typeof window !== "undefined" && localStorage.getItem("is_dev_mode") === "true")) && (
+                    <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold uppercase bg-amber-500/20 text-amber-600 dark:text-amber-400 border border-amber-500/30">
+                      TEST CANDIDATE ACCOUNT
+                    </span>
+                  )}
+                </div>
                 {primaryDesignation && (
                   <span className="inline-block mt-1 text-xs font-bold px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 border border-indigo-200/60 dark:border-indigo-800/40">
                     {primaryDesignation}

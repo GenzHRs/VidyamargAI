@@ -30,15 +30,20 @@ export interface ResumeState {
   candidateId: number | null;
   versionNumber: number;
   isLoading: boolean;
+  lastFetched: number | null;
   error: string | null;
 
-  fetchActiveResume: () => Promise<void>;
+  fetchActiveResume: (options?: { forceRefresh?: boolean }) => Promise<void>;
+  invalidate: () => void;
   setActiveResume: (resumeId: number) => Promise<boolean>;
   replaceResume: (file: File) => Promise<{ success: boolean; message: string }>;
   updateDraftField: (fieldPath: string, value: any) => { prevValue: any; newValue: any };
   saveDraft: () => Promise<boolean>;
   resetDraft: () => void;
 }
+
+const CACHE_STALE_TIME_MS = 60 * 1000; // 60s freshness
+let inFlightFetchPromise: Promise<void> | null = null;
 
 export const useResumeStore = create<ResumeState>((set, get) => ({
   hasResume: false,
@@ -51,45 +56,77 @@ export const useResumeStore = create<ResumeState>((set, get) => ({
   isDirty: false,
   candidateId: null,
   versionNumber: 1,
-  isLoading: true,
+  isLoading: false,
+  lastFetched: null,
   error: null,
 
-  fetchActiveResume: async () => {
-    set({ isLoading: true, error: null });
-    try {
-      const res = await apiService.getActiveResume();
-      if (res && res.has_resume) {
-        const sData = res.structured_data || {};
-        set({
-          hasResume: true,
-          activeResume: res.active_resume,
-          primaryDesignation: res.primary_designation || null,
-          targetRoles: res.target_roles || [],
-          roleEvidence: res.role_evidence || [],
-          structuredData: sData,
-          draftData: JSON.parse(JSON.stringify(sData)),
-          isDirty: false,
-          candidateId: res.candidate_id,
-          versionNumber: res.version_number || 1,
-          isLoading: false,
-        });
-      } else {
-        set({
-          hasResume: false,
-          activeResume: null,
-          primaryDesignation: null,
-          targetRoles: [],
-          roleEvidence: [],
-          structuredData: null,
-          draftData: null,
-          isDirty: false,
-          isLoading: false,
-        });
-      }
-    } catch (err: any) {
-      console.error("Failed to fetch global active resume:", err);
-      set({ isLoading: false, error: err.message || "Failed to load active resume" });
+  invalidate: () => {
+    set({ lastFetched: null });
+  },
+
+  fetchActiveResume: async (options?: { forceRefresh?: boolean }) => {
+    const state = get();
+    const now = Date.now();
+
+    // 1. If fresh and not forced, return immediately (0ms instant reuse)
+    if (!options?.forceRefresh && state.lastFetched && (now - state.lastFetched) < CACHE_STALE_TIME_MS) {
+      return;
     }
+
+    // 2. Deduplicate simultaneous in-flight calls
+    if (inFlightFetchPromise) {
+      return inFlightFetchPromise;
+    }
+
+    // 3. Only set isLoading on cold load (no active data yet)
+    if (!state.activeResume && !state.hasResume) {
+      set({ isLoading: true, error: null });
+    }
+
+    inFlightFetchPromise = (async () => {
+      try {
+        const res = await apiService.getActiveResume();
+        if (res && res.has_resume) {
+          const sData = res.structured_data || {};
+          set({
+            hasResume: true,
+            activeResume: res.active_resume,
+            primaryDesignation: res.primary_designation || null,
+            targetRoles: res.target_roles || [],
+            roleEvidence: res.role_evidence || [],
+            structuredData: sData,
+            draftData: JSON.parse(JSON.stringify(sData)),
+            isDirty: false,
+            candidateId: res.candidate_id,
+            versionNumber: res.version_number || 1,
+            isLoading: false,
+            lastFetched: Date.now(),
+            error: null,
+          });
+        } else {
+          set({
+            hasResume: false,
+            activeResume: null,
+            primaryDesignation: null,
+            targetRoles: [],
+            roleEvidence: [],
+            structuredData: null,
+            draftData: null,
+            isDirty: false,
+            isLoading: false,
+            lastFetched: Date.now(),
+            error: null,
+          });
+        }
+      } catch (err: any) {
+        console.error("Failed to fetch global active resume:", err);
+        set({ isLoading: false, error: err.message || "Failed to load active resume" });
+      } finally {
+        inFlightFetchPromise = null;
+      }
+    })();
+
+    return inFlightFetchPromise;
   },
 
   setActiveResume: async (resumeId: number) => {

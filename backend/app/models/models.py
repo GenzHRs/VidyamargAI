@@ -208,29 +208,6 @@ class LearningEvent(Base):
     metadata_json = Column(Text, default="{}")
     created_at = Column(DateTime, default=datetime.utcnow, index=True)
 
-class VideoAnalytics(Base):
-    __tablename__ = "video_analytics"
-    
-    id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("users.id", ondelete="SET NULL"), nullable=True)
-    lesson_id = Column(String, nullable=False)
-    load_time = Column(Float, default=0.0)
-    buffer_count = Column(Integer, default=0)
-    buffer_duration = Column(Float, default=0.0)
-    playback_failures = Column(Integer, default=0)
-    device = Column(String, nullable=True)
-    browser = Column(String, nullable=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
-
-class CourseAnalytics(Base):
-    __tablename__ = "course_analytics"
-    
-    course_id = Column(String, primary_key=True, index=True)
-    completion_rate = Column(Float, default=0.0)
-    avg_watch_time = Column(Float, default=0.0)
-    dropoff_point = Column(String, nullable=True)
-    avg_quiz_score = Column(Float, default=0.0)
-    certificate_rate = Column(Float, default=0.0)
 
 class OTP(Base):
     __tablename__ = "otps"
@@ -436,10 +413,3 @@ class CandidateEmbedding(Base):
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
 
-class TelegramSource(Base):
-    __tablename__ = "telegram_sources"
-    
-    id = Column(Integer, primary_key=True, index=True)
-    channel_name = Column(String, unique=True, index=True, nullable=False)
-    active = Column(Boolean, default=True)
-    last_checked = Column(DateTime, nullable=True)

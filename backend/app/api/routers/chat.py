@@ -11,7 +11,7 @@ import asyncio
 
 from app.core.database import get_db
 from app.core.config import settings
-from app.core.security import get_current_user, get_current_admin
+from app.core.security import get_current_user
 from app.schemas import schemas
 from app.models.models import *
 
@@ -728,121 +728,7 @@ async def send_message(
             "message": msg_dict
         })
         
-    # Broadcast to admins so they can see live updates in the recruiter dashboard
-    await manager.broadcast_to_admins({
-        "type": "admin_chat_message",
-        "candidate_id": cand.id,
-        "chat_id": msg_in.chat_id,
-        "message": msg_dict
-    })
-    
     return msg
 
-
-@router.put("/candidates/{candidate_id}/hackathon", response_model=schemas.CandidateResponse)
-def update_candidate_hackathon(
-    candidate_id: int,
-    assignment: schemas.CandidateHackathonUpdate,
-    db: Session = Depends(get_db),
-    admin: User = Depends(get_current_admin)
-):
-    cand = db.query(Candidate).filter(Candidate.id == candidate_id).first()
-    if not cand:
-        raise HTTPException(status_code=404, detail="Candidate not found")
-        
-    if assignment.hackathon_team is not None:
-        cand.hackathon_team = assignment.hackathon_team
-    if assignment.assigned_mentor is not None:
-        cand.assigned_mentor = assignment.assigned_mentor
-    if assignment.hackathon_problem is not None:
-        cand.hackathon_problem = assignment.hackathon_problem
-    if assignment.hackathon_members is not None:
-        cand.hackathon_members = assignment.hackathon_members
-        
-    db.commit()
-    db.refresh(cand)
-    return cand
-
-
-@router.post("/admin/messages", response_model=schemas.MessageResponse)
-async def admin_send_message(
-    msg_in: schemas.AdminMessageCreate,
-    db: Session = Depends(get_db),
-    admin: User = Depends(get_current_admin)
-):
-    cand = db.query(Candidate).filter(Candidate.id == msg_in.candidate_id).first()
-    if not cand:
-        raise HTTPException(status_code=404, detail="Candidate profile not found")
-        
-    msg = Message(
-        candidate_id=cand.id,
-        chat_id=msg_in.chat_id,
-        sender=msg_in.sender, # support, recruiter, mentor
-        sender_name=msg_in.sender_name,
-        text=msg_in.text,
-        sent_at=datetime.utcnow(),
-        read=False
-    )
-    db.add(msg)
-    db.commit()
-    db.refresh(msg)
-    
-    msg_dict = {
-        "id": msg.id,
-        "candidate_id": msg.candidate_id,
-        "chat_id": msg.chat_id,
-        "sender": msg.sender,
-        "sender_name": msg.sender_name,
-        "text": msg.text,
-        "sent_at": msg.sent_at.isoformat(),
-        "read": msg.read
-    }
-    
-    # Broadcast to the candidate's websocket clients
-    if cand.user:
-        await manager.broadcast_to_user(cand.user.email, {
-            "type": "chat_message",
-            "chat_id": msg_in.chat_id,
-            "message": msg_dict
-        })
-        
-    # Broadcast back to admin sessions
-    await manager.broadcast_to_admins({
-        "type": "admin_chat_message",
-        "candidate_id": cand.id,
-        "chat_id": msg_in.chat_id,
-        "message": msg_dict
-    })
-    
-    return msg
-
-
-@router.get("/admin/candidates/{candidate_id}/messages", response_model=List[schemas.MessageResponse])
-def admin_get_messages(
-    candidate_id: int,
-    db: Session = Depends(get_db),
-    admin: User = Depends(get_current_admin)
-):
-    cand = db.query(Candidate).filter(Candidate.id == candidate_id).first()
-    if not cand:
-        raise HTTPException(status_code=404, detail="Candidate not found")
-        
-    team_chat_id = None
-    if cand.hackathon_team:
-        import re
-        team_name_clean = cand.hackathon_team.strip().lower()
-        team_name_clean = re.sub(r'\s+', '_', team_name_clean)
-        team_chat_id = f"team_{team_name_clean}"
-
-    if team_chat_id:
-        messages = db.query(Message).filter(
-            (Message.candidate_id == cand.id) | (Message.chat_id == team_chat_id)
-        ).order_by(Message.sent_at.asc()).all()
-    else:
-        messages = db.query(Message).filter(
-            Message.candidate_id == cand.id
-        ).order_by(Message.sent_at.asc()).all()
-        
-    return messages
 
 

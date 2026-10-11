@@ -12,7 +12,7 @@ import asyncio
 
 from app.core.database import get_db
 from app.core.config import settings
-from app.core.security import get_current_user, get_current_admin
+from app.core.security import get_current_user
 from app.schemas import schemas
 from app.models.models import User, Candidate, CandidateProfile
 from app.models.job_models import SkillGapAnalysis
@@ -225,25 +225,53 @@ def get_candidate_profile(current_user: User = Depends(get_current_user), db: Se
         except Exception:
             role_evidence_list = []
 
-    # Sync candidate top-level fields for backwards compatibility
-    if personal_info["full_name"] != "Not available": candidate.parsed_name = personal_info["full_name"]
-    if personal_info["email"] != "Not available": candidate.parsed_email = personal_info["email"]
-    if personal_info["phone"] != "Not available": candidate.phone = personal_info["phone"]
-    if personal_info["location"] != "Not available": candidate.address = personal_info["location"]
-    if links["linkedin"]: candidate.linkedin = links["linkedin"]
-    if links["github"]: candidate.github = links["github"]
-    if links["portfolio"]: candidate.portfolio = links["portfolio"]
+    # Sync candidate top-level fields for backwards compatibility (only when changed to avoid write locks on GET)
+    needs_commit = False
+    if personal_info["full_name"] != "Not available" and candidate.parsed_name != personal_info["full_name"]:
+        candidate.parsed_name = personal_info["full_name"]
+        needs_commit = True
+    if personal_info["email"] != "Not available" and candidate.parsed_email != personal_info["email"]:
+        candidate.parsed_email = personal_info["email"]
+        needs_commit = True
+    if personal_info["phone"] != "Not available" and candidate.phone != personal_info["phone"]:
+        candidate.phone = personal_info["phone"]
+        needs_commit = True
+    if personal_info["location"] != "Not available" and candidate.address != personal_info["location"]:
+        candidate.address = personal_info["location"]
+        needs_commit = True
+    if links["linkedin"] and candidate.linkedin != links["linkedin"]:
+        candidate.linkedin = links["linkedin"]
+        needs_commit = True
+    if links["github"] and candidate.github != links["github"]:
+        candidate.github = links["github"]
+        needs_commit = True
+    if links["portfolio"] and candidate.portfolio != links["portfolio"]:
+        candidate.portfolio = links["portfolio"]
+        needs_commit = True
 
     if skills_data:
-        candidate.skills = ", ".join(list(dict.fromkeys([s["name"] for s in skills_data if isinstance(s, dict) and s.get("name")])))
+        new_skills = ", ".join(list(dict.fromkeys([s["name"] for s in skills_data if isinstance(s, dict) and s.get("name")])))
+        if candidate.skills != new_skills:
+            candidate.skills = new_skills
+            needs_commit = True
     if exps_data:
-        candidate.experience = json.dumps(exps_data)
+        new_exp_json = json.dumps(exps_data)
+        if candidate.experience != new_exp_json:
+            candidate.experience = new_exp_json
+            needs_commit = True
     if projs_data:
-        candidate.projects = json.dumps(projs_data)
+        new_proj_json = json.dumps(projs_data)
+        if candidate.projects != new_proj_json:
+            candidate.projects = new_proj_json
+            needs_commit = True
     if edus_data:
-        candidate.education = json.dumps(edus_data)
+        new_edu_json = json.dumps(edus_data)
+        if candidate.education != new_edu_json:
+            candidate.education = new_edu_json
+            needs_commit = True
 
-    db.commit()
+    if needs_commit:
+        db.commit()
 
     return {
         "id": candidate.id,

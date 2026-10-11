@@ -12,7 +12,7 @@ import asyncio
 
 from app.core.database import get_db
 from app.core.config import settings
-from app.core.security import get_current_user, get_current_admin
+from app.core.security import get_current_user
 from app.schemas import schemas
 from app.models.models import *
 
@@ -435,66 +435,6 @@ def get_ai_mentor_risk(
     level, reason = get_risk_analysis(db, current_user.id)
     return {"risk_level": level, "reason": reason}
 
-
-@router.get("/ai-mentor/analytics", response_model=schemas.AIMentorAnalyticsResponse)
-def get_ai_mentor_analytics(
-    current_admin: User = Depends(get_current_admin),
-    db: Session = Depends(get_db)
-):
-    _check_ai_mentor_enabled()
-    if not settings.ANALYTICS_ENABLED:
-        raise HTTPException(status_code=400, detail="Analytics feature is disabled.")
-        
-    user_ids = [r[0] for r in db.execute(text("SELECT DISTINCT user_id FROM enrollments")).fetchall()]
-    if user_ids:
-        scores = []
-        for uid in user_ids:
-            health, _ = get_learning_health(db, uid)
-            scores.append(health)
-        average_health_score = sum(scores) / len(scores)
-    else:
-        average_health_score = 100.0
-        
-    quiz_avg_scores = db.execute(
-        text("SELECT quiz_id, AVG(score) as avg_score, COUNT(id) as attempts FROM quiz_attempts GROUP BY quiz_id HAVING AVG(score) < 65.0 ORDER BY avg_score ASC LIMIT 5")
-    ).fetchall()
-    
-    difficult_topics = []
-    for r in quiz_avg_scores:
-        qid, avg_score, attempts = r
-        q_row = db.execute(
-            text('SELECT q.title, m.title FROM quizzes q JOIN modules m ON q."moduleId" = m.id WHERE q.id = :qid'),
-            {"qid": qid}
-        ).fetchone()
-        title = f"{q_row[1]}: {q_row[0]}" if q_row else f"Quiz {qid}"
-        difficult_topics.append({
-            "topic": title,
-            "avg_score": round(avg_score, 1),
-            "attempts": attempts
-        })
-        
-    if not difficult_topics:
-        difficult_topics = [{"topic": "Python Functions", "avg_score": 52.0, "attempts": 8}]
-        
-    most_requested_actions = [
-        {"action": "Tutor Concept Explanations", "count": 24},
-        {"action": "Practice Quizzes", "count": 18},
-        {"action": "Coding Challenges", "count": 15}
-    ]
-    
-    total_artifacts = db.query(AIMentorArtifact).filter(AIMentorArtifact.is_archived == False).count()
-    
-    total_users = db.query(User).filter(User.role == "candidate").count() or 1
-    active_sessions = db.query(AIMentorSession).filter(AIMentorSession.is_deleted == False, AIMentorSession.is_archived == False).count()
-    engagement_rate = round((active_sessions / total_users) * 100.0, 2)
-    
-    return {
-        "average_health_score": average_health_score,
-        "difficult_topics": difficult_topics,
-        "most_requested_actions": most_requested_actions,
-        "total_artifacts_generated": total_artifacts,
-        "engagement_rate": engagement_rate
-    }
 
 
 @router.get("/ai-mentor/sessions", response_model=List[schemas.AIMentorSessionResponse])

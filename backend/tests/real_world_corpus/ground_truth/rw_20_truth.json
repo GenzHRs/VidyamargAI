@@ -1,0 +1,30 @@
+{
+  "test_id": "rw_20",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Dr. Arthur Pendelton",
+    "email": "arthur.pendelton@oxford.edu",
+    "location": "Oxford, UK"
+  },
+  "work_experience": [
+    {
+      "employer": "University of Oxford",
+      "designation": "Postdoctoral Research Fellow",
+      "start_date": "2021",
+      "end_date": "Present",
+      "responsibilities": [
+        "Investigating fault-tolerant quantum error correction codes."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Cambridge",
+      "degree": "PhD in Quantum Physics",
+      "graduation_year": "2021"
+    }
+  ],
+  "publications": [
+    "Pendelton et al. 'Topological Braiding in Majorana Nanowires', Nature Quantum 2022"
+  ]
+}

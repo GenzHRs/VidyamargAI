@@ -194,9 +194,13 @@ def invalidate_candidate_context(candidate_id: int):
     invalidate_resume_analysis(candidate_id)
     invalidate_dashboard_summary(candidate_id)
     _LOCAL_CONTEXT_CACHE.pop(candidate_id, None)
+    _LOCAL_JOB_RECOMMENDATIONS_CACHE.pop(candidate_id, None)
+    _LOCAL_INTELLIGENCE_BUNDLE_CACHE.pop(candidate_id, None)
 
 
 _LOCAL_DASHBOARD_CACHE = {}
+_LOCAL_JOB_RECOMMENDATIONS_CACHE = {}
+_LOCAL_INTELLIGENCE_BUNDLE_CACHE = {}
 
 def get_cached_dashboard_summary(candidate_id: int) -> Optional[dict]:
     global _redis_is_online
@@ -242,12 +246,98 @@ def invalidate_dashboard_summary(candidate_id: int):
     _LOCAL_DASHBOARD_CACHE.pop(candidate_id, None)
 
 
+def get_cached_job_recommendations(candidate_id: int, limit: int = 50) -> Optional[dict]:
+    """Returns candidate-scoped cached job recommendations if valid and matching revision."""
+    global _redis_is_online
+    current_rev = get_candidate_context_revision(candidate_id)
+    r = _get_redis()
+    key = f"candidate:{candidate_id}:job_recommendations:v{current_rev}:l{limit}"
+    if r:
+        try:
+            val = r.get(key)
+            if val:
+                return json.loads(val)
+        except Exception as e:
+            _redis_is_online = False
+            logger.debug(f"Redis cache error reading job recommendations for candidate {candidate_id}: {e}")
+    
+    local_val = _LOCAL_JOB_RECOMMENDATIONS_CACHE.get(candidate_id)
+    if local_val and local_val.get("revision") == current_rev and local_val.get("limit") == limit:
+        return local_val.get("data")
+    return None
+
+
+def set_cached_job_recommendations(candidate_id: int, limit: int, revision: int, data: dict):
+    """Caches candidate job recommendations stamped with context revision."""
+    global _redis_is_online
+    r = _get_redis()
+    key = f"candidate:{candidate_id}:job_recommendations:v{revision}:l{limit}"
+    ttl = 300  # 5 minutes
+    if r:
+        try:
+            r.setex(key, ttl, json.dumps(data))
+            return
+        except Exception as e:
+            _redis_is_online = False
+            logger.debug(f"Redis cache error writing job recommendations for candidate {candidate_id}: {e}")
+    
+    _LOCAL_JOB_RECOMMENDATIONS_CACHE[candidate_id] = {
+        "revision": revision,
+        "limit": limit,
+        "data": data,
+    }
+
+
+def get_cached_intelligence_bundle(candidate_id: int) -> Optional[dict]:
+    """Returns candidate-scoped cached intelligence bundle if valid and matching revision."""
+    global _redis_is_online
+    current_rev = get_candidate_context_revision(candidate_id)
+    r = _get_redis()
+    key = f"candidate:{candidate_id}:intelligence_bundle:v{current_rev}"
+    if r:
+        try:
+            val = r.get(key)
+            if val:
+                return json.loads(val)
+        except Exception as e:
+            _redis_is_online = False
+            logger.debug(f"Redis cache error reading intelligence bundle for candidate {candidate_id}: {e}")
+    
+    local_val = _LOCAL_INTELLIGENCE_BUNDLE_CACHE.get(candidate_id)
+    if local_val and local_val.get("revision") == current_rev:
+        return local_val.get("data")
+    return None
+
+
+def set_cached_intelligence_bundle(candidate_id: int, revision: int, data: dict):
+    """Caches candidate intelligence bundle stamped with context revision."""
+    global _redis_is_online
+    r = _get_redis()
+    key = f"candidate:{candidate_id}:intelligence_bundle:v{revision}"
+    ttl = 600  # 10 minutes
+    if r:
+        try:
+            r.setex(key, ttl, json.dumps(data))
+            return
+        except Exception as e:
+            _redis_is_online = False
+            logger.debug(f"Redis cache error writing intelligence bundle for candidate {candidate_id}: {e}")
+    
+    _LOCAL_INTELLIGENCE_BUNDLE_CACHE[candidate_id] = {
+        "revision": revision,
+        "data": data,
+    }
+
+
 def clear_all_local_caches():
     """Testing helper to clear all in-memory caches across test boundaries."""
     _LOCAL_RESUME_CACHE.clear()
     _LOCAL_CONTEXT_CACHE.clear()
     _LOCAL_REVISIONS.clear()
     _LOCAL_DASHBOARD_CACHE.clear()
+    _LOCAL_JOB_RECOMMENDATIONS_CACHE.clear()
+    _LOCAL_INTELLIGENCE_BUNDLE_CACHE.clear()
+
 
 
 

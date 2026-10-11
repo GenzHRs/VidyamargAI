@@ -11,7 +11,7 @@ import asyncio
 
 from app.core.database import get_db
 from app.core.config import settings
-from app.core.security import get_current_user, get_current_admin
+from app.core.security import get_current_user
 from app.schemas import schemas
 from app.models.models import *
 from app.models.job_models import (
@@ -100,7 +100,12 @@ async def upload_resume(
     resume = await orchestrator.run_resume_collection_agent(db, candidate.id, content, uuid.uuid4().hex + ".pdf", background_tasks, fast=fast)
     from app.services.resume_cache import invalidate_resume_analysis
     invalidate_resume_analysis(candidate.id)
-    return {"message": "Resume uploaded successfully. Profile analysis is running in the background.", "url": resume.resume_url}
+    return {
+        "message": "Resume uploaded successfully. Profile analysis is running in the background.",
+        "url": resume.resume_url,
+        "resume_id": resume.id,
+        "active_resume_id": candidate.active_resume_id
+    }
 
 @router.get("/candidates/resume")
 def get_candidate_resume(current_user: User = Depends(get_current_user), db: Session = Depends(get_db)):
@@ -917,6 +922,277 @@ def get_resume_improvements(
         "resume_rewrite_suggestions": improvements.resume_rewrite_suggestions or [],
         "achievement_suggestions": improvements.achievement_suggestions or []
     }
+
+
+@router.get("/resume/intelligence-bundle")
+def get_resume_intelligence_bundle(
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Consolidated Resume Intelligence Bundle
+    Retrieves all 9 career intelligence sections in a single roundtrip,
+    backed by candidate-scoped Redis cache with monotonic revision tracking.
+    """
+    candidate = db.query(Candidate).filter(Candidate.user_id == current_user.id).first()
+    if not candidate:
+        raise HTTPException(status_code=404, detail="Candidate not found")
+
+    from app.services.resume_cache import (
+        get_cached_intelligence_bundle,
+        set_cached_intelligence_bundle,
+        get_candidate_context_revision
+    )
+
+    cached = get_cached_intelligence_bundle(candidate.id)
+    if cached:
+        return cached
+
+    # 1. Profile
+    profile = db.query(CandidateProfile).filter(CandidateProfile.candidate_id == candidate.id).order_by(CandidateProfile.created_at.desc()).first()
+    matrix = db.query(CareerEligibilityMatrix).filter(CareerEligibilityMatrix.candidate_id == candidate.id).first()
+    metadata = safe_loads(profile.parsed_metadata) if profile else {}
+
+    def load_json_field(field_val):
+        if not field_val:
+            return []
+        if isinstance(field_val, (list, dict)):
+            return field_val
+        try:
+            return json.loads(field_val)
+        except Exception:
+            return []
+
+    latest_analysis = db.query(ResumeAIAnalysis).filter(ResumeAIAnalysis.candidate_id == candidate.id).order_by(ResumeAIAnalysis.created_at.desc()).first()
+    analysis_status = {
+        "source_type": latest_analysis.source_type if latest_analysis else "GEMINI",
+        "confidence_score": latest_analysis.confidence_score if latest_analysis else "HIGH",
+        "created_at": latest_analysis.created_at.isoformat() if (latest_analysis and latest_analysis.created_at) else None
+    }
+
+    profile_data = {
+        "personal_info": {
+            "name": candidate.parsed_name or current_user.full_name,
+            "email": candidate.parsed_email or current_user.email,
+            "phone": candidate.phone or "",
+            "location": candidate.address or "Remote",
+            "summary": candidate.summary or ""
+        },
+        "career_classification": {
+            "career_family": matrix.career_family if matrix else (profile.industry if profile else "Engineering"),
+            "experience_level": metadata.get("career_level") or (parse_candidate_experience_level(candidate) if candidate else "Mid-Level"),
+            "employability_score": metadata.get("employability_score", 80),
+            "profile_strength": metadata.get("profile_strength", 75)
+        },
+        "skills": candidate.skills or "",
+        "experience": load_json_field(candidate.experience),
+        "education": load_json_field(candidate.education),
+        "projects": load_json_field(candidate.projects),
+        "certifications": candidate.certifications or "",
+        "achievements": load_json_field(candidate.achievements),
+        "languages": candidate.languages or "",
+        "linkedin": candidate.linkedin or "",
+        "github": candidate.github or "",
+        "portfolio": candidate.portfolio or "",
+        "resume_status": candidate.resume_status,
+        "analysis_status": analysis_status
+    }
+
+    # 2. Career DNA
+    dna = db.query(CandidateCareerDNA).filter(CandidateCareerDNA.candidate_id == candidate.id).first()
+    dna_data = {
+        "personality": (dna.personality if dna else None) or "Builder",
+        "traits": (dna.traits if dna else None) or {
+            "working_style": "Highly Autonomous & Solution-Oriented",
+            "growth_potential": "Strong",
+            "leadership_potential": "Developing"
+        }
+    }
+
+    # 3. Skills
+    skill_graph = db.query(CandidateSkillGraph).filter(CandidateSkillGraph.candidate_id == candidate.id).first()
+    skills_data = {
+        "skills": (skill_graph.skills if skill_graph else None) or [],
+        "edges": (skill_graph.edges if skill_graph else None) or []
+    }
+
+    # 4. Roles
+    if not profile or not profile.generated_roles:
+        roles_data = {
+            "core": [{"role": "Software Engineer", "confidence": 95}],
+            "related": [],
+            "adjacent": [],
+            "transferable": [],
+            "future": [],
+            "leadership": []
+        }
+    else:
+        parsed_roles = safe_loads(profile.generated_roles)
+        if isinstance(parsed_roles, list):
+            roles_data = {
+                "core": [{"role": r, "confidence": 90 - idx * 2} for idx, r in enumerate(parsed_roles[:3])],
+                "related": [{"role": r, "confidence": 80 - idx * 2} for idx, r in enumerate(parsed_roles[3:6])],
+                "adjacent": [{"role": r, "confidence": 75} for r in parsed_roles[6:10]],
+                "transferable": [],
+                "future": [],
+                "leadership": []
+            }
+        else:
+            roles_data = parsed_roles
+
+    # 5. Career Paths
+    paths = db.query(CareerPath).filter(CareerPath.candidate_id == candidate.id).all()
+    paths_data = [
+        {
+            "path_name": p.path_name,
+            "steps": p.steps,
+            "milestones": p.milestones
+        }
+        for p in paths
+    ] if paths else []
+
+    # 6. Skill Gaps
+    gaps = db.query(SkillGapAnalysis).filter(SkillGapAnalysis.candidate_id == candidate.id).order_by(SkillGapAnalysis.created_at.desc()).first()
+    if not gaps:
+        gaps_data = {
+            "current_skills": (candidate.skills or "").split(", "),
+            "required_skills": ["AWS", "Docker", "Kubernetes"],
+            "missing_skills": ["AWS", "Docker", "Kubernetes"],
+            "skill_scores": {},
+            "learning_roadmap": [
+                {"skill": "Docker", "priority": "high", "resources": ["Vite LMS Docker Course"], "est_hours": 10, "career_impact": "+15% job opportunities"},
+                {"skill": "Kubernetes", "priority": "medium", "resources": ["K8s for Developers"], "est_hours": 20, "career_impact": "+20% job opportunities"}
+            ],
+            "overall_gap_score": 45.0,
+            "estimated_upskill_months": 2.0
+        }
+    else:
+        gaps_data = {
+            "current_skills": gaps.current_skills,
+            "required_skills": gaps.required_skills,
+            "missing_skills": gaps.missing_skills,
+            "skill_scores": gaps.skill_scores,
+            "learning_roadmap": gaps.learning_roadmap,
+            "overall_gap_score": gaps.overall_gap_score,
+            "estimated_upskill_months": gaps.estimated_upskill_months
+        }
+
+    # 7. Opportunities
+    opportunities = db.query(CareerOpportunity).filter(CareerOpportunity.candidate_id == candidate.id).all()
+    if not matrix:
+        opps_data = {
+            "eligible_exams": [],
+            "eligible_gov_jobs": [],
+            "eligible_psu_jobs": [],
+            "eligible_banking_jobs": [],
+            "eligible_defence_jobs": [],
+            "eligible_private_roles": [],
+            "eligible_international_roles": [],
+            "opportunity_scores": {
+                "government_score": 50,
+                "private_score": 50,
+                "remote_score": 50,
+                "international_score": 50,
+                "leadership_potential_score": 50
+            },
+            "risk_analysis": {
+                "demand_risk": "Medium",
+                "automation_risk": "Medium",
+                "market_competition": "High",
+                "future_demand": "High",
+                "salary_growth": "Stable"
+            },
+            "top_opportunities": []
+        }
+    else:
+        opps_data = {
+            "eligible_exams": matrix.eligible_exams or [],
+            "eligible_gov_jobs": matrix.eligible_gov_jobs or [],
+            "eligible_psu_jobs": matrix.eligible_psu_jobs or [],
+            "eligible_banking_jobs": matrix.eligible_banking_jobs or [],
+            "eligible_defence_jobs": matrix.eligible_defence_jobs or [],
+            "eligible_private_roles": matrix.eligible_private_roles or [],
+            "eligible_international_roles": matrix.eligible_international_roles or [],
+            "opportunity_scores": matrix.opportunity_scores or {},
+            "risk_analysis": matrix.risk_analysis or {},
+            "top_opportunities": [
+                {
+                    "id": o.id,
+                    "role_title": o.role_title,
+                    "category": o.category,
+                    "confidence_score": o.confidence_score,
+                    "growth_score": o.growth_score,
+                    "salary_potential": o.salary_potential,
+                    "remote_potential": o.remote_potential,
+                    "government_potential": o.government_potential,
+                    "international_potential": o.international_potential
+                }
+                for o in opportunities
+            ]
+        }
+
+    # 8. Market Intelligence
+    industry = (profile.industry if profile else "Software") or "Software"
+    market = db.query(MarketIntelligence).filter(MarketIntelligence.industry == industry).first()
+    if not market:
+        market_data = {
+            "demand_score": 0.85,
+            "salary_range": {"min": 1000000, "max": 2500000, "currency": "INR"},
+            "competition_level": "high",
+            "top_hiring_industries": ["Fintech", "Healthtech", "E-commerce"],
+            "top_hiring_locations": ["Bengaluru", "Hyderabad", "Noida", "Remote"],
+            "emerging_skills": ["Docker", "Kubernetes", "AWS", "FastAPI"]
+        }
+    else:
+        market_data = {
+            "demand_score": market.demand_score,
+            "salary_range": {"min": market.avg_salary_min, "max": market.avg_salary_max, "currency": market.salary_currency},
+            "competition_level": "medium" if market.competition_score < 0.6 else "high",
+            "top_hiring_industries": market.top_companies_hiring or [],
+            "top_hiring_locations": [market.city] if market.city else [],
+            "emerging_skills": market.emerging_skills or []
+        }
+
+    # 9. Improvements
+    improvements = db.query(ResumeImprovement).filter(ResumeImprovement.candidate_id == candidate.id).first()
+    if not improvements:
+        imp_data = {
+            "ats_score": 70,
+            "formatting_score": 75,
+            "content_score": 68,
+            "keyword_score": 70,
+            "improvement_suggestions": ["Upload a resume to get feedback"],
+            "resume_rewrite_suggestions": [],
+            "achievement_suggestions": []
+        }
+    else:
+        imp_data = {
+            "ats_score": improvements.ats_score,
+            "formatting_score": improvements.formatting_score,
+            "content_score": improvements.content_score,
+            "keyword_score": improvements.keyword_score,
+            "improvement_suggestions": improvements.improvement_suggestions or [],
+            "resume_rewrite_suggestions": improvements.resume_rewrite_suggestions or [],
+            "achievement_suggestions": improvements.achievement_suggestions or []
+        }
+
+    bundle = {
+        "profile": profile_data,
+        "career_dna": dna_data,
+        "skills": skills_data,
+        "roles": roles_data,
+        "career_paths": paths_data,
+        "skill_gaps": gaps_data,
+        "opportunities": opps_data,
+        "market_intelligence": market_data,
+        "improvements": imp_data,
+    }
+
+    current_rev = get_candidate_context_revision(candidate.id)
+    set_cached_intelligence_bundle(candidate.id, current_rev, bundle)
+
+    return bundle
+
 
 
 

@@ -548,10 +548,20 @@ class JobRecommendationEngine:
     ) -> Dict[str, Any]:
         """
         Two-stage recommendation pipeline:
-        Stage 1: Fetch active jobs in database.
+        Stage 1: Check candidate-scoped Redis cache for instant sub-5ms response.
         Stage 2: Strictly filter, score against candidate context, enforce threshold >= 65.
         Returns validated recommended jobs with match breakdown.
         """
+        from app.services.resume_cache import (
+            get_cached_job_recommendations,
+            set_cached_job_recommendations,
+            get_candidate_context_revision,
+        )
+
+        cached = get_cached_job_recommendations(candidate_id, limit=limit)
+        if cached:
+            return cached
+
         context = cls.extract_candidate_context(db, candidate_id)
         if not context:
             return {
@@ -615,7 +625,7 @@ class JobRecommendationEngine:
                 "industry": job.industry,
             })
 
-        return {
+        result = {
             "jobs": formatted_jobs,
             "total": len(formatted_jobs),
             "candidate_context": {
@@ -625,6 +635,12 @@ class JobRecommendationEngine:
                 "verified_skills_count": len(context["all_skills"]),
             },
         }
+
+        # Cache with candidate context revision
+        current_rev = get_candidate_context_revision(candidate_id)
+        set_cached_job_recommendations(candidate_id, limit, current_rev, result)
+
+        return result
 
     @classmethod
     def _sync_matches_to_db(

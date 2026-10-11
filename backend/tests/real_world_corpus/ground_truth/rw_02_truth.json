@@ -1,0 +1,41 @@
+{
+  "test_id": "rw_02",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Michael Chang",
+    "professional_title": "Technical Project Manager",
+    "email": "michael.chang@example.com",
+    "phone": "206-555-0182",
+    "location": "Seattle, WA"
+  },
+  "professional_summary": "Accomplished Technical Project Manager with 10 years directing Agile software delivery.",
+  "work_experience": [
+    {
+      "employer": "Summit Analytics",
+      "designation": "Lead Project Manager",
+      "start_date": "2019",
+      "end_date": "Present",
+      "responsibilities": [
+        "Managed cross-functional squads delivering cloud enterprise data lakes."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Washington",
+      "degree": "Bachelor of Arts in Economics",
+      "graduation_year": "2014"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "Scrum",
+      "Kanban",
+      "Jira",
+      "Confluence",
+      "Risk Management",
+      "Python",
+      "SQL"
+    ]
+  }
+}

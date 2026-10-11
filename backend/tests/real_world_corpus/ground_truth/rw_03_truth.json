@@ -1,0 +1,40 @@
+{
+  "test_id": "rw_03",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Elena Rostova",
+    "email": "elena.rostova@example.com",
+    "phone": "415-555-0911",
+    "location": "San Francisco, CA"
+  },
+  "professional_summary": "Machine learning engineer focused on computer vision models.",
+  "work_experience": [
+    {
+      "employer": "VisionLab AI",
+      "designation": "ML Engineer",
+      "start_date": "2020",
+      "end_date": "Present",
+      "responsibilities": [
+        "Deployed real-time segmentation models on embedded NVIDIA Jetson edge nodes."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "UC Berkeley",
+      "degree": "Master of Science in Computer Science",
+      "graduation_year": "2020"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "PyTorch",
+      "TensorFlow",
+      "OpenCV",
+      "CUDA",
+      "TensorRT",
+      "Python",
+      "C++"
+    ]
+  }
+}

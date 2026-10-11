@@ -1,0 +1,51 @@
+{
+  "test_id": "rw_11",
+  "expected_status": "success",
+  "personal_info": {
+    "full_name": "Lucas Scott",
+    "email": "lucas.scott@example.com",
+    "location": "Portland, OR",
+    "portfolio": "https://lucasscott.dev",
+    "github": "https://github.com/lscott"
+  },
+  "professional_summary": "Frontend Architect with extensive React and WebGL visualization experience.",
+  "work_experience": [
+    {
+      "employer": "Starlight Interactive",
+      "designation": "Senior Frontend Architect",
+      "start_date": "2021",
+      "end_date": "Present",
+      "responsibilities": [
+        "Architected 3D product visualizer in Three.js resulting in 35% higher checkout conversion."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Oregon State University",
+      "degree": "BS in Computer Science",
+      "graduation_year": "2019"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "React",
+      "TypeScript",
+      "Three.js",
+      "WebGL",
+      "Next.js",
+      "TailwindCSS",
+      "GraphQL"
+    ]
+  },
+  "hyperlinks": [
+    {
+      "url": "https://lucasscott.dev",
+      "label": "Portfolio"
+    },
+    {
+      "url": "https://github.com/lscott",
+      "label": "GitHub"
+    }
+  ]
+}
