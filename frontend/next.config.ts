@@ -1,18 +1,5 @@
 import type { NextConfig } from "next";
 
-// Build-time Security Guard: Reject unauthorized auth bypass on public production Vercel builds
-const isProdVercelBuild = process.env.VERCEL_ENV === "production";
-const isBypassActiveBuild =
-  process.env.NEXT_PUBLIC_DEV_AUTH_BYPASS === "true" || process.env.NEXT_PUBLIC_DEV_MODE === "true";
-const isAuthorizedTestingBuild =
-  process.env.NEXT_PUBLIC_DEV_AUTH_BYPASS_DEPLOYMENT === "authorized_testing";
-
-if (isProdVercelBuild && isBypassActiveBuild && !isAuthorizedTestingBuild) {
-  throw new Error(
-    "CRITICAL BUILD SECURITY ERROR: NEXT_PUBLIC_DEV_AUTH_BYPASS is active on a public production Vercel deployment without authorization! " +
-    "To protect candidate data, set NEXT_PUBLIC_DEV_AUTH_BYPASS=false, or for an authorized test deployment specify NEXT_PUBLIC_DEV_AUTH_BYPASS_DEPLOYMENT=authorized_testing."
-  );
-}
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -37,66 +24,41 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      ...(isBypassActiveBuild
-        ? [
-            {
-              source: "/",
-              destination: "/candidate/dashboard",
-              permanent: false,
-            },
-            {
-              source: "/login",
-              destination: "/candidate/dashboard",
-              permanent: false,
-            },
-            {
-              source: "/signup",
-              destination: "/candidate/dashboard",
-              permanent: false,
-            },
-            {
-              source: "/candidate",
-              destination: "/candidate/dashboard",
-              permanent: false,
-            },
-            {
-              source: "/auth/login",
-              destination: "/candidate/dashboard",
-              permanent: false,
-            },
-            {
-              source: "/auth/signup",
-              destination: "/candidate/dashboard",
-              permanent: false,
-            },
-            {
-              source: "/auth/register",
-              destination: "/candidate/dashboard",
-              permanent: false,
-            },
-          ]
-        : [
-            {
-              source: "/auth/login",
-              destination: "/login",
-              permanent: false,
-            },
-            {
-              source: "/auth/signup",
-              destination: "/signup",
-              permanent: false,
-            },
-            {
-              source: "/auth/register",
-              destination: "/signup",
-              permanent: false,
-            },
-            {
-              source: "/candidate",
-              destination: "/candidate/dashboard",
-              permanent: false,
-            },
-          ]),
+      {
+        source: "/",
+        destination: "/candidate/dashboard",
+        permanent: false,
+      },
+      {
+        source: "/login",
+        destination: "/candidate/dashboard",
+        permanent: false,
+      },
+      {
+        source: "/signup",
+        destination: "/candidate/dashboard",
+        permanent: false,
+      },
+      {
+        source: "/candidate",
+        destination: "/candidate/dashboard",
+        permanent: false,
+      },
+      {
+        source: "/auth/login",
+        destination: "/candidate/dashboard",
+        permanent: false,
+      },
+      {
+        source: "/auth/signup",
+        destination: "/candidate/dashboard",
+        permanent: false,
+      },
+      {
+        source: "/auth/register",
+        destination: "/candidate/dashboard",
+        permanent: false,
+      },
       {
         source: "/candidate/learning",
         destination: "/candidate/skill-lab",

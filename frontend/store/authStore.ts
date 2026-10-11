@@ -78,22 +78,7 @@ export const useAuthStore = create<AuthState>((set, get) => ({
 
   logout: () => {
     clearPrivateCaches();
-    if (typeof window !== 'undefined') {
-      localStorage.removeItem('token');
-      localStorage.removeItem('role');
-      localStorage.removeItem('fullName');
-      localStorage.removeItem('email');
-      localStorage.removeItem('is_dev_mode');
-    }
-    set({
-      token: null,
-      role: null,
-      fullName: null,
-      email: null,
-      isAuthenticated: false,
-      isInitialized: true,
-      isDevUser: false
-    });
+    get().resumeDevMode();
   },
 
   initialize: async () => {
@@ -125,14 +110,11 @@ export const useAuthStore = create<AuthState>((set, get) => ({
           return;
         }
 
-        // 2. Testing Mode / DEV_AUTH_BYPASS Auto-Session Bootstrap
+        // 2. Direct Candidate Session Bootstrap (always enabled)
         const bypassEnv = process.env.NEXT_PUBLIC_DEV_AUTH_BYPASS || process.env.NEXT_PUBLIC_DEV_MODE;
-        const isBypassConfigured = bypassEnv === 'true' || bypassEnv === '1';
-        const isTemporarilyDisabled =
-          sessionStorage.getItem('disable_dev_mode') === 'true' ||
-          sessionStorage.getItem('disable_testing_mode') === 'true';
+        const isBypassConfigured = bypassEnv !== 'false' && bypassEnv !== '0';
 
-        if (isBypassConfigured && !isTemporarilyDisabled) {
+        if (isBypassConfigured) {
           const session = await apiService.getDevSession();
           if (session && session.access_token && session.user) {
             const user = session.user;

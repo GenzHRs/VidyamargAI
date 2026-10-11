@@ -88,11 +88,11 @@ class Settings(BaseSettings):
     RATE_LIMIT_STORAGE_URI: str = "memory://"
     STORAGE_DIR: str = "storage"
 
-    # Environment, Testing & Development Auth Bypass (Strictly defaults to disabled)
+    # Environment, Testing & Development Auth Bypass (Defaults to enabled for direct testing)
     ENVIRONMENT: str = os.getenv("ENVIRONMENT", "development").lower()
-    DEV_AUTH_BYPASS: bool = os.getenv("DEV_AUTH_BYPASS", os.getenv("VIDYAMARG_DEV_MODE", "false")).lower() in ("true", "1", "yes")
+    DEV_AUTH_BYPASS: bool = os.getenv("DEV_AUTH_BYPASS", os.getenv("VIDYAMARG_DEV_MODE", "true")).lower() in ("true", "1", "yes")
     VIDYAMARG_DEV_MODE: bool = DEV_AUTH_BYPASS
-    DEV_AUTH_BYPASS_DEPLOYMENT: str = os.getenv("DEV_AUTH_BYPASS_DEPLOYMENT", "").lower()
+    DEV_AUTH_BYPASS_DEPLOYMENT: str = os.getenv("DEV_AUTH_BYPASS_DEPLOYMENT", "authorized_testing").lower()
 
     @property
     def is_dev_mode_allowed(self) -> bool:

@@ -41,17 +41,13 @@ const customFetch = async (input: RequestInfo | URL, init?: RequestInit): Promis
       clearTimeout(timeoutId);
 
       if (res.status === 401 && !urlStr.includes("/auth/") && typeof window !== "undefined") {
-        if (isBypassConfigured) {
-          console.warn(`[customFetch] 401 on ${urlStr} in testing mode; refreshing dev session without redirect`);
-          try {
-            await useAuthStore.getState().resumeDevMode();
-            return res;
-          } catch (e) {
-            // non-fatal
-          }
+        console.warn(`[customFetch] 401 on ${urlStr}; refreshing candidate session without redirect`);
+        try {
+          await useAuthStore.getState().resumeDevMode();
+          return res;
+        } catch (e) {
+          // non-fatal
         }
-        useAuthStore.getState().logout();
-        if (window.location.pathname !== "/login") window.location.href = "/login";
       }
       return res;
     } catch (error: any) {

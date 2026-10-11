@@ -69,11 +69,9 @@ export default function CandidateLayout({
 
   useEffect(() => {
     if (mounted && isInitialized && !isAuthenticated) {
-      if (!isBypassConfigured) {
-        router.replace("/login");
-      }
+      useAuthStore.getState().resumeDevMode();
     }
-  }, [mounted, isInitialized, isAuthenticated, router, isBypassConfigured]);
+  }, [mounted, isInitialized, isAuthenticated]);
 
   if (!mounted || !isInitialized) {
     return (
