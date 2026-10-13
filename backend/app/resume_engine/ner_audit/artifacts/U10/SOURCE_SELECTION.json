@@ -1,0 +1,10 @@
+{
+  "id": "U10",
+  "file": "comprehensive_resume_test_suite/03_DOCX_Horizontal_Hero_Two_Blocks.docx",
+  "sha256": "9c87168b6d529336eca1dd27db234421f6110eba8e06e979d65291dc29e75096",
+  "previous_reference": "R08",
+  "artifact": "artifacts/U10/resume.json",
+  "selected_from": "upload_accuracy/results/U10/resume.json",
+  "selected_sha256": "cefc855abcc7c8ff0b846eb0526ee683166fe6fc0647b812a3bb539f1f624ee2",
+  "reason": "Full raw lines, layout and hyperlink metadata; uploaded artifact preferred when available. Structured output is baseline comparison only."
+}

@@ -1,0 +1,628 @@
+{
+  "mapping_schema_version": "1.0.0",
+  "record_id": "e54211e0e575bdacf72a0bbd64b06f383ff6dc783cc375b3ac7d1eadede5569f",
+  "document_id": "5f77f4e59d97793795089e0b99f6f360f55d6f12d75e7af6693fae044d6a2730",
+  "candidate_id": null,
+  "extraction_id": "93a52c32ce47d276630859b661a064ced5383b98d47e1a595488b3bc7bb9940d",
+  "mapper_sha256": "99064aec1206cbb49df51cf0e73a239fd615aee01b0aa7e99c2aa2d2a3479451",
+  "source": {
+    "filename": "01_DOCX_Vibrant_Coral_Creative_Resume.docx",
+    "sha256": "5f77f4e59d97793795089e0b99f6f360f55d6f12d75e7af6693fae044d6a2730",
+    "type": "docx",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": null,
+    "reference_method": "docx_xml_text"
+  },
+  "section_order": [
+    "contact",
+    "summary",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "certifications",
+    "publications",
+    "awards",
+    "metrics",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "profile": {
+    "contact": {
+      "full_name": "MAYA LIN-VAZQUEZ",
+      "headline": "SENIOR BRAND DESIGNER & ART DIRECTOR",
+      "emails": [
+        "maya.lin.design@example.com"
+      ],
+      "phones": [
+        {
+          "raw": "(555) 781-9920",
+          "normalized": "+15557819920",
+          "valid": false
+        }
+      ],
+      "locations": [
+        "Los Angeles, CA"
+      ],
+      "links": [
+        "mayadesign.example.studio"
+      ]
+    },
+    "summary": [
+      "Award-winning Senior Brand Designer with 6+ years driving identity redesigns, international omnichannel brand campaigns, and packaging systems for global consumer lifestyle brands. Adept at fusing strategic business goals with striking visual storytelling."
+    ],
+    "experience": [
+      {
+        "source_text": "Senior Brand Designer\nLumina Creative Studio (Los Angeles, CA) | 2022 – Present\n• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.\n• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.\n• Managed 4 junior graphic designers, motion animators, and external packaging vendors.",
+        "source_line_ids": [
+          "l00022",
+          "l00023",
+          "l00024",
+          "l00025",
+          "l00026"
+        ],
+        "ordinal": 0,
+        "title": "Senior Brand Designer",
+        "company": "Lumina Creative Studio",
+        "location": "Los Angeles, CA",
+        "dates": {
+          "start": {
+            "raw": "2022",
+            "normalized": "2022",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "Present",
+            "normalized": null,
+            "precision": "open"
+          },
+          "ongoing_as_reported": true
+        },
+        "bullets": [
+          "Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.",
+          "Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.",
+          "Managed 4 junior graphic designers, motion animators, and external packaging vendors."
+        ],
+        "links": [],
+        "work_mode": null
+      },
+      {
+        "source_text": "Visual & Packaging Designer\nVerve Labs (San Francisco, CA) | 2019 – 2022\n• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.\n• Produced digital campaign assets generating 12M+ social media impressions.",
+        "source_line_ids": [
+          "l00027",
+          "l00028",
+          "l00029",
+          "l00030"
+        ],
+        "ordinal": 1,
+        "title": "Visual & Packaging Designer",
+        "company": "Verve Labs",
+        "location": "San Francisco, CA",
+        "dates": {
+          "start": {
+            "raw": "2019",
+            "normalized": "2019",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "2022",
+            "normalized": "2022",
+            "precision": "year"
+          },
+          "ongoing_as_reported": false
+        },
+        "bullets": [
+          "Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.",
+          "Produced digital campaign assets generating 12M+ social media impressions."
+        ],
+        "links": [],
+        "work_mode": null
+      }
+    ],
+    "education": [
+      {
+        "source_text": "B.F.A. in Graphic Design\nArtCenter College of Design\nGraduated: 2019 (Honors)",
+        "source_line_ids": [
+          "l00016",
+          "l00017",
+          "l00018"
+        ],
+        "ordinal": 0,
+        "degree": "B.F.A. in Graphic Design",
+        "institution": "ArtCenter College of Design",
+        "location": null,
+        "dates": {
+          "start": {
+            "raw": null,
+            "normalized": null,
+            "precision": null
+          },
+          "end": {
+            "raw": null,
+            "normalized": null,
+            "precision": null
+          },
+          "ongoing_as_reported": false
+        },
+        "graduation": {
+          "raw": "2019",
+          "normalized": "2019",
+          "precision": "year"
+        },
+        "gpa": null,
+        "dissertation_or_thesis": null
+      }
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "category": null,
+        "items": [
+          "Brand Identity & Systems",
+          "Art Direction & Campaigns",
+          "Packaging & Print Spec",
+          "Figma",
+          "Illustrator",
+          "Photoshop",
+          "After Effects & Motion",
+          "Creative Team Mentorship",
+          "Design Sprint Facilitation"
+        ],
+        "source_records": [
+          {
+            "text": "• Brand Identity & Systems",
+            "source_line_ids": [
+              "l00004"
+            ],
+            "category": null,
+            "items": [
+              "Brand Identity & Systems"
+            ]
+          },
+          {
+            "text": "• Art Direction & Campaigns",
+            "source_line_ids": [
+              "l00005"
+            ],
+            "category": null,
+            "items": [
+              "Art Direction & Campaigns"
+            ]
+          },
+          {
+            "text": "• Packaging & Print Spec",
+            "source_line_ids": [
+              "l00006"
+            ],
+            "category": null,
+            "items": [
+              "Packaging & Print Spec"
+            ]
+          },
+          {
+            "text": "• Figma, Illustrator, Photoshop",
+            "source_line_ids": [
+              "l00007"
+            ],
+            "category": null,
+            "items": [
+              "Figma",
+              "Illustrator",
+              "Photoshop"
+            ]
+          },
+          {
+            "text": "• After Effects & Motion",
+            "source_line_ids": [
+              "l00008"
+            ],
+            "category": null,
+            "items": [
+              "After Effects & Motion"
+            ]
+          },
+          {
+            "text": "• Creative Team Mentorship",
+            "source_line_ids": [
+              "l00009"
+            ],
+            "category": null,
+            "items": [
+              "Creative Team Mentorship"
+            ]
+          },
+          {
+            "text": "• Design Sprint Facilitation",
+            "source_line_ids": [
+              "l00010"
+            ],
+            "category": null,
+            "items": [
+              "Design Sprint Facilitation"
+            ]
+          }
+        ]
+      }
+    ],
+    "certifications": [],
+    "publications": [],
+    "awards": [
+      {
+        "canonical": "awards",
+        "original_heading": "AWARDS & HONORS",
+        "text": "• 2024 D&AD Wood Pencil\n• 2023 AIGA Design Excellence\n• 2021 Adobe Design Achievement",
+        "source_line_ids": [
+          "l00012",
+          "l00013",
+          "l00014"
+        ],
+        "ordinal": 0,
+        "links": []
+      }
+    ],
+    "metrics": [],
+    "other_sections": []
+  },
+  "evidence": {
+    "contact.full_name": {
+      "source_line_ids": [
+        "l00000"
+      ],
+      "confidence": 0.92,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.headline": {
+      "source_line_ids": [
+        "l00001"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.emails[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.phones[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.7,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.locations[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "summary[0]": {
+      "source_line_ids": [
+        "l00020"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0]": {
+      "source_line_ids": [
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025",
+        "l00026"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].title": {
+      "source_line_ids": [
+        "l00022"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].company": {
+      "source_line_ids": [
+        "l00023"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].location": {
+      "source_line_ids": [
+        "l00023"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].dates": {
+      "source_line_ids": [
+        "l00023"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[0]": {
+      "source_line_ids": [
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025",
+        "l00026"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[1]": {
+      "source_line_ids": [
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025",
+        "l00026"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[2]": {
+      "source_line_ids": [
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025",
+        "l00026"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1]": {
+      "source_line_ids": [
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].title": {
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].company": {
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].location": {
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].dates": {
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].bullets[0]": {
+      "source_line_ids": [
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].bullets[1]": {
+      "source_line_ids": [
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0]": {
+      "source_line_ids": [
+        "l00016",
+        "l00017",
+        "l00018"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].degree": {
+      "source_line_ids": [
+        "l00016"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].institution": {
+      "source_line_ids": [
+        "l00017"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].location": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].dates": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].graduation": {
+      "source_line_ids": [
+        "l00018"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].gpa": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0]": {
+      "source_line_ids": [
+        "l00004",
+        "l00005",
+        "l00006",
+        "l00007",
+        "l00008",
+        "l00009",
+        "l00010"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "awards[0]": {
+      "source_line_ids": [
+        "l00012",
+        "l00013",
+        "l00014"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.links[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    }
+  },
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "MAYA LIN-VAZQUEZ\nSENIOR BRAND DESIGNER & ART DIRECTOR\nLos Angeles, CA  •  (555) 781-9920  •  maya.lin.design@example.com  •  mayadesign.example.studio"
+    },
+    {
+      "id": "s001",
+      "canonical": "skills",
+      "original_heading": "CREATIVE SKILLS",
+      "heading_line_id": "l00003",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00004",
+        "l00005",
+        "l00006",
+        "l00007",
+        "l00008",
+        "l00009",
+        "l00010"
+      ],
+      "text": "• Brand Identity & Systems\n• Art Direction & Campaigns\n• Packaging & Print Spec\n• Figma, Illustrator, Photoshop\n• After Effects & Motion\n• Creative Team Mentorship\n• Design Sprint Facilitation"
+    },
+    {
+      "id": "s002",
+      "canonical": "awards",
+      "original_heading": "AWARDS & HONORS",
+      "heading_line_id": "l00011",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00012",
+        "l00013",
+        "l00014"
+      ],
+      "text": "• 2024 D&AD Wood Pencil\n• 2023 AIGA Design Excellence\n• 2021 Adobe Design Achievement"
+    },
+    {
+      "id": "s003",
+      "canonical": "education",
+      "original_heading": "EDUCATION",
+      "heading_line_id": "l00015",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00016",
+        "l00017",
+        "l00018"
+      ],
+      "text": "B.F.A. in Graphic Design\nArtCenter College of Design\nGraduated: 2019 (Honors)"
+    },
+    {
+      "id": "s004",
+      "canonical": "summary",
+      "original_heading": "CREATIVE PROFILE",
+      "heading_line_id": "l00019",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00020"
+      ],
+      "text": "Award-winning Senior Brand Designer with 6+ years driving identity redesigns, international omnichannel brand campaigns, and packaging systems for global consumer lifestyle brands. Adept at fusing strategic business goals with striking visual storytelling."
+    },
+    {
+      "id": "s005",
+      "canonical": "experience",
+      "original_heading": "EXPERIENCE",
+      "heading_line_id": "l00021",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025",
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030"
+      ],
+      "text": "Senior Brand Designer\nLumina Creative Studio (Los Angeles, CA) | 2022 – Present\n• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.\n• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.\n• Managed 4 junior graphic designers, motion animators, and external packaging vendors.\nVisual & Packaging Designer\nVerve Labs (San Francisco, CA) | 2019 – 2022\n• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.\n• Produced digital campaign assets generating 12M+ social media impressions."
+    }
+  ],
+  "quality": {
+    "completeness": {
+      "status": "pass",
+      "reference_words": 197,
+      "extracted_words": 197,
+      "matched_words": 197,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "schema_errors": [],
+    "warnings": [],
+    "suppressed_exact_repeats": []
+  },
+  "review_status": "needs_review",
+  "review": [
+    {
+      "path": "fields.phones[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.7
+    }
+  ],
+  "mapping_changes": []
+}

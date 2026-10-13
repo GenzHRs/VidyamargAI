@@ -1,0 +1,412 @@
+{
+  "schema_version": "3.0.0",
+  "section_order": [
+    "contact",
+    "summary",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "certifications",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "contact": {
+    "name": {
+      "value": "KAVITA RAMANATHAN",
+      "confidence": 0.92,
+      "source_line_ids": [
+        "l00000"
+      ]
+    },
+    "emails": [
+      {
+        "value": "kavita.ramanathan@example.com",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalization": "none",
+        "raw": "San Jose, CA  •  (555) 234-8761  •  kavita.ramanathan@example.com  •  linkedin.com/in/kavita-ramanathan-dummy"
+      }
+    ],
+    "phones": [
+      {
+        "value": "(555) 234-8761",
+        "confidence": 0.7,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalized": "+15552348761",
+        "valid": false
+      }
+    ],
+    "locations": [
+      {
+        "value": "San Jose, CA",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00002"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "value": "linkedin.com/in/kavita-ramanathan-dummy",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "kind": "linkedin"
+      }
+    ]
+  },
+  "summary": [
+    {
+      "text": "Growth-oriented Product Marketing leader with 8+ years driving Go-To-Market (GTM) launches, competitive positioning, and buyer enablement for enterprise cloud and AI infrastructure. Generated $35M+ in qualified pipeline across Tier-1 enterprise accounts.",
+      "source_line_ids": [
+        "l00003"
+      ],
+      "value": "Growth-oriented Product Marketing leader with 8+ years driving Go-To-Market (GTM) launches, competitive positioning, and buyer enablement for enterprise cloud and AI infrastructure. Generated $35M+ in qualified pipeline across Tier-1 enterprise accounts."
+    }
+  ],
+  "experience": [
+    {
+      "title": {
+        "value": "Director of Product Marketing",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00005"
+        ]
+      },
+      "company": {
+        "value": "Synthetix AI",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00006"
+        ]
+      },
+      "location": {
+        "value": "Palo Alto, CA",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00006"
+        ]
+      },
+      "dates": {
+        "value": {
+          "start": "2022",
+          "end": "Present"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00006"
+        ]
+      },
+      "bullets": [
+        "• Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1.",
+        "• Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%."
+      ],
+      "text": "Director of Product Marketing\nSynthetix AI (Palo Alto, CA) | 2022 – Present\n• Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1.\n• Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%.",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00005",
+        "l00006",
+        "l00007",
+        "l00008"
+      ]
+    },
+    {
+      "title": {
+        "value": "Senior Product Marketing Manager",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00009"
+        ]
+      },
+      "company": {
+        "value": "Datastream Cloud",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00010"
+        ]
+      },
+      "location": {
+        "value": "San Jose, CA",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00010"
+        ]
+      },
+      "dates": {
+        "value": {
+          "start": "2019",
+          "end": "2022"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00010"
+        ]
+      },
+      "bullets": [
+        "• Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).",
+        "• Trained 180+ global field sales engineers on solution messaging and pricing tiers."
+      ],
+      "text": "Senior Product Marketing Manager\nDatastream Cloud (San Jose, CA) | 2019 – 2022\n• Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).\n• Trained 180+ global field sales engineers on solution messaging and pricing tiers.",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "text": "MBA — UC Berkeley Haas (2019)",
+      "source_line_ids": [
+        "l00025"
+      ],
+      "degree": {
+        "value": "MBA",
+        "source_line_ids": [
+          "l00025"
+        ],
+        "confidence": 0.85
+      },
+      "institution": {
+        "value": "UC Berkeley Haas",
+        "source_line_ids": [
+          "l00025"
+        ],
+        "confidence": 0.85
+      },
+      "dates": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "graduation": {
+        "value": "2019",
+        "source_line_ids": [
+          "l00025"
+        ],
+        "confidence": 0.85
+      },
+      "location": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "gpa": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      }
+    },
+    {
+      "text": "B.S. in Economics — UCLA (2015)",
+      "source_line_ids": [
+        "l00026"
+      ],
+      "degree": {
+        "value": "B.S. in Economics",
+        "source_line_ids": [
+          "l00026"
+        ],
+        "confidence": 0.85
+      },
+      "institution": {
+        "value": "UCLA",
+        "source_line_ids": [
+          "l00026"
+        ],
+        "confidence": 0.85
+      },
+      "dates": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "graduation": {
+        "value": "2015",
+        "source_line_ids": [
+          "l00026"
+        ],
+        "confidence": 0.85
+      },
+      "location": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "gpa": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      }
+    }
+  ],
+  "projects": [],
+  "skills": [
+    {
+      "text": "• Category Creation & Positioning",
+      "source_line_ids": [
+        "l00019"
+      ],
+      "category": null,
+      "items": [
+        "Category Creation & Positioning"
+      ]
+    },
+    {
+      "text": "• Competitive Intelligence (Klue)",
+      "source_line_ids": [
+        "l00020"
+      ],
+      "category": null,
+      "items": [
+        "Competitive Intelligence (Klue)"
+      ]
+    },
+    {
+      "text": "• Customer Case Studies & Webinars",
+      "source_line_ids": [
+        "l00021"
+      ],
+      "category": null,
+      "items": [
+        "Customer Case Studies & Webinars"
+      ]
+    },
+    {
+      "text": "• HubSpot, Salesforce, Marketo",
+      "source_line_ids": [
+        "l00022"
+      ],
+      "category": null,
+      "items": [
+        "HubSpot",
+        "Salesforce",
+        "Marketo"
+      ]
+    },
+    {
+      "text": "• Pricing & Packaging Strategy",
+      "source_line_ids": [
+        "l00023"
+      ],
+      "category": null,
+      "items": [
+        "Pricing & Packaging Strategy"
+      ]
+    }
+  ],
+  "certifications": [],
+  "other_sections": [
+    {
+      "canonical": "metrics",
+      "original_heading": "KEY GTM METRICS",
+      "text": "• $35M+ Attributed Enterprise Pipeline\n• 65+ Tier-1 Enterprise Wins\n• 26% Higher Win-Rate Post-Launch\n• 180+ Field Reps Certified",
+      "source_line_ids": [
+        "l00014",
+        "l00015",
+        "l00016",
+        "l00017"
+      ]
+    }
+  ],
+  "review": [
+    {
+      "path": "fields.phones[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.7
+    }
+  ],
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "KAVITA RAMANATHAN\nSENIOR PRODUCT MARKETING MANAGER (PMM) — B2B CLOUD & AI SOLUTIONS\nSan Jose, CA  •  (555) 234-8761  •  kavita.ramanathan@example.com  •  linkedin.com/in/kavita-ramanathan-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "summary",
+      "original_heading": "STRATEGIC SUMMARY:",
+      "heading_line_id": "l00003:h",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00003:b"
+      ],
+      "text": "Growth-oriented Product Marketing leader with 8+ years driving Go-To-Market (GTM) launches, competitive positioning, and buyer enablement for enterprise cloud and AI infrastructure. Generated $35M+ in qualified pipeline across Tier-1 enterprise accounts."
+    },
+    {
+      "id": "s002",
+      "canonical": "experience",
+      "original_heading": "SELECT GTM LEADERSHIP & EXPERIENCE",
+      "heading_line_id": "l00004",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00005",
+        "l00006",
+        "l00007",
+        "l00008",
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012"
+      ],
+      "text": "Director of Product Marketing\nSynthetix AI (Palo Alto, CA) | 2022 – Present\n• Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1.\n• Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%.\nSenior Product Marketing Manager\nDatastream Cloud (San Jose, CA) | 2019 – 2022\n• Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).\n• Trained 180+ global field sales engineers on solution messaging and pricing tiers."
+    },
+    {
+      "id": "s003",
+      "canonical": "metrics",
+      "original_heading": "KEY GTM METRICS",
+      "heading_line_id": "l00013",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00014",
+        "l00015",
+        "l00016",
+        "l00017"
+      ],
+      "text": "• $35M+ Attributed Enterprise Pipeline\n• 65+ Tier-1 Enterprise Wins\n• 26% Higher Win-Rate Post-Launch\n• 180+ Field Reps Certified"
+    },
+    {
+      "id": "s004",
+      "canonical": "skills",
+      "original_heading": "SKILLS & METHODOLOGIES",
+      "heading_line_id": "l00018",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023"
+      ],
+      "text": "• Category Creation & Positioning\n• Competitive Intelligence (Klue)\n• Customer Case Studies & Webinars\n• HubSpot, Salesforce, Marketo\n• Pricing & Packaging Strategy"
+    },
+    {
+      "id": "s005",
+      "canonical": "education",
+      "original_heading": "EDUCATION",
+      "heading_line_id": "l00024",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00025",
+        "l00026"
+      ],
+      "text": "MBA — UC Berkeley Haas (2019)\nB.S. in Economics — UCLA (2015)"
+    }
+  ]
+}

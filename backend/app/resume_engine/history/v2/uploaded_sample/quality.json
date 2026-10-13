@@ -1,0 +1,11 @@
+{
+  "completeness": {
+    "status": "unverifiable",
+    "reason": "OCR or independent reference unavailable"
+  },
+  "schema_errors": [],
+  "warnings": [
+    "pdftotext missing: independent completeness unavailable"
+  ],
+  "suppressed_exact_repeats": []
+}

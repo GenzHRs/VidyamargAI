@@ -1,0 +1,2964 @@
+{
+  "schema_version": "3.0.0",
+  "source": {
+    "filename": "07_DOCX_Modern_Tech_Software_Engineer.docx",
+    "sha256": "2a72ffbeecb5dde4df82c996261ea24f562c5b526b83d19f4faa8189b40c0204",
+    "type": "docx",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": null,
+    "reference_method": "docx_xml_text"
+  },
+  "config_sha256": "6f498014d4fb63f781cf628405710e332e4770668d670b4c7df47f65e11c5b54",
+  "raw_text": "ALEX CHEN\nSenior Full Stack Software Engineer | Distributed Systems & Cloud Architecture\nSan Francisco, CA  •  (555) 019-2834  •  alex.chen.dev@example.com  •  github.com/alexchen-dev  •  linkedin.com/in/alexchen-dummy\nPROFESSIONAL SUMMARY\nHigh-performing Full Stack Engineer with 7+ years of experience engineering high-throughput distributed microservices, fault-tolerant cloud infrastructure, and modern responsive front-ends. Proven record of scaling systems to 15M+ active users, optimizing API latency by 42%, and spearheading zero-downtime database migrations. Passionate about developer tooling, Clean Architecture, and CI/CD automation.\nTECHNICAL SKILLS\n• Languages: Go, Python, TypeScript, Java, SQL, Rust (intermediate)\n• Backend & Data: Node.js, FastAPI, Spring Boot, PostgreSQL, Redis, Apache Kafka, GraphQL\n• Cloud & DevOps: AWS (ECS, Lambda, EKS, RDS), Docker, Kubernetes, Terraform, GitHub Actions, Prometheus\n• Frontend & Tools: React 18, Next.js, Tailwind CSS, Jest, Datadog, Git, Linux\nPROFESSIONAL EXPERIENCE\nLead Backend Software Engineer  |  Nexus Cloud Technologies\nMar 2023 – Present  •  San Francisco, CA\nArchitected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.\nDecomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.\nReduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.\nMentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices.\nFull Stack Software Engineer  |  Vanguard Digital Labs\nAug 2020 – Feb 2023  •  Austin, TX (Remote)\nBuilt customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.\nAuthored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.\nCreated reusable UI component library used across 5 internal products, reducing developer delivery time by 30%.\nJunior Software Engineer  |  Apex Software Solutions\nJun 2018 – Jul 2020  •  Austin, TX\nDeveloped responsive single-page web applications with React and Redux.\nWrote unit and integration tests achieving 88% overall code test coverage.\nEDUCATION & CERTIFICATIONS\nB.S. in Computer Science  •  University of California, Berkeley (2014 – 2018)\nCertifications: AWS Certified Solutions Architect – Associate (2024), Certified Kubernetes Administrator (CKA, 2023)",
+  "source_text": "\nALEX CHEN\nSenior Full Stack Software Engineer | Distributed Systems & Cloud Architecture\nSan Francisco, CA  •  (555) 019-2834  •  alex.chen.dev@example.com  •  github.com/alexchen-dev  •  linkedin.com/in/alexchen-dummy\n\n\n\nPROFESSIONAL SUMMARY\n\nHigh-performing Full Stack Engineer with 7+ years of experience engineering high-throughput distributed microservices, fault-tolerant cloud infrastructure, and modern responsive front-ends. Proven record of scaling systems to 15M+ active users, optimizing API latency by 42%, and spearheading zero-downtime database migrations. Passionate about developer tooling, Clean Architecture, and CI/CD automation.\n\nTECHNICAL SKILLS\n\n• Languages: Go, Python, TypeScript, Java, SQL, Rust (intermediate)\n\n• Backend & Data: Node.js, FastAPI, Spring Boot, PostgreSQL, Redis, Apache Kafka, GraphQL\n\n• Cloud & DevOps: AWS (ECS, Lambda, EKS, RDS), Docker, Kubernetes, Terraform, GitHub Actions, Prometheus\n\n• Frontend & Tools: React 18, Next.js, Tailwind CSS, Jest, Datadog, Git, Linux\n\nPROFESSIONAL EXPERIENCE\n\nLead Backend Software Engineer  |  Nexus Cloud Technologies\n\nMar 2023 – Present  •  San Francisco, CA\n\nArchitected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.\n\nDecomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.\n\nReduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.\n\nMentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices.\n\nFull Stack Software Engineer  |  Vanguard Digital Labs\n\nAug 2020 – Feb 2023  •  Austin, TX (Remote)\n\nBuilt customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.\n\nAuthored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.\n\nCreated reusable UI component library used across 5 internal products, reducing developer delivery time by 30%.\n\nJunior Software Engineer  |  Apex Software Solutions\n\nJun 2018 – Jul 2020  •  Austin, TX\n\nDeveloped responsive single-page web applications with React and Redux.\n\nWrote unit and integration tests achieving 88% overall code test coverage.\n\nEDUCATION & CERTIFICATIONS\n\nB.S. in Computer Science  •  University of California, Berkeley (2014 – 2018)\nCertifications: AWS Certified Solutions Architect – Associate (2024), Certified Kubernetes Administrator (CKA, 2023)\n",
+  "normalized_text": "ALEX CHEN\nSenior Full Stack Software Engineer | Distributed Systems & Cloud Architecture\nSan Francisco, CA  •  (555) 019-2834  •  alex.chen.dev@example.com  •  github.com/alexchen-dev  •  linkedin.com/in/alexchen-dummy\nPROFESSIONAL SUMMARY\nHigh-performing Full Stack Engineer with 7+ years of experience engineering high-throughput distributed microservices, fault-tolerant cloud infrastructure, and modern responsive front-ends. Proven record of scaling systems to 15M+ active users, optimizing API latency by 42%, and spearheading zero-downtime database migrations. Passionate about developer tooling, Clean Architecture, and CI/CD automation.\nTECHNICAL SKILLS\n• Languages: Go, Python, TypeScript, Java, SQL, Rust (intermediate)\n• Backend & Data: Node.js, FastAPI, Spring Boot, PostgreSQL, Redis, Apache Kafka, GraphQL\n• Cloud & DevOps: AWS (ECS, Lambda, EKS, RDS), Docker, Kubernetes, Terraform, GitHub Actions, Prometheus\n• Frontend & Tools: React 18, Next.js, Tailwind CSS, Jest, Datadog, Git, Linux\nPROFESSIONAL EXPERIENCE\nLead Backend Software Engineer  |  Nexus Cloud Technologies\nMar 2023 – Present  •  San Francisco, CA\nArchitected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.\nDecomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.\nReduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.\nMentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices.\nFull Stack Software Engineer  |  Vanguard Digital Labs\nAug 2020 – Feb 2023  •  Austin, TX (Remote)\nBuilt customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.\nAuthored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.\nCreated reusable UI component library used across 5 internal products, reducing developer delivery time by 30%.\nJunior Software Engineer  |  Apex Software Solutions\nJun 2018 – Jul 2020  •  Austin, TX\nDeveloped responsive single-page web applications with React and Redux.\nWrote unit and integration tests achieving 88% overall code test coverage.\nEDUCATION & CERTIFICATIONS\nB.S. in Computer Science  •  University of California, Berkeley (2014 – 2018)\nCertifications:\nAWS Certified Solutions Architect – Associate (2024), Certified Kubernetes Administrator (CKA, 2023)",
+  "raw_lines": [
+    {
+      "id": "l00000",
+      "text": "ALEX CHEN",
+      "runs": [
+        {
+          "text": "ALEX CHEN",
+          "bold": true,
+          "size": 22.0,
+          "color": "1A365D",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00000"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00001",
+      "text": "Senior Full Stack Software Engineer | Distributed Systems & Cloud Architecture",
+      "runs": [
+        {
+          "text": "Senior Full Stack Software Engineer | Distributed Systems & Cloud Architecture",
+          "bold": true,
+          "size": 11.0,
+          "color": "4A5568",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00001"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00002",
+      "text": "San Francisco, CA  •  (555) 019-2834  •  alex.chen.dev@example.com  •  github.com/alexchen-dev  •  linkedin.com/in/alexchen-dummy",
+      "runs": [
+        {
+          "text": "San Francisco, CA  •  (555) 019-2834  •  alex.chen.dev@example.com  •  github.com/alexchen-dev  •  linkedin.com/in/alexchen-dummy",
+          "bold": false,
+          "size": 9.5,
+          "color": "718096",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00002"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00003",
+      "text": "PROFESSIONAL SUMMARY",
+      "runs": [
+        {
+          "text": "PROFESSIONAL SUMMARY",
+          "bold": true,
+          "size": 11.0,
+          "color": "2B6CB0",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00003"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00004",
+      "text": "High-performing Full Stack Engineer with 7+ years of experience engineering high-throughput distributed microservices, fault-tolerant cloud infrastructure, and modern responsive front-ends. Proven record of scaling systems to 15M+ active users, optimizing API latency by 42%, and spearheading zero-downtime database migrations. Passionate about developer tooling, Clean Architecture, and CI/CD automation.",
+      "runs": [
+        {
+          "text": "High-performing Full Stack Engineer with 7+ years of experience engineering high-throughput distributed microservices, fault-tolerant cloud infrastructure, and modern responsive front-ends. Proven record of scaling systems to 15M+ active users, optimizing API latency by 42%, and spearheading zero-downtime database migrations. Passionate about developer tooling, Clean Architecture, and CI/CD automation.",
+          "bold": false,
+          "size": 10.0,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00004"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00005",
+      "text": "TECHNICAL SKILLS",
+      "runs": [
+        {
+          "text": "TECHNICAL SKILLS",
+          "bold": true,
+          "size": 11.0,
+          "color": "2B6CB0",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00005"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00006",
+      "text": "• Languages: Go, Python, TypeScript, Java, SQL, Rust (intermediate)",
+      "runs": [
+        {
+          "text": "• Languages: ",
+          "bold": true,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        },
+        {
+          "text": "Go, Python, TypeScript, Java, SQL, Rust (intermediate)",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00006"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00007",
+      "text": "• Backend & Data: Node.js, FastAPI, Spring Boot, PostgreSQL, Redis, Apache Kafka, GraphQL",
+      "runs": [
+        {
+          "text": "• Backend & Data: ",
+          "bold": true,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        },
+        {
+          "text": "Node.js, FastAPI, Spring Boot, PostgreSQL, Redis, Apache Kafka, GraphQL",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00007"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00008",
+      "text": "• Cloud & DevOps: AWS (ECS, Lambda, EKS, RDS), Docker, Kubernetes, Terraform, GitHub Actions, Prometheus",
+      "runs": [
+        {
+          "text": "• Cloud & DevOps: ",
+          "bold": true,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        },
+        {
+          "text": "AWS (ECS, Lambda, EKS, RDS), Docker, Kubernetes, Terraform, GitHub Actions, Prometheus",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00008"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00009",
+      "text": "• Frontend & Tools: React 18, Next.js, Tailwind CSS, Jest, Datadog, Git, Linux",
+      "runs": [
+        {
+          "text": "• Frontend & Tools: ",
+          "bold": true,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        },
+        {
+          "text": "React 18, Next.js, Tailwind CSS, Jest, Datadog, Git, Linux",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00009"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00010",
+      "text": "PROFESSIONAL EXPERIENCE",
+      "runs": [
+        {
+          "text": "PROFESSIONAL EXPERIENCE",
+          "bold": true,
+          "size": 11.0,
+          "color": "2B6CB0",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00010"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00011",
+      "text": "Lead Backend Software Engineer  |  Nexus Cloud Technologies",
+      "runs": [
+        {
+          "text": "Lead Backend Software Engineer  |  Nexus Cloud Technologies",
+          "bold": true,
+          "size": 10.0,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00011"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00012",
+      "text": "Mar 2023 – Present  •  San Francisco, CA",
+      "runs": [
+        {
+          "text": "Mar 2023 – Present  •  San Francisco, CA",
+          "bold": false,
+          "size": 8.5,
+          "color": "646E78",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00012"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00013",
+      "text": "Architected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.",
+      "runs": [
+        {
+          "text": "Architected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00013"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00014",
+      "text": "Decomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.",
+      "runs": [
+        {
+          "text": "Decomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00014"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00015",
+      "text": "Reduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.",
+      "runs": [
+        {
+          "text": "Reduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00015"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00016",
+      "text": "Mentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices.",
+      "runs": [
+        {
+          "text": "Mentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00016"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00017",
+      "text": "Full Stack Software Engineer  |  Vanguard Digital Labs",
+      "runs": [
+        {
+          "text": "Full Stack Software Engineer  |  Vanguard Digital Labs",
+          "bold": true,
+          "size": 10.0,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00017"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00018",
+      "text": "Aug 2020 – Feb 2023  •  Austin, TX (Remote)",
+      "runs": [
+        {
+          "text": "Aug 2020 – Feb 2023  •  Austin, TX (Remote)",
+          "bold": false,
+          "size": 8.5,
+          "color": "646E78",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00018"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00019",
+      "text": "Built customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.",
+      "runs": [
+        {
+          "text": "Built customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00019"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00020",
+      "text": "Authored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.",
+      "runs": [
+        {
+          "text": "Authored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00020"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00021",
+      "text": "Created reusable UI component library used across 5 internal products, reducing developer delivery time by 30%.",
+      "runs": [
+        {
+          "text": "Created reusable UI component library used across 5 internal products, reducing developer delivery time by 30%.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00021"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00022",
+      "text": "Junior Software Engineer  |  Apex Software Solutions",
+      "runs": [
+        {
+          "text": "Junior Software Engineer  |  Apex Software Solutions",
+          "bold": true,
+          "size": 10.0,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00022"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00023",
+      "text": "Jun 2018 – Jul 2020  •  Austin, TX",
+      "runs": [
+        {
+          "text": "Jun 2018 – Jul 2020  •  Austin, TX",
+          "bold": false,
+          "size": 8.5,
+          "color": "646E78",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00023"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00024",
+      "text": "Developed responsive single-page web applications with React and Redux.",
+      "runs": [
+        {
+          "text": "Developed responsive single-page web applications with React and Redux.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00024"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00025",
+      "text": "Wrote unit and integration tests achieving 88% overall code test coverage.",
+      "runs": [
+        {
+          "text": "Wrote unit and integration tests achieving 88% overall code test coverage.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00025"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00026",
+      "text": "EDUCATION & CERTIFICATIONS",
+      "runs": [
+        {
+          "text": "EDUCATION & CERTIFICATIONS",
+          "bold": true,
+          "size": 11.0,
+          "color": "2B6CB0",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00026"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00027",
+      "text": "B.S. in Computer Science  •  University of California, Berkeley (2014 – 2018)",
+      "runs": [
+        {
+          "text": "B.S. in Computer Science  •  University of California, Berkeley (2014 – 2018)",
+          "bold": true,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00027"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00028",
+      "text": "Certifications: AWS Certified Solutions Architect – Associate (2024), Certified Kubernetes Administrator (CKA, 2023)",
+      "runs": [
+        {
+          "text": "Certifications: AWS Certified Solutions Architect – Associate (2024), Certified Kubernetes Administrator (CKA, 2023)",
+          "bold": false,
+          "size": 9.0,
+          "color": "46505A",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00028"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    }
+  ],
+  "lines": [
+    {
+      "id": "l00000",
+      "text": "ALEX CHEN",
+      "runs": [
+        {
+          "text": "ALEX CHEN",
+          "bold": true,
+          "size": 22.0,
+          "color": "1A365D",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TITLE",
+      "source_ids": [
+        "l00000"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.92
+    },
+    {
+      "id": "l00001",
+      "text": "Senior Full Stack Software Engineer | Distributed Systems & Cloud Architecture",
+      "runs": [
+        {
+          "text": "Senior Full Stack Software Engineer | Distributed Systems & Cloud Architecture",
+          "bold": true,
+          "size": 11.0,
+          "color": "4A5568",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "SUBTITLE",
+      "source_ids": [
+        "l00001"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00002",
+      "text": "San Francisco, CA  •  (555) 019-2834  •  alex.chen.dev@example.com  •  github.com/alexchen-dev  •  linkedin.com/in/alexchen-dummy",
+      "runs": [
+        {
+          "text": "San Francisco, CA  •  (555) 019-2834  •  alex.chen.dev@example.com  •  github.com/alexchen-dev  •  linkedin.com/in/alexchen-dummy",
+          "bold": false,
+          "size": 9.5,
+          "color": "718096",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00002"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00003",
+      "text": "PROFESSIONAL SUMMARY",
+      "runs": [
+        {
+          "text": "PROFESSIONAL SUMMARY",
+          "bold": true,
+          "size": 11.0,
+          "color": "2B6CB0",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00003"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00004",
+      "text": "High-performing Full Stack Engineer with 7+ years of experience engineering high-throughput distributed microservices, fault-tolerant cloud infrastructure, and modern responsive front-ends. Proven record of scaling systems to 15M+ active users, optimizing API latency by 42%, and spearheading zero-downtime database migrations. Passionate about developer tooling, Clean Architecture, and CI/CD automation.",
+      "runs": [
+        {
+          "text": "High-performing Full Stack Engineer with 7+ years of experience engineering high-throughput distributed microservices, fault-tolerant cloud infrastructure, and modern responsive front-ends. Proven record of scaling systems to 15M+ active users, optimizing API latency by 42%, and spearheading zero-downtime database migrations. Passionate about developer tooling, Clean Architecture, and CI/CD automation.",
+          "bold": false,
+          "size": 10.0,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00004"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00005",
+      "text": "TECHNICAL SKILLS",
+      "runs": [
+        {
+          "text": "TECHNICAL SKILLS",
+          "bold": true,
+          "size": 11.0,
+          "color": "2B6CB0",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00005"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00006",
+      "text": "• Languages: Go, Python, TypeScript, Java, SQL, Rust (intermediate)",
+      "runs": [
+        {
+          "text": "• Languages: ",
+          "bold": true,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        },
+        {
+          "text": "Go, Python, TypeScript, Java, SQL, Rust (intermediate)",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00006"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00007",
+      "text": "• Backend & Data: Node.js, FastAPI, Spring Boot, PostgreSQL, Redis, Apache Kafka, GraphQL",
+      "runs": [
+        {
+          "text": "• Backend & Data: ",
+          "bold": true,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        },
+        {
+          "text": "Node.js, FastAPI, Spring Boot, PostgreSQL, Redis, Apache Kafka, GraphQL",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00007"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00008",
+      "text": "• Cloud & DevOps: AWS (ECS, Lambda, EKS, RDS), Docker, Kubernetes, Terraform, GitHub Actions, Prometheus",
+      "runs": [
+        {
+          "text": "• Cloud & DevOps: ",
+          "bold": true,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        },
+        {
+          "text": "AWS (ECS, Lambda, EKS, RDS), Docker, Kubernetes, Terraform, GitHub Actions, Prometheus",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00008"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00009",
+      "text": "• Frontend & Tools: React 18, Next.js, Tailwind CSS, Jest, Datadog, Git, Linux",
+      "runs": [
+        {
+          "text": "• Frontend & Tools: ",
+          "bold": true,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        },
+        {
+          "text": "React 18, Next.js, Tailwind CSS, Jest, Datadog, Git, Linux",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00009"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00010",
+      "text": "PROFESSIONAL EXPERIENCE",
+      "runs": [
+        {
+          "text": "PROFESSIONAL EXPERIENCE",
+          "bold": true,
+          "size": 11.0,
+          "color": "2B6CB0",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00010"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00011",
+      "text": "Lead Backend Software Engineer  |  Nexus Cloud Technologies",
+      "runs": [
+        {
+          "text": "Lead Backend Software Engineer  |  Nexus Cloud Technologies",
+          "bold": true,
+          "size": 10.0,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00011"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00012",
+      "text": "Mar 2023 – Present  •  San Francisco, CA",
+      "runs": [
+        {
+          "text": "Mar 2023 – Present  •  San Francisco, CA",
+          "bold": false,
+          "size": 8.5,
+          "color": "646E78",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00012"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00013",
+      "text": "Architected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.",
+      "runs": [
+        {
+          "text": "Architected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00013"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00014",
+      "text": "Decomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.",
+      "runs": [
+        {
+          "text": "Decomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00014"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00015",
+      "text": "Reduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.",
+      "runs": [
+        {
+          "text": "Reduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00015"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00016",
+      "text": "Mentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices.",
+      "runs": [
+        {
+          "text": "Mentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00016"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00017",
+      "text": "Full Stack Software Engineer  |  Vanguard Digital Labs",
+      "runs": [
+        {
+          "text": "Full Stack Software Engineer  |  Vanguard Digital Labs",
+          "bold": true,
+          "size": 10.0,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00017"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00018",
+      "text": "Aug 2020 – Feb 2023  •  Austin, TX (Remote)",
+      "runs": [
+        {
+          "text": "Aug 2020 – Feb 2023  •  Austin, TX (Remote)",
+          "bold": false,
+          "size": 8.5,
+          "color": "646E78",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00018"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00019",
+      "text": "Built customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.",
+      "runs": [
+        {
+          "text": "Built customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00019"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00020",
+      "text": "Authored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.",
+      "runs": [
+        {
+          "text": "Authored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00020"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00021",
+      "text": "Created reusable UI component library used across 5 internal products, reducing developer delivery time by 30%.",
+      "runs": [
+        {
+          "text": "Created reusable UI component library used across 5 internal products, reducing developer delivery time by 30%.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00021"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00022",
+      "text": "Junior Software Engineer  |  Apex Software Solutions",
+      "runs": [
+        {
+          "text": "Junior Software Engineer  |  Apex Software Solutions",
+          "bold": true,
+          "size": 10.0,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00022"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00023",
+      "text": "Jun 2018 – Jul 2020  •  Austin, TX",
+      "runs": [
+        {
+          "text": "Jun 2018 – Jul 2020  •  Austin, TX",
+          "bold": false,
+          "size": 8.5,
+          "color": "646E78",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00023"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00024",
+      "text": "Developed responsive single-page web applications with React and Redux.",
+      "runs": [
+        {
+          "text": "Developed responsive single-page web applications with React and Redux.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00024"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00025",
+      "text": "Wrote unit and integration tests achieving 88% overall code test coverage.",
+      "runs": [
+        {
+          "text": "Wrote unit and integration tests achieving 88% overall code test coverage.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00025"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00026",
+      "text": "EDUCATION & CERTIFICATIONS",
+      "runs": [
+        {
+          "text": "EDUCATION & CERTIFICATIONS",
+          "bold": true,
+          "size": 11.0,
+          "color": "2B6CB0",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00026"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00027",
+      "text": "B.S. in Computer Science  •  University of California, Berkeley (2014 – 2018)",
+      "runs": [
+        {
+          "text": "B.S. in Computer Science  •  University of California, Berkeley (2014 – 2018)",
+          "bold": true,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00027"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00028:h",
+      "text": "Certifications:",
+      "runs": [
+        {
+          "text": "Certifications: AWS Certified Solutions Architect – Associate (2024), Certified Kubernetes Administrator (CKA, 2023)",
+          "bold": false,
+          "size": 9.0,
+          "color": "46505A",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00028"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00028:b",
+      "text": "AWS Certified Solutions Architect – Associate (2024), Certified Kubernetes Administrator (CKA, 2023)",
+      "runs": [],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00028"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    }
+  ],
+  "sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "ALEX CHEN\nSenior Full Stack Software Engineer | Distributed Systems & Cloud Architecture\nSan Francisco, CA  •  (555) 019-2834  •  alex.chen.dev@example.com  •  github.com/alexchen-dev  •  linkedin.com/in/alexchen-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "summary",
+      "original_heading": "PROFESSIONAL SUMMARY",
+      "heading_line_id": "l00003",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00004"
+      ],
+      "text": "High-performing Full Stack Engineer with 7+ years of experience engineering high-throughput distributed microservices, fault-tolerant cloud infrastructure, and modern responsive front-ends. Proven record of scaling systems to 15M+ active users, optimizing API latency by 42%, and spearheading zero-downtime database migrations. Passionate about developer tooling, Clean Architecture, and CI/CD automation."
+    },
+    {
+      "id": "s002",
+      "canonical": "skills",
+      "original_heading": "TECHNICAL SKILLS",
+      "heading_line_id": "l00005",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00006",
+        "l00007",
+        "l00008",
+        "l00009"
+      ],
+      "text": "• Languages: Go, Python, TypeScript, Java, SQL, Rust (intermediate)\n• Backend & Data: Node.js, FastAPI, Spring Boot, PostgreSQL, Redis, Apache Kafka, GraphQL\n• Cloud & DevOps: AWS (ECS, Lambda, EKS, RDS), Docker, Kubernetes, Terraform, GitHub Actions, Prometheus\n• Frontend & Tools: React 18, Next.js, Tailwind CSS, Jest, Datadog, Git, Linux"
+    },
+    {
+      "id": "s003",
+      "canonical": "experience",
+      "original_heading": "PROFESSIONAL EXPERIENCE",
+      "heading_line_id": "l00010",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015",
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025"
+      ],
+      "text": "Lead Backend Software Engineer  |  Nexus Cloud Technologies\nMar 2023 – Present  •  San Francisco, CA\nArchitected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.\nDecomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.\nReduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.\nMentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices.\nFull Stack Software Engineer  |  Vanguard Digital Labs\nAug 2020 – Feb 2023  •  Austin, TX (Remote)\nBuilt customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.\nAuthored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.\nCreated reusable UI component library used across 5 internal products, reducing developer delivery time by 30%.\nJunior Software Engineer  |  Apex Software Solutions\nJun 2018 – Jul 2020  •  Austin, TX\nDeveloped responsive single-page web applications with React and Redux.\nWrote unit and integration tests achieving 88% overall code test coverage."
+    },
+    {
+      "id": "s004",
+      "canonical": "education",
+      "original_heading": "EDUCATION & CERTIFICATIONS",
+      "heading_line_id": "l00026",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00027"
+      ],
+      "text": "B.S. in Computer Science  •  University of California, Berkeley (2014 – 2018)"
+    },
+    {
+      "id": "s005",
+      "canonical": "certifications",
+      "original_heading": "Certifications:",
+      "heading_line_id": "l00028:h",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00028:b"
+      ],
+      "text": "AWS Certified Solutions Architect – Associate (2024), Certified Kubernetes Administrator (CKA, 2023)"
+    }
+  ],
+  "fields": {
+    "name": {
+      "value": "ALEX CHEN",
+      "confidence": 0.92,
+      "source_line_ids": [
+        "l00000"
+      ]
+    },
+    "emails": [
+      {
+        "value": "alex.chen.dev@example.com",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalization": "none",
+        "raw": "San Francisco, CA  •  (555) 019-2834  •  alex.chen.dev@example.com  •  github.com/alexchen-dev  •  linkedin.com/in/alexchen-dummy"
+      }
+    ],
+    "phones": [
+      {
+        "value": "(555) 019-2834",
+        "confidence": 0.7,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalized": "+15550192834",
+        "valid": false
+      }
+    ],
+    "urls": [
+      {
+        "value": "github.com/alexchen-dev",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "kind": "github"
+      },
+      {
+        "value": "linkedin.com/in/alexchen-dummy",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "kind": "linkedin"
+      }
+    ],
+    "locations": [
+      {
+        "value": "San Francisco, CA",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00002"
+        ]
+      }
+    ],
+    "date_ranges": [
+      {
+        "value": {
+          "start": "Mar 2023",
+          "end": "Present"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00012"
+        ],
+        "raw": "Mar 2023 – Present"
+      },
+      {
+        "value": {
+          "start": "Aug 2020",
+          "end": "Feb 2023"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00018"
+        ],
+        "raw": "Aug 2020 – Feb 2023"
+      },
+      {
+        "value": {
+          "start": "Jun 2018",
+          "end": "Jul 2020"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00023"
+        ],
+        "raw": "Jun 2018 – Jul 2020"
+      },
+      {
+        "value": {
+          "start": "2014",
+          "end": "2018"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00027"
+        ],
+        "raw": "2014 – 2018"
+      }
+    ],
+    "degrees": [
+      {
+        "value": "B.S. in Computer Science",
+        "confidence": 0.94,
+        "source_line_ids": [
+          "l00027"
+        ]
+      }
+    ],
+    "gpas": [],
+    "skills": [
+      {
+        "value": "TypeScript",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00006"
+        ],
+        "matched_alias": "TypeScript"
+      },
+      {
+        "value": "Python",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00006"
+        ],
+        "matched_alias": "Python"
+      },
+      {
+        "value": "Java",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00006"
+        ],
+        "matched_alias": "Java"
+      },
+      {
+        "value": "Rust",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00006"
+        ],
+        "matched_alias": "Rust"
+      },
+      {
+        "value": "SQL",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00006"
+        ],
+        "matched_alias": "SQL"
+      },
+      {
+        "value": "Go",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00006"
+        ],
+        "matched_alias": "Go"
+      },
+      {
+        "value": "Apache Kafka",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00007"
+        ],
+        "matched_alias": "Apache Kafka"
+      },
+      {
+        "value": "Spring Boot",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00007"
+        ],
+        "matched_alias": "Spring Boot"
+      },
+      {
+        "value": "PostgreSQL",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00007"
+        ],
+        "matched_alias": "PostgreSQL"
+      },
+      {
+        "value": "Node.js",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00007"
+        ],
+        "matched_alias": "Node.js"
+      },
+      {
+        "value": "FastAPI",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00007"
+        ],
+        "matched_alias": "FastAPI"
+      },
+      {
+        "value": "GraphQL",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00007"
+        ],
+        "matched_alias": "GraphQL"
+      },
+      {
+        "value": "Redis",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00007"
+        ],
+        "matched_alias": "Redis"
+      },
+      {
+        "value": "GitHub Actions",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00008"
+        ],
+        "matched_alias": "GitHub Actions"
+      },
+      {
+        "value": "Kubernetes",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00008"
+        ],
+        "matched_alias": "Kubernetes"
+      },
+      {
+        "value": "Prometheus",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00008"
+        ],
+        "matched_alias": "Prometheus"
+      },
+      {
+        "value": "Terraform",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00008"
+        ],
+        "matched_alias": "Terraform"
+      },
+      {
+        "value": "Docker",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00008"
+        ],
+        "matched_alias": "Docker"
+      },
+      {
+        "value": "AWS",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00008"
+        ],
+        "matched_alias": "AWS"
+      },
+      {
+        "value": "Tailwind CSS",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00009"
+        ],
+        "matched_alias": "Tailwind CSS"
+      },
+      {
+        "value": "Next.js",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00009"
+        ],
+        "matched_alias": "Next.js"
+      },
+      {
+        "value": "Datadog",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00009"
+        ],
+        "matched_alias": "Datadog"
+      },
+      {
+        "value": "React",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00009"
+        ],
+        "matched_alias": "React"
+      },
+      {
+        "value": "Linux",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00009"
+        ],
+        "matched_alias": "Linux"
+      },
+      {
+        "value": "Jest",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00009"
+        ],
+        "matched_alias": "Jest"
+      },
+      {
+        "value": "Git",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00009"
+        ],
+        "matched_alias": "Git"
+      },
+      {
+        "value": "Redux",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00024"
+        ],
+        "matched_alias": "Redux"
+      }
+    ],
+    "experience": [
+      {
+        "title": {
+          "value": "Lead Backend Software Engineer",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00011"
+          ]
+        },
+        "company": {
+          "value": "Nexus Cloud Technologies",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00012"
+          ]
+        },
+        "location": {
+          "value": "San Francisco, CA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00012"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "Mar 2023",
+            "end": "Present"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00012"
+          ]
+        },
+        "bullets": [
+          "Architected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.",
+          "Decomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.",
+          "Reduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.",
+          "Mentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices."
+        ],
+        "text": "Lead Backend Software Engineer  |  Nexus Cloud Technologies\nMar 2023 – Present  •  San Francisco, CA\nArchitected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.\nDecomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.\nReduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.\nMentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00011",
+          "l00012",
+          "l00013",
+          "l00014",
+          "l00015",
+          "l00016"
+        ]
+      },
+      {
+        "title": {
+          "value": "Full Stack Software Engineer",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00017"
+          ]
+        },
+        "company": {
+          "value": "Vanguard Digital Labs",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00018"
+          ]
+        },
+        "location": {
+          "value": "Austin, TX",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00018"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "Aug 2020",
+            "end": "Feb 2023"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00018"
+          ]
+        },
+        "bullets": [
+          "Built customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.",
+          "Authored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.",
+          "Created reusable UI component library used across 5 internal products, reducing developer delivery time by 30%."
+        ],
+        "text": "Full Stack Software Engineer  |  Vanguard Digital Labs\nAug 2020 – Feb 2023  •  Austin, TX (Remote)\nBuilt customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.\nAuthored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.\nCreated reusable UI component library used across 5 internal products, reducing developer delivery time by 30%.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00017",
+          "l00018",
+          "l00019",
+          "l00020",
+          "l00021"
+        ]
+      },
+      {
+        "title": {
+          "value": "Junior Software Engineer",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00022"
+          ]
+        },
+        "company": {
+          "value": "Apex Software Solutions",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00023"
+          ]
+        },
+        "location": {
+          "value": "Austin, TX",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00023"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "Jun 2018",
+            "end": "Jul 2020"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00023"
+          ]
+        },
+        "bullets": [
+          "Developed responsive single-page web applications with React and Redux.",
+          "Wrote unit and integration tests achieving 88% overall code test coverage."
+        ],
+        "text": "Junior Software Engineer  |  Apex Software Solutions\nJun 2018 – Jul 2020  •  Austin, TX\nDeveloped responsive single-page web applications with React and Redux.\nWrote unit and integration tests achieving 88% overall code test coverage.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00022",
+          "l00023",
+          "l00024",
+          "l00025"
+        ]
+      }
+    ]
+  },
+  "structured": {
+    "schema_version": "3.0.0",
+    "section_order": [
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections"
+    ],
+    "entry_order": "source",
+    "contact": {
+      "name": {
+        "value": "ALEX CHEN",
+        "confidence": 0.92,
+        "source_line_ids": [
+          "l00000"
+        ]
+      },
+      "emails": [
+        {
+          "value": "alex.chen.dev@example.com",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalization": "none",
+          "raw": "San Francisco, CA  •  (555) 019-2834  •  alex.chen.dev@example.com  •  github.com/alexchen-dev  •  linkedin.com/in/alexchen-dummy"
+        }
+      ],
+      "phones": [
+        {
+          "value": "(555) 019-2834",
+          "confidence": 0.7,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalized": "+15550192834",
+          "valid": false
+        }
+      ],
+      "locations": [
+        {
+          "value": "San Francisco, CA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00002"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "value": "github.com/alexchen-dev",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "kind": "github"
+        },
+        {
+          "value": "linkedin.com/in/alexchen-dummy",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "kind": "linkedin"
+        }
+      ]
+    },
+    "summary": [
+      {
+        "text": "High-performing Full Stack Engineer with 7+ years of experience engineering high-throughput distributed microservices, fault-tolerant cloud infrastructure, and modern responsive front-ends. Proven record of scaling systems to 15M+ active users, optimizing API latency by 42%, and spearheading zero-downtime database migrations. Passionate about developer tooling, Clean Architecture, and CI/CD automation.",
+        "source_line_ids": [
+          "l00004"
+        ],
+        "value": "High-performing Full Stack Engineer with 7+ years of experience engineering high-throughput distributed microservices, fault-tolerant cloud infrastructure, and modern responsive front-ends. Proven record of scaling systems to 15M+ active users, optimizing API latency by 42%, and spearheading zero-downtime database migrations. Passionate about developer tooling, Clean Architecture, and CI/CD automation."
+      }
+    ],
+    "experience": [
+      {
+        "title": {
+          "value": "Lead Backend Software Engineer",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00011"
+          ]
+        },
+        "company": {
+          "value": "Nexus Cloud Technologies",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00012"
+          ]
+        },
+        "location": {
+          "value": "San Francisco, CA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00012"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "Mar 2023",
+            "end": "Present"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00012"
+          ]
+        },
+        "bullets": [
+          "Architected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.",
+          "Decomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.",
+          "Reduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.",
+          "Mentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices."
+        ],
+        "text": "Lead Backend Software Engineer  |  Nexus Cloud Technologies\nMar 2023 – Present  •  San Francisco, CA\nArchitected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.\nDecomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.\nReduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.\nMentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00011",
+          "l00012",
+          "l00013",
+          "l00014",
+          "l00015",
+          "l00016"
+        ]
+      },
+      {
+        "title": {
+          "value": "Full Stack Software Engineer",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00017"
+          ]
+        },
+        "company": {
+          "value": "Vanguard Digital Labs",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00018"
+          ]
+        },
+        "location": {
+          "value": "Austin, TX",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00018"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "Aug 2020",
+            "end": "Feb 2023"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00018"
+          ]
+        },
+        "bullets": [
+          "Built customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.",
+          "Authored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.",
+          "Created reusable UI component library used across 5 internal products, reducing developer delivery time by 30%."
+        ],
+        "text": "Full Stack Software Engineer  |  Vanguard Digital Labs\nAug 2020 – Feb 2023  •  Austin, TX (Remote)\nBuilt customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.\nAuthored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.\nCreated reusable UI component library used across 5 internal products, reducing developer delivery time by 30%.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00017",
+          "l00018",
+          "l00019",
+          "l00020",
+          "l00021"
+        ]
+      },
+      {
+        "title": {
+          "value": "Junior Software Engineer",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00022"
+          ]
+        },
+        "company": {
+          "value": "Apex Software Solutions",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00023"
+          ]
+        },
+        "location": {
+          "value": "Austin, TX",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00023"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "Jun 2018",
+            "end": "Jul 2020"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00023"
+          ]
+        },
+        "bullets": [
+          "Developed responsive single-page web applications with React and Redux.",
+          "Wrote unit and integration tests achieving 88% overall code test coverage."
+        ],
+        "text": "Junior Software Engineer  |  Apex Software Solutions\nJun 2018 – Jul 2020  •  Austin, TX\nDeveloped responsive single-page web applications with React and Redux.\nWrote unit and integration tests achieving 88% overall code test coverage.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00022",
+          "l00023",
+          "l00024",
+          "l00025"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "text": "B.S. in Computer Science\nUniversity of California, Berkeley (2014 – 2018)",
+        "source_line_ids": [
+          "l00027"
+        ],
+        "degree": {
+          "value": "B.S. in Computer Science",
+          "source_line_ids": [
+            "l00027"
+          ],
+          "confidence": 0.85
+        },
+        "institution": {
+          "value": "University of California, Berkeley",
+          "source_line_ids": [
+            "l00027"
+          ],
+          "confidence": 0.85
+        },
+        "dates": {
+          "value": {
+            "start": "2014",
+            "end": "2018"
+          },
+          "source_line_ids": [
+            "l00027"
+          ],
+          "confidence": 0.95
+        },
+        "graduation": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "location": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "gpa": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        }
+      }
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "text": "• Languages: Go, Python, TypeScript, Java, SQL, Rust (intermediate)",
+        "source_line_ids": [
+          "l00006"
+        ],
+        "category": "Languages",
+        "items": [
+          "Go",
+          "Python",
+          "TypeScript",
+          "Java",
+          "SQL",
+          "Rust (intermediate)"
+        ]
+      },
+      {
+        "text": "• Backend & Data: Node.js, FastAPI, Spring Boot, PostgreSQL, Redis, Apache Kafka, GraphQL",
+        "source_line_ids": [
+          "l00007"
+        ],
+        "category": "Backend & Data",
+        "items": [
+          "Node.js",
+          "FastAPI",
+          "Spring Boot",
+          "PostgreSQL",
+          "Redis",
+          "Apache Kafka",
+          "GraphQL"
+        ]
+      },
+      {
+        "text": "• Cloud & DevOps: AWS (ECS, Lambda, EKS, RDS), Docker, Kubernetes, Terraform, GitHub Actions, Prometheus",
+        "source_line_ids": [
+          "l00008"
+        ],
+        "category": "Cloud & DevOps",
+        "items": [
+          "AWS (ECS, Lambda, EKS, RDS)",
+          "Docker",
+          "Kubernetes",
+          "Terraform",
+          "GitHub Actions",
+          "Prometheus"
+        ]
+      },
+      {
+        "text": "• Frontend & Tools: React 18, Next.js, Tailwind CSS, Jest, Datadog, Git, Linux",
+        "source_line_ids": [
+          "l00009"
+        ],
+        "category": "Frontend & Tools",
+        "items": [
+          "React 18",
+          "Next.js",
+          "Tailwind CSS",
+          "Jest",
+          "Datadog",
+          "Git",
+          "Linux"
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "text": "AWS Certified Solutions Architect – Associate (2024), Certified Kubernetes Administrator (CKA, 2023)",
+        "source_line_ids": [
+          "l00028"
+        ],
+        "name": {
+          "value": "AWS Certified Solutions Architect – Associate (2024)",
+          "source_line_ids": [
+            "l00028"
+          ],
+          "confidence": 0.85
+        },
+        "details": ""
+      },
+      {
+        "text": "AWS Certified Solutions Architect – Associate (2024), Certified Kubernetes Administrator (CKA, 2023)",
+        "source_line_ids": [
+          "l00028"
+        ],
+        "name": {
+          "value": "Certified Kubernetes Administrator (CKA, 2023)",
+          "source_line_ids": [
+            "l00028"
+          ],
+          "confidence": 0.85
+        },
+        "details": ""
+      }
+    ],
+    "other_sections": [],
+    "review": [
+      {
+        "path": "fields.phones[0]",
+        "reason": "missing or low-confidence candidate",
+        "confidence": 0.7
+      }
+    ],
+    "source_sections": [
+      {
+        "id": "s000",
+        "canonical": "preamble",
+        "original_heading": null,
+        "heading_line_id": null,
+        "confidence": 1.0,
+        "line_ids": [
+          "l00000",
+          "l00001",
+          "l00002"
+        ],
+        "text": "ALEX CHEN\nSenior Full Stack Software Engineer | Distributed Systems & Cloud Architecture\nSan Francisco, CA  •  (555) 019-2834  •  alex.chen.dev@example.com  •  github.com/alexchen-dev  •  linkedin.com/in/alexchen-dummy"
+      },
+      {
+        "id": "s001",
+        "canonical": "summary",
+        "original_heading": "PROFESSIONAL SUMMARY",
+        "heading_line_id": "l00003",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00004"
+        ],
+        "text": "High-performing Full Stack Engineer with 7+ years of experience engineering high-throughput distributed microservices, fault-tolerant cloud infrastructure, and modern responsive front-ends. Proven record of scaling systems to 15M+ active users, optimizing API latency by 42%, and spearheading zero-downtime database migrations. Passionate about developer tooling, Clean Architecture, and CI/CD automation."
+      },
+      {
+        "id": "s002",
+        "canonical": "skills",
+        "original_heading": "TECHNICAL SKILLS",
+        "heading_line_id": "l00005",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00006",
+          "l00007",
+          "l00008",
+          "l00009"
+        ],
+        "text": "• Languages: Go, Python, TypeScript, Java, SQL, Rust (intermediate)\n• Backend & Data: Node.js, FastAPI, Spring Boot, PostgreSQL, Redis, Apache Kafka, GraphQL\n• Cloud & DevOps: AWS (ECS, Lambda, EKS, RDS), Docker, Kubernetes, Terraform, GitHub Actions, Prometheus\n• Frontend & Tools: React 18, Next.js, Tailwind CSS, Jest, Datadog, Git, Linux"
+      },
+      {
+        "id": "s003",
+        "canonical": "experience",
+        "original_heading": "PROFESSIONAL EXPERIENCE",
+        "heading_line_id": "l00010",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00011",
+          "l00012",
+          "l00013",
+          "l00014",
+          "l00015",
+          "l00016",
+          "l00017",
+          "l00018",
+          "l00019",
+          "l00020",
+          "l00021",
+          "l00022",
+          "l00023",
+          "l00024",
+          "l00025"
+        ],
+        "text": "Lead Backend Software Engineer  |  Nexus Cloud Technologies\nMar 2023 – Present  •  San Francisco, CA\nArchitected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.\nDecomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.\nReduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.\nMentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices.\nFull Stack Software Engineer  |  Vanguard Digital Labs\nAug 2020 – Feb 2023  •  Austin, TX (Remote)\nBuilt customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.\nAuthored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.\nCreated reusable UI component library used across 5 internal products, reducing developer delivery time by 30%.\nJunior Software Engineer  |  Apex Software Solutions\nJun 2018 – Jul 2020  •  Austin, TX\nDeveloped responsive single-page web applications with React and Redux.\nWrote unit and integration tests achieving 88% overall code test coverage."
+      },
+      {
+        "id": "s004",
+        "canonical": "education",
+        "original_heading": "EDUCATION & CERTIFICATIONS",
+        "heading_line_id": "l00026",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00027"
+        ],
+        "text": "B.S. in Computer Science  •  University of California, Berkeley (2014 – 2018)"
+      },
+      {
+        "id": "s005",
+        "canonical": "certifications",
+        "original_heading": "Certifications:",
+        "heading_line_id": "l00028:h",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00028:b"
+        ],
+        "text": "AWS Certified Solutions Architect – Associate (2024), Certified Kubernetes Administrator (CKA, 2023)"
+      }
+    ]
+  },
+  "needs_review": [
+    {
+      "path": "fields.phones[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.7
+    }
+  ],
+  "quality": {
+    "completeness": {
+      "status": "pass",
+      "reference_words": 357,
+      "extracted_words": 357,
+      "matched_words": 357,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "schema_errors": [],
+    "warnings": [],
+    "suppressed_exact_repeats": []
+  }
+}

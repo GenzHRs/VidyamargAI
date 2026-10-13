@@ -1,0 +1,64 @@
+# KAVITA RAMANATHAN
+
+## Contact
+
+- kavita.ramanathan@example.com
+
+- (555) 234-8761
+
+- San Jose, CA
+
+- linkedin.com/in/kavita-ramanathan-dummy
+
+## Summary
+
+Growth-oriented Product Marketing leader with 8+ years driving Go-To-Market (GTM) launches, competitive positioning, and buyer enablement for enterprise cloud and AI infrastructure. Generated $35M+ in qualified pipeline across Tier-1 enterprise accounts.
+
+## Experience
+
+### Director of Product Marketing
+
+Synthetix AI | Palo Alto, CA | 2022 – Present
+
+- Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1.
+
+- Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%.
+
+### Senior Product Marketing Manager
+
+Datastream Cloud | San Jose, CA | 2019 – 2022
+
+- Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).
+
+- Trained 180+ global field sales engineers on solution messaging and pricing tiers.
+
+## Education
+
+### MBA
+
+UC Berkeley Haas | 2019
+
+### B.S. in Economics
+
+UCLA | 2015
+
+## Skills
+
+Category Creation & Positioning
+
+Competitive Intelligence (Klue)
+
+Customer Case Studies & Webinars
+
+HubSpot, Salesforce, Marketo
+
+Pricing & Packaging Strategy
+
+## Other Sections
+
+### KEY GTM METRICS
+
+• $35M+ Attributed Enterprise Pipeline
+• 65+ Tier-1 Enterprise Wins
+• 26% Higher Win-Rate Post-Launch
+• 180+ Field Reps Certified

@@ -1,0 +1,455 @@
+PERSONAL_DETAILS
+{
+  "name": {
+    "value": "ELEANOR R. VANCE",
+    "confidence": 0.92,
+    "source_line_ids": [
+      "l00000"
+    ]
+  },
+  "emails": [
+    {
+      "value": "e.vance.executive@example.com",
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "normalization": "none",
+      "raw": "Chicago, IL  |  +1 (312) 555-8492  |  e.vance.executive@example.com  |  linkedin.com/in/eleanor-vance-dummy"
+    }
+  ],
+  "phones": [
+    {
+      "value": "+1 (312) 555-8492",
+      "confidence": 0.95,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "normalized": "+13125558492",
+      "valid": true
+    }
+  ],
+  "locations": [
+    {
+      "value": "Chicago, IL",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00002"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "value": "linkedin.com/in/eleanor-vance-dummy",
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "kind": "linkedin"
+    }
+  ],
+  "headline": {
+    "value": "VICE PRESIDENT OF GLOBAL OPERATIONS & SUPPLY CHAIN",
+    "source_line_ids": [
+      "l00001"
+    ],
+    "confidence": 0.7
+  }
+}
+
+SUMMARY
+[
+  {
+    "text": "Accomplished Operations Executive with 16+ years of enterprise leadership managing $250M+ P&L operations across North America, EMEA, and APAC. Recognized for orchestrating large-scale operational transformations, post-merger integrations, Lean Six Sigma deployment, and end-to-end logistics modernization. Trusted advisor to Board of Directors with proven ability to scale global operating margins while delivering superior customer satisfaction.",
+    "source_line_ids": [
+      "l00004"
+    ],
+    "value": "Accomplished Operations Executive with 16+ years of enterprise leadership managing $250M+ P&L operations across North America, EMEA, and APAC. Recognized for orchestrating large-scale operational transformations, post-merger integrations, Lean Six Sigma deployment, and end-to-end logistics modernization. Trusted advisor to Board of Directors with proven ability to scale global operating margins while delivering superior customer satisfaction."
+  }
+]
+
+EDUCATION
+[
+  {
+    "text": "Master of Business Administration (MBA)\nThe University of Chicago Booth School of Business (2013)",
+    "source_line_ids": [
+      "l00028"
+    ],
+    "degree": {
+      "value": "Master of Business Administration (MBA)",
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": 0.85
+    },
+    "institution": {
+      "value": "The University of Chicago Booth School of Business",
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": 0.85
+    },
+    "dates": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "graduation": {
+      "value": "2013",
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": 0.85
+    },
+    "location": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "gpa": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "normalized_dates": {
+      "start": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      },
+      "end": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      }
+    }
+  },
+  {
+    "text": "Bachelor of Science in Industrial Engineering\nPurdue University (2007)",
+    "source_line_ids": [
+      "l00029"
+    ],
+    "degree": {
+      "value": "Bachelor of Science in Industrial Engineering",
+      "source_line_ids": [
+        "l00029"
+      ],
+      "confidence": 0.85
+    },
+    "institution": {
+      "value": "Purdue University",
+      "source_line_ids": [
+        "l00029"
+      ],
+      "confidence": 0.85
+    },
+    "dates": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "graduation": {
+      "value": "2007",
+      "source_line_ids": [
+        "l00029"
+      ],
+      "confidence": 0.85
+    },
+    "location": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "gpa": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "normalized_dates": {
+      "start": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      },
+      "end": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      }
+    }
+  }
+]
+
+WORK_EXPERIENCE
+[
+  {
+    "title": {
+      "value": "Vice President of Global Operations",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00016"
+      ]
+    },
+    "company": {
+      "value": "Crestview Manufacturing & Logistics Group",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00016"
+      ]
+    },
+    "location": {
+      "value": "Chicago, IL",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00017"
+      ]
+    },
+    "dates": {
+      "value": {
+        "start": "2020",
+        "end": "Present"
+      },
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00017"
+      ]
+    },
+    "bullets": [
+      "Oversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.",
+      "Instituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.",
+      "Led cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.",
+      "Presented quarterly strategic updates, operational KPIs, and risk evaluations directly to the Executive Committee and Board of Directors."
+    ],
+    "text": "Vice President of Global Operations  —  Crestview Manufacturing & Logistics Group\n2020 – Present  |  Chicago, IL\nOversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.\nInstituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.\nLed cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.\nPresented quarterly strategic updates, operational KPIs, and risk evaluations directly to the Executive Committee and Board of Directors.",
+    "confidence": 0.88,
+    "source_line_ids": [
+      "l00016",
+      "l00017",
+      "l00018",
+      "l00019",
+      "l00020",
+      "l00021"
+    ],
+    "normalized_dates": {
+      "start": {
+        "raw": "2020",
+        "value": "2020",
+        "precision": "year"
+      },
+      "end": {
+        "raw": "Present",
+        "value": null,
+        "precision": "open"
+      }
+    }
+  },
+  {
+    "title": {
+      "value": "Director of Supply Chain & Manufacturing",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00022"
+      ]
+    },
+    "company": {
+      "value": "Apex Industrial Technologies",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00022"
+      ]
+    },
+    "location": {
+      "value": "Detroit, MI",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00023"
+      ]
+    },
+    "dates": {
+      "value": {
+        "start": "2015",
+        "end": "2020"
+      },
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00023"
+      ]
+    },
+    "bullets": [
+      "Spearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.",
+      "Renegotiated key Tier-1 carrier contracts delivering $9.6M in recurring freight savings over a 3-year agreement cycle.",
+      "Achieved OSHA voluntary protection status across all sites, improving team safety records by 64%."
+    ],
+    "text": "Director of Supply Chain & Manufacturing  —  Apex Industrial Technologies\n2015 – 2020  |  Detroit, MI\nSpearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.\nRenegotiated key Tier-1 carrier contracts delivering $9.6M in recurring freight savings over a 3-year agreement cycle.\nAchieved OSHA voluntary protection status across all sites, improving team safety records by 64%.",
+    "confidence": 0.88,
+    "source_line_ids": [
+      "l00022",
+      "l00023",
+      "l00024",
+      "l00025",
+      "l00026"
+    ],
+    "normalized_dates": {
+      "start": {
+        "raw": "2015",
+        "value": "2015",
+        "precision": "year"
+      },
+      "end": {
+        "raw": "2020",
+        "value": "2020",
+        "precision": "year"
+      }
+    }
+  }
+]
+
+INTERNSHIPS
+[]
+
+PROJECTS
+[]
+
+SKILLS
+[
+  {
+    "text": "• Multi-Site P&L Management ($250M+)",
+    "source_line_ids": [
+      "l00006"
+    ],
+    "category": null,
+    "items": [
+      "Multi-Site P&L Management ($250M+)"
+    ]
+  },
+  {
+    "text": "• Global Supply Chain Optimization",
+    "source_line_ids": [
+      "l00007"
+    ],
+    "category": null,
+    "items": [
+      "Global Supply Chain Optimization"
+    ]
+  },
+  {
+    "text": "• Post-Merger Operational Integration",
+    "source_line_ids": [
+      "l00008"
+    ],
+    "category": null,
+    "items": [
+      "Post-Merger Operational Integration"
+    ]
+  },
+  {
+    "text": "• Lean Six Sigma / Continuous Improvement",
+    "source_line_ids": [
+      "l00009"
+    ],
+    "category": null,
+    "items": [
+      "Lean Six Sigma / Continuous Improvement"
+    ]
+  },
+  {
+    "text": "• Strategic Procurement & Vendor Negotiation",
+    "source_line_ids": [
+      "l00010"
+    ],
+    "category": null,
+    "items": [
+      "Strategic Procurement & Vendor Negotiation"
+    ]
+  },
+  {
+    "text": "• Cross-Functional Executive Leadership",
+    "source_line_ids": [
+      "l00011"
+    ],
+    "category": null,
+    "items": [
+      "Cross-Functional Executive Leadership"
+    ]
+  },
+  {
+    "text": "• Enterprise Risk Management & Compliance",
+    "source_line_ids": [
+      "l00012"
+    ],
+    "category": null,
+    "items": [
+      "Enterprise Risk Management & Compliance"
+    ]
+  },
+  {
+    "text": "• ERP Systems Modernization (SAP S/4HANA)",
+    "source_line_ids": [
+      "l00013"
+    ],
+    "category": null,
+    "items": [
+      "ERP Systems Modernization (SAP S/4HANA)"
+    ]
+  },
+  {
+    "text": "• Boardroom Governance & Stakeholder Relations",
+    "source_line_ids": [
+      "l00014"
+    ],
+    "category": null,
+    "items": [
+      "Boardroom Governance & Stakeholder Relations"
+    ]
+  }
+]
+
+CERTIFICATIONS
+[
+  {
+    "text": "Lean Six Sigma Master Black Belt (CSSMBB)  •  APICS Certified Supply Chain Professional (CSCP)",
+    "source_line_ids": [
+      "l00030"
+    ],
+    "name": {
+      "value": "Lean Six Sigma Master Black Belt (CSSMBB)",
+      "source_line_ids": [
+        "l00030"
+      ],
+      "confidence": 0.85
+    },
+    "details": ""
+  },
+  {
+    "text": "Lean Six Sigma Master Black Belt (CSSMBB)  •  APICS Certified Supply Chain Professional (CSCP)",
+    "source_line_ids": [
+      "l00030"
+    ],
+    "name": {
+      "value": "APICS Certified Supply Chain Professional (CSCP)",
+      "source_line_ids": [
+        "l00030"
+      ],
+      "confidence": 0.85
+    },
+    "details": ""
+  }
+]
+
+TRAINING
+[]
+
+AWARDS
+[]
+
+PUBLICATIONS
+[]
+
+LANGUAGES
+[]
+
+OTHER_SECTIONS
+[]
+
+UNCLASSIFIED
+[]

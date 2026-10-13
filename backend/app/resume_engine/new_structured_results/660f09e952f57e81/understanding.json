@@ -1,0 +1,3379 @@
+{
+  "understanding_schema_version": "1.0.0",
+  "engine": "offline_rule_ner",
+  "source": {
+    "filename": "10_DOCX_Entry_Level_Business_Analyst.docx",
+    "sha256": "660f09e952f57e81c68954cb8f7097c29b6021b3a3152fa90114933b9ffc62d9",
+    "type": "docx",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": null,
+    "reference_method": "docx_xml_text"
+  },
+  "artifact_sha256": "26f74d03b76921ed737e29b895bbaf7b7b5a1207c00e5e90f65fc786c8a7aad5",
+  "section_order": [
+    "personal_details",
+    "summary",
+    "education",
+    "work_experience",
+    "internships",
+    "projects",
+    "skills",
+    "certifications",
+    "training",
+    "awards",
+    "publications",
+    "languages",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "profile": {
+    "personal_details": {
+      "name": {
+        "value": "JORDAN TAYLOR",
+        "confidence": 0.92,
+        "source_line_ids": [
+          "l00000"
+        ]
+      },
+      "emails": [
+        {
+          "value": "jordan.taylor.analyst@example.com",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalization": "none",
+          "raw": "Seattle, WA  •  (555) 762-9013  •  jordan.taylor.analyst@example.com  •  linkedin.com/in/jordan-taylor-dummy"
+        }
+      ],
+      "phones": [
+        {
+          "value": "(555) 762-9013",
+          "confidence": 0.7,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalized": "+15557629013",
+          "valid": false
+        }
+      ],
+      "locations": [
+        {
+          "value": "Seattle, WA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00002"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "value": "linkedin.com/in/jordan-taylor-dummy",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "kind": "linkedin"
+        }
+      ],
+      "headline": {
+        "value": "Junior Business Analyst  |  Data Visualization & Process Modeling",
+        "source_line_ids": [
+          "l00001"
+        ],
+        "confidence": 0.7
+      }
+    },
+    "summary": [],
+    "education": [
+      {
+        "text": "University of Washington, Foster School of Business  —  Seattle, WA\nBachelor of Arts in Information Systems & Operations Management | GPA: 3.82 / 4.0\nGraduation: June 2025\nDean's List (6 Consecutive Quarters)\nAlpha Kappa Psi Business Fraternity",
+        "source_line_ids": [
+          "l00004",
+          "l00005",
+          "l00006"
+        ],
+        "degree": {
+          "value": "Bachelor of Arts in Information Systems & Operations Management",
+          "source_line_ids": [
+            "l00005"
+          ],
+          "confidence": 0.85
+        },
+        "institution": {
+          "value": "University of Washington, Foster School of Business",
+          "source_line_ids": [
+            "l00004"
+          ],
+          "confidence": 0.85
+        },
+        "dates": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "graduation": {
+          "value": "June 2025",
+          "source_line_ids": [
+            "l00006"
+          ],
+          "confidence": 0.85
+        },
+        "location": {
+          "value": "Seattle, WA",
+          "source_line_ids": [
+            "l00004"
+          ],
+          "confidence": 0.85
+        },
+        "gpa": {
+          "value": {
+            "score": "3.82",
+            "scale": "4.0"
+          },
+          "source_line_ids": [
+            "l00005"
+          ],
+          "confidence": 0.85
+        },
+        "normalized_dates": {
+          "start": {
+            "raw": null,
+            "value": null,
+            "precision": null
+          },
+          "end": {
+            "raw": null,
+            "value": null,
+            "precision": null
+          }
+        }
+      }
+    ],
+    "work_experience": [],
+    "internships": [
+      {
+        "title": {
+          "value": "Business Analyst Intern",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00011"
+          ]
+        },
+        "company": {
+          "value": "Cascade Financial Services",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00012"
+          ]
+        },
+        "location": {
+          "value": "Seattle, WA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00012"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "Jun 2024",
+            "end": "Sep 2024"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00012"
+          ]
+        },
+        "bullets": [
+          "Conducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.",
+          "Designed and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.",
+          "Facilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal."
+        ],
+        "text": "Business Analyst Intern  |  Cascade Financial Services\nJun 2024 – Sep 2024  •  Seattle, WA\nConducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.\nDesigned and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.\nFacilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00011",
+          "l00012",
+          "l00013",
+          "l00014",
+          "l00015"
+        ],
+        "normalized_dates": {
+          "start": {
+            "raw": "Jun 2024",
+            "value": "2024-06",
+            "precision": "month"
+          },
+          "end": {
+            "raw": "Sep 2024",
+            "value": "2024-09",
+            "precision": "month"
+          }
+        }
+      },
+      {
+        "title": {
+          "value": "Operations Data Intern",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00016"
+          ]
+        },
+        "company": {
+          "value": "Evergreen Supply Partners",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00017"
+          ]
+        },
+        "location": {
+          "value": "Bellevue, WA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00017"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "Jan 2024",
+            "end": "May 2024"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00017"
+          ]
+        },
+        "bullets": [
+          "Cleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.",
+          "Synthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director."
+        ],
+        "text": "Operations Data Intern  |  Evergreen Supply Partners\nJan 2024 – May 2024  •  Bellevue, WA\nCleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.\nSynthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00016",
+          "l00017",
+          "l00018",
+          "l00019"
+        ],
+        "normalized_dates": {
+          "start": {
+            "raw": "Jan 2024",
+            "value": "2024-01",
+            "precision": "month"
+          },
+          "end": {
+            "raw": "May 2024",
+            "value": "2024-05",
+            "precision": "month"
+          }
+        }
+      }
+    ],
+    "projects": [
+      {
+        "text": "Supply Chain Simulation Project (Senior Capstone):\nModeled distribution logistics for regional retail network in Python; predicted stockouts with 89% accuracy and won 2nd Place in Foster Business Case Showcase.",
+        "source_line_ids": [
+          "l00021",
+          "l00022"
+        ],
+        "name": {
+          "value": "Supply Chain Simulation Project (Senior Capstone):",
+          "source_line_ids": [
+            "l00021"
+          ],
+          "confidence": 0.85
+        },
+        "dates": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "technologies": [],
+        "description": "Modeled distribution logistics for regional retail network in Python; predicted stockouts with 89% accuracy and won 2nd Place in Foster Business Case Showcase.",
+        "bullets": [],
+        "normalized_dates": {
+          "start": {
+            "raw": null,
+            "value": null,
+            "precision": null
+          },
+          "end": {
+            "raw": null,
+            "value": null,
+            "precision": null
+          }
+        }
+      }
+    ],
+    "skills": [
+      {
+        "text": "• Analysis & Tools: Tableau, Power BI, Advanced Excel (VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query), SQL (PostgreSQL), Python (Pandas)",
+        "source_line_ids": [
+          "l00008"
+        ],
+        "category": "Analysis & Tools",
+        "items": [
+          "Tableau",
+          "Power BI",
+          "Advanced Excel (VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query)",
+          "SQL (PostgreSQL)",
+          "Python (Pandas)"
+        ]
+      },
+      {
+        "text": "• Business Process: Agile/Scrum, User Stories, BPMN Diagramming, JIRA, Confluence, Requirement Gathering, Root Cause Analysis",
+        "source_line_ids": [
+          "l00009"
+        ],
+        "category": "Business Process",
+        "items": [
+          "Agile/Scrum",
+          "User Stories",
+          "BPMN Diagramming",
+          "JIRA",
+          "Confluence",
+          "Requirement Gathering",
+          "Root Cause Analysis"
+        ]
+      }
+    ],
+    "certifications": [],
+    "training": [],
+    "awards": [],
+    "publications": [],
+    "languages": [],
+    "other_sections": [],
+    "unassigned_links": []
+  },
+  "entities": [
+    {
+      "id": "e00000",
+      "label": "PERSON",
+      "text": "JORDAN TAYLOR",
+      "normalized": "JORDAN TAYLOR",
+      "source_line_id": "l00000",
+      "start": 0,
+      "end": 13,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "preamble_title",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.7
+    },
+    {
+      "id": "e00001",
+      "label": "EMAIL",
+      "text": "jordan.taylor.analyst@example.com",
+      "normalized": "jordan.taylor.analyst@example.com",
+      "source_line_id": "l00002",
+      "start": 35,
+      "end": 68,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "regex:email",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00002",
+      "label": "PHONE",
+      "text": "(555) 762-9013",
+      "normalized": "(555) 762-9013",
+      "source_line_id": "l00002",
+      "start": 16,
+      "end": 30,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "regex:phone",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00003",
+      "label": "URL",
+      "text": "jordan.taylor",
+      "normalized": "jordan.taylor",
+      "source_line_id": "l00002",
+      "start": 35,
+      "end": 48,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "literal_url",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00004",
+      "label": "URL",
+      "text": "linkedin.com/in/jordan-taylor-dummy",
+      "normalized": "linkedin.com/in/jordan-taylor-dummy",
+      "source_line_id": "l00002",
+      "start": 73,
+      "end": 108,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "literal_url",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00005",
+      "label": "INSTITUTION",
+      "text": "University of Washington, Foster School of Business  —  Seattle, WA",
+      "normalized": "University of Washington, Foster School of Business  —  Seattle, WA",
+      "source_line_id": "l00004",
+      "start": 0,
+      "end": 67,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "education",
+      "rule": "education_institution",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00006",
+      "label": "GPA",
+      "text": "GPA: 3.82 / 4.0",
+      "normalized": "GPA: 3.82 / 4.0",
+      "source_line_id": "l00005",
+      "start": 66,
+      "end": 81,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "education",
+      "rule": "regex:gpa",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00007",
+      "label": "DEGREE",
+      "text": "Bachelor of Arts in Information Systems & Operations Management ",
+      "normalized": "Bachelor of Arts in Information Systems & Operations Management ",
+      "source_line_id": "l00005",
+      "start": 0,
+      "end": 64,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "education",
+      "rule": "education_degree",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00008",
+      "label": "SKILL",
+      "text": "Power Query",
+      "normalized": "Power Query",
+      "source_line_id": "l00008",
+      "start": 91,
+      "end": 102,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00009",
+      "label": "SKILL",
+      "text": "PostgreSQL",
+      "normalized": "PostgreSQL",
+      "source_line_id": "l00008",
+      "start": 110,
+      "end": 120,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00010",
+      "label": "SKILL",
+      "text": "Power BI",
+      "normalized": "Power BI",
+      "source_line_id": "l00008",
+      "start": 29,
+      "end": 37,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00011",
+      "label": "SKILL",
+      "text": "Tableau",
+      "normalized": "Tableau",
+      "source_line_id": "l00008",
+      "start": 20,
+      "end": 27,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00012",
+      "label": "SKILL",
+      "text": "Python",
+      "normalized": "Python",
+      "source_line_id": "l00008",
+      "start": 123,
+      "end": 129,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00013",
+      "label": "SKILL",
+      "text": "Pandas",
+      "normalized": "Pandas",
+      "source_line_id": "l00008",
+      "start": 131,
+      "end": 137,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00014",
+      "label": "SKILL",
+      "text": "Excel",
+      "normalized": "Excel",
+      "source_line_id": "l00008",
+      "start": 48,
+      "end": 53,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00015",
+      "label": "SKILL",
+      "text": "SQL",
+      "normalized": "SQL",
+      "source_line_id": "l00008",
+      "start": 105,
+      "end": 108,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00016",
+      "label": "SKILL",
+      "text": "Root Cause Analysis",
+      "normalized": "Root Cause Analysis",
+      "source_line_id": "l00009",
+      "start": 106,
+      "end": 125,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00017",
+      "label": "SKILL",
+      "text": "Confluence",
+      "normalized": "Confluence",
+      "source_line_id": "l00009",
+      "start": 71,
+      "end": 81,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00018",
+      "label": "SKILL",
+      "text": "Agile",
+      "normalized": "Agile",
+      "source_line_id": "l00009",
+      "start": 20,
+      "end": 25,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00019",
+      "label": "SKILL",
+      "text": "Scrum",
+      "normalized": "Scrum",
+      "source_line_id": "l00009",
+      "start": 26,
+      "end": 31,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00020",
+      "label": "SKILL",
+      "text": "BPMN",
+      "normalized": "BPMN",
+      "source_line_id": "l00009",
+      "start": 47,
+      "end": 51,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00021",
+      "label": "SKILL",
+      "text": "JIRA",
+      "normalized": "Jira",
+      "source_line_id": "l00009",
+      "start": 65,
+      "end": 69,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00022",
+      "label": "JOB_TITLE",
+      "text": "Business Analyst Intern",
+      "normalized": "Business Analyst Intern",
+      "source_line_id": "l00011",
+      "start": 0,
+      "end": 23,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "role_header",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.7
+    },
+    {
+      "id": "e00023",
+      "label": "DATE_RANGE",
+      "text": "Jun 2024 – Sep 2024",
+      "normalized": "Jun 2024 – Sep 2024",
+      "source_line_id": "l00012",
+      "start": 0,
+      "end": 19,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "regex:date_range",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00024",
+      "label": "SKILL",
+      "text": "Tableau",
+      "normalized": "Tableau",
+      "source_line_id": "l00014",
+      "start": 35,
+      "end": 42,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00025",
+      "label": "JOB_TITLE",
+      "text": "Operations Data Intern",
+      "normalized": "Operations Data Intern",
+      "source_line_id": "l00016",
+      "start": 0,
+      "end": 22,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "role_header",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.7
+    },
+    {
+      "id": "e00026",
+      "label": "DATE_RANGE",
+      "text": "Jan 2024 – May 2024",
+      "normalized": "Jan 2024 – May 2024",
+      "source_line_id": "l00017",
+      "start": 0,
+      "end": 19,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "regex:date_range",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00027",
+      "label": "SKILL",
+      "text": "Excel",
+      "normalized": "Excel",
+      "source_line_id": "l00018",
+      "start": 60,
+      "end": 65,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00028",
+      "label": "SKILL",
+      "text": "SQL",
+      "normalized": "SQL",
+      "source_line_id": "l00018",
+      "start": 70,
+      "end": 73,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00029",
+      "label": "PROJECT",
+      "text": "Supply Chain Simulation Project (Senior Capstone):",
+      "normalized": "Supply Chain Simulation Project (Senior Capstone):",
+      "source_line_id": "l00021",
+      "start": 0,
+      "end": 50,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "projects",
+      "rule": "project_header",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.7
+    },
+    {
+      "id": "e00030",
+      "label": "SKILL",
+      "text": "Supply Chain",
+      "normalized": "Supply Chain",
+      "source_line_id": "l00021",
+      "start": 0,
+      "end": 12,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "projects",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00031",
+      "label": "SKILL",
+      "text": "Python",
+      "normalized": "Python",
+      "source_line_id": "l00022",
+      "start": 62,
+      "end": 68,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "projects",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    }
+  ],
+  "records": [
+    {
+      "record_id": "education:0",
+      "section": "education",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00004",
+        "l00005",
+        "l00006"
+      ],
+      "entity_ids": [
+        "e00005",
+        "e00006",
+        "e00007"
+      ]
+    },
+    {
+      "record_id": "internships:0",
+      "section": "internships",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015"
+      ],
+      "entity_ids": [
+        "e00022",
+        "e00023",
+        "e00024"
+      ]
+    },
+    {
+      "record_id": "internships:1",
+      "section": "internships",
+      "ordinal": 1,
+      "source_line_ids": [
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019"
+      ],
+      "entity_ids": [
+        "e00025",
+        "e00026",
+        "e00027",
+        "e00028"
+      ]
+    },
+    {
+      "record_id": "projects:0",
+      "section": "projects",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00021",
+        "l00022"
+      ],
+      "entity_ids": [
+        "e00029",
+        "e00030",
+        "e00031"
+      ]
+    },
+    {
+      "record_id": "skills:0",
+      "section": "skills",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00008"
+      ],
+      "entity_ids": [
+        "e00008",
+        "e00009",
+        "e00010",
+        "e00011",
+        "e00012",
+        "e00013",
+        "e00014",
+        "e00015"
+      ]
+    },
+    {
+      "record_id": "skills:1",
+      "section": "skills",
+      "ordinal": 1,
+      "source_line_ids": [
+        "l00009"
+      ],
+      "entity_ids": [
+        "e00016",
+        "e00017",
+        "e00018",
+        "e00019",
+        "e00020",
+        "e00021"
+      ]
+    }
+  ],
+  "evidence": {
+    "personal_details.name.value": {
+      "source_refs": [
+        {
+          "line_id": "l00000",
+          "start": 0,
+          "end": 13,
+          "text": "JORDAN TAYLOR",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.emails[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 35,
+          "end": 68,
+          "text": "jordan.taylor.analyst@example.com",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.emails[0].normalization": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 108,
+          "text": "Seattle, WA  •  (555) 762-9013  •  jordan.taylor.analyst@example.com  •  linkedin.com/in/jordan-taylor-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.emails[0].raw": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 108,
+          "text": "Seattle, WA  •  (555) 762-9013  •  jordan.taylor.analyst@example.com  •  linkedin.com/in/jordan-taylor-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.phones[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 16,
+          "end": 30,
+          "text": "(555) 762-9013",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.phones[0].normalized": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 108,
+          "text": "Seattle, WA  •  (555) 762-9013  •  jordan.taylor.analyst@example.com  •  linkedin.com/in/jordan-taylor-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.phones[0].valid": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 108,
+          "text": "Seattle, WA  •  (555) 762-9013  •  jordan.taylor.analyst@example.com  •  linkedin.com/in/jordan-taylor-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.locations[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 11,
+          "text": "Seattle, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.links[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 73,
+          "end": 108,
+          "text": "linkedin.com/in/jordan-taylor-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.links[0].kind": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 73,
+          "end": 81,
+          "text": "linkedin",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.headline.value": {
+      "source_refs": [
+        {
+          "line_id": "l00001",
+          "start": 0,
+          "end": 65,
+          "text": "Junior Business Analyst  |  Data Visualization & Process Modeling",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00004",
+          "start": 0,
+          "end": 67,
+          "text": "University of Washington, Foster School of Business  —  Seattle, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00005",
+          "start": 0,
+          "end": 81,
+          "text": "Bachelor of Arts in Information Systems & Operations Management | GPA: 3.82 / 4.0",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00006",
+          "start": 0,
+          "end": 102,
+          "text": "Graduation: June 2025  •  Dean's List (6 Consecutive Quarters)  •  Alpha Kappa Psi Business Fraternity",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].degree.value": {
+      "source_refs": [
+        {
+          "line_id": "l00005",
+          "start": 0,
+          "end": 63,
+          "text": "Bachelor of Arts in Information Systems & Operations Management",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].institution.value": {
+      "source_refs": [
+        {
+          "line_id": "l00004",
+          "start": 0,
+          "end": 51,
+          "text": "University of Washington, Foster School of Business",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].graduation.value": {
+      "source_refs": [
+        {
+          "line_id": "l00006",
+          "start": 12,
+          "end": 21,
+          "text": "June 2025",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].location.value": {
+      "source_refs": [
+        {
+          "line_id": "l00004",
+          "start": 56,
+          "end": 67,
+          "text": "Seattle, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].gpa.value.score": {
+      "source_refs": [
+        {
+          "line_id": "l00005",
+          "start": 71,
+          "end": 75,
+          "text": "3.82",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].gpa.value.scale": {
+      "source_refs": [
+        {
+          "line_id": "l00005",
+          "start": 78,
+          "end": 81,
+          "text": "4.0",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[0].title.value": {
+      "source_refs": [
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 23,
+          "text": "Business Analyst Intern",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[0].company.value": {
+      "source_refs": [
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 35,
+          "text": "Jun 2024 – Sep 2024  •  Seattle, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[0].location.value": {
+      "source_refs": [
+        {
+          "line_id": "l00012",
+          "start": 24,
+          "end": 35,
+          "text": "Seattle, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[0].dates.value.start": {
+      "source_refs": [
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 8,
+          "text": "Jun 2024",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[0].dates.value.end": {
+      "source_refs": [
+        {
+          "line_id": "l00012",
+          "start": 11,
+          "end": 19,
+          "text": "Sep 2024",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[0].bullets[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 54,
+          "text": "Business Analyst Intern  |  Cascade Financial Services",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 35,
+          "text": "Jun 2024 – Sep 2024  •  Seattle, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 150,
+          "text": "Conducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 147,
+          "text": "Designed and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 147,
+          "text": "Facilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[0].bullets[1]": {
+      "source_refs": [
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 54,
+          "text": "Business Analyst Intern  |  Cascade Financial Services",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 35,
+          "text": "Jun 2024 – Sep 2024  •  Seattle, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 150,
+          "text": "Conducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 147,
+          "text": "Designed and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 147,
+          "text": "Facilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[0].bullets[2]": {
+      "source_refs": [
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 54,
+          "text": "Business Analyst Intern  |  Cascade Financial Services",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 35,
+          "text": "Jun 2024 – Sep 2024  •  Seattle, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 150,
+          "text": "Conducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 147,
+          "text": "Designed and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 147,
+          "text": "Facilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 54,
+          "text": "Business Analyst Intern  |  Cascade Financial Services",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 35,
+          "text": "Jun 2024 – Sep 2024  •  Seattle, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 150,
+          "text": "Conducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 147,
+          "text": "Designed and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 147,
+          "text": "Facilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[0].normalized_dates.start.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 54,
+          "text": "Business Analyst Intern  |  Cascade Financial Services",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 8,
+          "text": "Jun 2024",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 150,
+          "text": "Conducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 147,
+          "text": "Designed and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 147,
+          "text": "Facilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[0].normalized_dates.start.value": {
+      "source_refs": [
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 54,
+          "text": "Business Analyst Intern  |  Cascade Financial Services",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 35,
+          "text": "Jun 2024 – Sep 2024  •  Seattle, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 150,
+          "text": "Conducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 147,
+          "text": "Designed and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 147,
+          "text": "Facilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[0].normalized_dates.start.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 54,
+          "text": "Business Analyst Intern  |  Cascade Financial Services",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 35,
+          "text": "Jun 2024 – Sep 2024  •  Seattle, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 150,
+          "text": "Conducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 147,
+          "text": "Designed and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 147,
+          "text": "Facilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[0].normalized_dates.end.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 54,
+          "text": "Business Analyst Intern  |  Cascade Financial Services",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 11,
+          "end": 19,
+          "text": "Sep 2024",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 150,
+          "text": "Conducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 147,
+          "text": "Designed and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 147,
+          "text": "Facilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[0].normalized_dates.end.value": {
+      "source_refs": [
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 54,
+          "text": "Business Analyst Intern  |  Cascade Financial Services",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 35,
+          "text": "Jun 2024 – Sep 2024  •  Seattle, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 150,
+          "text": "Conducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 147,
+          "text": "Designed and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 147,
+          "text": "Facilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[0].normalized_dates.end.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 54,
+          "text": "Business Analyst Intern  |  Cascade Financial Services",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 35,
+          "text": "Jun 2024 – Sep 2024  •  Seattle, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 150,
+          "text": "Conducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 147,
+          "text": "Designed and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 147,
+          "text": "Facilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[1].title.value": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 22,
+          "text": "Operations Data Intern",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[1].company.value": {
+      "source_refs": [
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 36,
+          "text": "Jan 2024 – May 2024  •  Bellevue, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[1].location.value": {
+      "source_refs": [
+        {
+          "line_id": "l00017",
+          "start": 24,
+          "end": 36,
+          "text": "Bellevue, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[1].dates.value.start": {
+      "source_refs": [
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 8,
+          "text": "Jan 2024",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[1].dates.value.end": {
+      "source_refs": [
+        {
+          "line_id": "l00017",
+          "start": 11,
+          "end": 19,
+          "text": "May 2024",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[1].bullets[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 52,
+          "text": "Operations Data Intern  |  Evergreen Supply Partners",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 36,
+          "text": "Jan 2024 – May 2024  •  Bellevue, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 123,
+          "text": "Cleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 117,
+          "text": "Synthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[1].bullets[1]": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 52,
+          "text": "Operations Data Intern  |  Evergreen Supply Partners",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 36,
+          "text": "Jan 2024 – May 2024  •  Bellevue, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 123,
+          "text": "Cleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 117,
+          "text": "Synthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[1].text": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 52,
+          "text": "Operations Data Intern  |  Evergreen Supply Partners",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 36,
+          "text": "Jan 2024 – May 2024  •  Bellevue, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 123,
+          "text": "Cleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 117,
+          "text": "Synthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[1].normalized_dates.start.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 52,
+          "text": "Operations Data Intern  |  Evergreen Supply Partners",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 8,
+          "text": "Jan 2024",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 123,
+          "text": "Cleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 117,
+          "text": "Synthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[1].normalized_dates.start.value": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 52,
+          "text": "Operations Data Intern  |  Evergreen Supply Partners",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 36,
+          "text": "Jan 2024 – May 2024  •  Bellevue, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 123,
+          "text": "Cleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 117,
+          "text": "Synthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[1].normalized_dates.start.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 52,
+          "text": "Operations Data Intern  |  Evergreen Supply Partners",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 36,
+          "text": "Jan 2024 – May 2024  •  Bellevue, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 123,
+          "text": "Cleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 117,
+          "text": "Synthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[1].normalized_dates.end.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 52,
+          "text": "Operations Data Intern  |  Evergreen Supply Partners",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 11,
+          "end": 19,
+          "text": "May 2024",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 123,
+          "text": "Cleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 117,
+          "text": "Synthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[1].normalized_dates.end.value": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 52,
+          "text": "Operations Data Intern  |  Evergreen Supply Partners",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 36,
+          "text": "Jan 2024 – May 2024  •  Bellevue, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 123,
+          "text": "Cleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 117,
+          "text": "Synthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "internships[1].normalized_dates.end.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 52,
+          "text": "Operations Data Intern  |  Evergreen Supply Partners",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 36,
+          "text": "Jan 2024 – May 2024  •  Bellevue, WA",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 123,
+          "text": "Cleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 117,
+          "text": "Synthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00021",
+          "start": 0,
+          "end": 50,
+          "text": "Supply Chain Simulation Project (Senior Capstone):",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00022",
+          "start": 0,
+          "end": 159,
+          "text": "Modeled distribution logistics for regional retail network in Python; predicted stockouts with 89% accuracy and won 2nd Place in Foster Business Case Showcase.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].name.value": {
+      "source_refs": [
+        {
+          "line_id": "l00021",
+          "start": 0,
+          "end": 50,
+          "text": "Supply Chain Simulation Project (Senior Capstone):",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].description": {
+      "source_refs": [
+        {
+          "line_id": "l00021",
+          "start": 0,
+          "end": 50,
+          "text": "Supply Chain Simulation Project (Senior Capstone):",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00022",
+          "start": 0,
+          "end": 159,
+          "text": "Modeled distribution logistics for regional retail network in Python; predicted stockouts with 89% accuracy and won 2nd Place in Foster Business Case Showcase.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 138,
+          "text": "• Analysis & Tools: Tableau, Power BI, Advanced Excel (VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query), SQL (PostgreSQL), Python (Pandas)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].category": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 2,
+          "end": 18,
+          "text": "Analysis & Tools",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 20,
+          "end": 27,
+          "text": "Tableau",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].items[1]": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 29,
+          "end": 37,
+          "text": "Power BI",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].items[2]": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 39,
+          "end": 103,
+          "text": "Advanced Excel (VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].items[3]": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 105,
+          "end": 121,
+          "text": "SQL (PostgreSQL)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].items[4]": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 123,
+          "end": 138,
+          "text": "Python (Pandas)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].text": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 125,
+          "text": "• Business Process: Agile/Scrum, User Stories, BPMN Diagramming, JIRA, Confluence, Requirement Gathering, Root Cause Analysis",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].category": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 2,
+          "end": 18,
+          "text": "Business Process",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 20,
+          "end": 31,
+          "text": "Agile/Scrum",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].items[1]": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 33,
+          "end": 45,
+          "text": "User Stories",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].items[2]": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 47,
+          "end": 63,
+          "text": "BPMN Diagramming",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].items[3]": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 65,
+          "end": 69,
+          "text": "JIRA",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].items[4]": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 71,
+          "end": 81,
+          "text": "Confluence",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].items[5]": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 83,
+          "end": 104,
+          "text": "Requirement Gathering",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].items[6]": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 106,
+          "end": 125,
+          "text": "Root Cause Analysis",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    }
+  },
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "JORDAN TAYLOR\nJunior Business Analyst  |  Data Visualization & Process Modeling\nSeattle, WA  •  (555) 762-9013  •  jordan.taylor.analyst@example.com  •  linkedin.com/in/jordan-taylor-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "education",
+      "original_heading": "EDUCATION",
+      "heading_line_id": "l00003",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00004",
+        "l00005",
+        "l00006"
+      ],
+      "text": "University of Washington, Foster School of Business  —  Seattle, WA\nBachelor of Arts in Information Systems & Operations Management | GPA: 3.82 / 4.0\nGraduation: June 2025  •  Dean's List (6 Consecutive Quarters)  •  Alpha Kappa Psi Business Fraternity"
+    },
+    {
+      "id": "s002",
+      "canonical": "skills",
+      "original_heading": "TECHNICAL & ANALYTICAL SKILLS",
+      "heading_line_id": "l00007",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00008",
+        "l00009"
+      ],
+      "text": "• Analysis & Tools: Tableau, Power BI, Advanced Excel (VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query), SQL (PostgreSQL), Python (Pandas)\n• Business Process: Agile/Scrum, User Stories, BPMN Diagramming, JIRA, Confluence, Requirement Gathering, Root Cause Analysis"
+    },
+    {
+      "id": "s003",
+      "canonical": "experience",
+      "original_heading": "INTERNSHIP EXPERIENCE",
+      "heading_line_id": "l00010",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015",
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019"
+      ],
+      "text": "Business Analyst Intern  |  Cascade Financial Services\nJun 2024 – Sep 2024  •  Seattle, WA\nConducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.\nDesigned and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.\nFacilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal.\nOperations Data Intern  |  Evergreen Supply Partners\nJan 2024 – May 2024  •  Bellevue, WA\nCleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.\nSynthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director."
+    },
+    {
+      "id": "s004",
+      "canonical": "projects",
+      "original_heading": "ACADEMIC PROJECT & LEADERSHIP",
+      "heading_line_id": "l00020",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00021",
+        "l00022"
+      ],
+      "text": "Supply Chain Simulation Project (Senior Capstone):\nModeled distribution logistics for regional retail network in Python; predicted stockouts with 89% accuracy and won 2nd Place in Foster Business Case Showcase."
+    }
+  ],
+  "unclassified": [],
+  "raw_lines": [
+    {
+      "id": "l00000",
+      "text": "JORDAN TAYLOR",
+      "runs": [
+        {
+          "text": "JORDAN TAYLOR",
+          "bold": true,
+          "size": 20.0,
+          "color": "2D3748",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00000"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00001",
+      "text": "Junior Business Analyst  |  Data Visualization & Process Modeling",
+      "runs": [
+        {
+          "text": "Junior Business Analyst  |  Data Visualization & Process Modeling",
+          "bold": true,
+          "size": 11.0,
+          "color": "3182CE",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00001"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00002",
+      "text": "Seattle, WA  •  (555) 762-9013  •  jordan.taylor.analyst@example.com  •  linkedin.com/in/jordan-taylor-dummy",
+      "runs": [
+        {
+          "text": "Seattle, WA  •  (555) 762-9013  •  jordan.taylor.analyst@example.com  •  linkedin.com/in/jordan-taylor-dummy",
+          "bold": false,
+          "size": 9.5,
+          "color": "718096",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00002"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00003",
+      "text": "EDUCATION",
+      "runs": [
+        {
+          "text": "EDUCATION",
+          "bold": true,
+          "size": 10.5,
+          "color": "3182CE",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00003"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00004",
+      "text": "University of Washington, Foster School of Business  —  Seattle, WA",
+      "runs": [
+        {
+          "text": "University of Washington, Foster School of Business",
+          "bold": true,
+          "size": 10.0,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        },
+        {
+          "text": "  —  Seattle, WA",
+          "bold": false,
+          "size": 10.0,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00004"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00005",
+      "text": "Bachelor of Arts in Information Systems & Operations Management | GPA: 3.82 / 4.0",
+      "runs": [
+        {
+          "text": "Bachelor of Arts in Information Systems & Operations Management | GPA: 3.82 / 4.0",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00005"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00006",
+      "text": "Graduation: June 2025  •  Dean's List (6 Consecutive Quarters)  •  Alpha Kappa Psi Business Fraternity",
+      "runs": [
+        {
+          "text": "Graduation: June 2025  •  Dean's List (6 Consecutive Quarters)  •  Alpha Kappa Psi Business Fraternity",
+          "bold": false,
+          "size": 9.0,
+          "color": "646E78",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00006"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00007",
+      "text": "TECHNICAL & ANALYTICAL SKILLS",
+      "runs": [
+        {
+          "text": "TECHNICAL & ANALYTICAL SKILLS",
+          "bold": true,
+          "size": 10.5,
+          "color": "3182CE",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00007"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00008",
+      "text": "• Analysis & Tools: Tableau, Power BI, Advanced Excel (VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query), SQL (PostgreSQL), Python (Pandas)",
+      "runs": [
+        {
+          "text": "• Analysis & Tools: Tableau, Power BI, Advanced Excel (VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query), SQL (PostgreSQL), Python (Pandas)",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00008"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00009",
+      "text": "• Business Process: Agile/Scrum, User Stories, BPMN Diagramming, JIRA, Confluence, Requirement Gathering, Root Cause Analysis",
+      "runs": [
+        {
+          "text": "• Business Process: Agile/Scrum, User Stories, BPMN Diagramming, JIRA, Confluence, Requirement Gathering, Root Cause Analysis",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00009"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00010",
+      "text": "INTERNSHIP EXPERIENCE",
+      "runs": [
+        {
+          "text": "INTERNSHIP EXPERIENCE",
+          "bold": true,
+          "size": 10.5,
+          "color": "3182CE",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00010"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00011",
+      "text": "Business Analyst Intern  |  Cascade Financial Services",
+      "runs": [
+        {
+          "text": "Business Analyst Intern  |  Cascade Financial Services",
+          "bold": true,
+          "size": 10.0,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00011"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00012",
+      "text": "Jun 2024 – Sep 2024  •  Seattle, WA",
+      "runs": [
+        {
+          "text": "Jun 2024 – Sep 2024  •  Seattle, WA",
+          "bold": false,
+          "size": 8.5,
+          "color": "718096",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00012"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00013",
+      "text": "Conducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.",
+      "runs": [
+        {
+          "text": "Conducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00013"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00014",
+      "text": "Designed and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.",
+      "runs": [
+        {
+          "text": "Designed and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00014"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00015",
+      "text": "Facilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal.",
+      "runs": [
+        {
+          "text": "Facilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00015"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00016",
+      "text": "Operations Data Intern  |  Evergreen Supply Partners",
+      "runs": [
+        {
+          "text": "Operations Data Intern  |  Evergreen Supply Partners",
+          "bold": true,
+          "size": 10.0,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00016"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00017",
+      "text": "Jan 2024 – May 2024  •  Bellevue, WA",
+      "runs": [
+        {
+          "text": "Jan 2024 – May 2024  •  Bellevue, WA",
+          "bold": false,
+          "size": 8.5,
+          "color": "718096",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00017"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00018",
+      "text": "Cleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.",
+      "runs": [
+        {
+          "text": "Cleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00018"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00019",
+      "text": "Synthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director.",
+      "runs": [
+        {
+          "text": "Synthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00019"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00020",
+      "text": "ACADEMIC PROJECT & LEADERSHIP",
+      "runs": [
+        {
+          "text": "ACADEMIC PROJECT & LEADERSHIP",
+          "bold": true,
+          "size": 10.5,
+          "color": "3182CE",
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00020"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00021",
+      "text": "Supply Chain Simulation Project (Senior Capstone):",
+      "runs": [
+        {
+          "text": "Supply Chain Simulation Project (Senior Capstone):",
+          "bold": true,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00021"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00022",
+      "text": "Modeled distribution logistics for regional retail network in Python; predicted stockouts with 89% accuracy and won 2nd Place in Foster Business Case Showcase.",
+      "runs": [
+        {
+          "text": "Modeled distribution logistics for regional retail network in Python; predicted stockouts with 89% accuracy and won 2nd Place in Foster Business Case Showcase.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Calibri",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00022"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    }
+  ],
+  "raw_text": "JORDAN TAYLOR\nJunior Business Analyst  |  Data Visualization & Process Modeling\nSeattle, WA  •  (555) 762-9013  •  jordan.taylor.analyst@example.com  •  linkedin.com/in/jordan-taylor-dummy\nEDUCATION\nUniversity of Washington, Foster School of Business  —  Seattle, WA\nBachelor of Arts in Information Systems & Operations Management | GPA: 3.82 / 4.0\nGraduation: June 2025  •  Dean's List (6 Consecutive Quarters)  •  Alpha Kappa Psi Business Fraternity\nTECHNICAL & ANALYTICAL SKILLS\n• Analysis & Tools: Tableau, Power BI, Advanced Excel (VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query), SQL (PostgreSQL), Python (Pandas)\n• Business Process: Agile/Scrum, User Stories, BPMN Diagramming, JIRA, Confluence, Requirement Gathering, Root Cause Analysis\nINTERNSHIP EXPERIENCE\nBusiness Analyst Intern  |  Cascade Financial Services\nJun 2024 – Sep 2024  •  Seattle, WA\nConducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.\nDesigned and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.\nFacilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal.\nOperations Data Intern  |  Evergreen Supply Partners\nJan 2024 – May 2024  •  Bellevue, WA\nCleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.\nSynthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director.\nACADEMIC PROJECT & LEADERSHIP\nSupply Chain Simulation Project (Senior Capstone):\nModeled distribution logistics for regional retail network in Python; predicted stockouts with 89% accuracy and won 2nd Place in Foster Business Case Showcase.",
+  "validation": {
+    "issues": [],
+    "legacy_schema_errors": [],
+    "completeness": {
+      "status": "pass",
+      "reference_words": 247,
+      "extracted_words": 247,
+      "matched_words": 247,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "semantic_accuracy": "not_established_by_schema_validation"
+  },
+  "review_status": "needs_review",
+  "comparison": {
+    "provided": true,
+    "changed": false,
+    "ground_truth": false
+  }
+}

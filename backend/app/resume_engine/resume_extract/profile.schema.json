@@ -1,0 +1,810 @@
+{
+  "type": "object",
+  "properties": {
+    "mapping_schema_version": {
+      "const": "1.0.0"
+    },
+    "record_id": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "document_id": {
+      "type": "string"
+    },
+    "candidate_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "extraction_id": {
+      "type": "string"
+    },
+    "mapper_sha256": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object"
+    },
+    "section_order": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "entry_order": {
+      "const": "source"
+    },
+    "profile": {
+      "type": "object",
+      "properties": {
+        "contact": {
+          "type": "object",
+          "properties": {
+            "full_name": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "headline": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "emails": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "phones": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "raw": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "normalized": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "valid": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "raw",
+                  "normalized",
+                  "valid"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "locations": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "links": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "full_name",
+            "headline",
+            "emails",
+            "phones",
+            "locations",
+            "links"
+          ],
+          "additionalProperties": false
+        },
+        "summary": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "experience": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "source_text": {
+                "type": "string"
+              },
+              "source_line_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "ordinal": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "title": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "company": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "location": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "dates": {
+                "type": "object",
+                "properties": {
+                  "start": {
+                    "type": "object",
+                    "properties": {
+                      "raw": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "normalized": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "precision": {
+                        "enum": [
+                          "year",
+                          "month",
+                          "open",
+                          null
+                        ]
+                      }
+                    },
+                    "required": [
+                      "raw",
+                      "normalized",
+                      "precision"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "end": {
+                    "type": "object",
+                    "properties": {
+                      "raw": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "normalized": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "precision": {
+                        "enum": [
+                          "year",
+                          "month",
+                          "open",
+                          null
+                        ]
+                      }
+                    },
+                    "required": [
+                      "raw",
+                      "normalized",
+                      "precision"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "ongoing_as_reported": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "start",
+                  "end",
+                  "ongoing_as_reported"
+                ],
+                "additionalProperties": false
+              },
+              "bullets": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "links": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "work_mode": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "source_text",
+              "source_line_ids",
+              "ordinal",
+              "title",
+              "company",
+              "location",
+              "dates",
+              "bullets",
+              "links",
+              "work_mode"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "education": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "source_text": {
+                "type": "string"
+              },
+              "source_line_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "ordinal": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "degree": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "institution": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "location": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "dates": {
+                "type": "object",
+                "properties": {
+                  "start": {
+                    "type": "object",
+                    "properties": {
+                      "raw": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "normalized": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "precision": {
+                        "enum": [
+                          "year",
+                          "month",
+                          "open",
+                          null
+                        ]
+                      }
+                    },
+                    "required": [
+                      "raw",
+                      "normalized",
+                      "precision"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "end": {
+                    "type": "object",
+                    "properties": {
+                      "raw": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "normalized": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "precision": {
+                        "enum": [
+                          "year",
+                          "month",
+                          "open",
+                          null
+                        ]
+                      }
+                    },
+                    "required": [
+                      "raw",
+                      "normalized",
+                      "precision"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "ongoing_as_reported": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "start",
+                  "end",
+                  "ongoing_as_reported"
+                ],
+                "additionalProperties": false
+              },
+              "graduation": {
+                "type": "object",
+                "properties": {
+                  "raw": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "normalized": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "precision": {
+                    "enum": [
+                      "year",
+                      "month",
+                      "open",
+                      null
+                    ]
+                  }
+                },
+                "required": [
+                  "raw",
+                  "normalized",
+                  "precision"
+                ],
+                "additionalProperties": false
+              },
+              "gpa": {
+                "type": [
+                  "object",
+                  "null"
+                ]
+              },
+              "dissertation_or_thesis": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "links": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "source_text",
+              "source_line_ids",
+              "ordinal",
+              "degree",
+              "institution",
+              "location",
+              "dates",
+              "graduation",
+              "gpa",
+              "dissertation_or_thesis"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "projects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "source_text": {
+                "type": "string"
+              },
+              "source_line_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "ordinal": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "dates": {
+                "type": "object",
+                "properties": {
+                  "start": {
+                    "type": "object",
+                    "properties": {
+                      "raw": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "normalized": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "precision": {
+                        "enum": [
+                          "year",
+                          "month",
+                          "open",
+                          null
+                        ]
+                      }
+                    },
+                    "required": [
+                      "raw",
+                      "normalized",
+                      "precision"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "end": {
+                    "type": "object",
+                    "properties": {
+                      "raw": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "normalized": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "precision": {
+                        "enum": [
+                          "year",
+                          "month",
+                          "open",
+                          null
+                        ]
+                      }
+                    },
+                    "required": [
+                      "raw",
+                      "normalized",
+                      "precision"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "ongoing_as_reported": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "start",
+                  "end",
+                  "ongoing_as_reported"
+                ],
+                "additionalProperties": false
+              },
+              "bullets": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "links": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "description": {
+                "type": "string"
+              },
+              "technologies": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "source_text",
+              "source_line_ids",
+              "ordinal",
+              "name",
+              "dates",
+              "bullets",
+              "links",
+              "description",
+              "technologies"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "skills": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "category": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "source_records": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            },
+            "required": [
+              "category",
+              "items",
+              "source_records"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "certifications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "source_text": {
+                "type": "string"
+              },
+              "source_line_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "ordinal": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "issuer": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "details": {
+                "type": "string"
+              },
+              "license_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "status_as_reported": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "links": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "source_text",
+              "source_line_ids",
+              "ordinal",
+              "name",
+              "issuer",
+              "details",
+              "license_id",
+              "status_as_reported",
+              "links"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "publications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "text",
+              "source_line_ids",
+              "canonical",
+              "original_heading",
+              "ordinal",
+              "links"
+            ]
+          }
+        },
+        "awards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "text",
+              "source_line_ids",
+              "canonical",
+              "original_heading",
+              "ordinal",
+              "links"
+            ]
+          }
+        },
+        "metrics": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "text",
+              "source_line_ids",
+              "canonical",
+              "original_heading",
+              "ordinal",
+              "links"
+            ]
+          }
+        },
+        "other_sections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "text",
+              "source_line_ids",
+              "canonical",
+              "original_heading",
+              "ordinal",
+              "links"
+            ]
+          }
+        },
+        "unassigned_links": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "contact",
+        "summary",
+        "experience",
+        "education",
+        "projects",
+        "skills",
+        "certifications",
+        "publications",
+        "awards",
+        "metrics",
+        "other_sections"
+      ],
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "object"
+    },
+    "source_sections": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "quality": {
+      "type": "object"
+    },
+    "review_status": {
+      "enum": [
+        "needs_review",
+        "mapped_unverified"
+      ]
+    },
+    "review": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "mapping_changes": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "required": [
+    "mapping_schema_version",
+    "record_id",
+    "document_id",
+    "candidate_id",
+    "extraction_id",
+    "mapper_sha256",
+    "source",
+    "section_order",
+    "entry_order",
+    "profile",
+    "evidence",
+    "source_sections",
+    "quality",
+    "review_status",
+    "review",
+    "mapping_changes"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Resume application profile with audit evidence"
+}

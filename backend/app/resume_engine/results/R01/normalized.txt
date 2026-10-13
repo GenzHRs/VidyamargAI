@@ -1,0 +1,47 @@
+JAYAVARAPU SIVA TEJACHARY
+AI/ML Engineer
+• +91-9866862016 # j.shivachary@gmail.com • jayavarapu-siva-tejachary § sivatejachary
+Summary
+AI/ML Engineer with 2 years of experience developing scalable AI applications using Python, FastAPI, NLP, Large
+Language Models (OpenAI, Gemini), and Retrieval-Augmented Generation (RAG). Skilled in backend API development, machine learning pipelines, and intelligent automation solutions.
+Skills
+Programming & Backend: Python, FastAPI, REST APIs
+Generative AI: LLMs, OpenAI, Gemini, RAG, Prompt Engineering, LangChain, LangGraph, Transformers
+NLP & Document AI: NER, OCR, TF-IDF, Embeddings
+Machine Learning: Scikit-learn, TensorFlow, PyTorch, Supervised Learning, Unsupervised Learning
+Computer Vision & Data Science: OpenCV, Pandas, NumPy
+Databases: MySQL, PostgreSQL, Qdrant, Chroma, FAISS
+Tools & Platforms: Git, GitHub, Docker, Azure, Jupyter Notebook
+Experience
+AI/ML Engineer June 2024 – Present
+Avataa Solutions Pvt. Ltd. Hyderabad, India
+– Developed AI-powered applications using Python, FastAPI, NLP, LLMs (OpenAI,Gemini), and Retrieval-Augmented Generation (RAG).
+– Built scalable REST APIs for AI-based document processing and intelligent automation.
+– Integrated OpenAI and Gemini APIs for document summarization and AI workflows using prompt engineering.
+– Worked on OCR, NER, embeddings, and data preprocessing for document analysis.
+– Developed backend services using FastAPI and PostgreSQL for real-time event-driven processing.
+– Collaborated with cross-functional teams to build and deploy production-ready AI solutions.
+Projects
+Enterprise RAG Platform Jan 2026 – Present
+Tech: Python, FastAPI, LangChain, LangGraph, OpenAI, Qdrant, PostgreSQL, Azure Document Intelligence
+– Built an AI platform to chat with company PDF and Word documents using RAG.
+– Extracted text and tables from documents, generated embeddings, and stored them in Qdrant for semantic search.
+– Used LangChain for the RAG pipeline, LangGraph for workflow management.
+Enterprise Document AI & Compliance Automation Oct 2024 – Jan 2026
+Tech: FastAPI, Python, PostgreSQL, Azure OCR, NER, Gemini LLM
+– Built an AI system to extract invoice data from scanned PDFs using Azure OCR and NER.
+– Integrated Gemini LLM and developed FastAPI APIs for document processing and compliance automation.
+– Reduced manual document review effort by 70–85% through AI-powered automation.
+AI Resume Screening System Aug 2024 – Sept 2024
+Tech: Python, NLP, FastAPI, Transformers
+– Built an NLP-based resume screening system using TF-IDF and embeddings to analyze 500+ resumes .
+– Developed a ranking algorithm with 85%+ matching accuracy, reducing manual screening by 60% .
+– Developed FastAPI APIs for real-time resume processing.
+Awards & Certifications
+• Data Science & Machine Learning Certification – Cranes Varsity, Bengaluru: Completed hands-on training in Python, RDBMS, EDA, and core ML techniques through applied projects.
+• Top 5, College Hackathon (2024): Built a CNN-powered plant disease detection system to help farmers identify crop diseases early from leaf images, ranking top 5 among 250+ participants.
+Education
+B.Tech in Computer Science and Engineering
+Chalapathi Institute of Engineering and Technology, Guntur, Andhra Pradesh
+Sep 2020 – Apr 2024
+CGPA: 7.9 / 10

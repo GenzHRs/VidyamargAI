@@ -1,0 +1,635 @@
+{
+  "mapping_schema_version": "1.0.0",
+  "record_id": "e3b6ff83cbb3f8817967b8301283cb2dfbbd21aeaa5fc0c1c51fba55347ec220",
+  "document_id": "c46b14d76878b810ea8052349edc50bf54f58e087c5c015b92bcecce83a74ada",
+  "candidate_id": null,
+  "extraction_id": "633fff661ed01921c2157004dbb7214ea3aa1eacd2232212eeac1e54c04887c1",
+  "mapper_sha256": "99064aec1206cbb49df51cf0e73a239fd615aee01b0aa7e99c2aa2d2a3479451",
+  "source": {
+    "filename": "03_PDF_Royal_Purple_Marketing_Resume.pdf",
+    "sha256": "c46b14d76878b810ea8052349edc50bf54f58e087c5c015b92bcecce83a74ada",
+    "type": "pdf",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": 1,
+    "reference_method": "pdftotext_raw"
+  },
+  "section_order": [
+    "contact",
+    "summary",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "certifications",
+    "publications",
+    "awards",
+    "metrics",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "profile": {
+    "contact": {
+      "full_name": "CAMILA RESTREPO",
+      "headline": "SENIOR GROWTH MARKETING MANAGER & PAID ACQUISITION LEAD",
+      "emails": [
+        "camila.restrepo@example.com"
+      ],
+      "phones": [
+        {
+          "raw": "(555) 612-4091",
+          "normalized": "+15556124091",
+          "valid": false
+        }
+      ],
+      "locations": [
+        "Miami, FL"
+      ],
+      "links": [
+        "linkedin.com/in/camila-marketing-dummy"
+      ]
+    },
+    "summary": [
+      "Data-driven Growth Marketing Manager with 7+ years orchestrating high-scale user acquisition, performance creative testing, and multi-channel marketing campaigns. Proven record of scaling direct-to-consumer and mobile subscription brands past $50M in annual revenue while maintaining strict payback margins."
+    ],
+    "experience": [
+      {
+        "source_text": "Senior Performance Marketing Manager — Nova Health App (Miami, FL)\n2022 – Present\n• Managed $1.1M monthly budget across Meta, Google, TikTok, and Apple Search Ads.\n• Built creative testing pipeline producing 40+ iterative ad variations weekly, lowering customer acquisition cost (CAC) by 42%.\n• Partnered with product and engineering teams to optimize subscription paywall conversion by 19%.",
+        "source_line_ids": [
+          "l00025",
+          "l00026",
+          "l00027",
+          "l00028",
+          "l00029",
+          "l00030",
+          "l00031"
+        ],
+        "ordinal": 0,
+        "title": "Senior Performance Marketing Manager",
+        "company": "Nova Health App",
+        "location": "Miami, FL",
+        "dates": {
+          "start": {
+            "raw": "2022",
+            "normalized": "2022",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "Present",
+            "normalized": null,
+            "precision": "open"
+          },
+          "ongoing_as_reported": true
+        },
+        "bullets": [
+          "Managed $1.1M monthly budget across Meta, Google, TikTok, and Apple Search Ads.",
+          "Built creative testing pipeline producing 40+ iterative ad variations weekly, lowering customer acquisition cost (CAC) by 42%.",
+          "Partnered with product and engineering teams to optimize subscription paywall conversion by 19%."
+        ],
+        "links": [],
+        "work_mode": null
+      },
+      {
+        "source_text": "Growth Marketing Lead — Solstice Commerce (Austin, TX)\n2019 – 2022\n• Scaled e-commerce customer base from 25,000 to 220,000 paying users within 24 months.\n• Designed multi-touch attribution model in BigQuery & Tableau to track ROAS across paid, organic, and influencer channels.",
+        "source_line_ids": [
+          "l00032",
+          "l00033",
+          "l00034",
+          "l00035",
+          "l00036"
+        ],
+        "ordinal": 1,
+        "title": "Growth Marketing Lead",
+        "company": "Solstice Commerce",
+        "location": "Austin, TX",
+        "dates": {
+          "start": {
+            "raw": "2019",
+            "normalized": "2019",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "2022",
+            "normalized": "2022",
+            "precision": "year"
+          },
+          "ongoing_as_reported": false
+        },
+        "bullets": [
+          "Scaled e-commerce customer base from 25,000 to 220,000 paying users within 24 months.",
+          "Designed multi-touch attribution model in BigQuery & Tableau to track ROAS across paid, organic, and influencer channels."
+        ],
+        "links": [],
+        "work_mode": null
+      }
+    ],
+    "education": [
+      {
+        "source_text": "B.S. in Digital Marketing & Media\nUniversity of Florida (2018)\nSumma Cum Laude",
+        "source_line_ids": [
+          "l00016",
+          "l00017",
+          "l00018"
+        ],
+        "ordinal": 0,
+        "degree": "B.S. in Digital Marketing & Media",
+        "institution": "University of Florida",
+        "location": null,
+        "dates": {
+          "start": {
+            "raw": null,
+            "normalized": null,
+            "precision": null
+          },
+          "end": {
+            "raw": null,
+            "normalized": null,
+            "precision": null
+          },
+          "ongoing_as_reported": false
+        },
+        "graduation": {
+          "raw": "2018",
+          "normalized": "2018",
+          "precision": "year"
+        },
+        "gpa": null,
+        "dissertation_or_thesis": null
+      }
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "category": null,
+        "items": [
+          "Meta Ads Manager & TikTok Ads",
+          "Google Ads (Search, PMax, YouTube)",
+          "Amplitude",
+          "Mixpanel & GA4",
+          "AppsFlyer",
+          "Adjust & Branch (MMP)",
+          "Optimizely & VWO (A/B Testing)",
+          "SQL & Tableau Reporting"
+        ],
+        "source_records": [
+          {
+            "text": "• Meta Ads Manager & TikTok Ads",
+            "source_line_ids": [
+              "l00009"
+            ],
+            "category": null,
+            "items": [
+              "Meta Ads Manager & TikTok Ads"
+            ]
+          },
+          {
+            "text": "• Google Ads (Search, PMax, YouTube)",
+            "source_line_ids": [
+              "l00010"
+            ],
+            "category": null,
+            "items": [
+              "Google Ads (Search, PMax, YouTube)"
+            ]
+          },
+          {
+            "text": "• Amplitude, Mixpanel & GA4",
+            "source_line_ids": [
+              "l00011"
+            ],
+            "category": null,
+            "items": [
+              "Amplitude",
+              "Mixpanel & GA4"
+            ]
+          },
+          {
+            "text": "• AppsFlyer, Adjust & Branch (MMP)",
+            "source_line_ids": [
+              "l00012"
+            ],
+            "category": null,
+            "items": [
+              "AppsFlyer",
+              "Adjust & Branch (MMP)"
+            ]
+          },
+          {
+            "text": "• Optimizely & VWO (A/B Testing)",
+            "source_line_ids": [
+              "l00013"
+            ],
+            "category": null,
+            "items": [
+              "Optimizely & VWO (A/B Testing)"
+            ]
+          },
+          {
+            "text": "• SQL & Tableau Reporting",
+            "source_line_ids": [
+              "l00014"
+            ],
+            "category": null,
+            "items": [
+              "SQL & Tableau Reporting"
+            ]
+          }
+        ]
+      }
+    ],
+    "certifications": [],
+    "publications": [],
+    "awards": [],
+    "metrics": [
+      {
+        "canonical": "metrics",
+        "original_heading": "MARKETING METRICS",
+        "text": "• $12M+ Annual Ad Spend Managed\n• 3.4x Blended ROAS Achieved\n• 48% Reduced Customer CAC\n• 185K+ Net New MQLs Generated",
+        "source_line_ids": [
+          "l00004",
+          "l00005",
+          "l00006",
+          "l00007"
+        ],
+        "ordinal": 0,
+        "links": []
+      }
+    ],
+    "other_sections": []
+  },
+  "evidence": {
+    "contact.full_name": {
+      "source_line_ids": [
+        "l00000"
+      ],
+      "confidence": 0.92,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.headline": {
+      "source_line_ids": [
+        "l00001"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.emails[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.phones[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.7,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.locations[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "summary[0]": {
+      "source_line_ids": [
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0]": {
+      "source_line_ids": [
+        "l00025",
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030",
+        "l00031"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].title": {
+      "source_line_ids": [
+        "l00025"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].company": {
+      "source_line_ids": [
+        "l00025"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].location": {
+      "source_line_ids": [
+        "l00025"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].dates": {
+      "source_line_ids": [
+        "l00026"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[0]": {
+      "source_line_ids": [
+        "l00025",
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030",
+        "l00031"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[1]": {
+      "source_line_ids": [
+        "l00025",
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030",
+        "l00031"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[2]": {
+      "source_line_ids": [
+        "l00025",
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030",
+        "l00031"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1]": {
+      "source_line_ids": [
+        "l00032",
+        "l00033",
+        "l00034",
+        "l00035",
+        "l00036"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].title": {
+      "source_line_ids": [
+        "l00032"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].company": {
+      "source_line_ids": [
+        "l00032"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].location": {
+      "source_line_ids": [
+        "l00032"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].dates": {
+      "source_line_ids": [
+        "l00033"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].bullets[0]": {
+      "source_line_ids": [
+        "l00032",
+        "l00033",
+        "l00034",
+        "l00035",
+        "l00036"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].bullets[1]": {
+      "source_line_ids": [
+        "l00032",
+        "l00033",
+        "l00034",
+        "l00035",
+        "l00036"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0]": {
+      "source_line_ids": [
+        "l00016",
+        "l00017",
+        "l00018"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].degree": {
+      "source_line_ids": [
+        "l00016"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].institution": {
+      "source_line_ids": [
+        "l00017"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].location": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].dates": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].graduation": {
+      "source_line_ids": [
+        "l00017"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].gpa": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0]": {
+      "source_line_ids": [
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "metrics[0]": {
+      "source_line_ids": [
+        "l00004",
+        "l00005",
+        "l00006",
+        "l00007"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.links[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    }
+  },
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "CAMILA RESTREPO\nSENIOR GROWTH MARKETING MANAGER & PAID ACQUISITION LEAD\nMiami, FL • (555) 612-4091 • camila.restrepo@example.com • linkedin.com/in/camila-marketing-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "metrics",
+      "original_heading": "MARKETING METRICS",
+      "heading_line_id": "l00003",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00004",
+        "l00005",
+        "l00006",
+        "l00007"
+      ],
+      "text": "• $12M+ Annual Ad Spend Managed\n• 3.4x Blended ROAS Achieved\n• 48% Reduced Customer CAC\n• 185K+ Net New MQLs Generated"
+    },
+    {
+      "id": "s002",
+      "canonical": "skills",
+      "original_heading": "GROWTH TOOLKIT",
+      "heading_line_id": "l00008",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014"
+      ],
+      "text": "• Meta Ads Manager & TikTok Ads\n• Google Ads (Search, PMax, YouTube)\n• Amplitude, Mixpanel & GA4\n• AppsFlyer, Adjust & Branch (MMP)\n• Optimizely & VWO (A/B Testing)\n• SQL & Tableau Reporting"
+    },
+    {
+      "id": "s003",
+      "canonical": "education",
+      "original_heading": "EDUCATION",
+      "heading_line_id": "l00015",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00016",
+        "l00017",
+        "l00018"
+      ],
+      "text": "B.S. in Digital Marketing & Media\nUniversity of Florida (2018)\nSumma Cum Laude"
+    },
+    {
+      "id": "s004",
+      "canonical": "summary",
+      "original_heading": "EXECUTIVE PROFILE",
+      "heading_line_id": "l00019",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00020"
+      ],
+      "text": "Data-driven Growth Marketing Manager with 7+ years orchestrating high-scale user acquisition, performance creative testing, and multi-channel marketing campaigns. Proven record of scaling direct-to-consumer and mobile subscription brands past $50M in annual revenue while maintaining strict payback margins."
+    },
+    {
+      "id": "s005",
+      "canonical": "experience",
+      "original_heading": "PROFESSIONAL EXPERIENCE",
+      "heading_line_id": "l00024",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00025",
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00030",
+        "l00032",
+        "l00033",
+        "l00034",
+        "l00035"
+      ],
+      "text": "Senior Performance Marketing Manager — Nova Health App (Miami, FL)\n2022 – Present\n• Managed $1.1M monthly budget across Meta, Google, TikTok, and Apple Search Ads.\n• Built creative testing pipeline producing 40+ iterative ad variations weekly, lowering customer acquisition cost (CAC) by 42%.\n• Partnered with product and engineering teams to optimize subscription paywall conversion by 19%.\nGrowth Marketing Lead — Solstice Commerce (Austin, TX)\n2019 – 2022\n• Scaled e-commerce customer base from 25,000 to 220,000 paying users within 24 months.\n• Designed multi-touch attribution model in BigQuery & Tableau to track ROAS across paid, organic, and influencer channels."
+    }
+  ],
+  "quality": {
+    "completeness": {
+      "status": "pass",
+      "reference_words": 228,
+      "extracted_words": 228,
+      "matched_words": 228,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "schema_errors": [],
+    "warnings": [],
+    "suppressed_exact_repeats": []
+  },
+  "review_status": "needs_review",
+  "review": [
+    {
+      "path": "fields.phones[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.7
+    }
+  ],
+  "mapping_changes": []
+}

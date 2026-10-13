@@ -1,0 +1,94 @@
+{
+  "before": {
+    "unique_resumes": 18,
+    "scope": "Frozen annotated fields and record metadata; full job bullets for every resume and full project bullets for U01/U02. Other sections lack complete manual gold.",
+    "entity_metric_scope": "Typed entity VALUE extraction on annotated fields; not an exact-span NER benchmark",
+    "reference_sha256": {
+      "source_labels.json": "8f7542578c16a35de07a2860a2667630dc6770f4375fe4df0774ae52bdd702af",
+      "source_bullets.json": "16e99ae406f3957d17fe94704bd7916c5e2551e6f2b6da1e090e564f5bc087b9"
+    },
+    "field_mapping": {
+      "tp": 695,
+      "fp": 5,
+      "fn": 2,
+      "precision": 0.9928571428571429,
+      "recall": 0.9971305595408895,
+      "f1": 0.9949892627057981
+    },
+    "entity_value_extraction": {
+      "tp": 655,
+      "fp": 3,
+      "fn": 1,
+      "precision": 0.9954407294832827,
+      "recall": 0.9984756097560976,
+      "f1": 0.9969558599695586
+    },
+    "record_grouping": {
+      "expected": 83,
+      "predicted": 84,
+      "exact": 81,
+      "missing_records": 0,
+      "extra_records": 0,
+      "false_merges": 0,
+      "false_splits": 1,
+      "precision": 0.9642857142857143,
+      "recall": 0.9759036144578314
+    },
+    "full_bullet_comparison": {
+      "expected": 110,
+      "predicted": 110,
+      "exact": 107
+    },
+    "annotated_mapping_pass_count": 16,
+    "strict_audited_document_pass_count": 15,
+    "strict_audited_document_pass_rate": 0.8333333333333334,
+    "independent_unseen_real_resumes": 0,
+    "accuracy_95_claim": "NOT ESTABLISHED"
+  },
+  "after": {
+    "unique_resumes": 18,
+    "scope": "Frozen annotated fields and record metadata; full job bullets for every resume and full project bullets for U01/U02. Other sections lack complete manual gold.",
+    "entity_metric_scope": "Typed entity VALUE extraction on annotated fields; not an exact-span NER benchmark",
+    "reference_sha256": {
+      "source_labels.json": "8f7542578c16a35de07a2860a2667630dc6770f4375fe4df0774ae52bdd702af",
+      "source_bullets.json": "16e99ae406f3957d17fe94704bd7916c5e2551e6f2b6da1e090e564f5bc087b9"
+    },
+    "field_mapping": {
+      "tp": 697,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "entity_value_extraction": {
+      "tp": 656,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "record_grouping": {
+      "expected": 83,
+      "predicted": 83,
+      "exact": 83,
+      "missing_records": 0,
+      "extra_records": 0,
+      "false_merges": 0,
+      "false_splits": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "full_bullet_comparison": {
+      "expected": 110,
+      "predicted": 110,
+      "exact": 110
+    },
+    "annotated_mapping_pass_count": 18,
+    "strict_audited_document_pass_count": 15,
+    "strict_audited_document_pass_rate": 0.8333333333333334,
+    "independent_unseen_real_resumes": 0,
+    "accuracy_95_claim": "NOT ESTABLISHED"
+  }
+}

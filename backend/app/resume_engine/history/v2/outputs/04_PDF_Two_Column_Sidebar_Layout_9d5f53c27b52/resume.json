@@ -1,0 +1,7067 @@
+{
+  "schema_version": "2.0.0",
+  "source": {
+    "filename": "04_PDF_Two_Column_Sidebar_Layout.pdf",
+    "sha256": "c1f2680437323350f4bd296f66d809cc6ef983a60f24d03b8fd91779535df82f",
+    "type": "pdf",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": 1,
+    "reference_method": "pdftotext_raw"
+  },
+  "config_sha256": "031beeb7738829daf3d7dcb73ee91ff7a8ee892f9224c015626f793cc6eafee5",
+  "raw_text": "CONTACT\nEmail: lucas.moreau@example.com\nPhone: (555) 492-8172\nAustin, TX\ngithub.com/lmoreau-dummy\nlinkedin.com/in/lucas-m-dummy\nCORE SKILLS\n• Go, Python, C++\n• Kubernetes, Docker, Helm\n• AWS (EKS, RDS, SQS)\n• Kafka, RabbitMQ, Redis\n• Terraform & CI/CD\n• Linux Kernel & eBPF\n• Distributed Consensus\nCERTIFICATIONS\n• Certified Kubernetes Admin (CKA)\n• AWS Solutions Architect (Pro)\n• HashiCorp Terraform Assoc.\nEDUCATION\nB.S. in Computer Science\nUT Austin (2016 – 2020)\nGPA: 3.88 / 4.0\nLUCAS MOREAU\nSenior DevOps & Site Reliability Engineer (SRE)\nPROFESSIONAL SUMMARY\nDevOps & Reliability Engineer with 6+ years managing multi-region Kubernetes clusters,\nautomated zero-trust networking, and high-availability cloud infrastructure. Successfully\nmaintained 99.995% uptime across 80+ customer-facing microservices.\nWORK EXPERIENCE\nSenior Infrastructure Engineer — Datavault Systems (Austin, TX)\n2022 – Present\n• Built GitOps deployment pipelines via ArgoCD, shortening production release cycles from 3\nhours to 4 minutes.\n• Cut monthly AWS infrastructure spend by 32% ($45,000/mo) through spot instance\norchestration and Karpenter autoscaling.\n• Designed multi-region failover architecture on AWS across us-east-1 and us-west-2.\nCloud Platform Engineer — Stratosphere Networks (Dallas, TX)\n2020 – 2022\n• Administered 14 production Kubernetes clusters hosting 400+ Docker pods.\n• Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce\nMTTR from 45 mins to 8 mins.",
+  "source_text": "CONTACT\nEmail: lucas.moreau@example.com\nPhone: (555) 492-8172\nAustin, TX\ngithub.com/lmoreau-dummy\nlinkedin.com/in/lucas-m-dummy\nCORE SKILLS\n• Go, Python, C++\n• Kubernetes, Docker, Helm\n• AWS (EKS, RDS, SQS)\n• Kafka, RabbitMQ, Redis\n• Terraform & CI/CD\n• Linux Kernel & eBPF\n• Distributed Consensus\nCERTIFICATIONS\n• Certified Kubernetes Admin (CKA)\n• AWS Solutions Architect (Pro)\n• HashiCorp Terraform Assoc.\nEDUCATION\nB.S. in Computer Science\nUT Austin (2016 – 2020)\nGPA: 3.88 / 4.0\nLUCAS MOREAU\nSenior DevOps & Site Reliability Engineer (SRE)\nPROFESSIONAL SUMMARY\nDevOps & Reliability Engineer with 6+ years managing multi-region Kubernetes clusters,\nautomated zero-trust networking, and high-availability cloud infrastructure. Successfully\nmaintained 99.995% uptime across 80+ customer-facing microservices.\nWORK EXPERIENCE\nSenior Infrastructure Engineer — Datavault Systems (Austin, TX)\n2022 – Present\n• Built GitOps deployment pipelines via ArgoCD, shortening production release cycles from 3\nhours to 4 minutes.\n• Cut monthly AWS infrastructure spend by 32% ($45,000/mo) through spot instance\norchestration and Karpenter autoscaling.\n• Designed multi-region failover architecture on AWS across us-east-1 and us-west-2.\nCloud Platform Engineer — Stratosphere Networks (Dallas, TX)\n2020 – 2022\n• Administered 14 production Kubernetes clusters hosting 400+ Docker pods.\n• Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce\nMTTR from 45 mins to 8 mins.\n\f",
+  "normalized_text": "CONTACT\nEmail: lucas.moreau@example.com\nPhone: (555) 492-8172\nAustin, TX\ngithub.com/lmoreau-dummy\nlinkedin.com/in/lucas-m-dummy\nCORE SKILLS\n• Go, Python, C++\n• Kubernetes, Docker, Helm\n• AWS (EKS, RDS, SQS)\n• Kafka, RabbitMQ, Redis\n• Terraform & CI/CD\n• Linux Kernel & eBPF\n• Distributed Consensus\nCERTIFICATIONS\n• Certified Kubernetes Admin (CKA)\n• AWS Solutions Architect (Pro)\n• HashiCorp Terraform Assoc.\nEDUCATION\nB.S. in Computer Science\nUT Austin (2016 – 2020)\nGPA: 3.88 / 4.0\nLUCAS MOREAU\nSenior DevOps & Site Reliability Engineer (SRE)\nPROFESSIONAL SUMMARY\nDevOps & Reliability Engineer with 6+ years managing multi-region Kubernetes clusters, automated zero-trust networking, and high-availability cloud infrastructure. Successfully maintained 99.995% uptime across 80+ customer-facing microservices.\nWORK EXPERIENCE\nSenior Infrastructure Engineer — Datavault Systems (Austin, TX)\n2022 – Present\n• Built GitOps deployment pipelines via ArgoCD, shortening production release cycles from 3 hours to 4 minutes.\n• Cut monthly AWS infrastructure spend by 32% ($45,000/mo) through spot instance orchestration and Karpenter autoscaling.\n• Designed multi-region failover architecture on AWS across us-east-1 and us-west-2.\nCloud Platform Engineer — Stratosphere Networks (Dallas, TX)\n2020 – 2022\n• Administered 14 production Kubernetes clusters hosting 400+ Docker pods.\n• Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce\nMTTR from 45 mins to 8 mins.",
+  "raw_lines": [
+    {
+      "id": "l00000",
+      "text": "CONTACT",
+      "runs": [
+        {
+          "text": "CONTACT",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "CONTACT"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        47.966499999999996,
+        86.436,
+        57.466499999999996
+      ],
+      "part": "header",
+      "flow": "p1LT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00000"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00001",
+      "text": "Email: lucas.moreau@example.com",
+      "runs": [
+        {
+          "text": "Email:",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Email:"
+        },
+        {
+          "text": " lucas.moreau@example.com",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "lucas.moreau@example.com"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        64.7595,
+        176.1615,
+        73.2595
+      ],
+      "part": "body",
+      "flow": "p1LT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00001"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00002",
+      "text": "Phone: (555) 492-8172",
+      "runs": [
+        {
+          "text": "Phone:",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Phone:"
+        },
+        {
+          "text": " (555)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(555)"
+        },
+        {
+          "text": " 492-8172",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "492-8172"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        75.7595,
+        127.414,
+        84.2595
+      ],
+      "part": "body",
+      "flow": "p1LT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00002"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00003",
+      "text": "Austin, TX",
+      "runs": [
+        {
+          "text": "Austin,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Austin,"
+        },
+        {
+          "text": " TX",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "TX"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        86.7595,
+        79.2105,
+        95.2595
+      ],
+      "part": "body",
+      "flow": "p1LT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00003"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00004",
+      "text": "github.com/lmoreau-dummy",
+      "runs": [
+        {
+          "text": "github.com/lmoreau-dummy",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "github.com/lmoreau-dummy"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        97.7595,
+        145.332,
+        106.2595
+      ],
+      "part": "body",
+      "flow": "p1LT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00004"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00005",
+      "text": "linkedin.com/in/lucas-m-dummy",
+      "runs": [
+        {
+          "text": "linkedin.com/in/lucas-m-dummy",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "linkedin.com/in/lucas-m-dummy"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        108.7595,
+        159.017,
+        117.2595
+      ],
+      "part": "body",
+      "flow": "p1LT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00005"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00006",
+      "text": "CORE SKILLS",
+      "runs": [
+        {
+          "text": "CORE",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "CORE"
+        },
+        {
+          "text": " SKILLS",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "SKILLS"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        129.9665,
+        103.8685,
+        139.4665
+      ],
+      "part": "body",
+      "flow": "p1LBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00006"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00007",
+      "text": "• Go, Python, C++",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Go,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Go,"
+        },
+        {
+          "text": " Python,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Python,"
+        },
+        {
+          "text": " C++",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "C++"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        146.7595,
+        105.67949999999999,
+        155.2595
+      ],
+      "part": "body",
+      "flow": "p1LBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00007"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00008",
+      "text": "• Kubernetes, Docker, Helm",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Kubernetes,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Kubernetes,"
+        },
+        {
+          "text": " Docker,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Docker,"
+        },
+        {
+          "text": " Helm",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Helm"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        157.7595,
+        142.034,
+        166.2595
+      ],
+      "part": "body",
+      "flow": "p1LBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00008"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00009",
+      "text": "• AWS (EKS, RDS, SQS)",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " AWS",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "AWS"
+        },
+        {
+          "text": " (EKS,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(EKS,"
+        },
+        {
+          "text": " RDS,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "RDS,"
+        },
+        {
+          "text": " SQS)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "SQS)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        168.7595,
+        132.106,
+        177.2595
+      ],
+      "part": "body",
+      "flow": "p1LBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00009"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00010",
+      "text": "• Kafka, RabbitMQ, Redis",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Kafka,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Kafka,"
+        },
+        {
+          "text": " RabbitMQ,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "RabbitMQ,"
+        },
+        {
+          "text": " Redis",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Redis"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        179.7595,
+        133.534,
+        188.2595
+      ],
+      "part": "body",
+      "flow": "p1LBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00010"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00011",
+      "text": "• Terraform & CI/CD",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Terraform",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Terraform"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " CI/CD",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "CI/CD"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        190.7595,
+        113.202,
+        199.2595
+      ],
+      "part": "body",
+      "flow": "p1LBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00011"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00012",
+      "text": "• Linux Kernel & eBPF",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Linux",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Linux"
+        },
+        {
+          "text": " Kernel",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Kernel"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " eBPF",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "eBPF"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        201.7595,
+        121.26,
+        210.2595
+      ],
+      "part": "body",
+      "flow": "p1LBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00012"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00013",
+      "text": "• Distributed Consensus",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Distributed",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Distributed"
+        },
+        {
+          "text": " Consensus",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Consensus"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        212.7595,
+        127.86449999999999,
+        221.2595
+      ],
+      "part": "body",
+      "flow": "p1LBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00013"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00014",
+      "text": "CERTIFICATIONS",
+      "runs": [
+        {
+          "text": "CERTIFICATIONS",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "CERTIFICATIONS"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        233.9665,
+        119.6955,
+        243.4665
+      ],
+      "part": "body",
+      "flow": "p1LBBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00014"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00015",
+      "text": "• Certified Kubernetes Admin (CKA)",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Certified",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Certified"
+        },
+        {
+          "text": " Kubernetes",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Kubernetes"
+        },
+        {
+          "text": " Admin",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Admin"
+        },
+        {
+          "text": " (CKA)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(CKA)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        250.7595,
+        171.7925,
+        259.2595
+      ],
+      "part": "body",
+      "flow": "p1LBBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00015"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00016",
+      "text": "• AWS Solutions Architect (Pro)",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " AWS",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "AWS"
+        },
+        {
+          "text": " Solutions",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Solutions"
+        },
+        {
+          "text": " Architect",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Architect"
+        },
+        {
+          "text": " (Pro)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(Pro)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        261.7595,
+        155.7275,
+        270.2595
+      ],
+      "part": "body",
+      "flow": "p1LBBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00016"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00017",
+      "text": "• HashiCorp Terraform Assoc.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " HashiCorp",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "HashiCorp"
+        },
+        {
+          "text": " Terraform",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Terraform"
+        },
+        {
+          "text": " Assoc.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Assoc."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        272.7595,
+        150.0495,
+        281.2595
+      ],
+      "part": "body",
+      "flow": "p1LBBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00017"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00018",
+      "text": "EDUCATION",
+      "runs": [
+        {
+          "text": "EDUCATION",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "EDUCATION"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        293.9665,
+        96.46799999999999,
+        303.4665
+      ],
+      "part": "body",
+      "flow": "p1LBBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00018"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00019",
+      "text": "B.S. in Computer Science",
+      "runs": [
+        {
+          "text": "B.S.",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "B.S."
+        },
+        {
+          "text": " in",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "in"
+        },
+        {
+          "text": " Computer",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Computer"
+        },
+        {
+          "text": " Science",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Science"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        310.7595,
+        143.445,
+        319.2595
+      ],
+      "part": "body",
+      "flow": "p1LBBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00019"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00020",
+      "text": "UT Austin (2016 – 2020)",
+      "runs": [
+        {
+          "text": "UT",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "UT"
+        },
+        {
+          "text": " Austin",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Austin"
+        },
+        {
+          "text": " (2016",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(2016"
+        },
+        {
+          "text": " –",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "–"
+        },
+        {
+          "text": " 2020)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "2020)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        321.7595,
+        132.599,
+        330.2595
+      ],
+      "part": "body",
+      "flow": "p1LBBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00020"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00021",
+      "text": "GPA: 3.88 / 4.0",
+      "runs": [
+        {
+          "text": "GPA:",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "GPA:"
+        },
+        {
+          "text": " 3.88",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "3.88"
+        },
+        {
+          "text": " /",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "/"
+        },
+        {
+          "text": " 4.0",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "4.0"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        332.7595,
+        98.12299999999999,
+        341.2595
+      ],
+      "part": "body",
+      "flow": "p1LBBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00021"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00022",
+      "text": "LUCAS MOREAU",
+      "runs": [
+        {
+          "text": "LUCAS",
+          "bold": true,
+          "size": 18.0,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "LUCAS"
+        },
+        {
+          "text": " MOREAU",
+          "bold": true,
+          "size": 18.0,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "MOREAU"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        49.726,
+        370.98799999999994,
+        67.726
+      ],
+      "part": "header",
+      "flow": "p1RTT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00022"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00023",
+      "text": "Senior DevOps & Site Reliability Engineer (SRE)",
+      "runs": [
+        {
+          "text": "Senior",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.145098, 0.388235, 0.921569)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Senior"
+        },
+        {
+          "text": " DevOps",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.145098, 0.388235, 0.921569)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "DevOps"
+        },
+        {
+          "text": " &",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.145098, 0.388235, 0.921569)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Site",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.145098, 0.388235, 0.921569)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Site"
+        },
+        {
+          "text": " Reliability",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.145098, 0.388235, 0.921569)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Reliability"
+        },
+        {
+          "text": " Engineer",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.145098, 0.388235, 0.921569)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Engineer"
+        },
+        {
+          "text": " (SRE)",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.145098, 0.388235, 0.921569)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "(SRE)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        69.9665,
+        440.97999999999996,
+        79.4665
+      ],
+      "part": "body",
+      "flow": "p1RTT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00023"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00024",
+      "text": "PROFESSIONAL SUMMARY",
+      "runs": [
+        {
+          "text": "PROFESSIONAL",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "PROFESSIONAL"
+        },
+        {
+          "text": " SUMMARY",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "SUMMARY"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        94.07000000000005,
+        357.34000000000003,
+        104.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1RTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00024"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00025",
+      "text": "DevOps & Reliability Engineer with 6+ years managing multi-region Kubernetes clusters,",
+      "runs": [
+        {
+          "text": "DevOps",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "DevOps"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Reliability",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Reliability"
+        },
+        {
+          "text": " Engineer",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Engineer"
+        },
+        {
+          "text": " with",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "with"
+        },
+        {
+          "text": " 6+",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "6+"
+        },
+        {
+          "text": " years",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "years"
+        },
+        {
+          "text": " managing",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "managing"
+        },
+        {
+          "text": " multi-region",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "multi-region"
+        },
+        {
+          "text": " Kubernetes",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Kubernetes"
+        },
+        {
+          "text": " clusters,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "clusters,"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        110.7595,
+        556.8005,
+        119.2595
+      ],
+      "part": "body",
+      "flow": "p1RTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00025"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00026",
+      "text": "automated zero-trust networking, and high-availability cloud infrastructure. Successfully",
+      "runs": [
+        {
+          "text": "automated",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "automated"
+        },
+        {
+          "text": " zero-trust",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "zero-trust"
+        },
+        {
+          "text": " networking,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "networking,"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " high-availability",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "high-availability"
+        },
+        {
+          "text": " cloud",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "cloud"
+        },
+        {
+          "text": " infrastructure.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "infrastructure."
+        },
+        {
+          "text": " Successfully",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Successfully"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        122.2595,
+        551.845,
+        130.7595
+      ],
+      "part": "body",
+      "flow": "p1RTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00026"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00027",
+      "text": "maintained 99.995% uptime across 80+ customer-facing microservices.",
+      "runs": [
+        {
+          "text": "maintained",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "maintained"
+        },
+        {
+          "text": " 99.995%",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "99.995%"
+        },
+        {
+          "text": " uptime",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "uptime"
+        },
+        {
+          "text": " across",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "across"
+        },
+        {
+          "text": " 80+",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "80+"
+        },
+        {
+          "text": " customer-facing",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "customer-facing"
+        },
+        {
+          "text": " microservices.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "microservices."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        133.7595,
+        493.025,
+        142.2595
+      ],
+      "part": "body",
+      "flow": "p1RTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00027"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00028",
+      "text": "WORK EXPERIENCE",
+      "runs": [
+        {
+          "text": "WORK",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "WORK"
+        },
+        {
+          "text": " EXPERIENCE",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "EXPERIENCE"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        162.37,
+        322.90000000000003,
+        172.37
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00028"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00029",
+      "text": "Senior Infrastructure Engineer — Datavault Systems (Austin, TX)",
+      "runs": [
+        {
+          "text": "Senior",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Senior"
+        },
+        {
+          "text": " Infrastructure",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Infrastructure"
+        },
+        {
+          "text": " Engineer",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Engineer"
+        },
+        {
+          "text": " —",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "—"
+        },
+        {
+          "text": " Datavault",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Datavault"
+        },
+        {
+          "text": " Systems",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Systems"
+        },
+        {
+          "text": " (Austin,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(Austin,"
+        },
+        {
+          "text": " TX)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "TX)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        179.05949999999996,
+        478.12449999999995,
+        187.55949999999996
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00029"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00030",
+      "text": "2022 – Present",
+      "runs": [
+        {
+          "text": "2022",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2022"
+        },
+        {
+          "text": " –",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "–"
+        },
+        {
+          "text": " Present",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "Present"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        190.55949999999996,
+        281.647,
+        199.05949999999996
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00030"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00031",
+      "text": "• Built GitOps deployment pipelines via ArgoCD, shortening production release cycles from 3",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Built",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Built"
+        },
+        {
+          "text": " GitOps",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "GitOps"
+        },
+        {
+          "text": " deployment",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "deployment"
+        },
+        {
+          "text": " pipelines",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "pipelines"
+        },
+        {
+          "text": " via",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "via"
+        },
+        {
+          "text": " ArgoCD,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "ArgoCD,"
+        },
+        {
+          "text": " shortening",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "shortening"
+        },
+        {
+          "text": " production",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "production"
+        },
+        {
+          "text": " release",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "release"
+        },
+        {
+          "text": " cycles",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "cycles"
+        },
+        {
+          "text": " from",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "from"
+        },
+        {
+          "text": " 3",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "3"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        202.05949999999996,
+        568.8534999999998,
+        210.55949999999996
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00031"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00032",
+      "text": "hours to 4 minutes.",
+      "runs": [
+        {
+          "text": "hours",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "hours"
+        },
+        {
+          "text": " to",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "to"
+        },
+        {
+          "text": " 4",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "4"
+        },
+        {
+          "text": " minutes.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "minutes."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        213.55949999999996,
+        296.284,
+        222.05949999999996
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00032"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00033",
+      "text": "• Cut monthly AWS infrastructure spend by 32% ($45,000/mo) through spot instance",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Cut",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Cut"
+        },
+        {
+          "text": " monthly",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "monthly"
+        },
+        {
+          "text": " AWS",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "AWS"
+        },
+        {
+          "text": " infrastructure",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "infrastructure"
+        },
+        {
+          "text": " spend",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "spend"
+        },
+        {
+          "text": " by",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "by"
+        },
+        {
+          "text": " 32%",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "32%"
+        },
+        {
+          "text": " ($45,000/mo)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "($45,000/mo)"
+        },
+        {
+          "text": " through",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "through"
+        },
+        {
+          "text": " spot",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "spot"
+        },
+        {
+          "text": " instance",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "instance"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        225.05949999999996,
+        538.1685,
+        233.55949999999996
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00033"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00034",
+      "text": "orchestration and Karpenter autoscaling.",
+      "runs": [
+        {
+          "text": "orchestration",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "orchestration"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " Karpenter",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Karpenter"
+        },
+        {
+          "text": " autoscaling.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "autoscaling."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        236.55949999999996,
+        377.0765,
+        245.05949999999996
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00034"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00035",
+      "text": "• Designed multi-region failover architecture on AWS across us-east-1 and us-west-2.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Designed",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Designed"
+        },
+        {
+          "text": " multi-region",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "multi-region"
+        },
+        {
+          "text": " failover",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "failover"
+        },
+        {
+          "text": " architecture",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "architecture"
+        },
+        {
+          "text": " on",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "on"
+        },
+        {
+          "text": " AWS",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "AWS"
+        },
+        {
+          "text": " across",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "across"
+        },
+        {
+          "text": " us-east-1",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "us-east-1"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " us-west-2.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "us-west-2."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        248.05949999999996,
+        542.3845,
+        256.55949999999996
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00035"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00036",
+      "text": "Cloud Platform Engineer — Stratosphere Networks (Dallas, TX)",
+      "runs": [
+        {
+          "text": "Cloud",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Cloud"
+        },
+        {
+          "text": " Platform",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Platform"
+        },
+        {
+          "text": " Engineer",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Engineer"
+        },
+        {
+          "text": " —",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "—"
+        },
+        {
+          "text": " Stratosphere",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Stratosphere"
+        },
+        {
+          "text": " Networks",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Networks"
+        },
+        {
+          "text": " (Dallas,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(Dallas,"
+        },
+        {
+          "text": " TX)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "TX)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        263.55949999999996,
+        470.551,
+        272.05949999999996
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00036"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00037",
+      "text": "2020 – 2022",
+      "runs": [
+        {
+          "text": "2020",
+          "bold": false,
+          "size": 8.500000000000057,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2020"
+        },
+        {
+          "text": " –",
+          "bold": false,
+          "size": 8.500000000000057,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "–"
+        },
+        {
+          "text": " 2022",
+          "bold": false,
+          "size": 8.500000000000057,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2022"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        275.05949999999996,
+        271.26,
+        283.5595
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00037"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00038",
+      "text": "• Administered 14 production Kubernetes clusters hosting 400+ Docker pods.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Administered",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Administered"
+        },
+        {
+          "text": " 14",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "14"
+        },
+        {
+          "text": " production",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "production"
+        },
+        {
+          "text": " Kubernetes",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Kubernetes"
+        },
+        {
+          "text": " clusters",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "clusters"
+        },
+        {
+          "text": " hosting",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "hosting"
+        },
+        {
+          "text": " 400+",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "400+"
+        },
+        {
+          "text": " Docker",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Docker"
+        },
+        {
+          "text": " pods.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "pods."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        286.5595,
+        511.01099999999997,
+        295.0595
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00038"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00039",
+      "text": "• Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Instrumented",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Instrumented"
+        },
+        {
+          "text": " distributed",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "distributed"
+        },
+        {
+          "text": " tracing",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "tracing"
+        },
+        {
+          "text": " with",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "with"
+        },
+        {
+          "text": " OpenTelemetry,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "OpenTelemetry,"
+        },
+        {
+          "text": " Prometheus,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Prometheus,"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " Grafana",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Grafana"
+        },
+        {
+          "text": " to",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "to"
+        },
+        {
+          "text": " reduce",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "reduce"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        298.0595,
+        564.1529999999999,
+        306.5595
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00039"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00040",
+      "text": "MTTR from 45 mins to 8 mins.",
+      "runs": [
+        {
+          "text": "MTTR",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "MTTR"
+        },
+        {
+          "text": " from",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "from"
+        },
+        {
+          "text": " 45",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "45"
+        },
+        {
+          "text": " mins",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "mins"
+        },
+        {
+          "text": " to",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "to"
+        },
+        {
+          "text": " 8",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "8"
+        },
+        {
+          "text": " mins.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "mins."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        309.5595,
+        338.2995,
+        318.0595
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00040"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    }
+  ],
+  "lines": [
+    {
+      "id": "l00000",
+      "text": "CONTACT",
+      "runs": [
+        {
+          "text": "CONTACT",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "CONTACT"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        47.966499999999996,
+        86.436,
+        57.466499999999996
+      ],
+      "part": "header",
+      "flow": "p1LT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00000"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00001",
+      "text": "Email: lucas.moreau@example.com",
+      "runs": [
+        {
+          "text": "Email:",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Email:"
+        },
+        {
+          "text": " lucas.moreau@example.com",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "lucas.moreau@example.com"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        64.7595,
+        176.1615,
+        73.2595
+      ],
+      "part": "body",
+      "flow": "p1LT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00001"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00002",
+      "text": "Phone: (555) 492-8172",
+      "runs": [
+        {
+          "text": "Phone:",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Phone:"
+        },
+        {
+          "text": " (555)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(555)"
+        },
+        {
+          "text": " 492-8172",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "492-8172"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        75.7595,
+        127.414,
+        84.2595
+      ],
+      "part": "body",
+      "flow": "p1LT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00002"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00003",
+      "text": "Austin, TX",
+      "runs": [
+        {
+          "text": "Austin,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Austin,"
+        },
+        {
+          "text": " TX",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "TX"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        86.7595,
+        79.2105,
+        95.2595
+      ],
+      "part": "body",
+      "flow": "p1LT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00003"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00004",
+      "text": "github.com/lmoreau-dummy",
+      "runs": [
+        {
+          "text": "github.com/lmoreau-dummy",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "github.com/lmoreau-dummy"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        97.7595,
+        145.332,
+        106.2595
+      ],
+      "part": "body",
+      "flow": "p1LT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00004"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00005",
+      "text": "linkedin.com/in/lucas-m-dummy",
+      "runs": [
+        {
+          "text": "linkedin.com/in/lucas-m-dummy",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "linkedin.com/in/lucas-m-dummy"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        108.7595,
+        159.017,
+        117.2595
+      ],
+      "part": "body",
+      "flow": "p1LT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00005"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00006",
+      "text": "CORE SKILLS",
+      "runs": [
+        {
+          "text": "CORE",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "CORE"
+        },
+        {
+          "text": " SKILLS",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "SKILLS"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        129.9665,
+        103.8685,
+        139.4665
+      ],
+      "part": "body",
+      "flow": "p1LBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00006"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00007",
+      "text": "• Go, Python, C++",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Go,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Go,"
+        },
+        {
+          "text": " Python,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Python,"
+        },
+        {
+          "text": " C++",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "C++"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        146.7595,
+        105.67949999999999,
+        155.2595
+      ],
+      "part": "body",
+      "flow": "p1LBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00007"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00008",
+      "text": "• Kubernetes, Docker, Helm",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Kubernetes,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Kubernetes,"
+        },
+        {
+          "text": " Docker,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Docker,"
+        },
+        {
+          "text": " Helm",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Helm"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        157.7595,
+        142.034,
+        166.2595
+      ],
+      "part": "body",
+      "flow": "p1LBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00008"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00009",
+      "text": "• AWS (EKS, RDS, SQS)",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " AWS",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "AWS"
+        },
+        {
+          "text": " (EKS,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(EKS,"
+        },
+        {
+          "text": " RDS,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "RDS,"
+        },
+        {
+          "text": " SQS)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "SQS)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        168.7595,
+        132.106,
+        177.2595
+      ],
+      "part": "body",
+      "flow": "p1LBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00009"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00010",
+      "text": "• Kafka, RabbitMQ, Redis",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Kafka,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Kafka,"
+        },
+        {
+          "text": " RabbitMQ,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "RabbitMQ,"
+        },
+        {
+          "text": " Redis",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Redis"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        179.7595,
+        133.534,
+        188.2595
+      ],
+      "part": "body",
+      "flow": "p1LBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00010"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00011",
+      "text": "• Terraform & CI/CD",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Terraform",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Terraform"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " CI/CD",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "CI/CD"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        190.7595,
+        113.202,
+        199.2595
+      ],
+      "part": "body",
+      "flow": "p1LBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00011"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00012",
+      "text": "• Linux Kernel & eBPF",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Linux",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Linux"
+        },
+        {
+          "text": " Kernel",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Kernel"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " eBPF",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "eBPF"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        201.7595,
+        121.26,
+        210.2595
+      ],
+      "part": "body",
+      "flow": "p1LBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00012"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00013",
+      "text": "• Distributed Consensus",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Distributed",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Distributed"
+        },
+        {
+          "text": " Consensus",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Consensus"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        212.7595,
+        127.86449999999999,
+        221.2595
+      ],
+      "part": "body",
+      "flow": "p1LBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00013"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00014",
+      "text": "CERTIFICATIONS",
+      "runs": [
+        {
+          "text": "CERTIFICATIONS",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "CERTIFICATIONS"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        233.9665,
+        119.6955,
+        243.4665
+      ],
+      "part": "body",
+      "flow": "p1LBBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00014"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00015",
+      "text": "• Certified Kubernetes Admin (CKA)",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Certified",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Certified"
+        },
+        {
+          "text": " Kubernetes",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Kubernetes"
+        },
+        {
+          "text": " Admin",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Admin"
+        },
+        {
+          "text": " (CKA)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(CKA)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        250.7595,
+        171.7925,
+        259.2595
+      ],
+      "part": "body",
+      "flow": "p1LBBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00015"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00016",
+      "text": "• AWS Solutions Architect (Pro)",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " AWS",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "AWS"
+        },
+        {
+          "text": " Solutions",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Solutions"
+        },
+        {
+          "text": " Architect",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Architect"
+        },
+        {
+          "text": " (Pro)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(Pro)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        261.7595,
+        155.7275,
+        270.2595
+      ],
+      "part": "body",
+      "flow": "p1LBBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00016"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00017",
+      "text": "• HashiCorp Terraform Assoc.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " HashiCorp",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "HashiCorp"
+        },
+        {
+          "text": " Terraform",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Terraform"
+        },
+        {
+          "text": " Assoc.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Assoc."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        272.7595,
+        150.0495,
+        281.2595
+      ],
+      "part": "body",
+      "flow": "p1LBBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00017"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00018",
+      "text": "EDUCATION",
+      "runs": [
+        {
+          "text": "EDUCATION",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "EDUCATION"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        293.9665,
+        96.46799999999999,
+        303.4665
+      ],
+      "part": "body",
+      "flow": "p1LBBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00018"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00019",
+      "text": "B.S. in Computer Science",
+      "runs": [
+        {
+          "text": "B.S.",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "B.S."
+        },
+        {
+          "text": " in",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "in"
+        },
+        {
+          "text": " Computer",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Computer"
+        },
+        {
+          "text": " Science",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Science"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        310.7595,
+        143.445,
+        319.2595
+      ],
+      "part": "body",
+      "flow": "p1LBBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00019"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00020",
+      "text": "UT Austin (2016 – 2020)",
+      "runs": [
+        {
+          "text": "UT",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "UT"
+        },
+        {
+          "text": " Austin",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Austin"
+        },
+        {
+          "text": " (2016",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(2016"
+        },
+        {
+          "text": " –",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "–"
+        },
+        {
+          "text": " 2020)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "2020)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        321.7595,
+        132.599,
+        330.2595
+      ],
+      "part": "body",
+      "flow": "p1LBBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00020"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00021",
+      "text": "GPA: 3.88 / 4.0",
+      "runs": [
+        {
+          "text": "GPA:",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "GPA:"
+        },
+        {
+          "text": " 3.88",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "3.88"
+        },
+        {
+          "text": " /",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "/"
+        },
+        {
+          "text": " 4.0",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "4.0"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        332.7595,
+        98.12299999999999,
+        341.2595
+      ],
+      "part": "body",
+      "flow": "p1LBBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00021"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00022",
+      "text": "LUCAS MOREAU",
+      "runs": [
+        {
+          "text": "LUCAS",
+          "bold": true,
+          "size": 18.0,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "LUCAS"
+        },
+        {
+          "text": " MOREAU",
+          "bold": true,
+          "size": 18.0,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "MOREAU"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        49.726,
+        370.98799999999994,
+        67.726
+      ],
+      "part": "header",
+      "flow": "p1RTT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TITLE",
+      "source_ids": [
+        "l00022"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.92
+    },
+    {
+      "id": "l00023",
+      "text": "Senior DevOps & Site Reliability Engineer (SRE)",
+      "runs": [
+        {
+          "text": "Senior",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.145098, 0.388235, 0.921569)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Senior"
+        },
+        {
+          "text": " DevOps",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.145098, 0.388235, 0.921569)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "DevOps"
+        },
+        {
+          "text": " &",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.145098, 0.388235, 0.921569)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Site",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.145098, 0.388235, 0.921569)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Site"
+        },
+        {
+          "text": " Reliability",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.145098, 0.388235, 0.921569)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Reliability"
+        },
+        {
+          "text": " Engineer",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.145098, 0.388235, 0.921569)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Engineer"
+        },
+        {
+          "text": " (SRE)",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.145098, 0.388235, 0.921569)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "(SRE)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        69.9665,
+        440.97999999999996,
+        79.4665
+      ],
+      "part": "body",
+      "flow": "p1RTT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "SUBTITLE",
+      "source_ids": [
+        "l00023"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00024",
+      "text": "PROFESSIONAL SUMMARY",
+      "runs": [
+        {
+          "text": "PROFESSIONAL",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "PROFESSIONAL"
+        },
+        {
+          "text": " SUMMARY",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "SUMMARY"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        94.07000000000005,
+        357.34000000000003,
+        104.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1RTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00024"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00025",
+      "text": "DevOps & Reliability Engineer with 6+ years managing multi-region Kubernetes clusters, automated zero-trust networking, and high-availability cloud infrastructure. Successfully maintained 99.995% uptime across 80+ customer-facing microservices.",
+      "runs": [
+        {
+          "text": "DevOps",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "DevOps"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Reliability",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Reliability"
+        },
+        {
+          "text": " Engineer",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Engineer"
+        },
+        {
+          "text": " with",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "with"
+        },
+        {
+          "text": " 6+",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "6+"
+        },
+        {
+          "text": " years",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "years"
+        },
+        {
+          "text": " managing",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "managing"
+        },
+        {
+          "text": " multi-region",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "multi-region"
+        },
+        {
+          "text": " Kubernetes",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Kubernetes"
+        },
+        {
+          "text": " clusters,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "clusters,"
+        },
+        {
+          "text": "automated",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "automated"
+        },
+        {
+          "text": " zero-trust",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "zero-trust"
+        },
+        {
+          "text": " networking,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "networking,"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " high-availability",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "high-availability"
+        },
+        {
+          "text": " cloud",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "cloud"
+        },
+        {
+          "text": " infrastructure.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "infrastructure."
+        },
+        {
+          "text": " Successfully",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Successfully"
+        },
+        {
+          "text": "maintained",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "maintained"
+        },
+        {
+          "text": " 99.995%",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "99.995%"
+        },
+        {
+          "text": " uptime",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "uptime"
+        },
+        {
+          "text": " across",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "across"
+        },
+        {
+          "text": " 80+",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "80+"
+        },
+        {
+          "text": " customer-facing",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "customer-facing"
+        },
+        {
+          "text": " microservices.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "microservices."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        110.7595,
+        556.8005,
+        142.2595
+      ],
+      "part": "body",
+      "flow": "p1RTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00025",
+        "l00026",
+        "l00027"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00028",
+      "text": "WORK EXPERIENCE",
+      "runs": [
+        {
+          "text": "WORK",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "WORK"
+        },
+        {
+          "text": " EXPERIENCE",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "EXPERIENCE"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        162.37,
+        322.90000000000003,
+        172.37
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00028"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00029",
+      "text": "Senior Infrastructure Engineer — Datavault Systems (Austin, TX)",
+      "runs": [
+        {
+          "text": "Senior",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Senior"
+        },
+        {
+          "text": " Infrastructure",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Infrastructure"
+        },
+        {
+          "text": " Engineer",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Engineer"
+        },
+        {
+          "text": " —",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "—"
+        },
+        {
+          "text": " Datavault",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Datavault"
+        },
+        {
+          "text": " Systems",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Systems"
+        },
+        {
+          "text": " (Austin,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(Austin,"
+        },
+        {
+          "text": " TX)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "TX)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        179.05949999999996,
+        478.12449999999995,
+        187.55949999999996
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00029"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00030",
+      "text": "2022 – Present",
+      "runs": [
+        {
+          "text": "2022",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2022"
+        },
+        {
+          "text": " –",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "–"
+        },
+        {
+          "text": " Present",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "Present"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        190.55949999999996,
+        281.647,
+        199.05949999999996
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00030"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00031",
+      "text": "• Built GitOps deployment pipelines via ArgoCD, shortening production release cycles from 3 hours to 4 minutes.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Built",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Built"
+        },
+        {
+          "text": " GitOps",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "GitOps"
+        },
+        {
+          "text": " deployment",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "deployment"
+        },
+        {
+          "text": " pipelines",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "pipelines"
+        },
+        {
+          "text": " via",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "via"
+        },
+        {
+          "text": " ArgoCD,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "ArgoCD,"
+        },
+        {
+          "text": " shortening",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "shortening"
+        },
+        {
+          "text": " production",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "production"
+        },
+        {
+          "text": " release",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "release"
+        },
+        {
+          "text": " cycles",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "cycles"
+        },
+        {
+          "text": " from",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "from"
+        },
+        {
+          "text": " 3",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "3"
+        },
+        {
+          "text": "hours",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "hours"
+        },
+        {
+          "text": " to",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "to"
+        },
+        {
+          "text": " 4",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "4"
+        },
+        {
+          "text": " minutes.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "minutes."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        202.05949999999996,
+        568.8534999999998,
+        222.05949999999996
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00031",
+        "l00032"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00033",
+      "text": "• Cut monthly AWS infrastructure spend by 32% ($45,000/mo) through spot instance orchestration and Karpenter autoscaling.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Cut",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Cut"
+        },
+        {
+          "text": " monthly",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "monthly"
+        },
+        {
+          "text": " AWS",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "AWS"
+        },
+        {
+          "text": " infrastructure",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "infrastructure"
+        },
+        {
+          "text": " spend",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "spend"
+        },
+        {
+          "text": " by",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "by"
+        },
+        {
+          "text": " 32%",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "32%"
+        },
+        {
+          "text": " ($45,000/mo)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "($45,000/mo)"
+        },
+        {
+          "text": " through",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "through"
+        },
+        {
+          "text": " spot",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "spot"
+        },
+        {
+          "text": " instance",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "instance"
+        },
+        {
+          "text": "orchestration",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "orchestration"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " Karpenter",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Karpenter"
+        },
+        {
+          "text": " autoscaling.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "autoscaling."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        225.05949999999996,
+        538.1685,
+        245.05949999999996
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00033",
+        "l00034"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00035",
+      "text": "• Designed multi-region failover architecture on AWS across us-east-1 and us-west-2.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Designed",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Designed"
+        },
+        {
+          "text": " multi-region",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "multi-region"
+        },
+        {
+          "text": " failover",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "failover"
+        },
+        {
+          "text": " architecture",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "architecture"
+        },
+        {
+          "text": " on",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "on"
+        },
+        {
+          "text": " AWS",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "AWS"
+        },
+        {
+          "text": " across",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "across"
+        },
+        {
+          "text": " us-east-1",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "us-east-1"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " us-west-2.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "us-west-2."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        248.05949999999996,
+        542.3845,
+        256.55949999999996
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00035"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00036",
+      "text": "Cloud Platform Engineer — Stratosphere Networks (Dallas, TX)",
+      "runs": [
+        {
+          "text": "Cloud",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Cloud"
+        },
+        {
+          "text": " Platform",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Platform"
+        },
+        {
+          "text": " Engineer",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Engineer"
+        },
+        {
+          "text": " —",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "—"
+        },
+        {
+          "text": " Stratosphere",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Stratosphere"
+        },
+        {
+          "text": " Networks",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Networks"
+        },
+        {
+          "text": " (Dallas,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(Dallas,"
+        },
+        {
+          "text": " TX)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "TX)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        263.55949999999996,
+        470.551,
+        272.05949999999996
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00036"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00037",
+      "text": "2020 – 2022",
+      "runs": [
+        {
+          "text": "2020",
+          "bold": false,
+          "size": 8.500000000000057,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2020"
+        },
+        {
+          "text": " –",
+          "bold": false,
+          "size": 8.500000000000057,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "–"
+        },
+        {
+          "text": " 2022",
+          "bold": false,
+          "size": 8.500000000000057,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2022"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        275.05949999999996,
+        271.26,
+        283.5595
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00037"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00038",
+      "text": "• Administered 14 production Kubernetes clusters hosting 400+ Docker pods.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Administered",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Administered"
+        },
+        {
+          "text": " 14",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "14"
+        },
+        {
+          "text": " production",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "production"
+        },
+        {
+          "text": " Kubernetes",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Kubernetes"
+        },
+        {
+          "text": " clusters",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "clusters"
+        },
+        {
+          "text": " hosting",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "hosting"
+        },
+        {
+          "text": " 400+",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "400+"
+        },
+        {
+          "text": " Docker",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Docker"
+        },
+        {
+          "text": " pods.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "pods."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        286.5595,
+        511.01099999999997,
+        295.0595
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00038"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00039",
+      "text": "• Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Instrumented",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Instrumented"
+        },
+        {
+          "text": " distributed",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "distributed"
+        },
+        {
+          "text": " tracing",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "tracing"
+        },
+        {
+          "text": " with",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "with"
+        },
+        {
+          "text": " OpenTelemetry,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "OpenTelemetry,"
+        },
+        {
+          "text": " Prometheus,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Prometheus,"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " Grafana",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Grafana"
+        },
+        {
+          "text": " to",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "to"
+        },
+        {
+          "text": " reduce",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "reduce"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        298.0595,
+        564.1529999999999,
+        306.5595
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00039"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00040",
+      "text": "MTTR from 45 mins to 8 mins.",
+      "runs": [
+        {
+          "text": "MTTR",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "MTTR"
+        },
+        {
+          "text": " from",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "from"
+        },
+        {
+          "text": " 45",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "45"
+        },
+        {
+          "text": " mins",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "mins"
+        },
+        {
+          "text": " to",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "to"
+        },
+        {
+          "text": " 8",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "8"
+        },
+        {
+          "text": " mins.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "mins."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        309.5595,
+        338.2995,
+        318.0595
+      ],
+      "part": "body",
+      "flow": "p1RB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00040"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    }
+  ],
+  "sections": [
+    {
+      "id": "s000",
+      "canonical": "contact",
+      "original_heading": "CONTACT",
+      "heading_line_id": "l00000",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00001",
+        "l00002",
+        "l00003",
+        "l00004",
+        "l00005"
+      ],
+      "text": "Email: lucas.moreau@example.com\nPhone: (555) 492-8172\nAustin, TX\ngithub.com/lmoreau-dummy\nlinkedin.com/in/lucas-m-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "skills",
+      "original_heading": "CORE SKILLS",
+      "heading_line_id": "l00006",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00007",
+        "l00008",
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00013"
+      ],
+      "text": "• Go, Python, C++\n• Kubernetes, Docker, Helm\n• AWS (EKS, RDS, SQS)\n• Kafka, RabbitMQ, Redis\n• Terraform & CI/CD\n• Linux Kernel & eBPF\n• Distributed Consensus"
+    },
+    {
+      "id": "s002",
+      "canonical": "certifications",
+      "original_heading": "CERTIFICATIONS",
+      "heading_line_id": "l00014",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00015",
+        "l00016",
+        "l00017"
+      ],
+      "text": "• Certified Kubernetes Admin (CKA)\n• AWS Solutions Architect (Pro)\n• HashiCorp Terraform Assoc."
+    },
+    {
+      "id": "s003",
+      "canonical": "education",
+      "original_heading": "EDUCATION",
+      "heading_line_id": "l00018",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00019",
+        "l00020",
+        "l00021"
+      ],
+      "text": "B.S. in Computer Science\nUT Austin (2016 – 2020)\nGPA: 3.88 / 4.0"
+    },
+    {
+      "id": "s004",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00022",
+        "l00023"
+      ],
+      "text": "LUCAS MOREAU\nSenior DevOps & Site Reliability Engineer (SRE)"
+    },
+    {
+      "id": "s005",
+      "canonical": "summary",
+      "original_heading": "PROFESSIONAL SUMMARY",
+      "heading_line_id": "l00024",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00025"
+      ],
+      "text": "DevOps & Reliability Engineer with 6+ years managing multi-region Kubernetes clusters, automated zero-trust networking, and high-availability cloud infrastructure. Successfully maintained 99.995% uptime across 80+ customer-facing microservices."
+    },
+    {
+      "id": "s006",
+      "canonical": "experience",
+      "original_heading": "WORK EXPERIENCE",
+      "heading_line_id": "l00028",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00029",
+        "l00030",
+        "l00031",
+        "l00033",
+        "l00035",
+        "l00036",
+        "l00037",
+        "l00038",
+        "l00039",
+        "l00040"
+      ],
+      "text": "Senior Infrastructure Engineer — Datavault Systems (Austin, TX)\n2022 – Present\n• Built GitOps deployment pipelines via ArgoCD, shortening production release cycles from 3 hours to 4 minutes.\n• Cut monthly AWS infrastructure spend by 32% ($45,000/mo) through spot instance orchestration and Karpenter autoscaling.\n• Designed multi-region failover architecture on AWS across us-east-1 and us-west-2.\nCloud Platform Engineer — Stratosphere Networks (Dallas, TX)\n2020 – 2022\n• Administered 14 production Kubernetes clusters hosting 400+ Docker pods.\n• Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce\nMTTR from 45 mins to 8 mins."
+    }
+  ],
+  "fields": {
+    "name": {
+      "value": "LUCAS MOREAU",
+      "confidence": 0.92,
+      "source_line_ids": [
+        "l00022"
+      ]
+    },
+    "emails": [
+      {
+        "value": "lucas.moreau@example.com",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00001"
+        ],
+        "normalization": "none",
+        "raw": "Email: lucas.moreau@example.com"
+      }
+    ],
+    "phones": [
+      {
+        "value": "(555) 492-8172",
+        "confidence": 0.7,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalized": "+15554928172",
+        "valid": false
+      }
+    ],
+    "urls": [
+      {
+        "value": "github.com/lmoreau-dummy",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00004"
+        ],
+        "kind": "github"
+      },
+      {
+        "value": "linkedin.com/in/lucas-m-dummy",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00005"
+        ],
+        "kind": "linkedin"
+      }
+    ],
+    "locations": [
+      {
+        "value": "Austin, TX",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00003"
+        ]
+      }
+    ],
+    "date_ranges": [
+      {
+        "value": {
+          "start": "2016",
+          "end": "2020"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00020"
+        ],
+        "raw": "2016 – 2020"
+      },
+      {
+        "value": {
+          "start": "2022",
+          "end": "Present"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00030"
+        ],
+        "raw": "2022 – Present"
+      },
+      {
+        "value": {
+          "start": "2020",
+          "end": "2022"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00037"
+        ],
+        "raw": "2020 – 2022"
+      }
+    ],
+    "degrees": [
+      {
+        "value": "B.S. in Computer Science",
+        "confidence": 0.94,
+        "source_line_ids": [
+          "l00019"
+        ]
+      }
+    ],
+    "gpas": [
+      {
+        "value": {
+          "score": "3.88",
+          "scale": "4.0"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00021"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "value": "Python",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00007"
+        ],
+        "matched_alias": "Python"
+      },
+      {
+        "value": "C++",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00007"
+        ],
+        "matched_alias": "C++"
+      },
+      {
+        "value": "Go",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00007"
+        ],
+        "matched_alias": "Go"
+      },
+      {
+        "value": "Kubernetes",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00008"
+        ],
+        "matched_alias": "Kubernetes"
+      },
+      {
+        "value": "Docker",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00008"
+        ],
+        "matched_alias": "Docker"
+      },
+      {
+        "value": "Helm",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00008"
+        ],
+        "matched_alias": "Helm"
+      },
+      {
+        "value": "AWS",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00009"
+        ],
+        "matched_alias": "AWS"
+      },
+      {
+        "value": "RabbitMQ",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00010"
+        ],
+        "matched_alias": "RabbitMQ"
+      },
+      {
+        "value": "Apache Kafka",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00010"
+        ],
+        "matched_alias": "Kafka"
+      },
+      {
+        "value": "Redis",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00010"
+        ],
+        "matched_alias": "Redis"
+      },
+      {
+        "value": "Terraform",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00011"
+        ],
+        "matched_alias": "Terraform"
+      },
+      {
+        "value": "Linux",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00012"
+        ],
+        "matched_alias": "Linux"
+      },
+      {
+        "value": "eBPF",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00012"
+        ],
+        "matched_alias": "eBPF"
+      },
+      {
+        "value": "GitOps",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00031",
+          "l00032"
+        ],
+        "matched_alias": "GitOps"
+      },
+      {
+        "value": "ArgoCD",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00031",
+          "l00032"
+        ],
+        "matched_alias": "ArgoCD"
+      },
+      {
+        "value": "OpenTelemetry",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00039"
+        ],
+        "matched_alias": "OpenTelemetry"
+      },
+      {
+        "value": "Prometheus",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00039"
+        ],
+        "matched_alias": "Prometheus"
+      },
+      {
+        "value": "Grafana",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00039"
+        ],
+        "matched_alias": "Grafana"
+      }
+    ],
+    "experience": [
+      {
+        "title": {
+          "value": "Senior Infrastructure Engineer",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00029"
+          ]
+        },
+        "company": {
+          "value": "Datavault Systems",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00029"
+          ]
+        },
+        "location": {
+          "value": "Austin, TX",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00029"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2022",
+            "end": "Present"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00030"
+          ]
+        },
+        "bullets": [
+          "• Built GitOps deployment pipelines via ArgoCD, shortening production release cycles from 3 hours to 4 minutes.",
+          "• Cut monthly AWS infrastructure spend by 32% ($45,000/mo) through spot instance orchestration and Karpenter autoscaling.",
+          "• Designed multi-region failover architecture on AWS across us-east-1 and us-west-2."
+        ],
+        "text": "Senior Infrastructure Engineer — Datavault Systems (Austin, TX)\n2022 – Present\n• Built GitOps deployment pipelines via ArgoCD, shortening production release cycles from 3 hours to 4 minutes.\n• Cut monthly AWS infrastructure spend by 32% ($45,000/mo) through spot instance orchestration and Karpenter autoscaling.\n• Designed multi-region failover architecture on AWS across us-east-1 and us-west-2.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00029",
+          "l00030",
+          "l00031",
+          "l00032",
+          "l00033",
+          "l00034",
+          "l00035"
+        ]
+      },
+      {
+        "title": {
+          "value": "Cloud Platform Engineer",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00036"
+          ]
+        },
+        "company": {
+          "value": "Stratosphere Networks",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00036"
+          ]
+        },
+        "location": {
+          "value": "Dallas, TX",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00036"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2020",
+            "end": "2022"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00037"
+          ]
+        },
+        "bullets": [
+          "• Administered 14 production Kubernetes clusters hosting 400+ Docker pods.",
+          "• Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce"
+        ],
+        "text": "Cloud Platform Engineer — Stratosphere Networks (Dallas, TX)\n2020 – 2022\n• Administered 14 production Kubernetes clusters hosting 400+ Docker pods.\n• Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce\nMTTR from 45 mins to 8 mins.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00036",
+          "l00037",
+          "l00038",
+          "l00039",
+          "l00040"
+        ]
+      }
+    ]
+  },
+  "structured": {
+    "schema_version": "2.0.0",
+    "section_order": [
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections"
+    ],
+    "entry_order": "source",
+    "contact": {
+      "name": {
+        "value": "LUCAS MOREAU",
+        "confidence": 0.92,
+        "source_line_ids": [
+          "l00022"
+        ]
+      },
+      "emails": [
+        {
+          "value": "lucas.moreau@example.com",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00001"
+          ],
+          "normalization": "none",
+          "raw": "Email: lucas.moreau@example.com"
+        }
+      ],
+      "phones": [
+        {
+          "value": "(555) 492-8172",
+          "confidence": 0.7,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalized": "+15554928172",
+          "valid": false
+        }
+      ],
+      "locations": [
+        {
+          "value": "Austin, TX",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00003"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "value": "github.com/lmoreau-dummy",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00004"
+          ],
+          "kind": "github"
+        },
+        {
+          "value": "linkedin.com/in/lucas-m-dummy",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00005"
+          ],
+          "kind": "linkedin"
+        }
+      ]
+    },
+    "summary": [
+      {
+        "text": "DevOps & Reliability Engineer with 6+ years managing multi-region Kubernetes clusters, automated zero-trust networking, and high-availability cloud infrastructure. Successfully maintained 99.995% uptime across 80+ customer-facing microservices.",
+        "source_line_ids": [
+          "l00025",
+          "l00026",
+          "l00027"
+        ],
+        "value": "DevOps & Reliability Engineer with 6+ years managing multi-region Kubernetes clusters, automated zero-trust networking, and high-availability cloud infrastructure. Successfully maintained 99.995% uptime across 80+ customer-facing microservices."
+      }
+    ],
+    "experience": [
+      {
+        "title": {
+          "value": "Senior Infrastructure Engineer",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00029"
+          ]
+        },
+        "company": {
+          "value": "Datavault Systems",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00029"
+          ]
+        },
+        "location": {
+          "value": "Austin, TX",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00029"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2022",
+            "end": "Present"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00030"
+          ]
+        },
+        "bullets": [
+          "• Built GitOps deployment pipelines via ArgoCD, shortening production release cycles from 3 hours to 4 minutes.",
+          "• Cut monthly AWS infrastructure spend by 32% ($45,000/mo) through spot instance orchestration and Karpenter autoscaling.",
+          "• Designed multi-region failover architecture on AWS across us-east-1 and us-west-2."
+        ],
+        "text": "Senior Infrastructure Engineer — Datavault Systems (Austin, TX)\n2022 – Present\n• Built GitOps deployment pipelines via ArgoCD, shortening production release cycles from 3 hours to 4 minutes.\n• Cut monthly AWS infrastructure spend by 32% ($45,000/mo) through spot instance orchestration and Karpenter autoscaling.\n• Designed multi-region failover architecture on AWS across us-east-1 and us-west-2.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00029",
+          "l00030",
+          "l00031",
+          "l00032",
+          "l00033",
+          "l00034",
+          "l00035"
+        ]
+      },
+      {
+        "title": {
+          "value": "Cloud Platform Engineer",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00036"
+          ]
+        },
+        "company": {
+          "value": "Stratosphere Networks",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00036"
+          ]
+        },
+        "location": {
+          "value": "Dallas, TX",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00036"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2020",
+            "end": "2022"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00037"
+          ]
+        },
+        "bullets": [
+          "• Administered 14 production Kubernetes clusters hosting 400+ Docker pods.",
+          "• Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce"
+        ],
+        "text": "Cloud Platform Engineer — Stratosphere Networks (Dallas, TX)\n2020 – 2022\n• Administered 14 production Kubernetes clusters hosting 400+ Docker pods.\n• Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce\nMTTR from 45 mins to 8 mins.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00036",
+          "l00037",
+          "l00038",
+          "l00039",
+          "l00040"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "text": "B.S. in Computer Science\nUT Austin (2016 – 2020)\nGPA: 3.88 / 4.0",
+        "source_line_ids": [
+          "l00019",
+          "l00020",
+          "l00021"
+        ],
+        "degree": {
+          "value": "B.S. in Computer Science",
+          "source_line_ids": [
+            "l00019"
+          ],
+          "confidence": 0.85
+        },
+        "institution": {
+          "value": "UT Austin",
+          "source_line_ids": [
+            "l00020"
+          ],
+          "confidence": 0.85
+        },
+        "dates": {
+          "value": {
+            "start": "2016",
+            "end": "2020"
+          },
+          "source_line_ids": [
+            "l00020"
+          ],
+          "confidence": 0.95
+        },
+        "graduation": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "location": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "gpa": {
+          "value": {
+            "score": "3.88",
+            "scale": "4.0"
+          },
+          "source_line_ids": [
+            "l00021"
+          ],
+          "confidence": 0.85
+        }
+      }
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "text": "• Go, Python, C++",
+        "source_line_ids": [
+          "l00007"
+        ],
+        "category": null,
+        "items": [
+          "Go",
+          "Python",
+          "C++"
+        ]
+      },
+      {
+        "text": "• Kubernetes, Docker, Helm",
+        "source_line_ids": [
+          "l00008"
+        ],
+        "category": null,
+        "items": [
+          "Kubernetes",
+          "Docker",
+          "Helm"
+        ]
+      },
+      {
+        "text": "• AWS (EKS, RDS, SQS)",
+        "source_line_ids": [
+          "l00009"
+        ],
+        "category": null,
+        "items": [
+          "AWS (EKS",
+          "RDS",
+          "SQS)"
+        ]
+      },
+      {
+        "text": "• Kafka, RabbitMQ, Redis",
+        "source_line_ids": [
+          "l00010"
+        ],
+        "category": null,
+        "items": [
+          "Kafka",
+          "RabbitMQ",
+          "Redis"
+        ]
+      },
+      {
+        "text": "• Terraform & CI/CD",
+        "source_line_ids": [
+          "l00011"
+        ],
+        "category": null,
+        "items": [
+          "Terraform & CI/CD"
+        ]
+      },
+      {
+        "text": "• Linux Kernel & eBPF",
+        "source_line_ids": [
+          "l00012"
+        ],
+        "category": null,
+        "items": [
+          "Linux Kernel & eBPF"
+        ]
+      },
+      {
+        "text": "• Distributed Consensus",
+        "source_line_ids": [
+          "l00013"
+        ],
+        "category": null,
+        "items": [
+          "Distributed Consensus"
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "text": "• Certified Kubernetes Admin (CKA)",
+        "source_line_ids": [
+          "l00015"
+        ],
+        "name": {
+          "value": "Certified Kubernetes Admin (CKA)",
+          "source_line_ids": [
+            "l00015"
+          ],
+          "confidence": 0.85
+        },
+        "details": ""
+      },
+      {
+        "text": "• AWS Solutions Architect (Pro)",
+        "source_line_ids": [
+          "l00016"
+        ],
+        "name": {
+          "value": "AWS Solutions Architect (Pro)",
+          "source_line_ids": [
+            "l00016"
+          ],
+          "confidence": 0.85
+        },
+        "details": ""
+      },
+      {
+        "text": "• HashiCorp Terraform Assoc.",
+        "source_line_ids": [
+          "l00017"
+        ],
+        "name": {
+          "value": "HashiCorp Terraform Assoc.",
+          "source_line_ids": [
+            "l00017"
+          ],
+          "confidence": 0.85
+        },
+        "details": ""
+      }
+    ],
+    "other_sections": [],
+    "review": [
+      {
+        "path": "fields.phones[0]",
+        "reason": "missing or low-confidence candidate",
+        "confidence": 0.7
+      }
+    ],
+    "source_sections": [
+      {
+        "id": "s000",
+        "canonical": "contact",
+        "original_heading": "CONTACT",
+        "heading_line_id": "l00000",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00001",
+          "l00002",
+          "l00003",
+          "l00004",
+          "l00005"
+        ],
+        "text": "Email: lucas.moreau@example.com\nPhone: (555) 492-8172\nAustin, TX\ngithub.com/lmoreau-dummy\nlinkedin.com/in/lucas-m-dummy"
+      },
+      {
+        "id": "s001",
+        "canonical": "skills",
+        "original_heading": "CORE SKILLS",
+        "heading_line_id": "l00006",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00007",
+          "l00008",
+          "l00009",
+          "l00010",
+          "l00011",
+          "l00012",
+          "l00013"
+        ],
+        "text": "• Go, Python, C++\n• Kubernetes, Docker, Helm\n• AWS (EKS, RDS, SQS)\n• Kafka, RabbitMQ, Redis\n• Terraform & CI/CD\n• Linux Kernel & eBPF\n• Distributed Consensus"
+      },
+      {
+        "id": "s002",
+        "canonical": "certifications",
+        "original_heading": "CERTIFICATIONS",
+        "heading_line_id": "l00014",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00015",
+          "l00016",
+          "l00017"
+        ],
+        "text": "• Certified Kubernetes Admin (CKA)\n• AWS Solutions Architect (Pro)\n• HashiCorp Terraform Assoc."
+      },
+      {
+        "id": "s003",
+        "canonical": "education",
+        "original_heading": "EDUCATION",
+        "heading_line_id": "l00018",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00019",
+          "l00020",
+          "l00021"
+        ],
+        "text": "B.S. in Computer Science\nUT Austin (2016 – 2020)\nGPA: 3.88 / 4.0"
+      },
+      {
+        "id": "s004",
+        "canonical": "preamble",
+        "original_heading": null,
+        "heading_line_id": null,
+        "confidence": 1.0,
+        "line_ids": [
+          "l00022",
+          "l00023"
+        ],
+        "text": "LUCAS MOREAU\nSenior DevOps & Site Reliability Engineer (SRE)"
+      },
+      {
+        "id": "s005",
+        "canonical": "summary",
+        "original_heading": "PROFESSIONAL SUMMARY",
+        "heading_line_id": "l00024",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00025"
+        ],
+        "text": "DevOps & Reliability Engineer with 6+ years managing multi-region Kubernetes clusters, automated zero-trust networking, and high-availability cloud infrastructure. Successfully maintained 99.995% uptime across 80+ customer-facing microservices."
+      },
+      {
+        "id": "s006",
+        "canonical": "experience",
+        "original_heading": "WORK EXPERIENCE",
+        "heading_line_id": "l00028",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00029",
+          "l00030",
+          "l00031",
+          "l00033",
+          "l00035",
+          "l00036",
+          "l00037",
+          "l00038",
+          "l00039",
+          "l00040"
+        ],
+        "text": "Senior Infrastructure Engineer — Datavault Systems (Austin, TX)\n2022 – Present\n• Built GitOps deployment pipelines via ArgoCD, shortening production release cycles from 3 hours to 4 minutes.\n• Cut monthly AWS infrastructure spend by 32% ($45,000/mo) through spot instance orchestration and Karpenter autoscaling.\n• Designed multi-region failover architecture on AWS across us-east-1 and us-west-2.\nCloud Platform Engineer — Stratosphere Networks (Dallas, TX)\n2020 – 2022\n• Administered 14 production Kubernetes clusters hosting 400+ Docker pods.\n• Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce\nMTTR from 45 mins to 8 mins."
+      }
+    ]
+  },
+  "needs_review": [
+    {
+      "path": "fields.phones[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.7
+    }
+  ],
+  "quality": {
+    "completeness": {
+      "status": "pass",
+      "reference_words": 206,
+      "extracted_words": 206,
+      "matched_words": 206,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "schema_errors": [],
+    "warnings": [],
+    "suppressed_exact_repeats": []
+  }
+}

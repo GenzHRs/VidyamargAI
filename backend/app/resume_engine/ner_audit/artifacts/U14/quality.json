@@ -1,0 +1,15 @@
+{
+  "completeness": {
+    "status": "pass",
+    "reference_words": 357,
+    "extracted_words": 357,
+    "matched_words": 357,
+    "recall": 1.0,
+    "precision": 1.0,
+    "missing": {},
+    "extra": {}
+  },
+  "schema_errors": [],
+  "warnings": [],
+  "suppressed_exact_repeats": []
+}

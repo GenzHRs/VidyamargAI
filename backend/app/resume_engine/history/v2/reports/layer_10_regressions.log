@@ -1,0 +1,9 @@
+test_ambiguous_skills_and_publication_pages (test_10_regressions.RegressionTests.test_ambiguous_skills_and_publication_pages) ... ok
+test_header_name_is_not_home_location (test_10_regressions.RegressionTests.test_header_name_is_not_home_location) ... ok
+test_hidden_hyperlink_target (test_10_regressions.RegressionTests.test_hidden_hyperlink_target) ... ok
+test_pdf_font_bullet_decoding (test_10_regressions.RegressionTests.test_pdf_font_bullet_decoding) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.009s
+
+OK

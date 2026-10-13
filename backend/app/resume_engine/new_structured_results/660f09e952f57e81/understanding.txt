@@ -1,0 +1,344 @@
+PERSONAL_DETAILS
+{
+  "name": {
+    "value": "JORDAN TAYLOR",
+    "confidence": 0.92,
+    "source_line_ids": [
+      "l00000"
+    ]
+  },
+  "emails": [
+    {
+      "value": "jordan.taylor.analyst@example.com",
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "normalization": "none",
+      "raw": "Seattle, WA  •  (555) 762-9013  •  jordan.taylor.analyst@example.com  •  linkedin.com/in/jordan-taylor-dummy"
+    }
+  ],
+  "phones": [
+    {
+      "value": "(555) 762-9013",
+      "confidence": 0.7,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "normalized": "+15557629013",
+      "valid": false
+    }
+  ],
+  "locations": [
+    {
+      "value": "Seattle, WA",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00002"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "value": "linkedin.com/in/jordan-taylor-dummy",
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "kind": "linkedin"
+    }
+  ],
+  "headline": {
+    "value": "Junior Business Analyst  |  Data Visualization & Process Modeling",
+    "source_line_ids": [
+      "l00001"
+    ],
+    "confidence": 0.7
+  }
+}
+
+SUMMARY
+[]
+
+EDUCATION
+[
+  {
+    "text": "University of Washington, Foster School of Business  —  Seattle, WA\nBachelor of Arts in Information Systems & Operations Management | GPA: 3.82 / 4.0\nGraduation: June 2025\nDean's List (6 Consecutive Quarters)\nAlpha Kappa Psi Business Fraternity",
+    "source_line_ids": [
+      "l00004",
+      "l00005",
+      "l00006"
+    ],
+    "degree": {
+      "value": "Bachelor of Arts in Information Systems & Operations Management",
+      "source_line_ids": [
+        "l00005"
+      ],
+      "confidence": 0.85
+    },
+    "institution": {
+      "value": "University of Washington, Foster School of Business",
+      "source_line_ids": [
+        "l00004"
+      ],
+      "confidence": 0.85
+    },
+    "dates": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "graduation": {
+      "value": "June 2025",
+      "source_line_ids": [
+        "l00006"
+      ],
+      "confidence": 0.85
+    },
+    "location": {
+      "value": "Seattle, WA",
+      "source_line_ids": [
+        "l00004"
+      ],
+      "confidence": 0.85
+    },
+    "gpa": {
+      "value": {
+        "score": "3.82",
+        "scale": "4.0"
+      },
+      "source_line_ids": [
+        "l00005"
+      ],
+      "confidence": 0.85
+    },
+    "normalized_dates": {
+      "start": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      },
+      "end": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      }
+    }
+  }
+]
+
+WORK_EXPERIENCE
+[]
+
+INTERNSHIPS
+[
+  {
+    "title": {
+      "value": "Business Analyst Intern",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00011"
+      ]
+    },
+    "company": {
+      "value": "Cascade Financial Services",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00012"
+      ]
+    },
+    "location": {
+      "value": "Seattle, WA",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00012"
+      ]
+    },
+    "dates": {
+      "value": {
+        "start": "Jun 2024",
+        "end": "Sep 2024"
+      },
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00012"
+      ]
+    },
+    "bullets": [
+      "Conducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.",
+      "Designed and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.",
+      "Facilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal."
+    ],
+    "text": "Business Analyst Intern  |  Cascade Financial Services\nJun 2024 – Sep 2024  •  Seattle, WA\nConducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.\nDesigned and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.\nFacilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal.",
+    "confidence": 0.88,
+    "source_line_ids": [
+      "l00011",
+      "l00012",
+      "l00013",
+      "l00014",
+      "l00015"
+    ],
+    "normalized_dates": {
+      "start": {
+        "raw": "Jun 2024",
+        "value": "2024-06",
+        "precision": "month"
+      },
+      "end": {
+        "raw": "Sep 2024",
+        "value": "2024-09",
+        "precision": "month"
+      }
+    }
+  },
+  {
+    "title": {
+      "value": "Operations Data Intern",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00016"
+      ]
+    },
+    "company": {
+      "value": "Evergreen Supply Partners",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00017"
+      ]
+    },
+    "location": {
+      "value": "Bellevue, WA",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00017"
+      ]
+    },
+    "dates": {
+      "value": {
+        "start": "Jan 2024",
+        "end": "May 2024"
+      },
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00017"
+      ]
+    },
+    "bullets": [
+      "Cleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.",
+      "Synthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director."
+    ],
+    "text": "Operations Data Intern  |  Evergreen Supply Partners\nJan 2024 – May 2024  •  Bellevue, WA\nCleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.\nSynthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director.",
+    "confidence": 0.88,
+    "source_line_ids": [
+      "l00016",
+      "l00017",
+      "l00018",
+      "l00019"
+    ],
+    "normalized_dates": {
+      "start": {
+        "raw": "Jan 2024",
+        "value": "2024-01",
+        "precision": "month"
+      },
+      "end": {
+        "raw": "May 2024",
+        "value": "2024-05",
+        "precision": "month"
+      }
+    }
+  }
+]
+
+PROJECTS
+[
+  {
+    "text": "Supply Chain Simulation Project (Senior Capstone):\nModeled distribution logistics for regional retail network in Python; predicted stockouts with 89% accuracy and won 2nd Place in Foster Business Case Showcase.",
+    "source_line_ids": [
+      "l00021",
+      "l00022"
+    ],
+    "name": {
+      "value": "Supply Chain Simulation Project (Senior Capstone):",
+      "source_line_ids": [
+        "l00021"
+      ],
+      "confidence": 0.85
+    },
+    "dates": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "technologies": [],
+    "description": "Modeled distribution logistics for regional retail network in Python; predicted stockouts with 89% accuracy and won 2nd Place in Foster Business Case Showcase.",
+    "bullets": [],
+    "normalized_dates": {
+      "start": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      },
+      "end": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      }
+    }
+  }
+]
+
+SKILLS
+[
+  {
+    "text": "• Analysis & Tools: Tableau, Power BI, Advanced Excel (VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query), SQL (PostgreSQL), Python (Pandas)",
+    "source_line_ids": [
+      "l00008"
+    ],
+    "category": "Analysis & Tools",
+    "items": [
+      "Tableau",
+      "Power BI",
+      "Advanced Excel (VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query)",
+      "SQL (PostgreSQL)",
+      "Python (Pandas)"
+    ]
+  },
+  {
+    "text": "• Business Process: Agile/Scrum, User Stories, BPMN Diagramming, JIRA, Confluence, Requirement Gathering, Root Cause Analysis",
+    "source_line_ids": [
+      "l00009"
+    ],
+    "category": "Business Process",
+    "items": [
+      "Agile/Scrum",
+      "User Stories",
+      "BPMN Diagramming",
+      "JIRA",
+      "Confluence",
+      "Requirement Gathering",
+      "Root Cause Analysis"
+    ]
+  }
+]
+
+CERTIFICATIONS
+[]
+
+TRAINING
+[]
+
+AWARDS
+[]
+
+PUBLICATIONS
+[]
+
+LANGUAGES
+[]
+
+OTHER_SECTIONS
+[]
+
+UNCLASSIFIED
+[]

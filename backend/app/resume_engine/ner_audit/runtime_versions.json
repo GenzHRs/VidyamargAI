@@ -1,0 +1,19 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "packages": {
+    "python-docx": "1.2.0",
+    "lxml": "6.1.1",
+    "pdfplumber": "0.11.9",
+    "pdfminer.six": "20251230",
+    "pypdf": "6.10.0",
+    "pytesseract": "0.3.13",
+    "pdf2image": "1.17.0",
+    "python-dateutil": "2.9.0.post0",
+    "regex": null,
+    "rapidfuzz": "3.14.6",
+    "phonenumbers": "9.0.41",
+    "email-validator": "2.3.0",
+    "jsonschema": "4.26.0"
+  }
+}

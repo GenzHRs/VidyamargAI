@@ -1,0 +1,1243 @@
+{
+  "mapping_schema_version": "1.0.0",
+  "record_id": "d955c57d05edddc2a7d588ce128a5769d9f6ea5f19c1f96ef82587323dd9f23c",
+  "document_id": "89b836400f8f5192c5b902c03b8ded9982d844b6f2ad1078b9fa9ff5f8cd4c87",
+  "candidate_id": null,
+  "extraction_id": "5495f0e14868eab5a0b6419509af0b913fcc77f282aa81ec475dccac91a63422",
+  "mapper_sha256": "99064aec1206cbb49df51cf0e73a239fd615aee01b0aa7e99c2aa2d2a3479451",
+  "source": {
+    "filename": "CV_Jayavarapu-siva-Tejachary.pdf",
+    "sha256": "89b836400f8f5192c5b902c03b8ded9982d844b6f2ad1078b9fa9ff5f8cd4c87",
+    "type": "pdf",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": 1,
+    "reference_method": "pdftotext_raw"
+  },
+  "section_order": [
+    "contact",
+    "summary",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "certifications",
+    "publications",
+    "awards",
+    "metrics",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "profile": {
+    "contact": {
+      "full_name": "JAYAVARAPU SIVA TEJACHARY",
+      "headline": null,
+      "emails": [
+        "j.shivachary@gmail.com"
+      ],
+      "phones": [
+        {
+          "raw": "+919866862016",
+          "normalized": "+919866862016",
+          "valid": true
+        }
+      ],
+      "locations": [
+        "Guntur, Andhra Pradesh, 522414"
+      ],
+      "links": []
+    },
+    "summary": [
+      "Computer Science graduate with hands-on experience in data science, machine learning, and data analysis using Python. Skilled in building predictive models and NLP applications using Scikit-learn,TensorFlow, and PyTorch, with experience deploying ML models on Amazon SageMaker and using Google Gemini API."
+    ],
+    "experience": [
+      {
+        "source_text": "AI/ML Virtual Intern\nMay 2023 – July 2023\n• Developed and deployed 3 supervised ML models on AWS SageMaker with real-world datasets (15,000+ rows).\n• Improved prediction accuracy by 18% after hyperparameter tuning and cross-validation.\n• Evaluated model performance using confusion matrix, F1-score, precision, and recall.\n• Automated end-to-end ML workflows using AWS SageMaker, Lambda, and S3, reducing manual deployment time by 40%.",
+        "source_line_ids": [
+          "l00018",
+          "l00025",
+          "l00027",
+          "l00026",
+          "l00028",
+          "l00030",
+          "l00029",
+          "l00032",
+          "l00031",
+          "l00034",
+          "l00033",
+          "l00035"
+        ],
+        "ordinal": 0,
+        "title": "AI/ML Virtual Intern",
+        "company": null,
+        "location": null,
+        "dates": {
+          "start": {
+            "raw": "May 2023",
+            "normalized": "2023-05",
+            "precision": "month"
+          },
+          "end": {
+            "raw": "July 2023",
+            "normalized": "2023-07",
+            "precision": "month"
+          },
+          "ongoing_as_reported": false
+        },
+        "bullets": [
+          "Developed and deployed 3 supervised ML models on AWS SageMaker with real-world datasets (15,000+ rows).",
+          "Improved prediction accuracy by 18% after hyperparameter tuning and cross-validation.",
+          "Evaluated model performance using confusion matrix, F1-score, precision, and recall.",
+          "Automated end-to-end ML workflows using AWS SageMaker, Lambda, and S3, reducing manual deployment time by 40%."
+        ],
+        "links": [],
+        "work_mode": null
+      }
+    ],
+    "education": [
+      {
+        "source_text": "Chalapathi Institute of Engineering and Technology\nGuntur, AndhraPradesh\nBTech in Computer science and Engineering\nSeptember 2020 - April 2024\nGPA: 7.9",
+        "source_line_ids": [
+          "l00008",
+          "l00019",
+          "l00009",
+          "l00020",
+          "l00010"
+        ],
+        "ordinal": 0,
+        "degree": "BTech in Computer science and Engineering",
+        "institution": "Chalapathi Institute of Engineering and Technology",
+        "location": "Guntur, AndhraPradesh",
+        "dates": {
+          "start": {
+            "raw": "September 2020",
+            "normalized": "2020-09",
+            "precision": "month"
+          },
+          "end": {
+            "raw": "April 2024",
+            "normalized": "2024-04",
+            "precision": "month"
+          },
+          "ongoing_as_reported": false
+        },
+        "graduation": {
+          "raw": null,
+          "normalized": null,
+          "precision": null
+        },
+        "gpa": {
+          "score": "7.9",
+          "scale": null
+        },
+        "dissertation_or_thesis": null
+      },
+      {
+        "source_text": "Intermediate\nNoble Sai Junior College\nDachepalle, AndhraPradesh\nGPA: 9.13\nJune 2018 - Feb 2020",
+        "source_line_ids": [
+          "l00011",
+          "l00012",
+          "l00021",
+          "l00013",
+          "l00022"
+        ],
+        "ordinal": 1,
+        "degree": "Intermediate",
+        "institution": "Noble Sai Junior College",
+        "location": "Dachepalle, AndhraPradesh",
+        "dates": {
+          "start": {
+            "raw": "June 2018",
+            "normalized": "2018-06",
+            "precision": "month"
+          },
+          "end": {
+            "raw": "Feb 2020",
+            "normalized": "2020-02",
+            "precision": "month"
+          },
+          "ongoing_as_reported": false
+        },
+        "graduation": {
+          "raw": null,
+          "normalized": null,
+          "precision": null
+        },
+        "gpa": {
+          "score": "9.13",
+          "scale": null
+        },
+        "dissertation_or_thesis": null
+      },
+      {
+        "source_text": "SSC(10th)\nZP High School\nDachepalle, AndhraPradesh\nGPA: 9.7\nJune 2017 - Mar 2018",
+        "source_line_ids": [
+          "l00014",
+          "l00015",
+          "l00023",
+          "l00016",
+          "l00024"
+        ],
+        "ordinal": 2,
+        "degree": "SSC(10th)",
+        "institution": "ZP High School",
+        "location": "Dachepalle, AndhraPradesh",
+        "dates": {
+          "start": {
+            "raw": "June 2017",
+            "normalized": "2017-06",
+            "precision": "month"
+          },
+          "end": {
+            "raw": "Mar 2018",
+            "normalized": "2018-03",
+            "precision": "month"
+          },
+          "ongoing_as_reported": false
+        },
+        "graduation": {
+          "raw": null,
+          "normalized": null,
+          "precision": null
+        },
+        "gpa": {
+          "score": "9.7",
+          "scale": null
+        },
+        "dissertation_or_thesis": null
+      }
+    ],
+    "projects": [
+      {
+        "source_text": "1. AI Super Assistant\n• Built an AI-powered automation assistant that executes real-world tasks such as food ordering, ride booking, and music playback using voice commands.\n• Implemented intent detection using NVIDIA API and integrated LLM + RAG to generate step-by-step action plans.\n• Developed a context-aware recommendation system to suggest food, songs, and videos based on user preferences, ratings, location, and time.\n• Added predictive user behavior modeling to proactively recommend actions based on user habits.\n• Implemented Android automation using Kotlin AccessibilityService to perform actions across apps automatically.",
+        "source_line_ids": [
+          "l00037",
+          "l00039",
+          "l00038",
+          "l00040",
+          "l00042",
+          "l00041",
+          "l00043",
+          "l00045",
+          "l00044",
+          "l00046",
+          "l00048",
+          "l00047",
+          "l00050",
+          "l00049",
+          "l00051"
+        ],
+        "ordinal": 0,
+        "name": "AI Super Assistant",
+        "dates": {
+          "start": {
+            "raw": null,
+            "normalized": null,
+            "precision": null
+          },
+          "end": {
+            "raw": null,
+            "normalized": null,
+            "precision": null
+          },
+          "ongoing_as_reported": false
+        },
+        "bullets": [
+          "Built an AI-powered automation assistant that executes real-world tasks such as food ordering, ride booking, and music playback using voice commands.",
+          "Implemented intent detection using NVIDIA API and integrated LLM + RAG to generate step-by-step action plans.",
+          "Developed a context-aware recommendation system to suggest food, songs, and videos based on user preferences, ratings, location, and time.",
+          "Added predictive user behavior modeling to proactively recommend actions based on user habits.",
+          "Implemented Android automation using Kotlin AccessibilityService to perform actions across apps automatically."
+        ],
+        "links": [],
+        "description": "Built an AI-powered automation assistant that executes real-world tasks such as food ordering, ride booking, and music playback using voice commands. Implemented intent detection using NVIDIA API and integrated LLM + RAG to generate step-by-step action plans. Developed a context-aware recommendation system to suggest food, songs, and videos based on user preferences, ratings, location, and time. Added predictive user behavior modeling to proactively recommend actions based on user habits. Implemented Android automation using Kotlin AccessibilityService to perform actions across apps automatically.",
+        "technologies": []
+      },
+      {
+        "source_text": "2. Smart Multi-Restaurant Delivery Optimization System\n• Designed a multi-restaurant ordering system that allows customers to order food from multiple nearby restaurants in a single order.\n• Developed a distance-based feasibility algorithm to allow orders only when restaurants are within a defined radius (0–3 km).\n• Implemented route optimization logic to assign one delivery partner to pick up orders from multiple restaurants and deliver them efficiently to the same customer.\n• Built a delivery time prediction model using distance, preparation time, and traffic conditions to improve delivery efficiency and reduce delivery cost.",
+        "source_line_ids": [
+          "l00052",
+          "l00054",
+          "l00053",
+          "l00055",
+          "l00057",
+          "l00056",
+          "l00058",
+          "l00060",
+          "l00059",
+          "l00061",
+          "l00063",
+          "l00062",
+          "l00064"
+        ],
+        "ordinal": 1,
+        "name": "Smart Multi-Restaurant Delivery Optimization System",
+        "dates": {
+          "start": {
+            "raw": null,
+            "normalized": null,
+            "precision": null
+          },
+          "end": {
+            "raw": null,
+            "normalized": null,
+            "precision": null
+          },
+          "ongoing_as_reported": false
+        },
+        "bullets": [
+          "Designed a multi-restaurant ordering system that allows customers to order food from multiple nearby restaurants in a single order.",
+          "Developed a distance-based feasibility algorithm to allow orders only when restaurants are within a defined radius (0–3 km).",
+          "Implemented route optimization logic to assign one delivery partner to pick up orders from multiple restaurants and deliver them efficiently to the same customer.",
+          "Built a delivery time prediction model using distance, preparation time, and traffic conditions to improve delivery efficiency and reduce delivery cost."
+        ],
+        "links": [],
+        "description": "Designed a multi-restaurant ordering system that allows customers to order food from multiple nearby restaurants in a single order. Developed a distance-based feasibility algorithm to allow orders only when restaurants are within a defined radius (0–3 km). Implemented route optimization logic to assign one delivery partner to pick up orders from multiple restaurants and deliver them efficiently to the same customer. Built a delivery time prediction model using distance, preparation time, and traffic conditions to improve delivery efficiency and reduce delivery cost.",
+        "technologies": []
+      }
+    ],
+    "skills": [
+      {
+        "category": "Languages & Programming",
+        "items": [
+          "Python",
+          "SQL"
+        ],
+        "source_records": [
+          {
+            "text": "• Languages & Programming: Python, SQL",
+            "source_line_ids": [
+              "l00066"
+            ],
+            "category": "Languages & Programming",
+            "items": [
+              "Python",
+              "SQL"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "ML & AI",
+        "items": [
+          "Scikit-learn",
+          "TensorFlow",
+          "PyTorch",
+          "RAG",
+          "NLP"
+        ],
+        "source_records": [
+          {
+            "text": "• ML & AI: Scikit-learn, TensorFlow, PyTorch, RAG, NLP",
+            "source_line_ids": [
+              "l00067"
+            ],
+            "category": "ML & AI",
+            "items": [
+              "Scikit-learn",
+              "TensorFlow",
+              "PyTorch",
+              "RAG",
+              "NLP"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Data Analytics & Visualization",
+        "items": [
+          "Pandas",
+          "NumPy",
+          "Matplotlib"
+        ],
+        "source_records": [
+          {
+            "text": "• Data Analytics & Visualization: Pandas, NumPy, Matplotlib",
+            "source_line_ids": [
+              "l00068"
+            ],
+            "category": "Data Analytics & Visualization",
+            "items": [
+              "Pandas",
+              "NumPy",
+              "Matplotlib"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Tools & Platforms",
+        "items": [
+          "Git",
+          "GitHub",
+          "Jupyter",
+          "Google Colab",
+          "VS Code"
+        ],
+        "source_records": [
+          {
+            "text": "• Tools & Platforms: Git, GitHub, Jupyter, Google Colab, VS Code",
+            "source_line_ids": [
+              "l00069"
+            ],
+            "category": "Tools & Platforms",
+            "items": [
+              "Git",
+              "GitHub",
+              "Jupyter",
+              "Google Colab",
+              "VS Code"
+            ]
+          }
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "source_text": "• Data Science & Machine Learning - Cranes Varsity, Bengaluru. Trained in Python, RDBMS, Exploratory Data Analysis (EDA), Power BI, and ML, NLP",
+        "source_line_ids": [
+          "l00072",
+          "l00071",
+          "l00073"
+        ],
+        "ordinal": 0,
+        "name": "Data Science & Machine Learning",
+        "issuer": "Cranes Varsity, Bengaluru",
+        "details": "Trained in Python, RDBMS, Exploratory Data Analysis (EDA), Power BI, and ML, NLP",
+        "license_id": null,
+        "status_as_reported": null,
+        "links": [
+          "https://drive.google.com/file/d/1HEeWV5pFmbwzrZ3zQK0V1YK6Znu5Xd8e/view"
+        ]
+      }
+    ],
+    "publications": [],
+    "awards": [],
+    "metrics": [],
+    "other_sections": []
+  },
+  "evidence": {
+    "contact.full_name": {
+      "source_line_ids": [
+        "l00000"
+      ],
+      "confidence": 0.65,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.emails[0]": {
+      "source_line_ids": [
+        "l00001"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.phones[0]": {
+      "source_line_ids": [
+        "l00001"
+      ],
+      "confidence": 0.95,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.locations[0]": {
+      "source_line_ids": [
+        "l00001"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "summary[0]": {
+      "source_line_ids": [
+        "l00004",
+        "l00005",
+        "l00006"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0]": {
+      "source_line_ids": [
+        "l00018",
+        "l00025",
+        "l00027",
+        "l00026",
+        "l00028",
+        "l00030",
+        "l00029",
+        "l00032",
+        "l00031",
+        "l00034",
+        "l00033",
+        "l00035"
+      ],
+      "confidence": 0.65,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].title": {
+      "source_line_ids": [
+        "l00018"
+      ],
+      "confidence": 0.65,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].company": {
+      "source_line_ids": [
+        "l00018"
+      ],
+      "confidence": 0.65,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].location": {
+      "source_line_ids": [
+        "l00018"
+      ],
+      "confidence": 0.65,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].dates": {
+      "source_line_ids": [
+        "l00025"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[0]": {
+      "source_line_ids": [
+        "l00018",
+        "l00025",
+        "l00027",
+        "l00026",
+        "l00028",
+        "l00030",
+        "l00029",
+        "l00032",
+        "l00031",
+        "l00034",
+        "l00033",
+        "l00035"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[1]": {
+      "source_line_ids": [
+        "l00018",
+        "l00025",
+        "l00027",
+        "l00026",
+        "l00028",
+        "l00030",
+        "l00029",
+        "l00032",
+        "l00031",
+        "l00034",
+        "l00033",
+        "l00035"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[2]": {
+      "source_line_ids": [
+        "l00018",
+        "l00025",
+        "l00027",
+        "l00026",
+        "l00028",
+        "l00030",
+        "l00029",
+        "l00032",
+        "l00031",
+        "l00034",
+        "l00033",
+        "l00035"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[3]": {
+      "source_line_ids": [
+        "l00018",
+        "l00025",
+        "l00027",
+        "l00026",
+        "l00028",
+        "l00030",
+        "l00029",
+        "l00032",
+        "l00031",
+        "l00034",
+        "l00033",
+        "l00035"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0]": {
+      "source_line_ids": [
+        "l00008",
+        "l00019",
+        "l00009",
+        "l00020",
+        "l00010"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].degree": {
+      "source_line_ids": [
+        "l00009"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].institution": {
+      "source_line_ids": [
+        "l00008"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].location": {
+      "source_line_ids": [
+        "l00019"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].dates": {
+      "source_line_ids": [
+        "l00020"
+      ],
+      "confidence": 0.95,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].graduation": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].gpa": {
+      "source_line_ids": [
+        "l00010"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1]": {
+      "source_line_ids": [
+        "l00011",
+        "l00012",
+        "l00021",
+        "l00013",
+        "l00022"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].degree": {
+      "source_line_ids": [
+        "l00011"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].institution": {
+      "source_line_ids": [
+        "l00012"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].location": {
+      "source_line_ids": [
+        "l00021"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].dates": {
+      "source_line_ids": [
+        "l00022"
+      ],
+      "confidence": 0.95,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].graduation": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].gpa": {
+      "source_line_ids": [
+        "l00013"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[2]": {
+      "source_line_ids": [
+        "l00014",
+        "l00015",
+        "l00023",
+        "l00016",
+        "l00024"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[2].degree": {
+      "source_line_ids": [
+        "l00014"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[2].institution": {
+      "source_line_ids": [
+        "l00015"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[2].location": {
+      "source_line_ids": [
+        "l00023"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[2].dates": {
+      "source_line_ids": [
+        "l00024"
+      ],
+      "confidence": 0.95,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[2].graduation": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[2].gpa": {
+      "source_line_ids": [
+        "l00016"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0]": {
+      "source_line_ids": [
+        "l00037",
+        "l00039",
+        "l00038",
+        "l00040",
+        "l00042",
+        "l00041",
+        "l00043",
+        "l00045",
+        "l00044",
+        "l00046",
+        "l00048",
+        "l00047",
+        "l00050",
+        "l00049",
+        "l00051"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].name": {
+      "source_line_ids": [
+        "l00037"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].dates": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].bullets[0]": {
+      "source_line_ids": [
+        "l00037",
+        "l00039",
+        "l00038",
+        "l00040",
+        "l00042",
+        "l00041",
+        "l00043",
+        "l00045",
+        "l00044",
+        "l00046",
+        "l00048",
+        "l00047",
+        "l00050",
+        "l00049",
+        "l00051"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].bullets[1]": {
+      "source_line_ids": [
+        "l00037",
+        "l00039",
+        "l00038",
+        "l00040",
+        "l00042",
+        "l00041",
+        "l00043",
+        "l00045",
+        "l00044",
+        "l00046",
+        "l00048",
+        "l00047",
+        "l00050",
+        "l00049",
+        "l00051"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].bullets[2]": {
+      "source_line_ids": [
+        "l00037",
+        "l00039",
+        "l00038",
+        "l00040",
+        "l00042",
+        "l00041",
+        "l00043",
+        "l00045",
+        "l00044",
+        "l00046",
+        "l00048",
+        "l00047",
+        "l00050",
+        "l00049",
+        "l00051"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].bullets[3]": {
+      "source_line_ids": [
+        "l00037",
+        "l00039",
+        "l00038",
+        "l00040",
+        "l00042",
+        "l00041",
+        "l00043",
+        "l00045",
+        "l00044",
+        "l00046",
+        "l00048",
+        "l00047",
+        "l00050",
+        "l00049",
+        "l00051"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].bullets[4]": {
+      "source_line_ids": [
+        "l00037",
+        "l00039",
+        "l00038",
+        "l00040",
+        "l00042",
+        "l00041",
+        "l00043",
+        "l00045",
+        "l00044",
+        "l00046",
+        "l00048",
+        "l00047",
+        "l00050",
+        "l00049",
+        "l00051"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[1]": {
+      "source_line_ids": [
+        "l00052",
+        "l00054",
+        "l00053",
+        "l00055",
+        "l00057",
+        "l00056",
+        "l00058",
+        "l00060",
+        "l00059",
+        "l00061",
+        "l00063",
+        "l00062",
+        "l00064"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[1].name": {
+      "source_line_ids": [
+        "l00052"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[1].dates": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[1].bullets[0]": {
+      "source_line_ids": [
+        "l00052",
+        "l00054",
+        "l00053",
+        "l00055",
+        "l00057",
+        "l00056",
+        "l00058",
+        "l00060",
+        "l00059",
+        "l00061",
+        "l00063",
+        "l00062",
+        "l00064"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[1].bullets[1]": {
+      "source_line_ids": [
+        "l00052",
+        "l00054",
+        "l00053",
+        "l00055",
+        "l00057",
+        "l00056",
+        "l00058",
+        "l00060",
+        "l00059",
+        "l00061",
+        "l00063",
+        "l00062",
+        "l00064"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[1].bullets[2]": {
+      "source_line_ids": [
+        "l00052",
+        "l00054",
+        "l00053",
+        "l00055",
+        "l00057",
+        "l00056",
+        "l00058",
+        "l00060",
+        "l00059",
+        "l00061",
+        "l00063",
+        "l00062",
+        "l00064"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[1].bullets[3]": {
+      "source_line_ids": [
+        "l00052",
+        "l00054",
+        "l00053",
+        "l00055",
+        "l00057",
+        "l00056",
+        "l00058",
+        "l00060",
+        "l00059",
+        "l00061",
+        "l00063",
+        "l00062",
+        "l00064"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0]": {
+      "source_line_ids": [
+        "l00066"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1]": {
+      "source_line_ids": [
+        "l00067"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[2]": {
+      "source_line_ids": [
+        "l00068"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[3]": {
+      "source_line_ids": [
+        "l00069"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0]": {
+      "source_line_ids": [
+        "l00072",
+        "l00071",
+        "l00073"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].name": {
+      "source_line_ids": [
+        "l00072",
+        "l00071",
+        "l00073"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].issuer": {
+      "source_line_ids": [
+        "l00072",
+        "l00071",
+        "l00073"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].details": {
+      "source_line_ids": [
+        "l00072",
+        "l00071",
+        "l00073"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].links": {
+      "source_line_ids": [
+        "l00071"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    }
+  },
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "JAYAVARAPU SIVA TEJACHARY\nj.shivachary @gmail.com |+919866862016 | Guntur, Andhra Pradesh, 522414\nLinkedin | GitHub | CodeChef | HackerRank"
+    },
+    {
+      "id": "s001",
+      "canonical": "summary",
+      "original_heading": "Professional Summary",
+      "heading_line_id": "l00003",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00004",
+        "l00005"
+      ],
+      "text": "Computer Science graduate with hands-on experience in data science, machine learning, and data analysis using\nPython. Skilled in building predictive models and NLP applications using Scikit-learn,TensorFlow, and PyTorch, with experience deploying ML models on Amazon SageMaker and using Google Gemini API."
+    },
+    {
+      "id": "s002",
+      "canonical": "education",
+      "original_heading": "Education",
+      "heading_line_id": "l00007",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00008",
+        "l00019",
+        "l00009",
+        "l00020",
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00021",
+        "l00013",
+        "l00022",
+        "l00014",
+        "l00015",
+        "l00023",
+        "l00016",
+        "l00024"
+      ],
+      "text": "Chalapathi Institute of Engineering and Technology\nGuntur, AndhraPradesh\nBTech in Computer science and Engineering\nSeptember 2020 - April 2024\nGPA: 7.9\nIntermediate\nNoble Sai Junior College\nDachepalle, AndhraPradesh\nGPA: 9.13\nJune 2018 - Feb 2020\nSSC(10th)\nZP High School\nDachepalle, AndhraPradesh\nGPA: 9.7\nJune 2017 - Mar 2018"
+    },
+    {
+      "id": "s003",
+      "canonical": "experience",
+      "original_heading": "Experience",
+      "heading_line_id": "l00017",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00018",
+        "l00025",
+        "l00026",
+        "l00029",
+        "l00031",
+        "l00033"
+      ],
+      "text": "AI/ML Virtual Intern\nMay 2023 – July 2023\n• Developed and deployed 3 supervised ML models on AWS SageMaker with real-world datasets (15,000+ rows).\n• Improved prediction accuracy by 18% after hyperparameter tuning and cross-validation.\n• Evaluated model performance using confusion matrix, F1-score, precision, and recall.\n• Automated end-to-end ML workflows using AWS SageMaker, Lambda, and S3, reducing manual deployment time by 40%."
+    },
+    {
+      "id": "s004",
+      "canonical": "projects",
+      "original_heading": "Projects",
+      "heading_line_id": "l00036",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00037",
+        "l00038",
+        "l00041",
+        "l00044",
+        "l00047",
+        "l00049",
+        "l00052",
+        "l00053",
+        "l00056",
+        "l00059",
+        "l00062"
+      ],
+      "text": "1. AI Super Assistant\n• Built an AI-powered automation assistant that executes real-world tasks such as food ordering, ride booking, and music playback using voice commands.\n• Implemented intent detection using NVIDIA API and integrated LLM + RAG to generate step-by-step action plans.\n• Developed a context-aware recommendation system to suggest food, songs, and videos based on user preferences, ratings, location, and time.\n• Added predictive user behavior modeling to proactively recommend actions based on user habits.\n• Implemented Android automation using Kotlin AccessibilityService to perform actions across apps automatically.\n2. Smart Multi-Restaurant Delivery Optimization System\n• Designed a multi-restaurant ordering system that allows customers to order food from multiple nearby restaurants in a single order.\n• Developed a distance-based feasibility algorithm to allow orders only when restaurants are within a defined radius (0–3 km).\n• Implemented route optimization logic to assign one delivery partner to pick up orders from multiple restaurants and deliver them efficiently to the same customer.\n• Built a delivery time prediction model using distance, preparation time, and traffic conditions to improve delivery efficiency and reduce delivery cost."
+    },
+    {
+      "id": "s005",
+      "canonical": "skills",
+      "original_heading": "Skills",
+      "heading_line_id": "l00065",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00066",
+        "l00067",
+        "l00068",
+        "l00069"
+      ],
+      "text": "• Languages & Programming: Python, SQL\n• ML & AI: Scikit-learn, TensorFlow, PyTorch, RAG, NLP\n• Data Analytics & Visualization: Pandas, NumPy, Matplotlib\n• Tools & Platforms: Git, GitHub, Jupyter, Google Colab, VS Code"
+    },
+    {
+      "id": "s006",
+      "canonical": "certifications",
+      "original_heading": "Certification",
+      "heading_line_id": "l00070",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00071"
+      ],
+      "text": "• Data Science & Machine Learning - Cranes Varsity, Bengaluru. Trained in Python, RDBMS, Exploratory Data Analysis (EDA), Power BI, and ML, NLP"
+    }
+  ],
+  "quality": {
+    "completeness": {
+      "status": "fail",
+      "reference_words": 410,
+      "extracted_words": 409,
+      "matched_words": 408,
+      "recall": 0.9951219512195122,
+      "precision": 0.9975550122249389,
+      "missing": {
+        "91": 1,
+        "9866862016": 1
+      },
+      "extra": {
+        "919866862016": 1
+      }
+    },
+    "schema_errors": [],
+    "warnings": [],
+    "suppressed_exact_repeats": []
+  },
+  "review_status": "needs_review",
+  "review": [
+    {
+      "path": "fields.name",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.65
+    },
+    {
+      "path": "fields.experience[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.65
+    },
+    {
+      "path": "fields.experience[0].title",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.65
+    },
+    {
+      "path": "fields.experience[0].company",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.65
+    },
+    {
+      "path": "fields.experience[0].location",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.65
+    },
+    {
+      "path": "raw_text",
+      "reason": "Completeness fail",
+      "confidence": 0.0
+    }
+  ],
+  "mapping_changes": [
+    {
+      "path": "certifications[0]",
+      "before": {
+        "name": "Data Science & Machine Learning - Cranes Varsity, Bengaluru.",
+        "issuer": null,
+        "details": "Trained in Python, RDBMS, Exploratory Data Analysis (EDA), Power BI, and ML, NLP"
+      },
+      "after": {
+        "name": "Data Science & Machine Learning",
+        "issuer": "Cranes Varsity, Bengaluru",
+        "details": "Trained in Python, RDBMS, Exploratory Data Analysis (EDA), Power BI, and ML, NLP"
+      },
+      "reason": "Separate explicitly indicated credential title, issuer and training details",
+      "source_line_ids": [
+        "l00072",
+        "l00071",
+        "l00073"
+      ]
+    },
+    {
+      "path": "certifications[0].links",
+      "before": "contact.links",
+      "after": "https://drive.google.com/file/d/1HEeWV5pFmbwzrZ3zQK0V1YK6Znu5Xd8e/view",
+      "reason": "Move URI to the record containing its source evidence",
+      "source_line_ids": [
+        "l00071"
+      ]
+    }
+  ]
+}

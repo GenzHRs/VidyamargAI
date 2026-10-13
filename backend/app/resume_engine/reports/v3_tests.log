@@ -1,0 +1,49 @@
+test_magic_over_extension_and_duplicate (test_01_ingest.IngestTests.test_magic_over_extension_and_duplicate) ... ok
+test_text_and_reject_binary (test_01_ingest.IngestTests.test_text_and_reject_binary) ... ok
+test_xml_order_wrappers_and_real_cells (test_02_docx.DocxTests.test_xml_order_wrappers_and_real_cells) ... ok
+test_hero_and_independent_columns (test_03_pdf.PdfTests.test_hero_and_independent_columns) ... ok
+test_word_count_and_style (test_03_pdf.PdfTests.test_word_count_and_style) ... ok
+test_bullets_ligatures_and_contacts (test_04_normalize.NormalizeTests.test_bullets_ligatures_and_contacts) ... ok
+test_exact_margin_repeats_only (test_04_normalize.NormalizeTests.test_exact_margin_repeats_only) ... ok
+test_tight_prose_and_column_boundary (test_04_normalize.NormalizeTests.test_tight_prose_and_column_boundary) ... ok
+test_normal_style_inline_label_and_unknown (test_05_classify.ClassifyTests.test_normal_style_inline_label_and_unknown) ... ok
+test_synonym_fuzzy_custom_no_loss (test_06_sections.SectionTests.test_synonym_fuzzy_custom_no_loss) ... ok
+test_contacts_alias_dates_and_gpa (test_07_fields.FieldTests.test_contacts_alias_dates_and_gpa) ... ok
+test_grid_job (test_07_fields.FieldTests.test_grid_job) ... ok
+test_multiset_no_dedup_cheat (test_08_validate.ValidationTests.test_multiset_no_dedup_cheat) ... ok
+test_nested_field_types_and_confidence_range (test_08_validate.ValidationTests.test_nested_field_types_and_confidence_range) ... ok
+test_review_and_schema (test_08_validate.ValidationTests.test_review_and_schema) ... ok
+test_determinism_outputs_schema_and_source (test_09_pipeline.PipelineTests.test_determinism_outputs_schema_and_source) ... ok
+test_ambiguous_skills_and_publication_pages (test_10_regressions.RegressionTests.test_ambiguous_skills_and_publication_pages) ... ok
+test_header_name_is_not_home_location (test_10_regressions.RegressionTests.test_header_name_is_not_home_location) ... ok
+test_hidden_hyperlink_target (test_10_regressions.RegressionTests.test_hidden_hyperlink_target) ... ok
+test_pdf_font_bullet_decoding (test_10_regressions.RegressionTests.test_pdf_font_bullet_decoding) ... ok
+test_all_digital_fixtures_preserve_words (test_11_layout_fixtures.LayoutFixtureTests.test_all_digital_fixtures_preserve_words) ... ok
+test_column_order_and_light_text (test_11_layout_fixtures.LayoutFixtureTests.test_column_order_and_light_text) ... ok
+test_repeated_headers_auditable (test_11_layout_fixtures.LayoutFixtureTests.test_repeated_headers_auditable) ... ok
+test_scanned_local_ocr (test_11_layout_fixtures.LayoutFixtureTests.test_scanned_local_ocr) ... ok
+test_supplied_files_completeness_schema_and_determinism_offline (test_12_corpus.CorpusTests.test_supplied_files_completeness_schema_and_determinism_offline) ... ok
+test_ambiguous_text_dates_not_assigned (test_13_structure.StructureTests.test_ambiguous_text_dates_not_assigned) ... ok
+test_inline_date_range_does_not_split_institution (test_13_structure.StructureTests.test_inline_date_range_does_not_split_institution) ... ok
+test_inline_education_and_graduation (test_13_structure.StructureTests.test_inline_education_and_graduation) ... ok
+test_real_sidebar_not_globally_sorted (test_13_structure.StructureTests.test_real_sidebar_not_globally_sorted) ... ok
+test_table_credentials_and_wrapped_institution (test_13_structure.StructureTests.test_table_credentials_and_wrapped_institution) ... ok
+test_undated_and_ambiguous_jobs_are_valid_reviewable_results (test_13_structure.StructureTests.test_undated_and_ambiguous_jobs_are_valid_reviewable_results) ... ok
+test_uploaded_sample_assignments (test_13_structure.StructureTests.test_uploaded_sample_assignments) ... ok
+test_bullet_wrap_capitalized_and_numeric (test_14_audit_regressions.AuditRegressionTests.test_bullet_wrap_capitalized_and_numeric) ... ok
+test_certification_list_and_prose (test_14_audit_regressions.AuditRegressionTests.test_certification_list_and_prose) ... ok
+test_education_metadata_not_institution (test_14_audit_regressions.AuditRegressionTests.test_education_metadata_not_institution) ... ok
+test_font_subset_bold (test_14_audit_regressions.AuditRegressionTests.test_font_subset_bold) ... ok
+test_inline_education_credential (test_14_audit_regressions.AuditRegressionTests.test_inline_education_credential) ... ok
+test_locations_and_campus_names (test_14_audit_regressions.AuditRegressionTests.test_locations_and_campus_names) ... ok
+test_mixed_award_section (test_14_audit_regressions.AuditRegressionTests.test_mixed_award_section) ... ok
+test_nested_skill_lists (test_14_audit_regressions.AuditRegressionTests.test_nested_skill_lists) ... ok
+test_pdf_annotation_destination (test_14_audit_regressions.AuditRegressionTests.test_pdf_annotation_destination) ... ok
+test_phone_and_portfolio_without_false_email_domain (test_14_audit_regressions.AuditRegressionTests.test_phone_and_portfolio_without_false_email_domain) ... ok
+test_project_dates_and_technologies (test_14_audit_regressions.AuditRegressionTests.test_project_dates_and_technologies) ... ok
+test_table_skill_column_ownership (test_14_audit_regressions.AuditRegressionTests.test_table_skill_column_ownership) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 3.705s
+
+OK

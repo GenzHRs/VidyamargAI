@@ -1,0 +1,7 @@
+test_contacts_alias_dates_and_gpa (test_07_fields.FieldTests.test_contacts_alias_dates_and_gpa) ... ok
+test_grid_job (test_07_fields.FieldTests.test_grid_job) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.009s
+
+OK

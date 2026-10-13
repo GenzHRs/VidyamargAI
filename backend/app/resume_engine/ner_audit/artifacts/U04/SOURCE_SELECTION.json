@@ -1,0 +1,10 @@
+{
+  "id": "U04",
+  "file": "colorful_resume_templates_bundle/01_DOCX_Vibrant_Coral_Creative_Resume.docx",
+  "sha256": "5f77f4e59d97793795089e0b99f6f360f55d6f12d75e7af6693fae044d6a2730",
+  "previous_reference": "R02",
+  "artifact": "artifacts/U04/resume.json",
+  "selected_from": "upload_accuracy/results/U04/resume.json",
+  "selected_sha256": "dda46aa3ab7de4c1b166102e3a0224dae7e080f5aa24ff2b0c24cd04f293fd32",
+  "reason": "Full raw lines, layout and hyperlink metadata; uploaded artifact preferred when available. Structured output is baseline comparison only."
+}

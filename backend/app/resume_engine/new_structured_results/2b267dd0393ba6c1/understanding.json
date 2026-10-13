@@ -1,0 +1,3996 @@
+{
+  "understanding_schema_version": "1.0.0",
+  "engine": "offline_rule_ner",
+  "source": {
+    "filename": "08_DOCX_Executive_Corporate_Director.docx",
+    "sha256": "2b267dd0393ba6c14bc7123228cb38ef079f0237d0dd9b3db584c334b58b6146",
+    "type": "docx",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": null,
+    "reference_method": "docx_xml_text"
+  },
+  "artifact_sha256": "405a777767c276b0304a0977fe047f783a6e55912ff9033a742ee3ca499fe31a",
+  "section_order": [
+    "personal_details",
+    "summary",
+    "education",
+    "work_experience",
+    "internships",
+    "projects",
+    "skills",
+    "certifications",
+    "training",
+    "awards",
+    "publications",
+    "languages",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "profile": {
+    "personal_details": {
+      "name": {
+        "value": "ELEANOR R. VANCE",
+        "confidence": 0.92,
+        "source_line_ids": [
+          "l00000"
+        ]
+      },
+      "emails": [
+        {
+          "value": "e.vance.executive@example.com",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalization": "none",
+          "raw": "Chicago, IL  |  +1 (312) 555-8492  |  e.vance.executive@example.com  |  linkedin.com/in/eleanor-vance-dummy"
+        }
+      ],
+      "phones": [
+        {
+          "value": "+1 (312) 555-8492",
+          "confidence": 0.95,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalized": "+13125558492",
+          "valid": true
+        }
+      ],
+      "locations": [
+        {
+          "value": "Chicago, IL",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00002"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "value": "linkedin.com/in/eleanor-vance-dummy",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "kind": "linkedin"
+        }
+      ],
+      "headline": {
+        "value": "VICE PRESIDENT OF GLOBAL OPERATIONS & SUPPLY CHAIN",
+        "source_line_ids": [
+          "l00001"
+        ],
+        "confidence": 0.7
+      }
+    },
+    "summary": [
+      {
+        "text": "Accomplished Operations Executive with 16+ years of enterprise leadership managing $250M+ P&L operations across North America, EMEA, and APAC. Recognized for orchestrating large-scale operational transformations, post-merger integrations, Lean Six Sigma deployment, and end-to-end logistics modernization. Trusted advisor to Board of Directors with proven ability to scale global operating margins while delivering superior customer satisfaction.",
+        "source_line_ids": [
+          "l00004"
+        ],
+        "value": "Accomplished Operations Executive with 16+ years of enterprise leadership managing $250M+ P&L operations across North America, EMEA, and APAC. Recognized for orchestrating large-scale operational transformations, post-merger integrations, Lean Six Sigma deployment, and end-to-end logistics modernization. Trusted advisor to Board of Directors with proven ability to scale global operating margins while delivering superior customer satisfaction."
+      }
+    ],
+    "education": [
+      {
+        "text": "Master of Business Administration (MBA)\nThe University of Chicago Booth School of Business (2013)",
+        "source_line_ids": [
+          "l00028"
+        ],
+        "degree": {
+          "value": "Master of Business Administration (MBA)",
+          "source_line_ids": [
+            "l00028"
+          ],
+          "confidence": 0.85
+        },
+        "institution": {
+          "value": "The University of Chicago Booth School of Business",
+          "source_line_ids": [
+            "l00028"
+          ],
+          "confidence": 0.85
+        },
+        "dates": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "graduation": {
+          "value": "2013",
+          "source_line_ids": [
+            "l00028"
+          ],
+          "confidence": 0.85
+        },
+        "location": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "gpa": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "normalized_dates": {
+          "start": {
+            "raw": null,
+            "value": null,
+            "precision": null
+          },
+          "end": {
+            "raw": null,
+            "value": null,
+            "precision": null
+          }
+        }
+      },
+      {
+        "text": "Bachelor of Science in Industrial Engineering\nPurdue University (2007)",
+        "source_line_ids": [
+          "l00029"
+        ],
+        "degree": {
+          "value": "Bachelor of Science in Industrial Engineering",
+          "source_line_ids": [
+            "l00029"
+          ],
+          "confidence": 0.85
+        },
+        "institution": {
+          "value": "Purdue University",
+          "source_line_ids": [
+            "l00029"
+          ],
+          "confidence": 0.85
+        },
+        "dates": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "graduation": {
+          "value": "2007",
+          "source_line_ids": [
+            "l00029"
+          ],
+          "confidence": 0.85
+        },
+        "location": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "gpa": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "normalized_dates": {
+          "start": {
+            "raw": null,
+            "value": null,
+            "precision": null
+          },
+          "end": {
+            "raw": null,
+            "value": null,
+            "precision": null
+          }
+        }
+      }
+    ],
+    "work_experience": [
+      {
+        "title": {
+          "value": "Vice President of Global Operations",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00016"
+          ]
+        },
+        "company": {
+          "value": "Crestview Manufacturing & Logistics Group",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00016"
+          ]
+        },
+        "location": {
+          "value": "Chicago, IL",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00017"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2020",
+            "end": "Present"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00017"
+          ]
+        },
+        "bullets": [
+          "Oversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.",
+          "Instituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.",
+          "Led cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.",
+          "Presented quarterly strategic updates, operational KPIs, and risk evaluations directly to the Executive Committee and Board of Directors."
+        ],
+        "text": "Vice President of Global Operations  —  Crestview Manufacturing & Logistics Group\n2020 – Present  |  Chicago, IL\nOversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.\nInstituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.\nLed cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.\nPresented quarterly strategic updates, operational KPIs, and risk evaluations directly to the Executive Committee and Board of Directors.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00016",
+          "l00017",
+          "l00018",
+          "l00019",
+          "l00020",
+          "l00021"
+        ],
+        "normalized_dates": {
+          "start": {
+            "raw": "2020",
+            "value": "2020",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "Present",
+            "value": null,
+            "precision": "open"
+          }
+        }
+      },
+      {
+        "title": {
+          "value": "Director of Supply Chain & Manufacturing",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00022"
+          ]
+        },
+        "company": {
+          "value": "Apex Industrial Technologies",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00022"
+          ]
+        },
+        "location": {
+          "value": "Detroit, MI",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00023"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2015",
+            "end": "2020"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00023"
+          ]
+        },
+        "bullets": [
+          "Spearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.",
+          "Renegotiated key Tier-1 carrier contracts delivering $9.6M in recurring freight savings over a 3-year agreement cycle.",
+          "Achieved OSHA voluntary protection status across all sites, improving team safety records by 64%."
+        ],
+        "text": "Director of Supply Chain & Manufacturing  —  Apex Industrial Technologies\n2015 – 2020  |  Detroit, MI\nSpearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.\nRenegotiated key Tier-1 carrier contracts delivering $9.6M in recurring freight savings over a 3-year agreement cycle.\nAchieved OSHA voluntary protection status across all sites, improving team safety records by 64%.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00022",
+          "l00023",
+          "l00024",
+          "l00025",
+          "l00026"
+        ],
+        "normalized_dates": {
+          "start": {
+            "raw": "2015",
+            "value": "2015",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "2020",
+            "value": "2020",
+            "precision": "year"
+          }
+        }
+      }
+    ],
+    "internships": [],
+    "projects": [],
+    "skills": [
+      {
+        "text": "• Multi-Site P&L Management ($250M+)",
+        "source_line_ids": [
+          "l00006"
+        ],
+        "category": null,
+        "items": [
+          "Multi-Site P&L Management ($250M+)"
+        ]
+      },
+      {
+        "text": "• Global Supply Chain Optimization",
+        "source_line_ids": [
+          "l00007"
+        ],
+        "category": null,
+        "items": [
+          "Global Supply Chain Optimization"
+        ]
+      },
+      {
+        "text": "• Post-Merger Operational Integration",
+        "source_line_ids": [
+          "l00008"
+        ],
+        "category": null,
+        "items": [
+          "Post-Merger Operational Integration"
+        ]
+      },
+      {
+        "text": "• Lean Six Sigma / Continuous Improvement",
+        "source_line_ids": [
+          "l00009"
+        ],
+        "category": null,
+        "items": [
+          "Lean Six Sigma / Continuous Improvement"
+        ]
+      },
+      {
+        "text": "• Strategic Procurement & Vendor Negotiation",
+        "source_line_ids": [
+          "l00010"
+        ],
+        "category": null,
+        "items": [
+          "Strategic Procurement & Vendor Negotiation"
+        ]
+      },
+      {
+        "text": "• Cross-Functional Executive Leadership",
+        "source_line_ids": [
+          "l00011"
+        ],
+        "category": null,
+        "items": [
+          "Cross-Functional Executive Leadership"
+        ]
+      },
+      {
+        "text": "• Enterprise Risk Management & Compliance",
+        "source_line_ids": [
+          "l00012"
+        ],
+        "category": null,
+        "items": [
+          "Enterprise Risk Management & Compliance"
+        ]
+      },
+      {
+        "text": "• ERP Systems Modernization (SAP S/4HANA)",
+        "source_line_ids": [
+          "l00013"
+        ],
+        "category": null,
+        "items": [
+          "ERP Systems Modernization (SAP S/4HANA)"
+        ]
+      },
+      {
+        "text": "• Boardroom Governance & Stakeholder Relations",
+        "source_line_ids": [
+          "l00014"
+        ],
+        "category": null,
+        "items": [
+          "Boardroom Governance & Stakeholder Relations"
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "text": "Lean Six Sigma Master Black Belt (CSSMBB)  •  APICS Certified Supply Chain Professional (CSCP)",
+        "source_line_ids": [
+          "l00030"
+        ],
+        "name": {
+          "value": "Lean Six Sigma Master Black Belt (CSSMBB)",
+          "source_line_ids": [
+            "l00030"
+          ],
+          "confidence": 0.85
+        },
+        "details": ""
+      },
+      {
+        "text": "Lean Six Sigma Master Black Belt (CSSMBB)  •  APICS Certified Supply Chain Professional (CSCP)",
+        "source_line_ids": [
+          "l00030"
+        ],
+        "name": {
+          "value": "APICS Certified Supply Chain Professional (CSCP)",
+          "source_line_ids": [
+            "l00030"
+          ],
+          "confidence": 0.85
+        },
+        "details": ""
+      }
+    ],
+    "training": [],
+    "awards": [],
+    "publications": [],
+    "languages": [],
+    "other_sections": [],
+    "unassigned_links": []
+  },
+  "entities": [
+    {
+      "id": "e00000",
+      "label": "PERSON",
+      "text": "ELEANOR R. VANCE",
+      "normalized": "ELEANOR R. VANCE",
+      "source_line_id": "l00000",
+      "start": 0,
+      "end": 16,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "preamble_title",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.7
+    },
+    {
+      "id": "e00001",
+      "label": "SKILL",
+      "text": "SUPPLY CHAIN",
+      "normalized": "Supply Chain",
+      "source_line_id": "l00001",
+      "start": 38,
+      "end": 50,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00002",
+      "label": "EMAIL",
+      "text": "e.vance.executive@example.com",
+      "normalized": "e.vance.executive@example.com",
+      "source_line_id": "l00002",
+      "start": 38,
+      "end": 67,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "regex:email",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00003",
+      "label": "PHONE",
+      "text": "+1 (312) 555-8492",
+      "normalized": "+1 (312) 555-8492",
+      "source_line_id": "l00002",
+      "start": 16,
+      "end": 33,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "regex:phone",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00004",
+      "label": "URL",
+      "text": "e.vance",
+      "normalized": "e.vance",
+      "source_line_id": "l00002",
+      "start": 38,
+      "end": 45,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "literal_url",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00005",
+      "label": "URL",
+      "text": "linkedin.com/in/eleanor-vance-dummy",
+      "normalized": "linkedin.com/in/eleanor-vance-dummy",
+      "source_line_id": "l00002",
+      "start": 72,
+      "end": 107,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "literal_url",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00006",
+      "label": "SKILL",
+      "text": "Lean Six Sigma",
+      "normalized": "Lean Six Sigma",
+      "source_line_id": "l00004",
+      "start": 239,
+      "end": 253,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "summary",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00007",
+      "label": "SKILL",
+      "text": "Supply Chain",
+      "normalized": "Supply Chain",
+      "source_line_id": "l00007",
+      "start": 9,
+      "end": 21,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00008",
+      "label": "SKILL",
+      "text": "Lean Six Sigma",
+      "normalized": "Lean Six Sigma",
+      "source_line_id": "l00009",
+      "start": 2,
+      "end": 16,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00009",
+      "label": "SKILL",
+      "text": "Procurement",
+      "normalized": "Procurement",
+      "source_line_id": "l00010",
+      "start": 12,
+      "end": 23,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00010",
+      "label": "SKILL",
+      "text": "Risk Management",
+      "normalized": "Risk Management",
+      "source_line_id": "l00012",
+      "start": 13,
+      "end": 28,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00011",
+      "label": "SKILL",
+      "text": "SAP S/4HANA",
+      "normalized": "SAP S/4HANA",
+      "source_line_id": "l00013",
+      "start": 29,
+      "end": 40,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00012",
+      "label": "JOB_TITLE",
+      "text": "Vice President of Global Operations  —  Crestview Manufacturing & Logistics Group",
+      "normalized": "Vice President of Global Operations  —  Crestview Manufacturing & Logistics Group",
+      "source_line_id": "l00016",
+      "start": 0,
+      "end": 81,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "role_header",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.7
+    },
+    {
+      "id": "e00013",
+      "label": "DATE_RANGE",
+      "text": "2020 – Present",
+      "normalized": "2020 – Present",
+      "source_line_id": "l00017",
+      "start": 0,
+      "end": 14,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "regex:date_range",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00014",
+      "label": "JOB_TITLE",
+      "text": "Director of Supply Chain & Manufacturing  —  Apex Industrial Technologies",
+      "normalized": "Director of Supply Chain & Manufacturing  —  Apex Industrial Technologies",
+      "source_line_id": "l00022",
+      "start": 0,
+      "end": 73,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "role_header",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.7
+    },
+    {
+      "id": "e00015",
+      "label": "SKILL",
+      "text": "Supply Chain",
+      "normalized": "Supply Chain",
+      "source_line_id": "l00022",
+      "start": 12,
+      "end": 24,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00016",
+      "label": "DATE_RANGE",
+      "text": "2015 – 2020",
+      "normalized": "2015 – 2020",
+      "source_line_id": "l00023",
+      "start": 0,
+      "end": 11,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "regex:date_range",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00017",
+      "label": "SKILL",
+      "text": "SAP S/4HANA",
+      "normalized": "SAP S/4HANA",
+      "source_line_id": "l00024",
+      "start": 39,
+      "end": 50,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00018",
+      "label": "DEGREE",
+      "text": "Master of Business Administration",
+      "normalized": "Master of Business Administration",
+      "source_line_id": "l00028",
+      "start": 0,
+      "end": 33,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "education",
+      "rule": "education_degree",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00019",
+      "label": "DEGREE",
+      "text": "MBA",
+      "normalized": "MBA",
+      "source_line_id": "l00028",
+      "start": 35,
+      "end": 38,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "education",
+      "rule": "education_degree",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00020",
+      "label": "DEGREE",
+      "text": "Bachelor of Science in Industrial Engineering  ",
+      "normalized": "Bachelor of Science in Industrial Engineering  ",
+      "source_line_id": "l00029",
+      "start": 0,
+      "end": 47,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "education",
+      "rule": "education_degree",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00021",
+      "label": "CERTIFICATION",
+      "text": "Credentials: Lean Six Sigma Master Black Belt (CSSMBB)  •  APICS Certified Supply Chain Professional (CSCP)",
+      "normalized": "Credentials: Lean Six Sigma Master Black Belt (CSSMBB)  •  APICS Certified Supply Chain Professional (CSCP)",
+      "source_line_id": "l00030",
+      "start": 0,
+      "end": 107,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "certifications",
+      "rule": "credential_context",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00022",
+      "label": "SKILL",
+      "text": "Lean Six Sigma",
+      "normalized": "Lean Six Sigma",
+      "source_line_id": "l00030",
+      "start": 13,
+      "end": 27,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "certifications",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00023",
+      "label": "SKILL",
+      "text": "Supply Chain",
+      "normalized": "Supply Chain",
+      "source_line_id": "l00030",
+      "start": 75,
+      "end": 87,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "certifications",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    }
+  ],
+  "records": [
+    {
+      "record_id": "summary:0",
+      "section": "summary",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00004"
+      ],
+      "entity_ids": [
+        "e00006"
+      ]
+    },
+    {
+      "record_id": "education:0",
+      "section": "education",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00028"
+      ],
+      "entity_ids": [
+        "e00018",
+        "e00019"
+      ]
+    },
+    {
+      "record_id": "education:1",
+      "section": "education",
+      "ordinal": 1,
+      "source_line_ids": [
+        "l00029"
+      ],
+      "entity_ids": [
+        "e00020"
+      ]
+    },
+    {
+      "record_id": "work_experience:0",
+      "section": "work_experience",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021"
+      ],
+      "entity_ids": [
+        "e00012",
+        "e00013"
+      ]
+    },
+    {
+      "record_id": "work_experience:1",
+      "section": "work_experience",
+      "ordinal": 1,
+      "source_line_ids": [
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025",
+        "l00026"
+      ],
+      "entity_ids": [
+        "e00014",
+        "e00015",
+        "e00016",
+        "e00017"
+      ]
+    },
+    {
+      "record_id": "skills:0",
+      "section": "skills",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00006"
+      ],
+      "entity_ids": []
+    },
+    {
+      "record_id": "skills:1",
+      "section": "skills",
+      "ordinal": 1,
+      "source_line_ids": [
+        "l00007"
+      ],
+      "entity_ids": [
+        "e00007"
+      ]
+    },
+    {
+      "record_id": "skills:2",
+      "section": "skills",
+      "ordinal": 2,
+      "source_line_ids": [
+        "l00008"
+      ],
+      "entity_ids": []
+    },
+    {
+      "record_id": "skills:3",
+      "section": "skills",
+      "ordinal": 3,
+      "source_line_ids": [
+        "l00009"
+      ],
+      "entity_ids": [
+        "e00008"
+      ]
+    },
+    {
+      "record_id": "skills:4",
+      "section": "skills",
+      "ordinal": 4,
+      "source_line_ids": [
+        "l00010"
+      ],
+      "entity_ids": [
+        "e00009"
+      ]
+    },
+    {
+      "record_id": "skills:5",
+      "section": "skills",
+      "ordinal": 5,
+      "source_line_ids": [
+        "l00011"
+      ],
+      "entity_ids": []
+    },
+    {
+      "record_id": "skills:6",
+      "section": "skills",
+      "ordinal": 6,
+      "source_line_ids": [
+        "l00012"
+      ],
+      "entity_ids": [
+        "e00010"
+      ]
+    },
+    {
+      "record_id": "skills:7",
+      "section": "skills",
+      "ordinal": 7,
+      "source_line_ids": [
+        "l00013"
+      ],
+      "entity_ids": [
+        "e00011"
+      ]
+    },
+    {
+      "record_id": "skills:8",
+      "section": "skills",
+      "ordinal": 8,
+      "source_line_ids": [
+        "l00014"
+      ],
+      "entity_ids": []
+    },
+    {
+      "record_id": "certifications:0",
+      "section": "certifications",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00030"
+      ],
+      "entity_ids": [
+        "e00021",
+        "e00022",
+        "e00023"
+      ]
+    },
+    {
+      "record_id": "certifications:1",
+      "section": "certifications",
+      "ordinal": 1,
+      "source_line_ids": [
+        "l00030"
+      ],
+      "entity_ids": [
+        "e00021",
+        "e00022",
+        "e00023"
+      ]
+    }
+  ],
+  "evidence": {
+    "personal_details.name.value": {
+      "source_refs": [
+        {
+          "line_id": "l00000",
+          "start": 0,
+          "end": 16,
+          "text": "ELEANOR R. VANCE",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.emails[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 38,
+          "end": 67,
+          "text": "e.vance.executive@example.com",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.emails[0].normalization": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 107,
+          "text": "Chicago, IL  |  +1 (312) 555-8492  |  e.vance.executive@example.com  |  linkedin.com/in/eleanor-vance-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.emails[0].raw": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 107,
+          "text": "Chicago, IL  |  +1 (312) 555-8492  |  e.vance.executive@example.com  |  linkedin.com/in/eleanor-vance-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.phones[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 16,
+          "end": 33,
+          "text": "+1 (312) 555-8492",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.phones[0].normalized": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 107,
+          "text": "Chicago, IL  |  +1 (312) 555-8492  |  e.vance.executive@example.com  |  linkedin.com/in/eleanor-vance-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.phones[0].valid": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 107,
+          "text": "Chicago, IL  |  +1 (312) 555-8492  |  e.vance.executive@example.com  |  linkedin.com/in/eleanor-vance-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.locations[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 11,
+          "text": "Chicago, IL",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.links[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 72,
+          "end": 107,
+          "text": "linkedin.com/in/eleanor-vance-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.links[0].kind": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 72,
+          "end": 80,
+          "text": "linkedin",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.headline.value": {
+      "source_refs": [
+        {
+          "line_id": "l00001",
+          "start": 0,
+          "end": 50,
+          "text": "VICE PRESIDENT OF GLOBAL OPERATIONS & SUPPLY CHAIN",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "summary[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00004",
+          "start": 0,
+          "end": 446,
+          "text": "Accomplished Operations Executive with 16+ years of enterprise leadership managing $250M+ P&L operations across North America, EMEA, and APAC. Recognized for orchestrating large-scale operational transformations, post-merger integrations, Lean Six Sigma deployment, and end-to-end logistics modernization. Trusted advisor to Board of Directors with proven ability to scale global operating margins while delivering superior customer satisfaction.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "summary[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00004",
+          "start": 0,
+          "end": 446,
+          "text": "Accomplished Operations Executive with 16+ years of enterprise leadership managing $250M+ P&L operations across North America, EMEA, and APAC. Recognized for orchestrating large-scale operational transformations, post-merger integrations, Lean Six Sigma deployment, and end-to-end logistics modernization. Trusted advisor to Board of Directors with proven ability to scale global operating margins while delivering superior customer satisfaction.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00028",
+          "start": 0,
+          "end": 101,
+          "text": "Master of Business Administration (MBA)  •  The University of Chicago Booth School of Business (2013)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].degree.value": {
+      "source_refs": [
+        {
+          "line_id": "l00028",
+          "start": 0,
+          "end": 39,
+          "text": "Master of Business Administration (MBA)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].institution.value": {
+      "source_refs": [
+        {
+          "line_id": "l00028",
+          "start": 44,
+          "end": 94,
+          "text": "The University of Chicago Booth School of Business",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].graduation.value": {
+      "source_refs": [
+        {
+          "line_id": "l00028",
+          "start": 96,
+          "end": 100,
+          "text": "2013",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].text": {
+      "source_refs": [
+        {
+          "line_id": "l00029",
+          "start": 0,
+          "end": 74,
+          "text": "Bachelor of Science in Industrial Engineering  •  Purdue University (2007)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].degree.value": {
+      "source_refs": [
+        {
+          "line_id": "l00029",
+          "start": 0,
+          "end": 45,
+          "text": "Bachelor of Science in Industrial Engineering",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].institution.value": {
+      "source_refs": [
+        {
+          "line_id": "l00029",
+          "start": 50,
+          "end": 67,
+          "text": "Purdue University",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].graduation.value": {
+      "source_refs": [
+        {
+          "line_id": "l00029",
+          "start": 69,
+          "end": 73,
+          "text": "2007",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].title.value": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 35,
+          "text": "Vice President of Global Operations",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].company.value": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 40,
+          "end": 81,
+          "text": "Crestview Manufacturing & Logistics Group",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].location.value": {
+      "source_refs": [
+        {
+          "line_id": "l00017",
+          "start": 19,
+          "end": 30,
+          "text": "Chicago, IL",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].dates.value.start": {
+      "source_refs": [
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 4,
+          "text": "2020",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].dates.value.end": {
+      "source_refs": [
+        {
+          "line_id": "l00017",
+          "start": 7,
+          "end": 14,
+          "text": "Present",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].bullets[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 81,
+          "text": "Vice President of Global Operations  —  Crestview Manufacturing & Logistics Group",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 30,
+          "text": "2020 – Present  |  Chicago, IL",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 180,
+          "text": "Oversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 150,
+          "text": "Instituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00020",
+          "start": 0,
+          "end": 155,
+          "text": "Led cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00021",
+          "start": 0,
+          "end": 137,
+          "text": "Presented quarterly strategic updates, operational KPIs, and risk evaluations directly to the Executive Committee and Board of Directors.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].bullets[1]": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 81,
+          "text": "Vice President of Global Operations  —  Crestview Manufacturing & Logistics Group",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 30,
+          "text": "2020 – Present  |  Chicago, IL",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 180,
+          "text": "Oversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 150,
+          "text": "Instituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00020",
+          "start": 0,
+          "end": 155,
+          "text": "Led cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00021",
+          "start": 0,
+          "end": 137,
+          "text": "Presented quarterly strategic updates, operational KPIs, and risk evaluations directly to the Executive Committee and Board of Directors.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].bullets[2]": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 81,
+          "text": "Vice President of Global Operations  —  Crestview Manufacturing & Logistics Group",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 30,
+          "text": "2020 – Present  |  Chicago, IL",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 180,
+          "text": "Oversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 150,
+          "text": "Instituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00020",
+          "start": 0,
+          "end": 155,
+          "text": "Led cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00021",
+          "start": 0,
+          "end": 137,
+          "text": "Presented quarterly strategic updates, operational KPIs, and risk evaluations directly to the Executive Committee and Board of Directors.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].bullets[3]": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 81,
+          "text": "Vice President of Global Operations  —  Crestview Manufacturing & Logistics Group",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 30,
+          "text": "2020 – Present  |  Chicago, IL",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 180,
+          "text": "Oversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 150,
+          "text": "Instituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00020",
+          "start": 0,
+          "end": 155,
+          "text": "Led cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00021",
+          "start": 0,
+          "end": 137,
+          "text": "Presented quarterly strategic updates, operational KPIs, and risk evaluations directly to the Executive Committee and Board of Directors.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 81,
+          "text": "Vice President of Global Operations  —  Crestview Manufacturing & Logistics Group",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 30,
+          "text": "2020 – Present  |  Chicago, IL",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 180,
+          "text": "Oversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 150,
+          "text": "Instituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00020",
+          "start": 0,
+          "end": 155,
+          "text": "Led cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00021",
+          "start": 0,
+          "end": 137,
+          "text": "Presented quarterly strategic updates, operational KPIs, and risk evaluations directly to the Executive Committee and Board of Directors.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.start.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 81,
+          "text": "Vice President of Global Operations  —  Crestview Manufacturing & Logistics Group",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 4,
+          "text": "2020",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 180,
+          "text": "Oversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 150,
+          "text": "Instituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00020",
+          "start": 0,
+          "end": 155,
+          "text": "Led cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00021",
+          "start": 0,
+          "end": 137,
+          "text": "Presented quarterly strategic updates, operational KPIs, and risk evaluations directly to the Executive Committee and Board of Directors.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.start.value": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 81,
+          "text": "Vice President of Global Operations  —  Crestview Manufacturing & Logistics Group",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 4,
+          "text": "2020",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 180,
+          "text": "Oversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 150,
+          "text": "Instituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00020",
+          "start": 0,
+          "end": 155,
+          "text": "Led cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00021",
+          "start": 0,
+          "end": 137,
+          "text": "Presented quarterly strategic updates, operational KPIs, and risk evaluations directly to the Executive Committee and Board of Directors.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.start.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 81,
+          "text": "Vice President of Global Operations  —  Crestview Manufacturing & Logistics Group",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 30,
+          "text": "2020 – Present  |  Chicago, IL",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 180,
+          "text": "Oversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 150,
+          "text": "Instituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00020",
+          "start": 0,
+          "end": 155,
+          "text": "Led cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00021",
+          "start": 0,
+          "end": 137,
+          "text": "Presented quarterly strategic updates, operational KPIs, and risk evaluations directly to the Executive Committee and Board of Directors.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.end.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 81,
+          "text": "Vice President of Global Operations  —  Crestview Manufacturing & Logistics Group",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 7,
+          "end": 14,
+          "text": "Present",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 180,
+          "text": "Oversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 150,
+          "text": "Instituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00020",
+          "start": 0,
+          "end": 155,
+          "text": "Led cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00021",
+          "start": 0,
+          "end": 7,
+          "text": "Present",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.end.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 81,
+          "text": "Vice President of Global Operations  —  Crestview Manufacturing & Logistics Group",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 30,
+          "text": "2020 – Present  |  Chicago, IL",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 180,
+          "text": "Oversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 150,
+          "text": "Instituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00020",
+          "start": 0,
+          "end": 155,
+          "text": "Led cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00021",
+          "start": 0,
+          "end": 137,
+          "text": "Presented quarterly strategic updates, operational KPIs, and risk evaluations directly to the Executive Committee and Board of Directors.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].title.value": {
+      "source_refs": [
+        {
+          "line_id": "l00022",
+          "start": 0,
+          "end": 40,
+          "text": "Director of Supply Chain & Manufacturing",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].company.value": {
+      "source_refs": [
+        {
+          "line_id": "l00022",
+          "start": 45,
+          "end": 73,
+          "text": "Apex Industrial Technologies",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].location.value": {
+      "source_refs": [
+        {
+          "line_id": "l00023",
+          "start": 16,
+          "end": 27,
+          "text": "Detroit, MI",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].dates.value.start": {
+      "source_refs": [
+        {
+          "line_id": "l00023",
+          "start": 0,
+          "end": 4,
+          "text": "2015",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].dates.value.end": {
+      "source_refs": [
+        {
+          "line_id": "l00023",
+          "start": 7,
+          "end": 11,
+          "text": "2020",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].bullets[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00022",
+          "start": 0,
+          "end": 73,
+          "text": "Director of Supply Chain & Manufacturing  —  Apex Industrial Technologies",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00023",
+          "start": 0,
+          "end": 27,
+          "text": "2015 – 2020  |  Detroit, MI",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00024",
+          "start": 0,
+          "end": 146,
+          "text": "Spearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00025",
+          "start": 0,
+          "end": 118,
+          "text": "Renegotiated key Tier-1 carrier contracts delivering $9.6M in recurring freight savings over a 3-year agreement cycle.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00026",
+          "start": 0,
+          "end": 97,
+          "text": "Achieved OSHA voluntary protection status across all sites, improving team safety records by 64%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].bullets[1]": {
+      "source_refs": [
+        {
+          "line_id": "l00022",
+          "start": 0,
+          "end": 73,
+          "text": "Director of Supply Chain & Manufacturing  —  Apex Industrial Technologies",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00023",
+          "start": 0,
+          "end": 27,
+          "text": "2015 – 2020  |  Detroit, MI",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00024",
+          "start": 0,
+          "end": 146,
+          "text": "Spearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00025",
+          "start": 0,
+          "end": 118,
+          "text": "Renegotiated key Tier-1 carrier contracts delivering $9.6M in recurring freight savings over a 3-year agreement cycle.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00026",
+          "start": 0,
+          "end": 97,
+          "text": "Achieved OSHA voluntary protection status across all sites, improving team safety records by 64%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].bullets[2]": {
+      "source_refs": [
+        {
+          "line_id": "l00022",
+          "start": 0,
+          "end": 73,
+          "text": "Director of Supply Chain & Manufacturing  —  Apex Industrial Technologies",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00023",
+          "start": 0,
+          "end": 27,
+          "text": "2015 – 2020  |  Detroit, MI",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00024",
+          "start": 0,
+          "end": 146,
+          "text": "Spearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00025",
+          "start": 0,
+          "end": 118,
+          "text": "Renegotiated key Tier-1 carrier contracts delivering $9.6M in recurring freight savings over a 3-year agreement cycle.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00026",
+          "start": 0,
+          "end": 97,
+          "text": "Achieved OSHA voluntary protection status across all sites, improving team safety records by 64%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].text": {
+      "source_refs": [
+        {
+          "line_id": "l00022",
+          "start": 0,
+          "end": 73,
+          "text": "Director of Supply Chain & Manufacturing  —  Apex Industrial Technologies",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00023",
+          "start": 0,
+          "end": 27,
+          "text": "2015 – 2020  |  Detroit, MI",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00024",
+          "start": 0,
+          "end": 146,
+          "text": "Spearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00025",
+          "start": 0,
+          "end": 118,
+          "text": "Renegotiated key Tier-1 carrier contracts delivering $9.6M in recurring freight savings over a 3-year agreement cycle.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00026",
+          "start": 0,
+          "end": 97,
+          "text": "Achieved OSHA voluntary protection status across all sites, improving team safety records by 64%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.start.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00022",
+          "start": 0,
+          "end": 73,
+          "text": "Director of Supply Chain & Manufacturing  —  Apex Industrial Technologies",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00023",
+          "start": 0,
+          "end": 4,
+          "text": "2015",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00024",
+          "start": 0,
+          "end": 146,
+          "text": "Spearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00025",
+          "start": 0,
+          "end": 118,
+          "text": "Renegotiated key Tier-1 carrier contracts delivering $9.6M in recurring freight savings over a 3-year agreement cycle.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00026",
+          "start": 0,
+          "end": 97,
+          "text": "Achieved OSHA voluntary protection status across all sites, improving team safety records by 64%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.start.value": {
+      "source_refs": [
+        {
+          "line_id": "l00022",
+          "start": 0,
+          "end": 73,
+          "text": "Director of Supply Chain & Manufacturing  —  Apex Industrial Technologies",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00023",
+          "start": 0,
+          "end": 4,
+          "text": "2015",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00024",
+          "start": 0,
+          "end": 146,
+          "text": "Spearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00025",
+          "start": 0,
+          "end": 118,
+          "text": "Renegotiated key Tier-1 carrier contracts delivering $9.6M in recurring freight savings over a 3-year agreement cycle.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00026",
+          "start": 0,
+          "end": 97,
+          "text": "Achieved OSHA voluntary protection status across all sites, improving team safety records by 64%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.start.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00022",
+          "start": 0,
+          "end": 73,
+          "text": "Director of Supply Chain & Manufacturing  —  Apex Industrial Technologies",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00023",
+          "start": 0,
+          "end": 27,
+          "text": "2015 – 2020  |  Detroit, MI",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00024",
+          "start": 0,
+          "end": 146,
+          "text": "Spearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00025",
+          "start": 97,
+          "end": 101,
+          "text": "year",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00026",
+          "start": 0,
+          "end": 97,
+          "text": "Achieved OSHA voluntary protection status across all sites, improving team safety records by 64%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.end.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00022",
+          "start": 0,
+          "end": 73,
+          "text": "Director of Supply Chain & Manufacturing  —  Apex Industrial Technologies",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00023",
+          "start": 7,
+          "end": 11,
+          "text": "2020",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00024",
+          "start": 0,
+          "end": 146,
+          "text": "Spearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00025",
+          "start": 0,
+          "end": 118,
+          "text": "Renegotiated key Tier-1 carrier contracts delivering $9.6M in recurring freight savings over a 3-year agreement cycle.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00026",
+          "start": 0,
+          "end": 97,
+          "text": "Achieved OSHA voluntary protection status across all sites, improving team safety records by 64%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.end.value": {
+      "source_refs": [
+        {
+          "line_id": "l00022",
+          "start": 0,
+          "end": 73,
+          "text": "Director of Supply Chain & Manufacturing  —  Apex Industrial Technologies",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00023",
+          "start": 7,
+          "end": 11,
+          "text": "2020",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00024",
+          "start": 0,
+          "end": 146,
+          "text": "Spearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00025",
+          "start": 0,
+          "end": 118,
+          "text": "Renegotiated key Tier-1 carrier contracts delivering $9.6M in recurring freight savings over a 3-year agreement cycle.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00026",
+          "start": 0,
+          "end": 97,
+          "text": "Achieved OSHA voluntary protection status across all sites, improving team safety records by 64%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.end.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00022",
+          "start": 0,
+          "end": 73,
+          "text": "Director of Supply Chain & Manufacturing  —  Apex Industrial Technologies",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00023",
+          "start": 0,
+          "end": 27,
+          "text": "2015 – 2020  |  Detroit, MI",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00024",
+          "start": 0,
+          "end": 146,
+          "text": "Spearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00025",
+          "start": 97,
+          "end": 101,
+          "text": "year",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00026",
+          "start": 0,
+          "end": 97,
+          "text": "Achieved OSHA voluntary protection status across all sites, improving team safety records by 64%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00006",
+          "start": 0,
+          "end": 36,
+          "text": "• Multi-Site P&L Management ($250M+)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00006",
+          "start": 2,
+          "end": 36,
+          "text": "Multi-Site P&L Management ($250M+)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].text": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 34,
+          "text": "• Global Supply Chain Optimization",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 2,
+          "end": 34,
+          "text": "Global Supply Chain Optimization",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[2].text": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 37,
+          "text": "• Post-Merger Operational Integration",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[2].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 2,
+          "end": 37,
+          "text": "Post-Merger Operational Integration",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[3].text": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 41,
+          "text": "• Lean Six Sigma / Continuous Improvement",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[3].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 2,
+          "end": 41,
+          "text": "Lean Six Sigma / Continuous Improvement",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[4].text": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 44,
+          "text": "• Strategic Procurement & Vendor Negotiation",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[4].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 2,
+          "end": 44,
+          "text": "Strategic Procurement & Vendor Negotiation",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[5].text": {
+      "source_refs": [
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 39,
+          "text": "• Cross-Functional Executive Leadership",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[5].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00011",
+          "start": 2,
+          "end": 39,
+          "text": "Cross-Functional Executive Leadership",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[6].text": {
+      "source_refs": [
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 41,
+          "text": "• Enterprise Risk Management & Compliance",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[6].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00012",
+          "start": 2,
+          "end": 41,
+          "text": "Enterprise Risk Management & Compliance",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[7].text": {
+      "source_refs": [
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 41,
+          "text": "• ERP Systems Modernization (SAP S/4HANA)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[7].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00013",
+          "start": 2,
+          "end": 41,
+          "text": "ERP Systems Modernization (SAP S/4HANA)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[8].text": {
+      "source_refs": [
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 46,
+          "text": "• Boardroom Governance & Stakeholder Relations",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[8].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00014",
+          "start": 2,
+          "end": 46,
+          "text": "Boardroom Governance & Stakeholder Relations",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00030",
+          "start": 13,
+          "end": 107,
+          "text": "Lean Six Sigma Master Black Belt (CSSMBB)  •  APICS Certified Supply Chain Professional (CSCP)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].name.value": {
+      "source_refs": [
+        {
+          "line_id": "l00030",
+          "start": 13,
+          "end": 54,
+          "text": "Lean Six Sigma Master Black Belt (CSSMBB)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].details": {
+      "source_refs": [
+        {
+          "line_id": "l00030",
+          "start": 0,
+          "end": 107,
+          "text": "Credentials: Lean Six Sigma Master Black Belt (CSSMBB)  •  APICS Certified Supply Chain Professional (CSCP)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[1].text": {
+      "source_refs": [
+        {
+          "line_id": "l00030",
+          "start": 13,
+          "end": 107,
+          "text": "Lean Six Sigma Master Black Belt (CSSMBB)  •  APICS Certified Supply Chain Professional (CSCP)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[1].name.value": {
+      "source_refs": [
+        {
+          "line_id": "l00030",
+          "start": 59,
+          "end": 107,
+          "text": "APICS Certified Supply Chain Professional (CSCP)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[1].details": {
+      "source_refs": [
+        {
+          "line_id": "l00030",
+          "start": 0,
+          "end": 107,
+          "text": "Credentials: Lean Six Sigma Master Black Belt (CSSMBB)  •  APICS Certified Supply Chain Professional (CSCP)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    }
+  },
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "ELEANOR R. VANCE\nVICE PRESIDENT OF GLOBAL OPERATIONS & SUPPLY CHAIN\nChicago, IL  |  +1 (312) 555-8492  |  e.vance.executive@example.com  |  linkedin.com/in/eleanor-vance-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "summary",
+      "original_heading": "EXECUTIVE PROFILE",
+      "heading_line_id": "l00003",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00004"
+      ],
+      "text": "Accomplished Operations Executive with 16+ years of enterprise leadership managing $250M+ P&L operations across North America, EMEA, and APAC. Recognized for orchestrating large-scale operational transformations, post-merger integrations, Lean Six Sigma deployment, and end-to-end logistics modernization. Trusted advisor to Board of Directors with proven ability to scale global operating margins while delivering superior customer satisfaction."
+    },
+    {
+      "id": "s002",
+      "canonical": "skills",
+      "original_heading": "CORE EXECUTIVE COMPETENCIES",
+      "heading_line_id": "l00005",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00006",
+        "l00007",
+        "l00008",
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014"
+      ],
+      "text": "• Multi-Site P&L Management ($250M+)\n• Global Supply Chain Optimization\n• Post-Merger Operational Integration\n• Lean Six Sigma / Continuous Improvement\n• Strategic Procurement & Vendor Negotiation\n• Cross-Functional Executive Leadership\n• Enterprise Risk Management & Compliance\n• ERP Systems Modernization (SAP S/4HANA)\n• Boardroom Governance & Stakeholder Relations"
+    },
+    {
+      "id": "s003",
+      "canonical": "experience",
+      "original_heading": "EXECUTIVE EXPERIENCE",
+      "heading_line_id": "l00015",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025",
+        "l00026"
+      ],
+      "text": "Vice President of Global Operations  —  Crestview Manufacturing & Logistics Group\n2020 – Present  |  Chicago, IL\nOversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.\nInstituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.\nLed cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.\nPresented quarterly strategic updates, operational KPIs, and risk evaluations directly to the Executive Committee and Board of Directors.\nDirector of Supply Chain & Manufacturing  —  Apex Industrial Technologies\n2015 – 2020  |  Detroit, MI\nSpearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.\nRenegotiated key Tier-1 carrier contracts delivering $9.6M in recurring freight savings over a 3-year agreement cycle.\nAchieved OSHA voluntary protection status across all sites, improving team safety records by 64%."
+    },
+    {
+      "id": "s004",
+      "canonical": "education",
+      "original_heading": "EDUCATION & CREDENTIALS",
+      "heading_line_id": "l00027",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00028",
+        "l00029"
+      ],
+      "text": "Master of Business Administration (MBA)  •  The University of Chicago Booth School of Business (2013)\nBachelor of Science in Industrial Engineering  •  Purdue University (2007)"
+    },
+    {
+      "id": "s005",
+      "canonical": "certifications",
+      "original_heading": "Credentials:",
+      "heading_line_id": "l00030:h",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00030:b"
+      ],
+      "text": "Lean Six Sigma Master Black Belt (CSSMBB)  •  APICS Certified Supply Chain Professional (CSCP)"
+    }
+  ],
+  "unclassified": [],
+  "raw_lines": [
+    {
+      "id": "l00000",
+      "text": "ELEANOR R. VANCE",
+      "runs": [
+        {
+          "text": "ELEANOR R. VANCE",
+          "bold": true,
+          "size": 22.0,
+          "color": "222222",
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00000"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00001",
+      "text": "VICE PRESIDENT OF GLOBAL OPERATIONS & SUPPLY CHAIN",
+      "runs": [
+        {
+          "text": "VICE PRESIDENT OF GLOBAL OPERATIONS & SUPPLY CHAIN",
+          "bold": true,
+          "size": 11.0,
+          "color": "782828",
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00001"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00002",
+      "text": "Chicago, IL  |  +1 (312) 555-8492  |  e.vance.executive@example.com  |  linkedin.com/in/eleanor-vance-dummy",
+      "runs": [
+        {
+          "text": "Chicago, IL  |  +1 (312) 555-8492  |  e.vance.executive@example.com  |  linkedin.com/in/eleanor-vance-dummy",
+          "bold": false,
+          "size": 9.5,
+          "color": "505050",
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00002"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00003",
+      "text": "EXECUTIVE PROFILE",
+      "runs": [
+        {
+          "text": "EXECUTIVE PROFILE",
+          "bold": true,
+          "size": 11.0,
+          "color": "782828",
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00003"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00004",
+      "text": "Accomplished Operations Executive with 16+ years of enterprise leadership managing $250M+ P&L operations across North America, EMEA, and APAC. Recognized for orchestrating large-scale operational transformations, post-merger integrations, Lean Six Sigma deployment, and end-to-end logistics modernization. Trusted advisor to Board of Directors with proven ability to scale global operating margins while delivering superior customer satisfaction.",
+      "runs": [
+        {
+          "text": "Accomplished Operations Executive with 16+ years of enterprise leadership managing $250M+ P&L operations across North America, EMEA, and APAC. Recognized for orchestrating large-scale operational transformations, post-merger integrations, Lean Six Sigma deployment, and end-to-end logistics modernization. Trusted advisor to Board of Directors with proven ability to scale global operating margins while delivering superior customer satisfaction.",
+          "bold": false,
+          "size": 10.0,
+          "color": null,
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00004"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00005",
+      "text": "CORE EXECUTIVE COMPETENCIES",
+      "runs": [
+        {
+          "text": "CORE EXECUTIVE COMPETENCIES",
+          "bold": true,
+          "size": 11.0,
+          "color": "782828",
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00005"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00006",
+      "text": "• Multi-Site P&L Management ($250M+)",
+      "runs": [
+        {
+          "text": "• Multi-Site P&L Management ($250M+)",
+          "bold": false,
+          "size": 8.5,
+          "color": "323232",
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00006"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00007",
+      "text": "• Global Supply Chain Optimization",
+      "runs": [
+        {
+          "text": "• Global Supply Chain Optimization",
+          "bold": false,
+          "size": 8.5,
+          "color": "323232",
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00007"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00008",
+      "text": "• Post-Merger Operational Integration",
+      "runs": [
+        {
+          "text": "• Post-Merger Operational Integration",
+          "bold": false,
+          "size": 8.5,
+          "color": "323232",
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c2",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 2,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00008"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00009",
+      "text": "• Lean Six Sigma / Continuous Improvement",
+      "runs": [
+        {
+          "text": "• Lean Six Sigma / Continuous Improvement",
+          "bold": false,
+          "size": 8.5,
+          "color": "323232",
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r1:c0",
+      "table": "word/document.xml:t1",
+      "row": 1,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00009"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00010",
+      "text": "• Strategic Procurement & Vendor Negotiation",
+      "runs": [
+        {
+          "text": "• Strategic Procurement & Vendor Negotiation",
+          "bold": false,
+          "size": 8.5,
+          "color": "323232",
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r1:c1",
+      "table": "word/document.xml:t1",
+      "row": 1,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00010"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00011",
+      "text": "• Cross-Functional Executive Leadership",
+      "runs": [
+        {
+          "text": "• Cross-Functional Executive Leadership",
+          "bold": false,
+          "size": 8.5,
+          "color": "323232",
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r1:c2",
+      "table": "word/document.xml:t1",
+      "row": 1,
+      "cell": 2,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00011"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00012",
+      "text": "• Enterprise Risk Management & Compliance",
+      "runs": [
+        {
+          "text": "• Enterprise Risk Management & Compliance",
+          "bold": false,
+          "size": 8.5,
+          "color": "323232",
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r2:c0",
+      "table": "word/document.xml:t1",
+      "row": 2,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00012"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00013",
+      "text": "• ERP Systems Modernization (SAP S/4HANA)",
+      "runs": [
+        {
+          "text": "• ERP Systems Modernization (SAP S/4HANA)",
+          "bold": false,
+          "size": 8.5,
+          "color": "323232",
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r2:c1",
+      "table": "word/document.xml:t1",
+      "row": 2,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00013"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00014",
+      "text": "• Boardroom Governance & Stakeholder Relations",
+      "runs": [
+        {
+          "text": "• Boardroom Governance & Stakeholder Relations",
+          "bold": false,
+          "size": 8.5,
+          "color": "323232",
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r2:c2",
+      "table": "word/document.xml:t1",
+      "row": 2,
+      "cell": 2,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00014"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00015",
+      "text": "EXECUTIVE EXPERIENCE",
+      "runs": [
+        {
+          "text": "EXECUTIVE EXPERIENCE",
+          "bold": true,
+          "size": 11.0,
+          "color": "782828",
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00015"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00016",
+      "text": "Vice President of Global Operations  —  Crestview Manufacturing & Logistics Group",
+      "runs": [
+        {
+          "text": "Vice President of Global Operations  —  Crestview Manufacturing & Logistics Group",
+          "bold": true,
+          "size": 10.5,
+          "color": null,
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00016"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00017",
+      "text": "2020 – Present  |  Chicago, IL",
+      "runs": [
+        {
+          "text": "2020 – Present  |  Chicago, IL",
+          "bold": false,
+          "size": 9.0,
+          "color": "646464",
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00017"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00018",
+      "text": "Oversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.",
+      "runs": [
+        {
+          "text": "Oversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00018"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00019",
+      "text": "Instituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.",
+      "runs": [
+        {
+          "text": "Instituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00019"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00020",
+      "text": "Led cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.",
+      "runs": [
+        {
+          "text": "Led cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00020"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00021",
+      "text": "Presented quarterly strategic updates, operational KPIs, and risk evaluations directly to the Executive Committee and Board of Directors.",
+      "runs": [
+        {
+          "text": "Presented quarterly strategic updates, operational KPIs, and risk evaluations directly to the Executive Committee and Board of Directors.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00021"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00022",
+      "text": "Director of Supply Chain & Manufacturing  —  Apex Industrial Technologies",
+      "runs": [
+        {
+          "text": "Director of Supply Chain & Manufacturing  —  Apex Industrial Technologies",
+          "bold": true,
+          "size": 10.5,
+          "color": null,
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00022"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00023",
+      "text": "2015 – 2020  |  Detroit, MI",
+      "runs": [
+        {
+          "text": "2015 – 2020  |  Detroit, MI",
+          "bold": false,
+          "size": 9.0,
+          "color": "646464",
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00023"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00024",
+      "text": "Spearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.",
+      "runs": [
+        {
+          "text": "Spearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00024"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00025",
+      "text": "Renegotiated key Tier-1 carrier contracts delivering $9.6M in recurring freight savings over a 3-year agreement cycle.",
+      "runs": [
+        {
+          "text": "Renegotiated key Tier-1 carrier contracts delivering $9.6M in recurring freight savings over a 3-year agreement cycle.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00025"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00026",
+      "text": "Achieved OSHA voluntary protection status across all sites, improving team safety records by 64%.",
+      "runs": [
+        {
+          "text": "Achieved OSHA voluntary protection status across all sites, improving team safety records by 64%.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00026"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00027",
+      "text": "EDUCATION & CREDENTIALS",
+      "runs": [
+        {
+          "text": "EDUCATION & CREDENTIALS",
+          "bold": true,
+          "size": 11.0,
+          "color": "782828",
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00027"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00028",
+      "text": "Master of Business Administration (MBA)  •  The University of Chicago Booth School of Business (2013)",
+      "runs": [
+        {
+          "text": "Master of Business Administration (MBA)  •  The University of Chicago Booth School of Business (2013)",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00028"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00029",
+      "text": "Bachelor of Science in Industrial Engineering  •  Purdue University (2007)",
+      "runs": [
+        {
+          "text": "Bachelor of Science in Industrial Engineering  •  Purdue University (2007)",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00029"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00030",
+      "text": "Credentials: Lean Six Sigma Master Black Belt (CSSMBB)  •  APICS Certified Supply Chain Professional (CSCP)",
+      "runs": [
+        {
+          "text": "Credentials: Lean Six Sigma Master Black Belt (CSSMBB)  •  APICS Certified Supply Chain Professional (CSCP)",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Georgia",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00030"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    }
+  ],
+  "raw_text": "ELEANOR R. VANCE\nVICE PRESIDENT OF GLOBAL OPERATIONS & SUPPLY CHAIN\nChicago, IL  |  +1 (312) 555-8492  |  e.vance.executive@example.com  |  linkedin.com/in/eleanor-vance-dummy\nEXECUTIVE PROFILE\nAccomplished Operations Executive with 16+ years of enterprise leadership managing $250M+ P&L operations across North America, EMEA, and APAC. Recognized for orchestrating large-scale operational transformations, post-merger integrations, Lean Six Sigma deployment, and end-to-end logistics modernization. Trusted advisor to Board of Directors with proven ability to scale global operating margins while delivering superior customer satisfaction.\nCORE EXECUTIVE COMPETENCIES\n• Multi-Site P&L Management ($250M+)\n• Global Supply Chain Optimization\n• Post-Merger Operational Integration\n• Lean Six Sigma / Continuous Improvement\n• Strategic Procurement & Vendor Negotiation\n• Cross-Functional Executive Leadership\n• Enterprise Risk Management & Compliance\n• ERP Systems Modernization (SAP S/4HANA)\n• Boardroom Governance & Stakeholder Relations\nEXECUTIVE EXPERIENCE\nVice President of Global Operations  —  Crestview Manufacturing & Logistics Group\n2020 – Present  |  Chicago, IL\nOversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.\nInstituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.\nLed cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.\nPresented quarterly strategic updates, operational KPIs, and risk evaluations directly to the Executive Committee and Board of Directors.\nDirector of Supply Chain & Manufacturing  —  Apex Industrial Technologies\n2015 – 2020  |  Detroit, MI\nSpearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.\nRenegotiated key Tier-1 carrier contracts delivering $9.6M in recurring freight savings over a 3-year agreement cycle.\nAchieved OSHA voluntary protection status across all sites, improving team safety records by 64%.\nEDUCATION & CREDENTIALS\nMaster of Business Administration (MBA)  •  The University of Chicago Booth School of Business (2013)\nBachelor of Science in Industrial Engineering  •  Purdue University (2007)\nCredentials: Lean Six Sigma Master Black Belt (CSSMBB)  •  APICS Certified Supply Chain Professional (CSCP)",
+  "validation": {
+    "issues": [],
+    "legacy_schema_errors": [],
+    "completeness": {
+      "status": "pass",
+      "reference_words": 339,
+      "extracted_words": 339,
+      "matched_words": 339,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "semantic_accuracy": "not_established_by_schema_validation"
+  },
+  "review_status": "mapped_unverified",
+  "comparison": {
+    "provided": true,
+    "changed": false,
+    "ground_truth": false
+  }
+}

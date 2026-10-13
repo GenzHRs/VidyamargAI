@@ -1,0 +1,420 @@
+{
+  "schema_version": "3.0.0",
+  "section_order": [
+    "contact",
+    "summary",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "certifications",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "contact": {
+    "name": {
+      "value": "CLAIRE DUPUIS",
+      "confidence": 0.92,
+      "source_line_ids": [
+        "l00025"
+      ]
+    },
+    "emails": [
+      {
+        "value": "claire.dupuis@example.com",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalization": "none",
+        "raw": "claire.dupuis@example.com"
+      }
+    ],
+    "phones": [
+      {
+        "value": "+1 (415) 555-0199",
+        "confidence": 0.95,
+        "source_line_ids": [
+          "l00004"
+        ],
+        "normalized": "+14155550199",
+        "valid": true
+      }
+    ],
+    "locations": [
+      {
+        "value": "San Francisco, CA",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00006"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "value": "claireui.example.com",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00008"
+        ],
+        "kind": "website"
+      },
+      {
+        "value": "linkedin.com/in/claire-dummy",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00010"
+        ],
+        "kind": "linkedin"
+      }
+    ]
+  },
+  "summary": [
+    {
+      "text": "User-centric Product Designer with 6+ years specializing in enterprise workflows, complex telemetry dashboards, and multi-platform design governance. Proven success boosting feature adoption by 38% and reducing customer support tickets through clear user architecture.",
+      "source_line_ids": [
+        "l00028"
+      ],
+      "value": "User-centric Product Designer with 6+ years specializing in enterprise workflows, complex telemetry dashboards, and multi-platform design governance. Proven success boosting feature adoption by 38% and reducing customer support tickets through clear user architecture."
+    }
+  ],
+  "experience": [
+    {
+      "title": {
+        "value": "Lead Product Designer",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00030"
+        ]
+      },
+      "company": {
+        "value": "CloudScale Networks",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00030"
+        ]
+      },
+      "location": {
+        "value": null,
+        "confidence": 0.65,
+        "source_line_ids": [
+          "l00030"
+        ]
+      },
+      "dates": {
+        "value": {
+          "start": "2022",
+          "end": "Present"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00031"
+        ]
+      },
+      "bullets": [
+        "• Architected enterprise monitoring dashboard serving 4,000+ enterprise accounts, increasing Daily Active Users (DAU) by 29%.",
+        "• Unified 3 disparate web apps under a single Figma token library, cutting engineering UI handoff churn by 40%.",
+        "• Conducted 50+ customer interviews and usability audits with Fortune 500 network administrators."
+      ],
+      "text": "Lead Product Designer | CloudScale Networks\n2022 – Present\n• Architected enterprise monitoring dashboard serving 4,000+ enterprise accounts, increasing Daily Active Users (DAU) by 29%.\n• Unified 3 disparate web apps under a single Figma token library, cutting engineering UI handoff churn by 40%.\n• Conducted 50+ customer interviews and usability audits with Fortune 500 network administrators.",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00030",
+        "l00031",
+        "l00032",
+        "l00033",
+        "l00034"
+      ]
+    },
+    {
+      "title": {
+        "value": "Senior UX Designer",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00035"
+        ]
+      },
+      "company": {
+        "value": "AeroMetrics Analytics",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00035"
+        ]
+      },
+      "location": {
+        "value": null,
+        "confidence": 0.65,
+        "source_line_ids": [
+          "l00035"
+        ]
+      },
+      "dates": {
+        "value": {
+          "start": "2019",
+          "end": "2022"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00036"
+        ]
+      },
+      "bullets": [
+        "• Led 0-to-1 redesign of data pipeline visualization tools, achieving a System Usability Scale (SUS) score increase from 62 to 84.",
+        "• Collaborated daily with frontend engineers in React and Storybook to ensure zero visual regression."
+      ],
+      "text": "Senior UX Designer | AeroMetrics Analytics\n2019 – 2022\n• Led 0-to-1 redesign of data pipeline visualization tools, achieving a System Usability Scale (SUS) score increase from 62 to 84.\n• Collaborated daily with frontend engineers in React and Storybook to ensure zero visual regression.",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00035",
+        "l00036",
+        "l00037",
+        "l00038"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "text": "B.S. in Human-Computer Interaction\nUniversity of Washington\nGraduated: 2019\nGPA: 3.85 / 4.0",
+      "source_line_ids": [
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024"
+      ],
+      "degree": {
+        "value": "B.S. in Human-Computer Interaction",
+        "source_line_ids": [
+          "l00021"
+        ],
+        "confidence": 0.85
+      },
+      "institution": {
+        "value": "University of Washington",
+        "source_line_ids": [
+          "l00022"
+        ],
+        "confidence": 0.85
+      },
+      "dates": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "graduation": {
+        "value": "2019",
+        "source_line_ids": [
+          "l00023"
+        ],
+        "confidence": 0.85
+      },
+      "location": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "gpa": {
+        "value": {
+          "score": "3.85",
+          "scale": "4.0"
+        },
+        "source_line_ids": [
+          "l00024"
+        ],
+        "confidence": 0.85
+      }
+    }
+  ],
+  "projects": [],
+  "skills": [
+    {
+      "text": "• Wireframing & Prototyping",
+      "source_line_ids": [
+        "l00012"
+      ],
+      "category": null,
+      "items": [
+        "Wireframing & Prototyping"
+      ]
+    },
+    {
+      "text": "• Figma & FigJam",
+      "source_line_ids": [
+        "l00013"
+      ],
+      "category": null,
+      "items": [
+        "Figma & FigJam"
+      ]
+    },
+    {
+      "text": "• Design System Tokens",
+      "source_line_ids": [
+        "l00014"
+      ],
+      "category": null,
+      "items": [
+        "Design System Tokens"
+      ]
+    },
+    {
+      "text": "• User Journey Mapping",
+      "source_line_ids": [
+        "l00015"
+      ],
+      "category": null,
+      "items": [
+        "User Journey Mapping"
+      ]
+    },
+    {
+      "text": "• Usability Testing",
+      "source_line_ids": [
+        "l00016"
+      ],
+      "category": null,
+      "items": [
+        "Usability Testing"
+      ]
+    },
+    {
+      "text": "• WCAG 2.1 AA Compliance",
+      "source_line_ids": [
+        "l00017"
+      ],
+      "category": null,
+      "items": [
+        "WCAG 2.1 AA Compliance"
+      ]
+    },
+    {
+      "text": "• HTML/CSS / Tailwind",
+      "source_line_ids": [
+        "l00018"
+      ],
+      "category": null,
+      "items": [
+        "HTML/CSS / Tailwind"
+      ]
+    },
+    {
+      "text": "• Agile & Sprint Planning",
+      "source_line_ids": [
+        "l00019"
+      ],
+      "category": null,
+      "items": [
+        "Agile & Sprint Planning"
+      ]
+    }
+  ],
+  "certifications": [],
+  "other_sections": [],
+  "review": [
+    {
+      "path": "fields.experience[0].location",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.65
+    },
+    {
+      "path": "fields.experience[1].location",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.65
+    }
+  ],
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "contact",
+      "original_heading": "CONTACT",
+      "heading_line_id": "l00000",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00001",
+        "l00002",
+        "l00003",
+        "l00004",
+        "l00005",
+        "l00006",
+        "l00007",
+        "l00008",
+        "l00009",
+        "l00010"
+      ],
+      "text": "Email:\nclaire.dupuis@example.com\nPhone:\n+1 (415) 555-0199\nLocation:\nSan Francisco, CA\nPortfolio:\nclaireui.example.com\nLinkedIn:\nlinkedin.com/in/claire-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "skills",
+      "original_heading": "SKILLS",
+      "heading_line_id": "l00011",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015",
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019"
+      ],
+      "text": "• Wireframing & Prototyping\n• Figma & FigJam\n• Design System Tokens\n• User Journey Mapping\n• Usability Testing\n• WCAG 2.1 AA Compliance\n• HTML/CSS / Tailwind\n• Agile & Sprint Planning"
+    },
+    {
+      "id": "s002",
+      "canonical": "education",
+      "original_heading": "EDUCATION",
+      "heading_line_id": "l00020",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024"
+      ],
+      "text": "B.S. in Human-Computer Interaction\nUniversity of Washington\nGraduated: 2019\nGPA: 3.85 / 4.0"
+    },
+    {
+      "id": "s003",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00025",
+        "l00026"
+      ],
+      "text": "CLAIRE DUPUIS\nSenior UX/UI Designer | Enterprise SaaS & Cloud Platforms"
+    },
+    {
+      "id": "s004",
+      "canonical": "summary",
+      "original_heading": "PROFILE",
+      "heading_line_id": "l00027",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00028"
+      ],
+      "text": "User-centric Product Designer with 6+ years specializing in enterprise workflows, complex telemetry dashboards, and multi-platform design governance. Proven success boosting feature adoption by 38% and reducing customer support tickets through clear user architecture."
+    },
+    {
+      "id": "s005",
+      "canonical": "experience",
+      "original_heading": "EXPERIENCE",
+      "heading_line_id": "l00029",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00030",
+        "l00031",
+        "l00032",
+        "l00033",
+        "l00034",
+        "l00035",
+        "l00036",
+        "l00037",
+        "l00038"
+      ],
+      "text": "Lead Product Designer | CloudScale Networks\n2022 – Present\n• Architected enterprise monitoring dashboard serving 4,000+ enterprise accounts, increasing Daily Active Users (DAU) by 29%.\n• Unified 3 disparate web apps under a single Figma token library, cutting engineering UI handoff churn by 40%.\n• Conducted 50+ customer interviews and usability audits with Fortune 500 network administrators.\nSenior UX Designer | AeroMetrics Analytics\n2019 – 2022\n• Led 0-to-1 redesign of data pipeline visualization tools, achieving a System Usability Scale (SUS) score increase from 62 to 84.\n• Collaborated daily with frontend engineers in React and Storybook to ensure zero visual regression."
+    }
+  ]
+}

@@ -1,0 +1,409 @@
+{
+  "expected": 104,
+  "actual": 104,
+  "exact_matches": 47,
+  "recall": 0.4519230769230769,
+  "precision": 0.4519230769230769,
+  "failures": [
+    {
+      "resume": "R01",
+      "job_index": 0,
+      "bullet_index": 0,
+      "expected": "Developed AI-powered applications using Python, FastAPI, NLP, LLMs (OpenAI,Gemini), and Retrieval-Augmented Generation (RAG).",
+      "actual": "– Developed AI-powered applications using Python, FastAPI, NLP, LLMs (OpenAI,Gemini), and Retrieval-Augmented Generation (RAG)."
+    },
+    {
+      "resume": "R01",
+      "job_index": 0,
+      "bullet_index": 1,
+      "expected": "Built scalable REST APIs for AI-based document processing and intelligent automation.",
+      "actual": "– Built scalable REST APIs for AI-based document processing and intelligent automation."
+    },
+    {
+      "resume": "R01",
+      "job_index": 0,
+      "bullet_index": 2,
+      "expected": "Integrated OpenAI and Gemini APIs for document summarization and AI workflows using prompt engineering.",
+      "actual": "– Integrated OpenAI and Gemini APIs for document summarization and AI workflows using prompt engineering."
+    },
+    {
+      "resume": "R01",
+      "job_index": 0,
+      "bullet_index": 3,
+      "expected": "Worked on OCR, NER, embeddings, and data preprocessing for document analysis.",
+      "actual": "– Worked on OCR, NER, embeddings, and data preprocessing for document analysis."
+    },
+    {
+      "resume": "R01",
+      "job_index": 0,
+      "bullet_index": 4,
+      "expected": "Developed backend services using FastAPI and PostgreSQL for real-time event-driven processing.",
+      "actual": "– Developed backend services using FastAPI and PostgreSQL for real-time event-driven processing."
+    },
+    {
+      "resume": "R01",
+      "job_index": 0,
+      "bullet_index": 5,
+      "expected": "Collaborated with cross-functional teams to build and deploy production-ready AI solutions.",
+      "actual": "– Collaborated with cross-functional teams to build and deploy production-ready AI solutions."
+    },
+    {
+      "resume": "R02",
+      "job_index": 0,
+      "bullet_index": 0,
+      "expected": "Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.",
+      "actual": "• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores."
+    },
+    {
+      "resume": "R02",
+      "job_index": 0,
+      "bullet_index": 1,
+      "expected": "Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.",
+      "actual": "• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces."
+    },
+    {
+      "resume": "R02",
+      "job_index": 0,
+      "bullet_index": 2,
+      "expected": "Managed 4 junior graphic designers, motion animators, and external packaging vendors.",
+      "actual": "• Managed 4 junior graphic designers, motion animators, and external packaging vendors."
+    },
+    {
+      "resume": "R02",
+      "job_index": 1,
+      "bullet_index": 0,
+      "expected": "Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.",
+      "actual": "• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products."
+    },
+    {
+      "resume": "R02",
+      "job_index": 1,
+      "bullet_index": 1,
+      "expected": "Produced digital campaign assets generating 12M+ social media impressions.",
+      "actual": "• Produced digital campaign assets generating 12M+ social media impressions."
+    },
+    {
+      "resume": "R03",
+      "job_index": 0,
+      "bullet_index": 0,
+      "expected": "Directed migration of 140 on-premise microservices to AWS EKS with zero client downtime, reducing annual hosting overhead by $1.8M.",
+      "actual": "• Directed migration of 140 on-premise microservices to AWS EKS with zero client downtime, reducing annual hosting overhead by $1.8M."
+    },
+    {
+      "resume": "R03",
+      "job_index": 0,
+      "bullet_index": 1,
+      "expected": "Authored disaster recovery strategy achieving RPO < 15 seconds and RTO < 2 minutes across multi-region clusters.",
+      "actual": "• Authored disaster recovery strategy achieving RPO < 15 seconds and RTO < 2 minutes across multi-region clusters."
+    },
+    {
+      "resume": "R03",
+      "job_index": 0,
+      "bullet_index": 2,
+      "expected": "Governed engineering standards across 45 platform engineers and SREs.",
+      "actual": "• Governed engineering standards across 45 platform engineers and SREs."
+    },
+    {
+      "resume": "R03",
+      "job_index": 1,
+      "bullet_index": 0,
+      "expected": "Built automated compliance-as-code pipelines enabling rapid SOC2 Type II and FedRAMP readiness.",
+      "actual": "• Built automated compliance-as-code pipelines enabling rapid SOC2 Type II and FedRAMP readiness."
+    },
+    {
+      "resume": "R03",
+      "job_index": 1,
+      "bullet_index": 1,
+      "expected": "Standardized infrastructure provisioning with reusable Terraform modules across 12 application teams.",
+      "actual": "• Standardized infrastructure provisioning with reusable Terraform modules across 12 application teams."
+    },
+    {
+      "resume": "R04",
+      "job_index": 0,
+      "bullet_index": 0,
+      "expected": "Managed $1.1M monthly budget across Meta, Google, TikTok, and Apple Search Ads.",
+      "actual": "• Managed $1.1M monthly budget across Meta, Google, TikTok, and Apple Search Ads."
+    },
+    {
+      "resume": "R04",
+      "job_index": 0,
+      "bullet_index": 1,
+      "expected": "Built creative testing pipeline producing 40+ iterative ad variations weekly, lowering customer acquisition cost (CAC) by 42%.",
+      "actual": "• Built creative testing pipeline producing 40+ iterative ad variations weekly, lowering customer acquisition cost (CAC) by 42%."
+    },
+    {
+      "resume": "R04",
+      "job_index": 0,
+      "bullet_index": 2,
+      "expected": "Partnered with product and engineering teams to optimize subscription paywall conversion by 19%.",
+      "actual": "• Partnered with product and engineering teams to optimize subscription paywall conversion by 19%."
+    },
+    {
+      "resume": "R04",
+      "job_index": 1,
+      "bullet_index": 0,
+      "expected": "Scaled e-commerce customer base from 25,000 to 220,000 paying users within 24 months.",
+      "actual": "• Scaled e-commerce customer base from 25,000 to 220,000 paying users within 24 months."
+    },
+    {
+      "resume": "R04",
+      "job_index": 1,
+      "bullet_index": 1,
+      "expected": "Designed multi-touch attribution model in BigQuery & Tableau to track ROAS across paid, organic, and influencer channels.",
+      "actual": "• Designed multi-touch attribution model in BigQuery & Tableau to track ROAS across paid, organic, and influencer channels."
+    },
+    {
+      "resume": "R05",
+      "job_index": 0,
+      "bullet_index": 0,
+      "expected": "Spearheaded enterprise transformation plan across 5 regional clinical branches, capturing $11.4M in recurring SG&A; cost savings.",
+      "actual": "• Spearheaded enterprise transformation plan across 5 regional clinical branches, capturing $11.4M in recurring SG&A; cost savings."
+    },
+    {
+      "resume": "R05",
+      "job_index": 0,
+      "bullet_index": 1,
+      "expected": "Standardized clinical procurement workflows, reducing vendor contract turnaround from 35 days to 8 days.",
+      "actual": "• Standardized clinical procurement workflows, reducing vendor contract turnaround from 35 days to 8 days."
+    },
+    {
+      "resume": "R05",
+      "job_index": 0,
+      "bullet_index": 2,
+      "expected": "Reported monthly operating review and corporate risk updates directly to Chief Operating Officer and Board.",
+      "actual": "• Reported monthly operating review and corporate risk updates directly to Chief Operating Officer and Board."
+    },
+    {
+      "resume": "R05",
+      "job_index": 1,
+      "bullet_index": 0,
+      "expected": "Led 7-member management consulting teams advising Fortune 100 enterprise clients on carve-outs and M&A; integration.",
+      "actual": "• Led 7-member management consulting teams advising Fortune 100 enterprise clients on carve-outs and M&A; integration."
+    },
+    {
+      "resume": "R05",
+      "job_index": 1,
+      "bullet_index": 1,
+      "expected": "Designed organizational restructurings for global manufacturing companies with 4,000+ employees.",
+      "actual": "• Designed organizational restructurings for global manufacturing companies with 4,000+ employees."
+    },
+    {
+      "resume": "R06",
+      "job_index": 0,
+      "bullet_index": 0,
+      "expected": "Architected enterprise monitoring dashboard serving 4,000+ enterprise accounts, increasing Daily Active Users (DAU) by 29%.",
+      "actual": "• Architected enterprise monitoring dashboard serving 4,000+ enterprise accounts, increasing Daily Active Users (DAU) by 29%."
+    },
+    {
+      "resume": "R06",
+      "job_index": 0,
+      "bullet_index": 1,
+      "expected": "Unified 3 disparate web apps under a single Figma token library, cutting engineering UI handoff churn by 40%.",
+      "actual": "• Unified 3 disparate web apps under a single Figma token library, cutting engineering UI handoff churn by 40%."
+    },
+    {
+      "resume": "R06",
+      "job_index": 0,
+      "bullet_index": 2,
+      "expected": "Conducted 50+ customer interviews and usability audits with Fortune 500 network administrators.",
+      "actual": "• Conducted 50+ customer interviews and usability audits with Fortune 500 network administrators."
+    },
+    {
+      "resume": "R06",
+      "job_index": 1,
+      "bullet_index": 0,
+      "expected": "Led 0-to-1 redesign of data pipeline visualization tools, achieving a System Usability Scale (SUS) score increase from 62 to 84.",
+      "actual": "• Led 0-to-1 redesign of data pipeline visualization tools, achieving a System Usability Scale (SUS) score increase from 62 to 84."
+    },
+    {
+      "resume": "R06",
+      "job_index": 1,
+      "bullet_index": 1,
+      "expected": "Collaborated daily with frontend engineers in React and Storybook to ensure zero visual regression.",
+      "actual": "• Collaborated daily with frontend engineers in React and Storybook to ensure zero visual regression."
+    },
+    {
+      "resume": "R07",
+      "job_index": 0,
+      "bullet_index": 0,
+      "expected": "Directed quarterly forecast cadence for $180M commercial asset portfolio with 98.4% variance accuracy.",
+      "actual": "• Directed quarterly forecast cadence for $180M commercial asset portfolio with 98.4% variance accuracy."
+    },
+    {
+      "resume": "R07",
+      "job_index": 0,
+      "bullet_index": 1,
+      "expected": "Automated monthly executive slide generation via SQL & Power Query, saving 18 manual work-hours per cycle.",
+      "actual": "• Automated monthly executive slide generation via SQL & Power Query, saving 18 manual work-hours per cycle."
+    },
+    {
+      "resume": "R07",
+      "job_index": 0,
+      "bullet_index": 2,
+      "expected": "Assessed financial underwriting for 5 successful acquisitions totaling $44M.",
+      "actual": "• Assessed financial underwriting for 5 successful acquisitions totaling $44M."
+    },
+    {
+      "resume": "R07",
+      "job_index": 1,
+      "bullet_index": 0,
+      "expected": "Maintained 3-statement operating models and liquidity sensitivity stress tests.",
+      "actual": "• Maintained 3-statement operating models and liquidity sensitivity stress tests."
+    },
+    {
+      "resume": "R07",
+      "job_index": 1,
+      "bullet_index": 1,
+      "expected": "Streamlined SG&A operational expenditures across 12 branch locations, recovering $1.2M in annual cost leakage.",
+      "actual": "• Streamlined SG&A operational expenditures across 12 branch locations, recovering $1.2M in annual cost leakage."
+    },
+    {
+      "resume": "R08",
+      "job_index": 0,
+      "bullet_index": 0,
+      "expected": "Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1.",
+      "actual": "• Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1."
+    },
+    {
+      "resume": "R08",
+      "job_index": 0,
+      "bullet_index": 1,
+      "expected": "Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%.",
+      "actual": "• Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%."
+    },
+    {
+      "resume": "R08",
+      "job_index": 1,
+      "bullet_index": 0,
+      "expected": "Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).",
+      "actual": "• Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester)."
+    },
+    {
+      "resume": "R08",
+      "job_index": 1,
+      "bullet_index": 1,
+      "expected": "Trained 180+ global field sales engineers on solution messaging and pricing tiers.",
+      "actual": "• Trained 180+ global field sales engineers on solution messaging and pricing tiers."
+    },
+    {
+      "resume": "R09",
+      "job_index": 0,
+      "bullet_index": 0,
+      "expected": "Built GitOps deployment pipelines via ArgoCD, shortening production release cycles from 3 hours to 4 minutes.",
+      "actual": "• Built GitOps deployment pipelines via ArgoCD, shortening production release cycles from 3 hours to 4 minutes."
+    },
+    {
+      "resume": "R09",
+      "job_index": 0,
+      "bullet_index": 1,
+      "expected": "Cut monthly AWS infrastructure spend by 32% ($45,000/mo) through spot instance orchestration and Karpenter autoscaling.",
+      "actual": "• Cut monthly AWS infrastructure spend by 32% ($45,000/mo) through spot instance orchestration and Karpenter autoscaling."
+    },
+    {
+      "resume": "R09",
+      "job_index": 0,
+      "bullet_index": 2,
+      "expected": "Designed multi-region failover architecture on AWS across us-east-1 and us-west-2.",
+      "actual": "• Designed multi-region failover architecture on AWS across us-east-1 and us-west-2."
+    },
+    {
+      "resume": "R09",
+      "job_index": 1,
+      "bullet_index": 0,
+      "expected": "Administered 14 production Kubernetes clusters hosting 400+ Docker pods.",
+      "actual": "• Administered 14 production Kubernetes clusters hosting 400+ Docker pods."
+    },
+    {
+      "resume": "R09",
+      "job_index": 1,
+      "bullet_index": 1,
+      "expected": "Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce MTTR from 45 mins to 8 mins.",
+      "actual": "• Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce MTTR from 45 mins to 8 mins."
+    },
+    {
+      "resume": "R10",
+      "job_index": 0,
+      "bullet_index": 0,
+      "expected": "Supervised end-to-end SOX testing across 12 business units, identifying and remediation 14 material control deficiencies prior to external audit.",
+      "actual": "• Supervised end-to-end SOX testing across 12 business units, identifying and remediation 14 material control deficiencies prior to external audit."
+    },
+    {
+      "resume": "R10",
+      "job_index": 0,
+      "bullet_index": 1,
+      "expected": "Led audit engagement with Big 4 firm, resulting in clean unqualified audit opinion 3 consecutive years.",
+      "actual": "• Led audit engagement with Big 4 firm, resulting in clean unqualified audit opinion 3 consecutive years."
+    },
+    {
+      "resume": "R10",
+      "job_index": 0,
+      "bullet_index": 2,
+      "expected": "Streamlined reconciliation of $4.2B custodial accounts through automated Alteryx workflows.",
+      "actual": "• Streamlined reconciliation of $4.2B custodial accounts through automated Alteryx workflows."
+    },
+    {
+      "resume": "R10",
+      "job_index": 1,
+      "bullet_index": 0,
+      "expected": "Performed statutory financial statement audits for mid-cap publicly listed fintech and healthcare corporations.",
+      "actual": "• Performed statutory financial statement audits for mid-cap publicly listed fintech and healthcare corporations."
+    },
+    {
+      "resume": "R10",
+      "job_index": 1,
+      "bullet_index": 1,
+      "expected": "Executed substantive test procedures over revenue recognition (ASC 606) and goodwill impairment testing.",
+      "actual": "• Executed substantive test procedures over revenue recognition (ASC 606) and goodwill impairment testing."
+    },
+    {
+      "resume": "R11",
+      "job_index": 0,
+      "bullet_index": 0,
+      "expected": "Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD clusters.",
+      "actual": "• Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD clusters."
+    },
+    {
+      "resume": "R11",
+      "job_index": 0,
+      "bullet_index": 1,
+      "expected": "Directed engineering of high-throughput LLM serving stack, cutting model latency by 55%.",
+      "actual": "• Directed engineering of high-throughput LLM serving stack, cutting model latency by 55%."
+    },
+    {
+      "resume": "R11",
+      "job_index": 0,
+      "bullet_index": 2,
+      "expected": "Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research.",
+      "actual": "• Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research."
+    },
+    {
+      "resume": "R11",
+      "job_index": 1,
+      "bullet_index": 0,
+      "expected": "Built real-time computer vision inference stack operating at 60 FPS on edge hardware.",
+      "actual": "• Built real-time computer vision inference stack operating at 60 FPS on edge hardware."
+    },
+    {
+      "resume": "R11",
+      "job_index": 1,
+      "bullet_index": 1,
+      "expected": "Filed 6 patents in neural network quantization and sparse attention mechanisms.",
+      "actual": "• Filed 6 patents in neural network quantization and sparse attention mechanisms."
+    },
+    {
+      "resume": "R14",
+      "job_index": 0,
+      "bullet_index": 0,
+      "expected": "Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support.",
+      "actual": "• Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support."
+    },
+    {
+      "resume": "R19",
+      "job_index": 0,
+      "bullet_index": 0,
+      "expected": "Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support.",
+      "actual": "• Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support."
+    }
+  ],
+  "methodology": "Full bullet strings, fixed job/bullet ordinals; NFKC, whitespace and leading bullet marker normalization only. References copied from the completed source-reviewed audit before v3. Development set; not independent validation."
+}

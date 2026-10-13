@@ -1,0 +1,10 @@
+{
+  "id": "U20",
+  "file": "resume_templates_test_bundle/03_Creative_Product_UX_Designer.docx",
+  "sha256": "4a72c3875570e7aa813cc0fe5c0bb0c59548859f011389924b4eecb362c49e8c",
+  "previous_reference": "R18",
+  "artifact": "artifacts/U20/resume.json",
+  "selected_from": "upload_accuracy/results/U20/resume.json",
+  "selected_sha256": "56fd25774c82c907ed21db1d6bb0076e9d3f25a89e6b29fe521257015f8146c6",
+  "reason": "Full raw lines, layout and hyperlink metadata; uploaded artifact preferred when available. Structured output is baseline comparison only."
+}

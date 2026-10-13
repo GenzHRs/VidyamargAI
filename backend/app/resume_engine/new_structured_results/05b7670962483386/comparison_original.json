@@ -1,0 +1,3269 @@
+{
+  "schema_version": "3.0.0",
+  "source": {
+    "filename": "01_DOCX_Two_Column_Sidebar_Layout.docx",
+    "sha256": "05b76709624833861cab54350575e9a76917f332fca0ccbf292d06b0ab116bbb",
+    "type": "docx",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": null,
+    "reference_method": "docx_xml_text"
+  },
+  "config_sha256": "6f498014d4fb63f781cf628405710e332e4770668d670b4c7df47f65e11c5b54",
+  "raw_text": "CONTACT\nEmail:\nclaire.dupuis@example.com\nPhone:\n+1 (415) 555-0199\nLocation:\nSan Francisco, CA\nPortfolio:\nclaireui.example.com\nLinkedIn:\nlinkedin.com/in/claire-dummy\nSKILLS\n• Wireframing & Prototyping\n• Figma & FigJam\n• Design System Tokens\n• User Journey Mapping\n• Usability Testing\n• WCAG 2.1 AA Compliance\n• HTML/CSS / Tailwind\n• Agile & Sprint Planning\nEDUCATION\nB.S. in Human-Computer Interaction\nUniversity of Washington\nGraduated: 2019\nGPA: 3.85 / 4.0\nCLAIRE DUPUIS\nSenior UX/UI Designer | Enterprise SaaS & Cloud Platforms\nPROFILE\nUser-centric Product Designer with 6+ years specializing in enterprise workflows, complex telemetry dashboards, and multi-platform design governance. Proven success boosting feature adoption by 38% and reducing customer support tickets through clear user architecture.\nEXPERIENCE\nLead Product Designer | CloudScale Networks\n2022 – Present\n• Architected enterprise monitoring dashboard serving 4,000+ enterprise accounts, increasing Daily Active Users (DAU) by 29%.\n• Unified 3 disparate web apps under a single Figma token library, cutting engineering UI handoff churn by 40%.\n• Conducted 50+ customer interviews and usability audits with Fortune 500 network administrators.\nSenior UX Designer | AeroMetrics Analytics\n2019 – 2022\n• Led 0-to-1 redesign of data pipeline visualization tools, achieving a System Usability Scale (SUS) score increase from 62 to 84.\n• Collaborated daily with frontend engineers in React and Storybook to ensure zero visual regression.",
+  "source_text": "\n\nCONTACT\n\nEmail:\nclaire.dupuis@example.com\n\nPhone:\n+1 (415) 555-0199\n\nLocation:\nSan Francisco, CA\n\nPortfolio:\nclaireui.example.com\n\nLinkedIn:\nlinkedin.com/in/claire-dummy\n\nSKILLS\n\n• Wireframing & Prototyping\n• Figma & FigJam\n• Design System Tokens\n• User Journey Mapping\n• Usability Testing\n• WCAG 2.1 AA Compliance\n• HTML/CSS / Tailwind\n• Agile & Sprint Planning\n\nEDUCATION\n\nB.S. in Human-Computer Interaction\nUniversity of Washington\nGraduated: 2019\nGPA: 3.85 / 4.0\n\n\n\nCLAIRE DUPUIS\nSenior UX/UI Designer | Enterprise SaaS & Cloud Platforms\n\nPROFILE\nUser-centric Product Designer with 6+ years specializing in enterprise workflows, complex telemetry dashboards, and multi-platform design governance. Proven success boosting feature adoption by 38% and reducing customer support tickets through clear user architecture.\n\nEXPERIENCE\n\nLead Product Designer | CloudScale Networks\n2022 – Present\n\n• Architected enterprise monitoring dashboard serving 4,000+ enterprise accounts, increasing Daily Active Users (DAU) by 29%.\n\n• Unified 3 disparate web apps under a single Figma token library, cutting engineering UI handoff churn by 40%.\n\n• Conducted 50+ customer interviews and usability audits with Fortune 500 network administrators.\n\nSenior UX Designer | AeroMetrics Analytics\n2019 – 2022\n\n• Led 0-to-1 redesign of data pipeline visualization tools, achieving a System Usability Scale (SUS) score increase from 62 to 84.\n\n• Collaborated daily with frontend engineers in React and Storybook to ensure zero visual regression.\n\n",
+  "normalized_text": "CONTACT\nEmail:\nclaire.dupuis@example.com\nPhone:\n+1 (415) 555-0199\nLocation:\nSan Francisco, CA\nPortfolio:\nclaireui.example.com\nLinkedIn:\nlinkedin.com/in/claire-dummy\nSKILLS\n• Wireframing & Prototyping\n• Figma & FigJam\n• Design System Tokens\n• User Journey Mapping\n• Usability Testing\n• WCAG 2.1 AA Compliance\n• HTML/CSS / Tailwind\n• Agile & Sprint Planning\nEDUCATION\nB.S. in Human-Computer Interaction\nUniversity of Washington\nGraduated: 2019\nGPA: 3.85 / 4.0\nCLAIRE DUPUIS\nSenior UX/UI Designer | Enterprise SaaS & Cloud Platforms\nPROFILE\nUser-centric Product Designer with 6+ years specializing in enterprise workflows, complex telemetry dashboards, and multi-platform design governance. Proven success boosting feature adoption by 38% and reducing customer support tickets through clear user architecture.\nEXPERIENCE\nLead Product Designer | CloudScale Networks\n2022 – Present\n• Architected enterprise monitoring dashboard serving 4,000+ enterprise accounts, increasing Daily Active Users (DAU) by 29%.\n• Unified 3 disparate web apps under a single Figma token library, cutting engineering UI handoff churn by 40%.\n• Conducted 50+ customer interviews and usability audits with Fortune 500 network administrators.\nSenior UX Designer | AeroMetrics Analytics\n2019 – 2022\n• Led 0-to-1 redesign of data pipeline visualization tools, achieving a System Usability Scale (SUS) score increase from 62 to 84.\n• Collaborated daily with frontend engineers in React and Storybook to ensure zero visual regression.",
+  "raw_lines": [
+    {
+      "id": "l00000",
+      "text": "CONTACT",
+      "runs": [
+        {
+          "text": "CONTACT",
+          "bold": true,
+          "size": 10.0,
+          "color": "1E3A8A",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00000"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00001",
+      "text": "Email:",
+      "runs": [
+        {
+          "text": "Email:",
+          "bold": false,
+          "size": 8.5,
+          "color": "475569",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00001"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00002",
+      "text": "claire.dupuis@example.com",
+      "runs": [
+        {
+          "text": "claire.dupuis@example.com",
+          "bold": false,
+          "size": 8.5,
+          "color": "475569",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00002"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00003",
+      "text": "Phone:",
+      "runs": [
+        {
+          "text": "Phone:",
+          "bold": false,
+          "size": 8.5,
+          "color": "475569",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00003"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00004",
+      "text": "+1 (415) 555-0199",
+      "runs": [
+        {
+          "text": "+1 (415) 555-0199",
+          "bold": false,
+          "size": 8.5,
+          "color": "475569",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00004"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00005",
+      "text": "Location:",
+      "runs": [
+        {
+          "text": "Location:",
+          "bold": false,
+          "size": 8.5,
+          "color": "475569",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00005"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00006",
+      "text": "San Francisco, CA",
+      "runs": [
+        {
+          "text": "San Francisco, CA",
+          "bold": false,
+          "size": 8.5,
+          "color": "475569",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00006"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00007",
+      "text": "Portfolio:",
+      "runs": [
+        {
+          "text": "Portfolio:",
+          "bold": false,
+          "size": 8.5,
+          "color": "475569",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00007"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00008",
+      "text": "claireui.example.com",
+      "runs": [
+        {
+          "text": "claireui.example.com",
+          "bold": false,
+          "size": 8.5,
+          "color": "475569",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00008"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00009",
+      "text": "LinkedIn:",
+      "runs": [
+        {
+          "text": "LinkedIn:",
+          "bold": false,
+          "size": 8.5,
+          "color": "475569",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00009"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00010",
+      "text": "linkedin.com/in/claire-dummy",
+      "runs": [
+        {
+          "text": "linkedin.com/in/claire-dummy",
+          "bold": false,
+          "size": 8.5,
+          "color": "475569",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00010"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00011",
+      "text": "SKILLS",
+      "runs": [
+        {
+          "text": "SKILLS",
+          "bold": true,
+          "size": 10.0,
+          "color": "1E3A8A",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00011"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00012",
+      "text": "• Wireframing & Prototyping",
+      "runs": [
+        {
+          "text": "• Wireframing & Prototyping",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00012"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00013",
+      "text": "• Figma & FigJam",
+      "runs": [
+        {
+          "text": "• Figma & FigJam",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00013"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00014",
+      "text": "• Design System Tokens",
+      "runs": [
+        {
+          "text": "• Design System Tokens",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00014"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00015",
+      "text": "• User Journey Mapping",
+      "runs": [
+        {
+          "text": "• User Journey Mapping",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00015"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00016",
+      "text": "• Usability Testing",
+      "runs": [
+        {
+          "text": "• Usability Testing",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00016"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00017",
+      "text": "• WCAG 2.1 AA Compliance",
+      "runs": [
+        {
+          "text": "• WCAG 2.1 AA Compliance",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00017"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00018",
+      "text": "• HTML/CSS / Tailwind",
+      "runs": [
+        {
+          "text": "• HTML/CSS / Tailwind",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00018"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00019",
+      "text": "• Agile & Sprint Planning",
+      "runs": [
+        {
+          "text": "• Agile & Sprint Planning",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00019"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00020",
+      "text": "EDUCATION",
+      "runs": [
+        {
+          "text": "EDUCATION",
+          "bold": true,
+          "size": 10.0,
+          "color": "1E3A8A",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00020"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00021",
+      "text": "B.S. in Human-Computer Interaction",
+      "runs": [
+        {
+          "text": "B.S. in Human-Computer Interaction",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00021"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00022",
+      "text": "University of Washington",
+      "runs": [
+        {
+          "text": "University of Washington",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00022"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00023",
+      "text": "Graduated: 2019",
+      "runs": [
+        {
+          "text": "Graduated: 2019",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00023"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00024",
+      "text": "GPA: 3.85 / 4.0",
+      "runs": [
+        {
+          "text": "GPA: 3.85 / 4.0",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00024"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00025",
+      "text": "CLAIRE DUPUIS",
+      "runs": [
+        {
+          "text": "CLAIRE DUPUIS",
+          "bold": true,
+          "size": 20.0,
+          "color": "0F172A",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00025"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00026",
+      "text": "Senior UX/UI Designer | Enterprise SaaS & Cloud Platforms",
+      "runs": [
+        {
+          "text": "Senior UX/UI Designer | Enterprise SaaS & Cloud Platforms",
+          "bold": true,
+          "size": 10.5,
+          "color": "1E3A8A",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00026"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00027",
+      "text": "PROFILE",
+      "runs": [
+        {
+          "text": "PROFILE",
+          "bold": true,
+          "size": 10.0,
+          "color": "1E3A8A",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00027"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00028",
+      "text": "User-centric Product Designer with 6+ years specializing in enterprise workflows, complex telemetry dashboards, and multi-platform design governance. Proven success boosting feature adoption by 38% and reducing customer support tickets through clear user architecture.",
+      "runs": [
+        {
+          "text": "User-centric Product Designer with 6+ years specializing in enterprise workflows, complex telemetry dashboards, and multi-platform design governance. Proven success boosting feature adoption by 38% and reducing customer support tickets through clear user architecture.",
+          "bold": false,
+          "size": 9.0,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00028"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00029",
+      "text": "EXPERIENCE",
+      "runs": [
+        {
+          "text": "EXPERIENCE",
+          "bold": true,
+          "size": 10.0,
+          "color": "1E3A8A",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00029"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00030",
+      "text": "Lead Product Designer | CloudScale Networks",
+      "runs": [
+        {
+          "text": "Lead Product Designer | CloudScale Networks",
+          "bold": true,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00030"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00031",
+      "text": "2022 – Present",
+      "runs": [
+        {
+          "text": "2022 – Present",
+          "bold": false,
+          "size": 8.5,
+          "color": "64748B",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00031"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00032",
+      "text": "• Architected enterprise monitoring dashboard serving 4,000+ enterprise accounts, increasing Daily Active Users (DAU) by 29%.",
+      "runs": [
+        {
+          "text": "• Architected enterprise monitoring dashboard serving 4,000+ enterprise accounts, increasing Daily Active Users (DAU) by 29%.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00032"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00033",
+      "text": "• Unified 3 disparate web apps under a single Figma token library, cutting engineering UI handoff churn by 40%.",
+      "runs": [
+        {
+          "text": "• Unified 3 disparate web apps under a single Figma token library, cutting engineering UI handoff churn by 40%.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00033"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00034",
+      "text": "• Conducted 50+ customer interviews and usability audits with Fortune 500 network administrators.",
+      "runs": [
+        {
+          "text": "• Conducted 50+ customer interviews and usability audits with Fortune 500 network administrators.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00034"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00035",
+      "text": "Senior UX Designer | AeroMetrics Analytics",
+      "runs": [
+        {
+          "text": "Senior UX Designer | AeroMetrics Analytics",
+          "bold": true,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00035"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00036",
+      "text": "2019 – 2022",
+      "runs": [
+        {
+          "text": "2019 – 2022",
+          "bold": false,
+          "size": 8.5,
+          "color": "64748B",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00036"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00037",
+      "text": "• Led 0-to-1 redesign of data pipeline visualization tools, achieving a System Usability Scale (SUS) score increase from 62 to 84.",
+      "runs": [
+        {
+          "text": "• Led 0-to-1 redesign of data pipeline visualization tools, achieving a System Usability Scale (SUS) score increase from 62 to 84.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00037"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00038",
+      "text": "• Collaborated daily with frontend engineers in React and Storybook to ensure zero visual regression.",
+      "runs": [
+        {
+          "text": "• Collaborated daily with frontend engineers in React and Storybook to ensure zero visual regression.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00038"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    }
+  ],
+  "lines": [
+    {
+      "id": "l00000",
+      "text": "CONTACT",
+      "runs": [
+        {
+          "text": "CONTACT",
+          "bold": true,
+          "size": 10.0,
+          "color": "1E3A8A",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00000"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00001",
+      "text": "Email:",
+      "runs": [
+        {
+          "text": "Email:",
+          "bold": false,
+          "size": 8.5,
+          "color": "475569",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00001"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00002",
+      "text": "claire.dupuis@example.com",
+      "runs": [
+        {
+          "text": "claire.dupuis@example.com",
+          "bold": false,
+          "size": 8.5,
+          "color": "475569",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00002"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00003",
+      "text": "Phone:",
+      "runs": [
+        {
+          "text": "Phone:",
+          "bold": false,
+          "size": 8.5,
+          "color": "475569",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00003"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00004",
+      "text": "+1 (415) 555-0199",
+      "runs": [
+        {
+          "text": "+1 (415) 555-0199",
+          "bold": false,
+          "size": 8.5,
+          "color": "475569",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00004"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00005",
+      "text": "Location:",
+      "runs": [
+        {
+          "text": "Location:",
+          "bold": false,
+          "size": 8.5,
+          "color": "475569",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00005"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00006",
+      "text": "San Francisco, CA",
+      "runs": [
+        {
+          "text": "San Francisco, CA",
+          "bold": false,
+          "size": 8.5,
+          "color": "475569",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00006"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00007",
+      "text": "Portfolio:",
+      "runs": [
+        {
+          "text": "Portfolio:",
+          "bold": false,
+          "size": 8.5,
+          "color": "475569",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00007"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00008",
+      "text": "claireui.example.com",
+      "runs": [
+        {
+          "text": "claireui.example.com",
+          "bold": false,
+          "size": 8.5,
+          "color": "475569",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00008"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00009",
+      "text": "LinkedIn:",
+      "runs": [
+        {
+          "text": "LinkedIn:",
+          "bold": false,
+          "size": 8.5,
+          "color": "475569",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00009"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00010",
+      "text": "linkedin.com/in/claire-dummy",
+      "runs": [
+        {
+          "text": "linkedin.com/in/claire-dummy",
+          "bold": false,
+          "size": 8.5,
+          "color": "475569",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00010"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00011",
+      "text": "SKILLS",
+      "runs": [
+        {
+          "text": "SKILLS",
+          "bold": true,
+          "size": 10.0,
+          "color": "1E3A8A",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00011"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00012",
+      "text": "• Wireframing & Prototyping",
+      "runs": [
+        {
+          "text": "• Wireframing & Prototyping",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00012"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00013",
+      "text": "• Figma & FigJam",
+      "runs": [
+        {
+          "text": "• Figma & FigJam",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00013"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00014",
+      "text": "• Design System Tokens",
+      "runs": [
+        {
+          "text": "• Design System Tokens",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00014"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00015",
+      "text": "• User Journey Mapping",
+      "runs": [
+        {
+          "text": "• User Journey Mapping",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00015"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00016",
+      "text": "• Usability Testing",
+      "runs": [
+        {
+          "text": "• Usability Testing",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00016"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00017",
+      "text": "• WCAG 2.1 AA Compliance",
+      "runs": [
+        {
+          "text": "• WCAG 2.1 AA Compliance",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00017"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00018",
+      "text": "• HTML/CSS / Tailwind",
+      "runs": [
+        {
+          "text": "• HTML/CSS / Tailwind",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00018"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00019",
+      "text": "• Agile & Sprint Planning",
+      "runs": [
+        {
+          "text": "• Agile & Sprint Planning",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00019"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00020",
+      "text": "EDUCATION",
+      "runs": [
+        {
+          "text": "EDUCATION",
+          "bold": true,
+          "size": 10.0,
+          "color": "1E3A8A",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00020"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00021",
+      "text": "B.S. in Human-Computer Interaction",
+      "runs": [
+        {
+          "text": "B.S. in Human-Computer Interaction",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00021"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00022",
+      "text": "University of Washington",
+      "runs": [
+        {
+          "text": "University of Washington",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00022"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00023",
+      "text": "Graduated: 2019",
+      "runs": [
+        {
+          "text": "Graduated: 2019",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00023"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00024",
+      "text": "GPA: 3.85 / 4.0",
+      "runs": [
+        {
+          "text": "GPA: 3.85 / 4.0",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00024"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00025",
+      "text": "CLAIRE DUPUIS",
+      "runs": [
+        {
+          "text": "CLAIRE DUPUIS",
+          "bold": true,
+          "size": 20.0,
+          "color": "0F172A",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TITLE",
+      "source_ids": [
+        "l00025"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.92
+    },
+    {
+      "id": "l00026",
+      "text": "Senior UX/UI Designer | Enterprise SaaS & Cloud Platforms",
+      "runs": [
+        {
+          "text": "Senior UX/UI Designer | Enterprise SaaS & Cloud Platforms",
+          "bold": true,
+          "size": 10.5,
+          "color": "1E3A8A",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "SUBTITLE",
+      "source_ids": [
+        "l00026"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00027",
+      "text": "PROFILE",
+      "runs": [
+        {
+          "text": "PROFILE",
+          "bold": true,
+          "size": 10.0,
+          "color": "1E3A8A",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00027"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00028",
+      "text": "User-centric Product Designer with 6+ years specializing in enterprise workflows, complex telemetry dashboards, and multi-platform design governance. Proven success boosting feature adoption by 38% and reducing customer support tickets through clear user architecture.",
+      "runs": [
+        {
+          "text": "User-centric Product Designer with 6+ years specializing in enterprise workflows, complex telemetry dashboards, and multi-platform design governance. Proven success boosting feature adoption by 38% and reducing customer support tickets through clear user architecture.",
+          "bold": false,
+          "size": 9.0,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00028"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00029",
+      "text": "EXPERIENCE",
+      "runs": [
+        {
+          "text": "EXPERIENCE",
+          "bold": true,
+          "size": 10.0,
+          "color": "1E3A8A",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00029"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00030",
+      "text": "Lead Product Designer | CloudScale Networks",
+      "runs": [
+        {
+          "text": "Lead Product Designer | CloudScale Networks",
+          "bold": true,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00030"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00031",
+      "text": "2022 – Present",
+      "runs": [
+        {
+          "text": "2022 – Present",
+          "bold": false,
+          "size": 8.5,
+          "color": "64748B",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00031"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00032",
+      "text": "• Architected enterprise monitoring dashboard serving 4,000+ enterprise accounts, increasing Daily Active Users (DAU) by 29%.",
+      "runs": [
+        {
+          "text": "• Architected enterprise monitoring dashboard serving 4,000+ enterprise accounts, increasing Daily Active Users (DAU) by 29%.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00032"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00033",
+      "text": "• Unified 3 disparate web apps under a single Figma token library, cutting engineering UI handoff churn by 40%.",
+      "runs": [
+        {
+          "text": "• Unified 3 disparate web apps under a single Figma token library, cutting engineering UI handoff churn by 40%.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00033"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00034",
+      "text": "• Conducted 50+ customer interviews and usability audits with Fortune 500 network administrators.",
+      "runs": [
+        {
+          "text": "• Conducted 50+ customer interviews and usability audits with Fortune 500 network administrators.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00034"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00035",
+      "text": "Senior UX Designer | AeroMetrics Analytics",
+      "runs": [
+        {
+          "text": "Senior UX Designer | AeroMetrics Analytics",
+          "bold": true,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00035"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00036",
+      "text": "2019 – 2022",
+      "runs": [
+        {
+          "text": "2019 – 2022",
+          "bold": false,
+          "size": 8.5,
+          "color": "64748B",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00036"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00037",
+      "text": "• Led 0-to-1 redesign of data pipeline visualization tools, achieving a System Usability Scale (SUS) score increase from 62 to 84.",
+      "runs": [
+        {
+          "text": "• Led 0-to-1 redesign of data pipeline visualization tools, achieving a System Usability Scale (SUS) score increase from 62 to 84.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00037"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00038",
+      "text": "• Collaborated daily with frontend engineers in React and Storybook to ensure zero visual regression.",
+      "runs": [
+        {
+          "text": "• Collaborated daily with frontend engineers in React and Storybook to ensure zero visual regression.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00038"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    }
+  ],
+  "sections": [
+    {
+      "id": "s000",
+      "canonical": "contact",
+      "original_heading": "CONTACT",
+      "heading_line_id": "l00000",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00001",
+        "l00002",
+        "l00003",
+        "l00004",
+        "l00005",
+        "l00006",
+        "l00007",
+        "l00008",
+        "l00009",
+        "l00010"
+      ],
+      "text": "Email:\nclaire.dupuis@example.com\nPhone:\n+1 (415) 555-0199\nLocation:\nSan Francisco, CA\nPortfolio:\nclaireui.example.com\nLinkedIn:\nlinkedin.com/in/claire-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "skills",
+      "original_heading": "SKILLS",
+      "heading_line_id": "l00011",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015",
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019"
+      ],
+      "text": "• Wireframing & Prototyping\n• Figma & FigJam\n• Design System Tokens\n• User Journey Mapping\n• Usability Testing\n• WCAG 2.1 AA Compliance\n• HTML/CSS / Tailwind\n• Agile & Sprint Planning"
+    },
+    {
+      "id": "s002",
+      "canonical": "education",
+      "original_heading": "EDUCATION",
+      "heading_line_id": "l00020",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024"
+      ],
+      "text": "B.S. in Human-Computer Interaction\nUniversity of Washington\nGraduated: 2019\nGPA: 3.85 / 4.0"
+    },
+    {
+      "id": "s003",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00025",
+        "l00026"
+      ],
+      "text": "CLAIRE DUPUIS\nSenior UX/UI Designer | Enterprise SaaS & Cloud Platforms"
+    },
+    {
+      "id": "s004",
+      "canonical": "summary",
+      "original_heading": "PROFILE",
+      "heading_line_id": "l00027",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00028"
+      ],
+      "text": "User-centric Product Designer with 6+ years specializing in enterprise workflows, complex telemetry dashboards, and multi-platform design governance. Proven success boosting feature adoption by 38% and reducing customer support tickets through clear user architecture."
+    },
+    {
+      "id": "s005",
+      "canonical": "experience",
+      "original_heading": "EXPERIENCE",
+      "heading_line_id": "l00029",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00030",
+        "l00031",
+        "l00032",
+        "l00033",
+        "l00034",
+        "l00035",
+        "l00036",
+        "l00037",
+        "l00038"
+      ],
+      "text": "Lead Product Designer | CloudScale Networks\n2022 – Present\n• Architected enterprise monitoring dashboard serving 4,000+ enterprise accounts, increasing Daily Active Users (DAU) by 29%.\n• Unified 3 disparate web apps under a single Figma token library, cutting engineering UI handoff churn by 40%.\n• Conducted 50+ customer interviews and usability audits with Fortune 500 network administrators.\nSenior UX Designer | AeroMetrics Analytics\n2019 – 2022\n• Led 0-to-1 redesign of data pipeline visualization tools, achieving a System Usability Scale (SUS) score increase from 62 to 84.\n• Collaborated daily with frontend engineers in React and Storybook to ensure zero visual regression."
+    }
+  ],
+  "fields": {
+    "name": {
+      "value": "CLAIRE DUPUIS",
+      "confidence": 0.92,
+      "source_line_ids": [
+        "l00025"
+      ]
+    },
+    "emails": [
+      {
+        "value": "claire.dupuis@example.com",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalization": "none",
+        "raw": "claire.dupuis@example.com"
+      }
+    ],
+    "phones": [
+      {
+        "value": "+1 (415) 555-0199",
+        "confidence": 0.95,
+        "source_line_ids": [
+          "l00004"
+        ],
+        "normalized": "+14155550199",
+        "valid": true
+      }
+    ],
+    "urls": [
+      {
+        "value": "claireui.example.com",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00008"
+        ],
+        "kind": "website"
+      },
+      {
+        "value": "linkedin.com/in/claire-dummy",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00010"
+        ],
+        "kind": "linkedin"
+      }
+    ],
+    "locations": [
+      {
+        "value": "San Francisco, CA",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00006"
+        ]
+      }
+    ],
+    "date_ranges": [
+      {
+        "value": {
+          "start": "2022",
+          "end": "Present"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00031"
+        ],
+        "raw": "2022 – Present"
+      },
+      {
+        "value": {
+          "start": "2019",
+          "end": "2022"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00036"
+        ],
+        "raw": "2019 – 2022"
+      }
+    ],
+    "degrees": [
+      {
+        "value": "B.S. in Human-Computer Interaction",
+        "confidence": 0.94,
+        "source_line_ids": [
+          "l00021"
+        ]
+      }
+    ],
+    "gpas": [
+      {
+        "value": {
+          "score": "3.85",
+          "scale": "4.0"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00024"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "value": "Wireframing",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00012"
+        ],
+        "matched_alias": "Wireframing"
+      },
+      {
+        "value": "Prototyping",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00012"
+        ],
+        "matched_alias": "Prototyping"
+      },
+      {
+        "value": "FigJam",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00013"
+        ],
+        "matched_alias": "FigJam"
+      },
+      {
+        "value": "Figma",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00013"
+        ],
+        "matched_alias": "Figma"
+      },
+      {
+        "value": "Journey Mapping",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00015"
+        ],
+        "matched_alias": "Journey Mapping"
+      },
+      {
+        "value": "Usability Testing",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00016"
+        ],
+        "matched_alias": "Usability Testing"
+      },
+      {
+        "value": "WCAG",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00017"
+        ],
+        "matched_alias": "WCAG"
+      },
+      {
+        "value": "HTML",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00018"
+        ],
+        "matched_alias": "HTML"
+      },
+      {
+        "value": "CSS",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00018"
+        ],
+        "matched_alias": "CSS"
+      },
+      {
+        "value": "Agile",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00019"
+        ],
+        "matched_alias": "Agile"
+      },
+      {
+        "value": "React",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00038"
+        ],
+        "matched_alias": "React"
+      }
+    ],
+    "experience": [
+      {
+        "title": {
+          "value": "Lead Product Designer",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00030"
+          ]
+        },
+        "company": {
+          "value": "CloudScale Networks",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00030"
+          ]
+        },
+        "location": {
+          "value": null,
+          "confidence": 0.65,
+          "source_line_ids": [
+            "l00030"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2022",
+            "end": "Present"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00031"
+          ]
+        },
+        "bullets": [
+          "• Architected enterprise monitoring dashboard serving 4,000+ enterprise accounts, increasing Daily Active Users (DAU) by 29%.",
+          "• Unified 3 disparate web apps under a single Figma token library, cutting engineering UI handoff churn by 40%.",
+          "• Conducted 50+ customer interviews and usability audits with Fortune 500 network administrators."
+        ],
+        "text": "Lead Product Designer | CloudScale Networks\n2022 – Present\n• Architected enterprise monitoring dashboard serving 4,000+ enterprise accounts, increasing Daily Active Users (DAU) by 29%.\n• Unified 3 disparate web apps under a single Figma token library, cutting engineering UI handoff churn by 40%.\n• Conducted 50+ customer interviews and usability audits with Fortune 500 network administrators.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00030",
+          "l00031",
+          "l00032",
+          "l00033",
+          "l00034"
+        ]
+      },
+      {
+        "title": {
+          "value": "Senior UX Designer",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00035"
+          ]
+        },
+        "company": {
+          "value": "AeroMetrics Analytics",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00035"
+          ]
+        },
+        "location": {
+          "value": null,
+          "confidence": 0.65,
+          "source_line_ids": [
+            "l00035"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2019",
+            "end": "2022"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00036"
+          ]
+        },
+        "bullets": [
+          "• Led 0-to-1 redesign of data pipeline visualization tools, achieving a System Usability Scale (SUS) score increase from 62 to 84.",
+          "• Collaborated daily with frontend engineers in React and Storybook to ensure zero visual regression."
+        ],
+        "text": "Senior UX Designer | AeroMetrics Analytics\n2019 – 2022\n• Led 0-to-1 redesign of data pipeline visualization tools, achieving a System Usability Scale (SUS) score increase from 62 to 84.\n• Collaborated daily with frontend engineers in React and Storybook to ensure zero visual regression.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00035",
+          "l00036",
+          "l00037",
+          "l00038"
+        ]
+      }
+    ]
+  },
+  "structured": {
+    "schema_version": "3.0.0",
+    "section_order": [
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections"
+    ],
+    "entry_order": "source",
+    "contact": {
+      "name": {
+        "value": "CLAIRE DUPUIS",
+        "confidence": 0.92,
+        "source_line_ids": [
+          "l00025"
+        ]
+      },
+      "emails": [
+        {
+          "value": "claire.dupuis@example.com",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalization": "none",
+          "raw": "claire.dupuis@example.com"
+        }
+      ],
+      "phones": [
+        {
+          "value": "+1 (415) 555-0199",
+          "confidence": 0.95,
+          "source_line_ids": [
+            "l00004"
+          ],
+          "normalized": "+14155550199",
+          "valid": true
+        }
+      ],
+      "locations": [
+        {
+          "value": "San Francisco, CA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00006"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "value": "claireui.example.com",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00008"
+          ],
+          "kind": "website"
+        },
+        {
+          "value": "linkedin.com/in/claire-dummy",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00010"
+          ],
+          "kind": "linkedin"
+        }
+      ]
+    },
+    "summary": [
+      {
+        "text": "User-centric Product Designer with 6+ years specializing in enterprise workflows, complex telemetry dashboards, and multi-platform design governance. Proven success boosting feature adoption by 38% and reducing customer support tickets through clear user architecture.",
+        "source_line_ids": [
+          "l00028"
+        ],
+        "value": "User-centric Product Designer with 6+ years specializing in enterprise workflows, complex telemetry dashboards, and multi-platform design governance. Proven success boosting feature adoption by 38% and reducing customer support tickets through clear user architecture."
+      }
+    ],
+    "experience": [
+      {
+        "title": {
+          "value": "Lead Product Designer",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00030"
+          ]
+        },
+        "company": {
+          "value": "CloudScale Networks",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00030"
+          ]
+        },
+        "location": {
+          "value": null,
+          "confidence": 0.65,
+          "source_line_ids": [
+            "l00030"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2022",
+            "end": "Present"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00031"
+          ]
+        },
+        "bullets": [
+          "• Architected enterprise monitoring dashboard serving 4,000+ enterprise accounts, increasing Daily Active Users (DAU) by 29%.",
+          "• Unified 3 disparate web apps under a single Figma token library, cutting engineering UI handoff churn by 40%.",
+          "• Conducted 50+ customer interviews and usability audits with Fortune 500 network administrators."
+        ],
+        "text": "Lead Product Designer | CloudScale Networks\n2022 – Present\n• Architected enterprise monitoring dashboard serving 4,000+ enterprise accounts, increasing Daily Active Users (DAU) by 29%.\n• Unified 3 disparate web apps under a single Figma token library, cutting engineering UI handoff churn by 40%.\n• Conducted 50+ customer interviews and usability audits with Fortune 500 network administrators.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00030",
+          "l00031",
+          "l00032",
+          "l00033",
+          "l00034"
+        ]
+      },
+      {
+        "title": {
+          "value": "Senior UX Designer",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00035"
+          ]
+        },
+        "company": {
+          "value": "AeroMetrics Analytics",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00035"
+          ]
+        },
+        "location": {
+          "value": null,
+          "confidence": 0.65,
+          "source_line_ids": [
+            "l00035"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2019",
+            "end": "2022"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00036"
+          ]
+        },
+        "bullets": [
+          "• Led 0-to-1 redesign of data pipeline visualization tools, achieving a System Usability Scale (SUS) score increase from 62 to 84.",
+          "• Collaborated daily with frontend engineers in React and Storybook to ensure zero visual regression."
+        ],
+        "text": "Senior UX Designer | AeroMetrics Analytics\n2019 – 2022\n• Led 0-to-1 redesign of data pipeline visualization tools, achieving a System Usability Scale (SUS) score increase from 62 to 84.\n• Collaborated daily with frontend engineers in React and Storybook to ensure zero visual regression.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00035",
+          "l00036",
+          "l00037",
+          "l00038"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "text": "B.S. in Human-Computer Interaction\nUniversity of Washington\nGraduated: 2019\nGPA: 3.85 / 4.0",
+        "source_line_ids": [
+          "l00021",
+          "l00022",
+          "l00023",
+          "l00024"
+        ],
+        "degree": {
+          "value": "B.S. in Human-Computer Interaction",
+          "source_line_ids": [
+            "l00021"
+          ],
+          "confidence": 0.85
+        },
+        "institution": {
+          "value": "University of Washington",
+          "source_line_ids": [
+            "l00022"
+          ],
+          "confidence": 0.85
+        },
+        "dates": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "graduation": {
+          "value": "2019",
+          "source_line_ids": [
+            "l00023"
+          ],
+          "confidence": 0.85
+        },
+        "location": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "gpa": {
+          "value": {
+            "score": "3.85",
+            "scale": "4.0"
+          },
+          "source_line_ids": [
+            "l00024"
+          ],
+          "confidence": 0.85
+        }
+      }
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "text": "• Wireframing & Prototyping",
+        "source_line_ids": [
+          "l00012"
+        ],
+        "category": null,
+        "items": [
+          "Wireframing & Prototyping"
+        ]
+      },
+      {
+        "text": "• Figma & FigJam",
+        "source_line_ids": [
+          "l00013"
+        ],
+        "category": null,
+        "items": [
+          "Figma & FigJam"
+        ]
+      },
+      {
+        "text": "• Design System Tokens",
+        "source_line_ids": [
+          "l00014"
+        ],
+        "category": null,
+        "items": [
+          "Design System Tokens"
+        ]
+      },
+      {
+        "text": "• User Journey Mapping",
+        "source_line_ids": [
+          "l00015"
+        ],
+        "category": null,
+        "items": [
+          "User Journey Mapping"
+        ]
+      },
+      {
+        "text": "• Usability Testing",
+        "source_line_ids": [
+          "l00016"
+        ],
+        "category": null,
+        "items": [
+          "Usability Testing"
+        ]
+      },
+      {
+        "text": "• WCAG 2.1 AA Compliance",
+        "source_line_ids": [
+          "l00017"
+        ],
+        "category": null,
+        "items": [
+          "WCAG 2.1 AA Compliance"
+        ]
+      },
+      {
+        "text": "• HTML/CSS / Tailwind",
+        "source_line_ids": [
+          "l00018"
+        ],
+        "category": null,
+        "items": [
+          "HTML/CSS / Tailwind"
+        ]
+      },
+      {
+        "text": "• Agile & Sprint Planning",
+        "source_line_ids": [
+          "l00019"
+        ],
+        "category": null,
+        "items": [
+          "Agile & Sprint Planning"
+        ]
+      }
+    ],
+    "certifications": [],
+    "other_sections": [],
+    "review": [
+      {
+        "path": "fields.experience[0].location",
+        "reason": "missing or low-confidence candidate",
+        "confidence": 0.65
+      },
+      {
+        "path": "fields.experience[1].location",
+        "reason": "missing or low-confidence candidate",
+        "confidence": 0.65
+      }
+    ],
+    "source_sections": [
+      {
+        "id": "s000",
+        "canonical": "contact",
+        "original_heading": "CONTACT",
+        "heading_line_id": "l00000",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00001",
+          "l00002",
+          "l00003",
+          "l00004",
+          "l00005",
+          "l00006",
+          "l00007",
+          "l00008",
+          "l00009",
+          "l00010"
+        ],
+        "text": "Email:\nclaire.dupuis@example.com\nPhone:\n+1 (415) 555-0199\nLocation:\nSan Francisco, CA\nPortfolio:\nclaireui.example.com\nLinkedIn:\nlinkedin.com/in/claire-dummy"
+      },
+      {
+        "id": "s001",
+        "canonical": "skills",
+        "original_heading": "SKILLS",
+        "heading_line_id": "l00011",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00012",
+          "l00013",
+          "l00014",
+          "l00015",
+          "l00016",
+          "l00017",
+          "l00018",
+          "l00019"
+        ],
+        "text": "• Wireframing & Prototyping\n• Figma & FigJam\n• Design System Tokens\n• User Journey Mapping\n• Usability Testing\n• WCAG 2.1 AA Compliance\n• HTML/CSS / Tailwind\n• Agile & Sprint Planning"
+      },
+      {
+        "id": "s002",
+        "canonical": "education",
+        "original_heading": "EDUCATION",
+        "heading_line_id": "l00020",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00021",
+          "l00022",
+          "l00023",
+          "l00024"
+        ],
+        "text": "B.S. in Human-Computer Interaction\nUniversity of Washington\nGraduated: 2019\nGPA: 3.85 / 4.0"
+      },
+      {
+        "id": "s003",
+        "canonical": "preamble",
+        "original_heading": null,
+        "heading_line_id": null,
+        "confidence": 1.0,
+        "line_ids": [
+          "l00025",
+          "l00026"
+        ],
+        "text": "CLAIRE DUPUIS\nSenior UX/UI Designer | Enterprise SaaS & Cloud Platforms"
+      },
+      {
+        "id": "s004",
+        "canonical": "summary",
+        "original_heading": "PROFILE",
+        "heading_line_id": "l00027",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00028"
+        ],
+        "text": "User-centric Product Designer with 6+ years specializing in enterprise workflows, complex telemetry dashboards, and multi-platform design governance. Proven success boosting feature adoption by 38% and reducing customer support tickets through clear user architecture."
+      },
+      {
+        "id": "s005",
+        "canonical": "experience",
+        "original_heading": "EXPERIENCE",
+        "heading_line_id": "l00029",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00030",
+          "l00031",
+          "l00032",
+          "l00033",
+          "l00034",
+          "l00035",
+          "l00036",
+          "l00037",
+          "l00038"
+        ],
+        "text": "Lead Product Designer | CloudScale Networks\n2022 – Present\n• Architected enterprise monitoring dashboard serving 4,000+ enterprise accounts, increasing Daily Active Users (DAU) by 29%.\n• Unified 3 disparate web apps under a single Figma token library, cutting engineering UI handoff churn by 40%.\n• Conducted 50+ customer interviews and usability audits with Fortune 500 network administrators.\nSenior UX Designer | AeroMetrics Analytics\n2019 – 2022\n• Led 0-to-1 redesign of data pipeline visualization tools, achieving a System Usability Scale (SUS) score increase from 62 to 84.\n• Collaborated daily with frontend engineers in React and Storybook to ensure zero visual regression."
+      }
+    ]
+  },
+  "needs_review": [
+    {
+      "path": "fields.experience[0].location",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.65
+    },
+    {
+      "path": "fields.experience[1].location",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.65
+    }
+  ],
+  "quality": {
+    "completeness": {
+      "status": "pass",
+      "reference_words": 209,
+      "extracted_words": 209,
+      "matched_words": 209,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "schema_errors": [],
+    "warnings": [],
+    "suppressed_exact_repeats": []
+  }
+}

@@ -1,0 +1,2177 @@
+{
+  "R01": {
+    "headings": [
+      {
+        "text": "Summary",
+        "canonical": "summary"
+      },
+      {
+        "text": "Skills",
+        "canonical": "skills"
+      },
+      {
+        "text": "Experience",
+        "canonical": "experience"
+      },
+      {
+        "text": "Projects",
+        "canonical": "projects"
+      },
+      {
+        "text": "Awards & Certifications",
+        "canonical": "awards_and_certifications"
+      },
+      {
+        "text": "Education",
+        "canonical": "education"
+      }
+    ],
+    "contact": {
+      "name": "JAYAVARAPU SIVA TEJACHARY",
+      "emails": [
+        "j.shivachary@gmail.com"
+      ],
+      "phones": [
+        "+91-9866862016"
+      ],
+      "locations": [],
+      "links": [
+        "https://www.linkedin.com/in/jayavarapu-siva-tejachary",
+        "https://github.com/sivatejachary"
+      ]
+    },
+    "experience": [
+      {
+        "title": "AI/ML Engineer",
+        "company": "Avataa Solutions Pvt. Ltd.",
+        "start": "June 2024",
+        "end": "Present",
+        "bullet_count": 6,
+        "location": "Hyderabad, India"
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.Tech in Computer Science and Engineering",
+        "institution": "Chalapathi Institute of Engineering and Technology",
+        "start": "Sep 2020",
+        "end": "Apr 2024",
+        "graduation": null,
+        "location": "Guntur, Andhra Pradesh",
+        "gpa_score": "7.9",
+        "gpa_scale": "10"
+      }
+    ],
+    "certifications": [
+      "Data Science & Machine Learning Certification"
+    ],
+    "projects": [
+      {
+        "name": "Enterprise RAG Platform",
+        "start": "Jan 2026",
+        "end": "Present",
+        "bullet_count": 3,
+        "technologies": [
+          "Python",
+          "FastAPI",
+          "LangChain",
+          "LangGraph",
+          "OpenAI",
+          "Qdrant",
+          "PostgreSQL",
+          "Azure Document Intelligence"
+        ]
+      },
+      {
+        "name": "Enterprise Document AI & Compliance Automation",
+        "start": "Oct 2024",
+        "end": "Jan 2026",
+        "bullet_count": 3,
+        "technologies": [
+          "FastAPI",
+          "Python",
+          "PostgreSQL",
+          "Azure OCR",
+          "NER",
+          "Gemini LLM"
+        ]
+      },
+      {
+        "name": "AI Resume Screening System",
+        "start": "Aug 2024",
+        "end": "Sept 2024",
+        "bullet_count": 3,
+        "technologies": [
+          "Python",
+          "NLP",
+          "FastAPI",
+          "Transformers"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "category": "Programming & Backend",
+        "items": [
+          "Python",
+          "FastAPI",
+          "REST APIs"
+        ]
+      },
+      {
+        "category": "Generative AI",
+        "items": [
+          "LLMs",
+          "OpenAI",
+          "Gemini",
+          "RAG",
+          "Prompt Engineering",
+          "LangChain",
+          "LangGraph",
+          "Transformers"
+        ]
+      },
+      {
+        "category": "NLP & Document AI",
+        "items": [
+          "NER",
+          "OCR",
+          "TF-IDF",
+          "Embeddings"
+        ]
+      },
+      {
+        "category": "Machine Learning",
+        "items": [
+          "Scikit-learn",
+          "TensorFlow",
+          "PyTorch",
+          "Supervised Learning",
+          "Unsupervised Learning"
+        ]
+      },
+      {
+        "category": "Computer Vision & Data Science",
+        "items": [
+          "OpenCV",
+          "Pandas",
+          "NumPy"
+        ]
+      },
+      {
+        "category": "Databases",
+        "items": [
+          "MySQL",
+          "PostgreSQL",
+          "Qdrant",
+          "Chroma",
+          "FAISS"
+        ]
+      },
+      {
+        "category": "Tools & Platforms",
+        "items": [
+          "Git",
+          "GitHub",
+          "Docker",
+          "Azure",
+          "Jupyter Notebook"
+        ]
+      }
+    ],
+    "source": {
+      "id": "R01",
+      "file": "Jayavarapu-Siva-Tejachary-AIML.pdf",
+      "sha256": "bdb2f38e41ac1fe979557ef27f8c98ba3a1f312e5b99e8f117d120a90b7cb826",
+      "output": "Jayavarapu-Siva-Tejachary-AIML_6b3855d0257a"
+    },
+    "annotation_origin": "Assistant source-reviewed audit annotations; reused SHA-bound legacy labels were rechecked against source. Not blinded or independently adjudicated."
+  },
+  "R02": {
+    "headings": [
+      {
+        "text": "CREATIVE SKILLS",
+        "canonical": "skills"
+      },
+      {
+        "text": "AWARDS & HONORS",
+        "canonical": "awards"
+      },
+      {
+        "text": "EDUCATION",
+        "canonical": "education"
+      },
+      {
+        "text": "CREATIVE PROFILE",
+        "canonical": "summary"
+      },
+      {
+        "text": "EXPERIENCE",
+        "canonical": "experience"
+      }
+    ],
+    "contact": {
+      "name": "MAYA LIN-VAZQUEZ",
+      "emails": [
+        "maya.lin.design@example.com"
+      ],
+      "phones": [
+        "(555) 781-9920"
+      ],
+      "locations": [
+        "Los Angeles, CA"
+      ],
+      "links": [
+        "mayadesign.example.studio"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Senior Brand Designer",
+        "company": "Lumina Creative Studio",
+        "start": "2022",
+        "end": "Present",
+        "bullet_count": 3,
+        "location": "Los Angeles, CA"
+      },
+      {
+        "title": "Visual & Packaging Designer",
+        "company": "Verve Labs",
+        "start": "2019",
+        "end": "2022",
+        "bullet_count": 2,
+        "location": "San Francisco, CA"
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.F.A. in Graphic Design",
+        "institution": "ArtCenter College of Design",
+        "start": null,
+        "end": null,
+        "graduation": "2019",
+        "location": null,
+        "gpa_score": null,
+        "gpa_scale": null
+      }
+    ],
+    "certifications": [],
+    "projects": [],
+    "skills": [
+      {
+        "category": null,
+        "items": [
+          "Brand Identity & Systems",
+          "Art Direction & Campaigns",
+          "Packaging & Print Spec",
+          "Figma",
+          "Illustrator",
+          "Photoshop",
+          "After Effects & Motion",
+          "Creative Team Mentorship",
+          "Design Sprint Facilitation"
+        ]
+      }
+    ],
+    "source": {
+      "id": "R02",
+      "file": "colorful_resume_templates_bundle/01_DOCX_Vibrant_Coral_Creative_Resume.docx",
+      "sha256": "5f77f4e59d97793795089e0b99f6f360f55d6f12d75e7af6693fae044d6a2730",
+      "output": "01_DOCX_Vibrant_Coral_Creative_Resume_e6c61a54b6ea"
+    },
+    "annotation_origin": "Assistant source-reviewed audit annotations; reused SHA-bound legacy labels were rechecked against source. Not blinded or independently adjudicated."
+  },
+  "R03": {
+    "headings": [
+      {
+        "text": "CONTACT",
+        "canonical": "contact"
+      },
+      {
+        "text": "ARCHITECTURE SKILLS",
+        "canonical": "skills"
+      },
+      {
+        "text": "CERTIFICATIONS",
+        "canonical": "certifications"
+      },
+      {
+        "text": "EXECUTIVE SUMMARY",
+        "canonical": "summary"
+      },
+      {
+        "text": "LEADERSHIP & ARCHITECTURE EXPERIENCE",
+        "canonical": "experience"
+      },
+      {
+        "text": "EDUCATION",
+        "canonical": "education"
+      }
+    ],
+    "contact": {
+      "name": "DARIUS K. VANCE",
+      "emails": [
+        "darius.vance@example.com"
+      ],
+      "phones": [
+        "(555) 304-9182"
+      ],
+      "locations": [
+        "Denver, CO"
+      ],
+      "links": [
+        "github.com/darius-cloud",
+        "linkedin.com/in/dariusvance-dummy"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Principal Cloud Solutions Architect",
+        "company": "StrataCore Cloud Systems",
+        "start": "2021",
+        "end": "Present",
+        "bullet_count": 3,
+        "location": "Denver, CO"
+      },
+      {
+        "title": "Lead Infrastructure Architect",
+        "company": "Apex Financial Technologies",
+        "start": "2017",
+        "end": "2021",
+        "bullet_count": 2,
+        "location": "Boulder, CO"
+      }
+    ],
+    "education": [
+      {
+        "degree": "M.S. in Computer Science",
+        "institution": "University of Colorado Boulder",
+        "start": null,
+        "end": null,
+        "graduation": "2017",
+        "location": null,
+        "gpa_score": null,
+        "gpa_scale": null
+      },
+      {
+        "degree": "B.S. in Computer Engineering",
+        "institution": "Colorado State University",
+        "start": null,
+        "end": null,
+        "graduation": "2014",
+        "location": null,
+        "gpa_score": null,
+        "gpa_scale": null
+      }
+    ],
+    "certifications": [
+      "AWS Solutions Architect Pro",
+      "Certified Kubernetes Admin (CKA)",
+      "HashiCorp Terraform Pro"
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "category": "Cloud",
+        "items": [
+          "AWS & Azure Cloud"
+        ]
+      },
+      {
+        "category": "Containers",
+        "items": [
+          "Kubernetes (EKS)"
+        ]
+      },
+      {
+        "category": null,
+        "items": [
+          "Microservices Architecture",
+          "Terraform / GitOps (ArgoCD)",
+          "Kafka & Event-Driven Systems",
+          "PostgreSQL",
+          "Snowflake",
+          "Redis",
+          "SOC2 & Cloud Security"
+        ]
+      }
+    ],
+    "source": {
+      "id": "R03",
+      "file": "colorful_resume_templates_bundle/02_DOCX_Navy_Teal_Cloud_Architect.docx",
+      "sha256": "14b052f3cdc07a57f163a8498230e2ed0c81e3e72cd91a059631fadfdf382e35",
+      "output": "02_DOCX_Navy_Teal_Cloud_Architect_21c81ec7c5c9"
+    },
+    "annotation_origin": "Assistant source-reviewed audit annotations; reused SHA-bound legacy labels were rechecked against source. Not blinded or independently adjudicated."
+  },
+  "R04": {
+    "headings": [
+      {
+        "text": "MARKETING METRICS",
+        "canonical": "metrics"
+      },
+      {
+        "text": "GROWTH TOOLKIT",
+        "canonical": "skills"
+      },
+      {
+        "text": "EDUCATION",
+        "canonical": "education"
+      },
+      {
+        "text": "EXECUTIVE PROFILE",
+        "canonical": "summary"
+      },
+      {
+        "text": "PROFESSIONAL EXPERIENCE",
+        "canonical": "experience"
+      }
+    ],
+    "contact": {
+      "name": "CAMILA RESTREPO",
+      "emails": [
+        "camila.restrepo@example.com"
+      ],
+      "phones": [
+        "(555) 612-4091"
+      ],
+      "locations": [
+        "Miami, FL"
+      ],
+      "links": [
+        "linkedin.com/in/camila-marketing-dummy"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Senior Performance Marketing Manager",
+        "company": "Nova Health App",
+        "start": "2022",
+        "end": "Present",
+        "bullet_count": 3,
+        "location": "Miami, FL"
+      },
+      {
+        "title": "Growth Marketing Lead",
+        "company": "Solstice Commerce",
+        "start": "2019",
+        "end": "2022",
+        "bullet_count": 2,
+        "location": "Austin, TX"
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.S. in Digital Marketing & Media",
+        "institution": "University of Florida",
+        "start": null,
+        "end": null,
+        "graduation": "2018",
+        "location": null,
+        "gpa_score": null,
+        "gpa_scale": null
+      }
+    ],
+    "certifications": [],
+    "projects": [],
+    "skills": [
+      {
+        "category": null,
+        "items": [
+          "Meta Ads Manager & TikTok Ads",
+          "Google Ads (Search, PMax, YouTube)",
+          "Amplitude",
+          "Mixpanel & GA4",
+          "AppsFlyer",
+          "Adjust & Branch (MMP)",
+          "Optimizely & VWO (A/B Testing)",
+          "SQL & Tableau Reporting"
+        ]
+      }
+    ],
+    "source": {
+      "id": "R04",
+      "file": "colorful_resume_templates_bundle/03_PDF_Royal_Purple_Marketing_Resume.pdf",
+      "sha256": "c46b14d76878b810ea8052349edc50bf54f58e087c5c015b92bcecce83a74ada",
+      "output": "03_PDF_Royal_Purple_Marketing_Resume_471889d2c407"
+    },
+    "annotation_origin": "Assistant source-reviewed audit annotations; reused SHA-bound legacy labels were rechecked against source. Not blinded or independently adjudicated."
+  },
+  "R05": {
+    "headings": [
+      {
+        "text": "CORE COMPETENCY FRAMEWORK",
+        "canonical": "skills"
+      },
+      {
+        "text": "OPERATIONAL LEADERSHIP EXPERIENCE",
+        "canonical": "experience"
+      },
+      {
+        "text": "EDUCATION & CREDENTIALS",
+        "canonical": "education"
+      }
+    ],
+    "contact": {
+      "name": "JULIAN A. MERCER",
+      "emails": [
+        "julian.mercer@example.com"
+      ],
+      "phones": [
+        "(555) 481-0294"
+      ],
+      "locations": [
+        "Boston, MA"
+      ],
+      "links": [
+        "linkedin.com/in/julianmercer-dummy"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Director of Business Operations",
+        "company": "Beacon Healthcare Technologies",
+        "start": "2021",
+        "end": "Present",
+        "bullet_count": 3,
+        "location": "Boston, MA"
+      },
+      {
+        "title": "Engagement Manager (Strategy & Operations)",
+        "company": "Bain & Company",
+        "start": "2017",
+        "end": "2021",
+        "bullet_count": 2,
+        "location": "New York, NY"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master of Business Administration (MBA)",
+        "institution": "Harvard Business School",
+        "start": null,
+        "end": null,
+        "graduation": "2017",
+        "location": null,
+        "gpa_score": null,
+        "gpa_scale": null
+      },
+      {
+        "degree": "B.A. in Economics",
+        "institution": "Dartmouth College",
+        "start": null,
+        "end": null,
+        "graduation": "2013",
+        "location": null,
+        "gpa_score": null,
+        "gpa_scale": null
+      }
+    ],
+    "certifications": [
+      "Lean Six Sigma Green Belt"
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "category": "Operational Strategy",
+        "items": [
+          "Post-Merger PMI Integration",
+          "Lean Six Sigma Process Design",
+          "Operating Model Redesign"
+        ]
+      },
+      {
+        "category": "Financial Optimization",
+        "items": [
+          "$85M Budget & OPEX Oversight",
+          "Vendor Procurement Negotiations",
+          "Capital Allocation Modeling"
+        ]
+      },
+      {
+        "category": "Cross-Functional Leadership",
+        "items": [
+          "Executive Stakeholder Alignment",
+          "OKR Governance & Tracking",
+          "Org Structuring & Hiring"
+        ]
+      }
+    ],
+    "source": {
+      "id": "R05",
+      "file": "colorful_resume_templates_bundle/04_PDF_Emerald_Forest_Operations_Resume.pdf",
+      "sha256": "8a28114c043883f515bb055f3cb0c0cbfee3d13134a2eba717a7a0cfbf12a44f",
+      "output": "04_PDF_Emerald_Forest_Operations_Resume_94e24b0baf2d"
+    },
+    "annotation_origin": "Assistant source-reviewed audit annotations; reused SHA-bound legacy labels were rechecked against source. Not blinded or independently adjudicated."
+  },
+  "R06": {
+    "headings": [
+      {
+        "text": "CONTACT",
+        "canonical": "contact"
+      },
+      {
+        "text": "SKILLS",
+        "canonical": "skills"
+      },
+      {
+        "text": "EDUCATION",
+        "canonical": "education"
+      },
+      {
+        "text": "PROFILE",
+        "canonical": "summary"
+      },
+      {
+        "text": "EXPERIENCE",
+        "canonical": "experience"
+      }
+    ],
+    "contact": {
+      "name": "CLAIRE DUPUIS",
+      "emails": [
+        "claire.dupuis@example.com"
+      ],
+      "phones": [
+        "+1 (415) 555-0199"
+      ],
+      "locations": [
+        "San Francisco, CA"
+      ],
+      "links": [
+        "linkedin.com/in/claire-dummy",
+        "claireui.example.com"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Lead Product Designer",
+        "company": "CloudScale Networks",
+        "start": "2022",
+        "end": "Present",
+        "bullet_count": 3,
+        "location": null
+      },
+      {
+        "title": "Senior UX Designer",
+        "company": "AeroMetrics Analytics",
+        "start": "2019",
+        "end": "2022",
+        "bullet_count": 2,
+        "location": null
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.S. in Human-Computer Interaction",
+        "institution": "University of Washington",
+        "start": null,
+        "end": null,
+        "graduation": "2019",
+        "location": null,
+        "gpa_score": "3.85",
+        "gpa_scale": "4.0"
+      }
+    ],
+    "certifications": [],
+    "projects": [],
+    "skills": [
+      {
+        "category": null,
+        "items": [
+          "Wireframing & Prototyping",
+          "Figma & FigJam",
+          "Design System Tokens",
+          "User Journey Mapping",
+          "Usability Testing",
+          "WCAG 2.1 AA Compliance",
+          "HTML/CSS / Tailwind",
+          "Agile & Sprint Planning"
+        ]
+      }
+    ],
+    "source": {
+      "id": "R06",
+      "file": "comprehensive_resume_test_suite/01_DOCX_Two_Column_Sidebar_Layout.docx",
+      "sha256": "05b76709624833861cab54350575e9a76917f332fca0ccbf292d06b0ab116bbb",
+      "output": "01_DOCX_Two_Column_Sidebar_Layout_ad754b062bc7"
+    },
+    "annotation_origin": "Assistant source-reviewed audit annotations; reused SHA-bound legacy labels were rechecked against source. Not blinded or independently adjudicated."
+  },
+  "R07": {
+    "headings": [
+      {
+        "text": "CORE COMPETENCIES & FINANCIAL SYSTEMS",
+        "canonical": "skills"
+      },
+      {
+        "text": "CAREER HISTORY",
+        "canonical": "experience"
+      },
+      {
+        "text": "EDUCATION & CERTIFICATIONS",
+        "canonical": "education"
+      }
+    ],
+    "contact": {
+      "name": "DEVON M. HASTINGS",
+      "emails": [
+        "devon.hastings@example.com"
+      ],
+      "phones": [
+        "(555) 839-2041"
+      ],
+      "locations": [
+        "Chicago, IL"
+      ],
+      "links": [
+        "linkedin.com/in/devon-hastings-dummy"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Senior FP&A Controller",
+        "company": "Sterling Horizon Capital",
+        "start": "2021",
+        "end": "Present",
+        "bullet_count": 3,
+        "location": "Chicago, IL"
+      },
+      {
+        "title": "Financial Analyst",
+        "company": "Pinnacle Advisory Partners",
+        "start": "2018",
+        "end": "2021",
+        "bullet_count": 2,
+        "location": "Milwaukee, WI"
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.S. in Finance & Accounting",
+        "institution": "Northwestern University",
+        "start": null,
+        "end": null,
+        "graduation": "2018",
+        "location": null,
+        "gpa_score": null,
+        "gpa_scale": null
+      }
+    ],
+    "certifications": [
+      "Chartered Financial Analyst (CFA) — Level III Candidate"
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "category": null,
+        "items": [
+          "Financial Modeling (DCF, LBO)",
+          "US GAAP & IFRS Reporting",
+          "Budgeting & Multi-Year Forecasting",
+          "Capital Allocation & Debt Restructuring",
+          "Variance & P&L Analysis",
+          "Advanced Excel (VBA, Power Query)",
+          "M&A Due Diligence & Audit Defense"
+        ]
+      },
+      {
+        "category": "ERP",
+        "items": [
+          "SAP S/4HANA & Oracle NetSuite"
+        ]
+      },
+      {
+        "category": "BI & Data",
+        "items": [
+          "Tableau",
+          "Power BI",
+          "SQL"
+        ]
+      }
+    ],
+    "source": {
+      "id": "R07",
+      "file": "comprehensive_resume_test_suite/02_DOCX_Heavy_Table_Layout_Resume.docx",
+      "sha256": "1f10e01c7b313902ed4bddfbf1998100e42d16962f820ca11293372f686e9911",
+      "output": "02_DOCX_Heavy_Table_Layout_Resume_d60d768899d4"
+    },
+    "annotation_origin": "Assistant source-reviewed audit annotations; reused SHA-bound legacy labels were rechecked against source. Not blinded or independently adjudicated."
+  },
+  "R08": {
+    "headings": [
+      {
+        "text": "STRATEGIC SUMMARY:",
+        "canonical": "summary"
+      },
+      {
+        "text": "SELECT GTM LEADERSHIP & EXPERIENCE",
+        "canonical": "experience"
+      },
+      {
+        "text": "KEY GTM METRICS",
+        "canonical": "metrics"
+      },
+      {
+        "text": "SKILLS & METHODOLOGIES",
+        "canonical": "skills"
+      },
+      {
+        "text": "EDUCATION",
+        "canonical": "education"
+      }
+    ],
+    "contact": {
+      "name": "KAVITA RAMANATHAN",
+      "emails": [
+        "kavita.ramanathan@example.com"
+      ],
+      "phones": [
+        "(555) 234-8761"
+      ],
+      "locations": [
+        "San Jose, CA"
+      ],
+      "links": [
+        "linkedin.com/in/kavita-ramanathan-dummy"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Director of Product Marketing",
+        "company": "Synthetix AI",
+        "start": "2022",
+        "end": "Present",
+        "bullet_count": 2,
+        "location": "Palo Alto, CA"
+      },
+      {
+        "title": "Senior Product Marketing Manager",
+        "company": "Datastream Cloud",
+        "start": "2019",
+        "end": "2022",
+        "bullet_count": 2,
+        "location": "San Jose, CA"
+      }
+    ],
+    "education": [
+      {
+        "degree": "MBA",
+        "institution": "UC Berkeley Haas",
+        "start": null,
+        "end": null,
+        "graduation": "2019",
+        "location": null,
+        "gpa_score": null,
+        "gpa_scale": null
+      },
+      {
+        "degree": "B.S. in Economics",
+        "institution": "UCLA",
+        "start": null,
+        "end": null,
+        "graduation": "2015",
+        "location": null,
+        "gpa_score": null,
+        "gpa_scale": null
+      }
+    ],
+    "certifications": [],
+    "projects": [],
+    "skills": [
+      {
+        "category": null,
+        "items": [
+          "Category Creation & Positioning",
+          "Competitive Intelligence (Klue)",
+          "Customer Case Studies & Webinars",
+          "HubSpot",
+          "Salesforce",
+          "Marketo",
+          "Pricing & Packaging Strategy"
+        ]
+      }
+    ],
+    "source": {
+      "id": "R08",
+      "file": "comprehensive_resume_test_suite/03_DOCX_Horizontal_Hero_Two_Blocks.docx",
+      "sha256": "9c87168b6d529336eca1dd27db234421f6110eba8e06e979d65291dc29e75096",
+      "output": "03_DOCX_Horizontal_Hero_Two_Blocks_22a68bdd79f4"
+    },
+    "annotation_origin": "Assistant source-reviewed audit annotations; reused SHA-bound legacy labels were rechecked against source. Not blinded or independently adjudicated."
+  },
+  "R09": {
+    "headings": [
+      {
+        "text": "CONTACT",
+        "canonical": "contact"
+      },
+      {
+        "text": "CORE SKILLS",
+        "canonical": "skills"
+      },
+      {
+        "text": "CERTIFICATIONS",
+        "canonical": "certifications"
+      },
+      {
+        "text": "EDUCATION",
+        "canonical": "education"
+      },
+      {
+        "text": "PROFESSIONAL SUMMARY",
+        "canonical": "summary"
+      },
+      {
+        "text": "WORK EXPERIENCE",
+        "canonical": "experience"
+      }
+    ],
+    "contact": {
+      "name": "LUCAS MOREAU",
+      "emails": [
+        "lucas.moreau@example.com"
+      ],
+      "phones": [
+        "(555) 492-8172"
+      ],
+      "locations": [
+        "Austin, TX"
+      ],
+      "links": [
+        "github.com/lmoreau-dummy",
+        "linkedin.com/in/lucas-m-dummy"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Senior Infrastructure Engineer",
+        "company": "Datavault Systems",
+        "start": "2022",
+        "end": "Present",
+        "bullet_count": 3,
+        "location": "Austin, TX"
+      },
+      {
+        "title": "Cloud Platform Engineer",
+        "company": "Stratosphere Networks",
+        "start": "2020",
+        "end": "2022",
+        "bullet_count": 2,
+        "location": "Dallas, TX"
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.S. in Computer Science",
+        "institution": "UT Austin",
+        "start": "2016",
+        "end": "2020",
+        "graduation": null,
+        "location": null,
+        "gpa_score": "3.88",
+        "gpa_scale": "4.0"
+      }
+    ],
+    "certifications": [
+      "Certified Kubernetes Admin (CKA)",
+      "AWS Solutions Architect (Pro)",
+      "HashiCorp Terraform Assoc."
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "category": null,
+        "items": [
+          "Go",
+          "Python",
+          "C++",
+          "Kubernetes",
+          "Docker",
+          "Helm",
+          "AWS (EKS, RDS, SQS)",
+          "Kafka",
+          "RabbitMQ",
+          "Redis",
+          "Terraform & CI/CD",
+          "Linux Kernel & eBPF",
+          "Distributed Consensus"
+        ]
+      }
+    ],
+    "source": {
+      "id": "R09",
+      "file": "comprehensive_resume_test_suite/04_PDF_Two_Column_Sidebar_Layout.pdf",
+      "sha256": "c1f2680437323350f4bd296f66d809cc6ef983a60f24d03b8fd91779535df82f",
+      "output": "04_PDF_Two_Column_Sidebar_Layout_9d5f53c27b52"
+    },
+    "annotation_origin": "Assistant source-reviewed audit annotations; reused SHA-bound legacy labels were rechecked against source. Not blinded or independently adjudicated."
+  },
+  "R10": {
+    "headings": [
+      {
+        "text": "CORE COMPETENCIES & AUDIT CAPABILITIES",
+        "canonical": "skills"
+      },
+      {
+        "text": "PROFESSIONAL AUDIT & ACCOUNTING EXPERIENCE",
+        "canonical": "experience"
+      },
+      {
+        "text": "EDUCATION & CREDENTIALS",
+        "canonical": "education"
+      }
+    ],
+    "contact": {
+      "name": "NATALIE CHOW, CPA",
+      "emails": [
+        "natalie.chow.cpa@example.com"
+      ],
+      "phones": [
+        "(555) 918-2045"
+      ],
+      "locations": [
+        "New York, NY"
+      ],
+      "links": [
+        "linkedin.com/in/nataliechow-dummy"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Audit Controller",
+        "company": "Vanguard Trust Partners",
+        "start": "2021",
+        "end": "Present",
+        "bullet_count": 3,
+        "location": "New York, NY"
+      },
+      {
+        "title": "Senior Accountant",
+        "company": "Deloitte & Touche LLP",
+        "start": "2018",
+        "end": "2021",
+        "bullet_count": 2,
+        "location": "Boston, MA"
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.S. in Accounting & Information Systems",
+        "institution": "Boston College — Carroll School of Management",
+        "start": null,
+        "end": null,
+        "graduation": "2018",
+        "location": null,
+        "gpa_score": null,
+        "gpa_scale": null
+      }
+    ],
+    "certifications": [
+      "Certified Public Accountant (CPA)"
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "category": "Financial Controls & Audit",
+        "items": [
+          "Sarbanes-Oxley (SOX 404)",
+          "Risk & Control Matrices (RCM)",
+          "Forensic Audit Investigations"
+        ]
+      },
+      {
+        "category": "Tax & Compliance Standards",
+        "items": [
+          "US GAAP & SEC Form 10-K/Q",
+          "Transfer Pricing Regulation",
+          "Anti-Money Laundering (AML)"
+        ]
+      },
+      {
+        "category": "Software & Systems",
+        "items": [
+          "Workday Financials",
+          "NetSuite ERP",
+          "Alteryx & Advanced SQL"
+        ]
+      }
+    ],
+    "source": {
+      "id": "R10",
+      "file": "comprehensive_resume_test_suite/05_PDF_Strict_Table_Grid_Resume.pdf",
+      "sha256": "c0621a20f19acdfc3e731f6db1768795081d7314d2adb69983b15fdfb91c6186",
+      "output": "05_PDF_Strict_Table_Grid_Resume_d1878cb4b7ee"
+    },
+    "annotation_origin": "Assistant source-reviewed audit annotations; reused SHA-bound legacy labels were rechecked against source. Not blinded or independently adjudicated."
+  },
+  "R11": {
+    "headings": [
+      {
+        "text": "EXECUTIVE SUMMARY:",
+        "canonical": "summary"
+      },
+      {
+        "text": "EXECUTIVE LEADERSHIP & IMPACT",
+        "canonical": "experience"
+      },
+      {
+        "text": "KEY LEADERSHIP METRICS",
+        "canonical": "metrics"
+      },
+      {
+        "text": "TECHNICAL GOVERNANCE",
+        "canonical": "skills"
+      },
+      {
+        "text": "EDUCATION",
+        "canonical": "education"
+      }
+    ],
+    "contact": {
+      "name": "TARIQ AL-HASSAN",
+      "emails": [
+        "tariq.alhassan@example.com"
+      ],
+      "phones": [
+        "+1 (206) 555-0184"
+      ],
+      "locations": [
+        "Seattle, WA"
+      ],
+      "links": [
+        "linkedin.com/in/tariq-ai-dummy"
+      ]
+    },
+    "experience": [
+      {
+        "title": "VP of Machine Learning Platform",
+        "company": "Cerebro Analytics",
+        "start": "2022",
+        "end": "Present",
+        "bullet_count": 3,
+        "location": "Seattle, WA"
+      },
+      {
+        "title": "Director of Applied AI",
+        "company": "Horizon Autonomous Systems",
+        "start": "2018",
+        "end": "2022",
+        "bullet_count": 2,
+        "location": "San Francisco, CA"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Ph.D. in Computer Science (Machine Learning)",
+        "institution": "University of Washington",
+        "start": null,
+        "end": null,
+        "graduation": "2018",
+        "location": null,
+        "gpa_score": null,
+        "gpa_scale": null
+      },
+      {
+        "degree": "B.S. in Electrical Engineering",
+        "institution": "Georgia Institute of Technology",
+        "start": null,
+        "end": null,
+        "graduation": "2013",
+        "location": null,
+        "gpa_score": null,
+        "gpa_scale": null
+      }
+    ],
+    "certifications": [],
+    "projects": [],
+    "skills": [
+      {
+        "category": null,
+        "items": [
+          "PyTorch",
+          "Triton Inference Server",
+          "Ray",
+          "CUDA Optimization",
+          "TensorRT",
+          "vLLM",
+          "Large-Scale Foundation Model Training",
+          "AI Safety",
+          "Red Teaming",
+          "Governance"
+        ]
+      }
+    ],
+    "source": {
+      "id": "R11",
+      "file": "comprehensive_resume_test_suite/06_PDF_Horizontal_Hero_Two_Blocks.pdf",
+      "sha256": "6bb643e81a789bc8107dc98567907237d271c123b5c7030e2b63a363d4c4baaf",
+      "output": "06_PDF_Horizontal_Hero_Two_Blocks_7b3e9ee239fd"
+    },
+    "annotation_origin": "Assistant source-reviewed audit annotations; reused SHA-bound legacy labels were rechecked against source. Not blinded or independently adjudicated."
+  },
+  "R12": {
+    "headings": [
+      {
+        "text": "PROFESSIONAL SUMMARY",
+        "canonical": "summary"
+      },
+      {
+        "text": "TECHNICAL SKILLS",
+        "canonical": "skills"
+      },
+      {
+        "text": "PROFESSIONAL EXPERIENCE",
+        "canonical": "experience"
+      },
+      {
+        "text": "EDUCATION & CERTIFICATIONS",
+        "canonical": "education"
+      },
+      {
+        "text": "Certifications:",
+        "canonical": "certifications"
+      }
+    ],
+    "contact": {
+      "name": "ALEX CHEN",
+      "emails": [
+        "alex.chen.dev@example.com"
+      ],
+      "phones": [
+        "(555) 019-2834"
+      ],
+      "locations": [
+        "San Francisco, CA"
+      ],
+      "links": [
+        "github.com/alexchen-dev",
+        "linkedin.com/in/alexchen-dummy"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Lead Backend Software Engineer",
+        "company": "Nexus Cloud Technologies",
+        "start": "Mar 2023",
+        "end": "Present",
+        "bullet_count": 4,
+        "location": "San Francisco, CA"
+      },
+      {
+        "title": "Full Stack Software Engineer",
+        "company": "Vanguard Digital Labs",
+        "start": "Aug 2020",
+        "end": "Feb 2023",
+        "bullet_count": 3,
+        "location": "Austin, TX"
+      },
+      {
+        "title": "Junior Software Engineer",
+        "company": "Apex Software Solutions",
+        "start": "Jun 2018",
+        "end": "Jul 2020",
+        "bullet_count": 2,
+        "location": "Austin, TX"
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.S. in Computer Science",
+        "institution": "University of California, Berkeley",
+        "start": "2014",
+        "end": "2018",
+        "graduation": null,
+        "location": null,
+        "gpa_score": null,
+        "gpa_scale": null
+      }
+    ],
+    "certifications": [
+      "AWS Certified Solutions Architect – Associate (2024)",
+      "Certified Kubernetes Administrator (CKA, 2023)"
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "category": "Languages",
+        "items": [
+          "Go",
+          "Python",
+          "TypeScript",
+          "Java",
+          "SQL",
+          "Rust (intermediate)"
+        ]
+      },
+      {
+        "category": "Backend & Data",
+        "items": [
+          "Node.js",
+          "FastAPI",
+          "Spring Boot",
+          "PostgreSQL",
+          "Redis",
+          "Apache Kafka",
+          "GraphQL"
+        ]
+      },
+      {
+        "category": "Cloud & DevOps",
+        "items": [
+          "AWS (ECS, Lambda, EKS, RDS)",
+          "Docker",
+          "Kubernetes",
+          "Terraform",
+          "GitHub Actions",
+          "Prometheus"
+        ]
+      },
+      {
+        "category": "Frontend & Tools",
+        "items": [
+          "React 18",
+          "Next.js",
+          "Tailwind CSS",
+          "Jest",
+          "Datadog",
+          "Git",
+          "Linux"
+        ]
+      }
+    ],
+    "source": {
+      "id": "R12",
+      "file": "comprehensive_resume_test_suite/07_DOCX_Modern_Tech_Software_Engineer.docx",
+      "sha256": "2a72ffbeecb5dde4df82c996261ea24f562c5b526b83d19f4faa8189b40c0204",
+      "output": "07_DOCX_Modern_Tech_Software_Engineer_fb8789baff10"
+    },
+    "annotation_origin": "Assistant source-reviewed audit annotations; reused SHA-bound legacy labels were rechecked against source. Not blinded or independently adjudicated."
+  },
+  "R13": {
+    "headings": [
+      {
+        "text": "EXECUTIVE PROFILE",
+        "canonical": "summary"
+      },
+      {
+        "text": "CORE EXECUTIVE COMPETENCIES",
+        "canonical": "skills"
+      },
+      {
+        "text": "EXECUTIVE EXPERIENCE",
+        "canonical": "experience"
+      },
+      {
+        "text": "EDUCATION & CREDENTIALS",
+        "canonical": "education"
+      },
+      {
+        "text": "Credentials:",
+        "canonical": "certifications"
+      }
+    ],
+    "contact": {
+      "name": "ELEANOR R. VANCE",
+      "emails": [
+        "e.vance.executive@example.com"
+      ],
+      "phones": [
+        "+1 (312) 555-8492"
+      ],
+      "locations": [
+        "Chicago, IL"
+      ],
+      "links": [
+        "linkedin.com/in/eleanor-vance-dummy"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Vice President of Global Operations",
+        "company": "Crestview Manufacturing & Logistics Group",
+        "start": "2020",
+        "end": "Present",
+        "bullet_count": 4,
+        "location": "Chicago, IL"
+      },
+      {
+        "title": "Director of Supply Chain & Manufacturing",
+        "company": "Apex Industrial Technologies",
+        "start": "2015",
+        "end": "2020",
+        "bullet_count": 3,
+        "location": "Detroit, MI"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master of Business Administration (MBA)",
+        "institution": "The University of Chicago Booth School of Business",
+        "start": null,
+        "end": null,
+        "graduation": "2013",
+        "location": null,
+        "gpa_score": null,
+        "gpa_scale": null
+      },
+      {
+        "degree": "Bachelor of Science in Industrial Engineering",
+        "institution": "Purdue University",
+        "start": null,
+        "end": null,
+        "graduation": "2007",
+        "location": null,
+        "gpa_score": null,
+        "gpa_scale": null
+      }
+    ],
+    "certifications": [
+      "Lean Six Sigma Master Black Belt (CSSMBB)",
+      "APICS Certified Supply Chain Professional (CSCP)"
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "category": null,
+        "items": [
+          "Multi-Site P&L Management ($250M+)",
+          "Global Supply Chain Optimization",
+          "Post-Merger Operational Integration",
+          "Lean Six Sigma / Continuous Improvement",
+          "Strategic Procurement & Vendor Negotiation",
+          "Cross-Functional Executive Leadership",
+          "Enterprise Risk Management & Compliance",
+          "ERP Systems Modernization (SAP S/4HANA)",
+          "Boardroom Governance & Stakeholder Relations"
+        ]
+      }
+    ],
+    "source": {
+      "id": "R13",
+      "file": "comprehensive_resume_test_suite/08_DOCX_Executive_Corporate_Director.docx",
+      "sha256": "2b267dd0393ba6c14bc7123228cb38ef079f0237d0dd9b3db584c334b58b6146",
+      "output": "08_DOCX_Executive_Corporate_Director_40b73c763042"
+    },
+    "annotation_origin": "Assistant source-reviewed audit annotations; reused SHA-bound legacy labels were rechecked against source. Not blinded or independently adjudicated."
+  },
+  "R14": {
+    "headings": [
+      {
+        "text": "EDUCATION",
+        "canonical": "education"
+      },
+      {
+        "text": "ACADEMIC & RESEARCH APPOINTMENTS",
+        "canonical": "experience"
+      },
+      {
+        "text": "SELECTED PEER-REVIEWED PUBLICATIONS",
+        "canonical": "publications"
+      },
+      {
+        "text": "HONORS, GRANTS & FELLOWSHIPS",
+        "canonical": "awards"
+      }
+    ],
+    "contact": {
+      "name": "DR. SOPHIA AL-MANSOOR, PH.D.",
+      "emails": [
+        "s.almansoor.phd@example.edu"
+      ],
+      "phones": [
+        "+1 (650) 555-0143"
+      ],
+      "locations": [
+        "Stanford, CA 94305"
+      ],
+      "links": [
+        "scholar.example.com/salmansoor"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Postdoctoral Research Fellow",
+        "company": "Department of Bioengineering, Stanford University",
+        "start": "2023",
+        "end": "Present",
+        "bullet_count": 1,
+        "location": null
+      }
+    ],
+    "education": [
+      {
+        "degree": "Ph.D. in Computational Biology & Bioinformatics",
+        "institution": "Stanford University",
+        "start": "2018",
+        "end": "2023",
+        "graduation": null,
+        "location": "Stanford, CA",
+        "gpa_score": null,
+        "gpa_scale": null
+      },
+      {
+        "degree": "B.S. in Molecular Biology & Computer Science (Summa Cum Laude)",
+        "institution": "MIT – Massachusetts Institute of Technology",
+        "start": "2014",
+        "end": "2018",
+        "graduation": null,
+        "location": "Cambridge, MA",
+        "gpa_score": null,
+        "gpa_scale": null
+      }
+    ],
+    "certifications": [],
+    "projects": [],
+    "skills": [],
+    "source": {
+      "id": "R14",
+      "file": "comprehensive_resume_test_suite/09_DOCX_Academic_Research_CV.docx",
+      "sha256": "5830bdf1799ece64b8e44ef8b773300cf1305bbd793a6e973eb669c6491ca40c",
+      "output": "09_DOCX_Academic_Research_CV_c3ac3e1b985e"
+    },
+    "annotation_origin": "Assistant source-reviewed audit annotations; reused SHA-bound legacy labels were rechecked against source. Not blinded or independently adjudicated."
+  },
+  "R15": {
+    "headings": [
+      {
+        "text": "EDUCATION",
+        "canonical": "education"
+      },
+      {
+        "text": "TECHNICAL & ANALYTICAL SKILLS",
+        "canonical": "skills"
+      },
+      {
+        "text": "INTERNSHIP EXPERIENCE",
+        "canonical": "experience"
+      },
+      {
+        "text": "ACADEMIC PROJECT & LEADERSHIP",
+        "canonical": "projects"
+      }
+    ],
+    "contact": {
+      "name": "JORDAN TAYLOR",
+      "emails": [
+        "jordan.taylor.analyst@example.com"
+      ],
+      "phones": [
+        "(555) 762-9013"
+      ],
+      "locations": [
+        "Seattle, WA"
+      ],
+      "links": [
+        "linkedin.com/in/jordan-taylor-dummy"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Business Analyst Intern",
+        "company": "Cascade Financial Services",
+        "start": "Jun 2024",
+        "end": "Sep 2024",
+        "bullet_count": 3,
+        "location": "Seattle, WA"
+      },
+      {
+        "title": "Operations Data Intern",
+        "company": "Evergreen Supply Partners",
+        "start": "Jan 2024",
+        "end": "May 2024",
+        "bullet_count": 2,
+        "location": "Bellevue, WA"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Information Systems & Operations Management",
+        "institution": "University of Washington, Foster School of Business",
+        "start": null,
+        "end": null,
+        "graduation": "June 2025",
+        "location": "Seattle, WA",
+        "gpa_score": "3.82",
+        "gpa_scale": "4.0"
+      }
+    ],
+    "certifications": [],
+    "projects": [
+      {
+        "name": "Supply Chain Simulation Project (Senior Capstone)",
+        "start": null,
+        "end": null,
+        "bullet_count": 0,
+        "technologies": []
+      }
+    ],
+    "skills": [
+      {
+        "category": "Analysis & Tools",
+        "items": [
+          "Tableau",
+          "Power BI",
+          "Advanced Excel (VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query)",
+          "SQL (PostgreSQL)",
+          "Python (Pandas)"
+        ]
+      },
+      {
+        "category": "Business Process",
+        "items": [
+          "Agile/Scrum",
+          "User Stories",
+          "BPMN Diagramming",
+          "JIRA",
+          "Confluence",
+          "Requirement Gathering",
+          "Root Cause Analysis"
+        ]
+      }
+    ],
+    "source": {
+      "id": "R15",
+      "file": "comprehensive_resume_test_suite/10_DOCX_Entry_Level_Business_Analyst.docx",
+      "sha256": "660f09e952f57e81c68954cb8f7097c29b6021b3a3152fa90114933b9ffc62d9",
+      "output": "10_DOCX_Entry_Level_Business_Analyst_5303fd58b817"
+    },
+    "annotation_origin": "Assistant source-reviewed audit annotations; reused SHA-bound legacy labels were rechecked against source. Not blinded or independently adjudicated."
+  },
+  "R16": {
+    "headings": [
+      {
+        "text": "PROFESSIONAL SUMMARY",
+        "canonical": "summary"
+      },
+      {
+        "text": "TECHNICAL SKILLS",
+        "canonical": "skills"
+      },
+      {
+        "text": "PROFESSIONAL EXPERIENCE",
+        "canonical": "experience"
+      },
+      {
+        "text": "EDUCATION & CERTIFICATIONS",
+        "canonical": "education"
+      },
+      {
+        "text": "Certifications:",
+        "canonical": "certifications"
+      }
+    ],
+    "contact": {
+      "name": "ALEX CHEN",
+      "emails": [
+        "alex.chen.dev@example.com"
+      ],
+      "phones": [
+        "(555) 019-2834"
+      ],
+      "locations": [
+        "San Francisco, CA"
+      ],
+      "links": [
+        "github.com/alexchen-dev",
+        "linkedin.com/in/alexchen-dummy"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Lead Backend Software Engineer",
+        "company": "Nexus Cloud Technologies",
+        "start": "Mar 2023",
+        "end": "Present",
+        "bullet_count": 4,
+        "location": "San Francisco, CA"
+      },
+      {
+        "title": "Full Stack Software Engineer",
+        "company": "Vanguard Digital Labs",
+        "start": "Aug 2020",
+        "end": "Feb 2023",
+        "bullet_count": 3,
+        "location": "Austin, TX"
+      },
+      {
+        "title": "Junior Software Engineer",
+        "company": "Apex Software Solutions",
+        "start": "Jun 2018",
+        "end": "Jul 2020",
+        "bullet_count": 2,
+        "location": "Austin, TX"
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.S. in Computer Science",
+        "institution": "University of California, Berkeley",
+        "start": "2014",
+        "end": "2018",
+        "graduation": null,
+        "location": null,
+        "gpa_score": null,
+        "gpa_scale": null
+      }
+    ],
+    "certifications": [
+      "AWS Certified Solutions Architect – Associate (2024)",
+      "Certified Kubernetes Administrator (CKA, 2023)"
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "category": "Languages",
+        "items": [
+          "Go",
+          "Python",
+          "TypeScript",
+          "Java",
+          "SQL",
+          "Rust (intermediate)"
+        ]
+      },
+      {
+        "category": "Backend & Data",
+        "items": [
+          "Node.js",
+          "FastAPI",
+          "Spring Boot",
+          "PostgreSQL",
+          "Redis",
+          "Apache Kafka",
+          "GraphQL"
+        ]
+      },
+      {
+        "category": "Cloud & DevOps",
+        "items": [
+          "AWS (ECS, Lambda, EKS, RDS)",
+          "Docker",
+          "Kubernetes",
+          "Terraform",
+          "GitHub Actions",
+          "Prometheus"
+        ]
+      },
+      {
+        "category": "Frontend & Tools",
+        "items": [
+          "React 18",
+          "Next.js",
+          "Tailwind CSS",
+          "Jest",
+          "Datadog",
+          "Git",
+          "Linux"
+        ]
+      }
+    ],
+    "source": {
+      "id": "R16",
+      "file": "resume_templates_test_bundle/01_Modern_Tech_Software_Engineer.docx",
+      "sha256": "2a72ffbeecb5dde4df82c996261ea24f562c5b526b83d19f4faa8189b40c0204",
+      "output": "01_Modern_Tech_Software_Engineer_11ede08e06e7"
+    },
+    "annotation_origin": "Assistant source-reviewed audit annotations; reused SHA-bound legacy labels were rechecked against source. Not blinded or independently adjudicated."
+  },
+  "R17": {
+    "headings": [
+      {
+        "text": "EXECUTIVE PROFILE",
+        "canonical": "summary"
+      },
+      {
+        "text": "CORE EXECUTIVE COMPETENCIES",
+        "canonical": "skills"
+      },
+      {
+        "text": "EXECUTIVE EXPERIENCE",
+        "canonical": "experience"
+      },
+      {
+        "text": "EDUCATION & CREDENTIALS",
+        "canonical": "education"
+      },
+      {
+        "text": "Credentials:",
+        "canonical": "certifications"
+      }
+    ],
+    "contact": {
+      "name": "ELEANOR R. VANCE",
+      "emails": [
+        "e.vance.executive@example.com"
+      ],
+      "phones": [
+        "+1 (312) 555-8492"
+      ],
+      "locations": [
+        "Chicago, IL"
+      ],
+      "links": [
+        "linkedin.com/in/eleanor-vance-dummy"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Vice President of Global Operations",
+        "company": "Crestview Manufacturing & Logistics Group",
+        "start": "2020",
+        "end": "Present",
+        "bullet_count": 4,
+        "location": "Chicago, IL"
+      },
+      {
+        "title": "Director of Supply Chain & Manufacturing",
+        "company": "Apex Industrial Technologies",
+        "start": "2015",
+        "end": "2020",
+        "bullet_count": 3,
+        "location": "Detroit, MI"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master of Business Administration (MBA)",
+        "institution": "The University of Chicago Booth School of Business",
+        "start": null,
+        "end": null,
+        "graduation": "2013",
+        "location": null,
+        "gpa_score": null,
+        "gpa_scale": null
+      },
+      {
+        "degree": "Bachelor of Science in Industrial Engineering",
+        "institution": "Purdue University",
+        "start": null,
+        "end": null,
+        "graduation": "2007",
+        "location": null,
+        "gpa_score": null,
+        "gpa_scale": null
+      }
+    ],
+    "certifications": [
+      "Lean Six Sigma Master Black Belt (CSSMBB)",
+      "APICS Certified Supply Chain Professional (CSCP)"
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "category": null,
+        "items": [
+          "Multi-Site P&L Management ($250M+)",
+          "Global Supply Chain Optimization",
+          "Post-Merger Operational Integration",
+          "Lean Six Sigma / Continuous Improvement",
+          "Strategic Procurement & Vendor Negotiation",
+          "Cross-Functional Executive Leadership",
+          "Enterprise Risk Management & Compliance",
+          "ERP Systems Modernization (SAP S/4HANA)",
+          "Boardroom Governance & Stakeholder Relations"
+        ]
+      }
+    ],
+    "source": {
+      "id": "R17",
+      "file": "resume_templates_test_bundle/02_Executive_Corporate_Director.docx",
+      "sha256": "2b267dd0393ba6c14bc7123228cb38ef079f0237d0dd9b3db584c334b58b6146",
+      "output": "02_Executive_Corporate_Director_60250fffb3e1"
+    },
+    "annotation_origin": "Assistant source-reviewed audit annotations; reused SHA-bound legacy labels were rechecked against source. Not blinded or independently adjudicated."
+  },
+  "R18": {
+    "headings": [
+      {
+        "text": "DESIGN PHILOSOPHY & SUMMARY",
+        "canonical": "summary"
+      },
+      {
+        "text": "TOOLKIT & METHODOLOGIES",
+        "canonical": "skills"
+      },
+      {
+        "text": "WORK EXPERIENCE",
+        "canonical": "experience"
+      },
+      {
+        "text": "EDUCATION",
+        "canonical": "education"
+      }
+    ],
+    "contact": {
+      "name": "MARCUS BRODY",
+      "emails": [
+        "m.brody.design@example.com"
+      ],
+      "phones": [
+        "(555) 392-7104"
+      ],
+      "locations": [
+        "New York, NY"
+      ],
+      "links": [
+        "marcusbrodydesign.example.com",
+        "dribbble.com/marcusb-dummy"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Lead Product Designer",
+        "company": "Kinetix Health App",
+        "start": "Jan 2022",
+        "end": "Present",
+        "bullet_count": 3,
+        "location": "New York, NY"
+      },
+      {
+        "title": "Senior UX/UI Designer",
+        "company": "Studio Pixel & Form",
+        "start": "Jun 2019",
+        "end": "Dec 2021",
+        "bullet_count": 2,
+        "location": "Brooklyn, NY"
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.F.A. in Graphic & Interactive Media Design",
+        "institution": "Rhode Island School of Design (RISD)",
+        "start": null,
+        "end": null,
+        "graduation": "2019",
+        "location": null,
+        "gpa_score": null,
+        "gpa_scale": null
+      }
+    ],
+    "certifications": [],
+    "projects": [],
+    "skills": [
+      {
+        "category": "Design & Prototyping",
+        "items": [
+          "Figma (Variables, Auto-Layout, Components)",
+          "Principle",
+          "Adobe Creative Cloud",
+          "Framer"
+        ]
+      },
+      {
+        "category": "User Research & Testing",
+        "items": [
+          "UserTesting.com",
+          "Maze",
+          "Moderated Usability Interviews",
+          "Card Sorting",
+          "Journey Mapping",
+          "Heatmaps"
+        ]
+      },
+      {
+        "category": "Front-End Knowledge",
+        "items": [
+          "HTML5",
+          "CSS3",
+          "Tailwind CSS",
+          "Component Architecture",
+          "Git workflows"
+        ]
+      }
+    ],
+    "source": {
+      "id": "R18",
+      "file": "resume_templates_test_bundle/03_Creative_Product_UX_Designer.docx",
+      "sha256": "4a72c3875570e7aa813cc0fe5c0bb0c59548859f011389924b4eecb362c49e8c",
+      "output": "03_Creative_Product_UX_Designer_a9e3428d6b6e"
+    },
+    "annotation_origin": "Assistant source-reviewed audit annotations; reused SHA-bound legacy labels were rechecked against source. Not blinded or independently adjudicated."
+  },
+  "R19": {
+    "headings": [
+      {
+        "text": "EDUCATION",
+        "canonical": "education"
+      },
+      {
+        "text": "ACADEMIC & RESEARCH APPOINTMENTS",
+        "canonical": "experience"
+      },
+      {
+        "text": "SELECTED PEER-REVIEWED PUBLICATIONS",
+        "canonical": "publications"
+      },
+      {
+        "text": "HONORS, GRANTS & FELLOWSHIPS",
+        "canonical": "awards"
+      }
+    ],
+    "contact": {
+      "name": "DR. SOPHIA AL-MANSOOR, PH.D.",
+      "emails": [
+        "s.almansoor.phd@example.edu"
+      ],
+      "phones": [
+        "+1 (650) 555-0143"
+      ],
+      "locations": [
+        "Stanford, CA 94305"
+      ],
+      "links": [
+        "scholar.example.com/salmansoor"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Postdoctoral Research Fellow",
+        "company": "Department of Bioengineering, Stanford University",
+        "start": "2023",
+        "end": "Present",
+        "bullet_count": 1,
+        "location": null
+      }
+    ],
+    "education": [
+      {
+        "degree": "Ph.D. in Computational Biology & Bioinformatics",
+        "institution": "Stanford University",
+        "start": "2018",
+        "end": "2023",
+        "graduation": null,
+        "location": "Stanford, CA",
+        "gpa_score": null,
+        "gpa_scale": null
+      },
+      {
+        "degree": "B.S. in Molecular Biology & Computer Science (Summa Cum Laude)",
+        "institution": "MIT – Massachusetts Institute of Technology",
+        "start": "2014",
+        "end": "2018",
+        "graduation": null,
+        "location": "Cambridge, MA",
+        "gpa_score": null,
+        "gpa_scale": null
+      }
+    ],
+    "certifications": [],
+    "projects": [],
+    "skills": [],
+    "source": {
+      "id": "R19",
+      "file": "resume_templates_test_bundle/04_Academic_Research_CV.docx",
+      "sha256": "5830bdf1799ece64b8e44ef8b773300cf1305bbd793a6e973eb669c6491ca40c",
+      "output": "04_Academic_Research_CV_0131cbcd94bc"
+    },
+    "annotation_origin": "Assistant source-reviewed audit annotations; reused SHA-bound legacy labels were rechecked against source. Not blinded or independently adjudicated."
+  },
+  "R20": {
+    "headings": [
+      {
+        "text": "EDUCATION",
+        "canonical": "education"
+      },
+      {
+        "text": "TECHNICAL & ANALYTICAL SKILLS",
+        "canonical": "skills"
+      },
+      {
+        "text": "INTERNSHIP EXPERIENCE",
+        "canonical": "experience"
+      },
+      {
+        "text": "ACADEMIC PROJECT & LEADERSHIP",
+        "canonical": "projects"
+      }
+    ],
+    "contact": {
+      "name": "JORDAN TAYLOR",
+      "emails": [
+        "jordan.taylor.analyst@example.com"
+      ],
+      "phones": [
+        "(555) 762-9013"
+      ],
+      "locations": [
+        "Seattle, WA"
+      ],
+      "links": [
+        "linkedin.com/in/jordan-taylor-dummy"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Business Analyst Intern",
+        "company": "Cascade Financial Services",
+        "start": "Jun 2024",
+        "end": "Sep 2024",
+        "bullet_count": 3,
+        "location": "Seattle, WA"
+      },
+      {
+        "title": "Operations Data Intern",
+        "company": "Evergreen Supply Partners",
+        "start": "Jan 2024",
+        "end": "May 2024",
+        "bullet_count": 2,
+        "location": "Bellevue, WA"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Information Systems & Operations Management",
+        "institution": "University of Washington, Foster School of Business",
+        "start": null,
+        "end": null,
+        "graduation": "June 2025",
+        "location": "Seattle, WA",
+        "gpa_score": "3.82",
+        "gpa_scale": "4.0"
+      }
+    ],
+    "certifications": [],
+    "projects": [
+      {
+        "name": "Supply Chain Simulation Project (Senior Capstone)",
+        "start": null,
+        "end": null,
+        "bullet_count": 0,
+        "technologies": []
+      }
+    ],
+    "skills": [
+      {
+        "category": "Analysis & Tools",
+        "items": [
+          "Tableau",
+          "Power BI",
+          "Advanced Excel (VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query)",
+          "SQL (PostgreSQL)",
+          "Python (Pandas)"
+        ]
+      },
+      {
+        "category": "Business Process",
+        "items": [
+          "Agile/Scrum",
+          "User Stories",
+          "BPMN Diagramming",
+          "JIRA",
+          "Confluence",
+          "Requirement Gathering",
+          "Root Cause Analysis"
+        ]
+      }
+    ],
+    "source": {
+      "id": "R20",
+      "file": "resume_templates_test_bundle/05_Entry_Level_Business_Analyst.docx",
+      "sha256": "660f09e952f57e81c68954cb8f7097c29b6021b3a3152fa90114933b9ffc62d9",
+      "output": "05_Entry_Level_Business_Analyst_140d6df77d29"
+    },
+    "annotation_origin": "Assistant source-reviewed audit annotations; reused SHA-bound legacy labels were rechecked against source. Not blinded or independently adjudicated."
+  }
+}

@@ -1,0 +1,87 @@
+%PDF-1.3
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [ 4 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Page
+/Resources <<
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+>>
+>>
+/MediaBox [ 0.0 0.0 612 792 ]
+/Parent 2 0 R
+/Contents 7 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+>>
+endobj
+7 0 obj
+<<
+/Length 740
+>>
+stream
+BT /F2 12 Tf 1 0 0 1 35 750 Tm (CONTACT) Tj ET
+BT /F1 11 Tf 1 0 0 1 35 730 Tm (jane@example.com) Tj ET
+BT /F1 11 Tf 1 0 0 1 35 710 Tm (Seattle, WA) Tj ET
+BT /F2 12 Tf 1 0 0 1 35 675 Tm (SKILLS) Tj ET
+BT /F1 11 Tf 1 0 0 1 35 655 Tm (Python SQL) Tj ET
+BT /F1 11 Tf 1 0 0 1 35 635 Tm (Docker Linux) Tj ET
+BT /F2 24 Tf 1 0 0 1 220 750 Tm (JANE DOE) Tj ET
+BT /F1 11 Tf 1 0 0 1 220 722 Tm (Software Engineer) Tj ET
+BT /F2 12 Tf 1 0 0 1 220 682 Tm (EXPERIENCE) Tj ET
+BT /F2 11 Tf 1 0 0 1 220 660 Tm (Engineer | Example Systems) Tj ET
+BT /F1 11 Tf 1 0 0 1 220 642 Tm (2021 - Present) Tj ET
+BT /F1 11 Tf 1 0 0 1 220 620 Tm (Built reliable services for customers.) Tj ET
+BT /F1 11 Tf 1 0 0 1 220 600 Tm (Led the team through a cloud migration.) Tj ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000113 00000 n 
+0000000162 00000 n 
+0000000304 00000 n 
+0000000374 00000 n 
+0000000449 00000 n 
+trailer
+<<
+/Size 8
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+1240
+%%EOF

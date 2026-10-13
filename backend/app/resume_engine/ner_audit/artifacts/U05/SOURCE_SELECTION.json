@@ -1,0 +1,10 @@
+{
+  "id": "U05",
+  "file": "colorful_resume_templates_bundle/02_DOCX_Navy_Teal_Cloud_Architect.docx",
+  "sha256": "14b052f3cdc07a57f163a8498230e2ed0c81e3e72cd91a059631fadfdf382e35",
+  "previous_reference": "R03",
+  "artifact": "artifacts/U05/resume.json",
+  "selected_from": "upload_accuracy/results/U05/resume.json",
+  "selected_sha256": "e4be4e7f2e90b7526d29a90d1b203b909d820fa1ac856e1ccce0f23e4aee91d3",
+  "reason": "Full raw lines, layout and hyperlink metadata; uploaded artifact preferred when available. Structured output is baseline comparison only."
+}

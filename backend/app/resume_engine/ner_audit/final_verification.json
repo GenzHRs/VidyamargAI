@@ -1,0 +1,157 @@
+{
+  "per_resume": [
+    {
+      "id": "05b7670962483386",
+      "schema_valid": true,
+      "profile_schema_valid": true,
+      "entity_text_spans_verified": 24,
+      "evidence_leaves": 63,
+      "raw_preserved": true
+    },
+    {
+      "id": "14b052f3cdc07a57",
+      "schema_valid": true,
+      "profile_schema_valid": true,
+      "entity_text_spans_verified": 33,
+      "evidence_leaves": 78,
+      "raw_preserved": true
+    },
+    {
+      "id": "1f10e01c7b313902",
+      "schema_valid": true,
+      "profile_schema_valid": true,
+      "entity_text_spans_verified": 23,
+      "evidence_leaves": 68,
+      "raw_preserved": true
+    },
+    {
+      "id": "2a72ffbeecb5dde4",
+      "schema_valid": true,
+      "profile_schema_valid": true,
+      "entity_text_spans_verified": 58,
+      "evidence_leaves": 110,
+      "raw_preserved": true
+    },
+    {
+      "id": "2b267dd0393ba6c1",
+      "schema_valid": true,
+      "profile_schema_valid": true,
+      "entity_text_spans_verified": 24,
+      "evidence_leaves": 75,
+      "raw_preserved": true
+    },
+    {
+      "id": "4a72c3875570e7aa",
+      "schema_valid": true,
+      "profile_schema_valid": true,
+      "entity_text_spans_verified": 25,
+      "evidence_leaves": 68,
+      "raw_preserved": true
+    },
+    {
+      "id": "5830bdf1799ece64",
+      "schema_valid": true,
+      "profile_schema_valid": true,
+      "entity_text_spans_verified": 17,
+      "evidence_leaves": 59,
+      "raw_preserved": true
+    },
+    {
+      "id": "5f77f4e59d977937",
+      "schema_valid": true,
+      "profile_schema_valid": true,
+      "entity_text_spans_verified": 16,
+      "evidence_leaves": 70,
+      "raw_preserved": true
+    },
+    {
+      "id": "660f09e952f57e81",
+      "schema_valid": true,
+      "profile_schema_valid": true,
+      "entity_text_spans_verified": 32,
+      "evidence_leaves": 66,
+      "raw_preserved": true
+    },
+    {
+      "id": "6bb643e81a789bc8",
+      "schema_valid": true,
+      "profile_schema_valid": true,
+      "entity_text_spans_verified": 23,
+      "evidence_leaves": 65,
+      "raw_preserved": true
+    },
+    {
+      "id": "89b836400f8f5192",
+      "schema_valid": true,
+      "profile_schema_valid": true,
+      "entity_text_spans_verified": 34,
+      "evidence_leaves": 105,
+      "raw_preserved": true
+    },
+    {
+      "id": "8a28114c043883f5",
+      "schema_valid": true,
+      "profile_schema_valid": true,
+      "entity_text_spans_verified": 15,
+      "evidence_leaves": 77,
+      "raw_preserved": true
+    },
+    {
+      "id": "9ba86722016ea942",
+      "schema_valid": true,
+      "profile_schema_valid": true,
+      "entity_text_spans_verified": 46,
+      "evidence_leaves": 134,
+      "raw_preserved": true
+    },
+    {
+      "id": "9c87168b6d529336",
+      "schema_valid": true,
+      "profile_schema_valid": true,
+      "entity_text_spans_verified": 13,
+      "evidence_leaves": 62,
+      "raw_preserved": true
+    },
+    {
+      "id": "bdb2f38e41ac1fe9",
+      "schema_valid": true,
+      "profile_schema_valid": true,
+      "entity_text_spans_verified": 52,
+      "evidence_leaves": 157,
+      "raw_preserved": true
+    },
+    {
+      "id": "c0621a20f19acdfc",
+      "schema_valid": true,
+      "profile_schema_valid": true,
+      "entity_text_spans_verified": 20,
+      "evidence_leaves": 73,
+      "raw_preserved": true
+    },
+    {
+      "id": "c1f2680437323350",
+      "schema_valid": true,
+      "profile_schema_valid": true,
+      "entity_text_spans_verified": 42,
+      "evidence_leaves": 85,
+      "raw_preserved": true
+    },
+    {
+      "id": "c46b14d76878b810",
+      "schema_valid": true,
+      "profile_schema_valid": true,
+      "entity_text_spans_verified": 25,
+      "evidence_leaves": 61,
+      "raw_preserved": true
+    }
+  ],
+  "database_counts": {
+    "documents": 18,
+    "extractions": 18,
+    "profiles": 18,
+    "profile_entries": 168,
+    "resume_understandings": 18
+  },
+  "frozen_selected_sources_unchanged": true,
+  "span_check_scope": "Offset/provenance integrity, not semantic NER precision or recall"
+}

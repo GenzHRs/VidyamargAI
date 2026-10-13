@@ -1,0 +1,3858 @@
+{
+  "label_origin": "Task-authored development annotations; no original user gold supplied. Not a held-out score.",
+  "files": 19,
+  "unique_personas": 15,
+  "field_micro": {
+    "tp": 570,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "unique_persona_field_micro": {
+    "tp": 441,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "per_metric": {
+    "headings": {
+      "tp": 86,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "heading_detection": {
+      "tp": 86,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "name": {
+      "tp": 19,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "emails": {
+      "tp": 19,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "phones": {
+      "tp": 19,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "locations": {
+      "tp": 19,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "urls": {
+      "tp": 19,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "date_ranges": {
+      "tp": 49,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "degrees": {
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "gpas": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "skills": {
+      "tp": 202,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "experience_entries": {
+      "tp": 38,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "experience_title": {
+      "tp": 38,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "experience_company": {
+      "tp": 38,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "experience_start": {
+      "tp": 38,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "experience_end": {
+      "tp": 38,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "experience_bullet_count": {
+      "tp": 38,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "unique_persona_per_metric": {
+    "headings": {
+      "tp": 68,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "heading_detection": {
+      "tp": 68,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "name": {
+      "tp": 15,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "emails": {
+      "tp": 15,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "phones": {
+      "tp": 15,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "locations": {
+      "tp": 15,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "urls": {
+      "tp": 15,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "date_ranges": {
+      "tp": 36,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "degrees": {
+      "tp": 23,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "gpas": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "skills": {
+      "tp": 154,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "experience_entries": {
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "experience_title": {
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "experience_company": {
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "experience_start": {
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "experience_end": {
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "experience_bullet_count": {
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "per_file": [
+    {
+      "file": "colorful_resume_templates_bundle/01_DOCX_Vibrant_Coral_Creative_Resume.docx",
+      "persona": "maya",
+      "completeness": {
+        "status": "pass",
+        "reference_words": 197,
+        "extracted_words": 197,
+        "matched_words": 197,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "checks": {
+        "headings": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "heading_detection": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "emails": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "phones": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "locations": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "urls": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "date_ranges": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "degrees": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "gpas": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_entries": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_title": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_company": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_start": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_end": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_bullet_count": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "review_count": 1
+    },
+    {
+      "file": "colorful_resume_templates_bundle/02_DOCX_Navy_Teal_Cloud_Architect.docx",
+      "persona": "darius",
+      "completeness": {
+        "status": "pass",
+        "reference_words": 217,
+        "extracted_words": 217,
+        "matched_words": 217,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "checks": {
+        "headings": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "heading_detection": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "emails": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "phones": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "locations": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "urls": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "date_ranges": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "degrees": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "gpas": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_entries": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_title": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_company": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_start": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_end": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_bullet_count": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "review_count": 1
+    },
+    {
+      "file": "colorful_resume_templates_bundle/03_PDF_Royal_Purple_Marketing_Resume.pdf",
+      "persona": "camila",
+      "completeness": {
+        "status": "pass",
+        "reference_words": 228,
+        "extracted_words": 228,
+        "matched_words": 228,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "checks": {
+        "headings": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "heading_detection": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "emails": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "phones": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "locations": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "urls": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "date_ranges": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "degrees": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "gpas": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 14,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_entries": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_title": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_company": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_start": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_end": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_bullet_count": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "review_count": 1
+    },
+    {
+      "file": "colorful_resume_templates_bundle/04_PDF_Emerald_Forest_Operations_Resume.pdf",
+      "persona": "julian",
+      "completeness": {
+        "status": "pass",
+        "reference_words": 188,
+        "extracted_words": 188,
+        "matched_words": 188,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "checks": {
+        "headings": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "heading_detection": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "emails": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "phones": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "locations": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "urls": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "date_ranges": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "degrees": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "gpas": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_entries": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_title": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_company": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_start": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_end": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_bullet_count": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "review_count": 1
+    },
+    {
+      "file": "comprehensive_resume_test_suite/01_DOCX_Two_Column_Sidebar_Layout.docx",
+      "persona": "claire",
+      "completeness": {
+        "status": "pass",
+        "reference_words": 209,
+        "extracted_words": 209,
+        "matched_words": 209,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "checks": {
+        "headings": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "heading_detection": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "emails": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "phones": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "locations": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "urls": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "date_ranges": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "degrees": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "gpas": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_entries": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_title": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_company": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_start": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_end": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_bullet_count": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "review_count": 2
+    },
+    {
+      "file": "comprehensive_resume_test_suite/02_DOCX_Heavy_Table_Layout_Resume.docx",
+      "persona": "devon",
+      "completeness": {
+        "status": "pass",
+        "reference_words": 181,
+        "extracted_words": 181,
+        "matched_words": 181,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "checks": {
+        "headings": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "heading_detection": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "emails": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "phones": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "locations": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "urls": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "date_ranges": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "degrees": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "gpas": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 13,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_entries": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_title": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_company": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_start": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_end": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_bullet_count": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "review_count": 1
+    },
+    {
+      "file": "comprehensive_resume_test_suite/03_DOCX_Horizontal_Hero_Two_Blocks.docx",
+      "persona": "kavita",
+      "completeness": {
+        "status": "pass",
+        "reference_words": 204,
+        "extracted_words": 204,
+        "matched_words": 204,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "checks": {
+        "headings": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "heading_detection": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "emails": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "phones": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "locations": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "urls": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "date_ranges": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "degrees": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "gpas": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_entries": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_title": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_company": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_start": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_end": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_bullet_count": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "review_count": 1
+    },
+    {
+      "file": "comprehensive_resume_test_suite/04_PDF_Two_Column_Sidebar_Layout.pdf",
+      "persona": "lucas",
+      "completeness": {
+        "status": "pass",
+        "reference_words": 206,
+        "extracted_words": 206,
+        "matched_words": 206,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "checks": {
+        "headings": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "heading_detection": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "emails": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "phones": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "locations": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "urls": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "date_ranges": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "degrees": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "gpas": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 18,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_entries": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_title": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_company": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_start": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_end": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_bullet_count": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "review_count": 1
+    },
+    {
+      "file": "comprehensive_resume_test_suite/05_PDF_Strict_Table_Grid_Resume.pdf",
+      "persona": "natalie",
+      "completeness": {
+        "status": "pass",
+        "reference_words": 211,
+        "extracted_words": 211,
+        "matched_words": 211,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "checks": {
+        "headings": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "heading_detection": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "emails": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "phones": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "locations": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "urls": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "date_ranges": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "degrees": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "gpas": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 7,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_entries": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_title": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_company": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_start": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_end": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_bullet_count": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "review_count": 2
+    },
+    {
+      "file": "comprehensive_resume_test_suite/06_PDF_Horizontal_Hero_Two_Blocks.pdf",
+      "persona": "tariq",
+      "completeness": {
+        "status": "pass",
+        "reference_words": 219,
+        "extracted_words": 219,
+        "matched_words": 219,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "checks": {
+        "headings": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "heading_detection": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "emails": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "phones": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "locations": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "urls": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "date_ranges": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "degrees": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "gpas": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_entries": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_title": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_company": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_start": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_end": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_bullet_count": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "review_count": 0
+    },
+    {
+      "file": "comprehensive_resume_test_suite/07_DOCX_Modern_Tech_Software_Engineer.docx",
+      "persona": "alex",
+      "completeness": {
+        "status": "pass",
+        "reference_words": 357,
+        "extracted_words": 357,
+        "matched_words": 357,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "checks": {
+        "headings": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "heading_detection": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "emails": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "phones": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "locations": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "urls": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "date_ranges": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "degrees": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "gpas": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 27,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_entries": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_title": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_company": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_start": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_end": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_bullet_count": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "review_count": 1
+    },
+    {
+      "file": "comprehensive_resume_test_suite/08_DOCX_Executive_Corporate_Director.docx",
+      "persona": "eleanor",
+      "completeness": {
+        "status": "pass",
+        "reference_words": 339,
+        "extracted_words": 339,
+        "matched_words": 339,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "checks": {
+        "headings": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "heading_detection": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "emails": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "phones": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "locations": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "urls": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "date_ranges": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "degrees": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "gpas": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_entries": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_title": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_company": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_start": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_end": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_bullet_count": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "review_count": 0
+    },
+    {
+      "file": "comprehensive_resume_test_suite/09_DOCX_Academic_Research_CV.docx",
+      "persona": "sophia",
+      "completeness": {
+        "status": "pass",
+        "reference_words": 204,
+        "extracted_words": 204,
+        "matched_words": 204,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "checks": {
+        "headings": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "heading_detection": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "emails": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "phones": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "locations": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "urls": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "date_ranges": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "degrees": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "gpas": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_entries": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_title": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_company": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_start": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_end": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_bullet_count": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "review_count": 1
+    },
+    {
+      "file": "comprehensive_resume_test_suite/10_DOCX_Entry_Level_Business_Analyst.docx",
+      "persona": "jordan",
+      "completeness": {
+        "status": "pass",
+        "reference_words": 247,
+        "extracted_words": 247,
+        "matched_words": 247,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "checks": {
+        "headings": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "heading_detection": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "emails": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "phones": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "locations": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "urls": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "date_ranges": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "degrees": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "gpas": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_entries": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_title": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_company": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_start": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_end": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_bullet_count": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "review_count": 1
+    },
+    {
+      "file": "resume_templates_test_bundle/01_Modern_Tech_Software_Engineer.docx",
+      "persona": "alex",
+      "completeness": {
+        "status": "pass",
+        "reference_words": 357,
+        "extracted_words": 357,
+        "matched_words": 357,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "checks": {
+        "headings": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "heading_detection": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "emails": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "phones": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "locations": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "urls": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "date_ranges": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "degrees": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "gpas": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 27,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_entries": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_title": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_company": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_start": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_end": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_bullet_count": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "review_count": 1
+    },
+    {
+      "file": "resume_templates_test_bundle/02_Executive_Corporate_Director.docx",
+      "persona": "eleanor",
+      "completeness": {
+        "status": "pass",
+        "reference_words": 339,
+        "extracted_words": 339,
+        "matched_words": 339,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "checks": {
+        "headings": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "heading_detection": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "emails": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "phones": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "locations": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "urls": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "date_ranges": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "degrees": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "gpas": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_entries": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_title": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_company": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_start": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_end": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_bullet_count": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "review_count": 0
+    },
+    {
+      "file": "resume_templates_test_bundle/03_Creative_Product_UX_Designer.docx",
+      "persona": "marcus",
+      "completeness": {
+        "status": "pass",
+        "reference_words": 261,
+        "extracted_words": 261,
+        "matched_words": 261,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "checks": {
+        "headings": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "heading_detection": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "emails": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "phones": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "locations": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "urls": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "date_ranges": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "degrees": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "gpas": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 13,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_entries": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_title": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_company": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_start": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_end": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_bullet_count": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "review_count": 1
+    },
+    {
+      "file": "resume_templates_test_bundle/04_Academic_Research_CV.docx",
+      "persona": "sophia",
+      "completeness": {
+        "status": "pass",
+        "reference_words": 204,
+        "extracted_words": 204,
+        "matched_words": 204,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "checks": {
+        "headings": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "heading_detection": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "emails": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "phones": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "locations": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "urls": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "date_ranges": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "degrees": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "gpas": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_entries": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_title": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_company": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_start": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_end": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_bullet_count": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "review_count": 1
+    },
+    {
+      "file": "resume_templates_test_bundle/05_Entry_Level_Business_Analyst.docx",
+      "persona": "jordan",
+      "completeness": {
+        "status": "pass",
+        "reference_words": 247,
+        "extracted_words": 247,
+        "matched_words": 247,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "checks": {
+        "headings": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "heading_detection": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "name": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "emails": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "phones": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "locations": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "urls": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "date_ranges": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "degrees": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "gpas": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_entries": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_title": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_company": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_start": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_end": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience_bullet_count": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "review_count": 1
+    }
+  ],
+  "targets": {
+    "strict_completeness": true,
+    "word_recall": true,
+    "heading_f1": true,
+    "field_f1": true
+  }
+}

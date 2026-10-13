@@ -1,0 +1,2579 @@
+{
+  "understanding_schema_version": "1.0.0",
+  "engine": "offline_rule_ner",
+  "source": {
+    "filename": "09_DOCX_Academic_Research_CV.docx",
+    "sha256": "5830bdf1799ece64b8e44ef8b773300cf1305bbd793a6e973eb669c6491ca40c",
+    "type": "docx",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": null,
+    "reference_method": "docx_xml_text"
+  },
+  "artifact_sha256": "f0a2642ed0a7cacb468e973393088a48721788e3d5a24ac16989af75b52099d9",
+  "section_order": [
+    "personal_details",
+    "summary",
+    "education",
+    "work_experience",
+    "internships",
+    "projects",
+    "skills",
+    "certifications",
+    "training",
+    "awards",
+    "publications",
+    "languages",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "profile": {
+    "personal_details": {
+      "name": {
+        "value": "DR. SOPHIA AL-MANSOOR, PH.D.",
+        "confidence": 0.92,
+        "source_line_ids": [
+          "l00000"
+        ]
+      },
+      "emails": [
+        {
+          "value": "s.almansoor.phd@example.edu",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalization": "none",
+          "raw": "Stanford, CA 94305  •  +1 (650) 555-0143  •  s.almansoor.phd@example.edu  •  scholar.example.com/salmansoor"
+        }
+      ],
+      "phones": [
+        {
+          "value": "+1 (650) 555-0143",
+          "confidence": 0.95,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalized": "+16505550143",
+          "valid": true
+        }
+      ],
+      "locations": [
+        {
+          "value": "Stanford, CA 94305",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00002"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "value": "scholar.example.com/salmansoor",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "kind": "website"
+        }
+      ],
+      "headline": {
+        "value": "Department of Computational Biology  •  Stanford University",
+        "source_line_ids": [
+          "l00001"
+        ],
+        "confidence": 0.7
+      }
+    },
+    "summary": [],
+    "education": [
+      {
+        "text": "Ph.D. in Computational Biology & Bioinformatics\nStanford University, Stanford, CA  (2018 – 2023)\nDissertation: Deep Learning Approaches to High-Dimensional Single-Cell Transcriptomics",
+        "source_line_ids": [
+          "l00004",
+          "l00005",
+          "l00006"
+        ],
+        "degree": {
+          "value": "Ph.D. in Computational Biology & Bioinformatics",
+          "source_line_ids": [
+            "l00004"
+          ],
+          "confidence": 0.85
+        },
+        "institution": {
+          "value": "Stanford University",
+          "source_line_ids": [
+            "l00005"
+          ],
+          "confidence": 0.85
+        },
+        "dates": {
+          "value": {
+            "start": "2018",
+            "end": "2023"
+          },
+          "source_line_ids": [
+            "l00005"
+          ],
+          "confidence": 0.95
+        },
+        "graduation": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "location": {
+          "value": "Stanford, CA",
+          "source_line_ids": [
+            "l00005"
+          ],
+          "confidence": 0.85
+        },
+        "gpa": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "normalized_dates": {
+          "start": {
+            "raw": "2018",
+            "value": "2018",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "2023",
+            "value": "2023",
+            "precision": "year"
+          }
+        }
+      },
+      {
+        "text": "B.S. in Molecular Biology & Computer Science (Summa Cum Laude)\nMIT – Massachusetts Institute of Technology, Cambridge, MA  (2014 – 2018)",
+        "source_line_ids": [
+          "l00007",
+          "l00008"
+        ],
+        "degree": {
+          "value": "B.S. in Molecular Biology & Computer Science (Summa Cum Laude)",
+          "source_line_ids": [
+            "l00007"
+          ],
+          "confidence": 0.85
+        },
+        "institution": {
+          "value": "MIT – Massachusetts Institute of Technology",
+          "source_line_ids": [
+            "l00008"
+          ],
+          "confidence": 0.85
+        },
+        "dates": {
+          "value": {
+            "start": "2014",
+            "end": "2018"
+          },
+          "source_line_ids": [
+            "l00008"
+          ],
+          "confidence": 0.95
+        },
+        "graduation": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "location": {
+          "value": "Cambridge, MA",
+          "source_line_ids": [
+            "l00008"
+          ],
+          "confidence": 0.85
+        },
+        "gpa": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "normalized_dates": {
+          "start": {
+            "raw": "2014",
+            "value": "2014",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "2018",
+            "value": "2018",
+            "precision": "year"
+          }
+        }
+      }
+    ],
+    "work_experience": [
+      {
+        "title": {
+          "value": "Postdoctoral Research Fellow",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00010"
+          ]
+        },
+        "company": {
+          "value": "Department of Bioengineering, Stanford University",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00010"
+          ]
+        },
+        "location": {
+          "value": null,
+          "confidence": 0.65,
+          "source_line_ids": [
+            "l00010"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2023",
+            "end": "Present"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00010"
+          ]
+        },
+        "bullets": [
+          "• Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support."
+        ],
+        "text": "Postdoctoral Research Fellow  —  Department of Bioengineering, Stanford University (2023 – Present)\n• Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00010",
+          "l00011"
+        ],
+        "normalized_dates": {
+          "start": {
+            "raw": "2023",
+            "value": "2023",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "Present",
+            "value": null,
+            "precision": "open"
+          }
+        }
+      }
+    ],
+    "internships": [],
+    "projects": [],
+    "skills": [],
+    "certifications": [],
+    "training": [],
+    "awards": [
+      {
+        "text": "• NIH Postdoctoral National Research Service Award (F32) — $155,000 (2024 – 2026)",
+        "source_line_ids": [
+          "l00017"
+        ],
+        "original_heading": "HONORS, GRANTS & FELLOWSHIPS",
+        "name": "NIH Postdoctoral National Research Service Award (F32) — $155,000 (2024 – 2026)",
+        "details": ""
+      },
+      {
+        "text": "• Stanford Bio-X Graduate Student Fellowship (2020 – 2023)",
+        "source_line_ids": [
+          "l00018"
+        ],
+        "original_heading": "HONORS, GRANTS & FELLOWSHIPS",
+        "name": "Stanford Bio-X Graduate Student Fellowship (2020 – 2023)",
+        "details": ""
+      },
+      {
+        "text": "• MIT Outstanding Undergraduate Research Opportunity Program (UROP) Award (2018)",
+        "source_line_ids": [
+          "l00019"
+        ],
+        "original_heading": "HONORS, GRANTS & FELLOWSHIPS",
+        "name": "MIT Outstanding Undergraduate Research Opportunity Program (UROP) Award (2018)",
+        "details": ""
+      }
+    ],
+    "publications": [
+      {
+        "text": "Al-Mansoor, S., Zhang, K., & Miller, D. R. (2025). Latent Diffusion Architectures for Scalable Single-Cell RNA Sequence Reconstruction. Nature Machine Intelligence, 7(3), 215-228.\nAl-Mansoor, S. & Vance, P. K. (2023). Benchmark Evaluations of Graph Neural Networks across Spatial Transcriptomic Datasets. Journal of Computational Biology, 30(8), 842-859.\nRoberts, C. M., Al-Mansoor, S., & Thorne, J. (2021). Unsupervised Embedding of Multi-Omics Cancer Biomarkers. Bioinformatics, 37(14), 1980-1988.",
+        "source_line_ids": [
+          "l00013",
+          "l00014",
+          "l00015"
+        ],
+        "original_heading": "SELECTED PEER-REVIEWED PUBLICATIONS",
+        "name": "Al-Mansoor, S., Zhang, K., & Miller, D. R. (2025). Latent Diffusion Architectures for Scalable Single-Cell RNA Sequence Reconstruction. Nature Machine Intelligence, 7(3), 215-228.",
+        "details": "Al-Mansoor, S. & Vance, P. K. (2023). Benchmark Evaluations of Graph Neural Networks across Spatial Transcriptomic Datasets. Journal of Computational Biology, 30(8), 842-859. Roberts, C. M., Al-Mansoor, S., & Thorne, J. (2021). Unsupervised Embedding of Multi-Omics Cancer Biomarkers. Bioinformatics, 37(14), 1980-1988.",
+        "citation": "Al-Mansoor, S., Zhang, K., & Miller, D. R. (2025). Latent Diffusion Architectures for Scalable Single-Cell RNA Sequence Reconstruction. Nature Machine Intelligence, 7(3), 215-228.\nAl-Mansoor, S. & Vance, P. K. (2023). Benchmark Evaluations of Graph Neural Networks across Spatial Transcriptomic Datasets. Journal of Computational Biology, 30(8), 842-859.\nRoberts, C. M., Al-Mansoor, S., & Thorne, J. (2021). Unsupervised Embedding of Multi-Omics Cancer Biomarkers. Bioinformatics, 37(14), 1980-1988.",
+        "authors": null,
+        "venue": null,
+        "doi": null
+      }
+    ],
+    "languages": [],
+    "other_sections": [],
+    "unassigned_links": []
+  },
+  "entities": [
+    {
+      "id": "e00000",
+      "label": "PERSON",
+      "text": "DR. SOPHIA AL-MANSOOR, PH.D.",
+      "normalized": "DR. SOPHIA AL-MANSOOR, PH.D.",
+      "source_line_id": "l00000",
+      "start": 0,
+      "end": 28,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "preamble_title",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.7
+    },
+    {
+      "id": "e00001",
+      "label": "EMAIL",
+      "text": "s.almansoor.phd@example.edu",
+      "normalized": "s.almansoor.phd@example.edu",
+      "source_line_id": "l00002",
+      "start": 45,
+      "end": 72,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "regex:email",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00002",
+      "label": "PHONE",
+      "text": "+1 (650) 555-0143",
+      "normalized": "+1 (650) 555-0143",
+      "source_line_id": "l00002",
+      "start": 23,
+      "end": 40,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "regex:phone",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00003",
+      "label": "URL",
+      "text": "s.almansoor",
+      "normalized": "s.almansoor",
+      "source_line_id": "l00002",
+      "start": 45,
+      "end": 56,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "literal_url",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00004",
+      "label": "URL",
+      "text": "scholar.example.com/salmansoor",
+      "normalized": "scholar.example.com/salmansoor",
+      "source_line_id": "l00002",
+      "start": 77,
+      "end": 107,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "literal_url",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00005",
+      "label": "DEGREE",
+      "text": "Ph.D. in Computational Biology & Bioinformatics",
+      "normalized": "Ph.D. in Computational Biology & Bioinformatics",
+      "source_line_id": "l00004",
+      "start": 0,
+      "end": 47,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "education",
+      "rule": "education_degree",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00006",
+      "label": "DATE_RANGE",
+      "text": "2018 – 2023",
+      "normalized": "2018 – 2023",
+      "source_line_id": "l00005",
+      "start": 36,
+      "end": 47,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "education",
+      "rule": "regex:date_range",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00007",
+      "label": "INSTITUTION",
+      "text": "Stanford University, Stanford, CA",
+      "normalized": "Stanford University, Stanford, CA",
+      "source_line_id": "l00005",
+      "start": 0,
+      "end": 33,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "education",
+      "rule": "education_institution",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00008",
+      "label": "SKILL",
+      "text": "Deep Learning",
+      "normalized": "Deep Learning",
+      "source_line_id": "l00006",
+      "start": 14,
+      "end": 27,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "education",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00009",
+      "label": "DEGREE",
+      "text": "B.S. in Molecular Biology & Computer Science ",
+      "normalized": "B.S. in Molecular Biology & Computer Science ",
+      "source_line_id": "l00007",
+      "start": 0,
+      "end": 45,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "education",
+      "rule": "education_degree",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00010",
+      "label": "DATE_RANGE",
+      "text": "2014 – 2018",
+      "normalized": "2014 – 2018",
+      "source_line_id": "l00008",
+      "start": 61,
+      "end": 72,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "education",
+      "rule": "regex:date_range",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00011",
+      "label": "INSTITUTION",
+      "text": "MIT – Massachusetts Institute of Technology, Cambridge, MA",
+      "normalized": "MIT – Massachusetts Institute of Technology, Cambridge, MA",
+      "source_line_id": "l00008",
+      "start": 0,
+      "end": 58,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "education",
+      "rule": "education_institution",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00012",
+      "label": "DATE_RANGE",
+      "text": "2023 – Present",
+      "normalized": "2023 – Present",
+      "source_line_id": "l00010",
+      "start": 84,
+      "end": 98,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "regex:date_range",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00013",
+      "label": "ORG",
+      "text": "Postdoctoral Research Fellow  —  Department of Bioengineering, Stanford University (",
+      "normalized": "Postdoctoral Research Fellow  —  Department of Bioengineering, Stanford University (",
+      "source_line_id": "l00010",
+      "start": 0,
+      "end": 84,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "organization_header",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.7
+    },
+    {
+      "id": "e00014",
+      "label": "DATE_RANGE",
+      "text": "1980-1988",
+      "normalized": "1980-1988",
+      "source_line_id": "l00015",
+      "start": 134,
+      "end": 143,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "publications",
+      "rule": "regex:date_range",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00015",
+      "label": "DATE_RANGE",
+      "text": "2024 – 2026",
+      "normalized": "2024 – 2026",
+      "source_line_id": "l00017",
+      "start": 69,
+      "end": 80,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "awards",
+      "rule": "regex:date_range",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00016",
+      "label": "DATE_RANGE",
+      "text": "2020 – 2023",
+      "normalized": "2020 – 2023",
+      "source_line_id": "l00018",
+      "start": 46,
+      "end": 57,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "awards",
+      "rule": "regex:date_range",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    }
+  ],
+  "records": [
+    {
+      "record_id": "education:0",
+      "section": "education",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00004",
+        "l00005",
+        "l00006"
+      ],
+      "entity_ids": [
+        "e00005",
+        "e00006",
+        "e00007",
+        "e00008"
+      ]
+    },
+    {
+      "record_id": "education:1",
+      "section": "education",
+      "ordinal": 1,
+      "source_line_ids": [
+        "l00007",
+        "l00008"
+      ],
+      "entity_ids": [
+        "e00009",
+        "e00010",
+        "e00011"
+      ]
+    },
+    {
+      "record_id": "work_experience:0",
+      "section": "work_experience",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00010",
+        "l00011"
+      ],
+      "entity_ids": [
+        "e00012",
+        "e00013"
+      ]
+    },
+    {
+      "record_id": "awards:0",
+      "section": "awards",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00017"
+      ],
+      "entity_ids": [
+        "e00015"
+      ]
+    },
+    {
+      "record_id": "awards:1",
+      "section": "awards",
+      "ordinal": 1,
+      "source_line_ids": [
+        "l00018"
+      ],
+      "entity_ids": [
+        "e00016"
+      ]
+    },
+    {
+      "record_id": "awards:2",
+      "section": "awards",
+      "ordinal": 2,
+      "source_line_ids": [
+        "l00019"
+      ],
+      "entity_ids": []
+    },
+    {
+      "record_id": "publications:0",
+      "section": "publications",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00013",
+        "l00014",
+        "l00015"
+      ],
+      "entity_ids": [
+        "e00014"
+      ]
+    }
+  ],
+  "evidence": {
+    "personal_details.name.value": {
+      "source_refs": [
+        {
+          "line_id": "l00000",
+          "start": 0,
+          "end": 28,
+          "text": "DR. SOPHIA AL-MANSOOR, PH.D.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.emails[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 45,
+          "end": 72,
+          "text": "s.almansoor.phd@example.edu",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.emails[0].normalization": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 107,
+          "text": "Stanford, CA 94305  •  +1 (650) 555-0143  •  s.almansoor.phd@example.edu  •  scholar.example.com/salmansoor",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.emails[0].raw": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 107,
+          "text": "Stanford, CA 94305  •  +1 (650) 555-0143  •  s.almansoor.phd@example.edu  •  scholar.example.com/salmansoor",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.phones[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 23,
+          "end": 40,
+          "text": "+1 (650) 555-0143",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.phones[0].normalized": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 107,
+          "text": "Stanford, CA 94305  •  +1 (650) 555-0143  •  s.almansoor.phd@example.edu  •  scholar.example.com/salmansoor",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.phones[0].valid": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 107,
+          "text": "Stanford, CA 94305  •  +1 (650) 555-0143  •  s.almansoor.phd@example.edu  •  scholar.example.com/salmansoor",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.locations[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 18,
+          "text": "Stanford, CA 94305",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.links[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 77,
+          "end": 107,
+          "text": "scholar.example.com/salmansoor",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.links[0].kind": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 107,
+          "text": "Stanford, CA 94305  •  +1 (650) 555-0143  •  s.almansoor.phd@example.edu  •  scholar.example.com/salmansoor",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.headline.value": {
+      "source_refs": [
+        {
+          "line_id": "l00001",
+          "start": 0,
+          "end": 59,
+          "text": "Department of Computational Biology  •  Stanford University",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00004",
+          "start": 0,
+          "end": 47,
+          "text": "Ph.D. in Computational Biology & Bioinformatics",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00005",
+          "start": 0,
+          "end": 48,
+          "text": "Stanford University, Stanford, CA  (2018 – 2023)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00006",
+          "start": 0,
+          "end": 86,
+          "text": "Dissertation: Deep Learning Approaches to High-Dimensional Single-Cell Transcriptomics",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].degree.value": {
+      "source_refs": [
+        {
+          "line_id": "l00004",
+          "start": 0,
+          "end": 47,
+          "text": "Ph.D. in Computational Biology & Bioinformatics",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].institution.value": {
+      "source_refs": [
+        {
+          "line_id": "l00005",
+          "start": 0,
+          "end": 19,
+          "text": "Stanford University",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].dates.value.start": {
+      "source_refs": [
+        {
+          "line_id": "l00005",
+          "start": 36,
+          "end": 40,
+          "text": "2018",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].dates.value.end": {
+      "source_refs": [
+        {
+          "line_id": "l00005",
+          "start": 43,
+          "end": 47,
+          "text": "2023",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].location.value": {
+      "source_refs": [
+        {
+          "line_id": "l00005",
+          "start": 21,
+          "end": 33,
+          "text": "Stanford, CA",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].normalized_dates.start.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00004",
+          "start": 0,
+          "end": 47,
+          "text": "Ph.D. in Computational Biology & Bioinformatics",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00005",
+          "start": 36,
+          "end": 40,
+          "text": "2018",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00006",
+          "start": 0,
+          "end": 86,
+          "text": "Dissertation: Deep Learning Approaches to High-Dimensional Single-Cell Transcriptomics",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].normalized_dates.start.value": {
+      "source_refs": [
+        {
+          "line_id": "l00004",
+          "start": 0,
+          "end": 47,
+          "text": "Ph.D. in Computational Biology & Bioinformatics",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00005",
+          "start": 36,
+          "end": 40,
+          "text": "2018",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00006",
+          "start": 0,
+          "end": 86,
+          "text": "Dissertation: Deep Learning Approaches to High-Dimensional Single-Cell Transcriptomics",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].normalized_dates.start.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00004",
+          "start": 0,
+          "end": 47,
+          "text": "Ph.D. in Computational Biology & Bioinformatics",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00005",
+          "start": 0,
+          "end": 48,
+          "text": "Stanford University, Stanford, CA  (2018 – 2023)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00006",
+          "start": 0,
+          "end": 86,
+          "text": "Dissertation: Deep Learning Approaches to High-Dimensional Single-Cell Transcriptomics",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].normalized_dates.end.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00004",
+          "start": 0,
+          "end": 47,
+          "text": "Ph.D. in Computational Biology & Bioinformatics",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00005",
+          "start": 43,
+          "end": 47,
+          "text": "2023",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00006",
+          "start": 0,
+          "end": 86,
+          "text": "Dissertation: Deep Learning Approaches to High-Dimensional Single-Cell Transcriptomics",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].normalized_dates.end.value": {
+      "source_refs": [
+        {
+          "line_id": "l00004",
+          "start": 0,
+          "end": 47,
+          "text": "Ph.D. in Computational Biology & Bioinformatics",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00005",
+          "start": 43,
+          "end": 47,
+          "text": "2023",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00006",
+          "start": 0,
+          "end": 86,
+          "text": "Dissertation: Deep Learning Approaches to High-Dimensional Single-Cell Transcriptomics",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].normalized_dates.end.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00004",
+          "start": 0,
+          "end": 47,
+          "text": "Ph.D. in Computational Biology & Bioinformatics",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00005",
+          "start": 0,
+          "end": 48,
+          "text": "Stanford University, Stanford, CA  (2018 – 2023)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00006",
+          "start": 0,
+          "end": 86,
+          "text": "Dissertation: Deep Learning Approaches to High-Dimensional Single-Cell Transcriptomics",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].text": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 62,
+          "text": "B.S. in Molecular Biology & Computer Science (Summa Cum Laude)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 73,
+          "text": "MIT – Massachusetts Institute of Technology, Cambridge, MA  (2014 – 2018)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].degree.value": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 62,
+          "text": "B.S. in Molecular Biology & Computer Science (Summa Cum Laude)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].institution.value": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 43,
+          "text": "MIT – Massachusetts Institute of Technology",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].dates.value.start": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 61,
+          "end": 65,
+          "text": "2014",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].dates.value.end": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 68,
+          "end": 72,
+          "text": "2018",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].location.value": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 45,
+          "end": 58,
+          "text": "Cambridge, MA",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].normalized_dates.start.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 62,
+          "text": "B.S. in Molecular Biology & Computer Science (Summa Cum Laude)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 61,
+          "end": 65,
+          "text": "2014",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].normalized_dates.start.value": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 62,
+          "text": "B.S. in Molecular Biology & Computer Science (Summa Cum Laude)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 61,
+          "end": 65,
+          "text": "2014",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].normalized_dates.start.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 62,
+          "text": "B.S. in Molecular Biology & Computer Science (Summa Cum Laude)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 73,
+          "text": "MIT – Massachusetts Institute of Technology, Cambridge, MA  (2014 – 2018)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].normalized_dates.end.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 62,
+          "text": "B.S. in Molecular Biology & Computer Science (Summa Cum Laude)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 68,
+          "end": 72,
+          "text": "2018",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].normalized_dates.end.value": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 62,
+          "text": "B.S. in Molecular Biology & Computer Science (Summa Cum Laude)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 68,
+          "end": 72,
+          "text": "2018",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].normalized_dates.end.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 62,
+          "text": "B.S. in Molecular Biology & Computer Science (Summa Cum Laude)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 73,
+          "text": "MIT – Massachusetts Institute of Technology, Cambridge, MA  (2014 – 2018)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].title.value": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 28,
+          "text": "Postdoctoral Research Fellow",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].company.value": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 33,
+          "end": 82,
+          "text": "Department of Bioengineering, Stanford University",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].dates.value.start": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 84,
+          "end": 88,
+          "text": "2023",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].dates.value.end": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 91,
+          "end": 98,
+          "text": "Present",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].bullets[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 99,
+          "text": "Postdoctoral Research Fellow  —  Department of Bioengineering, Stanford University (2023 – Present)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 108,
+          "text": "• Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 99,
+          "text": "Postdoctoral Research Fellow  —  Department of Bioengineering, Stanford University (2023 – Present)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 108,
+          "text": "• Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.start.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 84,
+          "end": 88,
+          "text": "2023",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 108,
+          "text": "• Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.start.value": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 84,
+          "end": 88,
+          "text": "2023",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 108,
+          "text": "• Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.start.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 99,
+          "text": "Postdoctoral Research Fellow  —  Department of Bioengineering, Stanford University (2023 – Present)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 108,
+          "text": "• Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.end.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 91,
+          "end": 98,
+          "text": "Present",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 108,
+          "text": "• Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.end.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 99,
+          "text": "Postdoctoral Research Fellow  —  Department of Bioengineering, Stanford University (2023 – Present)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 108,
+          "text": "• Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "awards[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 81,
+          "text": "• NIH Postdoctoral National Research Service Award (F32) — $155,000 (2024 – 2026)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "awards[0].name": {
+      "source_refs": [
+        {
+          "line_id": "l00017",
+          "start": 2,
+          "end": 81,
+          "text": "NIH Postdoctoral National Research Service Award (F32) — $155,000 (2024 – 2026)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "awards[0].details": {
+      "source_refs": [
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 81,
+          "text": "• NIH Postdoctoral National Research Service Award (F32) — $155,000 (2024 – 2026)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "awards[1].text": {
+      "source_refs": [
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 58,
+          "text": "• Stanford Bio-X Graduate Student Fellowship (2020 – 2023)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "awards[1].name": {
+      "source_refs": [
+        {
+          "line_id": "l00018",
+          "start": 2,
+          "end": 58,
+          "text": "Stanford Bio-X Graduate Student Fellowship (2020 – 2023)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "awards[1].details": {
+      "source_refs": [
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 58,
+          "text": "• Stanford Bio-X Graduate Student Fellowship (2020 – 2023)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "awards[2].text": {
+      "source_refs": [
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 80,
+          "text": "• MIT Outstanding Undergraduate Research Opportunity Program (UROP) Award (2018)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "awards[2].name": {
+      "source_refs": [
+        {
+          "line_id": "l00019",
+          "start": 2,
+          "end": 80,
+          "text": "MIT Outstanding Undergraduate Research Opportunity Program (UROP) Award (2018)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "awards[2].details": {
+      "source_refs": [
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 80,
+          "text": "• MIT Outstanding Undergraduate Research Opportunity Program (UROP) Award (2018)",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "publications[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 179,
+          "text": "Al-Mansoor, S., Zhang, K., & Miller, D. R. (2025). Latent Diffusion Architectures for Scalable Single-Cell RNA Sequence Reconstruction. Nature Machine Intelligence, 7(3), 215-228.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 174,
+          "text": "Al-Mansoor, S. & Vance, P. K. (2023). Benchmark Evaluations of Graph Neural Networks across Spatial Transcriptomic Datasets. Journal of Computational Biology, 30(8), 842-859.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 144,
+          "text": "Roberts, C. M., Al-Mansoor, S., & Thorne, J. (2021). Unsupervised Embedding of Multi-Omics Cancer Biomarkers. Bioinformatics, 37(14), 1980-1988.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "publications[0].name": {
+      "source_refs": [
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 179,
+          "text": "Al-Mansoor, S., Zhang, K., & Miller, D. R. (2025). Latent Diffusion Architectures for Scalable Single-Cell RNA Sequence Reconstruction. Nature Machine Intelligence, 7(3), 215-228.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 174,
+          "text": "Al-Mansoor, S. & Vance, P. K. (2023). Benchmark Evaluations of Graph Neural Networks across Spatial Transcriptomic Datasets. Journal of Computational Biology, 30(8), 842-859.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 144,
+          "text": "Roberts, C. M., Al-Mansoor, S., & Thorne, J. (2021). Unsupervised Embedding of Multi-Omics Cancer Biomarkers. Bioinformatics, 37(14), 1980-1988.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "publications[0].details": {
+      "source_refs": [
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 179,
+          "text": "Al-Mansoor, S., Zhang, K., & Miller, D. R. (2025). Latent Diffusion Architectures for Scalable Single-Cell RNA Sequence Reconstruction. Nature Machine Intelligence, 7(3), 215-228.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 174,
+          "text": "Al-Mansoor, S. & Vance, P. K. (2023). Benchmark Evaluations of Graph Neural Networks across Spatial Transcriptomic Datasets. Journal of Computational Biology, 30(8), 842-859.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 144,
+          "text": "Roberts, C. M., Al-Mansoor, S., & Thorne, J. (2021). Unsupervised Embedding of Multi-Omics Cancer Biomarkers. Bioinformatics, 37(14), 1980-1988.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "publications[0].citation": {
+      "source_refs": [
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 179,
+          "text": "Al-Mansoor, S., Zhang, K., & Miller, D. R. (2025). Latent Diffusion Architectures for Scalable Single-Cell RNA Sequence Reconstruction. Nature Machine Intelligence, 7(3), 215-228.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 174,
+          "text": "Al-Mansoor, S. & Vance, P. K. (2023). Benchmark Evaluations of Graph Neural Networks across Spatial Transcriptomic Datasets. Journal of Computational Biology, 30(8), 842-859.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 144,
+          "text": "Roberts, C. M., Al-Mansoor, S., & Thorne, J. (2021). Unsupervised Embedding of Multi-Omics Cancer Biomarkers. Bioinformatics, 37(14), 1980-1988.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    }
+  },
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "DR. SOPHIA AL-MANSOOR, PH.D.\nDepartment of Computational Biology  •  Stanford University\nStanford, CA 94305  •  +1 (650) 555-0143  •  s.almansoor.phd@example.edu  •  scholar.example.com/salmansoor"
+    },
+    {
+      "id": "s001",
+      "canonical": "education",
+      "original_heading": "EDUCATION",
+      "heading_line_id": "l00003",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00004",
+        "l00005",
+        "l00006",
+        "l00007",
+        "l00008"
+      ],
+      "text": "Ph.D. in Computational Biology & Bioinformatics\nStanford University, Stanford, CA  (2018 – 2023)\nDissertation: Deep Learning Approaches to High-Dimensional Single-Cell Transcriptomics\nB.S. in Molecular Biology & Computer Science (Summa Cum Laude)\nMIT – Massachusetts Institute of Technology, Cambridge, MA  (2014 – 2018)"
+    },
+    {
+      "id": "s002",
+      "canonical": "experience",
+      "original_heading": "ACADEMIC & RESEARCH APPOINTMENTS",
+      "heading_line_id": "l00009",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00010",
+        "l00011"
+      ],
+      "text": "Postdoctoral Research Fellow  —  Department of Bioengineering, Stanford University (2023 – Present)\n• Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support."
+    },
+    {
+      "id": "s003",
+      "canonical": "publications",
+      "original_heading": "SELECTED PEER-REVIEWED PUBLICATIONS",
+      "heading_line_id": "l00012",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00013",
+        "l00014",
+        "l00015"
+      ],
+      "text": "Al-Mansoor, S., Zhang, K., & Miller, D. R. (2025). Latent Diffusion Architectures for Scalable Single-Cell RNA Sequence Reconstruction. Nature Machine Intelligence, 7(3), 215-228.\nAl-Mansoor, S. & Vance, P. K. (2023). Benchmark Evaluations of Graph Neural Networks across Spatial Transcriptomic Datasets. Journal of Computational Biology, 30(8), 842-859.\nRoberts, C. M., Al-Mansoor, S., & Thorne, J. (2021). Unsupervised Embedding of Multi-Omics Cancer Biomarkers. Bioinformatics, 37(14), 1980-1988."
+    },
+    {
+      "id": "s004",
+      "canonical": "awards",
+      "original_heading": "HONORS, GRANTS & FELLOWSHIPS",
+      "heading_line_id": "l00016",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00017",
+        "l00018",
+        "l00019"
+      ],
+      "text": "• NIH Postdoctoral National Research Service Award (F32) — $155,000 (2024 – 2026)\n• Stanford Bio-X Graduate Student Fellowship (2020 – 2023)\n• MIT Outstanding Undergraduate Research Opportunity Program (UROP) Award (2018)"
+    }
+  ],
+  "unclassified": [],
+  "raw_lines": [
+    {
+      "id": "l00000",
+      "text": "DR. SOPHIA AL-MANSOOR, PH.D.",
+      "runs": [
+        {
+          "text": "DR. SOPHIA AL-MANSOOR, PH.D.",
+          "bold": true,
+          "size": 18.0,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00000"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00001",
+      "text": "Department of Computational Biology  •  Stanford University",
+      "runs": [
+        {
+          "text": "Department of Computational Biology  •  Stanford University",
+          "bold": false,
+          "size": 10.5,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00001"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00002",
+      "text": "Stanford, CA 94305  •  +1 (650) 555-0143  •  s.almansoor.phd@example.edu  •  scholar.example.com/salmansoor",
+      "runs": [
+        {
+          "text": "Stanford, CA 94305  •  +1 (650) 555-0143  •  s.almansoor.phd@example.edu  •  scholar.example.com/salmansoor",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00002"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00003",
+      "text": "EDUCATION",
+      "runs": [
+        {
+          "text": "EDUCATION",
+          "bold": true,
+          "size": 11.0,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00003"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00004",
+      "text": "Ph.D. in Computational Biology & Bioinformatics",
+      "runs": [
+        {
+          "text": "Ph.D. in Computational Biology & Bioinformatics",
+          "bold": true,
+          "size": 10.0,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00004"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00005",
+      "text": "Stanford University, Stanford, CA  (2018 – 2023)",
+      "runs": [
+        {
+          "text": "Stanford University, Stanford, CA  (2018 – 2023)",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00005"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00006",
+      "text": "Dissertation: Deep Learning Approaches to High-Dimensional Single-Cell Transcriptomics",
+      "runs": [
+        {
+          "text": "Dissertation: Deep Learning Approaches to High-Dimensional Single-Cell Transcriptomics",
+          "bold": false,
+          "size": 9.0,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00006"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00007",
+      "text": "B.S. in Molecular Biology & Computer Science (Summa Cum Laude)",
+      "runs": [
+        {
+          "text": "B.S. in Molecular Biology & Computer Science (Summa Cum Laude)",
+          "bold": true,
+          "size": 10.0,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00007"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00008",
+      "text": "MIT – Massachusetts Institute of Technology, Cambridge, MA  (2014 – 2018)",
+      "runs": [
+        {
+          "text": "MIT – Massachusetts Institute of Technology, Cambridge, MA  (2014 – 2018)",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00008"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00009",
+      "text": "ACADEMIC & RESEARCH APPOINTMENTS",
+      "runs": [
+        {
+          "text": "ACADEMIC & RESEARCH APPOINTMENTS",
+          "bold": true,
+          "size": 11.0,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00009"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00010",
+      "text": "Postdoctoral Research Fellow  —  Department of Bioengineering, Stanford University (2023 – Present)",
+      "runs": [
+        {
+          "text": "Postdoctoral Research Fellow",
+          "bold": true,
+          "size": 10.0,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        },
+        {
+          "text": "  —  Department of Bioengineering, Stanford University (2023 – Present)",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00010"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00011",
+      "text": "• Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support.",
+      "runs": [
+        {
+          "text": "• Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00011"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00012",
+      "text": "SELECTED PEER-REVIEWED PUBLICATIONS",
+      "runs": [
+        {
+          "text": "SELECTED PEER-REVIEWED PUBLICATIONS",
+          "bold": true,
+          "size": 11.0,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00012"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00013",
+      "text": "Al-Mansoor, S., Zhang, K., & Miller, D. R. (2025). Latent Diffusion Architectures for Scalable Single-Cell RNA Sequence Reconstruction. Nature Machine Intelligence, 7(3), 215-228.",
+      "runs": [
+        {
+          "text": "Al-Mansoor, S., Zhang, K., & Miller, D. R. (2025). Latent Diffusion Architectures for Scalable Single-Cell RNA Sequence Reconstruction. Nature Machine Intelligence, 7(3), 215-228.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00013"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00014",
+      "text": "Al-Mansoor, S. & Vance, P. K. (2023). Benchmark Evaluations of Graph Neural Networks across Spatial Transcriptomic Datasets. Journal of Computational Biology, 30(8), 842-859.",
+      "runs": [
+        {
+          "text": "Al-Mansoor, S. & Vance, P. K. (2023). Benchmark Evaluations of Graph Neural Networks across Spatial Transcriptomic Datasets. Journal of Computational Biology, 30(8), 842-859.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00014"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00015",
+      "text": "Roberts, C. M., Al-Mansoor, S., & Thorne, J. (2021). Unsupervised Embedding of Multi-Omics Cancer Biomarkers. Bioinformatics, 37(14), 1980-1988.",
+      "runs": [
+        {
+          "text": "Roberts, C. M., Al-Mansoor, S., & Thorne, J. (2021). Unsupervised Embedding of Multi-Omics Cancer Biomarkers. Bioinformatics, 37(14), 1980-1988.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00015"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00016",
+      "text": "HONORS, GRANTS & FELLOWSHIPS",
+      "runs": [
+        {
+          "text": "HONORS, GRANTS & FELLOWSHIPS",
+          "bold": true,
+          "size": 11.0,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00016"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00017",
+      "text": "• NIH Postdoctoral National Research Service Award (F32) — $155,000 (2024 – 2026)",
+      "runs": [
+        {
+          "text": "• NIH Postdoctoral National Research Service Award (F32) — $155,000 (2024 – 2026)",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00017"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00018",
+      "text": "• Stanford Bio-X Graduate Student Fellowship (2020 – 2023)",
+      "runs": [
+        {
+          "text": "• Stanford Bio-X Graduate Student Fellowship (2020 – 2023)",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00018"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00019",
+      "text": "• MIT Outstanding Undergraduate Research Opportunity Program (UROP) Award (2018)",
+      "runs": [
+        {
+          "text": "• MIT Outstanding Undergraduate Research Opportunity Program (UROP) Award (2018)",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Times New Roman",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00019"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    }
+  ],
+  "raw_text": "DR. SOPHIA AL-MANSOOR, PH.D.\nDepartment of Computational Biology  •  Stanford University\nStanford, CA 94305  •  +1 (650) 555-0143  •  s.almansoor.phd@example.edu  •  scholar.example.com/salmansoor\nEDUCATION\nPh.D. in Computational Biology & Bioinformatics\nStanford University, Stanford, CA  (2018 – 2023)\nDissertation: Deep Learning Approaches to High-Dimensional Single-Cell Transcriptomics\nB.S. in Molecular Biology & Computer Science (Summa Cum Laude)\nMIT – Massachusetts Institute of Technology, Cambridge, MA  (2014 – 2018)\nACADEMIC & RESEARCH APPOINTMENTS\nPostdoctoral Research Fellow  —  Department of Bioengineering, Stanford University (2023 – Present)\n• Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support.\nSELECTED PEER-REVIEWED PUBLICATIONS\nAl-Mansoor, S., Zhang, K., & Miller, D. R. (2025). Latent Diffusion Architectures for Scalable Single-Cell RNA Sequence Reconstruction. Nature Machine Intelligence, 7(3), 215-228.\nAl-Mansoor, S. & Vance, P. K. (2023). Benchmark Evaluations of Graph Neural Networks across Spatial Transcriptomic Datasets. Journal of Computational Biology, 30(8), 842-859.\nRoberts, C. M., Al-Mansoor, S., & Thorne, J. (2021). Unsupervised Embedding of Multi-Omics Cancer Biomarkers. Bioinformatics, 37(14), 1980-1988.\nHONORS, GRANTS & FELLOWSHIPS\n• NIH Postdoctoral National Research Service Award (F32) — $155,000 (2024 – 2026)\n• Stanford Bio-X Graduate Student Fellowship (2020 – 2023)\n• MIT Outstanding Undergraduate Research Opportunity Program (UROP) Award (2018)",
+  "validation": {
+    "issues": [],
+    "legacy_schema_errors": [],
+    "completeness": {
+      "status": "pass",
+      "reference_words": 204,
+      "extracted_words": 204,
+      "matched_words": 204,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "semantic_accuracy": "not_established_by_schema_validation"
+  },
+  "review_status": "needs_review",
+  "comparison": {
+    "provided": true,
+    "changed": false,
+    "ground_truth": false
+  }
+}

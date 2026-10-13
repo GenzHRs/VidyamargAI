@@ -1,0 +1,594 @@
+{
+  "schema_version": "3.0.0",
+  "section_order": [
+    "contact",
+    "summary",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "certifications",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "contact": {
+    "name": {
+      "value": "JAYAVARAPU SIVA TEJACHARY",
+      "confidence": 0.65,
+      "source_line_ids": [
+        "l00000"
+      ]
+    },
+    "emails": [
+      {
+        "value": "j.shivachary@gmail.com",
+        "confidence": 0.85,
+        "source_line_ids": [
+          "l00001"
+        ],
+        "normalization": "whitespace_around_at",
+        "raw": "j.shivachary @gmail.com |+919866862016 | Guntur, Andhra Pradesh, 522414"
+      }
+    ],
+    "phones": [
+      {
+        "value": "+919866862016",
+        "confidence": 0.95,
+        "source_line_ids": [
+          "l00001"
+        ],
+        "normalized": "+919866862016",
+        "valid": true
+      }
+    ],
+    "locations": [
+      {
+        "value": "Guntur, Andhra Pradesh, 522414",
+        "source_line_ids": [
+          "l00001"
+        ],
+        "confidence": 0.85
+      }
+    ],
+    "links": []
+  },
+  "summary": [
+    {
+      "text": "Computer Science graduate with hands-on experience in data science, machine learning, and data analysis using\nPython. Skilled in building predictive models and NLP applications using Scikit-learn,TensorFlow, and PyTorch, with experience deploying ML models on Amazon SageMaker and using Google Gemini API.",
+      "source_line_ids": [
+        "l00004",
+        "l00005",
+        "l00006"
+      ],
+      "value": "Computer Science graduate with hands-on experience in data science, machine learning, and data analysis using Python. Skilled in building predictive models and NLP applications using Scikit-learn,TensorFlow, and PyTorch, with experience deploying ML models on Amazon SageMaker and using Google Gemini API."
+    }
+  ],
+  "experience": [
+    {
+      "title": {
+        "value": "AI/ML Virtual Intern",
+        "confidence": 0.65,
+        "source_line_ids": [
+          "l00018"
+        ]
+      },
+      "company": {
+        "value": null,
+        "confidence": 0.65,
+        "source_line_ids": [
+          "l00018"
+        ]
+      },
+      "location": {
+        "value": null,
+        "confidence": 0.65,
+        "source_line_ids": [
+          "l00018"
+        ]
+      },
+      "dates": {
+        "value": {
+          "start": "May 2023",
+          "end": "July 2023"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00025"
+        ]
+      },
+      "bullets": [
+        "• Developed and deployed 3 supervised ML models on AWS SageMaker with real-world datasets (15,000+ rows).",
+        "• Improved prediction accuracy by 18% after hyperparameter tuning and cross-validation.",
+        "• Evaluated model performance using confusion matrix, F1-score, precision, and recall.",
+        "• Automated end-to-end ML workflows using AWS SageMaker, Lambda, and S3, reducing manual deployment time by 40%."
+      ],
+      "text": "AI/ML Virtual Intern\nMay 2023 – July 2023\n• Developed and deployed 3 supervised ML models on AWS SageMaker with real-world datasets (15,000+ rows).\n• Improved prediction accuracy by 18% after hyperparameter tuning and cross-validation.\n• Evaluated model performance using confusion matrix, F1-score, precision, and recall.\n• Automated end-to-end ML workflows using AWS SageMaker, Lambda, and S3, reducing manual deployment time by 40%.",
+      "confidence": 0.65,
+      "source_line_ids": [
+        "l00018",
+        "l00025",
+        "l00027",
+        "l00026",
+        "l00028",
+        "l00030",
+        "l00029",
+        "l00032",
+        "l00031",
+        "l00034",
+        "l00033",
+        "l00035"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "text": "Chalapathi Institute of Engineering and Technology\nGuntur, AndhraPradesh\nBTech in Computer science and Engineering\nSeptember 2020 - April 2024\nGPA: 7.9",
+      "source_line_ids": [
+        "l00008",
+        "l00019",
+        "l00009",
+        "l00020",
+        "l00010"
+      ],
+      "degree": {
+        "value": "BTech in Computer science and Engineering",
+        "source_line_ids": [
+          "l00009"
+        ],
+        "confidence": 0.85
+      },
+      "institution": {
+        "value": "Chalapathi Institute of Engineering and Technology",
+        "source_line_ids": [
+          "l00008"
+        ],
+        "confidence": 0.85
+      },
+      "dates": {
+        "value": {
+          "start": "September 2020",
+          "end": "April 2024"
+        },
+        "source_line_ids": [
+          "l00020"
+        ],
+        "confidence": 0.95
+      },
+      "graduation": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "location": {
+        "value": "Guntur, AndhraPradesh",
+        "source_line_ids": [
+          "l00019"
+        ],
+        "confidence": 0.85
+      },
+      "gpa": {
+        "value": {
+          "score": "7.9",
+          "scale": null
+        },
+        "source_line_ids": [
+          "l00010"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "text": "Intermediate\nNoble Sai Junior College\nDachepalle, AndhraPradesh\nGPA: 9.13\nJune 2018 - Feb 2020",
+      "source_line_ids": [
+        "l00011",
+        "l00012",
+        "l00021",
+        "l00013",
+        "l00022"
+      ],
+      "degree": {
+        "value": "Intermediate",
+        "source_line_ids": [
+          "l00011"
+        ],
+        "confidence": 0.85
+      },
+      "institution": {
+        "value": "Noble Sai Junior College",
+        "source_line_ids": [
+          "l00012"
+        ],
+        "confidence": 0.85
+      },
+      "dates": {
+        "value": {
+          "start": "June 2018",
+          "end": "Feb 2020"
+        },
+        "source_line_ids": [
+          "l00022"
+        ],
+        "confidence": 0.95
+      },
+      "graduation": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "location": {
+        "value": "Dachepalle, AndhraPradesh",
+        "source_line_ids": [
+          "l00021"
+        ],
+        "confidence": 0.85
+      },
+      "gpa": {
+        "value": {
+          "score": "9.13",
+          "scale": null
+        },
+        "source_line_ids": [
+          "l00013"
+        ],
+        "confidence": 0.85
+      }
+    },
+    {
+      "text": "SSC(10th)\nZP High School\nDachepalle, AndhraPradesh\nGPA: 9.7\nJune 2017 - Mar 2018",
+      "source_line_ids": [
+        "l00014",
+        "l00015",
+        "l00023",
+        "l00016",
+        "l00024"
+      ],
+      "degree": {
+        "value": "SSC(10th)",
+        "source_line_ids": [
+          "l00014"
+        ],
+        "confidence": 0.85
+      },
+      "institution": {
+        "value": "ZP High School",
+        "source_line_ids": [
+          "l00015"
+        ],
+        "confidence": 0.85
+      },
+      "dates": {
+        "value": {
+          "start": "June 2017",
+          "end": "Mar 2018"
+        },
+        "source_line_ids": [
+          "l00024"
+        ],
+        "confidence": 0.95
+      },
+      "graduation": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "location": {
+        "value": "Dachepalle, AndhraPradesh",
+        "source_line_ids": [
+          "l00023"
+        ],
+        "confidence": 0.85
+      },
+      "gpa": {
+        "value": {
+          "score": "9.7",
+          "scale": null
+        },
+        "source_line_ids": [
+          "l00016"
+        ],
+        "confidence": 0.85
+      }
+    }
+  ],
+  "projects": [
+    {
+      "text": "1. AI Super Assistant\n• Built an AI-powered automation assistant that executes real-world tasks such as food ordering, ride booking, and music playback using voice commands.\n• Implemented intent detection using NVIDIA API and integrated LLM + RAG to generate step-by-step action plans.\n• Developed a context-aware recommendation system to suggest food, songs, and videos based on user preferences, ratings, location, and time.\n• Added predictive user behavior modeling to proactively recommend actions based on user habits.\n• Implemented Android automation using Kotlin AccessibilityService to perform actions across apps automatically.",
+      "source_line_ids": [
+        "l00037",
+        "l00039",
+        "l00038",
+        "l00040",
+        "l00042",
+        "l00041",
+        "l00043",
+        "l00045",
+        "l00044",
+        "l00046",
+        "l00048",
+        "l00047",
+        "l00050",
+        "l00049",
+        "l00051"
+      ],
+      "name": {
+        "value": "AI Super Assistant",
+        "source_line_ids": [
+          "l00037"
+        ],
+        "confidence": 0.85
+      },
+      "dates": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "technologies": [],
+      "description": "Built an AI-powered automation assistant that executes real-world tasks such as food ordering, ride booking, and music playback using voice commands. Implemented intent detection using NVIDIA API and integrated LLM + RAG to generate step-by-step action plans. Developed a context-aware recommendation system to suggest food, songs, and videos based on user preferences, ratings, location, and time. Added predictive user behavior modeling to proactively recommend actions based on user habits. Implemented Android automation using Kotlin AccessibilityService to perform actions across apps automatically.",
+      "bullets": [
+        "Built an AI-powered automation assistant that executes real-world tasks such as food ordering, ride booking, and music playback using voice commands.",
+        "Implemented intent detection using NVIDIA API and integrated LLM + RAG to generate step-by-step action plans.",
+        "Developed a context-aware recommendation system to suggest food, songs, and videos based on user preferences, ratings, location, and time.",
+        "Added predictive user behavior modeling to proactively recommend actions based on user habits.",
+        "Implemented Android automation using Kotlin AccessibilityService to perform actions across apps automatically."
+      ]
+    },
+    {
+      "text": "2. Smart Multi-Restaurant Delivery Optimization System\n• Designed a multi-restaurant ordering system that allows customers to order food from multiple nearby restaurants in a single order.\n• Developed a distance-based feasibility algorithm to allow orders only when restaurants are within a defined radius (0–3 km).\n• Implemented route optimization logic to assign one delivery partner to pick up orders from multiple restaurants and deliver them efficiently to the same customer.\n• Built a delivery time prediction model using distance, preparation time, and traffic conditions to improve delivery efficiency and reduce delivery cost.",
+      "source_line_ids": [
+        "l00052",
+        "l00054",
+        "l00053",
+        "l00055",
+        "l00057",
+        "l00056",
+        "l00058",
+        "l00060",
+        "l00059",
+        "l00061",
+        "l00063",
+        "l00062",
+        "l00064"
+      ],
+      "name": {
+        "value": "Smart Multi-Restaurant Delivery Optimization System",
+        "source_line_ids": [
+          "l00052"
+        ],
+        "confidence": 0.85
+      },
+      "dates": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "technologies": [],
+      "description": "Designed a multi-restaurant ordering system that allows customers to order food from multiple nearby restaurants in a single order. Developed a distance-based feasibility algorithm to allow orders only when restaurants are within a defined radius (0–3 km). Implemented route optimization logic to assign one delivery partner to pick up orders from multiple restaurants and deliver them efficiently to the same customer. Built a delivery time prediction model using distance, preparation time, and traffic conditions to improve delivery efficiency and reduce delivery cost.",
+      "bullets": [
+        "Designed a multi-restaurant ordering system that allows customers to order food from multiple nearby restaurants in a single order.",
+        "Developed a distance-based feasibility algorithm to allow orders only when restaurants are within a defined radius (0–3 km).",
+        "Implemented route optimization logic to assign one delivery partner to pick up orders from multiple restaurants and deliver them efficiently to the same customer.",
+        "Built a delivery time prediction model using distance, preparation time, and traffic conditions to improve delivery efficiency and reduce delivery cost."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "text": "• Languages & Programming: Python, SQL",
+      "source_line_ids": [
+        "l00066"
+      ],
+      "category": "Languages & Programming",
+      "items": [
+        "Python",
+        "SQL"
+      ]
+    },
+    {
+      "text": "• ML & AI: Scikit-learn, TensorFlow, PyTorch, RAG, NLP",
+      "source_line_ids": [
+        "l00067"
+      ],
+      "category": "ML & AI",
+      "items": [
+        "Scikit-learn",
+        "TensorFlow",
+        "PyTorch",
+        "RAG",
+        "NLP"
+      ]
+    },
+    {
+      "text": "• Data Analytics & Visualization: Pandas, NumPy, Matplotlib",
+      "source_line_ids": [
+        "l00068"
+      ],
+      "category": "Data Analytics & Visualization",
+      "items": [
+        "Pandas",
+        "NumPy",
+        "Matplotlib"
+      ]
+    },
+    {
+      "text": "• Tools & Platforms: Git, GitHub, Jupyter, Google Colab, VS Code",
+      "source_line_ids": [
+        "l00069"
+      ],
+      "category": "Tools & Platforms",
+      "items": [
+        "Git",
+        "GitHub",
+        "Jupyter",
+        "Google Colab",
+        "VS Code"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "text": "• Data Science & Machine Learning - Cranes Varsity, Bengaluru. Trained in Python, RDBMS, Exploratory Data Analysis (EDA), Power BI, and ML, NLP",
+      "source_line_ids": [
+        "l00072",
+        "l00071",
+        "l00073"
+      ],
+      "name": {
+        "value": "Data Science & Machine Learning - Cranes Varsity, Bengaluru.",
+        "source_line_ids": [
+          "l00072",
+          "l00071",
+          "l00073"
+        ],
+        "confidence": 0.85
+      },
+      "details": "Trained in Python, RDBMS, Exploratory Data Analysis (EDA), Power BI, and ML, NLP"
+    }
+  ],
+  "other_sections": [],
+  "review": [
+    {
+      "path": "fields.name",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.65
+    },
+    {
+      "path": "fields.experience[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.65
+    },
+    {
+      "path": "fields.experience[0].title",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.65
+    },
+    {
+      "path": "fields.experience[0].company",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.65
+    },
+    {
+      "path": "fields.experience[0].location",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.65
+    },
+    {
+      "path": "raw_text",
+      "reason": "Completeness fail",
+      "confidence": 0.0
+    }
+  ],
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "JAYAVARAPU SIVA TEJACHARY\nj.shivachary @gmail.com |+919866862016 | Guntur, Andhra Pradesh, 522414\nLinkedin | GitHub | CodeChef | HackerRank"
+    },
+    {
+      "id": "s001",
+      "canonical": "summary",
+      "original_heading": "Professional Summary",
+      "heading_line_id": "l00003",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00004",
+        "l00005"
+      ],
+      "text": "Computer Science graduate with hands-on experience in data science, machine learning, and data analysis using\nPython. Skilled in building predictive models and NLP applications using Scikit-learn,TensorFlow, and PyTorch, with experience deploying ML models on Amazon SageMaker and using Google Gemini API."
+    },
+    {
+      "id": "s002",
+      "canonical": "education",
+      "original_heading": "Education",
+      "heading_line_id": "l00007",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00008",
+        "l00019",
+        "l00009",
+        "l00020",
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00021",
+        "l00013",
+        "l00022",
+        "l00014",
+        "l00015",
+        "l00023",
+        "l00016",
+        "l00024"
+      ],
+      "text": "Chalapathi Institute of Engineering and Technology\nGuntur, AndhraPradesh\nBTech in Computer science and Engineering\nSeptember 2020 - April 2024\nGPA: 7.9\nIntermediate\nNoble Sai Junior College\nDachepalle, AndhraPradesh\nGPA: 9.13\nJune 2018 - Feb 2020\nSSC(10th)\nZP High School\nDachepalle, AndhraPradesh\nGPA: 9.7\nJune 2017 - Mar 2018"
+    },
+    {
+      "id": "s003",
+      "canonical": "experience",
+      "original_heading": "Experience",
+      "heading_line_id": "l00017",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00018",
+        "l00025",
+        "l00026",
+        "l00029",
+        "l00031",
+        "l00033"
+      ],
+      "text": "AI/ML Virtual Intern\nMay 2023 – July 2023\n• Developed and deployed 3 supervised ML models on AWS SageMaker with real-world datasets (15,000+ rows).\n• Improved prediction accuracy by 18% after hyperparameter tuning and cross-validation.\n• Evaluated model performance using confusion matrix, F1-score, precision, and recall.\n• Automated end-to-end ML workflows using AWS SageMaker, Lambda, and S3, reducing manual deployment time by 40%."
+    },
+    {
+      "id": "s004",
+      "canonical": "projects",
+      "original_heading": "Projects",
+      "heading_line_id": "l00036",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00037",
+        "l00038",
+        "l00041",
+        "l00044",
+        "l00047",
+        "l00049",
+        "l00052",
+        "l00053",
+        "l00056",
+        "l00059",
+        "l00062"
+      ],
+      "text": "1. AI Super Assistant\n• Built an AI-powered automation assistant that executes real-world tasks such as food ordering, ride booking, and music playback using voice commands.\n• Implemented intent detection using NVIDIA API and integrated LLM + RAG to generate step-by-step action plans.\n• Developed a context-aware recommendation system to suggest food, songs, and videos based on user preferences, ratings, location, and time.\n• Added predictive user behavior modeling to proactively recommend actions based on user habits.\n• Implemented Android automation using Kotlin AccessibilityService to perform actions across apps automatically.\n2. Smart Multi-Restaurant Delivery Optimization System\n• Designed a multi-restaurant ordering system that allows customers to order food from multiple nearby restaurants in a single order.\n• Developed a distance-based feasibility algorithm to allow orders only when restaurants are within a defined radius (0–3 km).\n• Implemented route optimization logic to assign one delivery partner to pick up orders from multiple restaurants and deliver them efficiently to the same customer.\n• Built a delivery time prediction model using distance, preparation time, and traffic conditions to improve delivery efficiency and reduce delivery cost."
+    },
+    {
+      "id": "s005",
+      "canonical": "skills",
+      "original_heading": "Skills",
+      "heading_line_id": "l00065",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00066",
+        "l00067",
+        "l00068",
+        "l00069"
+      ],
+      "text": "• Languages & Programming: Python, SQL\n• ML & AI: Scikit-learn, TensorFlow, PyTorch, RAG, NLP\n• Data Analytics & Visualization: Pandas, NumPy, Matplotlib\n• Tools & Platforms: Git, GitHub, Jupyter, Google Colab, VS Code"
+    },
+    {
+      "id": "s006",
+      "canonical": "certifications",
+      "original_heading": "Certification",
+      "heading_line_id": "l00070",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00071"
+      ],
+      "text": "• Data Science & Machine Learning - Cranes Varsity, Bengaluru. Trained in Python, RDBMS, Exploratory Data Analysis (EDA), Power BI, and ML, NLP"
+    }
+  ]
+}

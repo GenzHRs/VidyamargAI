@@ -1,0 +1,10 @@
+{
+  "id": "U08",
+  "file": "comprehensive_resume_test_suite/01_DOCX_Two_Column_Sidebar_Layout.docx",
+  "sha256": "05b76709624833861cab54350575e9a76917f332fca0ccbf292d06b0ab116bbb",
+  "previous_reference": "R06",
+  "artifact": "artifacts/U08/resume.json",
+  "selected_from": "upload_accuracy/results/U08/resume.json",
+  "selected_sha256": "187023dac26507f51b0f1196c9dce278aae3453de39f7cf68419733430c11b02",
+  "reason": "Full raw lines, layout and hyperlink metadata; uploaded artifact preferred when available. Structured output is baseline comparison only."
+}

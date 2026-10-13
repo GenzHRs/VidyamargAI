@@ -1,0 +1,82 @@
+{
+  "file": "comprehensive_resume_test_suite/08_DOCX_Executive_Corporate_Director.docx",
+  "sha256": "2b267dd0393ba6c14bc7123228cb38ef079f0237d0dd9b3db584c334b58b6146",
+  "persona": "eleanor",
+  "annotation_origin": "source-reviewed development labels authored for this task; not user gold or held out",
+  "headings": [
+    {
+      "text": "EXECUTIVE PROFILE",
+      "canonical": "summary"
+    },
+    {
+      "text": "CORE EXECUTIVE COMPETENCIES",
+      "canonical": "skills"
+    },
+    {
+      "text": "EXECUTIVE EXPERIENCE",
+      "canonical": "experience"
+    },
+    {
+      "text": "EDUCATION & CREDENTIALS",
+      "canonical": "education"
+    },
+    {
+      "text": "Credentials:",
+      "canonical": "certifications"
+    }
+  ],
+  "fields": {
+    "name": "ELEANOR R. VANCE",
+    "emails": [
+      "e.vance.executive@example.com"
+    ],
+    "phones": [
+      "+1 (312) 555-8492"
+    ],
+    "locations": [
+      "Chicago, IL"
+    ],
+    "urls": [
+      "linkedin.com/in/eleanor-vance-dummy"
+    ],
+    "date_ranges": [
+      {
+        "start": "2020",
+        "end": "Present"
+      },
+      {
+        "start": "2015",
+        "end": "2020"
+      }
+    ],
+    "degrees": [
+      "Master of Business Administration",
+      "MBA",
+      "Bachelor of Science in Industrial Engineering"
+    ],
+    "gpas": [],
+    "skills": [
+      "Supply Chain",
+      "Lean Six Sigma",
+      "Procurement",
+      "Risk Management",
+      "SAP S/4HANA"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Vice President of Global Operations",
+      "company": "Crestview Manufacturing & Logistics Group",
+      "start": "2020",
+      "end": "Present",
+      "bullet_count": 4
+    },
+    {
+      "title": "Director of Supply Chain & Manufacturing",
+      "company": "Apex Industrial Technologies",
+      "start": "2015",
+      "end": "2020",
+      "bullet_count": 3
+    }
+  ]
+}

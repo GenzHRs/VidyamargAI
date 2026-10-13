@@ -1,0 +1,8 @@
+test_bullets_ligatures_and_contacts (test_04_normalize.NormalizeTests.test_bullets_ligatures_and_contacts) ... ok
+test_exact_margin_repeats_only (test_04_normalize.NormalizeTests.test_exact_margin_repeats_only) ... ok
+test_tight_prose_and_column_boundary (test_04_normalize.NormalizeTests.test_tight_prose_and_column_boundary) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK

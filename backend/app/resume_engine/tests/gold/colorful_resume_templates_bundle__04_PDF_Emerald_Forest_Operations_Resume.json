@@ -1,0 +1,71 @@
+{
+  "file": "colorful_resume_templates_bundle/04_PDF_Emerald_Forest_Operations_Resume.pdf",
+  "sha256": "8a28114c043883f515bb055f3cb0c0cbfee3d13134a2eba717a7a0cfbf12a44f",
+  "persona": "julian",
+  "annotation_origin": "source-reviewed development labels authored for this task; not user gold or held out",
+  "headings": [
+    {
+      "text": "CORE COMPETENCY FRAMEWORK",
+      "canonical": "skills"
+    },
+    {
+      "text": "OPERATIONAL LEADERSHIP EXPERIENCE",
+      "canonical": "experience"
+    },
+    {
+      "text": "EDUCATION & CREDENTIALS",
+      "canonical": "education"
+    }
+  ],
+  "fields": {
+    "name": "JULIAN A. MERCER",
+    "emails": [
+      "julian.mercer@example.com"
+    ],
+    "phones": [
+      "(555) 481-0294"
+    ],
+    "locations": [
+      "Boston, MA"
+    ],
+    "urls": [
+      "linkedin.com/in/julianmercer-dummy"
+    ],
+    "date_ranges": [
+      {
+        "start": "2021",
+        "end": "Present"
+      },
+      {
+        "start": "2017",
+        "end": "2021"
+      }
+    ],
+    "degrees": [
+      "Master of Business Administration",
+      "MBA",
+      "B.A. in Economics"
+    ],
+    "gpas": [],
+    "skills": [
+      "Lean Six Sigma",
+      "Procurement"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Director of Business Operations",
+      "company": "Beacon Healthcare Technologies",
+      "start": "2021",
+      "end": "Present",
+      "bullet_count": 3
+    },
+    {
+      "title": "Engagement Manager (Strategy & Operations)",
+      "company": "Bain & Company",
+      "start": "2017",
+      "end": "2021",
+      "bullet_count": 2
+    }
+  ]
+}

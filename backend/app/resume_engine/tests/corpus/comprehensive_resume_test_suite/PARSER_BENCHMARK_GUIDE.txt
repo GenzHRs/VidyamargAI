@@ -1,0 +1,42 @@
+# Comprehensive Multi-Format Resume Parser & Extraction Benchmark Suite
+
+This archive contains a balanced variety of real-world resume formats in both DOCX and PDF formats. It is specifically designed to stress-test resume parsing algorithms, ATS engines, layout analyzers, OCR systems, and LLM text extractors against challenging structural patterns.
+
+---
+
+## 📁 Included Resume Formats & Files:
+
+### 1. Two-Column Sidebar Layouts (Vertical Split)
+- **`01_DOCX_Two_Column_Sidebar_Layout.docx`** (Claire Dupuis — Senior UX Designer)
+- **`04_PDF_Two_Column_Sidebar_Layout.pdf`** (Lucas Moreau — Senior DevOps/SRE)
+  * *Parser Test Case:* Left column contains metadata (contact, skills, certifications, education) while right column contains chronology.
+  * *Common Extraction Failure Tested:* Tests whether parser reads left-to-right across columns (interleaving text like "CONTACT CLAIRE DUPUIS Email: Senior UX") or properly traverses independent columns.
+
+### 2. Heavy Table-Grid Resumes (Explicit Table Cells)
+- **`02_DOCX_Heavy_Table_Layout_Resume.docx`** (Devon Hastings — Senior Financial Analyst)
+- **`05_PDF_Strict_Table_Grid_Resume.pdf`** (Natalie Chow, CPA — Audit Controller)
+  * *Parser Test Case:* Uses multi-column tables for Contact Headers, 3x3 matrices for Skills, and multi-column tabular grids for dates, job titles, and duties.
+  * *Common Extraction Failure Tested:* Tests table boundary awareness, cell order preservation, and whether tabular rows get flattened cleanly into structured JSON.
+
+### 3. Horizontal Hero / Split Bottom Layouts (Mixed Sectioning)
+- **`03_DOCX_Horizontal_Hero_Two_Blocks.docx`** (Kavita Ramanathan — Senior PMM)
+- **`06_PDF_Horizontal_Hero_Two_Blocks.pdf`** (Dr. Tariq Al-Hassan — VP of AI/ML)
+  * *Parser Test Case:* Top full-width horizontal banner (Name, Contact, Executive Profile) transitioning into a two-section split lower layout (Experience on left, Key Metrics & Education on right).
+  * *Common Extraction Failure Tested:* Tests handling of mixed flow direction (single full-width row followed by multi-column blocks).
+
+### 4. Single-Column Chronological & Academic CV Formats
+- **`07_DOCX_Modern_Tech_Software_Engineer.docx`** (Alex Chen — Full Stack Engineer)
+- **`08_DOCX_Executive_Corporate_Director.docx`** (Eleanor Vance — VP Operations, Georgia serif style)
+- **`09_DOCX_Academic_Research_CV.docx`** (Dr. Sophia Al-Mansoor — Postdoctoral Fellow, APA citations & grants)
+- **`10_DOCX_Entry_Level_Business_Analyst.docx`** (Jordan Taylor — Junior Analyst, education-first layout)
+
+---
+
+## 🧪 Resume Parser Benchmark Checklist (What to Verify):
+
+1. **Contact Information:** Check if phone numbers, emails, locations, and LinkedIn URLs are correctly extracted regardless of whether they sit in a header table, banner, or sidebar.
+2. **Column De-interleaving:** Confirm that 2-column documents do NOT merge lines horizontally between column 1 and column 2.
+3. **Table Cell Integrity:** Verify that table-formatted job histories (Date in col 1, Company in col 2, Bullet points in col 3) are mapped to a single unified job entry rather than disjointed fragments.
+4. **Acronym & Metric Capture:** Check if figures ($22M, 99.995%, 60 FPS, 6 patents) and credentials (CPA, CKA, MBA, Ph.D.) are captured accurately.
+
+*Note: All identities, numbers, emails, and entities in this archive are realistic dummy data created strictly for software and parser testing.*

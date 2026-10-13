@@ -1,0 +1,36 @@
+CONTACT
+Email: lucas.moreau@example.com
+Phone: (555) 492-8172
+Austin, TX
+github.com/lmoreau-dummy
+linkedin.com/in/lucas-m-dummy
+CORE SKILLS
+• Go, Python, C++
+• Kubernetes, Docker, Helm
+• AWS (EKS, RDS, SQS)
+• Kafka, RabbitMQ, Redis
+• Terraform & CI/CD
+• Linux Kernel & eBPF
+• Distributed Consensus
+CERTIFICATIONS
+• Certified Kubernetes Admin (CKA)
+• AWS Solutions Architect (Pro)
+• HashiCorp Terraform Assoc.
+EDUCATION
+B.S. in Computer Science
+UT Austin (2016 – 2020)
+GPA: 3.88 / 4.0
+LUCAS MOREAU
+Senior DevOps & Site Reliability Engineer (SRE)
+PROFESSIONAL SUMMARY
+DevOps & Reliability Engineer with 6+ years managing multi-region Kubernetes clusters, automated zero-trust networking, and high-availability cloud infrastructure. Successfully maintained 99.995% uptime across 80+ customer-facing microservices.
+WORK EXPERIENCE
+Senior Infrastructure Engineer — Datavault Systems (Austin, TX)
+2022 – Present
+• Built GitOps deployment pipelines via ArgoCD, shortening production release cycles from 3 hours to 4 minutes.
+• Cut monthly AWS infrastructure spend by 32% ($45,000/mo) through spot instance orchestration and Karpenter autoscaling.
+• Designed multi-region failover architecture on AWS across us-east-1 and us-west-2.
+Cloud Platform Engineer — Stratosphere Networks (Dallas, TX)
+2020 – 2022
+• Administered 14 production Kubernetes clusters hosting 400+ Docker pods.
+• Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce MTTR from 45 mins to 8 mins.

@@ -1,0 +1,470 @@
+{
+  "schema_version": "2.0.0",
+  "section_order": [
+    "contact",
+    "summary",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "certifications",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "contact": {
+    "name": {
+      "value": "LUCAS MOREAU",
+      "confidence": 0.92,
+      "source_line_ids": [
+        "l00022"
+      ]
+    },
+    "emails": [
+      {
+        "value": "lucas.moreau@example.com",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00001"
+        ],
+        "normalization": "none",
+        "raw": "Email: lucas.moreau@example.com"
+      }
+    ],
+    "phones": [
+      {
+        "value": "(555) 492-8172",
+        "confidence": 0.7,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalized": "+15554928172",
+        "valid": false
+      }
+    ],
+    "locations": [
+      {
+        "value": "Austin, TX",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00003"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "value": "github.com/lmoreau-dummy",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00004"
+        ],
+        "kind": "github"
+      },
+      {
+        "value": "linkedin.com/in/lucas-m-dummy",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00005"
+        ],
+        "kind": "linkedin"
+      }
+    ]
+  },
+  "summary": [
+    {
+      "text": "DevOps & Reliability Engineer with 6+ years managing multi-region Kubernetes clusters, automated zero-trust networking, and high-availability cloud infrastructure. Successfully maintained 99.995% uptime across 80+ customer-facing microservices.",
+      "source_line_ids": [
+        "l00025",
+        "l00026",
+        "l00027"
+      ],
+      "value": "DevOps & Reliability Engineer with 6+ years managing multi-region Kubernetes clusters, automated zero-trust networking, and high-availability cloud infrastructure. Successfully maintained 99.995% uptime across 80+ customer-facing microservices."
+    }
+  ],
+  "experience": [
+    {
+      "title": {
+        "value": "Senior Infrastructure Engineer",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00029"
+        ]
+      },
+      "company": {
+        "value": "Datavault Systems",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00029"
+        ]
+      },
+      "location": {
+        "value": "Austin, TX",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00029"
+        ]
+      },
+      "dates": {
+        "value": {
+          "start": "2022",
+          "end": "Present"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00030"
+        ]
+      },
+      "bullets": [
+        "• Built GitOps deployment pipelines via ArgoCD, shortening production release cycles from 3 hours to 4 minutes.",
+        "• Cut monthly AWS infrastructure spend by 32% ($45,000/mo) through spot instance orchestration and Karpenter autoscaling.",
+        "• Designed multi-region failover architecture on AWS across us-east-1 and us-west-2."
+      ],
+      "text": "Senior Infrastructure Engineer — Datavault Systems (Austin, TX)\n2022 – Present\n• Built GitOps deployment pipelines via ArgoCD, shortening production release cycles from 3 hours to 4 minutes.\n• Cut monthly AWS infrastructure spend by 32% ($45,000/mo) through spot instance orchestration and Karpenter autoscaling.\n• Designed multi-region failover architecture on AWS across us-east-1 and us-west-2.",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00029",
+        "l00030",
+        "l00031",
+        "l00032",
+        "l00033",
+        "l00034",
+        "l00035"
+      ]
+    },
+    {
+      "title": {
+        "value": "Cloud Platform Engineer",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00036"
+        ]
+      },
+      "company": {
+        "value": "Stratosphere Networks",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00036"
+        ]
+      },
+      "location": {
+        "value": "Dallas, TX",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00036"
+        ]
+      },
+      "dates": {
+        "value": {
+          "start": "2020",
+          "end": "2022"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00037"
+        ]
+      },
+      "bullets": [
+        "• Administered 14 production Kubernetes clusters hosting 400+ Docker pods.",
+        "• Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce"
+      ],
+      "text": "Cloud Platform Engineer — Stratosphere Networks (Dallas, TX)\n2020 – 2022\n• Administered 14 production Kubernetes clusters hosting 400+ Docker pods.\n• Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce\nMTTR from 45 mins to 8 mins.",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00036",
+        "l00037",
+        "l00038",
+        "l00039",
+        "l00040"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "text": "B.S. in Computer Science\nUT Austin (2016 – 2020)\nGPA: 3.88 / 4.0",
+      "source_line_ids": [
+        "l00019",
+        "l00020",
+        "l00021"
+      ],
+      "degree": {
+        "value": "B.S. in Computer Science",
+        "source_line_ids": [
+          "l00019"
+        ],
+        "confidence": 0.85
+      },
+      "institution": {
+        "value": "UT Austin",
+        "source_line_ids": [
+          "l00020"
+        ],
+        "confidence": 0.85
+      },
+      "dates": {
+        "value": {
+          "start": "2016",
+          "end": "2020"
+        },
+        "source_line_ids": [
+          "l00020"
+        ],
+        "confidence": 0.95
+      },
+      "graduation": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "location": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "gpa": {
+        "value": {
+          "score": "3.88",
+          "scale": "4.0"
+        },
+        "source_line_ids": [
+          "l00021"
+        ],
+        "confidence": 0.85
+      }
+    }
+  ],
+  "projects": [],
+  "skills": [
+    {
+      "text": "• Go, Python, C++",
+      "source_line_ids": [
+        "l00007"
+      ],
+      "category": null,
+      "items": [
+        "Go",
+        "Python",
+        "C++"
+      ]
+    },
+    {
+      "text": "• Kubernetes, Docker, Helm",
+      "source_line_ids": [
+        "l00008"
+      ],
+      "category": null,
+      "items": [
+        "Kubernetes",
+        "Docker",
+        "Helm"
+      ]
+    },
+    {
+      "text": "• AWS (EKS, RDS, SQS)",
+      "source_line_ids": [
+        "l00009"
+      ],
+      "category": null,
+      "items": [
+        "AWS (EKS",
+        "RDS",
+        "SQS)"
+      ]
+    },
+    {
+      "text": "• Kafka, RabbitMQ, Redis",
+      "source_line_ids": [
+        "l00010"
+      ],
+      "category": null,
+      "items": [
+        "Kafka",
+        "RabbitMQ",
+        "Redis"
+      ]
+    },
+    {
+      "text": "• Terraform & CI/CD",
+      "source_line_ids": [
+        "l00011"
+      ],
+      "category": null,
+      "items": [
+        "Terraform & CI/CD"
+      ]
+    },
+    {
+      "text": "• Linux Kernel & eBPF",
+      "source_line_ids": [
+        "l00012"
+      ],
+      "category": null,
+      "items": [
+        "Linux Kernel & eBPF"
+      ]
+    },
+    {
+      "text": "• Distributed Consensus",
+      "source_line_ids": [
+        "l00013"
+      ],
+      "category": null,
+      "items": [
+        "Distributed Consensus"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "text": "• Certified Kubernetes Admin (CKA)",
+      "source_line_ids": [
+        "l00015"
+      ],
+      "name": {
+        "value": "Certified Kubernetes Admin (CKA)",
+        "source_line_ids": [
+          "l00015"
+        ],
+        "confidence": 0.85
+      },
+      "details": ""
+    },
+    {
+      "text": "• AWS Solutions Architect (Pro)",
+      "source_line_ids": [
+        "l00016"
+      ],
+      "name": {
+        "value": "AWS Solutions Architect (Pro)",
+        "source_line_ids": [
+          "l00016"
+        ],
+        "confidence": 0.85
+      },
+      "details": ""
+    },
+    {
+      "text": "• HashiCorp Terraform Assoc.",
+      "source_line_ids": [
+        "l00017"
+      ],
+      "name": {
+        "value": "HashiCorp Terraform Assoc.",
+        "source_line_ids": [
+          "l00017"
+        ],
+        "confidence": 0.85
+      },
+      "details": ""
+    }
+  ],
+  "other_sections": [],
+  "review": [
+    {
+      "path": "fields.phones[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.7
+    }
+  ],
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "contact",
+      "original_heading": "CONTACT",
+      "heading_line_id": "l00000",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00001",
+        "l00002",
+        "l00003",
+        "l00004",
+        "l00005"
+      ],
+      "text": "Email: lucas.moreau@example.com\nPhone: (555) 492-8172\nAustin, TX\ngithub.com/lmoreau-dummy\nlinkedin.com/in/lucas-m-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "skills",
+      "original_heading": "CORE SKILLS",
+      "heading_line_id": "l00006",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00007",
+        "l00008",
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00013"
+      ],
+      "text": "• Go, Python, C++\n• Kubernetes, Docker, Helm\n• AWS (EKS, RDS, SQS)\n• Kafka, RabbitMQ, Redis\n• Terraform & CI/CD\n• Linux Kernel & eBPF\n• Distributed Consensus"
+    },
+    {
+      "id": "s002",
+      "canonical": "certifications",
+      "original_heading": "CERTIFICATIONS",
+      "heading_line_id": "l00014",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00015",
+        "l00016",
+        "l00017"
+      ],
+      "text": "• Certified Kubernetes Admin (CKA)\n• AWS Solutions Architect (Pro)\n• HashiCorp Terraform Assoc."
+    },
+    {
+      "id": "s003",
+      "canonical": "education",
+      "original_heading": "EDUCATION",
+      "heading_line_id": "l00018",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00019",
+        "l00020",
+        "l00021"
+      ],
+      "text": "B.S. in Computer Science\nUT Austin (2016 – 2020)\nGPA: 3.88 / 4.0"
+    },
+    {
+      "id": "s004",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00022",
+        "l00023"
+      ],
+      "text": "LUCAS MOREAU\nSenior DevOps & Site Reliability Engineer (SRE)"
+    },
+    {
+      "id": "s005",
+      "canonical": "summary",
+      "original_heading": "PROFESSIONAL SUMMARY",
+      "heading_line_id": "l00024",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00025"
+      ],
+      "text": "DevOps & Reliability Engineer with 6+ years managing multi-region Kubernetes clusters, automated zero-trust networking, and high-availability cloud infrastructure. Successfully maintained 99.995% uptime across 80+ customer-facing microservices."
+    },
+    {
+      "id": "s006",
+      "canonical": "experience",
+      "original_heading": "WORK EXPERIENCE",
+      "heading_line_id": "l00028",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00029",
+        "l00030",
+        "l00031",
+        "l00033",
+        "l00035",
+        "l00036",
+        "l00037",
+        "l00038",
+        "l00039",
+        "l00040"
+      ],
+      "text": "Senior Infrastructure Engineer — Datavault Systems (Austin, TX)\n2022 – Present\n• Built GitOps deployment pipelines via ArgoCD, shortening production release cycles from 3 hours to 4 minutes.\n• Cut monthly AWS infrastructure spend by 32% ($45,000/mo) through spot instance orchestration and Karpenter autoscaling.\n• Designed multi-region failover architecture on AWS across us-east-1 and us-west-2.\nCloud Platform Engineer — Stratosphere Networks (Dallas, TX)\n2020 – 2022\n• Administered 14 production Kubernetes clusters hosting 400+ Docker pods.\n• Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce\nMTTR from 45 mins to 8 mins."
+    }
+  ]
+}

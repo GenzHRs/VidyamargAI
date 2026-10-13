@@ -1,0 +1,383 @@
+﻿Resume_ID,Candidate_Name,Email,Phone,Location,LinkedIn,GitHub,Portfolio,Summary,Skills,Education,Experience,Projects,Certificates,Achievements,Languages,Publications,Other_Details,Source_File,Extraction_Status
+R01,JAYAVARAPU SIVA TEJACHARY,j.shivachary@gmail.com,+91-9866862016,,https://www.linkedin.com/in/jayavarapu-siva-tejachary,https://github.com/sivatejachary,,"AI/ML Engineer with 2 years of experience developing scalable AI applications using Python, FastAPI, NLP, Large Language Models (OpenAI, Gemini), and Retrieval-Augmented Generation (RAG). Skilled in backend API development, machine learning pipelines, and intelligent automation solutions.","Programming & Backend: Python, FastAPI, REST APIs
+Generative AI: LLMs, OpenAI, Gemini, RAG, Prompt Engineering, LangChain, LangGraph, Transformers
+NLP & Document AI: NER, OCR, TF-IDF, Embeddings
+Machine Learning: Scikit-learn, TensorFlow, PyTorch, Supervised Learning, Unsupervised Learning
+Computer Vision & Data Science: OpenCV, Pandas, NumPy
+Databases: MySQL, PostgreSQL, Qdrant, Chroma, FAISS
+Tools & Platforms: Git, GitHub, Docker, Azure, Jupyter Notebook","B.Tech in Computer Science and Engineering - Chalapathi Institute of Engineering and Technology
+Dates: Sep 2020 – Apr 2024 | Location: Guntur, Andhra Pradesh | GPA: 7.9/10","AI/ML Engineer at Avataa Solutions Pvt. Ltd.
+June 2024 – Present | Hyderabad, India
+• Developed AI-powered applications using Python, FastAPI, NLP, LLMs (OpenAI,Gemini), and Retrieval-Augmented Generation (RAG).
+• Built scalable REST APIs for AI-based document processing and intelligent automation.
+• Integrated OpenAI and Gemini APIs for document summarization and AI workflows using prompt engineering.
+• Worked on OCR, NER, embeddings, and data preprocessing for document analysis.
+• Developed backend services using FastAPI and PostgreSQL for real-time event-driven processing.
+• Collaborated with cross-functional teams to build and deploy production-ready AI solutions.","Enterprise RAG Platform
+Jan 2026 – Present | Technologies: Python, FastAPI, LangChain, LangGraph, OpenAI, Qdrant, PostgreSQL, Azure Document Intelligence
+• Built an AI platform to chat with company PDF and Word documents using RAG.
+• Extracted text and tables from documents, generated embeddings, and stored them in Qdrant for semantic search.
+• Used LangChain for the RAG pipeline, LangGraph for workflow management.
+
+Enterprise Document AI & Compliance Automation
+Oct 2024 – Jan 2026 | Technologies: FastAPI, Python, PostgreSQL, Azure OCR, NER, Gemini LLM
+• Built an AI system to extract invoice data from scanned PDFs using Azure OCR and NER.
+• Integrated Gemini LLM and developed FastAPI APIs for document processing and compliance automation.
+• Reduced manual document review effort by 70–85% through AI-powered automation.
+
+AI Resume Screening System
+Aug 2024 – Sept 2024 | Technologies: Python, NLP, FastAPI, Transformers
+• Built an NLP-based resume screening system using TF-IDF and embeddings to analyze 500+ resumes .
+• Developed a ranking algorithm with 85%+ matching accuracy, reducing manual screening by 60% .
+• Developed FastAPI APIs for real-time resume processing.","[Training] Data Science & Machine Learning Certification
+Details: Cranes Varsity, Bengaluru: Completed hands-on training in Python, RDBMS, EDA, and core ML techniques through applied projects.","• Top 5, College Hackathon (2024): Built a CNN-powered plant disease detection system to help farmers identify crop diseases early from leaf images, ranking top 5 among 250+ participants.",,,,Jayavarapu-Siva-Tejachary-AIML.pdf,Verified Pass
+R02,MAYA LIN-VAZQUEZ,maya.lin.design@example.com,(555) 781-9920,"Los Angeles, CA",,,mayadesign.example.studio,"Award-winning Senior Brand Designer with 6+ years driving identity redesigns, international omnichannel brand campaigns, and packaging systems for global consumer lifestyle brands. Adept at fusing strategic business goals with striking visual storytelling.","Brand Identity & Systems
+Art Direction & Campaigns
+Packaging & Print Spec
+Figma, Illustrator, Photoshop
+After Effects & Motion
+Creative Team Mentorship
+Design Sprint Facilitation","B.F.A. in Graphic Design - ArtCenter College of Design
+Graduation: 2019","Senior Brand Designer at Lumina Creative Studio
+2022 – Present | Los Angeles, CA
+• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.
+• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.
+• Managed 4 junior graphic designers, motion animators, and external packaging vendors.
+
+Visual & Packaging Designer at Verve Labs
+2019 – 2022 | San Francisco, CA
+• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.
+• Produced digital campaign assets generating 12M+ social media impressions.",,,"• 2024 D&AD Wood Pencil
+• 2023 AIGA Design Excellence
+• 2021 Adobe Design Achievement",,,,01_DOCX_Vibrant_Coral_Creative_Resume.docx,Verified Pass
+R03,DARIUS K. VANCE,darius.vance@example.com,(555) 304-9182,"Denver, CO",linkedin.com/in/dariusvance-dummy,github.com/darius-cloud,,"Principal Cloud Architect with 11+ years engineering multi-tenant enterprise platforms, cloud migrations, and distributed data fabrics. Orchestrated zero-downtime infrastructure powering $100M+ ARR SaaS portfolios while lowering annual cloud run-rates by 35%.","Cloud: AWS & Azure Cloud
+Containers: Kubernetes (EKS)
+Microservices Architecture
+Terraform / GitOps (ArgoCD)
+Kafka & Event-Driven Systems
+PostgreSQL, Snowflake, Redis
+SOC2 & Cloud Security","M.S. in Computer Science - University of Colorado Boulder
+Graduation: 2017
+
+B.S. in Computer Engineering - Colorado State University
+Graduation: 2014","Principal Cloud Solutions Architect at StrataCore Cloud Systems
+2021 – Present | Denver, CO
+• Directed migration of 140 on-premise microservices to AWS EKS with zero client downtime, reducing annual hosting overhead by $1.8M.
+• Authored disaster recovery strategy achieving RPO < 15 seconds and RTO < 2 minutes across multi-region clusters.
+• Governed engineering standards across 45 platform engineers and SREs.
+
+Lead Infrastructure Architect at Apex Financial Technologies
+2017 – 2021 | Boulder, CO
+• Built automated compliance-as-code pipelines enabling rapid SOC2 Type II and FedRAMP readiness.
+• Standardized infrastructure provisioning with reusable Terraform modules across 12 application teams.",,"[Certification] AWS Solutions Architect Pro
+
+[Certification] Certified Kubernetes Admin (CKA)
+
+[Certification] HashiCorp Terraform Pro",,,,,02_DOCX_Navy_Teal_Cloud_Architect.docx,Verified Pass
+R04,CAMILA RESTREPO,camila.restrepo@example.com,(555) 612-4091,"Miami, FL",linkedin.com/in/camila-marketing-dummy,,,"Data-driven Growth Marketing Manager with 7+ years orchestrating high-scale user acquisition, performance creative testing, and multi-channel marketing campaigns. Proven record of scaling direct-to-consumer and mobile subscription brands past $50M in annual revenue while maintaining strict payback margins.","Meta Ads Manager & TikTok Ads
+Google Ads (Search, PMax, YouTube)
+Amplitude, Mixpanel & GA4
+AppsFlyer, Adjust & Branch (MMP)
+Optimizely & VWO (A/B Testing)
+SQL & Tableau Reporting","B.S. in Digital Marketing & Media - University of Florida
+Graduation: 2018","Senior Performance Marketing Manager at Nova Health App
+2022 – Present | Miami, FL
+• Managed $1.1M monthly budget across Meta, Google, TikTok, and Apple Search Ads.
+• Built creative testing pipeline producing 40+ iterative ad variations weekly, lowering customer acquisition cost (CAC) by 42%.
+• Partnered with product and engineering teams to optimize subscription paywall conversion by 19%.
+
+Growth Marketing Lead at Solstice Commerce
+2019 – 2022 | Austin, TX
+• Scaled e-commerce customer base from 25,000 to 220,000 paying users within 24 months.
+• Designed multi-touch attribution model in BigQuery & Tableau to track ROAS across paid, organic, and influencer channels.",,,,,,"Key Metrics:
+• $12M+ Annual Ad Spend Managed
+• 3.4x Blended ROAS Achieved
+• 48% Reduced Customer CAC
+• 185K+ Net New MQLs Generated",03_PDF_Royal_Purple_Marketing_Resume.pdf,Verified Pass
+R05,JULIAN A. MERCER,julian.mercer@example.com,(555) 481-0294,"Boston, MA",linkedin.com/in/julianmercer-dummy,,,,"Operational Strategy: Post-Merger PMI Integration
+Operational Strategy: Lean Six Sigma Process Design
+Operational Strategy: Operating Model Redesign
+Financial Optimization: $85M Budget & OPEX Oversight
+Financial Optimization: Vendor Procurement Negotiations
+Financial Optimization: Capital Allocation Modeling
+Cross-Functional Leadership: Executive Stakeholder Alignment
+Cross-Functional Leadership: OKR Governance & Tracking
+Cross-Functional Leadership: Org Structuring & Hiring","Master of Business Administration (MBA) - Harvard Business School
+Graduation: 2017
+
+B.A. in Economics - Dartmouth College
+Graduation: 2013","Director of Business Operations at Beacon Healthcare Technologies
+2021 – Present | Boston, MA
+• Spearheaded enterprise transformation plan across 5 regional clinical branches, capturing $11.4M in recurring SG&A; cost savings.
+• Standardized clinical procurement workflows, reducing vendor contract turnaround from 35 days to 8 days.
+• Reported monthly operating review and corporate risk updates directly to Chief Operating Officer and Board.
+
+Engagement Manager (Strategy & Operations) at Bain & Company
+2017 – 2021 | New York, NY
+• Led 7-member management consulting teams advising Fortune 100 enterprise clients on carve-outs and M&A; integration.
+• Designed organizational restructurings for global manufacturing companies with 4,000+ employees.",,[Certification] Lean Six Sigma Green Belt,,,,,04_PDF_Emerald_Forest_Operations_Resume.pdf,Verified Pass
+R06,CLAIRE DUPUIS,claire.dupuis@example.com,+1 (415) 555-0199,"San Francisco, CA",linkedin.com/in/claire-dummy,,claireui.example.com,"User-centric Product Designer with 6+ years specializing in enterprise workflows, complex telemetry dashboards, and multi-platform design governance. Proven success boosting feature adoption by 38% and reducing customer support tickets through clear user architecture.","Wireframing & Prototyping
+Figma & FigJam
+Design System Tokens
+User Journey Mapping
+Usability Testing
+WCAG 2.1 AA Compliance
+HTML/CSS / Tailwind
+Agile & Sprint Planning","B.S. in Human-Computer Interaction - University of Washington
+Graduation: 2019 | GPA: 3.85/4.0","Lead Product Designer at CloudScale Networks
+2022 – Present
+• Architected enterprise monitoring dashboard serving 4,000+ enterprise accounts, increasing Daily Active Users (DAU) by 29%.
+• Unified 3 disparate web apps under a single Figma token library, cutting engineering UI handoff churn by 40%.
+• Conducted 50+ customer interviews and usability audits with Fortune 500 network administrators.
+
+Senior UX Designer at AeroMetrics Analytics
+2019 – 2022
+• Led 0-to-1 redesign of data pipeline visualization tools, achieving a System Usability Scale (SUS) score increase from 62 to 84.
+• Collaborated daily with frontend engineers in React and Storybook to ensure zero visual regression.",,,,,,,01_DOCX_Two_Column_Sidebar_Layout.docx,Verified Pass
+R07,DEVON M. HASTINGS,devon.hastings@example.com,(555) 839-2041,"Chicago, IL",linkedin.com/in/devon-hastings-dummy,,,,"Financial Modeling (DCF, LBO)
+ERP: SAP S/4HANA & Oracle NetSuite
+US GAAP & IFRS Reporting
+Budgeting & Multi-Year Forecasting
+BI & Data: Tableau, Power BI, SQL
+Capital Allocation & Debt Restructuring
+Variance & P&L Analysis
+Advanced Excel (VBA, Power Query)
+M&A Due Diligence & Audit Defense","B.S. in Finance & Accounting - Northwestern University
+Graduation: 2018","Senior FP&A Controller at Sterling Horizon Capital
+2021 – Present | Chicago, IL
+• Directed quarterly forecast cadence for $180M commercial asset portfolio with 98.4% variance accuracy.
+• Automated monthly executive slide generation via SQL & Power Query, saving 18 manual work-hours per cycle.
+• Assessed financial underwriting for 5 successful acquisitions totaling $44M.
+
+Financial Analyst at Pinnacle Advisory Partners
+2018 – 2021 | Milwaukee, WI
+• Maintained 3-statement operating models and liquidity sensitivity stress tests.
+• Streamlined SG&A operational expenditures across 12 branch locations, recovering $1.2M in annual cost leakage.",,"[License] Chartered Financial Analyst (CFA) — Level III Candidate
+Details: Active License / Enrollment",,,,,02_DOCX_Heavy_Table_Layout_Resume.docx,Verified Pass
+R08,KAVITA RAMANATHAN,kavita.ramanathan@example.com,(555) 234-8761,"San Jose, CA",linkedin.com/in/kavita-ramanathan-dummy,,,"Growth-oriented Product Marketing leader with 8+ years driving Go-To-Market (GTM) launches, competitive positioning, and buyer enablement for enterprise cloud and AI infrastructure. Generated $35M+ in qualified pipeline across Tier-1 enterprise accounts.","Category Creation & Positioning
+Competitive Intelligence (Klue)
+Customer Case Studies & Webinars
+HubSpot, Salesforce, Marketo
+Pricing & Packaging Strategy","MBA - UC Berkeley Haas
+Graduation: 2019
+
+B.S. in Economics - UCLA
+Graduation: 2015","Director of Product Marketing at Synthetix AI
+2022 – Present | Palo Alto, CA
+• Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1.
+• Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%.
+
+Senior Product Marketing Manager at Datastream Cloud
+2019 – 2022 | San Jose, CA
+• Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).
+• Trained 180+ global field sales engineers on solution messaging and pricing tiers.",,,,,,"Key Metrics:
+• $35M+ Attributed Enterprise Pipeline
+• 65+ Tier-1 Enterprise Wins
+• 26% Higher Win-Rate Post-Launch
+• 180+ Field Reps Certified",03_DOCX_Horizontal_Hero_Two_Blocks.docx,Verified Pass
+R09,LUCAS MOREAU,lucas.moreau@example.com,(555) 492-8172,"Austin, TX",linkedin.com/in/lucas-m-dummy,github.com/lmoreau-dummy,,"DevOps & Reliability Engineer with 6+ years managing multi-region Kubernetes clusters, automated zero-trust networking, and high-availability cloud infrastructure. Successfully maintained 99.995% uptime across 80+ customer-facing microservices.","Go, Python, C++
+Kubernetes, Docker, Helm
+AWS (EKS, RDS, SQS)
+Kafka, RabbitMQ, Redis
+Terraform & CI/CD
+Linux Kernel & eBPF
+Distributed Consensus","B.S. in Computer Science - UT Austin
+Dates: 2016 – 2020 | GPA: 3.88/4.0","Senior Infrastructure Engineer at Datavault Systems
+2022 – Present | Austin, TX
+• Built GitOps deployment pipelines via ArgoCD, shortening production release cycles from 3 hours to 4 minutes.
+• Cut monthly AWS infrastructure spend by 32% ($45,000/mo) through spot instance orchestration and Karpenter autoscaling.
+• Designed multi-region failover architecture on AWS across us-east-1 and us-west-2.
+
+Cloud Platform Engineer at Stratosphere Networks
+2020 – 2022 | Dallas, TX
+• Administered 14 production Kubernetes clusters hosting 400+ Docker pods.
+• Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce MTTR from 45 mins to 8 mins.",,"[Certification] Certified Kubernetes Admin (CKA)
+
+[Certification] AWS Solutions Architect (Pro)
+
+[Certification] HashiCorp Terraform Assoc.",,,,,04_PDF_Two_Column_Sidebar_Layout.pdf,Verified Pass
+R10,"NATALIE CHOW, CPA",natalie.chow.cpa@example.com,(555) 918-2045,"New York, NY",linkedin.com/in/nataliechow-dummy,,,,"Financial Controls & Audit: Sarbanes-Oxley (SOX 404)
+Financial Controls & Audit: Risk & Control Matrices (RCM)
+Financial Controls & Audit: Forensic Audit Investigations
+Tax & Compliance Standards: US GAAP & SEC Form 10-K/Q
+Tax & Compliance Standards: Transfer Pricing Regulation
+Tax & Compliance Standards: Anti-Money Laundering (AML)
+Software & Systems: Workday Financials
+Software & Systems: NetSuite ERP
+Software & Systems: Alteryx & Advanced SQL","B.S. in Accounting & Information Systems - Boston College — Carroll School of Management
+Graduation: 2018","Audit Controller at Vanguard Trust Partners
+2021 – Present | New York, NY
+• Supervised end-to-end SOX testing across 12 business units, identifying and remediation 14 material control deficiencies prior to external audit.
+• Led audit engagement with Big 4 firm, resulting in clean unqualified audit opinion 3 consecutive years.
+• Streamlined reconciliation of $4.2B custodial accounts through automated Alteryx workflows.
+
+Senior Accountant at Deloitte & Touche LLP
+2018 – 2021 | Boston, MA
+• Performed statutory financial statement audits for mid-cap publicly listed fintech and healthcare corporations.
+• Executed substantive test procedures over revenue recognition (ASC 606) and goodwill impairment testing.",,"[License] Certified Public Accountant (CPA)
+Details: AICPA / New York Board of Accountancy License #83921 (Active)",,,,,05_PDF_Strict_Table_Grid_Resume.pdf,Verified Pass
+R11,TARIQ AL-HASSAN,tariq.alhassan@example.com,+1 (206) 555-0184,"Seattle, WA",linkedin.com/in/tariq-ai-dummy,,,"Technology Executive with 12+ years scaling deep learning systems, ML infrastructure, and distributed GPU compute platforms. Led engineering teams of 70+ engineers and research scientists while delivering generative AI models serving 25M+ active users.","PyTorch, Triton Inference Server, Ray
+CUDA Optimization, TensorRT, vLLM
+Large-Scale Foundation Model Training
+AI Safety, Red Teaming, Governance","Ph.D. in Computer Science (Machine Learning) - University of Washington
+Graduation: 2018
+
+B.S. in Electrical Engineering - Georgia Institute of Technology
+Graduation: 2013","VP of Machine Learning Platform at Cerebro Analytics
+2022 – Present | Seattle, WA
+• Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD clusters.
+• Directed engineering of high-throughput LLM serving stack, cutting model latency by 55%.
+• Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research.
+
+Director of Applied AI at Horizon Autonomous Systems
+2018 – 2022 | San Francisco, CA
+• Built real-time computer vision inference stack operating at 60 FPS on edge hardware.
+• Filed 6 patents in neural network quantization and sparse attention mechanisms.",,,,,,"Key Metrics:
+• $22M Annual Compute Budget Managed
+• 72 Engineers & Researchers Led
+• 6 Granted US Patents in ML / Vision
+• 25M+ Generative AI End-Users",06_PDF_Horizontal_Hero_Two_Blocks.pdf,Verified Pass
+R12,ALEX CHEN,alex.chen.dev@example.com,(555) 019-2834,"San Francisco, CA",linkedin.com/in/alexchen-dummy,github.com/alexchen-dev,,"High-performing Full Stack Engineer with 7+ years of experience engineering high-throughput distributed microservices, fault-tolerant cloud infrastructure, and modern responsive front-ends. Proven record of scaling systems to 15M+ active users, optimizing API latency by 42%, and spearheading zero-downtime database migrations. Passionate about developer tooling, Clean Architecture, and CI/CD automation.","Languages: Go, Python, TypeScript, Java, SQL, Rust (intermediate)
+Backend & Data: Node.js, FastAPI, Spring Boot, PostgreSQL, Redis, Apache Kafka, GraphQL
+Cloud & DevOps: AWS (ECS, Lambda, EKS, RDS), Docker, Kubernetes, Terraform, GitHub Actions, Prometheus
+Frontend & Tools: React 18, Next.js, Tailwind CSS, Jest, Datadog, Git, Linux","B.S. in Computer Science - University of California, Berkeley
+Dates: 2014 – 2018","Lead Backend Software Engineer at Nexus Cloud Technologies
+Mar 2023 – Present | San Francisco, CA
+• Architected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.
+• Decomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.
+• Reduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.
+• Mentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices.
+
+Full Stack Software Engineer at Vanguard Digital Labs
+Aug 2020 – Feb 2023 | Austin, TX
+• Built customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.
+• Authored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.
+• Created reusable UI component library used across 5 internal products, reducing developer delivery time by 30%.
+
+Junior Software Engineer at Apex Software Solutions
+Jun 2018 – Jul 2020 | Austin, TX
+• Developed responsive single-page web applications with React and Redux.
+• Wrote unit and integration tests achieving 88% overall code test coverage.",,"[Certification] AWS Certified Solutions Architect – Associate (2024)
+
+[Certification] Certified Kubernetes Administrator (CKA, 2023)",,,,,07_DOCX_Modern_Tech_Software_Engineer.docx,Verified Pass
+R13,ELEANOR R. VANCE,e.vance.executive@example.com,+1 (312) 555-8492,"Chicago, IL",linkedin.com/in/eleanor-vance-dummy,,,"Accomplished Operations Executive with 16+ years of enterprise leadership managing $250M+ P&L operations across North America, EMEA, and APAC. Recognized for orchestrating large-scale operational transformations, post-merger integrations, Lean Six Sigma deployment, and end-to-end logistics modernization. Trusted advisor to Board of Directors with proven ability to scale global operating margins while delivering superior customer satisfaction.","Multi-Site P&L Management ($250M+)
+Global Supply Chain Optimization
+Post-Merger Operational Integration
+Lean Six Sigma / Continuous Improvement
+Strategic Procurement & Vendor Negotiation
+Cross-Functional Executive Leadership
+Enterprise Risk Management & Compliance
+ERP Systems Modernization (SAP S/4HANA)
+Boardroom Governance & Stakeholder Relations","Master of Business Administration (MBA) - The University of Chicago Booth School of Business
+Graduation: 2013
+
+Bachelor of Science in Industrial Engineering - Purdue University
+Graduation: 2007","Vice President of Global Operations at Crestview Manufacturing & Logistics Group
+2020 – Present | Chicago, IL
+• Oversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.
+• Instituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.
+• Led cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.
+• Presented quarterly strategic updates, operational KPIs, and risk evaluations directly to the Executive Committee and Board of Directors.
+
+Director of Supply Chain & Manufacturing at Apex Industrial Technologies
+2015 – 2020 | Detroit, MI
+• Spearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.
+• Renegotiated key Tier-1 carrier contracts delivering $9.6M in recurring freight savings over a 3-year agreement cycle.
+• Achieved OSHA voluntary protection status across all sites, improving team safety records by 64%.",,"[Certification] Lean Six Sigma Master Black Belt (CSSMBB)
+
+[Certification] APICS Certified Supply Chain Professional (CSCP)",,,,,08_DOCX_Executive_Corporate_Director.docx,Verified Pass
+R14,"DR. SOPHIA AL-MANSOOR, PH.D.",s.almansoor.phd@example.edu,+1 (650) 555-0143,"Stanford, CA 94305",,,scholar.example.com/salmansoor,,,"Ph.D. in Computational Biology & Bioinformatics - Stanford University
+Dates: 2018 – 2023 | Location: Stanford, CA
+
+B.S. in Molecular Biology & Computer Science (Summa Cum Laude) - MIT – Massachusetts Institute of Technology
+Dates: 2014 – 2018 | Location: Cambridge, MA","Postdoctoral Research Fellow at Department of Bioengineering, Stanford University
+2023 – Present
+• Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support.",,,"• NIH Postdoctoral National Research Service Award (F32) — $155,000 (2024 – 2026)
+• Stanford Bio-X Graduate Student Fellowship (2020 – 2023)
+• MIT Outstanding Undergraduate Research Opportunity Program (UROP) Award (2018)",,"Al-Mansoor, S., Zhang, K., & Miller, D. R. (2025). Latent Diffusion Architectures for Scalable Single-Cell RNA Sequence Reconstruction. Nature Machine Intelligence, 7(3), 215-228.
+Al-Mansoor, S. & Vance, P. K. (2023). Benchmark Evaluations of Graph Neural Networks across Spatial Transcriptomic Datasets. Journal of Computational Biology, 30(8), 842-859.
+Roberts, C. M., Al-Mansoor, S., & Thorne, J. (2021). Unsupervised Embedding of Multi-Omics Cancer Biomarkers. Bioinformatics, 37(14), 1980-1988.",,09_DOCX_Academic_Research_CV.docx,Verified Pass
+R15,JORDAN TAYLOR,jordan.taylor.analyst@example.com,(555) 762-9013,"Seattle, WA",linkedin.com/in/jordan-taylor-dummy,,,,"Analysis & Tools: Tableau, Power BI, Advanced Excel (VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query), SQL (PostgreSQL), Python (Pandas)
+Business Process: Agile/Scrum, User Stories, BPMN Diagramming, JIRA, Confluence, Requirement Gathering, Root Cause Analysis","Bachelor of Arts in Information Systems & Operations Management - University of Washington, Foster School of Business
+Graduation: June 2025 | Location: Seattle, WA | GPA: 3.82/4.0","Business Analyst Intern at Cascade Financial Services
+Jun 2024 – Sep 2024 | Seattle, WA
+• Conducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.
+• Designed and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.
+• Facilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal.
+
+Operations Data Intern at Evergreen Supply Partners
+Jan 2024 – May 2024 | Bellevue, WA
+• Cleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.
+• Synthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director.","Supply Chain Simulation Project (Senior Capstone)
+Modeled distribution logistics for regional retail network in Python; predicted stockouts with 89% accuracy and won 2nd Place in Foster Business Case Showcase.",,,,,,10_DOCX_Entry_Level_Business_Analyst.docx,Verified Pass
+R18,MARCUS BRODY,m.brody.design@example.com,(555) 392-7104,"New York, NY",,,"marcusbrodydesign.example.com
+dribbble.com/marcusb-dummy","Human-centered Lead Product Designer with 6+ years specializing in complex multi-platform SaaS products, consumer mobile apps, and scalable design systems. Expert at translating user empathy and quantitative telemetry into high-converting, intuitive digital journeys. Champion of WCAG 2.1 AA accessibility and cross-functional alignment between engineering and product.","Design & Prototyping: Figma (Variables, Auto-Layout, Components), Principle, Adobe Creative Cloud, Framer
+User Research & Testing: UserTesting.com, Maze, Moderated Usability Interviews, Card Sorting, Journey Mapping, Heatmaps
+Front-End Knowledge: HTML5, CSS3, Tailwind CSS, Component Architecture, Git workflows","B.F.A. in Graphic & Interactive Media Design - Rhode Island School of Design (RISD)
+Graduation: 2019","Lead Product Designer at Kinetix Health App
+Jan 2022 – Present | New York, NY
+• Led end-to-end redesign of patient onboarding flow on iOS and Android, boosting first-week retention by 27% and customer satisfaction (CSAT) to 4.8/5.
+• Architected and governed the 'Kinetix Canvas' multi-brand design system with 250+ accessible components, decreasing engineering sprint turnaround by 35%.
+• Conducted 45+ bi-weekly moderated user testing sessions, turning qualitative insights into high-impact roadmap bets.
+
+Senior UX/UI Designer at Studio Pixel & Form
+Jun 2019 – Dec 2021 | Brooklyn, NY
+• Delivered comprehensive responsive web platforms for 12 fintech and direct-to-consumer clients, winning 2 Webby nominations.
+• Facilitated 3-day Design Sprint workshops with client founders and engineering directors to align on MVP features.",,,,,,,03_Creative_Product_UX_Designer.docx,Verified Pass
+89b836400f8f5192,JAYAVARAPU SIVA TEJACHARY,j.shivachary@gmail.com,+919866862016,"Guntur, Andhra Pradesh, 522414",,,,"Computer Science graduate with hands-on experience in data science, machine learning, and data analysis using Python. Skilled in building predictive models and NLP applications using Scikit-learn,TensorFlow, and PyTorch, with experience deploying ML models on Amazon SageMaker and using Google Gemini API.","Languages & Programming: Python, SQL
+ML & AI: Scikit-learn, TensorFlow, PyTorch, RAG, NLP
+Data Analytics & Visualization: Pandas, NumPy, Matplotlib
+Tools & Platforms: Git, GitHub, Jupyter, Google Colab, VS Code","BTech in Computer science and Engineering - Chalapathi Institute of Engineering and Technology
+Dates: September 2020 – April 2024 | Location: Guntur, AndhraPradesh | GPA: 7.9
+
+Intermediate - Noble Sai Junior College
+Dates: June 2018 – Feb 2020 | Location: Dachepalle, AndhraPradesh | GPA: 9.13
+
+SSC(10th) - ZP High School
+Dates: June 2017 – Mar 2018 | Location: Dachepalle, AndhraPradesh | GPA: 9.7","AI/ML Virtual Intern
+May 2023 – July 2023
+• Developed and deployed 3 supervised ML models on AWS SageMaker with real-world datasets (15,000+ rows).
+• Improved prediction accuracy by 18% after hyperparameter tuning and cross-validation.
+• Evaluated model performance using confusion matrix, F1-score, precision, and recall.
+• Automated end-to-end ML workflows using AWS SageMaker, Lambda, and S3, reducing manual deployment time by 40%.","AI Super Assistant
+• Built an AI-powered automation assistant that executes real-world tasks such as food ordering, ride booking, and music playback using voice commands.
+• Implemented intent detection using NVIDIA API and integrated LLM + RAG to generate step-by-step action plans.
+• Developed a context-aware recommendation system to suggest food, songs, and videos based on user preferences, ratings, location, and time.
+• Added predictive user behavior modeling to proactively recommend actions based on user habits.
+• Implemented Android automation using Kotlin AccessibilityService to perform actions across apps automatically.
+
+Smart Multi-Restaurant Delivery Optimization System
+• Designed a multi-restaurant ordering system that allows customers to order food from multiple nearby restaurants in a single order.
+• Developed a distance-based feasibility algorithm to allow orders only when restaurants are within a defined radius (0–3 km).
+• Implemented route optimization logic to assign one delivery partner to pick up orders from multiple restaurants and deliver them efficiently to the same customer.
+• Built a delivery time prediction model using distance, preparation time, and traffic conditions to improve delivery efficiency and reduce delivery cost.","[Training] Data Science & Machine Learning - Cranes Varsity, Bengaluru.
+Details: Trained in Python, RDBMS, Exploratory Data Analysis (EDA), Power BI, and ML, NLP",,,,,CV_Jayavarapu-siva-Tejachary.pdf,Completeness fail
+9ba86722016ea942,JAYAVARAPU SIVA TEJACHARY,j.shivachary@gmail.com,+91-9866862016,,https://www.linkedin.com/in/jayavarapu-siva-tejachary,https://github.com/sivatejachary,,"AI/ML Engineer with 2 years of experience developing scalable AI applications using Python, FastAPI, NLP, Large Language Models (OpenAI, Gemini), and Retrieval-Augmented Generation (RAG). Skilled in backend API development, machine learning pipelines, and intelligent automation solutions.","Programming & Backend: Python, FastAPI, REST APIs
+Generative AI: LLMs, OpenAI, Gemini, RAG, Prompt Engineering, LangChain, Hugging Face Transformers
+NLP & Document AI: NER, OCR, TF-IDF, Embeddings
+Machine Learning: Scikit-learn, TensorFlow, PyTorch, Supervised Learning, Unsupervised Learning
+Computer Vision & Data Science: OpenCV, Pandas, NumPy
+Databases: MySQL, PostgreSQL
+Tools & Platforms: Git, GitHub, Docker, Azure, Jupyter Notebook","B.Tech in Computer Science and Engineering - Chalapathi Institute of Engineering and Technology
+Dates: Sep 2020 – Apr 2024 | Location: Guntur, Andhra Pradesh | GPA: 7.9/10","AI/ML Engineer at Avataa Solutions Pvt. Ltd.
+June 2024 – Present | Hyderabad, India
+• Developed AI-powered applications using Python, FastAPI, NLP, LLMs (OpenAI, Gemini), and RAG.
+• Built and maintained REST APIs for AI-based document processing and automation.
+• Worked on OCR, NER, data preprocessing, and machine learning models for document analysis.
+• Integrated LLMs to generate document summaries and improve automation workflows.
+• Developed and deployed AI solutions for intelligent document processing and compliance automation.","Enterprise Document AI & Compliance Automation
+Oct 2024 – Present | Technologies: FastAPI, Python, PostgreSQL, Azure OCR, NER, Gemini LLM
+• Built a backend system to extract and validate invoice data from scanned image-based PDF documents using Azure OCR and NER.
+• Designed a matching engine to cross-reference extracted data across multiple documents and detect inconsistencies before manual review.
+• Integrated Gemini LLM to generate human-readable summaries and support compliance verification.
+• Applied similarity- and metadata-based ML logic to automatically group related multi-page invoice documents.
+• Implemented event-driven document processing using PostgreSQL NOTIFY & LISTEN, eliminating polling delays and enabling real-time workflow automation.
+• Developed FastAPI REST APIs for document upload, OCR processing, data validation, and digital invoice generation.
+• Reduced manual document review effort by 70–85% across production workloads.
+
+AI Resume Screening System
+Aug 2024 – Sept 2024 | Technologies: Python, NLP, FastAPI, Transformers
+• Built an NLP-based resume screening system using TF-IDF and embeddings to analyze 500+ resumes with 85%+ matching accuracy.
+• Designed a ranking algorithm to shortlist the top 10–20% of candidates, reducing manual screening effort by 60%.
+• Developed FastAPI REST APIs for real-time resume processing.","[Training] Data Science & Machine Learning Certification
+Details: Cranes Varsity, Bengaluru: Completed hands-on training in Python, RDBMS, EDA, and core ML techniques through applied projects.","• Top 5, College Hackathon (2024): Built a CNN-powered plant disease detection system to help farmers identify crop diseases early from leaf images, ranking top 5 among 250+ participants.",,,,AIML- JAYAVARAPU SIVA TEJACHARY.pdf,Completeness fail

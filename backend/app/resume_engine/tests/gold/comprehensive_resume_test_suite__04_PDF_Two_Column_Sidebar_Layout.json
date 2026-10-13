@@ -1,0 +1,107 @@
+{
+  "file": "comprehensive_resume_test_suite/04_PDF_Two_Column_Sidebar_Layout.pdf",
+  "sha256": "c1f2680437323350f4bd296f66d809cc6ef983a60f24d03b8fd91779535df82f",
+  "persona": "lucas",
+  "annotation_origin": "source-reviewed development labels authored for this task; not user gold or held out",
+  "headings": [
+    {
+      "text": "CONTACT",
+      "canonical": "contact"
+    },
+    {
+      "text": "CORE SKILLS",
+      "canonical": "skills"
+    },
+    {
+      "text": "CERTIFICATIONS",
+      "canonical": "certifications"
+    },
+    {
+      "text": "EDUCATION",
+      "canonical": "education"
+    },
+    {
+      "text": "PROFESSIONAL SUMMARY",
+      "canonical": "summary"
+    },
+    {
+      "text": "WORK EXPERIENCE",
+      "canonical": "experience"
+    }
+  ],
+  "fields": {
+    "name": "LUCAS MOREAU",
+    "emails": [
+      "lucas.moreau@example.com"
+    ],
+    "phones": [
+      "(555) 492-8172"
+    ],
+    "locations": [
+      "Austin, TX"
+    ],
+    "urls": [
+      "github.com/lmoreau-dummy",
+      "linkedin.com/in/lucas-m-dummy"
+    ],
+    "date_ranges": [
+      {
+        "start": "2016",
+        "end": "2020"
+      },
+      {
+        "start": "2022",
+        "end": "Present"
+      },
+      {
+        "start": "2020",
+        "end": "2022"
+      }
+    ],
+    "degrees": [
+      "B.S. in Computer Science"
+    ],
+    "gpas": [
+      {
+        "score": "3.88",
+        "scale": "4.0"
+      }
+    ],
+    "skills": [
+      "Go",
+      "Python",
+      "C++",
+      "Kubernetes",
+      "Docker",
+      "Helm",
+      "AWS",
+      "Apache Kafka",
+      "RabbitMQ",
+      "Redis",
+      "Terraform",
+      "Linux",
+      "eBPF",
+      "GitOps",
+      "ArgoCD",
+      "OpenTelemetry",
+      "Prometheus",
+      "Grafana"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Senior Infrastructure Engineer",
+      "company": "Datavault Systems",
+      "start": "2022",
+      "end": "Present",
+      "bullet_count": 3
+    },
+    {
+      "title": "Cloud Platform Engineer",
+      "company": "Stratosphere Networks",
+      "start": "2020",
+      "end": "2022",
+      "bullet_count": 2
+    }
+  ]
+}

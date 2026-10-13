@@ -1,0 +1,10 @@
+{
+  "id": "U06",
+  "file": "colorful_resume_templates_bundle/03_PDF_Royal_Purple_Marketing_Resume.pdf",
+  "sha256": "c46b14d76878b810ea8052349edc50bf54f58e087c5c015b92bcecce83a74ada",
+  "previous_reference": "R04",
+  "artifact": "artifacts/U06/resume.json",
+  "selected_from": "upload_accuracy/results/U06/resume.json",
+  "selected_sha256": "059718e53bd5acf81f546afc75a4490ce14ef8a1ca52ef098be814f87cb3589b",
+  "reason": "Full raw lines, layout and hyperlink metadata; uploaded artifact preferred when available. Structured output is baseline comparison only."
+}

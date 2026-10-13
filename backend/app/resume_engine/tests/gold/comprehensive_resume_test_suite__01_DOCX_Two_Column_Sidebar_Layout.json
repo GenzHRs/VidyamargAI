@@ -1,0 +1,91 @@
+{
+  "file": "comprehensive_resume_test_suite/01_DOCX_Two_Column_Sidebar_Layout.docx",
+  "sha256": "05b76709624833861cab54350575e9a76917f332fca0ccbf292d06b0ab116bbb",
+  "persona": "claire",
+  "annotation_origin": "source-reviewed development labels authored for this task; not user gold or held out",
+  "headings": [
+    {
+      "text": "CONTACT",
+      "canonical": "contact"
+    },
+    {
+      "text": "SKILLS",
+      "canonical": "skills"
+    },
+    {
+      "text": "EDUCATION",
+      "canonical": "education"
+    },
+    {
+      "text": "PROFILE",
+      "canonical": "summary"
+    },
+    {
+      "text": "EXPERIENCE",
+      "canonical": "experience"
+    }
+  ],
+  "fields": {
+    "name": "CLAIRE DUPUIS",
+    "emails": [
+      "claire.dupuis@example.com"
+    ],
+    "phones": [
+      "+1 (415) 555-0199"
+    ],
+    "locations": [
+      "San Francisco, CA"
+    ],
+    "urls": [
+      "linkedin.com/in/claire-dummy"
+    ],
+    "date_ranges": [
+      {
+        "start": "2022",
+        "end": "Present"
+      },
+      {
+        "start": "2019",
+        "end": "2022"
+      }
+    ],
+    "degrees": [
+      "B.S. in Human-Computer Interaction"
+    ],
+    "gpas": [
+      {
+        "score": "3.85",
+        "scale": "4.0"
+      }
+    ],
+    "skills": [
+      "Wireframing",
+      "Prototyping",
+      "Figma",
+      "FigJam",
+      "Journey Mapping",
+      "Usability Testing",
+      "WCAG",
+      "HTML",
+      "CSS",
+      "Agile",
+      "React"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Lead Product Designer",
+      "company": "CloudScale Networks",
+      "start": "2022",
+      "end": "Present",
+      "bullet_count": 3
+    },
+    {
+      "title": "Senior UX Designer",
+      "company": "AeroMetrics Analytics",
+      "start": "2019",
+      "end": "2022",
+      "bullet_count": 2
+    }
+  ]
+}

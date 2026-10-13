@@ -1,0 +1,89 @@
+{
+  "file": "colorful_resume_templates_bundle/03_PDF_Royal_Purple_Marketing_Resume.pdf",
+  "sha256": "c46b14d76878b810ea8052349edc50bf54f58e087c5c015b92bcecce83a74ada",
+  "persona": "camila",
+  "annotation_origin": "source-reviewed development labels authored for this task; not user gold or held out",
+  "headings": [
+    {
+      "text": "MARKETING METRICS",
+      "canonical": "metrics"
+    },
+    {
+      "text": "GROWTH TOOLKIT",
+      "canonical": "skills"
+    },
+    {
+      "text": "EDUCATION",
+      "canonical": "education"
+    },
+    {
+      "text": "EXECUTIVE PROFILE",
+      "canonical": "summary"
+    },
+    {
+      "text": "PROFESSIONAL EXPERIENCE",
+      "canonical": "experience"
+    }
+  ],
+  "fields": {
+    "name": "CAMILA RESTREPO",
+    "emails": [
+      "camila.restrepo@example.com"
+    ],
+    "phones": [
+      "(555) 612-4091"
+    ],
+    "locations": [
+      "Miami, FL"
+    ],
+    "urls": [
+      "linkedin.com/in/camila-marketing-dummy"
+    ],
+    "date_ranges": [
+      {
+        "start": "2022",
+        "end": "Present"
+      },
+      {
+        "start": "2019",
+        "end": "2022"
+      }
+    ],
+    "degrees": [
+      "B.S. in Digital Marketing & Media"
+    ],
+    "gpas": [],
+    "skills": [
+      "Meta Ads",
+      "TikTok Ads",
+      "Google Ads",
+      "Amplitude",
+      "Mixpanel",
+      "GA4",
+      "AppsFlyer",
+      "Adjust",
+      "Branch",
+      "Optimizely",
+      "VWO",
+      "SQL",
+      "Tableau",
+      "BigQuery"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Senior Performance Marketing Manager",
+      "company": "Nova Health App",
+      "start": "2022",
+      "end": "Present",
+      "bullet_count": 3
+    },
+    {
+      "title": "Growth Marketing Lead",
+      "company": "Solstice Commerce",
+      "start": "2019",
+      "end": "2022",
+      "bullet_count": 2
+    }
+  ]
+}

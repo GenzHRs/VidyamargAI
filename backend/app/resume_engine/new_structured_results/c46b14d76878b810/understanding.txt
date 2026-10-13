@@ -1,0 +1,360 @@
+PERSONAL_DETAILS
+{
+  "name": {
+    "value": "CAMILA RESTREPO",
+    "confidence": 0.92,
+    "source_line_ids": [
+      "l00000"
+    ]
+  },
+  "emails": [
+    {
+      "value": "camila.restrepo@example.com",
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "normalization": "none",
+      "raw": "Miami, FL • (555) 612-4091 • camila.restrepo@example.com • linkedin.com/in/camila-marketing-dummy"
+    }
+  ],
+  "phones": [
+    {
+      "value": "(555) 612-4091",
+      "confidence": 0.7,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "normalized": "+15556124091",
+      "valid": false
+    }
+  ],
+  "locations": [
+    {
+      "value": "Miami, FL",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00002"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "value": "linkedin.com/in/camila-marketing-dummy",
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "kind": "linkedin"
+    }
+  ],
+  "headline": {
+    "value": "SENIOR GROWTH MARKETING MANAGER & PAID ACQUISITION LEAD",
+    "source_line_ids": [
+      "l00001"
+    ],
+    "confidence": 0.7
+  }
+}
+
+SUMMARY
+[
+  {
+    "text": "Data-driven Growth Marketing Manager with 7+ years orchestrating high-scale user acquisition, performance creative testing, and multi-channel marketing campaigns. Proven record of scaling direct-to-consumer and mobile subscription brands past $50M in annual revenue while maintaining strict payback margins.",
+    "source_line_ids": [
+      "l00020",
+      "l00021",
+      "l00022",
+      "l00023"
+    ],
+    "value": "Data-driven Growth Marketing Manager with 7+ years orchestrating high-scale user acquisition, performance creative testing, and multi-channel marketing campaigns. Proven record of scaling direct-to-consumer and mobile subscription brands past $50M in annual revenue while maintaining strict payback margins."
+  }
+]
+
+EDUCATION
+[
+  {
+    "text": "B.S. in Digital Marketing & Media\nUniversity of Florida (2018)\nSumma Cum Laude",
+    "source_line_ids": [
+      "l00016",
+      "l00017",
+      "l00018"
+    ],
+    "degree": {
+      "value": "B.S. in Digital Marketing & Media",
+      "source_line_ids": [
+        "l00016"
+      ],
+      "confidence": 0.85
+    },
+    "institution": {
+      "value": "University of Florida",
+      "source_line_ids": [
+        "l00017"
+      ],
+      "confidence": 0.85
+    },
+    "dates": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "graduation": {
+      "value": "2018",
+      "source_line_ids": [
+        "l00017"
+      ],
+      "confidence": 0.85
+    },
+    "location": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "gpa": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "normalized_dates": {
+      "start": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      },
+      "end": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      }
+    }
+  }
+]
+
+WORK_EXPERIENCE
+[
+  {
+    "title": {
+      "value": "Senior Performance Marketing Manager",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00025"
+      ]
+    },
+    "company": {
+      "value": "Nova Health App",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00025"
+      ]
+    },
+    "location": {
+      "value": "Miami, FL",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00025"
+      ]
+    },
+    "dates": {
+      "value": {
+        "start": "2022",
+        "end": "Present"
+      },
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00026"
+      ]
+    },
+    "bullets": [
+      "• Managed $1.1M monthly budget across Meta, Google, TikTok, and Apple Search Ads.",
+      "• Built creative testing pipeline producing 40+ iterative ad variations weekly, lowering customer acquisition cost (CAC) by 42%.",
+      "• Partnered with product and engineering teams to optimize subscription paywall conversion by 19%."
+    ],
+    "text": "Senior Performance Marketing Manager — Nova Health App (Miami, FL)\n2022 – Present\n• Managed $1.1M monthly budget across Meta, Google, TikTok, and Apple Search Ads.\n• Built creative testing pipeline producing 40+ iterative ad variations weekly, lowering customer acquisition cost (CAC) by 42%.\n• Partnered with product and engineering teams to optimize subscription paywall conversion by 19%.",
+    "confidence": 0.88,
+    "source_line_ids": [
+      "l00025",
+      "l00026",
+      "l00027",
+      "l00028",
+      "l00029",
+      "l00030",
+      "l00031"
+    ],
+    "normalized_dates": {
+      "start": {
+        "raw": "2022",
+        "value": "2022",
+        "precision": "year"
+      },
+      "end": {
+        "raw": "Present",
+        "value": null,
+        "precision": "open"
+      }
+    }
+  },
+  {
+    "title": {
+      "value": "Growth Marketing Lead",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00032"
+      ]
+    },
+    "company": {
+      "value": "Solstice Commerce",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00032"
+      ]
+    },
+    "location": {
+      "value": "Austin, TX",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00032"
+      ]
+    },
+    "dates": {
+      "value": {
+        "start": "2019",
+        "end": "2022"
+      },
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00033"
+      ]
+    },
+    "bullets": [
+      "• Scaled e-commerce customer base from 25,000 to 220,000 paying users within 24 months.",
+      "• Designed multi-touch attribution model in BigQuery & Tableau to track ROAS across paid, organic, and influencer channels."
+    ],
+    "text": "Growth Marketing Lead — Solstice Commerce (Austin, TX)\n2019 – 2022\n• Scaled e-commerce customer base from 25,000 to 220,000 paying users within 24 months.\n• Designed multi-touch attribution model in BigQuery & Tableau to track ROAS across paid, organic, and influencer channels.",
+    "confidence": 0.88,
+    "source_line_ids": [
+      "l00032",
+      "l00033",
+      "l00034",
+      "l00035",
+      "l00036"
+    ],
+    "normalized_dates": {
+      "start": {
+        "raw": "2019",
+        "value": "2019",
+        "precision": "year"
+      },
+      "end": {
+        "raw": "2022",
+        "value": "2022",
+        "precision": "year"
+      }
+    }
+  }
+]
+
+INTERNSHIPS
+[]
+
+PROJECTS
+[]
+
+SKILLS
+[
+  {
+    "text": "• Meta Ads Manager & TikTok Ads",
+    "source_line_ids": [
+      "l00009"
+    ],
+    "category": null,
+    "items": [
+      "Meta Ads Manager & TikTok Ads"
+    ]
+  },
+  {
+    "text": "• Google Ads (Search, PMax, YouTube)",
+    "source_line_ids": [
+      "l00010"
+    ],
+    "category": null,
+    "items": [
+      "Google Ads (Search, PMax, YouTube)"
+    ]
+  },
+  {
+    "text": "• Amplitude, Mixpanel & GA4",
+    "source_line_ids": [
+      "l00011"
+    ],
+    "category": null,
+    "items": [
+      "Amplitude",
+      "Mixpanel & GA4"
+    ]
+  },
+  {
+    "text": "• AppsFlyer, Adjust & Branch (MMP)",
+    "source_line_ids": [
+      "l00012"
+    ],
+    "category": null,
+    "items": [
+      "AppsFlyer",
+      "Adjust & Branch (MMP)"
+    ]
+  },
+  {
+    "text": "• Optimizely & VWO (A/B Testing)",
+    "source_line_ids": [
+      "l00013"
+    ],
+    "category": null,
+    "items": [
+      "Optimizely & VWO (A/B Testing)"
+    ]
+  },
+  {
+    "text": "• SQL & Tableau Reporting",
+    "source_line_ids": [
+      "l00014"
+    ],
+    "category": null,
+    "items": [
+      "SQL & Tableau Reporting"
+    ]
+  }
+]
+
+CERTIFICATIONS
+[]
+
+TRAINING
+[]
+
+AWARDS
+[]
+
+PUBLICATIONS
+[]
+
+LANGUAGES
+[]
+
+OTHER_SECTIONS
+[
+  {
+    "canonical": "metrics",
+    "original_heading": "MARKETING METRICS",
+    "text": "• $12M+ Annual Ad Spend Managed\n• 3.4x Blended ROAS Achieved\n• 48% Reduced Customer CAC\n• 185K+ Net New MQLs Generated",
+    "source_line_ids": [
+      "l00004",
+      "l00005",
+      "l00006",
+      "l00007"
+    ]
+  }
+]
+
+UNCLASSIFIED
+[]

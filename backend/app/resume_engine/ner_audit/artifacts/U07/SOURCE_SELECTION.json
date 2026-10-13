@@ -1,0 +1,10 @@
+{
+  "id": "U07",
+  "file": "colorful_resume_templates_bundle/04_PDF_Emerald_Forest_Operations_Resume.pdf",
+  "sha256": "8a28114c043883f515bb055f3cb0c0cbfee3d13134a2eba717a7a0cfbf12a44f",
+  "previous_reference": "R05",
+  "artifact": "artifacts/U07/resume.json",
+  "selected_from": "upload_accuracy/results/U07/resume.json",
+  "selected_sha256": "caac7c1f2fd36f835e121aeee43e6caa4d82510717d10bcca68ef0a26a82758c",
+  "reason": "Full raw lines, layout and hyperlink metadata; uploaded artifact preferred when available. Structured output is baseline comparison only."
+}

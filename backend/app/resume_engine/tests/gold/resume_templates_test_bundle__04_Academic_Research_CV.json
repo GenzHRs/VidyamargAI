@@ -1,0 +1,76 @@
+{
+  "file": "resume_templates_test_bundle/04_Academic_Research_CV.docx",
+  "sha256": "5830bdf1799ece64b8e44ef8b773300cf1305bbd793a6e973eb669c6491ca40c",
+  "persona": "sophia",
+  "annotation_origin": "source-reviewed development labels authored for this task; not user gold or held out",
+  "headings": [
+    {
+      "text": "EDUCATION",
+      "canonical": "education"
+    },
+    {
+      "text": "ACADEMIC & RESEARCH APPOINTMENTS",
+      "canonical": "experience"
+    },
+    {
+      "text": "SELECTED PEER-REVIEWED PUBLICATIONS",
+      "canonical": "publications"
+    },
+    {
+      "text": "HONORS, GRANTS & FELLOWSHIPS",
+      "canonical": "awards"
+    }
+  ],
+  "fields": {
+    "name": "DR. SOPHIA AL-MANSOOR, PH.D.",
+    "emails": [
+      "s.almansoor.phd@example.edu"
+    ],
+    "phones": [
+      "+1 (650) 555-0143"
+    ],
+    "locations": [
+      "Stanford, CA 94305"
+    ],
+    "urls": [],
+    "date_ranges": [
+      {
+        "start": "2018",
+        "end": "2023"
+      },
+      {
+        "start": "2014",
+        "end": "2018"
+      },
+      {
+        "start": "2023",
+        "end": "Present"
+      },
+      {
+        "start": "2024",
+        "end": "2026"
+      },
+      {
+        "start": "2020",
+        "end": "2023"
+      }
+    ],
+    "degrees": [
+      "Ph.D. in Computational Biology & Bioinformatics",
+      "B.S. in Molecular Biology & Computer Science"
+    ],
+    "gpas": [],
+    "skills": [
+      "Deep Learning"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Postdoctoral Research Fellow",
+      "company": "Department of Bioengineering, Stanford University",
+      "start": "2023",
+      "end": "Present",
+      "bullet_count": 1
+    }
+  ]
+}

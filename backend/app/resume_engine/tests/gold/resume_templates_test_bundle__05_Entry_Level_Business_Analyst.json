@@ -1,0 +1,91 @@
+{
+  "file": "resume_templates_test_bundle/05_Entry_Level_Business_Analyst.docx",
+  "sha256": "660f09e952f57e81c68954cb8f7097c29b6021b3a3152fa90114933b9ffc62d9",
+  "persona": "jordan",
+  "annotation_origin": "source-reviewed development labels authored for this task; not user gold or held out",
+  "headings": [
+    {
+      "text": "EDUCATION",
+      "canonical": "education"
+    },
+    {
+      "text": "TECHNICAL & ANALYTICAL SKILLS",
+      "canonical": "skills"
+    },
+    {
+      "text": "INTERNSHIP EXPERIENCE",
+      "canonical": "experience"
+    },
+    {
+      "text": "ACADEMIC PROJECT & LEADERSHIP",
+      "canonical": "projects"
+    }
+  ],
+  "fields": {
+    "name": "JORDAN TAYLOR",
+    "emails": [
+      "jordan.taylor.analyst@example.com"
+    ],
+    "phones": [
+      "(555) 762-9013"
+    ],
+    "locations": [
+      "Seattle, WA"
+    ],
+    "urls": [
+      "linkedin.com/in/jordan-taylor-dummy"
+    ],
+    "date_ranges": [
+      {
+        "start": "Jun 2024",
+        "end": "Sep 2024"
+      },
+      {
+        "start": "Jan 2024",
+        "end": "May 2024"
+      }
+    ],
+    "degrees": [
+      "Bachelor of Arts in Information Systems & Operations Management"
+    ],
+    "gpas": [
+      {
+        "score": "3.82",
+        "scale": "4.0"
+      }
+    ],
+    "skills": [
+      "Tableau",
+      "Power BI",
+      "Excel",
+      "Power Query",
+      "SQL",
+      "PostgreSQL",
+      "Python",
+      "Pandas",
+      "Agile",
+      "Scrum",
+      "BPMN",
+      "Jira",
+      "Confluence",
+      "Root Cause Analysis",
+      "Supply Chain"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Business Analyst Intern",
+      "company": "Cascade Financial Services",
+      "start": "Jun 2024",
+      "end": "Sep 2024",
+      "bullet_count": 3
+    },
+    {
+      "title": "Operations Data Intern",
+      "company": "Evergreen Supply Partners",
+      "start": "Jan 2024",
+      "end": "May 2024",
+      "bullet_count": 2
+    }
+  ]
+}

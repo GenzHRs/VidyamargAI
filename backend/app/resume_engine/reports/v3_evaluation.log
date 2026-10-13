@@ -1,0 +1,218 @@
+R01 Jayavarapu-Siva-Tejachary-AIML.pdf fail
+R02 colorful_resume_templates_bundle/01_DOCX_Vibrant_Coral_Creative_Resume.docx pass
+R03 colorful_resume_templates_bundle/02_DOCX_Navy_Teal_Cloud_Architect.docx pass
+R04 colorful_resume_templates_bundle/03_PDF_Royal_Purple_Marketing_Resume.pdf pass
+R05 colorful_resume_templates_bundle/04_PDF_Emerald_Forest_Operations_Resume.pdf pass
+R06 comprehensive_resume_test_suite/01_DOCX_Two_Column_Sidebar_Layout.docx pass
+R07 comprehensive_resume_test_suite/02_DOCX_Heavy_Table_Layout_Resume.docx pass
+R08 comprehensive_resume_test_suite/03_DOCX_Horizontal_Hero_Two_Blocks.docx pass
+R09 comprehensive_resume_test_suite/04_PDF_Two_Column_Sidebar_Layout.pdf pass
+R10 comprehensive_resume_test_suite/05_PDF_Strict_Table_Grid_Resume.pdf pass
+R11 comprehensive_resume_test_suite/06_PDF_Horizontal_Hero_Two_Blocks.pdf pass
+R12 comprehensive_resume_test_suite/07_DOCX_Modern_Tech_Software_Engineer.docx pass
+R13 comprehensive_resume_test_suite/08_DOCX_Executive_Corporate_Director.docx pass
+R14 comprehensive_resume_test_suite/09_DOCX_Academic_Research_CV.docx pass
+R15 comprehensive_resume_test_suite/10_DOCX_Entry_Level_Business_Analyst.docx pass
+R16 resume_templates_test_bundle/01_Modern_Tech_Software_Engineer.docx pass
+R17 resume_templates_test_bundle/02_Executive_Corporate_Director.docx pass
+R18 resume_templates_test_bundle/03_Creative_Product_UX_Designer.docx pass
+R19 resume_templates_test_bundle/04_Academic_Research_CV.docx pass
+R20 resume_templates_test_bundle/05_Entry_Level_Business_Analyst.docx pass
+{
+  "engine_version": "3.0.0",
+  "audit_date": "2026-10-12",
+  "file_count": 20,
+  "unique_files": 16,
+  "all_files": {
+    "field_micro": {
+      "tp": 732,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "by_group": {
+      "certifications": {
+        "tp": 18,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "contact": {
+        "tp": 106,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "education": {
+        "tp": 109,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "experience": {
+        "tp": 230,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "headings": {
+        "tp": 92,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "project_technologies": {
+        "tp": 18,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "projects": {
+        "tp": 16,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "skills": {
+        "tp": 235,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  "unique_only": {
+    "field_micro": {
+      "tp": 585,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "by_group": {
+      "certifications": {
+        "tp": 14,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "contact": {
+        "tp": 85,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "education": {
+        "tp": 83,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "experience": {
+        "tp": 183,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "headings": {
+        "tp": 74,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "project_technologies": {
+        "tp": 18,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "projects": {
+        "tp": 14,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "skills": {
+        "tp": 188,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  "word_counts": {
+    "reference_words": 5066,
+    "extracted_words": 5065,
+    "matched_words": 5065
+  },
+  "unique_word_counts": {
+    "reference_words": 3919,
+    "extracted_words": 3918,
+    "matched_words": 3918
+  },
+  "labels_sha256": "fd069ac3a35544f0115f21f9a1ee91c5e62989c88cd6d58776aea26d46db5e7e"
+}
+R01 100.0 []
+R02 100.0 []
+R03 100.0 []
+R04 100.0 []
+R05 100.0 []
+R06 100.0 []
+R07 100.0 []
+R08 100.0 []
+R09 100.0 []
+R10 100.0 []
+R11 100.0 []
+R12 100.0 []
+R13 100.0 []
+R14 100.0 []
+R15 100.0 []
+R16 100.0 []
+R17 100.0 []
+R18 100.0 []
+R19 100.0 []
+R20 100.0 []
+{
+  "expected": 104,
+  "actual": 104,
+  "exact_matches": 104,
+  "recall": 1.0,
+  "precision": 1.0,
+  "failures": [],
+  "methodology": "Full bullet strings, fixed job/bullet ordinals; NFKC, whitespace and leading bullet marker normalization only. References copied from the completed source-reviewed audit before v3. Development set; not independent validation."
+}

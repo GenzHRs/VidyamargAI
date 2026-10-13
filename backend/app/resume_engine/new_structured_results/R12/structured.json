@@ -1,0 +1,461 @@
+{
+  "schema_version": "3.0.0",
+  "section_order": [
+    "contact",
+    "summary",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "certifications",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "contact": {
+    "name": {
+      "value": "ALEX CHEN",
+      "confidence": 0.92,
+      "source_line_ids": [
+        "l00000"
+      ]
+    },
+    "emails": [
+      {
+        "value": "alex.chen.dev@example.com",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalization": "none",
+        "raw": "San Francisco, CA  •  (555) 019-2834  •  alex.chen.dev@example.com  •  github.com/alexchen-dev  •  linkedin.com/in/alexchen-dummy"
+      }
+    ],
+    "phones": [
+      {
+        "value": "(555) 019-2834",
+        "confidence": 0.7,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalized": "+15550192834",
+        "valid": false
+      }
+    ],
+    "locations": [
+      {
+        "value": "San Francisco, CA",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00002"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "value": "github.com/alexchen-dev",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "kind": "github"
+      },
+      {
+        "value": "linkedin.com/in/alexchen-dummy",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "kind": "linkedin"
+      }
+    ]
+  },
+  "summary": [
+    {
+      "text": "High-performing Full Stack Engineer with 7+ years of experience engineering high-throughput distributed microservices, fault-tolerant cloud infrastructure, and modern responsive front-ends. Proven record of scaling systems to 15M+ active users, optimizing API latency by 42%, and spearheading zero-downtime database migrations. Passionate about developer tooling, Clean Architecture, and CI/CD automation.",
+      "source_line_ids": [
+        "l00004"
+      ],
+      "value": "High-performing Full Stack Engineer with 7+ years of experience engineering high-throughput distributed microservices, fault-tolerant cloud infrastructure, and modern responsive front-ends. Proven record of scaling systems to 15M+ active users, optimizing API latency by 42%, and spearheading zero-downtime database migrations. Passionate about developer tooling, Clean Architecture, and CI/CD automation."
+    }
+  ],
+  "experience": [
+    {
+      "title": {
+        "value": "Lead Backend Software Engineer",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00011"
+        ]
+      },
+      "company": {
+        "value": "Nexus Cloud Technologies",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00012"
+        ]
+      },
+      "location": {
+        "value": "San Francisco, CA",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00012"
+        ]
+      },
+      "dates": {
+        "value": {
+          "start": "Mar 2023",
+          "end": "Present"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00012"
+        ]
+      },
+      "bullets": [
+        "Architected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.",
+        "Decomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.",
+        "Reduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.",
+        "Mentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices."
+      ],
+      "text": "Lead Backend Software Engineer  |  Nexus Cloud Technologies\nMar 2023 – Present  •  San Francisco, CA\nArchitected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.\nDecomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.\nReduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.\nMentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices.",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015",
+        "l00016"
+      ]
+    },
+    {
+      "title": {
+        "value": "Full Stack Software Engineer",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00017"
+        ]
+      },
+      "company": {
+        "value": "Vanguard Digital Labs",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00018"
+        ]
+      },
+      "location": {
+        "value": "Austin, TX",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00018"
+        ]
+      },
+      "dates": {
+        "value": {
+          "start": "Aug 2020",
+          "end": "Feb 2023"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00018"
+        ]
+      },
+      "bullets": [
+        "Built customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.",
+        "Authored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.",
+        "Created reusable UI component library used across 5 internal products, reducing developer delivery time by 30%."
+      ],
+      "text": "Full Stack Software Engineer  |  Vanguard Digital Labs\nAug 2020 – Feb 2023  •  Austin, TX (Remote)\nBuilt customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.\nAuthored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.\nCreated reusable UI component library used across 5 internal products, reducing developer delivery time by 30%.",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021"
+      ]
+    },
+    {
+      "title": {
+        "value": "Junior Software Engineer",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00022"
+        ]
+      },
+      "company": {
+        "value": "Apex Software Solutions",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00023"
+        ]
+      },
+      "location": {
+        "value": "Austin, TX",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00023"
+        ]
+      },
+      "dates": {
+        "value": {
+          "start": "Jun 2018",
+          "end": "Jul 2020"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00023"
+        ]
+      },
+      "bullets": [
+        "Developed responsive single-page web applications with React and Redux.",
+        "Wrote unit and integration tests achieving 88% overall code test coverage."
+      ],
+      "text": "Junior Software Engineer  |  Apex Software Solutions\nJun 2018 – Jul 2020  •  Austin, TX\nDeveloped responsive single-page web applications with React and Redux.\nWrote unit and integration tests achieving 88% overall code test coverage.",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "text": "B.S. in Computer Science\nUniversity of California, Berkeley (2014 – 2018)",
+      "source_line_ids": [
+        "l00027"
+      ],
+      "degree": {
+        "value": "B.S. in Computer Science",
+        "source_line_ids": [
+          "l00027"
+        ],
+        "confidence": 0.85
+      },
+      "institution": {
+        "value": "University of California, Berkeley",
+        "source_line_ids": [
+          "l00027"
+        ],
+        "confidence": 0.85
+      },
+      "dates": {
+        "value": {
+          "start": "2014",
+          "end": "2018"
+        },
+        "source_line_ids": [
+          "l00027"
+        ],
+        "confidence": 0.95
+      },
+      "graduation": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "location": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "gpa": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      }
+    }
+  ],
+  "projects": [],
+  "skills": [
+    {
+      "text": "• Languages: Go, Python, TypeScript, Java, SQL, Rust (intermediate)",
+      "source_line_ids": [
+        "l00006"
+      ],
+      "category": "Languages",
+      "items": [
+        "Go",
+        "Python",
+        "TypeScript",
+        "Java",
+        "SQL",
+        "Rust (intermediate)"
+      ]
+    },
+    {
+      "text": "• Backend & Data: Node.js, FastAPI, Spring Boot, PostgreSQL, Redis, Apache Kafka, GraphQL",
+      "source_line_ids": [
+        "l00007"
+      ],
+      "category": "Backend & Data",
+      "items": [
+        "Node.js",
+        "FastAPI",
+        "Spring Boot",
+        "PostgreSQL",
+        "Redis",
+        "Apache Kafka",
+        "GraphQL"
+      ]
+    },
+    {
+      "text": "• Cloud & DevOps: AWS (ECS, Lambda, EKS, RDS), Docker, Kubernetes, Terraform, GitHub Actions, Prometheus",
+      "source_line_ids": [
+        "l00008"
+      ],
+      "category": "Cloud & DevOps",
+      "items": [
+        "AWS (ECS, Lambda, EKS, RDS)",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "GitHub Actions",
+        "Prometheus"
+      ]
+    },
+    {
+      "text": "• Frontend & Tools: React 18, Next.js, Tailwind CSS, Jest, Datadog, Git, Linux",
+      "source_line_ids": [
+        "l00009"
+      ],
+      "category": "Frontend & Tools",
+      "items": [
+        "React 18",
+        "Next.js",
+        "Tailwind CSS",
+        "Jest",
+        "Datadog",
+        "Git",
+        "Linux"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "text": "AWS Certified Solutions Architect – Associate (2024), Certified Kubernetes Administrator (CKA, 2023)",
+      "source_line_ids": [
+        "l00028"
+      ],
+      "name": {
+        "value": "AWS Certified Solutions Architect – Associate (2024)",
+        "source_line_ids": [
+          "l00028"
+        ],
+        "confidence": 0.85
+      },
+      "details": ""
+    },
+    {
+      "text": "AWS Certified Solutions Architect – Associate (2024), Certified Kubernetes Administrator (CKA, 2023)",
+      "source_line_ids": [
+        "l00028"
+      ],
+      "name": {
+        "value": "Certified Kubernetes Administrator (CKA, 2023)",
+        "source_line_ids": [
+          "l00028"
+        ],
+        "confidence": 0.85
+      },
+      "details": ""
+    }
+  ],
+  "other_sections": [],
+  "review": [
+    {
+      "path": "fields.phones[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.7
+    }
+  ],
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "ALEX CHEN\nSenior Full Stack Software Engineer | Distributed Systems & Cloud Architecture\nSan Francisco, CA  •  (555) 019-2834  •  alex.chen.dev@example.com  •  github.com/alexchen-dev  •  linkedin.com/in/alexchen-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "summary",
+      "original_heading": "PROFESSIONAL SUMMARY",
+      "heading_line_id": "l00003",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00004"
+      ],
+      "text": "High-performing Full Stack Engineer with 7+ years of experience engineering high-throughput distributed microservices, fault-tolerant cloud infrastructure, and modern responsive front-ends. Proven record of scaling systems to 15M+ active users, optimizing API latency by 42%, and spearheading zero-downtime database migrations. Passionate about developer tooling, Clean Architecture, and CI/CD automation."
+    },
+    {
+      "id": "s002",
+      "canonical": "skills",
+      "original_heading": "TECHNICAL SKILLS",
+      "heading_line_id": "l00005",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00006",
+        "l00007",
+        "l00008",
+        "l00009"
+      ],
+      "text": "• Languages: Go, Python, TypeScript, Java, SQL, Rust (intermediate)\n• Backend & Data: Node.js, FastAPI, Spring Boot, PostgreSQL, Redis, Apache Kafka, GraphQL\n• Cloud & DevOps: AWS (ECS, Lambda, EKS, RDS), Docker, Kubernetes, Terraform, GitHub Actions, Prometheus\n• Frontend & Tools: React 18, Next.js, Tailwind CSS, Jest, Datadog, Git, Linux"
+    },
+    {
+      "id": "s003",
+      "canonical": "experience",
+      "original_heading": "PROFESSIONAL EXPERIENCE",
+      "heading_line_id": "l00010",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015",
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025"
+      ],
+      "text": "Lead Backend Software Engineer  |  Nexus Cloud Technologies\nMar 2023 – Present  •  San Francisco, CA\nArchitected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.\nDecomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.\nReduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.\nMentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices.\nFull Stack Software Engineer  |  Vanguard Digital Labs\nAug 2020 – Feb 2023  •  Austin, TX (Remote)\nBuilt customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.\nAuthored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.\nCreated reusable UI component library used across 5 internal products, reducing developer delivery time by 30%.\nJunior Software Engineer  |  Apex Software Solutions\nJun 2018 – Jul 2020  •  Austin, TX\nDeveloped responsive single-page web applications with React and Redux.\nWrote unit and integration tests achieving 88% overall code test coverage."
+    },
+    {
+      "id": "s004",
+      "canonical": "education",
+      "original_heading": "EDUCATION & CERTIFICATIONS",
+      "heading_line_id": "l00026",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00027"
+      ],
+      "text": "B.S. in Computer Science  •  University of California, Berkeley (2014 – 2018)"
+    },
+    {
+      "id": "s005",
+      "canonical": "certifications",
+      "original_heading": "Certifications:",
+      "heading_line_id": "l00028:h",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00028:b"
+      ],
+      "text": "AWS Certified Solutions Architect – Associate (2024), Certified Kubernetes Administrator (CKA, 2023)"
+    }
+  ]
+}

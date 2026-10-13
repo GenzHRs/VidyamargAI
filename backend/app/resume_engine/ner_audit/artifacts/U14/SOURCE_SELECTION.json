@@ -1,0 +1,10 @@
+{
+  "id": "U14",
+  "file": "comprehensive_resume_test_suite/07_DOCX_Modern_Tech_Software_Engineer.docx",
+  "sha256": "2a72ffbeecb5dde4df82c996261ea24f562c5b526b83d19f4faa8189b40c0204",
+  "previous_reference": "R16",
+  "artifact": "artifacts/U14/resume.json",
+  "selected_from": "upload/resume(5).json",
+  "selected_sha256": "84811c0bd0e2c5ba7507678f1ce7426b25ebeeef80238dc6ff219c4850b992d9",
+  "reason": "Full raw lines, layout and hyperlink metadata; uploaded artifact preferred when available. Structured output is baseline comparison only."
+}

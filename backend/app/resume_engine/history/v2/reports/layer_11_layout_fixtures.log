@@ -1,0 +1,9 @@
+test_all_digital_fixtures_preserve_words (test_11_layout_fixtures.LayoutFixtureTests.test_all_digital_fixtures_preserve_words) ... ok
+test_column_order_and_light_text (test_11_layout_fixtures.LayoutFixtureTests.test_column_order_and_light_text) ... ok
+test_repeated_headers_auditable (test_11_layout_fixtures.LayoutFixtureTests.test_repeated_headers_auditable) ... ok
+test_scanned_local_ocr (test_11_layout_fixtures.LayoutFixtureTests.test_scanned_local_ocr) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.700s
+
+OK

@@ -1,0 +1,1658 @@
+[
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U01/SOURCE_SELECTION.json",
+    "sha256": "7de808e4b2edbe1f34339acd992ea6c94ae9acfa37c8b9a8a188cb7305ccfea4",
+    "bytes": 524,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U01/normalized.txt",
+    "sha256": "80c3673d36991240c43749e26f36d040d450ef7b0a3eda8e8b6f6a0aeb62662d",
+    "bytes": 3349,
+    "eligible": true,
+    "characters": 3296,
+    "score": 40,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U01/quality.json",
+    "sha256": "d492d48eb3f36c2c6800116257348ce05353a9ee733a4fd791bc38101a0bf75e",
+    "bytes": 317,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U01/raw.txt",
+    "sha256": "7889d9e5d7680e392ed6b24dffbd6768367ab4ac10e65129303739350cee5937",
+    "bytes": 3349,
+    "eligible": true,
+    "characters": 3296,
+    "score": 65,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U01/resume.json",
+    "sha256": "19a1c408dbc24bfc89b32a944aa32fab87149303d72e6100e5df3c8e8f1ecf2e",
+    "bytes": 343896,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 52,
+    "score": 121,
+    "document_sha256": "9ba86722016ea9427a4ae36c2f2b7ef54f9598e70c2cad0918e8c4f50ce237cc"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U01/resume.md",
+    "sha256": "01458cb41ec7880603ee54a16e3879bff8ed6eb1589cdcc2e2fa77a0dbeaaf6a",
+    "bytes": 3467,
+    "eligible": false,
+    "characters": 3414,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U01/source.txt",
+    "sha256": "08d99177b364077f2d8b09bceeeeffe3e83212b5c86855c728bdf15a45b934f1",
+    "bytes": 3347,
+    "eligible": true,
+    "characters": 3296,
+    "score": 55,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U01/structured.json",
+    "sha256": "6fe8f1dab24b0b2292026c62117c852db43659f15279196fbf90bf96cd5eeddc",
+    "bytes": 21180,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U01/structured.md",
+    "sha256": "4bb85138d2bb2bbb5065acea835fdb92285d7c6c4bdd723275bddcb9c57685dd",
+    "bytes": 3626,
+    "eligible": false,
+    "characters": 3612,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U01/structured.txt",
+    "sha256": "4bb85138d2bb2bbb5065acea835fdb92285d7c6c4bdd723275bddcb9c57685dd",
+    "bytes": 3626,
+    "eligible": false,
+    "characters": 3612,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U02/SOURCE_SELECTION.json",
+    "sha256": "eec65ff568c0b98d8a61db8802ebd260614cebe4a8712929e267de803260bc68",
+    "bytes": 503,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U02/audit_original_resume.json",
+    "sha256": "57e777e39e1b7c2ff28ad35a5169380edfe5f235757adc8f38c2c68aeb783dba",
+    "bytes": 348045,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 74,
+    "score": 120,
+    "document_sha256": "89b836400f8f5192c5b902c03b8ded9982d844b6f2ad1078b9fa9ff5f8cd4c87"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U02/normalized.txt",
+    "sha256": "f68b4be7e5f88a5b04783905761bae3b13a1b24e83f4b4844be56e725c603084",
+    "bytes": 2957,
+    "eligible": true,
+    "characters": 2917,
+    "score": 40,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U02/quality.json",
+    "sha256": "6ded8b2f264393975c25fbcaa5bfbf3d6b33b0720bb336ad99d7bb239be4dabe",
+    "bytes": 384,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U02/raw.txt",
+    "sha256": "662d8ac7aea38e6ba6c60ff079066cc89a24f00ae3b9b1a5ff141b9e2e60a7c2",
+    "bytes": 2957,
+    "eligible": true,
+    "characters": 2917,
+    "score": 65,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U02/resume.json",
+    "sha256": "ed342eb38bb65117b9ccd55535318f034798c11b9f104d04f2c839c432a86434",
+    "bytes": 360629,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 74,
+    "score": 121,
+    "document_sha256": "89b836400f8f5192c5b902c03b8ded9982d844b6f2ad1078b9fa9ff5f8cd4c87"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U02/resume.md",
+    "sha256": "2cda8dc35a60ae77ebb7b5147a1af62cec523b0b524153778ba7958756ae3b46",
+    "bytes": 3037,
+    "eligible": false,
+    "characters": 2997,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U02/source.txt",
+    "sha256": "8a6906d633a0857d9b14563ff1f13969cfd0d1e4b2fe4fc2ece4cb1afebf2ff3",
+    "bytes": 2960,
+    "eligible": true,
+    "characters": 2920,
+    "score": 55,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U02/structured.json",
+    "sha256": "84b2c94d33307a7007c501efe741ac401b8fa9591a8314aff0d2b733f28bc1f1",
+    "bytes": 20643,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U02/structured.md",
+    "sha256": "b1cc39a6c86c95081c76a913bdd1086de58aaf4245a48b9f8ae29b2a5b214931",
+    "bytes": 3034,
+    "eligible": false,
+    "characters": 3024,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U02/structured.txt",
+    "sha256": "b1cc39a6c86c95081c76a913bdd1086de58aaf4245a48b9f8ae29b2a5b214931",
+    "bytes": 3034,
+    "eligible": false,
+    "characters": 3024,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U02/uploaded_resume.md",
+    "sha256": "e2ca06f2d8aa9f5a8f8a17a2174be3fc4f353ee6fe720237ae46bd57756cc490",
+    "bytes": 3132,
+    "eligible": false,
+    "characters": 3092,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U03/SOURCE_SELECTION.json",
+    "sha256": "42a1f0b28f29c390720cbd8835f738e38bb8da2d14e8cf2fdabdd655961dafe8",
+    "bytes": 509,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U03/audit_original_resume.json",
+    "sha256": "40068705fdb5d7bbc94502243a7eb52d24891b6e452fccc61ffc815a553aef8b",
+    "bytes": 346067,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 51,
+    "score": 120,
+    "document_sha256": "bdb2f38e41ac1fe979557ef27f8c98ba3a1f312e5b99e8f117d120a90b7cb826"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U03/normalized.txt",
+    "sha256": "9d4c731e28ecf79bd77548050ada57165f877ae6832fb6ce0f8b2483392bf80c",
+    "bytes": 3340,
+    "eligible": true,
+    "characters": 3287,
+    "score": 40,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U03/quality.json",
+    "sha256": "d821b12ad809b03863356b2d1106f78a87c1f318d46a1f7ea2f79ace0cad6fb2",
+    "bytes": 317,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U03/raw.txt",
+    "sha256": "fd854065723ae5e59de5589994ca495f76edeba892f22aa409226b0d0916c1e1",
+    "bytes": 3340,
+    "eligible": true,
+    "characters": 3287,
+    "score": 65,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U03/resume.json",
+    "sha256": "ded9c2c6e9f9644d687337ea5a8f34a9195bb3e2be33eedf0af4f7aa336ca78c",
+    "bytes": 358869,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 51,
+    "score": 121,
+    "document_sha256": "bdb2f38e41ac1fe979557ef27f8c98ba3a1f312e5b99e8f117d120a90b7cb826"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U03/resume.md",
+    "sha256": "7ca308e9c9662850948c7814c29618cbeac6fa5e4647fb9c77a71681ae01a20c",
+    "bytes": 3459,
+    "eligible": false,
+    "characters": 3406,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U03/source.txt",
+    "sha256": "f5adbe076ee4a5b3853cffb63fb1c549c2d6398039758047aebe463de9626b09",
+    "bytes": 3338,
+    "eligible": true,
+    "characters": 3287,
+    "score": 55,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U03/structured.json",
+    "sha256": "17a11c4c4a1b77375908ff2956dba2abbcad52180578878be7829e4a4d68c54a",
+    "bytes": 22121,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U03/structured.md",
+    "sha256": "bb4d2cffa08230a7d32afdd7c3289b6be7161253304124dacfe6c46ddd90c063",
+    "bytes": 3707,
+    "eligible": false,
+    "characters": 3693,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U03/structured.txt",
+    "sha256": "bb4d2cffa08230a7d32afdd7c3289b6be7161253304124dacfe6c46ddd90c063",
+    "bytes": 3707,
+    "eligible": false,
+    "characters": 3693,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U03/uploaded_resume.md",
+    "sha256": "d9e3c8fcb4e4655e4fceb08bb482a33ef84397817c0153429881458993095998",
+    "bytes": 3552,
+    "eligible": false,
+    "characters": 3499,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U04/SOURCE_SELECTION.json",
+    "sha256": "994a7d25e9404dd6efdde30ac26a5c0db8b9392c8d3c42f4eb794e72e2c1a2b4",
+    "bytes": 565,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U04/normalized.txt",
+    "sha256": "4c3b03b0757d3d6efd2962c109ec316539698b68c3c1ce62460e7cb3c60454d3",
+    "bytes": 1522,
+    "eligible": true,
+    "characters": 1482,
+    "score": 40,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U04/quality.json",
+    "sha256": "dc4806060b35dcb3500ca546e1b3b30a2d2b7da961023987630f871016b69d6f",
+    "bytes": 283,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U04/raw.txt",
+    "sha256": "4c3b03b0757d3d6efd2962c109ec316539698b68c3c1ce62460e7cb3c60454d3",
+    "bytes": 1522,
+    "eligible": true,
+    "characters": 1482,
+    "score": 65,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U04/resume.json",
+    "sha256": "dda46aa3ab7de4c1b166102e3a0224dae7e080f5aa24ff2b0c24cd04f293fd32",
+    "bytes": 74619,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 31,
+    "score": 121,
+    "document_sha256": "5f77f4e59d97793795089e0b99f6f360f55d6f12d75e7af6693fae044d6a2730"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U04/resume.md",
+    "sha256": "7e0dd9182a9d551733078ec25a64f9bb995747f07454326a3c0eb43275b5cac2",
+    "bytes": 1586,
+    "eligible": false,
+    "characters": 1546,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U04/source.txt",
+    "sha256": "85aa2cb4e1cfbbe189c8ff0e3be3acd0b734f76217435d9886914682303df186",
+    "bytes": 1550,
+    "eligible": true,
+    "characters": 1510,
+    "score": 55,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U04/structured.json",
+    "sha256": "aed56eb10856fb76d64676310695d3c3c272e3a93b4ea79a5bcd22cb71c1747e",
+    "bytes": 11013,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U04/structured.md",
+    "sha256": "d32dc2643c9c4960a5f2b6bd7655e4cf55b8ee60522e924db9d1cdb80f2a42ff",
+    "bytes": 1492,
+    "eligible": false,
+    "characters": 1482,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U04/structured.txt",
+    "sha256": "d32dc2643c9c4960a5f2b6bd7655e4cf55b8ee60522e924db9d1cdb80f2a42ff",
+    "bytes": 1492,
+    "eligible": false,
+    "characters": 1482,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U05/SOURCE_SELECTION.json",
+    "sha256": "0f051e7a316760b366693a4e4719d32dc30e75a9c81627018db57dbf5662ef17",
+    "bytes": 561,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U05/normalized.txt",
+    "sha256": "8db5b3ea3d621f14eb920d28aeff1d0f9131bd9febc866f6cd9cb4c7abda2152",
+    "bytes": 1721,
+    "eligible": true,
+    "characters": 1683,
+    "score": 40,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U05/quality.json",
+    "sha256": "712d12cbdc3e495c8c6d68d160dcae0f47d2d3fe5279ded313961db3637ecac6",
+    "bytes": 283,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U05/raw.txt",
+    "sha256": "8db5b3ea3d621f14eb920d28aeff1d0f9131bd9febc866f6cd9cb4c7abda2152",
+    "bytes": 1721,
+    "eligible": true,
+    "characters": 1683,
+    "score": 65,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U05/resume.json",
+    "sha256": "e4be4e7f2e90b7526d29a90d1b203b909d820fa1ac856e1ccce0f23e4aee91d3",
+    "bytes": 86475,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 36,
+    "score": 121,
+    "document_sha256": "14b052f3cdc07a57f163a8498230e2ed0c81e3e72cd91a059631fadfdf382e35"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U05/resume.md",
+    "sha256": "e8b3526f8e5698c13e21967be0217f06d6cef8e77f32cebed1e9d9b85177765a",
+    "bytes": 1793,
+    "eligible": false,
+    "characters": 1755,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U05/source.txt",
+    "sha256": "0c02a714e546a6f6f3da0ea62f40b42cf1e8d544e8261bba9070f69158a4a5e6",
+    "bytes": 1743,
+    "eligible": true,
+    "characters": 1705,
+    "score": 55,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U05/structured.json",
+    "sha256": "265e743b12fb8a8941d685a37d3f97b2bb72b53e5ad0c33122612f02d2358c82",
+    "bytes": 13196,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U05/structured.md",
+    "sha256": "b3c31374d561c9d18f9ffc226985269b87e6083f793b345d8a5e34ee662ac20e",
+    "bytes": 1636,
+    "eligible": false,
+    "characters": 1632,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U05/structured.txt",
+    "sha256": "b3c31374d561c9d18f9ffc226985269b87e6083f793b345d8a5e34ee662ac20e",
+    "bytes": 1636,
+    "eligible": false,
+    "characters": 1632,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U06/SOURCE_SELECTION.json",
+    "sha256": "5ceaeebba30e91696470991c5b34cf3a3039f15d80ae2e9057bf0223c3f91ce0",
+    "bytes": 563,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U06/normalized.txt",
+    "sha256": "07a093176cdf6640d385bb19ba6477cf0732a03e4a5bc337229f16d397e58777",
+    "bytes": 1666,
+    "eligible": true,
+    "characters": 1622,
+    "score": 40,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U06/quality.json",
+    "sha256": "3318ab0f366f4bde5068ec553fdf21abf5ed9e77cf059285325ee9247f1d34cd",
+    "bytes": 283,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U06/raw.txt",
+    "sha256": "24e5bb52b4542a393deab6329824921cf6d451ce70f65172a0b07b37c4861db1",
+    "bytes": 1666,
+    "eligible": true,
+    "characters": 1622,
+    "score": 65,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U06/resume.json",
+    "sha256": "059718e53bd5acf81f546afc75a4490ce14ef8a1ca52ef098be814f87cb3589b",
+    "bytes": 191359,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 37,
+    "score": 121,
+    "document_sha256": "c46b14d76878b810ea8052349edc50bf54f58e087c5c015b92bcecce83a74ada"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U06/resume.md",
+    "sha256": "46dd15bdd3a6de5f58eb46b73dc300c433e026016930e9ea16dcd97638ba7a49",
+    "bytes": 1726,
+    "eligible": false,
+    "characters": 1682,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U06/source.txt",
+    "sha256": "fa6cf022261791d3200a989d8b043e142b4b1cb4f5fdc8db60d404681d1f21f0",
+    "bytes": 1668,
+    "eligible": true,
+    "characters": 1624,
+    "score": 55,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U06/structured.json",
+    "sha256": "fea202c221aa727f5112f68cab84854f74d6eead600d9686da08602e69aca09e",
+    "bytes": 11341,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U06/structured.md",
+    "sha256": "8faa18effb6d197fa806f6fc59b841231c832ab1ea75c8e6a70c9af8b0505816",
+    "bytes": 1611,
+    "eligible": false,
+    "characters": 1599,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U06/structured.txt",
+    "sha256": "8faa18effb6d197fa806f6fc59b841231c832ab1ea75c8e6a70c9af8b0505816",
+    "bytes": 1611,
+    "eligible": false,
+    "characters": 1599,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U07/SOURCE_SELECTION.json",
+    "sha256": "63cf486858e4ff8f181184cd33f25edd54db214041e9ae70058aabdb670db7a3",
+    "bytes": 566,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U07/normalized.txt",
+    "sha256": "4b363544cbeb9ddb847bea15fb8606aa1f2ad7e8a74ec359248b42eae9693780",
+    "bytes": 1535,
+    "eligible": true,
+    "characters": 1487,
+    "score": 40,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U07/quality.json",
+    "sha256": "5c01e48cf95f79437ad035f74930d83ff075543eb6660a70d15b77d706d67315",
+    "bytes": 283,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U07/raw.txt",
+    "sha256": "4b363544cbeb9ddb847bea15fb8606aa1f2ad7e8a74ec359248b42eae9693780",
+    "bytes": 1535,
+    "eligible": true,
+    "characters": 1487,
+    "score": 65,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U07/resume.json",
+    "sha256": "caac7c1f2fd36f835e121aeee43e6caa4d82510717d10bcca68ef0a26a82758c",
+    "bytes": 167056,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 29,
+    "score": 121,
+    "document_sha256": "8a28114c043883f515bb055f3cb0c0cbfee3d13134a2eba717a7a0cfbf12a44f"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U07/resume.md",
+    "sha256": "db0c5bb1eee34bc439d4d214e9b6bd7235a671b0645f468ce8d1ce3e97fed3c8",
+    "bytes": 1599,
+    "eligible": false,
+    "characters": 1551,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U07/source.txt",
+    "sha256": "d2d32ca042a550ced1be1dd28a36909a153dc41e0727edad4b35ed653532bbad",
+    "bytes": 1537,
+    "eligible": true,
+    "characters": 1489,
+    "score": 55,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U07/structured.json",
+    "sha256": "bb2c4a12c4a6533c22a06d9ede10d998ca16cf3d48017da7e105aaccfb21a4d2",
+    "bytes": 12087,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U07/structured.md",
+    "sha256": "432ff042d814d68b9fcfc6925fb5bfd937c27bb3f9771a6f092eaf438bedffcd",
+    "bytes": 1635,
+    "eligible": false,
+    "characters": 1631,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U07/structured.txt",
+    "sha256": "432ff042d814d68b9fcfc6925fb5bfd937c27bb3f9771a6f092eaf438bedffcd",
+    "bytes": 1635,
+    "eligible": false,
+    "characters": 1631,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U08/SOURCE_SELECTION.json",
+    "sha256": "aec8c4e432c697c4337870f4089045da02b33a5266b43c9057ca1200d382227b",
+    "bytes": 560,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U08/normalized.txt",
+    "sha256": "d1b6c375eafb6930b18145c90f60da9301eed79b7f4de880dd988a461cfa9fdc",
+    "bytes": 1530,
+    "eligible": true,
+    "characters": 1500,
+    "score": 40,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U08/quality.json",
+    "sha256": "2bc5fe6fe267b20f89e2d8d6696291218ac43cc8f2ac8d32246e6d2e500c9be2",
+    "bytes": 283,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U08/raw.txt",
+    "sha256": "d1b6c375eafb6930b18145c90f60da9301eed79b7f4de880dd988a461cfa9fdc",
+    "bytes": 1530,
+    "eligible": true,
+    "characters": 1500,
+    "score": 65,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U08/resume.json",
+    "sha256": "187023dac26507f51b0f1196c9dce278aae3453de39f7cf68419733430c11b02",
+    "bytes": 87170,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 39,
+    "score": 121,
+    "document_sha256": "05b76709624833861cab54350575e9a76917f332fca0ccbf292d06b0ab116bbb"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U08/resume.md",
+    "sha256": "565ceb8d96a1ba31ecea4fd541d7f9c15ffaeff55e9b28033c3efdb7508dc558",
+    "bytes": 1594,
+    "eligible": false,
+    "characters": 1564,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U08/source.txt",
+    "sha256": "45007ffb630b25bb8ccad903f42fde82a90b2928bac79b9a1ac8e4ba4b094e5d",
+    "bytes": 1555,
+    "eligible": true,
+    "characters": 1525,
+    "score": 55,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U08/structured.json",
+    "sha256": "e730ac9d68156e7afd48bb308b5222e32fba9cf01ff1a2e73e968db4f65d9566",
+    "bytes": 11476,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U08/structured.md",
+    "sha256": "6efb7e91a61af560db03f49d21654f1f9d66e939f0480b37bfe123c3838b1ea7",
+    "bytes": 1445,
+    "eligible": false,
+    "characters": 1441,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U08/structured.txt",
+    "sha256": "6efb7e91a61af560db03f49d21654f1f9d66e939f0480b37bfe123c3838b1ea7",
+    "bytes": 1445,
+    "eligible": false,
+    "characters": 1441,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U09/SOURCE_SELECTION.json",
+    "sha256": "2da84e45876466c941880d833533433b553a57996b225a1740ac492ed732864c",
+    "bytes": 560,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U09/normalized.txt",
+    "sha256": "c9cafdd3d8e9eb14db4076a09601ef9566607d9d76d764fbfd302b359f7afd93",
+    "bytes": 1391,
+    "eligible": true,
+    "characters": 1357,
+    "score": 40,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U09/quality.json",
+    "sha256": "a9083b6c2fb4ce75d32b8f932837a862c346dec5b81665dc6ce9bf0a5fff187e",
+    "bytes": 283,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U09/raw.txt",
+    "sha256": "c9cafdd3d8e9eb14db4076a09601ef9566607d9d76d764fbfd302b359f7afd93",
+    "bytes": 1391,
+    "eligible": true,
+    "characters": 1357,
+    "score": 65,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U09/resume.json",
+    "sha256": "441082850450dc8b45a58153e4e1562f038daa629309039426e40c3217c1e24e",
+    "bytes": 76309,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 33,
+    "score": 121,
+    "document_sha256": "1f10e01c7b313902ed4bddfbf1998100e42d16962f820ca11293372f686e9911"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U09/resume.md",
+    "sha256": "101345c76822314597b85ffaf621a4ad7474ce388bf7242a9cd292f70b920c71",
+    "bytes": 1459,
+    "eligible": false,
+    "characters": 1425,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U09/source.txt",
+    "sha256": "75042b122f35b2809b3640b57d91fd7580172931adf50e7445e0707f48f918a9",
+    "bytes": 1460,
+    "eligible": true,
+    "characters": 1426,
+    "score": 55,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U09/structured.json",
+    "sha256": "b3ff25f1d64d30fc099561d5f224b9b5074e2c80d5eb887f40d36dabdcf0a84c",
+    "bytes": 10543,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U09/structured.md",
+    "sha256": "88902aff777d8bac964deaefbc903fe7ee4e3d99f087f6e1fd9461360fec59ec",
+    "bytes": 1319,
+    "eligible": false,
+    "characters": 1313,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U09/structured.txt",
+    "sha256": "88902aff777d8bac964deaefbc903fe7ee4e3d99f087f6e1fd9461360fec59ec",
+    "bytes": 1319,
+    "eligible": false,
+    "characters": 1313,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U10/SOURCE_SELECTION.json",
+    "sha256": "b35a2eb8a041dddb3c533898fc2da13356574ea505dce3f61e6befb6b46278a8",
+    "bytes": 561,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U10/normalized.txt",
+    "sha256": "5a2098a71cf7303c306bdb4d97df5e1887cdd5ff66aaf8caf176b19c932cdcc5",
+    "bytes": 1548,
+    "eligible": true,
+    "characters": 1506,
+    "score": 40,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U10/quality.json",
+    "sha256": "1fd1199ca8aded3bcacc7c3f82cf644d27dadd4dde6b670e402dddd86db5c629",
+    "bytes": 283,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U10/raw.txt",
+    "sha256": "46d1064e6cf33c760cef5ef4a233457566fb814477ebb98860b04db3f29b5dce",
+    "bytes": 1548,
+    "eligible": true,
+    "characters": 1506,
+    "score": 65,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U10/resume.json",
+    "sha256": "cefc855abcc7c8ff0b846eb0526ee683166fe6fc0647b812a3bb539f1f624ee2",
+    "bytes": 69853,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 27,
+    "score": 121,
+    "document_sha256": "9c87168b6d529336eca1dd27db234421f6110eba8e06e979d65291dc29e75096"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U10/resume.md",
+    "sha256": "548e8f57f052badf779d2ea197e2ff3d8c467d8a101d9ddac36a649688b912b6",
+    "bytes": 1609,
+    "eligible": false,
+    "characters": 1567,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U10/source.txt",
+    "sha256": "1ec807a8c43447b9c1472aa6ff6c2580dfcc49913027b8782fdc74c103327d1e",
+    "bytes": 1572,
+    "eligible": true,
+    "characters": 1530,
+    "score": 55,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U10/structured.json",
+    "sha256": "341f3d73e1683654d9ff20a2a8e5c6b6895761ce5d2d1f421a4f89b573898592",
+    "bytes": 11358,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U10/structured.md",
+    "sha256": "c60ad14168a899012f31601c335a36bee09dbcfb14a7e63a9f5c04a4e2ce3d1d",
+    "bytes": 1477,
+    "eligible": false,
+    "characters": 1465,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U10/structured.txt",
+    "sha256": "c60ad14168a899012f31601c335a36bee09dbcfb14a7e63a9f5c04a4e2ce3d1d",
+    "bytes": 1477,
+    "eligible": false,
+    "characters": 1465,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U11/SOURCE_SELECTION.json",
+    "sha256": "fbd2547279ecd57a939bf61acff79189d4701c2325d9a4d49411d944d799cb82",
+    "bytes": 558,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U11/normalized.txt",
+    "sha256": "abb7058145b21f1d2c94ed218abc8b842c353a878acdd7ef69893b95b0361026",
+    "bytes": 1530,
+    "eligible": true,
+    "characters": 1490,
+    "score": 40,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U11/quality.json",
+    "sha256": "803783979e363758e05cbc15dd4602c64f25d128bf0b4d84b5b2c6f5422ac241",
+    "bytes": 283,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U11/raw.txt",
+    "sha256": "5db5693a127c8fba0858a66d7e209de8b82e846f3151c7c814fffd91112c113e",
+    "bytes": 1530,
+    "eligible": true,
+    "characters": 1490,
+    "score": 65,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U11/resume.json",
+    "sha256": "b9b76deaf9820294d2865c3814aa694dad7b060e31a63c6cb8a3d13a77b2e5b1",
+    "bytes": 181062,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 41,
+    "score": 121,
+    "document_sha256": "c1f2680437323350f4bd296f66d809cc6ef983a60f24d03b8fd91779535df82f"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U11/resume.md",
+    "sha256": "5074b5f8c355d383af5ade00072dbecf136c822948773ab8e173be65191298cf",
+    "bytes": 1598,
+    "eligible": false,
+    "characters": 1558,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U11/source.txt",
+    "sha256": "1e8b8769ebbef1e8b384359588832a5335a83a7a7b200f6d09f64e6d139c9259",
+    "bytes": 1532,
+    "eligible": true,
+    "characters": 1492,
+    "score": 55,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U11/structured.json",
+    "sha256": "818c36e04c4e6c828315e0b03d01b77012e58b226956063a9827a814ff4d903e",
+    "bytes": 12192,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U11/structured.md",
+    "sha256": "7b9c283b5fad8abcb98a28cf98581489147cdd2677e88d108481f2863f629cdf",
+    "bytes": 1466,
+    "eligible": false,
+    "characters": 1460,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U11/structured.txt",
+    "sha256": "7b9c283b5fad8abcb98a28cf98581489147cdd2677e88d108481f2863f629cdf",
+    "bytes": 1466,
+    "eligible": false,
+    "characters": 1460,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U12/SOURCE_SELECTION.json",
+    "sha256": "b9f2a6967effde47e658dfde39bb54a098d76c4d866778f1859695e0c3374c67",
+    "bytes": 539,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U12/audit_original_resume.json",
+    "sha256": "6b517394e6a9960537ac18a455a691cf29f1cb15e4d2ea3e168e993e8b4b0f7b",
+    "bytes": 200887,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 56,
+    "score": 120,
+    "document_sha256": "c0621a20f19acdfc3e731f6db1768795081d7314d2adb69983b15fdfb91c6186"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U12/normalized.txt",
+    "sha256": "d22e7e1ac1c32afb0d92a0430438da80c66dc6ef00355fd54666fa991f0b1903",
+    "bytes": 1641,
+    "eligible": true,
+    "characters": 1607,
+    "score": 40,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U12/quality.json",
+    "sha256": "663f073bc59c4f70cdadcb438af958598a2a26e6f8ee4485b5ccd7eb81de79d0",
+    "bytes": 283,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U12/raw.txt",
+    "sha256": "68c862cab95de5e4fba686d33533a0bbb964d6ef656686ad4bf0453022a8cf0a",
+    "bytes": 1641,
+    "eligible": true,
+    "characters": 1607,
+    "score": 65,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U12/resume.json",
+    "sha256": "ba5481c861297ed0846e6f0d60155b105fda03fcdb8ba529d33a2cf89b86f6db",
+    "bytes": 208991,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 56,
+    "score": 121,
+    "document_sha256": "c0621a20f19acdfc3e731f6db1768795081d7314d2adb69983b15fdfb91c6186"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U12/resume.md",
+    "sha256": "483b88b1bf457b0ebd1c0bedfc30b42c49045da9eb4eaa65d7db6698206405b9",
+    "bytes": 1753,
+    "eligible": false,
+    "characters": 1719,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U12/source.txt",
+    "sha256": "87b213f72d3b767e9655fa649e8ed9e8e359af25d2eecc59d11b46aaf6492615",
+    "bytes": 1643,
+    "eligible": true,
+    "characters": 1609,
+    "score": 55,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U12/structured.json",
+    "sha256": "a98357861ef4bb909a3927932ed8a91a3d2dd49123056f3a3e4a751c045dda22",
+    "bytes": 12175,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U12/structured.md",
+    "sha256": "9d5eab311565c528e8a877a17d2fe2ae865ec297eae593a96dabce1c4d651b47",
+    "bytes": 1619,
+    "eligible": false,
+    "characters": 1613,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U12/structured.txt",
+    "sha256": "9d5eab311565c528e8a877a17d2fe2ae865ec297eae593a96dabce1c4d651b47",
+    "bytes": 1619,
+    "eligible": false,
+    "characters": 1613,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U12/uploaded_resume.md",
+    "sha256": "71da3ab545f2c01b5fe655ebb2068dd44b97f45b5b1303769850981479684963",
+    "bytes": 1850,
+    "eligible": false,
+    "characters": 1816,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U13/SOURCE_SELECTION.json",
+    "sha256": "bc8031d885441216de424d0cce5aa77dd954fde0c18ea057d95ca9c692bcc191",
+    "bytes": 541,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U13/audit_original_resume.json",
+    "sha256": "1cdd657512df17892532141e69969c7e56d35d642c7bd65383b782341a4e7f7e",
+    "bytes": 182120,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 33,
+    "score": 120,
+    "document_sha256": "6bb643e81a789bc8107dc98567907237d271c123b5c7030e2b63a363d4c4baaf"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U13/normalized.txt",
+    "sha256": "a388ce6627fa01bef19f977826c3034466c52c77ae1a25b02f97347312441d02",
+    "bytes": 1597,
+    "eligible": true,
+    "characters": 1557,
+    "score": 40,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U13/quality.json",
+    "sha256": "5f3c00f8047655d190d718a75fff88ec087c7a759b2d45e3c75a4603213f9bdf",
+    "bytes": 283,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U13/raw.txt",
+    "sha256": "65ed83301033a9053d2c73d23ecbeae28ec45eb58920b2dd74a876bfd6fb49e2",
+    "bytes": 1597,
+    "eligible": true,
+    "characters": 1557,
+    "score": 65,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U13/resume.json",
+    "sha256": "ce8c1622f95c1098d078da4e95a68b6157f405f0409a1fe80113df0196513474",
+    "bytes": 189149,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 33,
+    "score": 121,
+    "document_sha256": "6bb643e81a789bc8107dc98567907237d271c123b5c7030e2b63a363d4c4baaf"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U13/resume.md",
+    "sha256": "e156ae508d4d445a94535e1ad7e70d482f081b27afa2e8de9aa37c7c77ea0bf6",
+    "bytes": 1660,
+    "eligible": false,
+    "characters": 1620,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U13/source.txt",
+    "sha256": "1512f953da80009c85ad658ba3fe97e2df609e3fbb82c5687d1446415b553f10",
+    "bytes": 1599,
+    "eligible": true,
+    "characters": 1559,
+    "score": 55,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U13/structured.json",
+    "sha256": "b172bdffca055ac5a72dfe9129cd9d766389963118cedd3cd08017798fa21289",
+    "bytes": 11485,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U13/structured.md",
+    "sha256": "64953c8d3076c3d0302240fa948dde1bf998e64f094ec3598b66800c109ff6c3",
+    "bytes": 1554,
+    "eligible": false,
+    "characters": 1542,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U13/structured.txt",
+    "sha256": "64953c8d3076c3d0302240fa948dde1bf998e64f094ec3598b66800c109ff6c3",
+    "bytes": 1554,
+    "eligible": false,
+    "characters": 1542,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U13/uploaded_resume.md",
+    "sha256": "c0dc4ae86fd47e3418247b4beed6dab995398ac4a568eb9dfac7d527d58bd278",
+    "bytes": 1719,
+    "eligible": false,
+    "characters": 1679,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U14/SOURCE_SELECTION.json",
+    "sha256": "8365d1abd3bd8767e8ec7e81593c778d6318ac4b4827acdba4cdb6f4645ee6a1",
+    "bytes": 546,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U14/audit_original_resume.json",
+    "sha256": "99919153eb2ae9a828f9fcb62f835930a7e056d626a0fb7c4d5ece1d8eb08e8a",
+    "bytes": 93432,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 29,
+    "score": 120,
+    "document_sha256": "2a72ffbeecb5dde4df82c996261ea24f562c5b526b83d19f4faa8189b40c0204"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U14/normalized.txt",
+    "sha256": "7a05289a7e268637b459f4b804c817fc73619c17d4a91f50bb15216497640997",
+    "bytes": 2683,
+    "eligible": true,
+    "characters": 2649,
+    "score": 40,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U14/quality.json",
+    "sha256": "03949b3dbc3929ff15a12eff745d493ae48260c1b10a3a4bf0d8260a13be191c",
+    "bytes": 283,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U14/raw.txt",
+    "sha256": "cf59bd89ce1d27ef9d5132c67745f1a500b3f12806da271f7cf66d5d3ff19f70",
+    "bytes": 2683,
+    "eligible": true,
+    "characters": 2649,
+    "score": 65,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U14/resume.json",
+    "sha256": "84811c0bd0e2c5ba7507678f1ce7426b25ebeeef80238dc6ff219c4850b992d9",
+    "bytes": 96396,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 29,
+    "score": 121,
+    "document_sha256": "2a72ffbeecb5dde4df82c996261ea24f562c5b526b83d19f4faa8189b40c0204"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U14/resume.md",
+    "sha256": "c313182f184e167cc3843c206dfd3ed9fb27171e8c96a9a25630b2b69ba5fe67",
+    "bytes": 2746,
+    "eligible": false,
+    "characters": 2712,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U14/source.txt",
+    "sha256": "cae440ed0473cb52bb31db5ce7df281b9591edb526826c2e3cd6c9ffe9d7d411",
+    "bytes": 2712,
+    "eligible": true,
+    "characters": 2678,
+    "score": 55,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U14/structured.json",
+    "sha256": "e76c8914bbeb6957c1a19c5b5cbd303b5c8d23acddb41a5762cc8f208122d021",
+    "bytes": 15562,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U14/structured.md",
+    "sha256": "af335a12a08cb00afd90e247d1aec82fa3580ea01f09cb46c28e2159f508188d",
+    "bytes": 2600,
+    "eligible": false,
+    "characters": 2590,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U14/structured.txt",
+    "sha256": "af335a12a08cb00afd90e247d1aec82fa3580ea01f09cb46c28e2159f508188d",
+    "bytes": 2600,
+    "eligible": false,
+    "characters": 2590,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U14/uploaded_resume.md",
+    "sha256": "8302ea113bb0946fe87bb98f5dc4833bf9d60c240213702502743ff6d3b99f2d",
+    "bytes": 2805,
+    "eligible": false,
+    "characters": 2771,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U15/SOURCE_SELECTION.json",
+    "sha256": "462c8f81bf9ed2abf509a745a883ee5295b77e2959d6b32d8f645e416d35145b",
+    "bytes": 545,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U15/audit_original_resume.json",
+    "sha256": "c63200b427a4309859c3d0a2a705572421ac273ee9bb3922a5f01616d436284e",
+    "bytes": 88765,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 31,
+    "score": 120,
+    "document_sha256": "2b267dd0393ba6c14bc7123228cb38ef079f0237d0dd9b3db584c334b58b6146"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U15/normalized.txt",
+    "sha256": "d6a7ad13a6fc2922c7036dd3f784972ed280efdfa1c3ca2a7e75ab89dd80dad0",
+    "bytes": 2603,
+    "eligible": true,
+    "characters": 2571,
+    "score": 40,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U15/quality.json",
+    "sha256": "3de21d8ac2c07205242ceb07ff4bc84e156f65c4ecd251cc705c50786329a343",
+    "bytes": 283,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U15/raw.txt",
+    "sha256": "9d9ab807a57cbc36daec65bbac00a673806734944c7c02d078581c9dc630f815",
+    "bytes": 2603,
+    "eligible": true,
+    "characters": 2571,
+    "score": 65,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U15/resume.json",
+    "sha256": "405a777767c276b0304a0977fe047f783a6e55912ff9033a742ee3ca499fe31a",
+    "bytes": 91542,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 31,
+    "score": 121,
+    "document_sha256": "2b267dd0393ba6c14bc7123228cb38ef079f0237d0dd9b3db584c334b58b6146"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U15/resume.md",
+    "sha256": "5f9069b8a287c67709029aa42ff63d36f9398a743a92d05287c6b77afc13a066",
+    "bytes": 2660,
+    "eligible": false,
+    "characters": 2628,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U15/source.txt",
+    "sha256": "7a983352e45aab74556e759b68fc03bce2dff71f705289b0033c0affddb5aa49",
+    "bytes": 2653,
+    "eligible": true,
+    "characters": 2621,
+    "score": 55,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U15/structured.json",
+    "sha256": "1c544e85abee9dbdea7338806f041fa66ad2a811046ef40b97ec6601fc0bdcf7",
+    "bytes": 15596,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U15/structured.md",
+    "sha256": "b8785a9849294b1cca47eb28f3d2d5dde3ae2966012ac782f74ec87002463088",
+    "bytes": 2525,
+    "eligible": false,
+    "characters": 2521,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U15/structured.txt",
+    "sha256": "b8785a9849294b1cca47eb28f3d2d5dde3ae2966012ac782f74ec87002463088",
+    "bytes": 2525,
+    "eligible": false,
+    "characters": 2521,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U15/uploaded_resume.md",
+    "sha256": "a165929f93d56fcad1a59c7f6b6bb8546cdcfbaee12f67495398d5ae8b51f391",
+    "bytes": 2723,
+    "eligible": false,
+    "characters": 2691,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U16/SOURCE_SELECTION.json",
+    "sha256": "db515fa77a3b7dcbe29af0a150e671ddd635e4adef741870e68d18f8116fcc97",
+    "bytes": 537,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U16/audit_original_resume.json",
+    "sha256": "abd4288d4288da537978cd2135a80ffa4c8818a6ab5abb9289b56b66dcf48fb3",
+    "bytes": 55866,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 20,
+    "score": 120,
+    "document_sha256": "5830bdf1799ece64b8e44ef8b773300cf1305bbd793a6e973eb669c6491ca40c"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U16/normalized.txt",
+    "sha256": "2d8a15f0944427955444c9edf6fe82e5e9a3560d1db763f88ff212754cdd4368",
+    "bytes": 1588,
+    "eligible": true,
+    "characters": 1556,
+    "score": 40,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U16/quality.json",
+    "sha256": "1fd1199ca8aded3bcacc7c3f82cf644d27dadd4dde6b670e402dddd86db5c629",
+    "bytes": 283,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U16/raw.txt",
+    "sha256": "2d8a15f0944427955444c9edf6fe82e5e9a3560d1db763f88ff212754cdd4368",
+    "bytes": 1588,
+    "eligible": true,
+    "characters": 1556,
+    "score": 65,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U16/resume.json",
+    "sha256": "f0a2642ed0a7cacb468e973393088a48721788e3d5a24ac16989af75b52099d9",
+    "bytes": 57723,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 20,
+    "score": 121,
+    "document_sha256": "5830bdf1799ece64b8e44ef8b773300cf1305bbd793a6e973eb669c6491ca40c"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U16/resume.md",
+    "sha256": "79c2a6153087cd67a7f1c9af1c2092e88584d8608d184cf8dacd66d0fd4ee937",
+    "bytes": 1634,
+    "eligible": false,
+    "characters": 1602,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U16/source.txt",
+    "sha256": "d27ac25f9de32fbc854fa82b20719833ea6034600201dca91b4695c70d5947a8",
+    "bytes": 1606,
+    "eligible": true,
+    "characters": 1574,
+    "score": 55,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U16/structured.json",
+    "sha256": "011fb6be5669e59f0b33013f843801dcdebf6edeb3e56fc42df4b4ce0404acda",
+    "bytes": 9239,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U16/structured.md",
+    "sha256": "8032ad3081bbaf4b43d021e9cb2fe16462657a8945a97179f391a15eedbca9ab",
+    "bytes": 1476,
+    "eligible": false,
+    "characters": 1456,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U16/structured.txt",
+    "sha256": "8032ad3081bbaf4b43d021e9cb2fe16462657a8945a97179f391a15eedbca9ab",
+    "bytes": 1476,
+    "eligible": false,
+    "characters": 1456,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U16/uploaded_resume.md",
+    "sha256": "1671940d9803eee2a92bde104c744dd95b3483793f4030f56ca8aba1640f264d",
+    "bytes": 1673,
+    "eligible": false,
+    "characters": 1641,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U17/SOURCE_SELECTION.json",
+    "sha256": "52af0ea530557b7c3c5e7810fcf48ed78b698b660b92a1c6a9ca148406f9ea6c",
+    "bytes": 563,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U17/normalized.txt",
+    "sha256": "ae6b1166d1b5972d90c766c7d7d8d8e1b3418521b39e0fd666f804ac30d33cc4",
+    "bytes": 1903,
+    "eligible": true,
+    "characters": 1879,
+    "score": 40,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U17/quality.json",
+    "sha256": "28f20f00803dd3eacf1112d7f3bcd2b68ad4010891ab6993eda7222af7906c80",
+    "bytes": 283,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U17/raw.txt",
+    "sha256": "ae6b1166d1b5972d90c766c7d7d8d8e1b3418521b39e0fd666f804ac30d33cc4",
+    "bytes": 1903,
+    "eligible": true,
+    "characters": 1879,
+    "score": 65,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U17/resume.json",
+    "sha256": "26f74d03b76921ed737e29b895bbaf7b7b5a1207c00e5e90f65fc786c8a7aad5",
+    "bytes": 68316,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 23,
+    "score": 121,
+    "document_sha256": "660f09e952f57e81c68954cb8f7097c29b6021b3a3152fa90114933b9ffc62d9"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U17/resume.md",
+    "sha256": "ac15cb3d6f7ddf45166d3c240ec0b672948fa17dc4cf53b922006f87a02b43f9",
+    "bytes": 1956,
+    "eligible": false,
+    "characters": 1932,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U17/source.txt",
+    "sha256": "5f80b013122048bb4a60ce26d34bebb28a7fec3c4169f5ec614cd66047f28fe9",
+    "bytes": 1923,
+    "eligible": true,
+    "characters": 1899,
+    "score": 55,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U17/structured.json",
+    "sha256": "352ffc69d8937afa6c508871eb94a0e02e2fb081ecf22a112a02fc9760eb6d67",
+    "bytes": 11309,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U17/structured.md",
+    "sha256": "107cee084f2bcbc895e37317cb8e579a1ebe42688f60c398f452084afe6a3783",
+    "bytes": 1734,
+    "eligible": false,
+    "characters": 1730,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U17/structured.txt",
+    "sha256": "107cee084f2bcbc895e37317cb8e579a1ebe42688f60c398f452084afe6a3783",
+    "bytes": 1734,
+    "eligible": false,
+    "characters": 1730,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U20/SOURCE_SELECTION.json",
+    "sha256": "cdc6d0291f3311b9f44f725d3e96f2cf74773023ced6c84dda96ed32fb822818",
+    "bytes": 555,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U20/normalized.txt",
+    "sha256": "88af1290f3bd212bdc969ce73342fe47052aec3dbc8ddada19565a8488f253fc",
+    "bytes": 1917,
+    "eligible": true,
+    "characters": 1891,
+    "score": 40,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U20/quality.json",
+    "sha256": "0cdd05f009b9117e2fc26f966c63d6720cf02a4cce35e61080f76a74ffc5baf0",
+    "bytes": 283,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U20/raw.txt",
+    "sha256": "88af1290f3bd212bdc969ce73342fe47052aec3dbc8ddada19565a8488f253fc",
+    "bytes": 1917,
+    "eligible": true,
+    "characters": 1891,
+    "score": 65,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U20/resume.json",
+    "sha256": "56fd25774c82c907ed21db1d6bb0076e9d3f25a89e6b29fe521257015f8146c6",
+    "bytes": 66162,
+    "eligible": true,
+    "json_valid": true,
+    "raw_line_count": 21,
+    "score": 121,
+    "document_sha256": "4a72c3875570e7aa813cc0fe5c0bb0c59548859f011389924b4eecb362c49e8c"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U20/resume.md",
+    "sha256": "7e435f8356cb0fd39322ad14dcd80413caf81e064505751c7fedfb2c6910b4f1",
+    "bytes": 1960,
+    "eligible": false,
+    "characters": 1934,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U20/source.txt",
+    "sha256": "69ea6982c069af32730763e1f15b2cd87a0047d88fb3489c6617611a4d5f9db7",
+    "bytes": 1939,
+    "eligible": true,
+    "characters": 1913,
+    "score": 55,
+    "document_sha256": null
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U20/structured.json",
+    "sha256": "20101290ba6b0e59fd28a06e4b2f0192fdb9399db07c460dabd21aba8738233d",
+    "bytes": 11290,
+    "eligible": false,
+    "json_valid": true,
+    "reason": "Comparison/metadata JSON or no raw-line evidence"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U20/structured.md",
+    "sha256": "c0aba815b0e672e0c732af75094166ab1a708c8d29e1446a6193585f0c0e8689",
+    "bytes": 1848,
+    "eligible": false,
+    "characters": 1844,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U20/structured.txt",
+    "sha256": "c0aba815b0e672e0c732af75094166ab1a708c8d29e1446a6193585f0c0e8689",
+    "bytes": 1848,
+    "eligible": false,
+    "characters": 1844,
+    "reason": "Generated presentation or unrecognized text role; retained in inventory"
+  }
+]

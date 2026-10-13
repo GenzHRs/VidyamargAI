@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence-based resume understanding v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "understanding_schema_version",
+    "engine",
+    "source",
+    "artifact_sha256",
+    "section_order",
+    "entry_order",
+    "profile",
+    "entities",
+    "records",
+    "evidence",
+    "source_sections",
+    "unclassified",
+    "raw_lines",
+    "raw_text",
+    "validation",
+    "review_status",
+    "comparison"
+  ],
+  "properties": {
+    "understanding_schema_version": {
+      "const": "1.0.0"
+    },
+    "engine": {
+      "const": "offline_rule_ner"
+    },
+    "source": {
+      "type": "object"
+    },
+    "artifact_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "section_order": {
+      "type": "array"
+    },
+    "entry_order": {
+      "const": "source"
+    },
+    "profile": {
+      "type": "object",
+      "required": [
+        "personal_details",
+        "summary",
+        "education",
+        "work_experience",
+        "internships",
+        "projects",
+        "skills",
+        "certifications",
+        "training",
+        "awards",
+        "publications",
+        "languages",
+        "other_sections",
+        "unassigned_links"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "personal_details": {
+          "type": "object"
+        },
+        "summary": {
+          "type": "array"
+        },
+        "education": {
+          "type": "array"
+        },
+        "work_experience": {
+          "type": "array"
+        },
+        "internships": {
+          "type": "array"
+        },
+        "projects": {
+          "type": "array"
+        },
+        "skills": {
+          "type": "array"
+        },
+        "certifications": {
+          "type": "array"
+        },
+        "training": {
+          "type": "array"
+        },
+        "awards": {
+          "type": "array"
+        },
+        "publications": {
+          "type": "array"
+        },
+        "languages": {
+          "type": "array"
+        },
+        "other_sections": {
+          "type": "array"
+        },
+        "unassigned_links": {
+          "type": "array"
+        }
+      }
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "text",
+          "source_line_id",
+          "source_kind",
+          "start",
+          "end",
+          "rule"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "source_line_id": {
+            "type": "string"
+          },
+          "source_kind": {
+            "enum": [
+              "text",
+              "hyperlink"
+            ]
+          },
+          "start": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "end": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "records": {
+      "type": "array"
+    },
+    "evidence": {
+      "type": "object"
+    },
+    "source_sections": {
+      "type": "array"
+    },
+    "unclassified": {
+      "type": "array"
+    },
+    "raw_lines": {
+      "type": "array"
+    },
+    "raw_text": {
+      "type": "string"
+    },
+    "validation": {
+      "type": "object"
+    },
+    "review_status": {
+      "enum": [
+        "needs_review",
+        "mapped_unverified"
+      ]
+    },
+    "comparison": {
+      "type": "object"
+    }
+  }
+}

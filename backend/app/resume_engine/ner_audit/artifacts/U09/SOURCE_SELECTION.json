@@ -1,0 +1,10 @@
+{
+  "id": "U09",
+  "file": "comprehensive_resume_test_suite/02_DOCX_Heavy_Table_Layout_Resume.docx",
+  "sha256": "1f10e01c7b313902ed4bddfbf1998100e42d16962f820ca11293372f686e9911",
+  "previous_reference": "R07",
+  "artifact": "artifacts/U09/resume.json",
+  "selected_from": "upload_accuracy/results/U09/resume.json",
+  "selected_sha256": "441082850450dc8b45a58153e4e1562f038daa629309039426e40c3217c1e24e",
+  "reason": "Full raw lines, layout and hyperlink metadata; uploaded artifact preferred when available. Structured output is baseline comparison only."
+}

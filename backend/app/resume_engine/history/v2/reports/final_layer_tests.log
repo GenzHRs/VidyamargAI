@@ -1,0 +1,109 @@
+Layer 01 ingest
+test_magic_over_extension_and_duplicate (test_01_ingest.IngestTests.test_magic_over_extension_and_duplicate) ... ok
+test_text_and_reject_binary (test_01_ingest.IngestTests.test_text_and_reject_binary) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+
+Layer 02 docx
+test_xml_order_wrappers_and_real_cells (test_02_docx.DocxTests.test_xml_order_wrappers_and_real_cells) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+
+Layer 03 pdf
+test_hero_and_independent_columns (test_03_pdf.PdfTests.test_hero_and_independent_columns) ... ok
+test_word_count_and_style (test_03_pdf.PdfTests.test_word_count_and_style) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+
+Layer 04 normalize
+test_bullets_ligatures_and_contacts (test_04_normalize.NormalizeTests.test_bullets_ligatures_and_contacts) ... ok
+test_exact_margin_repeats_only (test_04_normalize.NormalizeTests.test_exact_margin_repeats_only) ... ok
+test_tight_prose_and_column_boundary (test_04_normalize.NormalizeTests.test_tight_prose_and_column_boundary) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+
+Layer 05 classify
+test_normal_style_inline_label_and_unknown (test_05_classify.ClassifyTests.test_normal_style_inline_label_and_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+
+Layer 06 sections
+test_synonym_fuzzy_custom_no_loss (test_06_sections.SectionTests.test_synonym_fuzzy_custom_no_loss) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+
+Layer 07 fields
+test_contacts_alias_dates_and_gpa (test_07_fields.FieldTests.test_contacts_alias_dates_and_gpa) ... ok
+test_grid_job (test_07_fields.FieldTests.test_grid_job) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.009s
+
+OK
+
+Layer 08 validate
+test_multiset_no_dedup_cheat (test_08_validate.ValidationTests.test_multiset_no_dedup_cheat) ... ok
+test_nested_field_types_and_confidence_range (test_08_validate.ValidationTests.test_nested_field_types_and_confidence_range) ... ok
+test_review_and_schema (test_08_validate.ValidationTests.test_review_and_schema) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.010s
+
+OK
+
+Layer 09 pipeline
+test_determinism_outputs_schema_and_source (test_09_pipeline.PipelineTests.test_determinism_outputs_schema_and_source) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.017s
+
+OK
+
+Layer 10 regressions
+test_ambiguous_skills_and_publication_pages (test_10_regressions.RegressionTests.test_ambiguous_skills_and_publication_pages) ... ok
+test_header_name_is_not_home_location (test_10_regressions.RegressionTests.test_header_name_is_not_home_location) ... ok
+test_hidden_hyperlink_target (test_10_regressions.RegressionTests.test_hidden_hyperlink_target) ... ok
+test_pdf_font_bullet_decoding (test_10_regressions.RegressionTests.test_pdf_font_bullet_decoding) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.009s
+
+OK
+
+Layer 11 layout_fixtures
+test_all_digital_fixtures_preserve_words (test_11_layout_fixtures.LayoutFixtureTests.test_all_digital_fixtures_preserve_words) ... ok
+test_column_order_and_light_text (test_11_layout_fixtures.LayoutFixtureTests.test_column_order_and_light_text) ... ok
+test_repeated_headers_auditable (test_11_layout_fixtures.LayoutFixtureTests.test_repeated_headers_auditable) ... ok
+test_scanned_local_ocr (test_11_layout_fixtures.LayoutFixtureTests.test_scanned_local_ocr) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.700s
+
+OK
+
+Layer 12 corpus
+test_supplied_files_completeness_schema_and_determinism_offline (test_12_corpus.CorpusTests.test_supplied_files_completeness_schema_and_determinism_offline) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 1.630s
+
+OK
+

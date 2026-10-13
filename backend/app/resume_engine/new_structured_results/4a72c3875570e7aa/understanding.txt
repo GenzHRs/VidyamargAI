@@ -1,0 +1,328 @@
+PERSONAL_DETAILS
+{
+  "name": {
+    "value": "MARCUS BRODY",
+    "confidence": 0.92,
+    "source_line_ids": [
+      "l00000"
+    ]
+  },
+  "emails": [
+    {
+      "value": "m.brody.design@example.com",
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "normalization": "none",
+      "raw": "New York, NY  •  (555) 392-7104  •  m.brody.design@example.com  •  marcusbrodydesign.example.com  •  dribbble.com/marcusb-dummy"
+    }
+  ],
+  "phones": [
+    {
+      "value": "(555) 392-7104",
+      "confidence": 0.7,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "normalized": "+15553927104",
+      "valid": false
+    }
+  ],
+  "locations": [
+    {
+      "value": "New York, NY",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00002"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "value": "marcusbrodydesign.example.com",
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "kind": "website"
+    },
+    {
+      "value": "dribbble.com/marcusb-dummy",
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "kind": "website"
+    }
+  ],
+  "headline": {
+    "value": "Lead Product & UX Designer  •  Design Systems & Mobile Experiences",
+    "source_line_ids": [
+      "l00001"
+    ],
+    "confidence": 0.7
+  }
+}
+
+SUMMARY
+[
+  {
+    "text": "Human-centered Lead Product Designer with 6+ years specializing in complex multi-platform SaaS products, consumer mobile apps, and scalable design systems. Expert at translating user empathy and quantitative telemetry into high-converting, intuitive digital journeys. Champion of WCAG 2.1 AA accessibility and cross-functional alignment between engineering and product.",
+    "source_line_ids": [
+      "l00004"
+    ],
+    "value": "Human-centered Lead Product Designer with 6+ years specializing in complex multi-platform SaaS products, consumer mobile apps, and scalable design systems. Expert at translating user empathy and quantitative telemetry into high-converting, intuitive digital journeys. Champion of WCAG 2.1 AA accessibility and cross-functional alignment between engineering and product."
+  }
+]
+
+EDUCATION
+[
+  {
+    "text": "B.F.A. in Graphic & Interactive Media Design\nRhode Island School of Design (RISD), 2019",
+    "source_line_ids": [
+      "l00020"
+    ],
+    "degree": {
+      "value": "B.F.A. in Graphic & Interactive Media Design",
+      "source_line_ids": [
+        "l00020"
+      ],
+      "confidence": 0.85
+    },
+    "institution": {
+      "value": "Rhode Island School of Design (RISD)",
+      "source_line_ids": [
+        "l00020"
+      ],
+      "confidence": 0.85
+    },
+    "dates": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "graduation": {
+      "value": "2019",
+      "source_line_ids": [
+        "l00020"
+      ],
+      "confidence": 0.85
+    },
+    "location": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "gpa": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "normalized_dates": {
+      "start": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      },
+      "end": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      }
+    }
+  }
+]
+
+WORK_EXPERIENCE
+[
+  {
+    "title": {
+      "value": "Lead Product Designer",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00010"
+      ]
+    },
+    "company": {
+      "value": "Kinetix Health App",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00011"
+      ]
+    },
+    "location": {
+      "value": "New York, NY",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00011"
+      ]
+    },
+    "dates": {
+      "value": {
+        "start": "Jan 2022",
+        "end": "Present"
+      },
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00011"
+      ]
+    },
+    "bullets": [
+      "Led end-to-end redesign of patient onboarding flow on iOS and Android, boosting first-week retention by 27% and customer satisfaction (CSAT) to 4.8/5.",
+      "Architected and governed the 'Kinetix Canvas' multi-brand design system with 250+ accessible components, decreasing engineering sprint turnaround by 35%.",
+      "Conducted 45+ bi-weekly moderated user testing sessions, turning qualitative insights into high-impact roadmap bets."
+    ],
+    "text": "Lead Product Designer  |  Kinetix Health App\nJan 2022 – Present  •  New York, NY\nLed end-to-end redesign of patient onboarding flow on iOS and Android, boosting first-week retention by 27% and customer satisfaction (CSAT) to 4.8/5.\nArchitected and governed the 'Kinetix Canvas' multi-brand design system with 250+ accessible components, decreasing engineering sprint turnaround by 35%.\nConducted 45+ bi-weekly moderated user testing sessions, turning qualitative insights into high-impact roadmap bets.",
+    "confidence": 0.88,
+    "source_line_ids": [
+      "l00010",
+      "l00011",
+      "l00012",
+      "l00013",
+      "l00014"
+    ],
+    "normalized_dates": {
+      "start": {
+        "raw": "Jan 2022",
+        "value": "2022-01",
+        "precision": "month"
+      },
+      "end": {
+        "raw": "Present",
+        "value": null,
+        "precision": "open"
+      }
+    }
+  },
+  {
+    "title": {
+      "value": "Senior UX/UI Designer",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00015"
+      ]
+    },
+    "company": {
+      "value": "Studio Pixel & Form",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00016"
+      ]
+    },
+    "location": {
+      "value": "Brooklyn, NY",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00016"
+      ]
+    },
+    "dates": {
+      "value": {
+        "start": "Jun 2019",
+        "end": "Dec 2021"
+      },
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00016"
+      ]
+    },
+    "bullets": [
+      "Delivered comprehensive responsive web platforms for 12 fintech and direct-to-consumer clients, winning 2 Webby nominations.",
+      "Facilitated 3-day Design Sprint workshops with client founders and engineering directors to align on MVP features."
+    ],
+    "text": "Senior UX/UI Designer  |  Studio Pixel & Form\nJun 2019 – Dec 2021  •  Brooklyn, NY\nDelivered comprehensive responsive web platforms for 12 fintech and direct-to-consumer clients, winning 2 Webby nominations.\nFacilitated 3-day Design Sprint workshops with client founders and engineering directors to align on MVP features.",
+    "confidence": 0.88,
+    "source_line_ids": [
+      "l00015",
+      "l00016",
+      "l00017",
+      "l00018"
+    ],
+    "normalized_dates": {
+      "start": {
+        "raw": "Jun 2019",
+        "value": "2019-06",
+        "precision": "month"
+      },
+      "end": {
+        "raw": "Dec 2021",
+        "value": "2021-12",
+        "precision": "month"
+      }
+    }
+  }
+]
+
+INTERNSHIPS
+[]
+
+PROJECTS
+[]
+
+SKILLS
+[
+  {
+    "text": "• Design & Prototyping: Figma (Variables, Auto-Layout, Components), Principle, Adobe Creative Cloud, Framer",
+    "source_line_ids": [
+      "l00006"
+    ],
+    "category": "Design & Prototyping",
+    "items": [
+      "Figma (Variables, Auto-Layout, Components)",
+      "Principle",
+      "Adobe Creative Cloud",
+      "Framer"
+    ]
+  },
+  {
+    "text": "• User Research & Testing: UserTesting.com, Maze, Moderated Usability Interviews, Card Sorting, Journey Mapping, Heatmaps",
+    "source_line_ids": [
+      "l00007"
+    ],
+    "category": "User Research & Testing",
+    "items": [
+      "UserTesting.com",
+      "Maze",
+      "Moderated Usability Interviews",
+      "Card Sorting",
+      "Journey Mapping",
+      "Heatmaps"
+    ]
+  },
+  {
+    "text": "• Front-End Knowledge: HTML5, CSS3, Tailwind CSS, Component Architecture, Git workflows",
+    "source_line_ids": [
+      "l00008"
+    ],
+    "category": "Front-End Knowledge",
+    "items": [
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Component Architecture",
+      "Git workflows"
+    ]
+  }
+]
+
+CERTIFICATIONS
+[]
+
+TRAINING
+[]
+
+AWARDS
+[]
+
+PUBLICATIONS
+[]
+
+LANGUAGES
+[]
+
+OTHER_SECTIONS
+[]
+
+UNCLASSIFIED
+[]

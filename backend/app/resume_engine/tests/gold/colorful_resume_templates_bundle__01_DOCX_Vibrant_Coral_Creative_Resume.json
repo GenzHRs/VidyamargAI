@@ -1,0 +1,77 @@
+{
+  "file": "colorful_resume_templates_bundle/01_DOCX_Vibrant_Coral_Creative_Resume.docx",
+  "sha256": "5f77f4e59d97793795089e0b99f6f360f55d6f12d75e7af6693fae044d6a2730",
+  "persona": "maya",
+  "annotation_origin": "source-reviewed development labels authored for this task; not user gold or held out",
+  "headings": [
+    {
+      "text": "CREATIVE SKILLS",
+      "canonical": "skills"
+    },
+    {
+      "text": "AWARDS & HONORS",
+      "canonical": "awards"
+    },
+    {
+      "text": "EDUCATION",
+      "canonical": "education"
+    },
+    {
+      "text": "CREATIVE PROFILE",
+      "canonical": "summary"
+    },
+    {
+      "text": "EXPERIENCE",
+      "canonical": "experience"
+    }
+  ],
+  "fields": {
+    "name": "MAYA LIN-VAZQUEZ",
+    "emails": [
+      "maya.lin.design@example.com"
+    ],
+    "phones": [
+      "(555) 781-9920"
+    ],
+    "locations": [
+      "Los Angeles, CA"
+    ],
+    "urls": [],
+    "date_ranges": [
+      {
+        "start": "2022",
+        "end": "Present"
+      },
+      {
+        "start": "2019",
+        "end": "2022"
+      }
+    ],
+    "degrees": [
+      "B.F.A. in Graphic Design"
+    ],
+    "gpas": [],
+    "skills": [
+      "Figma",
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Adobe After Effects"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Senior Brand Designer",
+      "company": "Lumina Creative Studio",
+      "start": "2022",
+      "end": "Present",
+      "bullet_count": 3
+    },
+    {
+      "title": "Visual & Packaging Designer",
+      "company": "Verve Labs",
+      "start": "2019",
+      "end": "2022",
+      "bullet_count": 2
+    }
+  ]
+}

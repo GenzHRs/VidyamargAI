@@ -1,0 +1,89 @@
+# JAYAVARAPU SIVA TEJACHARY
+
+## Contact
+
+- j.shivachary@gmail.com
+
+- +91-9866862016
+
+- https://www.linkedin.com/in/jayavarapu-siva-tejachary
+
+- https://github.com/sivatejachary
+
+## Summary
+
+AI/ML Engineer with 2 years of experience developing scalable AI applications using Python, FastAPI, NLP, Large Language Models (OpenAI, Gemini), and Retrieval-Augmented Generation (RAG). Skilled in backend API development, machine learning pipelines, and intelligent automation solutions.
+
+## Experience
+
+### AI/ML Engineer
+
+Avataa Solutions Pvt. Ltd. | Hyderabad, India | June 2024 – Present
+
+- Developed AI-powered applications using Python, FastAPI, NLP, LLMs (OpenAI, Gemini), and RAG.
+
+- Built and maintained REST APIs for AI-based document processing and automation.
+
+- Worked on OCR, NER, data preprocessing, and machine learning models for document analysis.
+
+- Integrated LLMs to generate document summaries and improve automation workflows.
+
+- Developed and deployed AI solutions for intelligent document processing and compliance automation.
+
+## Education
+
+### B.Tech in Computer Science and Engineering
+
+Chalapathi Institute of Engineering and Technology | Guntur, Andhra Pradesh | Sep 2020 – Apr 2024
+
+GPA: 7.9/10
+
+## Projects
+
+### Enterprise Document AI & Compliance Automation
+
+Oct 2024 – Present
+
+Technologies: FastAPI, Python, PostgreSQL, Azure OCR, NER, Gemini LLM
+
+Tech: FastAPI, Python, PostgreSQL, Azure OCR, NER, Gemini LLM Built a backend system to extract and validate invoice data from scanned image-based PDF documents using Azure OCR and NER. Designed a matching engine to cross-reference extracted data across multiple documents and detect inconsistencies before manual review. Integrated Gemini LLM to generate human-readable summaries and support compliance verification. Applied similarity- and metadata-based ML logic to automatically group related multi-page invoice documents. Implemented event-driven document processing using PostgreSQL NOTIFY & LISTEN, eliminating polling delays and enabling real-time workflow automation. Developed FastAPI REST APIs for document upload, OCR processing, data validation, and digital invoice generation. Reduced manual document review effort by 70–85% across production workloads.
+
+### AI Resume Screening System
+
+Aug 2024 – Sept 2024
+
+Technologies: Python, NLP, FastAPI, Transformers
+
+Tech: Python, NLP, FastAPI, Transformers Built an NLP-based resume screening system using TF-IDF and embeddings to analyze 500+ resumes with 85%+
+
+### matching accuracy .
+
+Designed a ranking algorithm to shortlist the top 10–20% of candidates, reducing manual screening effort by 60% . Developed FastAPI REST APIs for real-time resume processing.
+
+## Skills
+
+**Programming & Backend:** Python, FastAPI, REST APIs
+
+**Generative AI:** LLMs, OpenAI, Gemini, RAG, Prompt Engineering, LangChain, Hugging Face Transformers
+
+**NLP & Document AI:** NER, OCR, TF-IDF, Embeddings
+
+**Machine Learning:** Scikit-learn, TensorFlow, PyTorch, Supervised Learning, Unsupervised Learning
+
+**Computer Vision & Data Science:** OpenCV, Pandas, NumPy
+
+**Databases:** MySQL, PostgreSQL
+
+**Tools & Platforms:** Git, GitHub, Docker, Azure, Jupyter Notebook
+
+## Certifications
+
+Data Science & Machine Learning Certification
+
+Cranes Varsity, Bengaluru: Completed hands-on training in Python, RDBMS, EDA, and core ML techniques through applied projects.
+
+## Other Sections
+
+### Awards & Certifications
+
+• Top 5, College Hackathon (2024): Built a CNN-powered plant disease detection system to help farmers identify crop diseases early from leaf images, ranking top 5 among 250+ participants.

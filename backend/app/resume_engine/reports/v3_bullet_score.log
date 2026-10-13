@@ -1,0 +1,9 @@
+{
+  "expected": 104,
+  "actual": 104,
+  "exact_matches": 104,
+  "recall": 1.0,
+  "precision": 1.0,
+  "failures": [],
+  "methodology": "Full bullet strings, fixed job/bullet ordinals; NFKC, whitespace and leading bullet marker normalization only. References copied from the completed source-reviewed audit before v3. Development set; not independent validation."
+}

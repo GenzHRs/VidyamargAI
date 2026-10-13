@@ -1,0 +1,7 @@
+test_hero_and_independent_columns (test_03_pdf.PdfTests.test_hero_and_independent_columns) ... ok
+test_word_count_and_style (test_03_pdf.PdfTests.test_word_count_and_style) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK

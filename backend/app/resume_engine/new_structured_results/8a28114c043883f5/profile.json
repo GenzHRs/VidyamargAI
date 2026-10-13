@@ -1,0 +1,746 @@
+{
+  "mapping_schema_version": "1.0.0",
+  "record_id": "f512ddc916118a8eb70168f68940c41f119dce37551598dedb5c27e27b79b7e6",
+  "document_id": "8a28114c043883f515bb055f3cb0c0cbfee3d13134a2eba717a7a0cfbf12a44f",
+  "candidate_id": null,
+  "extraction_id": "0d4b920cfbfd1bfc21e87134af56c9def1ab727b51ff5fca9d6d24a377a10122",
+  "mapper_sha256": "99064aec1206cbb49df51cf0e73a239fd615aee01b0aa7e99c2aa2d2a3479451",
+  "source": {
+    "filename": "04_PDF_Emerald_Forest_Operations_Resume.pdf",
+    "sha256": "8a28114c043883f515bb055f3cb0c0cbfee3d13134a2eba717a7a0cfbf12a44f",
+    "type": "pdf",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": 1,
+    "reference_method": "pdftotext_raw"
+  },
+  "section_order": [
+    "contact",
+    "summary",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "certifications",
+    "publications",
+    "awards",
+    "metrics",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "profile": {
+    "contact": {
+      "full_name": "JULIAN A. MERCER",
+      "headline": "DIRECTOR OF BUSINESS OPERATIONS & STRATEGIC INITIATIVES",
+      "emails": [
+        "julian.mercer@example.com"
+      ],
+      "phones": [
+        {
+          "raw": "(555) 481-0294",
+          "normalized": "+15554810294",
+          "valid": false
+        }
+      ],
+      "locations": [
+        "Boston, MA"
+      ],
+      "links": [
+        "linkedin.com/in/julianmercer-dummy"
+      ]
+    },
+    "summary": [],
+    "experience": [
+      {
+        "source_text": "Director of Business Operations — Beacon Healthcare Technologies (Boston, MA)\n2021 – Present\n• Spearheaded enterprise transformation plan across 5 regional clinical branches, capturing $11.4M in recurring SG&A; cost savings.\n• Standardized clinical procurement workflows, reducing vendor contract turnaround from 35 days to 8 days.\n• Reported monthly operating review and corporate risk updates directly to Chief Operating Officer and Board.",
+        "source_line_ids": [
+          "l00017",
+          "l00018",
+          "l00019",
+          "l00020",
+          "l00021"
+        ],
+        "ordinal": 0,
+        "title": "Director of Business Operations",
+        "company": "Beacon Healthcare Technologies",
+        "location": "Boston, MA",
+        "dates": {
+          "start": {
+            "raw": "2021",
+            "normalized": "2021",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "Present",
+            "normalized": null,
+            "precision": "open"
+          },
+          "ongoing_as_reported": true
+        },
+        "bullets": [
+          "Spearheaded enterprise transformation plan across 5 regional clinical branches, capturing $11.4M in recurring SG&A; cost savings.",
+          "Standardized clinical procurement workflows, reducing vendor contract turnaround from 35 days to 8 days.",
+          "Reported monthly operating review and corporate risk updates directly to Chief Operating Officer and Board."
+        ],
+        "links": [],
+        "work_mode": null
+      },
+      {
+        "source_text": "Engagement Manager (Strategy & Operations) — Bain & Company (New York, NY)\n2017 – 2021\n• Led 7-member management consulting teams advising Fortune 100 enterprise clients on carve-outs and M&A; integration.\n• Designed organizational restructurings for global manufacturing companies with 4,000+ employees.",
+        "source_line_ids": [
+          "l00022",
+          "l00023",
+          "l00024",
+          "l00025"
+        ],
+        "ordinal": 1,
+        "title": "Engagement Manager (Strategy & Operations)",
+        "company": "Bain & Company",
+        "location": "New York, NY",
+        "dates": {
+          "start": {
+            "raw": "2017",
+            "normalized": "2017",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "2021",
+            "normalized": "2021",
+            "precision": "year"
+          },
+          "ongoing_as_reported": false
+        },
+        "bullets": [
+          "Led 7-member management consulting teams advising Fortune 100 enterprise clients on carve-outs and M&A; integration.",
+          "Designed organizational restructurings for global manufacturing companies with 4,000+ employees."
+        ],
+        "links": [],
+        "work_mode": null
+      }
+    ],
+    "education": [
+      {
+        "source_text": "Master of Business Administration (MBA) — Harvard Business School (2017)",
+        "source_line_ids": [
+          "l00027"
+        ],
+        "ordinal": 0,
+        "degree": "Master of Business Administration (MBA)",
+        "institution": "Harvard Business School",
+        "location": null,
+        "dates": {
+          "start": {
+            "raw": null,
+            "normalized": null,
+            "precision": null
+          },
+          "end": {
+            "raw": null,
+            "normalized": null,
+            "precision": null
+          },
+          "ongoing_as_reported": false
+        },
+        "graduation": {
+          "raw": "2017",
+          "normalized": "2017",
+          "precision": "year"
+        },
+        "gpa": null,
+        "dissertation_or_thesis": null
+      },
+      {
+        "source_text": "B.A. in Economics — Dartmouth College (2013)",
+        "source_line_ids": [
+          "l00028"
+        ],
+        "ordinal": 1,
+        "degree": "B.A. in Economics",
+        "institution": "Dartmouth College",
+        "location": null,
+        "dates": {
+          "start": {
+            "raw": null,
+            "normalized": null,
+            "precision": null
+          },
+          "end": {
+            "raw": null,
+            "normalized": null,
+            "precision": null
+          },
+          "ongoing_as_reported": false
+        },
+        "graduation": {
+          "raw": "2013",
+          "normalized": "2013",
+          "precision": "year"
+        },
+        "gpa": null,
+        "dissertation_or_thesis": null
+      }
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "category": "Operational Strategy",
+        "items": [
+          "Post-Merger PMI Integration",
+          "Lean Six Sigma Process Design",
+          "Operating Model Redesign"
+        ],
+        "source_records": [
+          {
+            "text": "Operational Strategy\n• Post-Merger PMI Integration",
+            "source_line_ids": [
+              "l00004",
+              "l00007"
+            ],
+            "category": "Operational Strategy",
+            "items": [
+              "Post-Merger PMI Integration"
+            ]
+          },
+          {
+            "text": "Operational Strategy\n• Lean Six Sigma Process Design",
+            "source_line_ids": [
+              "l00004",
+              "l00008"
+            ],
+            "category": "Operational Strategy",
+            "items": [
+              "Lean Six Sigma Process Design"
+            ]
+          },
+          {
+            "text": "Operational Strategy\n• Operating Model Redesign",
+            "source_line_ids": [
+              "l00004",
+              "l00009"
+            ],
+            "category": "Operational Strategy",
+            "items": [
+              "Operating Model Redesign"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Financial Optimization",
+        "items": [
+          "$85M Budget & OPEX Oversight",
+          "Vendor Procurement Negotiations",
+          "Capital Allocation Modeling"
+        ],
+        "source_records": [
+          {
+            "text": "Financial Optimization\n• $85M Budget & OPEX Oversight",
+            "source_line_ids": [
+              "l00005",
+              "l00010"
+            ],
+            "category": "Financial Optimization",
+            "items": [
+              "$85M Budget & OPEX Oversight"
+            ]
+          },
+          {
+            "text": "Financial Optimization\n• Vendor Procurement Negotiations",
+            "source_line_ids": [
+              "l00005",
+              "l00011"
+            ],
+            "category": "Financial Optimization",
+            "items": [
+              "Vendor Procurement Negotiations"
+            ]
+          },
+          {
+            "text": "Financial Optimization\n• Capital Allocation Modeling",
+            "source_line_ids": [
+              "l00005",
+              "l00012"
+            ],
+            "category": "Financial Optimization",
+            "items": [
+              "Capital Allocation Modeling"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Cross-Functional Leadership",
+        "items": [
+          "Executive Stakeholder Alignment",
+          "OKR Governance & Tracking",
+          "Org Structuring & Hiring"
+        ],
+        "source_records": [
+          {
+            "text": "Cross-Functional Leadership\n• Executive Stakeholder Alignment",
+            "source_line_ids": [
+              "l00006",
+              "l00013"
+            ],
+            "category": "Cross-Functional Leadership",
+            "items": [
+              "Executive Stakeholder Alignment"
+            ]
+          },
+          {
+            "text": "Cross-Functional Leadership\n• OKR Governance & Tracking",
+            "source_line_ids": [
+              "l00006",
+              "l00014"
+            ],
+            "category": "Cross-Functional Leadership",
+            "items": [
+              "OKR Governance & Tracking"
+            ]
+          },
+          {
+            "text": "Cross-Functional Leadership\n• Org Structuring & Hiring",
+            "source_line_ids": [
+              "l00006",
+              "l00015"
+            ],
+            "category": "Cross-Functional Leadership",
+            "items": [
+              "Org Structuring & Hiring"
+            ]
+          }
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "source_text": "Lean Six Sigma Green Belt",
+        "source_line_ids": [
+          "l00028"
+        ],
+        "ordinal": 0,
+        "name": "Lean Six Sigma Green Belt",
+        "issuer": null,
+        "details": "",
+        "license_id": null,
+        "status_as_reported": null,
+        "links": []
+      }
+    ],
+    "publications": [],
+    "awards": [],
+    "metrics": [],
+    "other_sections": []
+  },
+  "evidence": {
+    "contact.full_name": {
+      "source_line_ids": [
+        "l00000"
+      ],
+      "confidence": 0.92,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.headline": {
+      "source_line_ids": [
+        "l00001"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.emails[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.phones[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.7,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.locations[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0]": {
+      "source_line_ids": [
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].title": {
+      "source_line_ids": [
+        "l00017"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].company": {
+      "source_line_ids": [
+        "l00017"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].location": {
+      "source_line_ids": [
+        "l00017"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].dates": {
+      "source_line_ids": [
+        "l00018"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[0]": {
+      "source_line_ids": [
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[1]": {
+      "source_line_ids": [
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[2]": {
+      "source_line_ids": [
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1]": {
+      "source_line_ids": [
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].title": {
+      "source_line_ids": [
+        "l00022"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].company": {
+      "source_line_ids": [
+        "l00022"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].location": {
+      "source_line_ids": [
+        "l00022"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].dates": {
+      "source_line_ids": [
+        "l00023"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].bullets[0]": {
+      "source_line_ids": [
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].bullets[1]": {
+      "source_line_ids": [
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0]": {
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].degree": {
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].institution": {
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].location": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].dates": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].graduation": {
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].gpa": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1]": {
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].degree": {
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].institution": {
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].location": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].dates": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].graduation": {
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].gpa": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0]": {
+      "source_line_ids": [
+        "l00004",
+        "l00007",
+        "l00008",
+        "l00009"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1]": {
+      "source_line_ids": [
+        "l00005",
+        "l00010",
+        "l00011",
+        "l00012"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[2]": {
+      "source_line_ids": [
+        "l00006",
+        "l00013",
+        "l00014",
+        "l00015"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0]": {
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].name": {
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].issuer": {
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].details": {
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.links[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    }
+  },
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "JULIAN A. MERCER\nDIRECTOR OF BUSINESS OPERATIONS & STRATEGIC INITIATIVES\nBoston, MA • (555) 481-0294 • julian.mercer@example.com • linkedin.com/in/julianmercer-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "skills",
+      "original_heading": "CORE COMPETENCY FRAMEWORK",
+      "heading_line_id": "l00003",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00004",
+        "l00005",
+        "l00006",
+        "l00007",
+        "l00008",
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015"
+      ],
+      "text": "Operational Strategy\nFinancial Optimization\nCross-Functional Leadership\n• Post-Merger PMI Integration\n• Lean Six Sigma Process Design\n• Operating Model Redesign\n• $85M Budget & OPEX Oversight\n• Vendor Procurement Negotiations\n• Capital Allocation Modeling\n• Executive Stakeholder Alignment\n• OKR Governance & Tracking\n• Org Structuring & Hiring"
+    },
+    {
+      "id": "s002",
+      "canonical": "experience",
+      "original_heading": "OPERATIONAL LEADERSHIP EXPERIENCE",
+      "heading_line_id": "l00016",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025"
+      ],
+      "text": "Director of Business Operations — Beacon Healthcare Technologies (Boston, MA)\n2021 – Present\n• Spearheaded enterprise transformation plan across 5 regional clinical branches, capturing $11.4M in recurring SG&A; cost savings.\n• Standardized clinical procurement workflows, reducing vendor contract turnaround from 35 days to 8 days.\n• Reported monthly operating review and corporate risk updates directly to Chief Operating Officer and Board.\nEngagement Manager (Strategy & Operations) — Bain & Company (New York, NY)\n2017 – 2021\n• Led 7-member management consulting teams advising Fortune 100 enterprise clients on carve-outs and M&A; integration.\n• Designed organizational restructurings for global manufacturing companies with 4,000+ employees."
+    },
+    {
+      "id": "s003",
+      "canonical": "education",
+      "original_heading": "EDUCATION & CREDENTIALS",
+      "heading_line_id": "l00026",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00027",
+        "l00028"
+      ],
+      "text": "Master of Business Administration (MBA) — Harvard Business School (2017)\nB.A. in Economics — Dartmouth College (2013) • Lean Six Sigma Green Belt"
+    }
+  ],
+  "quality": {
+    "completeness": {
+      "status": "pass",
+      "reference_words": 188,
+      "extracted_words": 188,
+      "matched_words": 188,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "schema_errors": [],
+    "warnings": [],
+    "suppressed_exact_repeats": []
+  },
+  "review_status": "needs_review",
+  "review": [
+    {
+      "path": "fields.phones[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.7
+    }
+  ],
+  "mapping_changes": []
+}

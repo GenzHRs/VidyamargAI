@@ -1,0 +1,86 @@
+{
+  "file": "comprehensive_resume_test_suite/06_PDF_Horizontal_Hero_Two_Blocks.pdf",
+  "sha256": "6bb643e81a789bc8107dc98567907237d271c123b5c7030e2b63a363d4c4baaf",
+  "persona": "tariq",
+  "annotation_origin": "source-reviewed development labels authored for this task; not user gold or held out",
+  "headings": [
+    {
+      "text": "EXECUTIVE SUMMARY:",
+      "canonical": "summary"
+    },
+    {
+      "text": "EXECUTIVE LEADERSHIP & IMPACT",
+      "canonical": "experience"
+    },
+    {
+      "text": "KEY LEADERSHIP METRICS",
+      "canonical": "metrics"
+    },
+    {
+      "text": "TECHNICAL GOVERNANCE",
+      "canonical": "skills"
+    },
+    {
+      "text": "EDUCATION",
+      "canonical": "education"
+    }
+  ],
+  "fields": {
+    "name": "TARIQ AL-HASSAN",
+    "emails": [
+      "tariq.alhassan@example.com"
+    ],
+    "phones": [
+      "+1 (206) 555-0184"
+    ],
+    "locations": [
+      "Seattle, WA"
+    ],
+    "urls": [
+      "linkedin.com/in/tariq-ai-dummy"
+    ],
+    "date_ranges": [
+      {
+        "start": "2022",
+        "end": "Present"
+      },
+      {
+        "start": "2018",
+        "end": "2022"
+      }
+    ],
+    "degrees": [
+      "Ph.D. in Computer Science",
+      "B.S. in Electrical Engineering"
+    ],
+    "gpas": [],
+    "skills": [
+      "Machine Learning",
+      "Deep Learning",
+      "AWS",
+      "PyTorch",
+      "Triton",
+      "Ray",
+      "CUDA",
+      "TensorRT",
+      "vLLM",
+      "Computer Vision"
+    ]
+  },
+  "experience": [
+    {
+      "title": "VP of Machine Learning Platform",
+      "company": "Cerebro Analytics",
+      "start": "2022",
+      "end": "Present",
+      "bullet_count": 3
+    },
+    {
+      "title": "Director of Applied AI",
+      "company": "Horizon Autonomous Systems",
+      "start": "2018",
+      "end": "2022",
+      "bullet_count": 2
+    }
+  ]
+}

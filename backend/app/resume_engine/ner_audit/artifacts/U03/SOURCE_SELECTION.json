@@ -1,0 +1,10 @@
+{
+  "id": "U03",
+  "file": "Jayavarapu-Siva-Tejachary-AIML(1).pdf",
+  "sha256": "bdb2f38e41ac1fe979557ef27f8c98ba3a1f312e5b99e8f117d120a90b7cb826",
+  "previous_reference": "R01",
+  "artifact": "artifacts/U03/resume.json",
+  "selected_from": "upload/resume(2).json",
+  "selected_sha256": "ded9c2c6e9f9644d687337ea5a8f34a9195bb3e2be33eedf0af4f7aa336ca78c",
+  "reason": "Full raw lines, layout and hyperlink metadata; uploaded artifact preferred when available. Structured output is baseline comparison only."
+}

@@ -1,0 +1,1552 @@
+{
+  "before": {
+    "unique_resumes": 18,
+    "scope": "Frozen annotated fields and record metadata; full job bullets for every resume and full project bullets for U01/U02. Other sections lack complete manual gold.",
+    "entity_metric_scope": "Typed entity VALUE extraction on annotated fields; not an exact-span NER benchmark",
+    "reference_sha256": {
+      "source_labels.json": "8f7542578c16a35de07a2860a2667630dc6770f4375fe4df0774ae52bdd702af",
+      "source_bullets.json": "16e99ae406f3957d17fe94704bd7916c5e2551e6f2b6da1e090e564f5bc087b9"
+    },
+    "field_mapping": {
+      "tp": 695,
+      "fp": 5,
+      "fn": 2,
+      "precision": 0.9928571428571429,
+      "recall": 0.9971305595408895,
+      "f1": 0.9949892627057981
+    },
+    "entity_value_extraction": {
+      "tp": 655,
+      "fp": 3,
+      "fn": 1,
+      "precision": 0.9954407294832827,
+      "recall": 0.9984756097560976,
+      "f1": 0.9969558599695586
+    },
+    "record_grouping": {
+      "expected": 83,
+      "predicted": 84,
+      "exact": 81,
+      "missing_records": 0,
+      "extra_records": 0,
+      "false_merges": 0,
+      "false_splits": 1,
+      "precision": 0.9642857142857143,
+      "recall": 0.9759036144578314
+    },
+    "full_bullet_comparison": {
+      "expected": 110,
+      "predicted": 110,
+      "exact": 107
+    },
+    "annotated_mapping_pass_count": 16,
+    "strict_audited_document_pass_count": 15,
+    "strict_audited_document_pass_rate": 0.8333333333333334,
+    "independent_unseen_real_resumes": 0,
+    "accuracy_95_claim": "NOT ESTABLISHED",
+    "per_resume": [
+      {
+        "id": "U01",
+        "filename": "AIML- JAYAVARAPU SIVA TEJACHARY.pdf",
+        "field_metrics": {
+          "tp": 65,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.9558823529411765,
+          "recall": 0.9848484848484849,
+          "f1": 0.9701492537313433
+        },
+        "field_errors": {
+          "projects": {
+            "tp": 7,
+            "fp": 3,
+            "fn": 1,
+            "missing": [
+              [
+                "1.bullet_count",
+                3
+              ]
+            ],
+            "extra": [
+              [
+                "1.bullet_count",
+                1
+              ],
+              [
+                "2.name",
+                "matching accuracy ."
+              ],
+              [
+                "2.bullet_count",
+                2
+              ]
+            ]
+          }
+        },
+        "record_grouping": {
+          "expected": 5,
+          "predicted": 6,
+          "exact": 4,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 1,
+          "precision": 0.6666666666666666,
+          "recall": 0.8
+        },
+        "record_errors": [
+          {
+            "section": "projects",
+            "ordinal": 1,
+            "reason": "Record metadata, ownership/count, or annotated full bullet differs"
+          }
+        ],
+        "annotated_mapping_pass": false,
+        "strict_audited_document_pass": false,
+        "completeness": {
+          "status": "fail",
+          "reference_words": 449,
+          "extracted_words": 448,
+          "matched_words": 448,
+          "recall": 0.9977728285077951,
+          "precision": 1.0,
+          "missing": {
+            "ï": 1
+          },
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U02",
+        "filename": "CV_Jayavarapu-siva-Tejachary.pdf",
+        "field_metrics": {
+          "tp": 45,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.9574468085106383,
+          "recall": 0.9782608695652174,
+          "f1": 0.967741935483871
+        },
+        "field_errors": {
+          "contact": {
+            "tp": 4,
+            "fp": 1,
+            "fn": 0,
+            "missing": [],
+            "extra": [
+              [
+                "links",
+                "drive.google.com/file/d/1HEeWV5pFmbwzrZ3zQK0V1YK6Znu5Xd8e/view"
+              ]
+            ]
+          },
+          "certifications": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 1,
+            "missing": [
+              [
+                "entry",
+                "Data Science & Machine Learning - Cranes Varsity, Bengaluru."
+              ]
+            ],
+            "extra": [
+              [
+                "entry",
+                "Data Science & Machine Learning - Cranes Varsity, Bengaluru. Trained in Python, RDBMS, Exploratory Data Analysis (EDA), Power BI, and ML, NLP"
+              ]
+            ]
+          }
+        },
+        "record_grouping": {
+          "expected": 7,
+          "predicted": 7,
+          "exact": 6,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 0.8571428571428571,
+          "recall": 0.8571428571428571
+        },
+        "record_errors": [
+          {
+            "section": "certifications",
+            "ordinal": 0,
+            "reason": "Record metadata, ownership/count, or annotated full bullet differs"
+          }
+        ],
+        "annotated_mapping_pass": false,
+        "strict_audited_document_pass": false,
+        "completeness": {
+          "status": "fail",
+          "reference_words": 410,
+          "extracted_words": 409,
+          "matched_words": 408,
+          "recall": 0.9951219512195122,
+          "precision": 0.9975550122249389,
+          "missing": {
+            "91": 1,
+            "9866862016": 1
+          },
+          "extra": {
+            "919866862016": 1
+          }
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U03",
+        "filename": "Jayavarapu-Siva-Tejachary-AIML.pdf",
+        "field_metrics": {
+          "tp": 82,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 6,
+          "predicted": 6,
+          "exact": 6,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": false,
+        "completeness": {
+          "status": "fail",
+          "reference_words": 451,
+          "extracted_words": 450,
+          "matched_words": 450,
+          "recall": 0.9977827050997783,
+          "precision": 1.0,
+          "missing": {
+            "ï": 1
+          },
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U04",
+        "filename": "01_DOCX_Vibrant_Coral_Creative_Resume.docx",
+        "field_metrics": {
+          "tp": 29,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 3,
+          "predicted": 3,
+          "exact": 3,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 197,
+          "extracted_words": 197,
+          "matched_words": 197,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U05",
+        "filename": "02_DOCX_Navy_Teal_Cloud_Architect.docx",
+        "field_metrics": {
+          "tp": 36,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 7,
+          "predicted": 7,
+          "exact": 7,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 217,
+          "extracted_words": 217,
+          "matched_words": 217,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U06",
+        "filename": "03_PDF_Royal_Purple_Marketing_Resume.pdf",
+        "field_metrics": {
+          "tp": 28,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 3,
+          "predicted": 3,
+          "exact": 3,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 228,
+          "extracted_words": 228,
+          "matched_words": 228,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U07",
+        "filename": "04_PDF_Emerald_Forest_Operations_Resume.pdf",
+        "field_metrics": {
+          "tp": 33,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 5,
+          "predicted": 5,
+          "exact": 5,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 188,
+          "extracted_words": 188,
+          "matched_words": 188,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U08",
+        "filename": "01_DOCX_Two_Column_Sidebar_Layout.docx",
+        "field_metrics": {
+          "tp": 29,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 3,
+          "predicted": 3,
+          "exact": 3,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 209,
+          "extracted_words": 209,
+          "matched_words": 209,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U09",
+        "filename": "02_DOCX_Heavy_Table_Layout_Resume.docx",
+        "field_metrics": {
+          "tp": 32,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 4,
+          "predicted": 4,
+          "exact": 4,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 181,
+          "extracted_words": 181,
+          "matched_words": 181,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U10",
+        "filename": "03_DOCX_Horizontal_Hero_Two_Blocks.docx",
+        "field_metrics": {
+          "tp": 30,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 4,
+          "predicted": 4,
+          "exact": 4,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 204,
+          "extracted_words": 204,
+          "matched_words": 204,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U11",
+        "filename": "04_PDF_Two_Column_Sidebar_Layout.pdf",
+        "field_metrics": {
+          "tp": 40,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 6,
+          "predicted": 6,
+          "exact": 6,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 206,
+          "extracted_words": 206,
+          "matched_words": 206,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U12",
+        "filename": "05_PDF_Strict_Table_Grid_Resume.pdf",
+        "field_metrics": {
+          "tp": 30,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 4,
+          "predicted": 4,
+          "exact": 4,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 211,
+          "extracted_words": 211,
+          "matched_words": 211,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U13",
+        "filename": "06_PDF_Horizontal_Hero_Two_Blocks.pdf",
+        "field_metrics": {
+          "tp": 33,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 4,
+          "predicted": 4,
+          "exact": 4,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 219,
+          "extracted_words": 219,
+          "matched_words": 219,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U14",
+        "filename": "07_DOCX_Modern_Tech_Software_Engineer.docx",
+        "field_metrics": {
+          "tp": 56,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 6,
+          "predicted": 6,
+          "exact": 6,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 357,
+          "extracted_words": 357,
+          "matched_words": 357,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U15",
+        "filename": "08_DOCX_Executive_Corporate_Director.docx",
+        "field_metrics": {
+          "tp": 34,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 6,
+          "predicted": 6,
+          "exact": 6,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 339,
+          "extracted_words": 339,
+          "matched_words": 339,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U16",
+        "filename": "09_DOCX_Academic_Research_CV.docx",
+        "field_metrics": {
+          "tp": 20,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 3,
+          "predicted": 3,
+          "exact": 3,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 204,
+          "extracted_words": 204,
+          "matched_words": 204,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U17",
+        "filename": "10_DOCX_Entry_Level_Business_Analyst.docx",
+        "field_metrics": {
+          "tp": 37,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 4,
+          "predicted": 4,
+          "exact": 4,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 247,
+          "extracted_words": 247,
+          "matched_words": 247,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U20",
+        "filename": "03_Creative_Product_UX_Designer.docx",
+        "field_metrics": {
+          "tp": 36,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 3,
+          "predicted": 3,
+          "exact": 3,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 261,
+          "extracted_words": 261,
+          "matched_words": 261,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      }
+    ]
+  },
+  "after": {
+    "unique_resumes": 18,
+    "scope": "Frozen annotated fields and record metadata; full job bullets for every resume and full project bullets for U01/U02. Other sections lack complete manual gold.",
+    "entity_metric_scope": "Typed entity VALUE extraction on annotated fields; not an exact-span NER benchmark",
+    "reference_sha256": {
+      "source_labels.json": "8f7542578c16a35de07a2860a2667630dc6770f4375fe4df0774ae52bdd702af",
+      "source_bullets.json": "16e99ae406f3957d17fe94704bd7916c5e2551e6f2b6da1e090e564f5bc087b9"
+    },
+    "field_mapping": {
+      "tp": 697,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "entity_value_extraction": {
+      "tp": 656,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "record_grouping": {
+      "expected": 83,
+      "predicted": 83,
+      "exact": 83,
+      "missing_records": 0,
+      "extra_records": 0,
+      "false_merges": 0,
+      "false_splits": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "full_bullet_comparison": {
+      "expected": 110,
+      "predicted": 110,
+      "exact": 110
+    },
+    "annotated_mapping_pass_count": 18,
+    "strict_audited_document_pass_count": 15,
+    "strict_audited_document_pass_rate": 0.8333333333333334,
+    "independent_unseen_real_resumes": 0,
+    "accuracy_95_claim": "NOT ESTABLISHED",
+    "per_resume": [
+      {
+        "id": "U01",
+        "filename": "AIML- JAYAVARAPU SIVA TEJACHARY.pdf",
+        "field_metrics": {
+          "tp": 66,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 5,
+          "predicted": 5,
+          "exact": 5,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": false,
+        "completeness": {
+          "status": "fail",
+          "reference_words": 449,
+          "extracted_words": 448,
+          "matched_words": 448,
+          "recall": 0.9977728285077951,
+          "precision": 1.0,
+          "missing": {
+            "ï": 1
+          },
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U02",
+        "filename": "CV_Jayavarapu-siva-Tejachary.pdf",
+        "field_metrics": {
+          "tp": 46,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 7,
+          "predicted": 7,
+          "exact": 7,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": false,
+        "completeness": {
+          "status": "fail",
+          "reference_words": 410,
+          "extracted_words": 409,
+          "matched_words": 408,
+          "recall": 0.9951219512195122,
+          "precision": 0.9975550122249389,
+          "missing": {
+            "91": 1,
+            "9866862016": 1
+          },
+          "extra": {
+            "919866862016": 1
+          }
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U03",
+        "filename": "Jayavarapu-Siva-Tejachary-AIML.pdf",
+        "field_metrics": {
+          "tp": 82,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 6,
+          "predicted": 6,
+          "exact": 6,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": false,
+        "completeness": {
+          "status": "fail",
+          "reference_words": 451,
+          "extracted_words": 450,
+          "matched_words": 450,
+          "recall": 0.9977827050997783,
+          "precision": 1.0,
+          "missing": {
+            "ï": 1
+          },
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U04",
+        "filename": "01_DOCX_Vibrant_Coral_Creative_Resume.docx",
+        "field_metrics": {
+          "tp": 29,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 3,
+          "predicted": 3,
+          "exact": 3,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 197,
+          "extracted_words": 197,
+          "matched_words": 197,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U05",
+        "filename": "02_DOCX_Navy_Teal_Cloud_Architect.docx",
+        "field_metrics": {
+          "tp": 36,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 7,
+          "predicted": 7,
+          "exact": 7,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 217,
+          "extracted_words": 217,
+          "matched_words": 217,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U06",
+        "filename": "03_PDF_Royal_Purple_Marketing_Resume.pdf",
+        "field_metrics": {
+          "tp": 28,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 3,
+          "predicted": 3,
+          "exact": 3,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 228,
+          "extracted_words": 228,
+          "matched_words": 228,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U07",
+        "filename": "04_PDF_Emerald_Forest_Operations_Resume.pdf",
+        "field_metrics": {
+          "tp": 33,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 5,
+          "predicted": 5,
+          "exact": 5,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 188,
+          "extracted_words": 188,
+          "matched_words": 188,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U08",
+        "filename": "01_DOCX_Two_Column_Sidebar_Layout.docx",
+        "field_metrics": {
+          "tp": 29,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 3,
+          "predicted": 3,
+          "exact": 3,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 209,
+          "extracted_words": 209,
+          "matched_words": 209,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U09",
+        "filename": "02_DOCX_Heavy_Table_Layout_Resume.docx",
+        "field_metrics": {
+          "tp": 32,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 4,
+          "predicted": 4,
+          "exact": 4,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 181,
+          "extracted_words": 181,
+          "matched_words": 181,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U10",
+        "filename": "03_DOCX_Horizontal_Hero_Two_Blocks.docx",
+        "field_metrics": {
+          "tp": 30,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 4,
+          "predicted": 4,
+          "exact": 4,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 204,
+          "extracted_words": 204,
+          "matched_words": 204,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U11",
+        "filename": "04_PDF_Two_Column_Sidebar_Layout.pdf",
+        "field_metrics": {
+          "tp": 40,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 6,
+          "predicted": 6,
+          "exact": 6,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 206,
+          "extracted_words": 206,
+          "matched_words": 206,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U12",
+        "filename": "05_PDF_Strict_Table_Grid_Resume.pdf",
+        "field_metrics": {
+          "tp": 30,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 4,
+          "predicted": 4,
+          "exact": 4,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 211,
+          "extracted_words": 211,
+          "matched_words": 211,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U13",
+        "filename": "06_PDF_Horizontal_Hero_Two_Blocks.pdf",
+        "field_metrics": {
+          "tp": 33,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 4,
+          "predicted": 4,
+          "exact": 4,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 219,
+          "extracted_words": 219,
+          "matched_words": 219,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U14",
+        "filename": "07_DOCX_Modern_Tech_Software_Engineer.docx",
+        "field_metrics": {
+          "tp": 56,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 6,
+          "predicted": 6,
+          "exact": 6,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 357,
+          "extracted_words": 357,
+          "matched_words": 357,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U15",
+        "filename": "08_DOCX_Executive_Corporate_Director.docx",
+        "field_metrics": {
+          "tp": 34,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 6,
+          "predicted": 6,
+          "exact": 6,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 339,
+          "extracted_words": 339,
+          "matched_words": 339,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U16",
+        "filename": "09_DOCX_Academic_Research_CV.docx",
+        "field_metrics": {
+          "tp": 20,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 3,
+          "predicted": 3,
+          "exact": 3,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 204,
+          "extracted_words": 204,
+          "matched_words": 204,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U17",
+        "filename": "10_DOCX_Entry_Level_Business_Analyst.docx",
+        "field_metrics": {
+          "tp": 37,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 4,
+          "predicted": 4,
+          "exact": 4,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 247,
+          "extracted_words": 247,
+          "matched_words": 247,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      },
+      {
+        "id": "U20",
+        "filename": "03_Creative_Product_UX_Designer.docx",
+        "field_metrics": {
+          "tp": 36,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "field_errors": {},
+        "record_grouping": {
+          "expected": 3,
+          "predicted": 3,
+          "exact": 3,
+          "missing_records": 0,
+          "extra_records": 0,
+          "false_merges": 0,
+          "false_splits": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "record_errors": [],
+        "annotated_mapping_pass": true,
+        "strict_audited_document_pass": true,
+        "completeness": {
+          "status": "pass",
+          "reference_words": 261,
+          "extracted_words": 261,
+          "matched_words": 261,
+          "recall": 1.0,
+          "precision": 1.0,
+          "missing": {},
+          "extra": {}
+        },
+        "schema_errors": []
+      }
+    ]
+  }
+}

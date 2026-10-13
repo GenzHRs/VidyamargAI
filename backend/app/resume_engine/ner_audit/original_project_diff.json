@@ -1,0 +1,12 @@
+{
+  "changed": [
+    "README.md",
+    "pyproject.toml",
+    "resume_extract/normalize.py",
+    "resume_extract/pdf_reader.py",
+    "resume_extract/pipeline.py",
+    "resume_extract/validate.py"
+  ],
+  "missing": [],
+  "existing_results_unchanged": true
+}

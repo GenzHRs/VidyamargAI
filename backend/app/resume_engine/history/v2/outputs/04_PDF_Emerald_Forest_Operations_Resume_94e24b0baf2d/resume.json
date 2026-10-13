@@ -1,0 +1,6314 @@
+{
+  "schema_version": "2.0.0",
+  "source": {
+    "filename": "04_PDF_Emerald_Forest_Operations_Resume.pdf",
+    "sha256": "8a28114c043883f515bb055f3cb0c0cbfee3d13134a2eba717a7a0cfbf12a44f",
+    "type": "pdf",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": 1,
+    "reference_method": "pdftotext_raw"
+  },
+  "config_sha256": "031beeb7738829daf3d7dcb73ee91ff7a8ee892f9224c015626f793cc6eafee5",
+  "raw_text": "JULIAN A. MERCER\nDIRECTOR OF BUSINESS OPERATIONS & STRATEGIC INITIATIVES\nBoston, MA • (555) 481-0294 • julian.mercer@example.com • linkedin.com/in/julianmercer-dummy\nCORE COMPETENCY FRAMEWORK\nOperational Strategy\nFinancial Optimization\nCross-Functional Leadership\n• Post-Merger PMI Integration\n• Lean Six Sigma Process Design\n• Operating Model Redesign\n• $85M Budget & OPEX Oversight\n• Vendor Procurement Negotiations\n• Capital Allocation Modeling\n• Executive Stakeholder Alignment\n• OKR Governance & Tracking\n• Org Structuring & Hiring\nOPERATIONAL LEADERSHIP EXPERIENCE\nDirector of Business Operations — Beacon Healthcare Technologies (Boston, MA)\n2021 – Present\n• Spearheaded enterprise transformation plan across 5 regional clinical branches, capturing $11.4M in recurring SG&A; cost savings.\n• Standardized clinical procurement workflows, reducing vendor contract turnaround from 35 days to 8 days.\n• Reported monthly operating review and corporate risk updates directly to Chief Operating Officer and Board.\nEngagement Manager (Strategy & Operations) — Bain & Company (New York, NY)\n2017 – 2021\n• Led 7-member management consulting teams advising Fortune 100 enterprise clients on carve-outs and M&A; integration.\n• Designed organizational restructurings for global manufacturing companies with 4,000+ employees.\nEDUCATION & CREDENTIALS\nMaster of Business Administration (MBA) — Harvard Business School (2017)\nB.A. in Economics — Dartmouth College (2013) • Lean Six Sigma Green Belt",
+  "source_text": "JULIAN A. MERCER\nDIRECTOR OF BUSINESS OPERATIONS & STRATEGIC INITIATIVES\nBoston, MA • (555) 481-0294 • julian.mercer@example.com • linkedin.com/in/julianmercer-dummy\nCORE COMPETENCY FRAMEWORK\nOperational Strategy Financial Optimization Cross-Functional Leadership\n• Post-Merger PMI Integration\n• Lean Six Sigma Process Design\n• Operating Model Redesign\n• $85M Budget & OPEX Oversight\n• Vendor Procurement Negotiations\n• Capital Allocation Modeling\n• Executive Stakeholder Alignment\n• OKR Governance & Tracking\n• Org Structuring & Hiring\nOPERATIONAL LEADERSHIP EXPERIENCE\nDirector of Business Operations — Beacon Healthcare Technologies (Boston, MA)\n2021 – Present\n• Spearheaded enterprise transformation plan across 5 regional clinical branches, capturing $11.4M in recurring SG&A; cost savings.\n• Standardized clinical procurement workflows, reducing vendor contract turnaround from 35 days to 8 days.\n• Reported monthly operating review and corporate risk updates directly to Chief Operating Officer and Board.\nEngagement Manager (Strategy & Operations) — Bain & Company (New York, NY)\n2017 – 2021\n• Led 7-member management consulting teams advising Fortune 100 enterprise clients on carve-outs and M&A; integration.\n• Designed organizational restructurings for global manufacturing companies with 4,000+ employees.\nEDUCATION & CREDENTIALS\nMaster of Business Administration (MBA) — Harvard Business School (2017)\nB.A. in Economics — Dartmouth College (2013) • Lean Six Sigma Green Belt\n\f",
+  "normalized_text": "JULIAN A. MERCER\nDIRECTOR OF BUSINESS OPERATIONS & STRATEGIC INITIATIVES\nBoston, MA • (555) 481-0294 • julian.mercer@example.com • linkedin.com/in/julianmercer-dummy\nCORE COMPETENCY FRAMEWORK\nOperational Strategy\nFinancial Optimization\nCross-Functional Leadership\n• Post-Merger PMI Integration\n• Lean Six Sigma Process Design\n• Operating Model Redesign\n• $85M Budget & OPEX Oversight\n• Vendor Procurement Negotiations\n• Capital Allocation Modeling\n• Executive Stakeholder Alignment\n• OKR Governance & Tracking\n• Org Structuring & Hiring\nOPERATIONAL LEADERSHIP EXPERIENCE\nDirector of Business Operations — Beacon Healthcare Technologies (Boston, MA)\n2021 – Present\n• Spearheaded enterprise transformation plan across 5 regional clinical branches, capturing $11.4M in recurring SG&A; cost savings.\n• Standardized clinical procurement workflows, reducing vendor contract turnaround from 35 days to 8 days.\n• Reported monthly operating review and corporate risk updates directly to Chief Operating Officer and Board.\nEngagement Manager (Strategy & Operations) — Bain & Company (New York, NY)\n2017 – 2021\n• Led 7-member management consulting teams advising Fortune 100 enterprise clients on carve-outs and M&A; integration.\n• Designed organizational restructurings for global manufacturing companies with 4,000+ employees.\nEDUCATION & CREDENTIALS\nMaster of Business Administration (MBA) — Harvard Business School (2017)\nB.A. in Economics — Dartmouth College (2013) • Lean Six Sigma Green Belt",
+  "raw_lines": [
+    {
+      "id": "l00000",
+      "text": "JULIAN A. MERCER",
+      "runs": [
+        {
+          "text": "JULIAN",
+          "bold": true,
+          "size": 20.0,
+          "color": "(1.0, 1.0, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "JULIAN"
+        },
+        {
+          "text": " A.",
+          "bold": true,
+          "size": 20.0,
+          "color": "(1.0, 1.0, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "A."
+        },
+        {
+          "text": " MERCER",
+          "bold": true,
+          "size": 20.0,
+          "color": "(1.0, 1.0, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "MERCER"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        44.0,
+        52.139999999999986,
+        234.0,
+        72.13999999999999
+      ],
+      "part": "body",
+      "flow": "p1T",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00000"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00001",
+      "text": "DIRECTOR OF BUSINESS OPERATIONS & STRATEGIC INITIATIVES",
+      "runs": [
+        {
+          "text": "DIRECTOR",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.992157, 0.878431, 0.278431)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "DIRECTOR"
+        },
+        {
+          "text": " OF",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.992157, 0.878431, 0.278431)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "OF"
+        },
+        {
+          "text": " BUSINESS",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.992157, 0.878431, 0.278431)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "BUSINESS"
+        },
+        {
+          "text": " OPERATIONS",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.992157, 0.878431, 0.278431)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "OPERATIONS"
+        },
+        {
+          "text": " &",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.992157, 0.878431, 0.278431)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " STRATEGIC",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.992157, 0.878431, 0.278431)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "STRATEGIC"
+        },
+        {
+          "text": " INITIATIVES",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.992157, 0.878431, 0.278431)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "INITIATIVES"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        44.0,
+        64.07000000000005,
+        366.81999999999994,
+        74.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1T",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00001"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00002",
+      "text": "Boston, MA • (555) 481-0294 • julian.mercer@example.com • linkedin.com/in/julianmercer-dummy",
+      "runs": [
+        {
+          "text": "Boston,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.92549, 0.992157, 0.960784)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Boston,"
+        },
+        {
+          "text": " MA",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.92549, 0.992157, 0.960784)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "MA"
+        },
+        {
+          "text": " •",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.92549, 0.992157, 0.960784)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " (555)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.92549, 0.992157, 0.960784)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(555)"
+        },
+        {
+          "text": " 481-0294",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.92549, 0.992157, 0.960784)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "481-0294"
+        },
+        {
+          "text": " •",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.92549, 0.992157, 0.960784)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " julian.mercer@example.com",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.92549, 0.992157, 0.960784)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "julian.mercer@example.com"
+        },
+        {
+          "text": " •",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.92549, 0.992157, 0.960784)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " linkedin.com/in/julianmercer-dummy",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.92549, 0.992157, 0.960784)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "linkedin.com/in/julianmercer-dummy"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        44.0,
+        78.7595,
+        403.5924999999998,
+        87.2595
+      ],
+      "part": "body",
+      "flow": "p1T",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00002"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00003",
+      "text": "CORE COMPETENCY FRAMEWORK",
+      "runs": [
+        {
+          "text": "CORE",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.023529, 0.305882, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "CORE"
+        },
+        {
+          "text": " COMPETENCY",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.023529, 0.305882, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "COMPETENCY"
+        },
+        {
+          "text": " FRAMEWORK",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.023529, 0.305882, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "FRAMEWORK"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        106.9665,
+        199.60899999999998,
+        116.4665
+      ],
+      "part": "body",
+      "flow": "p1BT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00003"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00004",
+      "text": "Operational Strategy",
+      "runs": [
+        {
+          "text": "Operational",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Operational"
+        },
+        {
+          "text": " Strategy",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Strategy"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        128.07000000000005,
+        134.36,
+        138.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1:t0:r0:c0",
+      "table": "p1:t0",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00004"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00005",
+      "text": "Financial Optimization",
+      "runs": [
+        {
+          "text": "Financial",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Financial"
+        },
+        {
+          "text": " Optimization",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Optimization"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        220.0,
+        128.07000000000005,
+        326.69000000000005,
+        138.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1:t0:r0:c1",
+      "table": "p1:t0",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00005"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00006",
+      "text": "Cross-Functional Leadership",
+      "runs": [
+        {
+          "text": "Cross-Functional",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Cross-Functional"
+        },
+        {
+          "text": " Leadership",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Leadership"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        404.0,
+        128.07000000000005,
+        542.36,
+        138.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1:t0:r0:c2",
+      "table": "p1:t0",
+      "row": 0,
+      "cell": 2,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00006"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00007",
+      "text": "• Post-Merger PMI Integration",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Post-Merger",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Post-Merger"
+        },
+        {
+          "text": " PMI",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "PMI"
+        },
+        {
+          "text": " Integration",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Integration"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        149.65599999999995,
+        138.70400000000004,
+        157.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1:t0:r1:c0",
+      "table": "p1:t0",
+      "row": 1,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00007"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00008",
+      "text": "• Lean Six Sigma Process Design",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Lean",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Lean"
+        },
+        {
+          "text": " Six",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Six"
+        },
+        {
+          "text": " Sigma",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Sigma"
+        },
+        {
+          "text": " Process",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Process"
+        },
+        {
+          "text": " Design",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Design"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        161.65599999999995,
+        152.48800000000003,
+        169.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1:t0:r1:c0",
+      "table": "p1:t0",
+      "row": 1,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00008"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00009",
+      "text": "• Operating Model Redesign",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Operating",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Operating"
+        },
+        {
+          "text": " Model",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Model"
+        },
+        {
+          "text": " Redesign",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Redesign"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        173.65599999999995,
+        133.37600000000003,
+        181.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1:t0:r1:c0",
+      "table": "p1:t0",
+      "row": 1,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00009"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00010",
+      "text": "• $85M Budget & OPEX Oversight",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " $85M",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "$85M"
+        },
+        {
+          "text": " Budget",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Budget"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " OPEX",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "OPEX"
+        },
+        {
+          "text": " Oversight",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Oversight"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        220.0,
+        149.65599999999995,
+        338.28000000000003,
+        157.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1:t0:r1:c1",
+      "table": "p1:t0",
+      "row": 1,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00010"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00011",
+      "text": "• Vendor Procurement Negotiations",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Vendor",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Vendor"
+        },
+        {
+          "text": " Procurement",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Procurement"
+        },
+        {
+          "text": " Negotiations",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Negotiations"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        220.0,
+        161.65599999999995,
+        342.72,
+        169.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1:t0:r1:c1",
+      "table": "p1:t0",
+      "row": 1,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00011"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00012",
+      "text": "• Capital Allocation Modeling",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Capital",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Capital"
+        },
+        {
+          "text": " Allocation",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Allocation"
+        },
+        {
+          "text": " Modeling",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Modeling"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        220.0,
+        173.65599999999995,
+        318.704,
+        181.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1:t0:r1:c1",
+      "table": "p1:t0",
+      "row": 1,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00012"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00013",
+      "text": "• Executive Stakeholder Alignment",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Executive",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Executive"
+        },
+        {
+          "text": " Stakeholder",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Stakeholder"
+        },
+        {
+          "text": " Alignment",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Alignment"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        404.0,
+        149.65599999999995,
+        523.6080000000001,
+        157.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1:t0:r1:c2",
+      "table": "p1:t0",
+      "row": 1,
+      "cell": 2,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00013"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00014",
+      "text": "• OKR Governance & Tracking",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " OKR",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "OKR"
+        },
+        {
+          "text": " Governance",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Governance"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Tracking",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Tracking"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        404.0,
+        161.65599999999995,
+        509.81600000000003,
+        169.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1:t0:r1:c2",
+      "table": "p1:t0",
+      "row": 1,
+      "cell": 2,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00014"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00015",
+      "text": "• Org Structuring & Hiring",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Org",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Org"
+        },
+        {
+          "text": " Structuring",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Structuring"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Hiring",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Hiring"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        404.0,
+        173.65599999999995,
+        491.13599999999997,
+        181.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1:t0:r1:c2",
+      "table": "p1:t0",
+      "row": 1,
+      "cell": 2,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00015"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00016",
+      "text": "OPERATIONAL LEADERSHIP EXPERIENCE",
+      "runs": [
+        {
+          "text": "OPERATIONAL",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.023529, 0.305882, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "OPERATIONAL"
+        },
+        {
+          "text": " LEADERSHIP",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.023529, 0.305882, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "LEADERSHIP"
+        },
+        {
+          "text": " EXPERIENCE",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.023529, 0.305882, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "EXPERIENCE"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        198.9665,
+        232.88750000000002,
+        208.4665
+      ],
+      "part": "body",
+      "flow": "p1BT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00016"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00017",
+      "text": "Director of Business Operations — Beacon Healthcare Technologies (Boston, MA)",
+      "runs": [
+        {
+          "text": "Director",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Director"
+        },
+        {
+          "text": " of",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "of"
+        },
+        {
+          "text": " Business",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Business"
+        },
+        {
+          "text": " Operations",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Operations"
+        },
+        {
+          "text": " —",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "—"
+        },
+        {
+          "text": " Beacon",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Beacon"
+        },
+        {
+          "text": " Healthcare",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Healthcare"
+        },
+        {
+          "text": " Technologies",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Technologies"
+        },
+        {
+          "text": " (Boston,",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(Boston,"
+        },
+        {
+          "text": " MA)",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "MA)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        215.07000000000005,
+        413.35,
+        225.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1BT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00017"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00018",
+      "text": "2021 – Present",
+      "runs": [
+        {
+          "text": "2021",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2021"
+        },
+        {
+          "text": " –",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "–"
+        },
+        {
+          "text": " Present",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "Present"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        227.07000000000005,
+        103.82000000000001,
+        237.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1BT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00018"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00019",
+      "text": "• Spearheaded enterprise transformation plan across 5 regional clinical branches, capturing $11.4M in recurring SG&A; cost savings.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Spearheaded",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Spearheaded"
+        },
+        {
+          "text": " enterprise",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "enterprise"
+        },
+        {
+          "text": " transformation",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "transformation"
+        },
+        {
+          "text": " plan",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "plan"
+        },
+        {
+          "text": " across",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "across"
+        },
+        {
+          "text": " 5",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "5"
+        },
+        {
+          "text": " regional",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "regional"
+        },
+        {
+          "text": " clinical",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "clinical"
+        },
+        {
+          "text": " branches,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "branches,"
+        },
+        {
+          "text": " capturing",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "capturing"
+        },
+        {
+          "text": " $11.4M",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "$11.4M"
+        },
+        {
+          "text": " in",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "in"
+        },
+        {
+          "text": " recurring",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "recurring"
+        },
+        {
+          "text": " SG&A;",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "SG&A;"
+        },
+        {
+          "text": " cost",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "cost"
+        },
+        {
+          "text": " savings.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "savings."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        238.65599999999995,
+        502.8639999999995,
+        246.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00019"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00020",
+      "text": "• Standardized clinical procurement workflows, reducing vendor contract turnaround from 35 days to 8 days.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Standardized",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Standardized"
+        },
+        {
+          "text": " clinical",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "clinical"
+        },
+        {
+          "text": " procurement",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "procurement"
+        },
+        {
+          "text": " workflows,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "workflows,"
+        },
+        {
+          "text": " reducing",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "reducing"
+        },
+        {
+          "text": " vendor",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "vendor"
+        },
+        {
+          "text": " contract",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "contract"
+        },
+        {
+          "text": " turnaround",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "turnaround"
+        },
+        {
+          "text": " from",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "from"
+        },
+        {
+          "text": " 35",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "35"
+        },
+        {
+          "text": " days",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "days"
+        },
+        {
+          "text": " to",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "to"
+        },
+        {
+          "text": " 8",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "8"
+        },
+        {
+          "text": " days.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "days."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        250.65599999999995,
+        414.82399999999956,
+        258.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00020"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00021",
+      "text": "• Reported monthly operating review and corporate risk updates directly to Chief Operating Officer and Board.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Reported",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Reported"
+        },
+        {
+          "text": " monthly",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "monthly"
+        },
+        {
+          "text": " operating",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "operating"
+        },
+        {
+          "text": " review",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "review"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " corporate",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "corporate"
+        },
+        {
+          "text": " risk",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "risk"
+        },
+        {
+          "text": " updates",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "updates"
+        },
+        {
+          "text": " directly",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "directly"
+        },
+        {
+          "text": " to",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "to"
+        },
+        {
+          "text": " Chief",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Chief"
+        },
+        {
+          "text": " Operating",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Operating"
+        },
+        {
+          "text": " Officer",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Officer"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " Board.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Board."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        262.65599999999995,
+        421.05599999999964,
+        270.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00021"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00022",
+      "text": "Engagement Manager (Strategy & Operations) — Bain & Company (New York, NY)",
+      "runs": [
+        {
+          "text": "Engagement",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Engagement"
+        },
+        {
+          "text": " Manager",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Manager"
+        },
+        {
+          "text": " (Strategy",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "(Strategy"
+        },
+        {
+          "text": " &",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Operations)",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Operations)"
+        },
+        {
+          "text": " —",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "—"
+        },
+        {
+          "text": " Bain",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Bain"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Company",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Company"
+        },
+        {
+          "text": " (New",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(New"
+        },
+        {
+          "text": " York,",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "York,"
+        },
+        {
+          "text": " NY)",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "NY)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        281.07,
+        417.75000000000006,
+        291.07
+      ],
+      "part": "body",
+      "flow": "p1BBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00022"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00023",
+      "text": "2017 – 2021",
+      "runs": [
+        {
+          "text": "2017",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2017"
+        },
+        {
+          "text": " –",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "–"
+        },
+        {
+          "text": " 2021",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2021"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        293.07,
+        91.60000000000002,
+        303.07
+      ],
+      "part": "body",
+      "flow": "p1BBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00023"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00024",
+      "text": "• Led 7-member management consulting teams advising Fortune 100 enterprise clients on carve-outs and M&A; integration.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Led",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Led"
+        },
+        {
+          "text": " 7-member",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "7-member"
+        },
+        {
+          "text": " management",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "management"
+        },
+        {
+          "text": " consulting",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "consulting"
+        },
+        {
+          "text": " teams",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "teams"
+        },
+        {
+          "text": " advising",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "advising"
+        },
+        {
+          "text": " Fortune",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Fortune"
+        },
+        {
+          "text": " 100",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "100"
+        },
+        {
+          "text": " enterprise",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "enterprise"
+        },
+        {
+          "text": " clients",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "clients"
+        },
+        {
+          "text": " on",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "on"
+        },
+        {
+          "text": " carve-outs",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "carve-outs"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " M&A;",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "M&A;"
+        },
+        {
+          "text": " integration.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "integration."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        304.656,
+        470.8559999999996,
+        312.656
+      ],
+      "part": "body",
+      "flow": "p1BBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00024"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00025",
+      "text": "• Designed organizational restructurings for global manufacturing companies with 4,000+ employees.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Designed",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Designed"
+        },
+        {
+          "text": " organizational",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "organizational"
+        },
+        {
+          "text": " restructurings",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "restructurings"
+        },
+        {
+          "text": " for",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "for"
+        },
+        {
+          "text": " global",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "global"
+        },
+        {
+          "text": " manufacturing",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "manufacturing"
+        },
+        {
+          "text": " companies",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "companies"
+        },
+        {
+          "text": " with",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "with"
+        },
+        {
+          "text": " 4,000+",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "4,000+"
+        },
+        {
+          "text": " employees.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "employees."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        316.656,
+        390.1519999999998,
+        324.656
+      ],
+      "part": "body",
+      "flow": "p1BBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00025"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00026",
+      "text": "EDUCATION & CREDENTIALS",
+      "runs": [
+        {
+          "text": "EDUCATION",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.023529, 0.305882, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "EDUCATION"
+        },
+        {
+          "text": " &",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.023529, 0.305882, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " CREDENTIALS",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.023529, 0.305882, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "CREDENTIALS"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        334.9665,
+        172.16349999999997,
+        344.4665
+      ],
+      "part": "body",
+      "flow": "p1BBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00026"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00027",
+      "text": "Master of Business Administration (MBA) — Harvard Business School (2017)",
+      "runs": [
+        {
+          "text": "Master",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Master"
+        },
+        {
+          "text": " of",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "of"
+        },
+        {
+          "text": " Business",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Business"
+        },
+        {
+          "text": " Administration",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Administration"
+        },
+        {
+          "text": " (MBA)",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "(MBA)"
+        },
+        {
+          "text": " —",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "—"
+        },
+        {
+          "text": " Harvard",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Harvard"
+        },
+        {
+          "text": " Business",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Business"
+        },
+        {
+          "text": " School",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "School"
+        },
+        {
+          "text": " (2017)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(2017)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        350.7595,
+        339.2289999999999,
+        359.2595
+      ],
+      "part": "body",
+      "flow": "p1BBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00027"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00028",
+      "text": "B.A. in Economics — Dartmouth College (2013) • Lean Six Sigma Green Belt",
+      "runs": [
+        {
+          "text": "B.A.",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "B.A."
+        },
+        {
+          "text": " in",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "in"
+        },
+        {
+          "text": " Economics",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Economics"
+        },
+        {
+          "text": " —",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "—"
+        },
+        {
+          "text": " Dartmouth",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Dartmouth"
+        },
+        {
+          "text": " College",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "College"
+        },
+        {
+          "text": " (2013)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(2013)"
+        },
+        {
+          "text": " •",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Lean",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Lean"
+        },
+        {
+          "text": " Six",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Six"
+        },
+        {
+          "text": " Sigma",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Sigma"
+        },
+        {
+          "text": " Green",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Green"
+        },
+        {
+          "text": " Belt",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Belt"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        362.7595,
+        328.8845,
+        371.2595
+      ],
+      "part": "body",
+      "flow": "p1BBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00028"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    }
+  ],
+  "lines": [
+    {
+      "id": "l00000",
+      "text": "JULIAN A. MERCER",
+      "runs": [
+        {
+          "text": "JULIAN",
+          "bold": true,
+          "size": 20.0,
+          "color": "(1.0, 1.0, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "JULIAN"
+        },
+        {
+          "text": " A.",
+          "bold": true,
+          "size": 20.0,
+          "color": "(1.0, 1.0, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "A."
+        },
+        {
+          "text": " MERCER",
+          "bold": true,
+          "size": 20.0,
+          "color": "(1.0, 1.0, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "MERCER"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        44.0,
+        52.139999999999986,
+        234.0,
+        72.13999999999999
+      ],
+      "part": "body",
+      "flow": "p1T",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TITLE",
+      "source_ids": [
+        "l00000"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.92
+    },
+    {
+      "id": "l00001",
+      "text": "DIRECTOR OF BUSINESS OPERATIONS & STRATEGIC INITIATIVES",
+      "runs": [
+        {
+          "text": "DIRECTOR",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.992157, 0.878431, 0.278431)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "DIRECTOR"
+        },
+        {
+          "text": " OF",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.992157, 0.878431, 0.278431)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "OF"
+        },
+        {
+          "text": " BUSINESS",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.992157, 0.878431, 0.278431)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "BUSINESS"
+        },
+        {
+          "text": " OPERATIONS",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.992157, 0.878431, 0.278431)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "OPERATIONS"
+        },
+        {
+          "text": " &",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.992157, 0.878431, 0.278431)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " STRATEGIC",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.992157, 0.878431, 0.278431)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "STRATEGIC"
+        },
+        {
+          "text": " INITIATIVES",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.992157, 0.878431, 0.278431)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "INITIATIVES"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        44.0,
+        64.07000000000005,
+        366.81999999999994,
+        74.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1T",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "SUBTITLE",
+      "source_ids": [
+        "l00001"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00002",
+      "text": "Boston, MA • (555) 481-0294 • julian.mercer@example.com • linkedin.com/in/julianmercer-dummy",
+      "runs": [
+        {
+          "text": "Boston,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.92549, 0.992157, 0.960784)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Boston,"
+        },
+        {
+          "text": " MA",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.92549, 0.992157, 0.960784)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "MA"
+        },
+        {
+          "text": " •",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.92549, 0.992157, 0.960784)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " (555)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.92549, 0.992157, 0.960784)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(555)"
+        },
+        {
+          "text": " 481-0294",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.92549, 0.992157, 0.960784)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "481-0294"
+        },
+        {
+          "text": " •",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.92549, 0.992157, 0.960784)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " julian.mercer@example.com",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.92549, 0.992157, 0.960784)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "julian.mercer@example.com"
+        },
+        {
+          "text": " •",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.92549, 0.992157, 0.960784)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " linkedin.com/in/julianmercer-dummy",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.92549, 0.992157, 0.960784)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "linkedin.com/in/julianmercer-dummy"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        44.0,
+        78.7595,
+        403.5924999999998,
+        87.2595
+      ],
+      "part": "body",
+      "flow": "p1T",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00002"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00003",
+      "text": "CORE COMPETENCY FRAMEWORK",
+      "runs": [
+        {
+          "text": "CORE",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.023529, 0.305882, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "CORE"
+        },
+        {
+          "text": " COMPETENCY",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.023529, 0.305882, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "COMPETENCY"
+        },
+        {
+          "text": " FRAMEWORK",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.023529, 0.305882, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "FRAMEWORK"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        106.9665,
+        199.60899999999998,
+        116.4665
+      ],
+      "part": "body",
+      "flow": "p1BT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00003"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00004",
+      "text": "Operational Strategy",
+      "runs": [
+        {
+          "text": "Operational",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Operational"
+        },
+        {
+          "text": " Strategy",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Strategy"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        128.07000000000005,
+        134.36,
+        138.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1:t0:r0:c0",
+      "table": "p1:t0",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00004"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00005",
+      "text": "Financial Optimization",
+      "runs": [
+        {
+          "text": "Financial",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Financial"
+        },
+        {
+          "text": " Optimization",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Optimization"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        220.0,
+        128.07000000000005,
+        326.69000000000005,
+        138.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1:t0:r0:c1",
+      "table": "p1:t0",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00005"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00006",
+      "text": "Cross-Functional Leadership",
+      "runs": [
+        {
+          "text": "Cross-Functional",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Cross-Functional"
+        },
+        {
+          "text": " Leadership",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Leadership"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        404.0,
+        128.07000000000005,
+        542.36,
+        138.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1:t0:r0:c2",
+      "table": "p1:t0",
+      "row": 0,
+      "cell": 2,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00006"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00007",
+      "text": "• Post-Merger PMI Integration",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Post-Merger",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Post-Merger"
+        },
+        {
+          "text": " PMI",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "PMI"
+        },
+        {
+          "text": " Integration",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Integration"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        149.65599999999995,
+        138.70400000000004,
+        157.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1:t0:r1:c0",
+      "table": "p1:t0",
+      "row": 1,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00007"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00008",
+      "text": "• Lean Six Sigma Process Design",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Lean",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Lean"
+        },
+        {
+          "text": " Six",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Six"
+        },
+        {
+          "text": " Sigma",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Sigma"
+        },
+        {
+          "text": " Process",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Process"
+        },
+        {
+          "text": " Design",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Design"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        161.65599999999995,
+        152.48800000000003,
+        169.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1:t0:r1:c0",
+      "table": "p1:t0",
+      "row": 1,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00008"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00009",
+      "text": "• Operating Model Redesign",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Operating",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Operating"
+        },
+        {
+          "text": " Model",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Model"
+        },
+        {
+          "text": " Redesign",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Redesign"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        173.65599999999995,
+        133.37600000000003,
+        181.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1:t0:r1:c0",
+      "table": "p1:t0",
+      "row": 1,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00009"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00010",
+      "text": "• $85M Budget & OPEX Oversight",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " $85M",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "$85M"
+        },
+        {
+          "text": " Budget",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Budget"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " OPEX",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "OPEX"
+        },
+        {
+          "text": " Oversight",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Oversight"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        220.0,
+        149.65599999999995,
+        338.28000000000003,
+        157.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1:t0:r1:c1",
+      "table": "p1:t0",
+      "row": 1,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00010"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00011",
+      "text": "• Vendor Procurement Negotiations",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Vendor",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Vendor"
+        },
+        {
+          "text": " Procurement",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Procurement"
+        },
+        {
+          "text": " Negotiations",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Negotiations"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        220.0,
+        161.65599999999995,
+        342.72,
+        169.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1:t0:r1:c1",
+      "table": "p1:t0",
+      "row": 1,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00011"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00012",
+      "text": "• Capital Allocation Modeling",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Capital",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Capital"
+        },
+        {
+          "text": " Allocation",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Allocation"
+        },
+        {
+          "text": " Modeling",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Modeling"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        220.0,
+        173.65599999999995,
+        318.704,
+        181.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1:t0:r1:c1",
+      "table": "p1:t0",
+      "row": 1,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00012"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00013",
+      "text": "• Executive Stakeholder Alignment",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Executive",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Executive"
+        },
+        {
+          "text": " Stakeholder",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Stakeholder"
+        },
+        {
+          "text": " Alignment",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Alignment"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        404.0,
+        149.65599999999995,
+        523.6080000000001,
+        157.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1:t0:r1:c2",
+      "table": "p1:t0",
+      "row": 1,
+      "cell": 2,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00013"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00014",
+      "text": "• OKR Governance & Tracking",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " OKR",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "OKR"
+        },
+        {
+          "text": " Governance",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Governance"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Tracking",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Tracking"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        404.0,
+        161.65599999999995,
+        509.81600000000003,
+        169.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1:t0:r1:c2",
+      "table": "p1:t0",
+      "row": 1,
+      "cell": 2,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00014"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00015",
+      "text": "• Org Structuring & Hiring",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Org",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Org"
+        },
+        {
+          "text": " Structuring",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Structuring"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Hiring",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Hiring"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        404.0,
+        173.65599999999995,
+        491.13599999999997,
+        181.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1:t0:r1:c2",
+      "table": "p1:t0",
+      "row": 1,
+      "cell": 2,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00015"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00016",
+      "text": "OPERATIONAL LEADERSHIP EXPERIENCE",
+      "runs": [
+        {
+          "text": "OPERATIONAL",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.023529, 0.305882, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "OPERATIONAL"
+        },
+        {
+          "text": " LEADERSHIP",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.023529, 0.305882, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "LEADERSHIP"
+        },
+        {
+          "text": " EXPERIENCE",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.023529, 0.305882, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "EXPERIENCE"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        198.9665,
+        232.88750000000002,
+        208.4665
+      ],
+      "part": "body",
+      "flow": "p1BT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00016"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00017",
+      "text": "Director of Business Operations — Beacon Healthcare Technologies (Boston, MA)",
+      "runs": [
+        {
+          "text": "Director",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Director"
+        },
+        {
+          "text": " of",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "of"
+        },
+        {
+          "text": " Business",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Business"
+        },
+        {
+          "text": " Operations",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Operations"
+        },
+        {
+          "text": " —",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "—"
+        },
+        {
+          "text": " Beacon",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Beacon"
+        },
+        {
+          "text": " Healthcare",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Healthcare"
+        },
+        {
+          "text": " Technologies",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Technologies"
+        },
+        {
+          "text": " (Boston,",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(Boston,"
+        },
+        {
+          "text": " MA)",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "MA)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        215.07000000000005,
+        413.35,
+        225.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1BT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00017"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00018",
+      "text": "2021 – Present",
+      "runs": [
+        {
+          "text": "2021",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2021"
+        },
+        {
+          "text": " –",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "–"
+        },
+        {
+          "text": " Present",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "Present"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        227.07000000000005,
+        103.82000000000001,
+        237.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1BT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00018"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00019",
+      "text": "• Spearheaded enterprise transformation plan across 5 regional clinical branches, capturing $11.4M in recurring SG&A; cost savings.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Spearheaded",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Spearheaded"
+        },
+        {
+          "text": " enterprise",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "enterprise"
+        },
+        {
+          "text": " transformation",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "transformation"
+        },
+        {
+          "text": " plan",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "plan"
+        },
+        {
+          "text": " across",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "across"
+        },
+        {
+          "text": " 5",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "5"
+        },
+        {
+          "text": " regional",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "regional"
+        },
+        {
+          "text": " clinical",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "clinical"
+        },
+        {
+          "text": " branches,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "branches,"
+        },
+        {
+          "text": " capturing",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "capturing"
+        },
+        {
+          "text": " $11.4M",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "$11.4M"
+        },
+        {
+          "text": " in",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "in"
+        },
+        {
+          "text": " recurring",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "recurring"
+        },
+        {
+          "text": " SG&A;",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "SG&A;"
+        },
+        {
+          "text": " cost",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "cost"
+        },
+        {
+          "text": " savings.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "savings."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        238.65599999999995,
+        502.8639999999995,
+        246.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00019"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00020",
+      "text": "• Standardized clinical procurement workflows, reducing vendor contract turnaround from 35 days to 8 days.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Standardized",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Standardized"
+        },
+        {
+          "text": " clinical",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "clinical"
+        },
+        {
+          "text": " procurement",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "procurement"
+        },
+        {
+          "text": " workflows,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "workflows,"
+        },
+        {
+          "text": " reducing",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "reducing"
+        },
+        {
+          "text": " vendor",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "vendor"
+        },
+        {
+          "text": " contract",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "contract"
+        },
+        {
+          "text": " turnaround",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "turnaround"
+        },
+        {
+          "text": " from",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "from"
+        },
+        {
+          "text": " 35",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "35"
+        },
+        {
+          "text": " days",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "days"
+        },
+        {
+          "text": " to",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "to"
+        },
+        {
+          "text": " 8",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "8"
+        },
+        {
+          "text": " days.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "days."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        250.65599999999995,
+        414.82399999999956,
+        258.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00020"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00021",
+      "text": "• Reported monthly operating review and corporate risk updates directly to Chief Operating Officer and Board.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Reported",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Reported"
+        },
+        {
+          "text": " monthly",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "monthly"
+        },
+        {
+          "text": " operating",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "operating"
+        },
+        {
+          "text": " review",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "review"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " corporate",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "corporate"
+        },
+        {
+          "text": " risk",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "risk"
+        },
+        {
+          "text": " updates",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "updates"
+        },
+        {
+          "text": " directly",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "directly"
+        },
+        {
+          "text": " to",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "to"
+        },
+        {
+          "text": " Chief",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Chief"
+        },
+        {
+          "text": " Operating",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Operating"
+        },
+        {
+          "text": " Officer",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Officer"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " Board.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Board."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        262.65599999999995,
+        421.05599999999964,
+        270.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00021"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00022",
+      "text": "Engagement Manager (Strategy & Operations) — Bain & Company (New York, NY)",
+      "runs": [
+        {
+          "text": "Engagement",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Engagement"
+        },
+        {
+          "text": " Manager",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Manager"
+        },
+        {
+          "text": " (Strategy",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "(Strategy"
+        },
+        {
+          "text": " &",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Operations)",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Operations)"
+        },
+        {
+          "text": " —",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "—"
+        },
+        {
+          "text": " Bain",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Bain"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Company",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Company"
+        },
+        {
+          "text": " (New",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(New"
+        },
+        {
+          "text": " York,",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "York,"
+        },
+        {
+          "text": " NY)",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "NY)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        281.07,
+        417.75000000000006,
+        291.07
+      ],
+      "part": "body",
+      "flow": "p1BBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00022"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00023",
+      "text": "2017 – 2021",
+      "runs": [
+        {
+          "text": "2017",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2017"
+        },
+        {
+          "text": " –",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "–"
+        },
+        {
+          "text": " 2021",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2021"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        293.07,
+        91.60000000000002,
+        303.07
+      ],
+      "part": "body",
+      "flow": "p1BBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00023"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00024",
+      "text": "• Led 7-member management consulting teams advising Fortune 100 enterprise clients on carve-outs and M&A; integration.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Led",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Led"
+        },
+        {
+          "text": " 7-member",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "7-member"
+        },
+        {
+          "text": " management",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "management"
+        },
+        {
+          "text": " consulting",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "consulting"
+        },
+        {
+          "text": " teams",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "teams"
+        },
+        {
+          "text": " advising",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "advising"
+        },
+        {
+          "text": " Fortune",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Fortune"
+        },
+        {
+          "text": " 100",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "100"
+        },
+        {
+          "text": " enterprise",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "enterprise"
+        },
+        {
+          "text": " clients",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "clients"
+        },
+        {
+          "text": " on",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "on"
+        },
+        {
+          "text": " carve-outs",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "carve-outs"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " M&A;",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "M&A;"
+        },
+        {
+          "text": " integration.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "integration."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        304.656,
+        470.8559999999996,
+        312.656
+      ],
+      "part": "body",
+      "flow": "p1BBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00024"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00025",
+      "text": "• Designed organizational restructurings for global manufacturing companies with 4,000+ employees.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Designed",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Designed"
+        },
+        {
+          "text": " organizational",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "organizational"
+        },
+        {
+          "text": " restructurings",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "restructurings"
+        },
+        {
+          "text": " for",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "for"
+        },
+        {
+          "text": " global",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "global"
+        },
+        {
+          "text": " manufacturing",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "manufacturing"
+        },
+        {
+          "text": " companies",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "companies"
+        },
+        {
+          "text": " with",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "with"
+        },
+        {
+          "text": " 4,000+",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "4,000+"
+        },
+        {
+          "text": " employees.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "employees."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        316.656,
+        390.1519999999998,
+        324.656
+      ],
+      "part": "body",
+      "flow": "p1BBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00025"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00026",
+      "text": "EDUCATION & CREDENTIALS",
+      "runs": [
+        {
+          "text": "EDUCATION",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.023529, 0.305882, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "EDUCATION"
+        },
+        {
+          "text": " &",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.023529, 0.305882, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " CREDENTIALS",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.023529, 0.305882, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "CREDENTIALS"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        334.9665,
+        172.16349999999997,
+        344.4665
+      ],
+      "part": "body",
+      "flow": "p1BBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00026"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00027",
+      "text": "Master of Business Administration (MBA) — Harvard Business School (2017)",
+      "runs": [
+        {
+          "text": "Master",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Master"
+        },
+        {
+          "text": " of",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "of"
+        },
+        {
+          "text": " Business",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Business"
+        },
+        {
+          "text": " Administration",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Administration"
+        },
+        {
+          "text": " (MBA)",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "(MBA)"
+        },
+        {
+          "text": " —",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "—"
+        },
+        {
+          "text": " Harvard",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Harvard"
+        },
+        {
+          "text": " Business",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Business"
+        },
+        {
+          "text": " School",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "School"
+        },
+        {
+          "text": " (2017)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(2017)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        350.7595,
+        339.2289999999999,
+        359.2595
+      ],
+      "part": "body",
+      "flow": "p1BBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00027"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00028",
+      "text": "B.A. in Economics — Dartmouth College (2013) • Lean Six Sigma Green Belt",
+      "runs": [
+        {
+          "text": "B.A.",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "B.A."
+        },
+        {
+          "text": " in",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "in"
+        },
+        {
+          "text": " Economics",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Economics"
+        },
+        {
+          "text": " —",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "—"
+        },
+        {
+          "text": " Dartmouth",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Dartmouth"
+        },
+        {
+          "text": " College",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "College"
+        },
+        {
+          "text": " (2013)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(2013)"
+        },
+        {
+          "text": " •",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Lean",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Lean"
+        },
+        {
+          "text": " Six",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Six"
+        },
+        {
+          "text": " Sigma",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Sigma"
+        },
+        {
+          "text": " Green",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Green"
+        },
+        {
+          "text": " Belt",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Belt"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        36.0,
+        362.7595,
+        328.8845,
+        371.2595
+      ],
+      "part": "body",
+      "flow": "p1BBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00028"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    }
+  ],
+  "sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "JULIAN A. MERCER\nDIRECTOR OF BUSINESS OPERATIONS & STRATEGIC INITIATIVES\nBoston, MA • (555) 481-0294 • julian.mercer@example.com • linkedin.com/in/julianmercer-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "skills",
+      "original_heading": "CORE COMPETENCY FRAMEWORK",
+      "heading_line_id": "l00003",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00004",
+        "l00005",
+        "l00006",
+        "l00007",
+        "l00008",
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015"
+      ],
+      "text": "Operational Strategy\nFinancial Optimization\nCross-Functional Leadership\n• Post-Merger PMI Integration\n• Lean Six Sigma Process Design\n• Operating Model Redesign\n• $85M Budget & OPEX Oversight\n• Vendor Procurement Negotiations\n• Capital Allocation Modeling\n• Executive Stakeholder Alignment\n• OKR Governance & Tracking\n• Org Structuring & Hiring"
+    },
+    {
+      "id": "s002",
+      "canonical": "experience",
+      "original_heading": "OPERATIONAL LEADERSHIP EXPERIENCE",
+      "heading_line_id": "l00016",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025"
+      ],
+      "text": "Director of Business Operations — Beacon Healthcare Technologies (Boston, MA)\n2021 – Present\n• Spearheaded enterprise transformation plan across 5 regional clinical branches, capturing $11.4M in recurring SG&A; cost savings.\n• Standardized clinical procurement workflows, reducing vendor contract turnaround from 35 days to 8 days.\n• Reported monthly operating review and corporate risk updates directly to Chief Operating Officer and Board.\nEngagement Manager (Strategy & Operations) — Bain & Company (New York, NY)\n2017 – 2021\n• Led 7-member management consulting teams advising Fortune 100 enterprise clients on carve-outs and M&A; integration.\n• Designed organizational restructurings for global manufacturing companies with 4,000+ employees."
+    },
+    {
+      "id": "s003",
+      "canonical": "education",
+      "original_heading": "EDUCATION & CREDENTIALS",
+      "heading_line_id": "l00026",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00027",
+        "l00028"
+      ],
+      "text": "Master of Business Administration (MBA) — Harvard Business School (2017)\nB.A. in Economics — Dartmouth College (2013) • Lean Six Sigma Green Belt"
+    }
+  ],
+  "fields": {
+    "name": {
+      "value": "JULIAN A. MERCER",
+      "confidence": 0.92,
+      "source_line_ids": [
+        "l00000"
+      ]
+    },
+    "emails": [
+      {
+        "value": "julian.mercer@example.com",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalization": "none",
+        "raw": "Boston, MA • (555) 481-0294 • julian.mercer@example.com • linkedin.com/in/julianmercer-dummy"
+      }
+    ],
+    "phones": [
+      {
+        "value": "(555) 481-0294",
+        "confidence": 0.7,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalized": "+15554810294",
+        "valid": false
+      }
+    ],
+    "urls": [
+      {
+        "value": "linkedin.com/in/julianmercer-dummy",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "kind": "linkedin"
+      }
+    ],
+    "locations": [
+      {
+        "value": "Boston, MA",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00002"
+        ]
+      }
+    ],
+    "date_ranges": [
+      {
+        "value": {
+          "start": "2021",
+          "end": "Present"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00018"
+        ],
+        "raw": "2021 – Present"
+      },
+      {
+        "value": {
+          "start": "2017",
+          "end": "2021"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00023"
+        ],
+        "raw": "2017 – 2021"
+      }
+    ],
+    "degrees": [
+      {
+        "value": "Master of Business Administration",
+        "confidence": 0.94,
+        "source_line_ids": [
+          "l00027"
+        ]
+      },
+      {
+        "value": "MBA",
+        "confidence": 0.94,
+        "source_line_ids": [
+          "l00027"
+        ]
+      },
+      {
+        "value": "B.A. in Economics",
+        "confidence": 0.94,
+        "source_line_ids": [
+          "l00028"
+        ]
+      }
+    ],
+    "gpas": [],
+    "skills": [
+      {
+        "value": "Lean Six Sigma",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00008"
+        ],
+        "matched_alias": "Lean Six Sigma"
+      },
+      {
+        "value": "Procurement",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00011"
+        ],
+        "matched_alias": "Procurement"
+      }
+    ],
+    "experience": [
+      {
+        "title": {
+          "value": "Director of Business Operations",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00017"
+          ]
+        },
+        "company": {
+          "value": "Beacon Healthcare Technologies",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00017"
+          ]
+        },
+        "location": {
+          "value": "Boston, MA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00017"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2021",
+            "end": "Present"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00018"
+          ]
+        },
+        "bullets": [
+          "• Spearheaded enterprise transformation plan across 5 regional clinical branches, capturing $11.4M in recurring SG&A; cost savings.",
+          "• Standardized clinical procurement workflows, reducing vendor contract turnaround from 35 days to 8 days.",
+          "• Reported monthly operating review and corporate risk updates directly to Chief Operating Officer and Board."
+        ],
+        "text": "Director of Business Operations — Beacon Healthcare Technologies (Boston, MA)\n2021 – Present\n• Spearheaded enterprise transformation plan across 5 regional clinical branches, capturing $11.4M in recurring SG&A; cost savings.\n• Standardized clinical procurement workflows, reducing vendor contract turnaround from 35 days to 8 days.\n• Reported monthly operating review and corporate risk updates directly to Chief Operating Officer and Board.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00017",
+          "l00018",
+          "l00019",
+          "l00020",
+          "l00021"
+        ]
+      },
+      {
+        "title": {
+          "value": "Engagement Manager (Strategy & Operations)",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00022"
+          ]
+        },
+        "company": {
+          "value": "Bain & Company",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00022"
+          ]
+        },
+        "location": {
+          "value": "New York, NY",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00022"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2017",
+            "end": "2021"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00023"
+          ]
+        },
+        "bullets": [
+          "• Led 7-member management consulting teams advising Fortune 100 enterprise clients on carve-outs and M&A; integration.",
+          "• Designed organizational restructurings for global manufacturing companies with 4,000+ employees."
+        ],
+        "text": "Engagement Manager (Strategy & Operations) — Bain & Company (New York, NY)\n2017 – 2021\n• Led 7-member management consulting teams advising Fortune 100 enterprise clients on carve-outs and M&A; integration.\n• Designed organizational restructurings for global manufacturing companies with 4,000+ employees.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00022",
+          "l00023",
+          "l00024",
+          "l00025"
+        ]
+      }
+    ]
+  },
+  "structured": {
+    "schema_version": "2.0.0",
+    "section_order": [
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections"
+    ],
+    "entry_order": "source",
+    "contact": {
+      "name": {
+        "value": "JULIAN A. MERCER",
+        "confidence": 0.92,
+        "source_line_ids": [
+          "l00000"
+        ]
+      },
+      "emails": [
+        {
+          "value": "julian.mercer@example.com",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalization": "none",
+          "raw": "Boston, MA • (555) 481-0294 • julian.mercer@example.com • linkedin.com/in/julianmercer-dummy"
+        }
+      ],
+      "phones": [
+        {
+          "value": "(555) 481-0294",
+          "confidence": 0.7,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalized": "+15554810294",
+          "valid": false
+        }
+      ],
+      "locations": [
+        {
+          "value": "Boston, MA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00002"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "value": "linkedin.com/in/julianmercer-dummy",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "kind": "linkedin"
+        }
+      ]
+    },
+    "summary": [],
+    "experience": [
+      {
+        "title": {
+          "value": "Director of Business Operations",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00017"
+          ]
+        },
+        "company": {
+          "value": "Beacon Healthcare Technologies",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00017"
+          ]
+        },
+        "location": {
+          "value": "Boston, MA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00017"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2021",
+            "end": "Present"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00018"
+          ]
+        },
+        "bullets": [
+          "• Spearheaded enterprise transformation plan across 5 regional clinical branches, capturing $11.4M in recurring SG&A; cost savings.",
+          "• Standardized clinical procurement workflows, reducing vendor contract turnaround from 35 days to 8 days.",
+          "• Reported monthly operating review and corporate risk updates directly to Chief Operating Officer and Board."
+        ],
+        "text": "Director of Business Operations — Beacon Healthcare Technologies (Boston, MA)\n2021 – Present\n• Spearheaded enterprise transformation plan across 5 regional clinical branches, capturing $11.4M in recurring SG&A; cost savings.\n• Standardized clinical procurement workflows, reducing vendor contract turnaround from 35 days to 8 days.\n• Reported monthly operating review and corporate risk updates directly to Chief Operating Officer and Board.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00017",
+          "l00018",
+          "l00019",
+          "l00020",
+          "l00021"
+        ]
+      },
+      {
+        "title": {
+          "value": "Engagement Manager (Strategy & Operations)",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00022"
+          ]
+        },
+        "company": {
+          "value": "Bain & Company",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00022"
+          ]
+        },
+        "location": {
+          "value": "New York, NY",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00022"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2017",
+            "end": "2021"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00023"
+          ]
+        },
+        "bullets": [
+          "• Led 7-member management consulting teams advising Fortune 100 enterprise clients on carve-outs and M&A; integration.",
+          "• Designed organizational restructurings for global manufacturing companies with 4,000+ employees."
+        ],
+        "text": "Engagement Manager (Strategy & Operations) — Bain & Company (New York, NY)\n2017 – 2021\n• Led 7-member management consulting teams advising Fortune 100 enterprise clients on carve-outs and M&A; integration.\n• Designed organizational restructurings for global manufacturing companies with 4,000+ employees.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00022",
+          "l00023",
+          "l00024",
+          "l00025"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "text": "Master of Business Administration (MBA) — Harvard Business School (2017)",
+        "source_line_ids": [
+          "l00027"
+        ],
+        "degree": {
+          "value": "Master of Business Administration (MBA)",
+          "source_line_ids": [
+            "l00027"
+          ],
+          "confidence": 0.85
+        },
+        "institution": {
+          "value": "Harvard Business School",
+          "source_line_ids": [
+            "l00027"
+          ],
+          "confidence": 0.85
+        },
+        "dates": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "graduation": {
+          "value": "2017",
+          "source_line_ids": [
+            "l00027"
+          ],
+          "confidence": 0.85
+        },
+        "location": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "gpa": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        }
+      },
+      {
+        "text": "B.A. in Economics — Dartmouth College (2013) • Lean Six Sigma Green Belt",
+        "source_line_ids": [
+          "l00028"
+        ],
+        "degree": {
+          "value": "B.A. in Economics",
+          "source_line_ids": [
+            "l00028"
+          ],
+          "confidence": 0.85
+        },
+        "institution": {
+          "value": "Dartmouth College",
+          "source_line_ids": [
+            "l00028"
+          ],
+          "confidence": 0.85
+        },
+        "dates": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "graduation": {
+          "value": "2013",
+          "source_line_ids": [
+            "l00028"
+          ],
+          "confidence": 0.85
+        },
+        "location": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "gpa": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        }
+      }
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "text": "Operational Strategy",
+        "source_line_ids": [
+          "l00004"
+        ],
+        "category": null,
+        "items": [
+          "Operational Strategy"
+        ]
+      },
+      {
+        "text": "Financial Optimization",
+        "source_line_ids": [
+          "l00005"
+        ],
+        "category": null,
+        "items": [
+          "Financial Optimization"
+        ]
+      },
+      {
+        "text": "Cross-Functional Leadership",
+        "source_line_ids": [
+          "l00006"
+        ],
+        "category": null,
+        "items": [
+          "Cross-Functional Leadership"
+        ]
+      },
+      {
+        "text": "• Post-Merger PMI Integration",
+        "source_line_ids": [
+          "l00007"
+        ],
+        "category": null,
+        "items": [
+          "Post-Merger PMI Integration"
+        ]
+      },
+      {
+        "text": "• Lean Six Sigma Process Design",
+        "source_line_ids": [
+          "l00008"
+        ],
+        "category": null,
+        "items": [
+          "Lean Six Sigma Process Design"
+        ]
+      },
+      {
+        "text": "• Operating Model Redesign",
+        "source_line_ids": [
+          "l00009"
+        ],
+        "category": null,
+        "items": [
+          "Operating Model Redesign"
+        ]
+      },
+      {
+        "text": "• $85M Budget & OPEX Oversight",
+        "source_line_ids": [
+          "l00010"
+        ],
+        "category": null,
+        "items": [
+          "$85M Budget & OPEX Oversight"
+        ]
+      },
+      {
+        "text": "• Vendor Procurement Negotiations",
+        "source_line_ids": [
+          "l00011"
+        ],
+        "category": null,
+        "items": [
+          "Vendor Procurement Negotiations"
+        ]
+      },
+      {
+        "text": "• Capital Allocation Modeling",
+        "source_line_ids": [
+          "l00012"
+        ],
+        "category": null,
+        "items": [
+          "Capital Allocation Modeling"
+        ]
+      },
+      {
+        "text": "• Executive Stakeholder Alignment",
+        "source_line_ids": [
+          "l00013"
+        ],
+        "category": null,
+        "items": [
+          "Executive Stakeholder Alignment"
+        ]
+      },
+      {
+        "text": "• OKR Governance & Tracking",
+        "source_line_ids": [
+          "l00014"
+        ],
+        "category": null,
+        "items": [
+          "OKR Governance & Tracking"
+        ]
+      },
+      {
+        "text": "• Org Structuring & Hiring",
+        "source_line_ids": [
+          "l00015"
+        ],
+        "category": null,
+        "items": [
+          "Org Structuring & Hiring"
+        ]
+      }
+    ],
+    "certifications": [],
+    "other_sections": [],
+    "review": [
+      {
+        "path": "fields.phones[0]",
+        "reason": "missing or low-confidence candidate",
+        "confidence": 0.7
+      }
+    ],
+    "source_sections": [
+      {
+        "id": "s000",
+        "canonical": "preamble",
+        "original_heading": null,
+        "heading_line_id": null,
+        "confidence": 1.0,
+        "line_ids": [
+          "l00000",
+          "l00001",
+          "l00002"
+        ],
+        "text": "JULIAN A. MERCER\nDIRECTOR OF BUSINESS OPERATIONS & STRATEGIC INITIATIVES\nBoston, MA • (555) 481-0294 • julian.mercer@example.com • linkedin.com/in/julianmercer-dummy"
+      },
+      {
+        "id": "s001",
+        "canonical": "skills",
+        "original_heading": "CORE COMPETENCY FRAMEWORK",
+        "heading_line_id": "l00003",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00004",
+          "l00005",
+          "l00006",
+          "l00007",
+          "l00008",
+          "l00009",
+          "l00010",
+          "l00011",
+          "l00012",
+          "l00013",
+          "l00014",
+          "l00015"
+        ],
+        "text": "Operational Strategy\nFinancial Optimization\nCross-Functional Leadership\n• Post-Merger PMI Integration\n• Lean Six Sigma Process Design\n• Operating Model Redesign\n• $85M Budget & OPEX Oversight\n• Vendor Procurement Negotiations\n• Capital Allocation Modeling\n• Executive Stakeholder Alignment\n• OKR Governance & Tracking\n• Org Structuring & Hiring"
+      },
+      {
+        "id": "s002",
+        "canonical": "experience",
+        "original_heading": "OPERATIONAL LEADERSHIP EXPERIENCE",
+        "heading_line_id": "l00016",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00017",
+          "l00018",
+          "l00019",
+          "l00020",
+          "l00021",
+          "l00022",
+          "l00023",
+          "l00024",
+          "l00025"
+        ],
+        "text": "Director of Business Operations — Beacon Healthcare Technologies (Boston, MA)\n2021 – Present\n• Spearheaded enterprise transformation plan across 5 regional clinical branches, capturing $11.4M in recurring SG&A; cost savings.\n• Standardized clinical procurement workflows, reducing vendor contract turnaround from 35 days to 8 days.\n• Reported monthly operating review and corporate risk updates directly to Chief Operating Officer and Board.\nEngagement Manager (Strategy & Operations) — Bain & Company (New York, NY)\n2017 – 2021\n• Led 7-member management consulting teams advising Fortune 100 enterprise clients on carve-outs and M&A; integration.\n• Designed organizational restructurings for global manufacturing companies with 4,000+ employees."
+      },
+      {
+        "id": "s003",
+        "canonical": "education",
+        "original_heading": "EDUCATION & CREDENTIALS",
+        "heading_line_id": "l00026",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00027",
+          "l00028"
+        ],
+        "text": "Master of Business Administration (MBA) — Harvard Business School (2017)\nB.A. in Economics — Dartmouth College (2013) • Lean Six Sigma Green Belt"
+      }
+    ]
+  },
+  "needs_review": [
+    {
+      "path": "fields.phones[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.7
+    }
+  ],
+  "quality": {
+    "completeness": {
+      "status": "pass",
+      "reference_words": 188,
+      "extracted_words": 188,
+      "matched_words": 188,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "schema_errors": [],
+    "warnings": [],
+    "suppressed_exact_repeats": []
+  }
+}

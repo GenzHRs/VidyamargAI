@@ -1,0 +1,7343 @@
+{
+  "schema_version": "2.0.0",
+  "source": {
+    "filename": "03_PDF_Royal_Purple_Marketing_Resume.pdf",
+    "sha256": "c46b14d76878b810ea8052349edc50bf54f58e087c5c015b92bcecce83a74ada",
+    "type": "pdf",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": 1,
+    "reference_method": "pdftotext_raw"
+  },
+  "config_sha256": "031beeb7738829daf3d7dcb73ee91ff7a8ee892f9224c015626f793cc6eafee5",
+  "raw_text": "CAMILA RESTREPO\nSENIOR GROWTH MARKETING MANAGER & PAID ACQUISITION LEAD\nMiami, FL • (555) 612-4091 • camila.restrepo@example.com • linkedin.com/in/camila-marketing-dummy\nMARKETING METRICS\n• $12M+ Annual Ad Spend Managed\n• 3.4x Blended ROAS Achieved\n• 48% Reduced Customer CAC\n• 185K+ Net New MQLs Generated\nGROWTH TOOLKIT\n• Meta Ads Manager & TikTok Ads\n• Google Ads (Search, PMax, YouTube)\n• Amplitude, Mixpanel & GA4\n• AppsFlyer, Adjust & Branch (MMP)\n• Optimizely & VWO (A/B Testing)\n• SQL & Tableau Reporting\nEDUCATION\nB.S. in Digital Marketing & Media\nUniversity of Florida (2018)\nSumma Cum Laude\nEXECUTIVE PROFILE\nData-driven Growth Marketing Manager with 7+ years orchestrating high-scale user\nacquisition, performance creative testing, and multi-channel marketing campaigns. Proven\nrecord of scaling direct-to-consumer and mobile subscription brands past $50M in annual\nrevenue while maintaining strict payback margins.\nPROFESSIONAL EXPERIENCE\nSenior Performance Marketing Manager — Nova Health App (Miami, FL)\n2022 – Present\n• Managed $1.1M monthly budget across Meta, Google, TikTok, and Apple Search Ads.\n• Built creative testing pipeline producing 40+ iterative ad variations weekly, lowering customer\nacquisition cost (CAC) by 42%.\n• Partnered with product and engineering teams to optimize subscription paywall conversion by\n19%.\nGrowth Marketing Lead — Solstice Commerce (Austin, TX)\n2019 – 2022\n• Scaled e-commerce customer base from 25,000 to 220,000 paying users within 24 months.\n• Designed multi-touch attribution model in BigQuery & Tableau to track ROAS across paid,\norganic, and influencer channels.",
+  "source_text": "CAMILA RESTREPO\nSENIOR GROWTH MARKETING MANAGER & PAID ACQUISITION LEAD\nMiami, FL • (555) 612-4091 • camila.restrepo@example.com • linkedin.com/in/camila-marketing-dummy\nMARKETING METRICS\n• $12M+ Annual Ad Spend Managed\n• 3.4x Blended ROAS Achieved\n• 48% Reduced Customer CAC\n• 185K+ Net New MQLs Generated\nGROWTH TOOLKIT\n• Meta Ads Manager & TikTok Ads\n• Google Ads (Search, PMax, YouTube)\n• Amplitude, Mixpanel & GA4\n• AppsFlyer, Adjust & Branch (MMP)\n• Optimizely & VWO (A/B Testing)\n• SQL & Tableau Reporting\nEDUCATION\nB.S. in Digital Marketing & Media\nUniversity of Florida (2018)\nSumma Cum Laude\nEXECUTIVE PROFILE\nData-driven Growth Marketing Manager with 7+ years orchestrating high-scale user\nacquisition, performance creative testing, and multi-channel marketing campaigns. Proven\nrecord of scaling direct-to-consumer and mobile subscription brands past $50M in annual\nrevenue while maintaining strict payback margins.\nPROFESSIONAL EXPERIENCE\nSenior Performance Marketing Manager — Nova Health App (Miami, FL)\n2022 – Present\n• Managed $1.1M monthly budget across Meta, Google, TikTok, and Apple Search Ads.\n• Built creative testing pipeline producing 40+ iterative ad variations weekly, lowering customer\nacquisition cost (CAC) by 42%.\n• Partnered with product and engineering teams to optimize subscription paywall conversion by\n19%.\nGrowth Marketing Lead — Solstice Commerce (Austin, TX)\n2019 – 2022\n• Scaled e-commerce customer base from 25,000 to 220,000 paying users within 24 months.\n• Designed multi-touch attribution model in BigQuery & Tableau to track ROAS across paid,\norganic, and influencer channels.\n\f",
+  "normalized_text": "CAMILA RESTREPO\nSENIOR GROWTH MARKETING MANAGER & PAID ACQUISITION LEAD\nMiami, FL • (555) 612-4091 • camila.restrepo@example.com • linkedin.com/in/camila-marketing-dummy\nMARKETING METRICS\n• $12M+ Annual Ad Spend Managed\n• 3.4x Blended ROAS Achieved\n• 48% Reduced Customer CAC\n• 185K+ Net New MQLs Generated\nGROWTH TOOLKIT\n• Meta Ads Manager & TikTok Ads\n• Google Ads (Search, PMax, YouTube)\n• Amplitude, Mixpanel & GA4\n• AppsFlyer, Adjust & Branch (MMP)\n• Optimizely & VWO (A/B Testing)\n• SQL & Tableau Reporting\nEDUCATION\nB.S. in Digital Marketing & Media\nUniversity of Florida (2018)\nSumma Cum Laude\nEXECUTIVE PROFILE\nData-driven Growth Marketing Manager with 7+ years orchestrating high-scale user acquisition, performance creative testing, and multi-channel marketing campaigns. Proven record of scaling direct-to-consumer and mobile subscription brands past $50M in annual revenue while maintaining strict payback margins.\nPROFESSIONAL EXPERIENCE\nSenior Performance Marketing Manager — Nova Health App (Miami, FL)\n2022 – Present\n• Managed $1.1M monthly budget across Meta, Google, TikTok, and Apple Search Ads.\n• Built creative testing pipeline producing 40+ iterative ad variations weekly, lowering customer acquisition cost (CAC) by 42%.\n• Partnered with product and engineering teams to optimize subscription paywall conversion by\n19%.\nGrowth Marketing Lead — Solstice Commerce (Austin, TX)\n2019 – 2022\n• Scaled e-commerce customer base from 25,000 to 220,000 paying users within 24 months.\n• Designed multi-touch attribution model in BigQuery & Tableau to track ROAS across paid, organic, and influencer channels.",
+  "raw_lines": [
+    {
+      "id": "l00000",
+      "text": "CAMILA RESTREPO",
+      "runs": [
+        {
+          "text": "CAMILA",
+          "bold": true,
+          "size": 20.0,
+          "color": "(1.0, 1.0, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "CAMILA"
+        },
+        {
+          "text": " RESTREPO",
+          "bold": true,
+          "size": 20.0,
+          "color": "(1.0, 1.0, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "RESTREPO"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        44.0,
+        52.139999999999986,
+        237.34000000000003,
+        72.13999999999999
+      ],
+      "part": "body",
+      "flow": "p1T",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00000"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00001",
+      "text": "SENIOR GROWTH MARKETING MANAGER & PAID ACQUISITION LEAD",
+      "runs": [
+        {
+          "text": "SENIOR",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.913725, 0.835294, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "SENIOR"
+        },
+        {
+          "text": " GROWTH",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.913725, 0.835294, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "GROWTH"
+        },
+        {
+          "text": " MARKETING",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.913725, 0.835294, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "MARKETING"
+        },
+        {
+          "text": " MANAGER",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.913725, 0.835294, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "MANAGER"
+        },
+        {
+          "text": " &",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.913725, 0.835294, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " PAID",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.913725, 0.835294, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "PAID"
+        },
+        {
+          "text": " ACQUISITION",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.913725, 0.835294, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "ACQUISITION"
+        },
+        {
+          "text": " LEAD",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.913725, 0.835294, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "LEAD"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        44.0,
+        64.07000000000005,
+        383.45,
+        74.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1T",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00001"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00002",
+      "text": "Miami, FL • (555) 612-4091 • camila.restrepo@example.com • linkedin.com/in/camila-marketing-dummy",
+      "runs": [
+        {
+          "text": "Miami,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.952941, 0.909804, 1.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Miami,"
+        },
+        {
+          "text": " FL",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.952941, 0.909804, 1.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "FL"
+        },
+        {
+          "text": " •",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.952941, 0.909804, 1.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " (555)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.952941, 0.909804, 1.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(555)"
+        },
+        {
+          "text": " 612-4091",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.952941, 0.909804, 1.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "612-4091"
+        },
+        {
+          "text": " •",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.952941, 0.909804, 1.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " camila.restrepo@example.com",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.952941, 0.909804, 1.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "camila.restrepo@example.com"
+        },
+        {
+          "text": " •",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.952941, 0.909804, 1.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " linkedin.com/in/camila-marketing-dummy",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.952941, 0.909804, 1.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "linkedin.com/in/camila-marketing-dummy"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        44.0,
+        78.7595,
+        424.8339999999998,
+        87.2595
+      ],
+      "part": "body",
+      "flow": "p1T",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00002"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00003",
+      "text": "MARKETING METRICS",
+      "runs": [
+        {
+          "text": "MARKETING",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.419608, 0.129412, 0.658824)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "MARKETING"
+        },
+        {
+          "text": " METRICS",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.419608, 0.129412, 0.658824)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "METRICS"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        118.9665,
+        142.9135,
+        128.4665
+      ],
+      "part": "body",
+      "flow": "p1BLTT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00003"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00004",
+      "text": "• $12M+ Annual Ad Spend Managed",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " $12M+",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "$12M+"
+        },
+        {
+          "text": " Annual",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Annual"
+        },
+        {
+          "text": " Ad",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Ad"
+        },
+        {
+          "text": " Spend",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Spend"
+        },
+        {
+          "text": " Managed",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Managed"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        134.7595,
+        174.9035,
+        143.2595
+      ],
+      "part": "body",
+      "flow": "p1BLTT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00004"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00005",
+      "text": "• 3.4x Blended ROAS Achieved",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " 3.4x",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "3.4x"
+        },
+        {
+          "text": " Blended",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Blended"
+        },
+        {
+          "text": " ROAS",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "ROAS"
+        },
+        {
+          "text": " Achieved",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Achieved"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        146.7595,
+        156.22899999999998,
+        155.2595
+      ],
+      "part": "body",
+      "flow": "p1BLTT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00005"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00006",
+      "text": "• 48% Reduced Customer CAC",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " 48%",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "48%"
+        },
+        {
+          "text": " Reduced",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Reduced"
+        },
+        {
+          "text": " Customer",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Customer"
+        },
+        {
+          "text": " CAC",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "CAC"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        158.7595,
+        155.26,
+        167.2595
+      ],
+      "part": "body",
+      "flow": "p1BLTT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00006"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00007",
+      "text": "• 185K+ Net New MQLs Generated",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " 185K+",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "185K+"
+        },
+        {
+          "text": " Net",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Net"
+        },
+        {
+          "text": " New",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "New"
+        },
+        {
+          "text": " MQLs",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "MQLs"
+        },
+        {
+          "text": " Generated",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Generated"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        170.7595,
+        170.152,
+        179.2595
+      ],
+      "part": "body",
+      "flow": "p1BLTT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00007"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00008",
+      "text": "GROWTH TOOLKIT",
+      "runs": [
+        {
+          "text": "GROWTH",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.419608, 0.129412, 0.658824)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "GROWTH"
+        },
+        {
+          "text": " TOOLKIT",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.419608, 0.129412, 0.658824)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "TOOLKIT"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        192.9665,
+        127.60900000000001,
+        202.4665
+      ],
+      "part": "body",
+      "flow": "p1BLTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00008"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00009",
+      "text": "• Meta Ads Manager & TikTok Ads",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Meta",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Meta"
+        },
+        {
+          "text": " Ads",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Ads"
+        },
+        {
+          "text": " Manager",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Manager"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " TikTok",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "TikTok"
+        },
+        {
+          "text": " Ads",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Ads"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        208.65599999999995,
+        159.60000000000002,
+        216.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BLTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00009"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00010",
+      "text": "• Google Ads (Search, PMax, YouTube)",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Google",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Google"
+        },
+        {
+          "text": " Ads",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Ads"
+        },
+        {
+          "text": " (Search,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(Search,"
+        },
+        {
+          "text": " PMax,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "PMax,"
+        },
+        {
+          "text": " YouTube)",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "YouTube)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        220.65599999999995,
+        178.72800000000004,
+        228.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BLTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00010"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00011",
+      "text": "• Amplitude, Mixpanel & GA4",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Amplitude,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Amplitude,"
+        },
+        {
+          "text": " Mixpanel",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Mixpanel"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " GA4",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "GA4"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        232.65599999999995,
+        140.04000000000002,
+        240.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BLTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00011"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00012",
+      "text": "• AppsFlyer, Adjust & Branch (MMP)",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " AppsFlyer,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "AppsFlyer,"
+        },
+        {
+          "text": " Adjust",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Adjust"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Branch",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Branch"
+        },
+        {
+          "text": " (MMP)",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(MMP)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        244.65599999999995,
+        166.25600000000003,
+        252.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BLTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00012"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00013",
+      "text": "• Optimizely & VWO (A/B Testing)",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Optimizely",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Optimizely"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " VWO",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "VWO"
+        },
+        {
+          "text": " (A/B",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(A/B"
+        },
+        {
+          "text": " Testing)",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Testing)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        256.65599999999995,
+        157.36,
+        264.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BLTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00013"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00014",
+      "text": "• SQL & Tableau Reporting",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " SQL",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "SQL"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Tableau",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Tableau"
+        },
+        {
+          "text": " Reporting",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Reporting"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        268.65599999999995,
+        133.824,
+        276.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BLTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00014"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00015",
+      "text": "EDUCATION",
+      "runs": [
+        {
+          "text": "EDUCATION",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.419608, 0.129412, 0.658824)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "EDUCATION"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        290.9665,
+        96.46799999999999,
+        300.4665
+      ],
+      "part": "body",
+      "flow": "p1BLB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00015"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00016",
+      "text": "B.S. in Digital Marketing & Media",
+      "runs": [
+        {
+          "text": "B.S.",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "B.S."
+        },
+        {
+          "text": " in",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "in"
+        },
+        {
+          "text": " Digital",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Digital"
+        },
+        {
+          "text": " Marketing",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Marketing"
+        },
+        {
+          "text": " &",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Media",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Media"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        306.656,
+        164.47200000000007,
+        314.656
+      ],
+      "part": "body",
+      "flow": "p1BLB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00016"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00017",
+      "text": "University of Florida (2018)",
+      "runs": [
+        {
+          "text": "University",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "University"
+        },
+        {
+          "text": " of",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "of"
+        },
+        {
+          "text": " Florida",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Florida"
+        },
+        {
+          "text": " (2018)",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(2018)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        318.656,
+        136.02400000000003,
+        326.656
+      ],
+      "part": "body",
+      "flow": "p1BLB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00017"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00018",
+      "text": "Summa Cum Laude",
+      "runs": [
+        {
+          "text": "Summa",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Summa"
+        },
+        {
+          "text": " Cum",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Cum"
+        },
+        {
+          "text": " Laude",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Laude"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        330.656,
+        111.136,
+        338.656
+      ],
+      "part": "body",
+      "flow": "p1BLB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00018"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00019",
+      "text": "EXECUTIVE PROFILE",
+      "runs": [
+        {
+          "text": "EXECUTIVE",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.419608, 0.129412, 0.658824)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "EXECUTIVE"
+        },
+        {
+          "text": " PROFILE",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.419608, 0.129412, 0.658824)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "PROFILE"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        119.07000000000005,
+        326.8,
+        129.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1BRT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00019"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00020",
+      "text": "Data-driven Growth Marketing Manager with 7+ years orchestrating high-scale user",
+      "runs": [
+        {
+          "text": "Data-driven",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Data-driven"
+        },
+        {
+          "text": " Growth",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Growth"
+        },
+        {
+          "text": " Marketing",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Marketing"
+        },
+        {
+          "text": " Manager",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Manager"
+        },
+        {
+          "text": " with",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "with"
+        },
+        {
+          "text": " 7+",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "7+"
+        },
+        {
+          "text": " years",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "years"
+        },
+        {
+          "text": " orchestrating",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "orchestrating"
+        },
+        {
+          "text": " high-scale",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "high-scale"
+        },
+        {
+          "text": " user",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "user"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        133.7595,
+        537.429,
+        142.2595
+      ],
+      "part": "body",
+      "flow": "p1BRT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00020"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00021",
+      "text": "acquisition, performance creative testing, and multi-channel marketing campaigns. Proven",
+      "runs": [
+        {
+          "text": "acquisition,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "acquisition,"
+        },
+        {
+          "text": " performance",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "performance"
+        },
+        {
+          "text": " creative",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "creative"
+        },
+        {
+          "text": " testing,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "testing,"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " multi-channel",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "multi-channel"
+        },
+        {
+          "text": " marketing",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "marketing"
+        },
+        {
+          "text": " campaigns.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "campaigns."
+        },
+        {
+          "text": " Proven",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Proven"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        145.7595,
+        562.7165,
+        154.2595
+      ],
+      "part": "body",
+      "flow": "p1BRT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00021"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00022",
+      "text": "record of scaling direct-to-consumer and mobile subscription brands past $50M in annual",
+      "runs": [
+        {
+          "text": "record",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "record"
+        },
+        {
+          "text": " of",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "of"
+        },
+        {
+          "text": " scaling",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "scaling"
+        },
+        {
+          "text": " direct-to-consumer",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "direct-to-consumer"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " mobile",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "mobile"
+        },
+        {
+          "text": " subscription",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "subscription"
+        },
+        {
+          "text": " brands",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "brands"
+        },
+        {
+          "text": " past",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "past"
+        },
+        {
+          "text": " $50M",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "$50M"
+        },
+        {
+          "text": " in",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "in"
+        },
+        {
+          "text": " annual",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "annual"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        157.7595,
+        558.4664999999999,
+        166.2595
+      ],
+      "part": "body",
+      "flow": "p1BRT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00022"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00023",
+      "text": "revenue while maintaining strict payback margins.",
+      "runs": [
+        {
+          "text": "revenue",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "revenue"
+        },
+        {
+          "text": " while",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "while"
+        },
+        {
+          "text": " maintaining",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "maintaining"
+        },
+        {
+          "text": " strict",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "strict"
+        },
+        {
+          "text": " payback",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "payback"
+        },
+        {
+          "text": " margins.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "margins."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        169.7595,
+        411.5355,
+        178.2595
+      ],
+      "part": "body",
+      "flow": "p1BRT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00023"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00024",
+      "text": "PROFESSIONAL EXPERIENCE",
+      "runs": [
+        {
+          "text": "PROFESSIONAL",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.419608, 0.129412, 0.658824)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "PROFESSIONAL"
+        },
+        {
+          "text": " EXPERIENCE",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.419608, 0.129412, 0.658824)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "EXPERIENCE"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        193.87,
+        370.14000000000004,
+        203.87
+      ],
+      "part": "body",
+      "flow": "p1BRBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00024"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00025",
+      "text": "Senior Performance Marketing Manager — Nova Health App (Miami, FL)",
+      "runs": [
+        {
+          "text": "Senior",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Senior"
+        },
+        {
+          "text": " Performance",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Performance"
+        },
+        {
+          "text": " Marketing",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Marketing"
+        },
+        {
+          "text": " Manager",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Manager"
+        },
+        {
+          "text": " —",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "—"
+        },
+        {
+          "text": " Nova",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Nova"
+        },
+        {
+          "text": " Health",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Health"
+        },
+        {
+          "text": " App",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "App"
+        },
+        {
+          "text": " (Miami,",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(Miami,"
+        },
+        {
+          "text": " FL)",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "FL)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        209.87,
+        557.42,
+        219.87
+      ],
+      "part": "body",
+      "flow": "p1BRBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00025"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00026",
+      "text": "2022 – Present",
+      "runs": [
+        {
+          "text": "2022",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2022"
+        },
+        {
+          "text": " –",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "–"
+        },
+        {
+          "text": " Present",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "Present"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        221.87,
+        291.82,
+        231.87
+      ],
+      "part": "body",
+      "flow": "p1BRBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00026"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00027",
+      "text": "• Managed $1.1M monthly budget across Meta, Google, TikTok, and Apple Search Ads.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Managed",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Managed"
+        },
+        {
+          "text": " $1.1M",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "$1.1M"
+        },
+        {
+          "text": " monthly",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "monthly"
+        },
+        {
+          "text": " budget",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "budget"
+        },
+        {
+          "text": " across",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "across"
+        },
+        {
+          "text": " Meta,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Meta,"
+        },
+        {
+          "text": " Google,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Google,"
+        },
+        {
+          "text": " TikTok,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "TikTok,"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " Apple",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Apple"
+        },
+        {
+          "text": " Search",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Search"
+        },
+        {
+          "text": " Ads.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Ads."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        233.4559999999999,
+        531.7040000000001,
+        241.4559999999999
+      ],
+      "part": "body",
+      "flow": "p1BRBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00027"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00028",
+      "text": "• Built creative testing pipeline producing 40+ iterative ad variations weekly, lowering customer",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Built",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Built"
+        },
+        {
+          "text": " creative",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "creative"
+        },
+        {
+          "text": " testing",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "testing"
+        },
+        {
+          "text": " pipeline",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "pipeline"
+        },
+        {
+          "text": " producing",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "producing"
+        },
+        {
+          "text": " 40+",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "40+"
+        },
+        {
+          "text": " iterative",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "iterative"
+        },
+        {
+          "text": " ad",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "ad"
+        },
+        {
+          "text": " variations",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "variations"
+        },
+        {
+          "text": " weekly,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "weekly,"
+        },
+        {
+          "text": " lowering",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "lowering"
+        },
+        {
+          "text": " customer",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "customer"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        245.4559999999999,
+        554.5759999999999,
+        253.4559999999999
+      ],
+      "part": "body",
+      "flow": "p1BRBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00028"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00029",
+      "text": "acquisition cost (CAC) by 42%.",
+      "runs": [
+        {
+          "text": "acquisition",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "acquisition"
+        },
+        {
+          "text": " cost",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "cost"
+        },
+        {
+          "text": " (CAC)",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(CAC)"
+        },
+        {
+          "text": " by",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "by"
+        },
+        {
+          "text": " 42%.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "42%."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        257.4559999999999,
+        334.25600000000003,
+        265.4559999999999
+      ],
+      "part": "body",
+      "flow": "p1BRBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00029"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00030",
+      "text": "• Partnered with product and engineering teams to optimize subscription paywall conversion by",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Partnered",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Partnered"
+        },
+        {
+          "text": " with",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "with"
+        },
+        {
+          "text": " product",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "product"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " engineering",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "engineering"
+        },
+        {
+          "text": " teams",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "teams"
+        },
+        {
+          "text": " to",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "to"
+        },
+        {
+          "text": " optimize",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "optimize"
+        },
+        {
+          "text": " subscription",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "subscription"
+        },
+        {
+          "text": " paywall",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "paywall"
+        },
+        {
+          "text": " conversion",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "conversion"
+        },
+        {
+          "text": " by",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "by"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        269.4559999999999,
+        556.5839999999998,
+        277.4559999999999
+      ],
+      "part": "body",
+      "flow": "p1BRBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00030"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00031",
+      "text": "19%.",
+      "runs": [
+        {
+          "text": "19%.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "19%."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        281.456,
+        242.232,
+        289.456
+      ],
+      "part": "body",
+      "flow": "p1BRBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00031"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00032",
+      "text": "Growth Marketing Lead — Solstice Commerce (Austin, TX)",
+      "runs": [
+        {
+          "text": "Growth",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Growth"
+        },
+        {
+          "text": " Marketing",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Marketing"
+        },
+        {
+          "text": " Lead",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Lead"
+        },
+        {
+          "text": " —",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "—"
+        },
+        {
+          "text": " Solstice",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Solstice"
+        },
+        {
+          "text": " Commerce",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Commerce"
+        },
+        {
+          "text": " (Austin,",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(Austin,"
+        },
+        {
+          "text": " TX)",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "TX)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        299.87,
+        492.94000000000005,
+        309.87
+      ],
+      "part": "body",
+      "flow": "p1BRBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00032"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00033",
+      "text": "2019 – 2022",
+      "runs": [
+        {
+          "text": "2019",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2019"
+        },
+        {
+          "text": " –",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "–"
+        },
+        {
+          "text": " 2022",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2022"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        311.87,
+        279.6,
+        321.87
+      ],
+      "part": "body",
+      "flow": "p1BRBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00033"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00034",
+      "text": "• Scaled e-commerce customer base from 25,000 to 220,000 paying users within 24 months.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Scaled",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Scaled"
+        },
+        {
+          "text": " e-commerce",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "e-commerce"
+        },
+        {
+          "text": " customer",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "customer"
+        },
+        {
+          "text": " base",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "base"
+        },
+        {
+          "text": " from",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "from"
+        },
+        {
+          "text": " 25,000",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "25,000"
+        },
+        {
+          "text": " to",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "to"
+        },
+        {
+          "text": " 220,000",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "220,000"
+        },
+        {
+          "text": " paying",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "paying"
+        },
+        {
+          "text": " users",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "users"
+        },
+        {
+          "text": " within",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "within"
+        },
+        {
+          "text": " 24",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "24"
+        },
+        {
+          "text": " months.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "months."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        323.456,
+        549.0319999999999,
+        331.456
+      ],
+      "part": "body",
+      "flow": "p1BRBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00034"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00035",
+      "text": "• Designed multi-touch attribution model in BigQuery & Tableau to track ROAS across paid,",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Designed",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Designed"
+        },
+        {
+          "text": " multi-touch",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "multi-touch"
+        },
+        {
+          "text": " attribution",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "attribution"
+        },
+        {
+          "text": " model",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "model"
+        },
+        {
+          "text": " in",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "in"
+        },
+        {
+          "text": " BigQuery",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "BigQuery"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Tableau",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Tableau"
+        },
+        {
+          "text": " to",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "to"
+        },
+        {
+          "text": " track",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "track"
+        },
+        {
+          "text": " ROAS",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "ROAS"
+        },
+        {
+          "text": " across",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "across"
+        },
+        {
+          "text": " paid,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "paid,"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        335.456,
+        544.128,
+        343.456
+      ],
+      "part": "body",
+      "flow": "p1BRBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00035"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00036",
+      "text": "organic, and influencer channels.",
+      "runs": [
+        {
+          "text": "organic,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "organic,"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " influencer",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "influencer"
+        },
+        {
+          "text": " channels.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "channels."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        347.456,
+        341.39200000000005,
+        355.456
+      ],
+      "part": "body",
+      "flow": "p1BRBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00036"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    }
+  ],
+  "lines": [
+    {
+      "id": "l00000",
+      "text": "CAMILA RESTREPO",
+      "runs": [
+        {
+          "text": "CAMILA",
+          "bold": true,
+          "size": 20.0,
+          "color": "(1.0, 1.0, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "CAMILA"
+        },
+        {
+          "text": " RESTREPO",
+          "bold": true,
+          "size": 20.0,
+          "color": "(1.0, 1.0, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "RESTREPO"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        44.0,
+        52.139999999999986,
+        237.34000000000003,
+        72.13999999999999
+      ],
+      "part": "body",
+      "flow": "p1T",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TITLE",
+      "source_ids": [
+        "l00000"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.92
+    },
+    {
+      "id": "l00001",
+      "text": "SENIOR GROWTH MARKETING MANAGER & PAID ACQUISITION LEAD",
+      "runs": [
+        {
+          "text": "SENIOR",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.913725, 0.835294, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "SENIOR"
+        },
+        {
+          "text": " GROWTH",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.913725, 0.835294, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "GROWTH"
+        },
+        {
+          "text": " MARKETING",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.913725, 0.835294, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "MARKETING"
+        },
+        {
+          "text": " MANAGER",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.913725, 0.835294, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "MANAGER"
+        },
+        {
+          "text": " &",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.913725, 0.835294, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " PAID",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.913725, 0.835294, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "PAID"
+        },
+        {
+          "text": " ACQUISITION",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.913725, 0.835294, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "ACQUISITION"
+        },
+        {
+          "text": " LEAD",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.913725, 0.835294, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "LEAD"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        44.0,
+        64.07000000000005,
+        383.45,
+        74.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1T",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "SUBTITLE",
+      "source_ids": [
+        "l00001"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00002",
+      "text": "Miami, FL • (555) 612-4091 • camila.restrepo@example.com • linkedin.com/in/camila-marketing-dummy",
+      "runs": [
+        {
+          "text": "Miami,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.952941, 0.909804, 1.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Miami,"
+        },
+        {
+          "text": " FL",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.952941, 0.909804, 1.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "FL"
+        },
+        {
+          "text": " •",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.952941, 0.909804, 1.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " (555)",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.952941, 0.909804, 1.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(555)"
+        },
+        {
+          "text": " 612-4091",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.952941, 0.909804, 1.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "612-4091"
+        },
+        {
+          "text": " •",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.952941, 0.909804, 1.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " camila.restrepo@example.com",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.952941, 0.909804, 1.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "camila.restrepo@example.com"
+        },
+        {
+          "text": " •",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.952941, 0.909804, 1.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " linkedin.com/in/camila-marketing-dummy",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.952941, 0.909804, 1.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "linkedin.com/in/camila-marketing-dummy"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        44.0,
+        78.7595,
+        424.8339999999998,
+        87.2595
+      ],
+      "part": "body",
+      "flow": "p1T",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00002"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00003",
+      "text": "MARKETING METRICS",
+      "runs": [
+        {
+          "text": "MARKETING",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.419608, 0.129412, 0.658824)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "MARKETING"
+        },
+        {
+          "text": " METRICS",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.419608, 0.129412, 0.658824)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "METRICS"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        118.9665,
+        142.9135,
+        128.4665
+      ],
+      "part": "body",
+      "flow": "p1BLTT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00003"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00004",
+      "text": "• $12M+ Annual Ad Spend Managed",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " $12M+",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "$12M+"
+        },
+        {
+          "text": " Annual",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Annual"
+        },
+        {
+          "text": " Ad",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Ad"
+        },
+        {
+          "text": " Spend",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Spend"
+        },
+        {
+          "text": " Managed",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Managed"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        134.7595,
+        174.9035,
+        143.2595
+      ],
+      "part": "body",
+      "flow": "p1BLTT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00004"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00005",
+      "text": "• 3.4x Blended ROAS Achieved",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " 3.4x",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "3.4x"
+        },
+        {
+          "text": " Blended",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Blended"
+        },
+        {
+          "text": " ROAS",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "ROAS"
+        },
+        {
+          "text": " Achieved",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Achieved"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        146.7595,
+        156.22899999999998,
+        155.2595
+      ],
+      "part": "body",
+      "flow": "p1BLTT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00005"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00006",
+      "text": "• 48% Reduced Customer CAC",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " 48%",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "48%"
+        },
+        {
+          "text": " Reduced",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Reduced"
+        },
+        {
+          "text": " Customer",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Customer"
+        },
+        {
+          "text": " CAC",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "CAC"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        158.7595,
+        155.26,
+        167.2595
+      ],
+      "part": "body",
+      "flow": "p1BLTT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00006"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00007",
+      "text": "• 185K+ Net New MQLs Generated",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " 185K+",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "185K+"
+        },
+        {
+          "text": " Net",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Net"
+        },
+        {
+          "text": " New",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "New"
+        },
+        {
+          "text": " MQLs",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "MQLs"
+        },
+        {
+          "text": " Generated",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Generated"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        170.7595,
+        170.152,
+        179.2595
+      ],
+      "part": "body",
+      "flow": "p1BLTT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00007"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00008",
+      "text": "GROWTH TOOLKIT",
+      "runs": [
+        {
+          "text": "GROWTH",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.419608, 0.129412, 0.658824)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "GROWTH"
+        },
+        {
+          "text": " TOOLKIT",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.419608, 0.129412, 0.658824)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "TOOLKIT"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        192.9665,
+        127.60900000000001,
+        202.4665
+      ],
+      "part": "body",
+      "flow": "p1BLTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00008"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00009",
+      "text": "• Meta Ads Manager & TikTok Ads",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Meta",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Meta"
+        },
+        {
+          "text": " Ads",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Ads"
+        },
+        {
+          "text": " Manager",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Manager"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " TikTok",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "TikTok"
+        },
+        {
+          "text": " Ads",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Ads"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        208.65599999999995,
+        159.60000000000002,
+        216.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BLTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00009"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00010",
+      "text": "• Google Ads (Search, PMax, YouTube)",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Google",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Google"
+        },
+        {
+          "text": " Ads",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Ads"
+        },
+        {
+          "text": " (Search,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(Search,"
+        },
+        {
+          "text": " PMax,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "PMax,"
+        },
+        {
+          "text": " YouTube)",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "YouTube)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        220.65599999999995,
+        178.72800000000004,
+        228.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BLTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00010"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00011",
+      "text": "• Amplitude, Mixpanel & GA4",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Amplitude,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Amplitude,"
+        },
+        {
+          "text": " Mixpanel",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Mixpanel"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " GA4",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "GA4"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        232.65599999999995,
+        140.04000000000002,
+        240.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BLTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00011"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00012",
+      "text": "• AppsFlyer, Adjust & Branch (MMP)",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " AppsFlyer,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "AppsFlyer,"
+        },
+        {
+          "text": " Adjust",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Adjust"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Branch",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Branch"
+        },
+        {
+          "text": " (MMP)",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(MMP)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        244.65599999999995,
+        166.25600000000003,
+        252.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BLTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00012"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00013",
+      "text": "• Optimizely & VWO (A/B Testing)",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Optimizely",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Optimizely"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " VWO",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "VWO"
+        },
+        {
+          "text": " (A/B",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(A/B"
+        },
+        {
+          "text": " Testing)",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Testing)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        256.65599999999995,
+        157.36,
+        264.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BLTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00013"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00014",
+      "text": "• SQL & Tableau Reporting",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " SQL",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "SQL"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Tableau",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Tableau"
+        },
+        {
+          "text": " Reporting",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Reporting"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        268.65599999999995,
+        133.824,
+        276.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BLTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00014"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00015",
+      "text": "EDUCATION",
+      "runs": [
+        {
+          "text": "EDUCATION",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.419608, 0.129412, 0.658824)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "EDUCATION"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        290.9665,
+        96.46799999999999,
+        300.4665
+      ],
+      "part": "body",
+      "flow": "p1BLB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00015"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00016",
+      "text": "B.S. in Digital Marketing & Media",
+      "runs": [
+        {
+          "text": "B.S.",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "B.S."
+        },
+        {
+          "text": " in",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "in"
+        },
+        {
+          "text": " Digital",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Digital"
+        },
+        {
+          "text": " Marketing",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Marketing"
+        },
+        {
+          "text": " &",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Media",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Media"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        306.656,
+        164.47200000000007,
+        314.656
+      ],
+      "part": "body",
+      "flow": "p1BLB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00016"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00017",
+      "text": "University of Florida (2018)",
+      "runs": [
+        {
+          "text": "University",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "University"
+        },
+        {
+          "text": " of",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "of"
+        },
+        {
+          "text": " Florida",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Florida"
+        },
+        {
+          "text": " (2018)",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(2018)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        318.656,
+        136.02400000000003,
+        326.656
+      ],
+      "part": "body",
+      "flow": "p1BLB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00017"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00018",
+      "text": "Summa Cum Laude",
+      "runs": [
+        {
+          "text": "Summa",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Summa"
+        },
+        {
+          "text": " Cum",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Cum"
+        },
+        {
+          "text": " Laude",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Laude"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        40.0,
+        330.656,
+        111.136,
+        338.656
+      ],
+      "part": "body",
+      "flow": "p1BLB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00018"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00019",
+      "text": "EXECUTIVE PROFILE",
+      "runs": [
+        {
+          "text": "EXECUTIVE",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.419608, 0.129412, 0.658824)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "EXECUTIVE"
+        },
+        {
+          "text": " PROFILE",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.419608, 0.129412, 0.658824)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "PROFILE"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        119.07000000000005,
+        326.8,
+        129.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1BRT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00019"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00020",
+      "text": "Data-driven Growth Marketing Manager with 7+ years orchestrating high-scale user acquisition, performance creative testing, and multi-channel marketing campaigns. Proven record of scaling direct-to-consumer and mobile subscription brands past $50M in annual revenue while maintaining strict payback margins.",
+      "runs": [
+        {
+          "text": "Data-driven",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Data-driven"
+        },
+        {
+          "text": " Growth",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Growth"
+        },
+        {
+          "text": " Marketing",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Marketing"
+        },
+        {
+          "text": " Manager",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Manager"
+        },
+        {
+          "text": " with",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "with"
+        },
+        {
+          "text": " 7+",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "7+"
+        },
+        {
+          "text": " years",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "years"
+        },
+        {
+          "text": " orchestrating",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "orchestrating"
+        },
+        {
+          "text": " high-scale",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "high-scale"
+        },
+        {
+          "text": " user",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "user"
+        },
+        {
+          "text": "acquisition,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "acquisition,"
+        },
+        {
+          "text": " performance",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "performance"
+        },
+        {
+          "text": " creative",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "creative"
+        },
+        {
+          "text": " testing,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "testing,"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " multi-channel",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "multi-channel"
+        },
+        {
+          "text": " marketing",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "marketing"
+        },
+        {
+          "text": " campaigns.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "campaigns."
+        },
+        {
+          "text": " Proven",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Proven"
+        },
+        {
+          "text": "record",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "record"
+        },
+        {
+          "text": " of",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "of"
+        },
+        {
+          "text": " scaling",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "scaling"
+        },
+        {
+          "text": " direct-to-consumer",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "direct-to-consumer"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " mobile",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "mobile"
+        },
+        {
+          "text": " subscription",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "subscription"
+        },
+        {
+          "text": " brands",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "brands"
+        },
+        {
+          "text": " past",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "past"
+        },
+        {
+          "text": " $50M",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "$50M"
+        },
+        {
+          "text": " in",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "in"
+        },
+        {
+          "text": " annual",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "annual"
+        },
+        {
+          "text": "revenue",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "revenue"
+        },
+        {
+          "text": " while",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "while"
+        },
+        {
+          "text": " maintaining",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "maintaining"
+        },
+        {
+          "text": " strict",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "strict"
+        },
+        {
+          "text": " payback",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "payback"
+        },
+        {
+          "text": " margins.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.117647, 0.160784, 0.231373)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "margins."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        133.7595,
+        562.7165,
+        178.2595
+      ],
+      "part": "body",
+      "flow": "p1BRT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00024",
+      "text": "PROFESSIONAL EXPERIENCE",
+      "runs": [
+        {
+          "text": "PROFESSIONAL",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.419608, 0.129412, 0.658824)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "PROFESSIONAL"
+        },
+        {
+          "text": " EXPERIENCE",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.419608, 0.129412, 0.658824)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "EXPERIENCE"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        193.87,
+        370.14000000000004,
+        203.87
+      ],
+      "part": "body",
+      "flow": "p1BRBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00024"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00025",
+      "text": "Senior Performance Marketing Manager — Nova Health App (Miami, FL)",
+      "runs": [
+        {
+          "text": "Senior",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Senior"
+        },
+        {
+          "text": " Performance",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Performance"
+        },
+        {
+          "text": " Marketing",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Marketing"
+        },
+        {
+          "text": " Manager",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Manager"
+        },
+        {
+          "text": " —",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "—"
+        },
+        {
+          "text": " Nova",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Nova"
+        },
+        {
+          "text": " Health",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Health"
+        },
+        {
+          "text": " App",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "App"
+        },
+        {
+          "text": " (Miami,",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(Miami,"
+        },
+        {
+          "text": " FL)",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "FL)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        209.87,
+        557.42,
+        219.87
+      ],
+      "part": "body",
+      "flow": "p1BRBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00025"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00026",
+      "text": "2022 – Present",
+      "runs": [
+        {
+          "text": "2022",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2022"
+        },
+        {
+          "text": " –",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "–"
+        },
+        {
+          "text": " Present",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "Present"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        221.87,
+        291.82,
+        231.87
+      ],
+      "part": "body",
+      "flow": "p1BRBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00026"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00027",
+      "text": "• Managed $1.1M monthly budget across Meta, Google, TikTok, and Apple Search Ads.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Managed",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Managed"
+        },
+        {
+          "text": " $1.1M",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "$1.1M"
+        },
+        {
+          "text": " monthly",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "monthly"
+        },
+        {
+          "text": " budget",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "budget"
+        },
+        {
+          "text": " across",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "across"
+        },
+        {
+          "text": " Meta,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Meta,"
+        },
+        {
+          "text": " Google,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Google,"
+        },
+        {
+          "text": " TikTok,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "TikTok,"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " Apple",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Apple"
+        },
+        {
+          "text": " Search",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Search"
+        },
+        {
+          "text": " Ads.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Ads."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        233.4559999999999,
+        531.7040000000001,
+        241.4559999999999
+      ],
+      "part": "body",
+      "flow": "p1BRBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00027"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00028",
+      "text": "• Built creative testing pipeline producing 40+ iterative ad variations weekly, lowering customer acquisition cost (CAC) by 42%.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Built",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Built"
+        },
+        {
+          "text": " creative",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "creative"
+        },
+        {
+          "text": " testing",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "testing"
+        },
+        {
+          "text": " pipeline",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "pipeline"
+        },
+        {
+          "text": " producing",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "producing"
+        },
+        {
+          "text": " 40+",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "40+"
+        },
+        {
+          "text": " iterative",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "iterative"
+        },
+        {
+          "text": " ad",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "ad"
+        },
+        {
+          "text": " variations",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "variations"
+        },
+        {
+          "text": " weekly,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "weekly,"
+        },
+        {
+          "text": " lowering",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "lowering"
+        },
+        {
+          "text": " customer",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "customer"
+        },
+        {
+          "text": "acquisition",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "acquisition"
+        },
+        {
+          "text": " cost",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "cost"
+        },
+        {
+          "text": " (CAC)",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(CAC)"
+        },
+        {
+          "text": " by",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "by"
+        },
+        {
+          "text": " 42%.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "42%."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        245.4559999999999,
+        554.5759999999999,
+        265.4559999999999
+      ],
+      "part": "body",
+      "flow": "p1BRBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00028",
+        "l00029"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00030",
+      "text": "• Partnered with product and engineering teams to optimize subscription paywall conversion by",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Partnered",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Partnered"
+        },
+        {
+          "text": " with",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "with"
+        },
+        {
+          "text": " product",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "product"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " engineering",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "engineering"
+        },
+        {
+          "text": " teams",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "teams"
+        },
+        {
+          "text": " to",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "to"
+        },
+        {
+          "text": " optimize",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "optimize"
+        },
+        {
+          "text": " subscription",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "subscription"
+        },
+        {
+          "text": " paywall",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "paywall"
+        },
+        {
+          "text": " conversion",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "conversion"
+        },
+        {
+          "text": " by",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "by"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        269.4559999999999,
+        556.5839999999998,
+        277.4559999999999
+      ],
+      "part": "body",
+      "flow": "p1BRBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00030"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00031",
+      "text": "19%.",
+      "runs": [
+        {
+          "text": "19%.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "19%."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        281.456,
+        242.232,
+        289.456
+      ],
+      "part": "body",
+      "flow": "p1BRBT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00031"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00032",
+      "text": "Growth Marketing Lead — Solstice Commerce (Austin, TX)",
+      "runs": [
+        {
+          "text": "Growth",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Growth"
+        },
+        {
+          "text": " Marketing",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Marketing"
+        },
+        {
+          "text": " Lead",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Lead"
+        },
+        {
+          "text": " —",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "—"
+        },
+        {
+          "text": " Solstice",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Solstice"
+        },
+        {
+          "text": " Commerce",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Commerce"
+        },
+        {
+          "text": " (Austin,",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(Austin,"
+        },
+        {
+          "text": " TX)",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "TX)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        299.87,
+        492.94000000000005,
+        309.87
+      ],
+      "part": "body",
+      "flow": "p1BRBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00032"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00033",
+      "text": "2019 – 2022",
+      "runs": [
+        {
+          "text": "2019",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2019"
+        },
+        {
+          "text": " –",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "–"
+        },
+        {
+          "text": " 2022",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2022"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        311.87,
+        279.6,
+        321.87
+      ],
+      "part": "body",
+      "flow": "p1BRBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00033"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00034",
+      "text": "• Scaled e-commerce customer base from 25,000 to 220,000 paying users within 24 months.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Scaled",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Scaled"
+        },
+        {
+          "text": " e-commerce",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "e-commerce"
+        },
+        {
+          "text": " customer",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "customer"
+        },
+        {
+          "text": " base",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "base"
+        },
+        {
+          "text": " from",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "from"
+        },
+        {
+          "text": " 25,000",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "25,000"
+        },
+        {
+          "text": " to",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "to"
+        },
+        {
+          "text": " 220,000",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "220,000"
+        },
+        {
+          "text": " paying",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "paying"
+        },
+        {
+          "text": " users",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "users"
+        },
+        {
+          "text": " within",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "within"
+        },
+        {
+          "text": " 24",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "24"
+        },
+        {
+          "text": " months.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "months."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        323.456,
+        549.0319999999999,
+        331.456
+      ],
+      "part": "body",
+      "flow": "p1BRBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00034"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00035",
+      "text": "• Designed multi-touch attribution model in BigQuery & Tableau to track ROAS across paid, organic, and influencer channels.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Designed",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Designed"
+        },
+        {
+          "text": " multi-touch",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "multi-touch"
+        },
+        {
+          "text": " attribution",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "attribution"
+        },
+        {
+          "text": " model",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "model"
+        },
+        {
+          "text": " in",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "in"
+        },
+        {
+          "text": " BigQuery",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "BigQuery"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Tableau",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Tableau"
+        },
+        {
+          "text": " to",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "to"
+        },
+        {
+          "text": " track",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "track"
+        },
+        {
+          "text": " ROAS",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "ROAS"
+        },
+        {
+          "text": " across",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "across"
+        },
+        {
+          "text": " paid,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "paid,"
+        },
+        {
+          "text": "organic,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "organic,"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " influencer",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "influencer"
+        },
+        {
+          "text": " channels.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.2, 0.254902, 0.333333)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "channels."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        224.0,
+        335.456,
+        544.128,
+        355.456
+      ],
+      "part": "body",
+      "flow": "p1BRBB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00035",
+        "l00036"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    }
+  ],
+  "sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "CAMILA RESTREPO\nSENIOR GROWTH MARKETING MANAGER & PAID ACQUISITION LEAD\nMiami, FL • (555) 612-4091 • camila.restrepo@example.com • linkedin.com/in/camila-marketing-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "metrics",
+      "original_heading": "MARKETING METRICS",
+      "heading_line_id": "l00003",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00004",
+        "l00005",
+        "l00006",
+        "l00007"
+      ],
+      "text": "• $12M+ Annual Ad Spend Managed\n• 3.4x Blended ROAS Achieved\n• 48% Reduced Customer CAC\n• 185K+ Net New MQLs Generated"
+    },
+    {
+      "id": "s002",
+      "canonical": "skills",
+      "original_heading": "GROWTH TOOLKIT",
+      "heading_line_id": "l00008",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014"
+      ],
+      "text": "• Meta Ads Manager & TikTok Ads\n• Google Ads (Search, PMax, YouTube)\n• Amplitude, Mixpanel & GA4\n• AppsFlyer, Adjust & Branch (MMP)\n• Optimizely & VWO (A/B Testing)\n• SQL & Tableau Reporting"
+    },
+    {
+      "id": "s003",
+      "canonical": "education",
+      "original_heading": "EDUCATION",
+      "heading_line_id": "l00015",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00016",
+        "l00017",
+        "l00018"
+      ],
+      "text": "B.S. in Digital Marketing & Media\nUniversity of Florida (2018)\nSumma Cum Laude"
+    },
+    {
+      "id": "s004",
+      "canonical": "summary",
+      "original_heading": "EXECUTIVE PROFILE",
+      "heading_line_id": "l00019",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00020"
+      ],
+      "text": "Data-driven Growth Marketing Manager with 7+ years orchestrating high-scale user acquisition, performance creative testing, and multi-channel marketing campaigns. Proven record of scaling direct-to-consumer and mobile subscription brands past $50M in annual revenue while maintaining strict payback margins."
+    },
+    {
+      "id": "s005",
+      "canonical": "experience",
+      "original_heading": "PROFESSIONAL EXPERIENCE",
+      "heading_line_id": "l00024",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00025",
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00030",
+        "l00031",
+        "l00032",
+        "l00033",
+        "l00034",
+        "l00035"
+      ],
+      "text": "Senior Performance Marketing Manager — Nova Health App (Miami, FL)\n2022 – Present\n• Managed $1.1M monthly budget across Meta, Google, TikTok, and Apple Search Ads.\n• Built creative testing pipeline producing 40+ iterative ad variations weekly, lowering customer acquisition cost (CAC) by 42%.\n• Partnered with product and engineering teams to optimize subscription paywall conversion by\n19%.\nGrowth Marketing Lead — Solstice Commerce (Austin, TX)\n2019 – 2022\n• Scaled e-commerce customer base from 25,000 to 220,000 paying users within 24 months.\n• Designed multi-touch attribution model in BigQuery & Tableau to track ROAS across paid, organic, and influencer channels."
+    }
+  ],
+  "fields": {
+    "name": {
+      "value": "CAMILA RESTREPO",
+      "confidence": 0.92,
+      "source_line_ids": [
+        "l00000"
+      ]
+    },
+    "emails": [
+      {
+        "value": "camila.restrepo@example.com",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalization": "none",
+        "raw": "Miami, FL • (555) 612-4091 • camila.restrepo@example.com • linkedin.com/in/camila-marketing-dummy"
+      }
+    ],
+    "phones": [
+      {
+        "value": "(555) 612-4091",
+        "confidence": 0.7,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalized": "+15556124091",
+        "valid": false
+      }
+    ],
+    "urls": [
+      {
+        "value": "linkedin.com/in/camila-marketing-dummy",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "kind": "linkedin"
+      }
+    ],
+    "locations": [
+      {
+        "value": "Miami, FL",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00002"
+        ]
+      }
+    ],
+    "date_ranges": [
+      {
+        "value": {
+          "start": "2022",
+          "end": "Present"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00026"
+        ],
+        "raw": "2022 – Present"
+      },
+      {
+        "value": {
+          "start": "2019",
+          "end": "2022"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00033"
+        ],
+        "raw": "2019 – 2022"
+      }
+    ],
+    "degrees": [
+      {
+        "value": "B.S. in Digital Marketing & Media",
+        "confidence": 0.94,
+        "source_line_ids": [
+          "l00016"
+        ]
+      }
+    ],
+    "gpas": [],
+    "skills": [
+      {
+        "value": "TikTok Ads",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00009"
+        ],
+        "matched_alias": "TikTok Ads"
+      },
+      {
+        "value": "Meta Ads",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00009"
+        ],
+        "matched_alias": "Meta Ads"
+      },
+      {
+        "value": "Google Ads",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00010"
+        ],
+        "matched_alias": "Google Ads"
+      },
+      {
+        "value": "Amplitude",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00011"
+        ],
+        "matched_alias": "Amplitude"
+      },
+      {
+        "value": "Mixpanel",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00011"
+        ],
+        "matched_alias": "Mixpanel"
+      },
+      {
+        "value": "GA4",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00011"
+        ],
+        "matched_alias": "GA4"
+      },
+      {
+        "value": "AppsFlyer",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00012"
+        ],
+        "matched_alias": "AppsFlyer"
+      },
+      {
+        "value": "Adjust",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00012"
+        ],
+        "matched_alias": "Adjust"
+      },
+      {
+        "value": "Branch",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00012"
+        ],
+        "matched_alias": "Branch"
+      },
+      {
+        "value": "Optimizely",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00013"
+        ],
+        "matched_alias": "Optimizely"
+      },
+      {
+        "value": "VWO",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00013"
+        ],
+        "matched_alias": "VWO"
+      },
+      {
+        "value": "Tableau",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00014"
+        ],
+        "matched_alias": "Tableau"
+      },
+      {
+        "value": "SQL",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00014"
+        ],
+        "matched_alias": "SQL"
+      },
+      {
+        "value": "BigQuery",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00035",
+          "l00036"
+        ],
+        "matched_alias": "BigQuery"
+      }
+    ],
+    "experience": [
+      {
+        "title": {
+          "value": "Senior Performance Marketing Manager",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00025"
+          ]
+        },
+        "company": {
+          "value": "Nova Health App",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00025"
+          ]
+        },
+        "location": {
+          "value": "Miami, FL",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00025"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2022",
+            "end": "Present"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00026"
+          ]
+        },
+        "bullets": [
+          "• Managed $1.1M monthly budget across Meta, Google, TikTok, and Apple Search Ads.",
+          "• Built creative testing pipeline producing 40+ iterative ad variations weekly, lowering customer acquisition cost (CAC) by 42%.",
+          "• Partnered with product and engineering teams to optimize subscription paywall conversion by"
+        ],
+        "text": "Senior Performance Marketing Manager — Nova Health App (Miami, FL)\n2022 – Present\n• Managed $1.1M monthly budget across Meta, Google, TikTok, and Apple Search Ads.\n• Built creative testing pipeline producing 40+ iterative ad variations weekly, lowering customer acquisition cost (CAC) by 42%.\n• Partnered with product and engineering teams to optimize subscription paywall conversion by\n19%.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00025",
+          "l00026",
+          "l00027",
+          "l00028",
+          "l00029",
+          "l00030",
+          "l00031"
+        ]
+      },
+      {
+        "title": {
+          "value": "Growth Marketing Lead",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00032"
+          ]
+        },
+        "company": {
+          "value": "Solstice Commerce",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00032"
+          ]
+        },
+        "location": {
+          "value": "Austin, TX",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00032"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2019",
+            "end": "2022"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00033"
+          ]
+        },
+        "bullets": [
+          "• Scaled e-commerce customer base from 25,000 to 220,000 paying users within 24 months.",
+          "• Designed multi-touch attribution model in BigQuery & Tableau to track ROAS across paid, organic, and influencer channels."
+        ],
+        "text": "Growth Marketing Lead — Solstice Commerce (Austin, TX)\n2019 – 2022\n• Scaled e-commerce customer base from 25,000 to 220,000 paying users within 24 months.\n• Designed multi-touch attribution model in BigQuery & Tableau to track ROAS across paid, organic, and influencer channels.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00032",
+          "l00033",
+          "l00034",
+          "l00035",
+          "l00036"
+        ]
+      }
+    ]
+  },
+  "structured": {
+    "schema_version": "2.0.0",
+    "section_order": [
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections"
+    ],
+    "entry_order": "source",
+    "contact": {
+      "name": {
+        "value": "CAMILA RESTREPO",
+        "confidence": 0.92,
+        "source_line_ids": [
+          "l00000"
+        ]
+      },
+      "emails": [
+        {
+          "value": "camila.restrepo@example.com",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalization": "none",
+          "raw": "Miami, FL • (555) 612-4091 • camila.restrepo@example.com • linkedin.com/in/camila-marketing-dummy"
+        }
+      ],
+      "phones": [
+        {
+          "value": "(555) 612-4091",
+          "confidence": 0.7,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalized": "+15556124091",
+          "valid": false
+        }
+      ],
+      "locations": [
+        {
+          "value": "Miami, FL",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00002"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "value": "linkedin.com/in/camila-marketing-dummy",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "kind": "linkedin"
+        }
+      ]
+    },
+    "summary": [
+      {
+        "text": "Data-driven Growth Marketing Manager with 7+ years orchestrating high-scale user acquisition, performance creative testing, and multi-channel marketing campaigns. Proven record of scaling direct-to-consumer and mobile subscription brands past $50M in annual revenue while maintaining strict payback margins.",
+        "source_line_ids": [
+          "l00020",
+          "l00021",
+          "l00022",
+          "l00023"
+        ],
+        "value": "Data-driven Growth Marketing Manager with 7+ years orchestrating high-scale user acquisition, performance creative testing, and multi-channel marketing campaigns. Proven record of scaling direct-to-consumer and mobile subscription brands past $50M in annual revenue while maintaining strict payback margins."
+      }
+    ],
+    "experience": [
+      {
+        "title": {
+          "value": "Senior Performance Marketing Manager",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00025"
+          ]
+        },
+        "company": {
+          "value": "Nova Health App",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00025"
+          ]
+        },
+        "location": {
+          "value": "Miami, FL",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00025"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2022",
+            "end": "Present"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00026"
+          ]
+        },
+        "bullets": [
+          "• Managed $1.1M monthly budget across Meta, Google, TikTok, and Apple Search Ads.",
+          "• Built creative testing pipeline producing 40+ iterative ad variations weekly, lowering customer acquisition cost (CAC) by 42%.",
+          "• Partnered with product and engineering teams to optimize subscription paywall conversion by"
+        ],
+        "text": "Senior Performance Marketing Manager — Nova Health App (Miami, FL)\n2022 – Present\n• Managed $1.1M monthly budget across Meta, Google, TikTok, and Apple Search Ads.\n• Built creative testing pipeline producing 40+ iterative ad variations weekly, lowering customer acquisition cost (CAC) by 42%.\n• Partnered with product and engineering teams to optimize subscription paywall conversion by\n19%.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00025",
+          "l00026",
+          "l00027",
+          "l00028",
+          "l00029",
+          "l00030",
+          "l00031"
+        ]
+      },
+      {
+        "title": {
+          "value": "Growth Marketing Lead",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00032"
+          ]
+        },
+        "company": {
+          "value": "Solstice Commerce",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00032"
+          ]
+        },
+        "location": {
+          "value": "Austin, TX",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00032"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2019",
+            "end": "2022"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00033"
+          ]
+        },
+        "bullets": [
+          "• Scaled e-commerce customer base from 25,000 to 220,000 paying users within 24 months.",
+          "• Designed multi-touch attribution model in BigQuery & Tableau to track ROAS across paid, organic, and influencer channels."
+        ],
+        "text": "Growth Marketing Lead — Solstice Commerce (Austin, TX)\n2019 – 2022\n• Scaled e-commerce customer base from 25,000 to 220,000 paying users within 24 months.\n• Designed multi-touch attribution model in BigQuery & Tableau to track ROAS across paid, organic, and influencer channels.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00032",
+          "l00033",
+          "l00034",
+          "l00035",
+          "l00036"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "text": "B.S. in Digital Marketing & Media\nUniversity of Florida (2018)\nSumma Cum Laude",
+        "source_line_ids": [
+          "l00016",
+          "l00017",
+          "l00018"
+        ],
+        "degree": {
+          "value": "B.S. in Digital Marketing & Media",
+          "source_line_ids": [
+            "l00016"
+          ],
+          "confidence": 0.85
+        },
+        "institution": {
+          "value": "University of Florida",
+          "source_line_ids": [
+            "l00017"
+          ],
+          "confidence": 0.85
+        },
+        "dates": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "graduation": {
+          "value": "2018",
+          "source_line_ids": [
+            "l00017"
+          ],
+          "confidence": 0.85
+        },
+        "location": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "gpa": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        }
+      }
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "text": "• Meta Ads Manager & TikTok Ads",
+        "source_line_ids": [
+          "l00009"
+        ],
+        "category": null,
+        "items": [
+          "Meta Ads Manager & TikTok Ads"
+        ]
+      },
+      {
+        "text": "• Google Ads (Search, PMax, YouTube)",
+        "source_line_ids": [
+          "l00010"
+        ],
+        "category": null,
+        "items": [
+          "Google Ads (Search",
+          "PMax",
+          "YouTube)"
+        ]
+      },
+      {
+        "text": "• Amplitude, Mixpanel & GA4",
+        "source_line_ids": [
+          "l00011"
+        ],
+        "category": null,
+        "items": [
+          "Amplitude",
+          "Mixpanel & GA4"
+        ]
+      },
+      {
+        "text": "• AppsFlyer, Adjust & Branch (MMP)",
+        "source_line_ids": [
+          "l00012"
+        ],
+        "category": null,
+        "items": [
+          "AppsFlyer",
+          "Adjust & Branch (MMP)"
+        ]
+      },
+      {
+        "text": "• Optimizely & VWO (A/B Testing)",
+        "source_line_ids": [
+          "l00013"
+        ],
+        "category": null,
+        "items": [
+          "Optimizely & VWO (A/B Testing)"
+        ]
+      },
+      {
+        "text": "• SQL & Tableau Reporting",
+        "source_line_ids": [
+          "l00014"
+        ],
+        "category": null,
+        "items": [
+          "SQL & Tableau Reporting"
+        ]
+      }
+    ],
+    "certifications": [],
+    "other_sections": [
+      {
+        "canonical": "metrics",
+        "original_heading": "MARKETING METRICS",
+        "text": "• $12M+ Annual Ad Spend Managed\n• 3.4x Blended ROAS Achieved\n• 48% Reduced Customer CAC\n• 185K+ Net New MQLs Generated",
+        "source_line_ids": [
+          "l00004",
+          "l00005",
+          "l00006",
+          "l00007"
+        ]
+      }
+    ],
+    "review": [
+      {
+        "path": "fields.phones[0]",
+        "reason": "missing or low-confidence candidate",
+        "confidence": 0.7
+      }
+    ],
+    "source_sections": [
+      {
+        "id": "s000",
+        "canonical": "preamble",
+        "original_heading": null,
+        "heading_line_id": null,
+        "confidence": 1.0,
+        "line_ids": [
+          "l00000",
+          "l00001",
+          "l00002"
+        ],
+        "text": "CAMILA RESTREPO\nSENIOR GROWTH MARKETING MANAGER & PAID ACQUISITION LEAD\nMiami, FL • (555) 612-4091 • camila.restrepo@example.com • linkedin.com/in/camila-marketing-dummy"
+      },
+      {
+        "id": "s001",
+        "canonical": "metrics",
+        "original_heading": "MARKETING METRICS",
+        "heading_line_id": "l00003",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00004",
+          "l00005",
+          "l00006",
+          "l00007"
+        ],
+        "text": "• $12M+ Annual Ad Spend Managed\n• 3.4x Blended ROAS Achieved\n• 48% Reduced Customer CAC\n• 185K+ Net New MQLs Generated"
+      },
+      {
+        "id": "s002",
+        "canonical": "skills",
+        "original_heading": "GROWTH TOOLKIT",
+        "heading_line_id": "l00008",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00009",
+          "l00010",
+          "l00011",
+          "l00012",
+          "l00013",
+          "l00014"
+        ],
+        "text": "• Meta Ads Manager & TikTok Ads\n• Google Ads (Search, PMax, YouTube)\n• Amplitude, Mixpanel & GA4\n• AppsFlyer, Adjust & Branch (MMP)\n• Optimizely & VWO (A/B Testing)\n• SQL & Tableau Reporting"
+      },
+      {
+        "id": "s003",
+        "canonical": "education",
+        "original_heading": "EDUCATION",
+        "heading_line_id": "l00015",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00016",
+          "l00017",
+          "l00018"
+        ],
+        "text": "B.S. in Digital Marketing & Media\nUniversity of Florida (2018)\nSumma Cum Laude"
+      },
+      {
+        "id": "s004",
+        "canonical": "summary",
+        "original_heading": "EXECUTIVE PROFILE",
+        "heading_line_id": "l00019",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00020"
+        ],
+        "text": "Data-driven Growth Marketing Manager with 7+ years orchestrating high-scale user acquisition, performance creative testing, and multi-channel marketing campaigns. Proven record of scaling direct-to-consumer and mobile subscription brands past $50M in annual revenue while maintaining strict payback margins."
+      },
+      {
+        "id": "s005",
+        "canonical": "experience",
+        "original_heading": "PROFESSIONAL EXPERIENCE",
+        "heading_line_id": "l00024",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00025",
+          "l00026",
+          "l00027",
+          "l00028",
+          "l00030",
+          "l00031",
+          "l00032",
+          "l00033",
+          "l00034",
+          "l00035"
+        ],
+        "text": "Senior Performance Marketing Manager — Nova Health App (Miami, FL)\n2022 – Present\n• Managed $1.1M monthly budget across Meta, Google, TikTok, and Apple Search Ads.\n• Built creative testing pipeline producing 40+ iterative ad variations weekly, lowering customer acquisition cost (CAC) by 42%.\n• Partnered with product and engineering teams to optimize subscription paywall conversion by\n19%.\nGrowth Marketing Lead — Solstice Commerce (Austin, TX)\n2019 – 2022\n• Scaled e-commerce customer base from 25,000 to 220,000 paying users within 24 months.\n• Designed multi-touch attribution model in BigQuery & Tableau to track ROAS across paid, organic, and influencer channels."
+      }
+    ]
+  },
+  "needs_review": [
+    {
+      "path": "fields.phones[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.7
+    }
+  ],
+  "quality": {
+    "completeness": {
+      "status": "pass",
+      "reference_words": 228,
+      "extracted_words": 228,
+      "matched_words": 228,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "schema_errors": [],
+    "warnings": [],
+    "suppressed_exact_repeats": []
+  }
+}

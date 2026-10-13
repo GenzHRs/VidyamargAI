@@ -1,0 +1,2003 @@
+{
+  "engine_version": "3.0.0",
+  "audit_date": "2026-10-12",
+  "file_count": 20,
+  "unique_files": 16,
+  "all_files": {
+    "field_micro": {
+      "tp": 732,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "by_group": {
+      "certifications": {
+        "tp": 18,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "contact": {
+        "tp": 106,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "education": {
+        "tp": 109,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "experience": {
+        "tp": 230,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "headings": {
+        "tp": 92,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "project_technologies": {
+        "tp": 18,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "projects": {
+        "tp": 16,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "skills": {
+        "tp": 235,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  "unique_only": {
+    "field_micro": {
+      "tp": 585,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "by_group": {
+      "certifications": {
+        "tp": 14,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "contact": {
+        "tp": 85,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "education": {
+        "tp": 83,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "experience": {
+        "tp": 183,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "headings": {
+        "tp": 74,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "project_technologies": {
+        "tp": 18,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "projects": {
+        "tp": 14,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "skills": {
+        "tp": 188,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  "word_counts": {
+    "reference_words": 5065,
+    "extracted_words": 5065,
+    "matched_words": 5065
+  },
+  "unique_word_counts": {
+    "reference_words": 3918,
+    "extracted_words": 3918,
+    "matched_words": 3918
+  },
+  "per_file": [
+    {
+      "id": "R01",
+      "file": "Jayavarapu-Siva-Tejachary-AIML.pdf",
+      "sha256": "bdb2f38e41ac1fe979557ef27f8c98ba3a1f312e5b99e8f117d120a90b7cb826",
+      "duplicate_of": null,
+      "source_words": {
+        "status": "pass",
+        "reference_words": 450,
+        "extracted_words": 450,
+        "matched_words": 450,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "schema_errors": [],
+      "ocr": false,
+      "review_flags": [],
+      "heading_order_exact": true,
+      "metrics": {
+        "certifications": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "contact": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "education": {
+          "tp": 7,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "headings": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "project_technologies": {
+          "tp": 18,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "projects": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 33,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "field_micro": {
+        "tp": 82,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "id": "R02",
+      "file": "colorful_resume_templates_bundle/01_DOCX_Vibrant_Coral_Creative_Resume.docx",
+      "sha256": "5f77f4e59d97793795089e0b99f6f360f55d6f12d75e7af6693fae044d6a2730",
+      "duplicate_of": null,
+      "source_words": {
+        "status": "pass",
+        "reference_words": 197,
+        "extracted_words": 197,
+        "matched_words": 197,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "schema_errors": [],
+      "ocr": false,
+      "review_flags": [
+        {
+          "path": "fields.phones[0]",
+          "reason": "missing or low-confidence candidate",
+          "confidence": 0.7
+        }
+      ],
+      "heading_order_exact": true,
+      "metrics": {
+        "contact": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "education": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "headings": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "field_micro": {
+        "tp": 29,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "id": "R03",
+      "file": "colorful_resume_templates_bundle/02_DOCX_Navy_Teal_Cloud_Architect.docx",
+      "sha256": "14b052f3cdc07a57f163a8498230e2ed0c81e3e72cd91a059631fadfdf382e35",
+      "duplicate_of": null,
+      "source_words": {
+        "status": "pass",
+        "reference_words": 217,
+        "extracted_words": 217,
+        "matched_words": 217,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "schema_errors": [],
+      "ocr": false,
+      "review_flags": [
+        {
+          "path": "fields.phones[0]",
+          "reason": "missing or low-confidence candidate",
+          "confidence": 0.7
+        }
+      ],
+      "heading_order_exact": true,
+      "metrics": {
+        "certifications": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "contact": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "education": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "headings": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "field_micro": {
+        "tp": 36,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "id": "R04",
+      "file": "colorful_resume_templates_bundle/03_PDF_Royal_Purple_Marketing_Resume.pdf",
+      "sha256": "c46b14d76878b810ea8052349edc50bf54f58e087c5c015b92bcecce83a74ada",
+      "duplicate_of": null,
+      "source_words": {
+        "status": "pass",
+        "reference_words": 228,
+        "extracted_words": 228,
+        "matched_words": 228,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "schema_errors": [],
+      "ocr": false,
+      "review_flags": [
+        {
+          "path": "fields.phones[0]",
+          "reason": "missing or low-confidence candidate",
+          "confidence": 0.7
+        }
+      ],
+      "heading_order_exact": true,
+      "metrics": {
+        "contact": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "education": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "headings": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "field_micro": {
+        "tp": 28,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "id": "R05",
+      "file": "colorful_resume_templates_bundle/04_PDF_Emerald_Forest_Operations_Resume.pdf",
+      "sha256": "8a28114c043883f515bb055f3cb0c0cbfee3d13134a2eba717a7a0cfbf12a44f",
+      "duplicate_of": null,
+      "source_words": {
+        "status": "pass",
+        "reference_words": 188,
+        "extracted_words": 188,
+        "matched_words": 188,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "schema_errors": [],
+      "ocr": false,
+      "review_flags": [
+        {
+          "path": "fields.phones[0]",
+          "reason": "missing or low-confidence candidate",
+          "confidence": 0.7
+        }
+      ],
+      "heading_order_exact": true,
+      "metrics": {
+        "certifications": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "contact": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "education": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "headings": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "field_micro": {
+        "tp": 33,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "id": "R06",
+      "file": "comprehensive_resume_test_suite/01_DOCX_Two_Column_Sidebar_Layout.docx",
+      "sha256": "05b76709624833861cab54350575e9a76917f332fca0ccbf292d06b0ab116bbb",
+      "duplicate_of": null,
+      "source_words": {
+        "status": "pass",
+        "reference_words": 209,
+        "extracted_words": 209,
+        "matched_words": 209,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "schema_errors": [],
+      "ocr": false,
+      "review_flags": [
+        {
+          "path": "fields.experience[0].location",
+          "reason": "missing or low-confidence candidate",
+          "confidence": 0.65
+        },
+        {
+          "path": "fields.experience[1].location",
+          "reason": "missing or low-confidence candidate",
+          "confidence": 0.65
+        }
+      ],
+      "heading_order_exact": true,
+      "metrics": {
+        "contact": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "education": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "headings": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "field_micro": {
+        "tp": 29,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "id": "R07",
+      "file": "comprehensive_resume_test_suite/02_DOCX_Heavy_Table_Layout_Resume.docx",
+      "sha256": "1f10e01c7b313902ed4bddfbf1998100e42d16962f820ca11293372f686e9911",
+      "duplicate_of": null,
+      "source_words": {
+        "status": "pass",
+        "reference_words": 181,
+        "extracted_words": 181,
+        "matched_words": 181,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "schema_errors": [],
+      "ocr": false,
+      "review_flags": [
+        {
+          "path": "fields.phones[0]",
+          "reason": "missing or low-confidence candidate",
+          "confidence": 0.7
+        }
+      ],
+      "heading_order_exact": true,
+      "metrics": {
+        "certifications": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "contact": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "education": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "headings": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "field_micro": {
+        "tp": 32,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "id": "R08",
+      "file": "comprehensive_resume_test_suite/03_DOCX_Horizontal_Hero_Two_Blocks.docx",
+      "sha256": "9c87168b6d529336eca1dd27db234421f6110eba8e06e979d65291dc29e75096",
+      "duplicate_of": null,
+      "source_words": {
+        "status": "pass",
+        "reference_words": 204,
+        "extracted_words": 204,
+        "matched_words": 204,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "schema_errors": [],
+      "ocr": false,
+      "review_flags": [
+        {
+          "path": "fields.phones[0]",
+          "reason": "missing or low-confidence candidate",
+          "confidence": 0.7
+        }
+      ],
+      "heading_order_exact": true,
+      "metrics": {
+        "contact": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "education": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "headings": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 7,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "field_micro": {
+        "tp": 30,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "id": "R09",
+      "file": "comprehensive_resume_test_suite/04_PDF_Two_Column_Sidebar_Layout.pdf",
+      "sha256": "c1f2680437323350f4bd296f66d809cc6ef983a60f24d03b8fd91779535df82f",
+      "duplicate_of": null,
+      "source_words": {
+        "status": "pass",
+        "reference_words": 206,
+        "extracted_words": 206,
+        "matched_words": 206,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "schema_errors": [],
+      "ocr": false,
+      "review_flags": [
+        {
+          "path": "fields.phones[0]",
+          "reason": "missing or low-confidence candidate",
+          "confidence": 0.7
+        }
+      ],
+      "heading_order_exact": true,
+      "metrics": {
+        "certifications": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "contact": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "education": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "headings": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 13,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "field_micro": {
+        "tp": 40,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "id": "R10",
+      "file": "comprehensive_resume_test_suite/05_PDF_Strict_Table_Grid_Resume.pdf",
+      "sha256": "c0621a20f19acdfc3e731f6db1768795081d7314d2adb69983b15fdfb91c6186",
+      "duplicate_of": null,
+      "source_words": {
+        "status": "pass",
+        "reference_words": 211,
+        "extracted_words": 211,
+        "matched_words": 211,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "schema_errors": [],
+      "ocr": false,
+      "review_flags": [
+        {
+          "path": "fields.name",
+          "reason": "missing or low-confidence candidate",
+          "confidence": 0.65
+        },
+        {
+          "path": "fields.phones[0]",
+          "reason": "missing or low-confidence candidate",
+          "confidence": 0.7
+        }
+      ],
+      "heading_order_exact": true,
+      "metrics": {
+        "certifications": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "contact": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "education": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "headings": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "field_micro": {
+        "tp": 30,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "id": "R11",
+      "file": "comprehensive_resume_test_suite/06_PDF_Horizontal_Hero_Two_Blocks.pdf",
+      "sha256": "6bb643e81a789bc8107dc98567907237d271c123b5c7030e2b63a363d4c4baaf",
+      "duplicate_of": null,
+      "source_words": {
+        "status": "pass",
+        "reference_words": 219,
+        "extracted_words": 219,
+        "matched_words": 219,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "schema_errors": [],
+      "ocr": false,
+      "review_flags": [],
+      "heading_order_exact": true,
+      "metrics": {
+        "contact": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "education": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "headings": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "field_micro": {
+        "tp": 33,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "id": "R12",
+      "file": "comprehensive_resume_test_suite/07_DOCX_Modern_Tech_Software_Engineer.docx",
+      "sha256": "2a72ffbeecb5dde4df82c996261ea24f562c5b526b83d19f4faa8189b40c0204",
+      "duplicate_of": null,
+      "source_words": {
+        "status": "pass",
+        "reference_words": 357,
+        "extracted_words": 357,
+        "matched_words": 357,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "schema_errors": [],
+      "ocr": false,
+      "review_flags": [
+        {
+          "path": "fields.phones[0]",
+          "reason": "missing or low-confidence candidate",
+          "confidence": 0.7
+        }
+      ],
+      "heading_order_exact": true,
+      "metrics": {
+        "certifications": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "contact": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "education": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience": {
+          "tp": 18,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "headings": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 26,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "field_micro": {
+        "tp": 56,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "id": "R13",
+      "file": "comprehensive_resume_test_suite/08_DOCX_Executive_Corporate_Director.docx",
+      "sha256": "2b267dd0393ba6c14bc7123228cb38ef079f0237d0dd9b3db584c334b58b6146",
+      "duplicate_of": null,
+      "source_words": {
+        "status": "pass",
+        "reference_words": 339,
+        "extracted_words": 339,
+        "matched_words": 339,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "schema_errors": [],
+      "ocr": false,
+      "review_flags": [],
+      "heading_order_exact": true,
+      "metrics": {
+        "certifications": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "contact": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "education": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "headings": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "field_micro": {
+        "tp": 34,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "id": "R14",
+      "file": "comprehensive_resume_test_suite/09_DOCX_Academic_Research_CV.docx",
+      "sha256": "5830bdf1799ece64b8e44ef8b773300cf1305bbd793a6e973eb669c6491ca40c",
+      "duplicate_of": null,
+      "source_words": {
+        "status": "pass",
+        "reference_words": 204,
+        "extracted_words": 204,
+        "matched_words": 204,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "schema_errors": [],
+      "ocr": false,
+      "review_flags": [
+        {
+          "path": "fields.experience[0].location",
+          "reason": "missing or low-confidence candidate",
+          "confidence": 0.65
+        }
+      ],
+      "heading_order_exact": true,
+      "metrics": {
+        "contact": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "education": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "headings": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "field_micro": {
+        "tp": 20,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "id": "R15",
+      "file": "comprehensive_resume_test_suite/10_DOCX_Entry_Level_Business_Analyst.docx",
+      "sha256": "660f09e952f57e81c68954cb8f7097c29b6021b3a3152fa90114933b9ffc62d9",
+      "duplicate_of": null,
+      "source_words": {
+        "status": "pass",
+        "reference_words": 247,
+        "extracted_words": 247,
+        "matched_words": 247,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "schema_errors": [],
+      "ocr": false,
+      "review_flags": [
+        {
+          "path": "fields.phones[0]",
+          "reason": "missing or low-confidence candidate",
+          "confidence": 0.7
+        }
+      ],
+      "heading_order_exact": true,
+      "metrics": {
+        "contact": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "education": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "headings": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "projects": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "field_micro": {
+        "tp": 37,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "id": "R16",
+      "file": "resume_templates_test_bundle/01_Modern_Tech_Software_Engineer.docx",
+      "sha256": "2a72ffbeecb5dde4df82c996261ea24f562c5b526b83d19f4faa8189b40c0204",
+      "duplicate_of": "R12",
+      "source_words": {
+        "status": "pass",
+        "reference_words": 357,
+        "extracted_words": 357,
+        "matched_words": 357,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "schema_errors": [],
+      "ocr": false,
+      "review_flags": [
+        {
+          "path": "fields.phones[0]",
+          "reason": "missing or low-confidence candidate",
+          "confidence": 0.7
+        }
+      ],
+      "heading_order_exact": true,
+      "metrics": {
+        "certifications": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "contact": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "education": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience": {
+          "tp": 18,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "headings": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 26,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "field_micro": {
+        "tp": 56,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "id": "R17",
+      "file": "resume_templates_test_bundle/02_Executive_Corporate_Director.docx",
+      "sha256": "2b267dd0393ba6c14bc7123228cb38ef079f0237d0dd9b3db584c334b58b6146",
+      "duplicate_of": "R13",
+      "source_words": {
+        "status": "pass",
+        "reference_words": 339,
+        "extracted_words": 339,
+        "matched_words": 339,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "schema_errors": [],
+      "ocr": false,
+      "review_flags": [],
+      "heading_order_exact": true,
+      "metrics": {
+        "certifications": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "contact": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "education": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "headings": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "field_micro": {
+        "tp": 34,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "id": "R18",
+      "file": "resume_templates_test_bundle/03_Creative_Product_UX_Designer.docx",
+      "sha256": "4a72c3875570e7aa813cc0fe5c0bb0c59548859f011389924b4eecb362c49e8c",
+      "duplicate_of": null,
+      "source_words": {
+        "status": "pass",
+        "reference_words": 261,
+        "extracted_words": 261,
+        "matched_words": 261,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "schema_errors": [],
+      "ocr": false,
+      "review_flags": [
+        {
+          "path": "fields.phones[0]",
+          "reason": "missing or low-confidence candidate",
+          "confidence": 0.7
+        }
+      ],
+      "heading_order_exact": true,
+      "metrics": {
+        "contact": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "education": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "headings": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "field_micro": {
+        "tp": 36,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "id": "R19",
+      "file": "resume_templates_test_bundle/04_Academic_Research_CV.docx",
+      "sha256": "5830bdf1799ece64b8e44ef8b773300cf1305bbd793a6e973eb669c6491ca40c",
+      "duplicate_of": "R14",
+      "source_words": {
+        "status": "pass",
+        "reference_words": 204,
+        "extracted_words": 204,
+        "matched_words": 204,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "schema_errors": [],
+      "ocr": false,
+      "review_flags": [
+        {
+          "path": "fields.experience[0].location",
+          "reason": "missing or low-confidence candidate",
+          "confidence": 0.65
+        }
+      ],
+      "heading_order_exact": true,
+      "metrics": {
+        "contact": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "education": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "headings": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "field_micro": {
+        "tp": 20,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "id": "R20",
+      "file": "resume_templates_test_bundle/05_Entry_Level_Business_Analyst.docx",
+      "sha256": "660f09e952f57e81c68954cb8f7097c29b6021b3a3152fa90114933b9ffc62d9",
+      "duplicate_of": "R15",
+      "source_words": {
+        "status": "pass",
+        "reference_words": 247,
+        "extracted_words": 247,
+        "matched_words": 247,
+        "recall": 1.0,
+        "precision": 1.0,
+        "missing": {},
+        "extra": {}
+      },
+      "schema_errors": [],
+      "ocr": false,
+      "review_flags": [
+        {
+          "path": "fields.phones[0]",
+          "reason": "missing or low-confidence candidate",
+          "confidence": 0.7
+        }
+      ],
+      "heading_order_exact": true,
+      "metrics": {
+        "contact": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "education": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "experience": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "headings": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "projects": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "skills": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "missing": [],
+          "extra": [],
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "field_micro": {
+        "tp": 37,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  ],
+  "methodology": {
+    "labels": "Assistant-reviewed originals and source XML/PDF annotations; not blinded or independently adjudicated. Labels frozen before version 3 changes. Version 3 rules were developed against this set; this is development-set accuracy. Machine predictions were not manually corrected.",
+    "normalization": "NFKC, whitespace and trailing label colon. Phone punctuation ignored. URL http(s), www prefix and trailing slash ignored. No synonym expansion.",
+    "matching": "Non-null exact scalar claims, with entry ordinal for jobs, education and projects. Wrong value = one FP plus one FN. Null/null is not counted. Skills matched as (category, full source phrase), keeping parentheses and ampersand phrases intact.",
+    "scope": "Contact, job identity/location/dates/bullet counts, education identity/location/dates/GPA, project identity/dates/bullet counts/explicit technology lists, certification record labels and explicit skill groups. Headings measured separately. Not every prose assertion or award/publication metadata field is scored."
+  },
+  "labels_sha256": "fd069ac3a35544f0115f21f9a1ee91c5e62989c88cd6d58776aea26d46db5e7e"
+}

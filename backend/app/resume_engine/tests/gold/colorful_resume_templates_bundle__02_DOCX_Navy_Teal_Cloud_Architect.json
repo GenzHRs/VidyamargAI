@@ -1,0 +1,92 @@
+{
+  "file": "colorful_resume_templates_bundle/02_DOCX_Navy_Teal_Cloud_Architect.docx",
+  "sha256": "14b052f3cdc07a57f163a8498230e2ed0c81e3e72cd91a059631fadfdf382e35",
+  "persona": "darius",
+  "annotation_origin": "source-reviewed development labels authored for this task; not user gold or held out",
+  "headings": [
+    {
+      "text": "CONTACT",
+      "canonical": "contact"
+    },
+    {
+      "text": "ARCHITECTURE SKILLS",
+      "canonical": "skills"
+    },
+    {
+      "text": "CERTIFICATIONS",
+      "canonical": "certifications"
+    },
+    {
+      "text": "EXECUTIVE SUMMARY",
+      "canonical": "summary"
+    },
+    {
+      "text": "LEADERSHIP & ARCHITECTURE EXPERIENCE",
+      "canonical": "experience"
+    },
+    {
+      "text": "EDUCATION",
+      "canonical": "education"
+    }
+  ],
+  "fields": {
+    "name": "DARIUS K. VANCE",
+    "emails": [
+      "darius.vance@example.com"
+    ],
+    "phones": [
+      "(555) 304-9182"
+    ],
+    "locations": [
+      "Denver, CO"
+    ],
+    "urls": [
+      "github.com/darius-cloud",
+      "linkedin.com/in/dariusvance-dummy"
+    ],
+    "date_ranges": [
+      {
+        "start": "2021",
+        "end": "Present"
+      },
+      {
+        "start": "2017",
+        "end": "2021"
+      }
+    ],
+    "degrees": [
+      "M.S. in Computer Science",
+      "B.S. in Computer Engineering"
+    ],
+    "gpas": [],
+    "skills": [
+      "AWS",
+      "Azure",
+      "Kubernetes",
+      "Terraform",
+      "GitOps",
+      "ArgoCD",
+      "Apache Kafka",
+      "PostgreSQL",
+      "Snowflake",
+      "Redis",
+      "SOC2"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Principal Cloud Solutions Architect",
+      "company": "StrataCore Cloud Systems",
+      "start": "2021",
+      "end": "Present",
+      "bullet_count": 3
+    },
+    {
+      "title": "Lead Infrastructure Architect",
+      "company": "Apex Financial Technologies",
+      "start": "2017",
+      "end": "2021",
+      "bullet_count": 2
+    }
+  ]
+}

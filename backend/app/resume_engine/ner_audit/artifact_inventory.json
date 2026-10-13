@@ -1,0 +1,2048 @@
+[
+  {
+    "resume": "U01",
+    "file": "artifacts/U01/raw.txt",
+    "bytes": 3349,
+    "sha256": "7889d9e5d7680e392ed6b24dffbd6768367ab4ac10e65129303739350cee5937",
+    "characters": 3296
+  },
+  {
+    "resume": "U01",
+    "file": "artifacts/U01/structured.json",
+    "bytes": 21180,
+    "sha256": "6fe8f1dab24b0b2292026c62117c852db43659f15279196fbf90bf96cd5eeddc",
+    "characters": 21056,
+    "keys": [
+      "schema_version",
+      "section_order",
+      "entry_order",
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections",
+      "review",
+      "source_sections"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U01",
+    "file": "artifacts/U01/structured.md",
+    "bytes": 3626,
+    "sha256": "4bb85138d2bb2bbb5065acea835fdb92285d7c6c4bdd723275bddcb9c57685dd",
+    "characters": 3612
+  },
+  {
+    "resume": "U01",
+    "file": "artifacts/U01/resume.json",
+    "bytes": 343896,
+    "sha256": "19a1c408dbc24bfc89b32a944aa32fab87149303d72e6100e5df3c8e8f1ecf2e",
+    "characters": 343216,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U01",
+    "file": "artifacts/U01/resume.md",
+    "bytes": 3467,
+    "sha256": "01458cb41ec7880603ee54a16e3879bff8ed6eb1589cdcc2e2fa77a0dbeaaf6a",
+    "characters": 3414
+  },
+  {
+    "resume": "U01",
+    "file": "artifacts/U01/source.txt",
+    "bytes": 3347,
+    "sha256": "08d99177b364077f2d8b09bceeeeffe3e83212b5c86855c728bdf15a45b934f1",
+    "characters": 3296
+  },
+  {
+    "resume": "U01",
+    "file": "artifacts/U01/normalized.txt",
+    "bytes": 3349,
+    "sha256": "80c3673d36991240c43749e26f36d040d450ef7b0a3eda8e8b6f6a0aeb62662d",
+    "characters": 3296
+  },
+  {
+    "resume": "U01",
+    "file": "artifacts/U01/structured.txt",
+    "bytes": 3626,
+    "sha256": "4bb85138d2bb2bbb5065acea835fdb92285d7c6c4bdd723275bddcb9c57685dd",
+    "characters": 3612
+  },
+  {
+    "resume": "U01",
+    "file": "artifacts/U01/quality.json",
+    "bytes": 317,
+    "sha256": "d492d48eb3f36c2c6800116257348ce05353a9ee733a4fd791bc38101a0bf75e",
+    "characters": 316,
+    "keys": [
+      "completeness",
+      "schema_errors",
+      "warnings",
+      "suppressed_exact_repeats"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U02",
+    "file": "artifacts/U02/raw.txt",
+    "bytes": 2957,
+    "sha256": "662d8ac7aea38e6ba6c60ff079066cc89a24f00ae3b9b1a5ff141b9e2e60a7c2",
+    "characters": 2917
+  },
+  {
+    "resume": "U02",
+    "file": "artifacts/U02/structured.json",
+    "bytes": 20643,
+    "sha256": "84b2c94d33307a7007c501efe741ac401b8fa9591a8314aff0d2b733f28bc1f1",
+    "characters": 20551,
+    "keys": [
+      "schema_version",
+      "section_order",
+      "entry_order",
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections",
+      "review",
+      "source_sections"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U02",
+    "file": "artifacts/U02/audit_original_resume.json",
+    "bytes": 348045,
+    "sha256": "57e777e39e1b7c2ff28ad35a5169380edfe5f235757adc8f38c2c68aeb783dba",
+    "characters": 347533,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U02",
+    "file": "artifacts/U02/structured.md",
+    "bytes": 3034,
+    "sha256": "b1cc39a6c86c95081c76a913bdd1086de58aaf4245a48b9f8ae29b2a5b214931",
+    "characters": 3024
+  },
+  {
+    "resume": "U02",
+    "file": "artifacts/U02/resume.json",
+    "bytes": 360629,
+    "sha256": "ed342eb38bb65117b9ccd55535318f034798c11b9f104d04f2c839c432a86434",
+    "characters": 360117,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U02",
+    "file": "artifacts/U02/resume.md",
+    "bytes": 3037,
+    "sha256": "2cda8dc35a60ae77ebb7b5147a1af62cec523b0b524153778ba7958756ae3b46",
+    "characters": 2997
+  },
+  {
+    "resume": "U02",
+    "file": "artifacts/U02/source.txt",
+    "bytes": 2960,
+    "sha256": "8a6906d633a0857d9b14563ff1f13969cfd0d1e4b2fe4fc2ece4cb1afebf2ff3",
+    "characters": 2920
+  },
+  {
+    "resume": "U02",
+    "file": "artifacts/U02/normalized.txt",
+    "bytes": 2957,
+    "sha256": "f68b4be7e5f88a5b04783905761bae3b13a1b24e83f4b4844be56e725c603084",
+    "characters": 2917
+  },
+  {
+    "resume": "U02",
+    "file": "artifacts/U02/structured.txt",
+    "bytes": 3034,
+    "sha256": "b1cc39a6c86c95081c76a913bdd1086de58aaf4245a48b9f8ae29b2a5b214931",
+    "characters": 3024
+  },
+  {
+    "resume": "U02",
+    "file": "artifacts/U02/quality.json",
+    "bytes": 384,
+    "sha256": "6ded8b2f264393975c25fbcaa5bfbf3d6b33b0720bb336ad99d7bb239be4dabe",
+    "characters": 384,
+    "keys": [
+      "completeness",
+      "schema_errors",
+      "warnings",
+      "suppressed_exact_repeats"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U02",
+    "file": "artifacts/U02/uploaded_resume.md",
+    "bytes": 3132,
+    "sha256": "e2ca06f2d8aa9f5a8f8a17a2174be3fc4f353ee6fe720237ae46bd57756cc490",
+    "characters": 3092
+  },
+  {
+    "resume": "U03",
+    "file": "artifacts/U03/raw.txt",
+    "bytes": 3340,
+    "sha256": "fd854065723ae5e59de5589994ca495f76edeba892f22aa409226b0d0916c1e1",
+    "characters": 3287
+  },
+  {
+    "resume": "U03",
+    "file": "artifacts/U03/structured.json",
+    "bytes": 22121,
+    "sha256": "17a11c4c4a1b77375908ff2956dba2abbcad52180578878be7829e4a4d68c54a",
+    "characters": 21999,
+    "keys": [
+      "schema_version",
+      "section_order",
+      "entry_order",
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections",
+      "review",
+      "source_sections"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U03",
+    "file": "artifacts/U03/audit_original_resume.json",
+    "bytes": 346067,
+    "sha256": "40068705fdb5d7bbc94502243a7eb52d24891b6e452fccc61ffc815a553aef8b",
+    "characters": 345383,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U03",
+    "file": "artifacts/U03/structured.md",
+    "bytes": 3707,
+    "sha256": "bb4d2cffa08230a7d32afdd7c3289b6be7161253304124dacfe6c46ddd90c063",
+    "characters": 3693
+  },
+  {
+    "resume": "U03",
+    "file": "artifacts/U03/resume.json",
+    "bytes": 358869,
+    "sha256": "ded9c2c6e9f9644d687337ea5a8f34a9195bb3e2be33eedf0af4f7aa336ca78c",
+    "characters": 358185,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U03",
+    "file": "artifacts/U03/resume.md",
+    "bytes": 3459,
+    "sha256": "7ca308e9c9662850948c7814c29618cbeac6fa5e4647fb9c77a71681ae01a20c",
+    "characters": 3406
+  },
+  {
+    "resume": "U03",
+    "file": "artifacts/U03/source.txt",
+    "bytes": 3338,
+    "sha256": "f5adbe076ee4a5b3853cffb63fb1c549c2d6398039758047aebe463de9626b09",
+    "characters": 3287
+  },
+  {
+    "resume": "U03",
+    "file": "artifacts/U03/normalized.txt",
+    "bytes": 3340,
+    "sha256": "9d4c731e28ecf79bd77548050ada57165f877ae6832fb6ce0f8b2483392bf80c",
+    "characters": 3287
+  },
+  {
+    "resume": "U03",
+    "file": "artifacts/U03/structured.txt",
+    "bytes": 3707,
+    "sha256": "bb4d2cffa08230a7d32afdd7c3289b6be7161253304124dacfe6c46ddd90c063",
+    "characters": 3693
+  },
+  {
+    "resume": "U03",
+    "file": "artifacts/U03/quality.json",
+    "bytes": 317,
+    "sha256": "d821b12ad809b03863356b2d1106f78a87c1f318d46a1f7ea2f79ace0cad6fb2",
+    "characters": 316,
+    "keys": [
+      "completeness",
+      "schema_errors",
+      "warnings",
+      "suppressed_exact_repeats"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U03",
+    "file": "artifacts/U03/uploaded_resume.md",
+    "bytes": 3552,
+    "sha256": "d9e3c8fcb4e4655e4fceb08bb482a33ef84397817c0153429881458993095998",
+    "characters": 3499
+  },
+  {
+    "resume": "U04",
+    "file": "artifacts/U04/raw.txt",
+    "bytes": 1522,
+    "sha256": "4c3b03b0757d3d6efd2962c109ec316539698b68c3c1ce62460e7cb3c60454d3",
+    "characters": 1482
+  },
+  {
+    "resume": "U04",
+    "file": "artifacts/U04/structured.json",
+    "bytes": 11013,
+    "sha256": "aed56eb10856fb76d64676310695d3c3c272e3a93b4ea79a5bcd22cb71c1747e",
+    "characters": 10923,
+    "keys": [
+      "schema_version",
+      "section_order",
+      "entry_order",
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections",
+      "review",
+      "source_sections"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U04",
+    "file": "artifacts/U04/structured.md",
+    "bytes": 1492,
+    "sha256": "d32dc2643c9c4960a5f2b6bd7655e4cf55b8ee60522e924db9d1cdb80f2a42ff",
+    "characters": 1482
+  },
+  {
+    "resume": "U04",
+    "file": "artifacts/U04/resume.json",
+    "bytes": 74619,
+    "sha256": "dda46aa3ab7de4c1b166102e3a0224dae7e080f5aa24ff2b0c24cd04f293fd32",
+    "characters": 74175,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U04",
+    "file": "artifacts/U04/resume.md",
+    "bytes": 1586,
+    "sha256": "7e0dd9182a9d551733078ec25a64f9bb995747f07454326a3c0eb43275b5cac2",
+    "characters": 1546
+  },
+  {
+    "resume": "U04",
+    "file": "artifacts/U04/source.txt",
+    "bytes": 1550,
+    "sha256": "85aa2cb4e1cfbbe189c8ff0e3be3acd0b734f76217435d9886914682303df186",
+    "characters": 1510
+  },
+  {
+    "resume": "U04",
+    "file": "artifacts/U04/normalized.txt",
+    "bytes": 1522,
+    "sha256": "4c3b03b0757d3d6efd2962c109ec316539698b68c3c1ce62460e7cb3c60454d3",
+    "characters": 1482
+  },
+  {
+    "resume": "U04",
+    "file": "artifacts/U04/structured.txt",
+    "bytes": 1492,
+    "sha256": "d32dc2643c9c4960a5f2b6bd7655e4cf55b8ee60522e924db9d1cdb80f2a42ff",
+    "characters": 1482
+  },
+  {
+    "resume": "U04",
+    "file": "artifacts/U04/quality.json",
+    "bytes": 283,
+    "sha256": "dc4806060b35dcb3500ca546e1b3b30a2d2b7da961023987630f871016b69d6f",
+    "characters": 283,
+    "keys": [
+      "completeness",
+      "schema_errors",
+      "warnings",
+      "suppressed_exact_repeats"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U05",
+    "file": "artifacts/U05/raw.txt",
+    "bytes": 1721,
+    "sha256": "8db5b3ea3d621f14eb920d28aeff1d0f9131bd9febc866f6cd9cb4c7abda2152",
+    "characters": 1683
+  },
+  {
+    "resume": "U05",
+    "file": "artifacts/U05/structured.json",
+    "bytes": 13196,
+    "sha256": "265e743b12fb8a8941d685a37d3f97b2bb72b53e5ad0c33122612f02d2358c82",
+    "characters": 13110,
+    "keys": [
+      "schema_version",
+      "section_order",
+      "entry_order",
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections",
+      "review",
+      "source_sections"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U05",
+    "file": "artifacts/U05/structured.md",
+    "bytes": 1636,
+    "sha256": "b3c31374d561c9d18f9ffc226985269b87e6083f793b345d8a5e34ee662ac20e",
+    "characters": 1632
+  },
+  {
+    "resume": "U05",
+    "file": "artifacts/U05/resume.json",
+    "bytes": 86475,
+    "sha256": "e4be4e7f2e90b7526d29a90d1b203b909d820fa1ac856e1ccce0f23e4aee91d3",
+    "characters": 86057,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U05",
+    "file": "artifacts/U05/resume.md",
+    "bytes": 1793,
+    "sha256": "e8b3526f8e5698c13e21967be0217f06d6cef8e77f32cebed1e9d9b85177765a",
+    "characters": 1755
+  },
+  {
+    "resume": "U05",
+    "file": "artifacts/U05/source.txt",
+    "bytes": 1743,
+    "sha256": "0c02a714e546a6f6f3da0ea62f40b42cf1e8d544e8261bba9070f69158a4a5e6",
+    "characters": 1705
+  },
+  {
+    "resume": "U05",
+    "file": "artifacts/U05/normalized.txt",
+    "bytes": 1721,
+    "sha256": "8db5b3ea3d621f14eb920d28aeff1d0f9131bd9febc866f6cd9cb4c7abda2152",
+    "characters": 1683
+  },
+  {
+    "resume": "U05",
+    "file": "artifacts/U05/structured.txt",
+    "bytes": 1636,
+    "sha256": "b3c31374d561c9d18f9ffc226985269b87e6083f793b345d8a5e34ee662ac20e",
+    "characters": 1632
+  },
+  {
+    "resume": "U05",
+    "file": "artifacts/U05/quality.json",
+    "bytes": 283,
+    "sha256": "712d12cbdc3e495c8c6d68d160dcae0f47d2d3fe5279ded313961db3637ecac6",
+    "characters": 283,
+    "keys": [
+      "completeness",
+      "schema_errors",
+      "warnings",
+      "suppressed_exact_repeats"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U06",
+    "file": "artifacts/U06/raw.txt",
+    "bytes": 1666,
+    "sha256": "24e5bb52b4542a393deab6329824921cf6d451ce70f65172a0b07b37c4861db1",
+    "characters": 1622
+  },
+  {
+    "resume": "U06",
+    "file": "artifacts/U06/structured.json",
+    "bytes": 11341,
+    "sha256": "fea202c221aa727f5112f68cab84854f74d6eead600d9686da08602e69aca09e",
+    "characters": 11243,
+    "keys": [
+      "schema_version",
+      "section_order",
+      "entry_order",
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections",
+      "review",
+      "source_sections"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U06",
+    "file": "artifacts/U06/structured.md",
+    "bytes": 1611,
+    "sha256": "8faa18effb6d197fa806f6fc59b841231c832ab1ea75c8e6a70c9af8b0505816",
+    "characters": 1599
+  },
+  {
+    "resume": "U06",
+    "file": "artifacts/U06/resume.json",
+    "bytes": 191359,
+    "sha256": "059718e53bd5acf81f546afc75a4490ce14ef8a1ca52ef098be814f87cb3589b",
+    "characters": 190855,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U06",
+    "file": "artifacts/U06/resume.md",
+    "bytes": 1726,
+    "sha256": "46dd15bdd3a6de5f58eb46b73dc300c433e026016930e9ea16dcd97638ba7a49",
+    "characters": 1682
+  },
+  {
+    "resume": "U06",
+    "file": "artifacts/U06/source.txt",
+    "bytes": 1668,
+    "sha256": "fa6cf022261791d3200a989d8b043e142b4b1cb4f5fdc8db60d404681d1f21f0",
+    "characters": 1624
+  },
+  {
+    "resume": "U06",
+    "file": "artifacts/U06/normalized.txt",
+    "bytes": 1666,
+    "sha256": "07a093176cdf6640d385bb19ba6477cf0732a03e4a5bc337229f16d397e58777",
+    "characters": 1622
+  },
+  {
+    "resume": "U06",
+    "file": "artifacts/U06/structured.txt",
+    "bytes": 1611,
+    "sha256": "8faa18effb6d197fa806f6fc59b841231c832ab1ea75c8e6a70c9af8b0505816",
+    "characters": 1599
+  },
+  {
+    "resume": "U06",
+    "file": "artifacts/U06/quality.json",
+    "bytes": 283,
+    "sha256": "3318ab0f366f4bde5068ec553fdf21abf5ed9e77cf059285325ee9247f1d34cd",
+    "characters": 283,
+    "keys": [
+      "completeness",
+      "schema_errors",
+      "warnings",
+      "suppressed_exact_repeats"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U07",
+    "file": "artifacts/U07/raw.txt",
+    "bytes": 1535,
+    "sha256": "4b363544cbeb9ddb847bea15fb8606aa1f2ad7e8a74ec359248b42eae9693780",
+    "characters": 1487
+  },
+  {
+    "resume": "U07",
+    "file": "artifacts/U07/structured.json",
+    "bytes": 12087,
+    "sha256": "bb2c4a12c4a6533c22a06d9ede10d998ca16cf3d48017da7e105aaccfb21a4d2",
+    "characters": 11983,
+    "keys": [
+      "schema_version",
+      "section_order",
+      "entry_order",
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections",
+      "review",
+      "source_sections"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U07",
+    "file": "artifacts/U07/structured.md",
+    "bytes": 1635,
+    "sha256": "432ff042d814d68b9fcfc6925fb5bfd937c27bb3f9771a6f092eaf438bedffcd",
+    "characters": 1631
+  },
+  {
+    "resume": "U07",
+    "file": "artifacts/U07/resume.json",
+    "bytes": 167056,
+    "sha256": "caac7c1f2fd36f835e121aeee43e6caa4d82510717d10bcca68ef0a26a82758c",
+    "characters": 166506,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U07",
+    "file": "artifacts/U07/resume.md",
+    "bytes": 1599,
+    "sha256": "db0c5bb1eee34bc439d4d214e9b6bd7235a671b0645f468ce8d1ce3e97fed3c8",
+    "characters": 1551
+  },
+  {
+    "resume": "U07",
+    "file": "artifacts/U07/source.txt",
+    "bytes": 1537,
+    "sha256": "d2d32ca042a550ced1be1dd28a36909a153dc41e0727edad4b35ed653532bbad",
+    "characters": 1489
+  },
+  {
+    "resume": "U07",
+    "file": "artifacts/U07/normalized.txt",
+    "bytes": 1535,
+    "sha256": "4b363544cbeb9ddb847bea15fb8606aa1f2ad7e8a74ec359248b42eae9693780",
+    "characters": 1487
+  },
+  {
+    "resume": "U07",
+    "file": "artifacts/U07/structured.txt",
+    "bytes": 1635,
+    "sha256": "432ff042d814d68b9fcfc6925fb5bfd937c27bb3f9771a6f092eaf438bedffcd",
+    "characters": 1631
+  },
+  {
+    "resume": "U07",
+    "file": "artifacts/U07/quality.json",
+    "bytes": 283,
+    "sha256": "5c01e48cf95f79437ad035f74930d83ff075543eb6660a70d15b77d706d67315",
+    "characters": 283,
+    "keys": [
+      "completeness",
+      "schema_errors",
+      "warnings",
+      "suppressed_exact_repeats"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U08",
+    "file": "artifacts/U08/raw.txt",
+    "bytes": 1530,
+    "sha256": "d1b6c375eafb6930b18145c90f60da9301eed79b7f4de880dd988a461cfa9fdc",
+    "characters": 1500
+  },
+  {
+    "resume": "U08",
+    "file": "artifacts/U08/structured.json",
+    "bytes": 11476,
+    "sha256": "e730ac9d68156e7afd48bb308b5222e32fba9cf01ff1a2e73e968db4f65d9566",
+    "characters": 11406,
+    "keys": [
+      "schema_version",
+      "section_order",
+      "entry_order",
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections",
+      "review",
+      "source_sections"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U08",
+    "file": "artifacts/U08/structured.md",
+    "bytes": 1445,
+    "sha256": "6efb7e91a61af560db03f49d21654f1f9d66e939f0480b37bfe123c3838b1ea7",
+    "characters": 1441
+  },
+  {
+    "resume": "U08",
+    "file": "artifacts/U08/resume.json",
+    "bytes": 87170,
+    "sha256": "187023dac26507f51b0f1196c9dce278aae3453de39f7cf68419733430c11b02",
+    "characters": 86832,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U08",
+    "file": "artifacts/U08/resume.md",
+    "bytes": 1594,
+    "sha256": "565ceb8d96a1ba31ecea4fd541d7f9c15ffaeff55e9b28033c3efdb7508dc558",
+    "characters": 1564
+  },
+  {
+    "resume": "U08",
+    "file": "artifacts/U08/source.txt",
+    "bytes": 1555,
+    "sha256": "45007ffb630b25bb8ccad903f42fde82a90b2928bac79b9a1ac8e4ba4b094e5d",
+    "characters": 1525
+  },
+  {
+    "resume": "U08",
+    "file": "artifacts/U08/normalized.txt",
+    "bytes": 1530,
+    "sha256": "d1b6c375eafb6930b18145c90f60da9301eed79b7f4de880dd988a461cfa9fdc",
+    "characters": 1500
+  },
+  {
+    "resume": "U08",
+    "file": "artifacts/U08/structured.txt",
+    "bytes": 1445,
+    "sha256": "6efb7e91a61af560db03f49d21654f1f9d66e939f0480b37bfe123c3838b1ea7",
+    "characters": 1441
+  },
+  {
+    "resume": "U08",
+    "file": "artifacts/U08/quality.json",
+    "bytes": 283,
+    "sha256": "2bc5fe6fe267b20f89e2d8d6696291218ac43cc8f2ac8d32246e6d2e500c9be2",
+    "characters": 283,
+    "keys": [
+      "completeness",
+      "schema_errors",
+      "warnings",
+      "suppressed_exact_repeats"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U09",
+    "file": "artifacts/U09/raw.txt",
+    "bytes": 1391,
+    "sha256": "c9cafdd3d8e9eb14db4076a09601ef9566607d9d76d764fbfd302b359f7afd93",
+    "characters": 1357
+  },
+  {
+    "resume": "U09",
+    "file": "artifacts/U09/structured.json",
+    "bytes": 10543,
+    "sha256": "b3ff25f1d64d30fc099561d5f224b9b5074e2c80d5eb887f40d36dabdcf0a84c",
+    "characters": 10463,
+    "keys": [
+      "schema_version",
+      "section_order",
+      "entry_order",
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections",
+      "review",
+      "source_sections"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U09",
+    "file": "artifacts/U09/structured.md",
+    "bytes": 1319,
+    "sha256": "88902aff777d8bac964deaefbc903fe7ee4e3d99f087f6e1fd9461360fec59ec",
+    "characters": 1313
+  },
+  {
+    "resume": "U09",
+    "file": "artifacts/U09/resume.json",
+    "bytes": 76309,
+    "sha256": "441082850450dc8b45a58153e4e1562f038daa629309039426e40c3217c1e24e",
+    "characters": 75929,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U09",
+    "file": "artifacts/U09/resume.md",
+    "bytes": 1459,
+    "sha256": "101345c76822314597b85ffaf621a4ad7474ce388bf7242a9cd292f70b920c71",
+    "characters": 1425
+  },
+  {
+    "resume": "U09",
+    "file": "artifacts/U09/source.txt",
+    "bytes": 1460,
+    "sha256": "75042b122f35b2809b3640b57d91fd7580172931adf50e7445e0707f48f918a9",
+    "characters": 1426
+  },
+  {
+    "resume": "U09",
+    "file": "artifacts/U09/normalized.txt",
+    "bytes": 1391,
+    "sha256": "c9cafdd3d8e9eb14db4076a09601ef9566607d9d76d764fbfd302b359f7afd93",
+    "characters": 1357
+  },
+  {
+    "resume": "U09",
+    "file": "artifacts/U09/structured.txt",
+    "bytes": 1319,
+    "sha256": "88902aff777d8bac964deaefbc903fe7ee4e3d99f087f6e1fd9461360fec59ec",
+    "characters": 1313
+  },
+  {
+    "resume": "U09",
+    "file": "artifacts/U09/quality.json",
+    "bytes": 283,
+    "sha256": "a9083b6c2fb4ce75d32b8f932837a862c346dec5b81665dc6ce9bf0a5fff187e",
+    "characters": 283,
+    "keys": [
+      "completeness",
+      "schema_errors",
+      "warnings",
+      "suppressed_exact_repeats"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U10",
+    "file": "artifacts/U10/raw.txt",
+    "bytes": 1548,
+    "sha256": "46d1064e6cf33c760cef5ef4a233457566fb814477ebb98860b04db3f29b5dce",
+    "characters": 1506
+  },
+  {
+    "resume": "U10",
+    "file": "artifacts/U10/structured.json",
+    "bytes": 11358,
+    "sha256": "341f3d73e1683654d9ff20a2a8e5c6b6895761ce5d2d1f421a4f89b573898592",
+    "characters": 11268,
+    "keys": [
+      "schema_version",
+      "section_order",
+      "entry_order",
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections",
+      "review",
+      "source_sections"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U10",
+    "file": "artifacts/U10/structured.md",
+    "bytes": 1477,
+    "sha256": "c60ad14168a899012f31601c335a36bee09dbcfb14a7e63a9f5c04a4e2ce3d1d",
+    "characters": 1465
+  },
+  {
+    "resume": "U10",
+    "file": "artifacts/U10/resume.json",
+    "bytes": 69853,
+    "sha256": "cefc855abcc7c8ff0b846eb0526ee683166fe6fc0647b812a3bb539f1f624ee2",
+    "characters": 69397,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U10",
+    "file": "artifacts/U10/resume.md",
+    "bytes": 1609,
+    "sha256": "548e8f57f052badf779d2ea197e2ff3d8c467d8a101d9ddac36a649688b912b6",
+    "characters": 1567
+  },
+  {
+    "resume": "U10",
+    "file": "artifacts/U10/source.txt",
+    "bytes": 1572,
+    "sha256": "1ec807a8c43447b9c1472aa6ff6c2580dfcc49913027b8782fdc74c103327d1e",
+    "characters": 1530
+  },
+  {
+    "resume": "U10",
+    "file": "artifacts/U10/normalized.txt",
+    "bytes": 1548,
+    "sha256": "5a2098a71cf7303c306bdb4d97df5e1887cdd5ff66aaf8caf176b19c932cdcc5",
+    "characters": 1506
+  },
+  {
+    "resume": "U10",
+    "file": "artifacts/U10/structured.txt",
+    "bytes": 1477,
+    "sha256": "c60ad14168a899012f31601c335a36bee09dbcfb14a7e63a9f5c04a4e2ce3d1d",
+    "characters": 1465
+  },
+  {
+    "resume": "U10",
+    "file": "artifacts/U10/quality.json",
+    "bytes": 283,
+    "sha256": "1fd1199ca8aded3bcacc7c3f82cf644d27dadd4dde6b670e402dddd86db5c629",
+    "characters": 283,
+    "keys": [
+      "completeness",
+      "schema_errors",
+      "warnings",
+      "suppressed_exact_repeats"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U11",
+    "file": "artifacts/U11/raw.txt",
+    "bytes": 1530,
+    "sha256": "5db5693a127c8fba0858a66d7e209de8b82e846f3151c7c814fffd91112c113e",
+    "characters": 1490
+  },
+  {
+    "resume": "U11",
+    "file": "artifacts/U11/structured.json",
+    "bytes": 12192,
+    "sha256": "818c36e04c4e6c828315e0b03d01b77012e58b226956063a9827a814ff4d903e",
+    "characters": 12102,
+    "keys": [
+      "schema_version",
+      "section_order",
+      "entry_order",
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections",
+      "review",
+      "source_sections"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U11",
+    "file": "artifacts/U11/structured.md",
+    "bytes": 1466,
+    "sha256": "7b9c283b5fad8abcb98a28cf98581489147cdd2677e88d108481f2863f629cdf",
+    "characters": 1460
+  },
+  {
+    "resume": "U11",
+    "file": "artifacts/U11/resume.json",
+    "bytes": 181062,
+    "sha256": "b9b76deaf9820294d2865c3814aa694dad7b060e31a63c6cb8a3d13a77b2e5b1",
+    "characters": 180598,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U11",
+    "file": "artifacts/U11/resume.md",
+    "bytes": 1598,
+    "sha256": "5074b5f8c355d383af5ade00072dbecf136c822948773ab8e173be65191298cf",
+    "characters": 1558
+  },
+  {
+    "resume": "U11",
+    "file": "artifacts/U11/source.txt",
+    "bytes": 1532,
+    "sha256": "1e8b8769ebbef1e8b384359588832a5335a83a7a7b200f6d09f64e6d139c9259",
+    "characters": 1492
+  },
+  {
+    "resume": "U11",
+    "file": "artifacts/U11/normalized.txt",
+    "bytes": 1530,
+    "sha256": "abb7058145b21f1d2c94ed218abc8b842c353a878acdd7ef69893b95b0361026",
+    "characters": 1490
+  },
+  {
+    "resume": "U11",
+    "file": "artifacts/U11/structured.txt",
+    "bytes": 1466,
+    "sha256": "7b9c283b5fad8abcb98a28cf98581489147cdd2677e88d108481f2863f629cdf",
+    "characters": 1460
+  },
+  {
+    "resume": "U11",
+    "file": "artifacts/U11/quality.json",
+    "bytes": 283,
+    "sha256": "803783979e363758e05cbc15dd4602c64f25d128bf0b4d84b5b2c6f5422ac241",
+    "characters": 283,
+    "keys": [
+      "completeness",
+      "schema_errors",
+      "warnings",
+      "suppressed_exact_repeats"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U12",
+    "file": "artifacts/U12/raw.txt",
+    "bytes": 1641,
+    "sha256": "68c862cab95de5e4fba686d33533a0bbb964d6ef656686ad4bf0453022a8cf0a",
+    "characters": 1607
+  },
+  {
+    "resume": "U12",
+    "file": "artifacts/U12/structured.json",
+    "bytes": 12175,
+    "sha256": "a98357861ef4bb909a3927932ed8a91a3d2dd49123056f3a3e4a751c045dda22",
+    "characters": 12095,
+    "keys": [
+      "schema_version",
+      "section_order",
+      "entry_order",
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections",
+      "review",
+      "source_sections"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U12",
+    "file": "artifacts/U12/audit_original_resume.json",
+    "bytes": 200887,
+    "sha256": "6b517394e6a9960537ac18a455a691cf29f1cb15e4d2ea3e168e993e8b4b0f7b",
+    "characters": 200495,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U12",
+    "file": "artifacts/U12/structured.md",
+    "bytes": 1619,
+    "sha256": "9d5eab311565c528e8a877a17d2fe2ae865ec297eae593a96dabce1c4d651b47",
+    "characters": 1613
+  },
+  {
+    "resume": "U12",
+    "file": "artifacts/U12/resume.json",
+    "bytes": 208991,
+    "sha256": "ba5481c861297ed0846e6f0d60155b105fda03fcdb8ba529d33a2cf89b86f6db",
+    "characters": 208599,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U12",
+    "file": "artifacts/U12/resume.md",
+    "bytes": 1753,
+    "sha256": "483b88b1bf457b0ebd1c0bedfc30b42c49045da9eb4eaa65d7db6698206405b9",
+    "characters": 1719
+  },
+  {
+    "resume": "U12",
+    "file": "artifacts/U12/source.txt",
+    "bytes": 1643,
+    "sha256": "87b213f72d3b767e9655fa649e8ed9e8e359af25d2eecc59d11b46aaf6492615",
+    "characters": 1609
+  },
+  {
+    "resume": "U12",
+    "file": "artifacts/U12/normalized.txt",
+    "bytes": 1641,
+    "sha256": "d22e7e1ac1c32afb0d92a0430438da80c66dc6ef00355fd54666fa991f0b1903",
+    "characters": 1607
+  },
+  {
+    "resume": "U12",
+    "file": "artifacts/U12/structured.txt",
+    "bytes": 1619,
+    "sha256": "9d5eab311565c528e8a877a17d2fe2ae865ec297eae593a96dabce1c4d651b47",
+    "characters": 1613
+  },
+  {
+    "resume": "U12",
+    "file": "artifacts/U12/quality.json",
+    "bytes": 283,
+    "sha256": "663f073bc59c4f70cdadcb438af958598a2a26e6f8ee4485b5ccd7eb81de79d0",
+    "characters": 283,
+    "keys": [
+      "completeness",
+      "schema_errors",
+      "warnings",
+      "suppressed_exact_repeats"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U12",
+    "file": "artifacts/U12/uploaded_resume.md",
+    "bytes": 1850,
+    "sha256": "71da3ab545f2c01b5fe655ebb2068dd44b97f45b5b1303769850981479684963",
+    "characters": 1816
+  },
+  {
+    "resume": "U13",
+    "file": "artifacts/U13/raw.txt",
+    "bytes": 1597,
+    "sha256": "65ed83301033a9053d2c73d23ecbeae28ec45eb58920b2dd74a876bfd6fb49e2",
+    "characters": 1557
+  },
+  {
+    "resume": "U13",
+    "file": "artifacts/U13/structured.json",
+    "bytes": 11485,
+    "sha256": "b172bdffca055ac5a72dfe9129cd9d766389963118cedd3cd08017798fa21289",
+    "characters": 11395,
+    "keys": [
+      "schema_version",
+      "section_order",
+      "entry_order",
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections",
+      "review",
+      "source_sections"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U13",
+    "file": "artifacts/U13/audit_original_resume.json",
+    "bytes": 182120,
+    "sha256": "1cdd657512df17892532141e69969c7e56d35d642c7bd65383b782341a4e7f7e",
+    "characters": 181656,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U13",
+    "file": "artifacts/U13/structured.md",
+    "bytes": 1554,
+    "sha256": "64953c8d3076c3d0302240fa948dde1bf998e64f094ec3598b66800c109ff6c3",
+    "characters": 1542
+  },
+  {
+    "resume": "U13",
+    "file": "artifacts/U13/resume.json",
+    "bytes": 189149,
+    "sha256": "ce8c1622f95c1098d078da4e95a68b6157f405f0409a1fe80113df0196513474",
+    "characters": 188685,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U13",
+    "file": "artifacts/U13/resume.md",
+    "bytes": 1660,
+    "sha256": "e156ae508d4d445a94535e1ad7e70d482f081b27afa2e8de9aa37c7c77ea0bf6",
+    "characters": 1620
+  },
+  {
+    "resume": "U13",
+    "file": "artifacts/U13/source.txt",
+    "bytes": 1599,
+    "sha256": "1512f953da80009c85ad658ba3fe97e2df609e3fbb82c5687d1446415b553f10",
+    "characters": 1559
+  },
+  {
+    "resume": "U13",
+    "file": "artifacts/U13/normalized.txt",
+    "bytes": 1597,
+    "sha256": "a388ce6627fa01bef19f977826c3034466c52c77ae1a25b02f97347312441d02",
+    "characters": 1557
+  },
+  {
+    "resume": "U13",
+    "file": "artifacts/U13/structured.txt",
+    "bytes": 1554,
+    "sha256": "64953c8d3076c3d0302240fa948dde1bf998e64f094ec3598b66800c109ff6c3",
+    "characters": 1542
+  },
+  {
+    "resume": "U13",
+    "file": "artifacts/U13/quality.json",
+    "bytes": 283,
+    "sha256": "5f3c00f8047655d190d718a75fff88ec087c7a759b2d45e3c75a4603213f9bdf",
+    "characters": 283,
+    "keys": [
+      "completeness",
+      "schema_errors",
+      "warnings",
+      "suppressed_exact_repeats"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U13",
+    "file": "artifacts/U13/uploaded_resume.md",
+    "bytes": 1719,
+    "sha256": "c0dc4ae86fd47e3418247b4beed6dab995398ac4a568eb9dfac7d527d58bd278",
+    "characters": 1679
+  },
+  {
+    "resume": "U14",
+    "file": "artifacts/U14/raw.txt",
+    "bytes": 2683,
+    "sha256": "cf59bd89ce1d27ef9d5132c67745f1a500b3f12806da271f7cf66d5d3ff19f70",
+    "characters": 2649
+  },
+  {
+    "resume": "U14",
+    "file": "artifacts/U14/structured.json",
+    "bytes": 15562,
+    "sha256": "e76c8914bbeb6957c1a19c5b5cbd303b5c8d23acddb41a5762cc8f208122d021",
+    "characters": 15492,
+    "keys": [
+      "schema_version",
+      "section_order",
+      "entry_order",
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections",
+      "review",
+      "source_sections"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U14",
+    "file": "artifacts/U14/audit_original_resume.json",
+    "bytes": 93432,
+    "sha256": "99919153eb2ae9a828f9fcb62f835930a7e056d626a0fb7c4d5ece1d8eb08e8a",
+    "characters": 93062,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U14",
+    "file": "artifacts/U14/structured.md",
+    "bytes": 2600,
+    "sha256": "af335a12a08cb00afd90e247d1aec82fa3580ea01f09cb46c28e2159f508188d",
+    "characters": 2590
+  },
+  {
+    "resume": "U14",
+    "file": "artifacts/U14/resume.json",
+    "bytes": 96396,
+    "sha256": "84811c0bd0e2c5ba7507678f1ce7426b25ebeeef80238dc6ff219c4850b992d9",
+    "characters": 96026,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U14",
+    "file": "artifacts/U14/resume.md",
+    "bytes": 2746,
+    "sha256": "c313182f184e167cc3843c206dfd3ed9fb27171e8c96a9a25630b2b69ba5fe67",
+    "characters": 2712
+  },
+  {
+    "resume": "U14",
+    "file": "artifacts/U14/source.txt",
+    "bytes": 2712,
+    "sha256": "cae440ed0473cb52bb31db5ce7df281b9591edb526826c2e3cd6c9ffe9d7d411",
+    "characters": 2678
+  },
+  {
+    "resume": "U14",
+    "file": "artifacts/U14/normalized.txt",
+    "bytes": 2683,
+    "sha256": "7a05289a7e268637b459f4b804c817fc73619c17d4a91f50bb15216497640997",
+    "characters": 2649
+  },
+  {
+    "resume": "U14",
+    "file": "artifacts/U14/structured.txt",
+    "bytes": 2600,
+    "sha256": "af335a12a08cb00afd90e247d1aec82fa3580ea01f09cb46c28e2159f508188d",
+    "characters": 2590
+  },
+  {
+    "resume": "U14",
+    "file": "artifacts/U14/quality.json",
+    "bytes": 283,
+    "sha256": "03949b3dbc3929ff15a12eff745d493ae48260c1b10a3a4bf0d8260a13be191c",
+    "characters": 283,
+    "keys": [
+      "completeness",
+      "schema_errors",
+      "warnings",
+      "suppressed_exact_repeats"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U14",
+    "file": "artifacts/U14/uploaded_resume.md",
+    "bytes": 2805,
+    "sha256": "8302ea113bb0946fe87bb98f5dc4833bf9d60c240213702502743ff6d3b99f2d",
+    "characters": 2771
+  },
+  {
+    "resume": "U15",
+    "file": "artifacts/U15/raw.txt",
+    "bytes": 2603,
+    "sha256": "9d9ab807a57cbc36daec65bbac00a673806734944c7c02d078581c9dc630f815",
+    "characters": 2571
+  },
+  {
+    "resume": "U15",
+    "file": "artifacts/U15/structured.json",
+    "bytes": 15596,
+    "sha256": "1c544e85abee9dbdea7338806f041fa66ad2a811046ef40b97ec6601fc0bdcf7",
+    "characters": 15534,
+    "keys": [
+      "schema_version",
+      "section_order",
+      "entry_order",
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections",
+      "review",
+      "source_sections"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U15",
+    "file": "artifacts/U15/audit_original_resume.json",
+    "bytes": 88765,
+    "sha256": "c63200b427a4309859c3d0a2a705572421ac273ee9bb3922a5f01616d436284e",
+    "characters": 88435,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U15",
+    "file": "artifacts/U15/structured.md",
+    "bytes": 2525,
+    "sha256": "b8785a9849294b1cca47eb28f3d2d5dde3ae2966012ac782f74ec87002463088",
+    "characters": 2521
+  },
+  {
+    "resume": "U15",
+    "file": "artifacts/U15/resume.json",
+    "bytes": 91542,
+    "sha256": "405a777767c276b0304a0977fe047f783a6e55912ff9033a742ee3ca499fe31a",
+    "characters": 91212,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U15",
+    "file": "artifacts/U15/resume.md",
+    "bytes": 2660,
+    "sha256": "5f9069b8a287c67709029aa42ff63d36f9398a743a92d05287c6b77afc13a066",
+    "characters": 2628
+  },
+  {
+    "resume": "U15",
+    "file": "artifacts/U15/source.txt",
+    "bytes": 2653,
+    "sha256": "7a983352e45aab74556e759b68fc03bce2dff71f705289b0033c0affddb5aa49",
+    "characters": 2621
+  },
+  {
+    "resume": "U15",
+    "file": "artifacts/U15/normalized.txt",
+    "bytes": 2603,
+    "sha256": "d6a7ad13a6fc2922c7036dd3f784972ed280efdfa1c3ca2a7e75ab89dd80dad0",
+    "characters": 2571
+  },
+  {
+    "resume": "U15",
+    "file": "artifacts/U15/structured.txt",
+    "bytes": 2525,
+    "sha256": "b8785a9849294b1cca47eb28f3d2d5dde3ae2966012ac782f74ec87002463088",
+    "characters": 2521
+  },
+  {
+    "resume": "U15",
+    "file": "artifacts/U15/quality.json",
+    "bytes": 283,
+    "sha256": "3de21d8ac2c07205242ceb07ff4bc84e156f65c4ecd251cc705c50786329a343",
+    "characters": 283,
+    "keys": [
+      "completeness",
+      "schema_errors",
+      "warnings",
+      "suppressed_exact_repeats"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U15",
+    "file": "artifacts/U15/uploaded_resume.md",
+    "bytes": 2723,
+    "sha256": "a165929f93d56fcad1a59c7f6b6bb8546cdcfbaee12f67495398d5ae8b51f391",
+    "characters": 2691
+  },
+  {
+    "resume": "U16",
+    "file": "artifacts/U16/raw.txt",
+    "bytes": 1588,
+    "sha256": "2d8a15f0944427955444c9edf6fe82e5e9a3560d1db763f88ff212754cdd4368",
+    "characters": 1556
+  },
+  {
+    "resume": "U16",
+    "file": "artifacts/U16/structured.json",
+    "bytes": 9239,
+    "sha256": "011fb6be5669e59f0b33013f843801dcdebf6edeb3e56fc42df4b4ce0404acda",
+    "characters": 9173,
+    "keys": [
+      "schema_version",
+      "section_order",
+      "entry_order",
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections",
+      "review",
+      "source_sections"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U16",
+    "file": "artifacts/U16/audit_original_resume.json",
+    "bytes": 55866,
+    "sha256": "abd4288d4288da537978cd2135a80ffa4c8818a6ab5abb9289b56b66dcf48fb3",
+    "characters": 55520,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U16",
+    "file": "artifacts/U16/structured.md",
+    "bytes": 1476,
+    "sha256": "8032ad3081bbaf4b43d021e9cb2fe16462657a8945a97179f391a15eedbca9ab",
+    "characters": 1456
+  },
+  {
+    "resume": "U16",
+    "file": "artifacts/U16/resume.json",
+    "bytes": 57723,
+    "sha256": "f0a2642ed0a7cacb468e973393088a48721788e3d5a24ac16989af75b52099d9",
+    "characters": 57377,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U16",
+    "file": "artifacts/U16/resume.md",
+    "bytes": 1634,
+    "sha256": "79c2a6153087cd67a7f1c9af1c2092e88584d8608d184cf8dacd66d0fd4ee937",
+    "characters": 1602
+  },
+  {
+    "resume": "U16",
+    "file": "artifacts/U16/source.txt",
+    "bytes": 1606,
+    "sha256": "d27ac25f9de32fbc854fa82b20719833ea6034600201dca91b4695c70d5947a8",
+    "characters": 1574
+  },
+  {
+    "resume": "U16",
+    "file": "artifacts/U16/normalized.txt",
+    "bytes": 1588,
+    "sha256": "2d8a15f0944427955444c9edf6fe82e5e9a3560d1db763f88ff212754cdd4368",
+    "characters": 1556
+  },
+  {
+    "resume": "U16",
+    "file": "artifacts/U16/structured.txt",
+    "bytes": 1476,
+    "sha256": "8032ad3081bbaf4b43d021e9cb2fe16462657a8945a97179f391a15eedbca9ab",
+    "characters": 1456
+  },
+  {
+    "resume": "U16",
+    "file": "artifacts/U16/quality.json",
+    "bytes": 283,
+    "sha256": "1fd1199ca8aded3bcacc7c3f82cf644d27dadd4dde6b670e402dddd86db5c629",
+    "characters": 283,
+    "keys": [
+      "completeness",
+      "schema_errors",
+      "warnings",
+      "suppressed_exact_repeats"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U16",
+    "file": "artifacts/U16/uploaded_resume.md",
+    "bytes": 1673,
+    "sha256": "1671940d9803eee2a92bde104c744dd95b3483793f4030f56ca8aba1640f264d",
+    "characters": 1641
+  },
+  {
+    "resume": "U17",
+    "file": "artifacts/U17/raw.txt",
+    "bytes": 1903,
+    "sha256": "ae6b1166d1b5972d90c766c7d7d8d8e1b3418521b39e0fd666f804ac30d33cc4",
+    "characters": 1879
+  },
+  {
+    "resume": "U17",
+    "file": "artifacts/U17/structured.json",
+    "bytes": 11309,
+    "sha256": "352ffc69d8937afa6c508871eb94a0e02e2fb081ecf22a112a02fc9760eb6d67",
+    "characters": 11265,
+    "keys": [
+      "schema_version",
+      "section_order",
+      "entry_order",
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections",
+      "review",
+      "source_sections"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U17",
+    "file": "artifacts/U17/structured.md",
+    "bytes": 1734,
+    "sha256": "107cee084f2bcbc895e37317cb8e579a1ebe42688f60c398f452084afe6a3783",
+    "characters": 1730
+  },
+  {
+    "resume": "U17",
+    "file": "artifacts/U17/resume.json",
+    "bytes": 68316,
+    "sha256": "26f74d03b76921ed737e29b895bbaf7b7b5a1207c00e5e90f65fc786c8a7aad5",
+    "characters": 68062,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U17",
+    "file": "artifacts/U17/resume.md",
+    "bytes": 1956,
+    "sha256": "ac15cb3d6f7ddf45166d3c240ec0b672948fa17dc4cf53b922006f87a02b43f9",
+    "characters": 1932
+  },
+  {
+    "resume": "U17",
+    "file": "artifacts/U17/source.txt",
+    "bytes": 1923,
+    "sha256": "5f80b013122048bb4a60ce26d34bebb28a7fec3c4169f5ec614cd66047f28fe9",
+    "characters": 1899
+  },
+  {
+    "resume": "U17",
+    "file": "artifacts/U17/normalized.txt",
+    "bytes": 1903,
+    "sha256": "ae6b1166d1b5972d90c766c7d7d8d8e1b3418521b39e0fd666f804ac30d33cc4",
+    "characters": 1879
+  },
+  {
+    "resume": "U17",
+    "file": "artifacts/U17/structured.txt",
+    "bytes": 1734,
+    "sha256": "107cee084f2bcbc895e37317cb8e579a1ebe42688f60c398f452084afe6a3783",
+    "characters": 1730
+  },
+  {
+    "resume": "U17",
+    "file": "artifacts/U17/quality.json",
+    "bytes": 283,
+    "sha256": "28f20f00803dd3eacf1112d7f3bcd2b68ad4010891ab6993eda7222af7906c80",
+    "characters": 283,
+    "keys": [
+      "completeness",
+      "schema_errors",
+      "warnings",
+      "suppressed_exact_repeats"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U20",
+    "file": "artifacts/U20/raw.txt",
+    "bytes": 1917,
+    "sha256": "88af1290f3bd212bdc969ce73342fe47052aec3dbc8ddada19565a8488f253fc",
+    "characters": 1891
+  },
+  {
+    "resume": "U20",
+    "file": "artifacts/U20/structured.json",
+    "bytes": 11290,
+    "sha256": "20101290ba6b0e59fd28a06e4b2f0192fdb9399db07c460dabd21aba8738233d",
+    "characters": 11242,
+    "keys": [
+      "schema_version",
+      "section_order",
+      "entry_order",
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections",
+      "review",
+      "source_sections"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U20",
+    "file": "artifacts/U20/structured.md",
+    "bytes": 1848,
+    "sha256": "c0aba815b0e672e0c732af75094166ab1a708c8d29e1446a6193585f0c0e8689",
+    "characters": 1844
+  },
+  {
+    "resume": "U20",
+    "file": "artifacts/U20/resume.json",
+    "bytes": 66162,
+    "sha256": "56fd25774c82c907ed21db1d6bb0076e9d3f25a89e6b29fe521257015f8146c6",
+    "characters": 65886,
+    "keys": [
+      "schema_version",
+      "source",
+      "config_sha256",
+      "raw_text",
+      "source_text",
+      "normalized_text",
+      "raw_lines",
+      "lines",
+      "sections",
+      "fields",
+      "structured",
+      "needs_review",
+      "quality"
+    ],
+    "json_valid": true
+  },
+  {
+    "resume": "U20",
+    "file": "artifacts/U20/resume.md",
+    "bytes": 1960,
+    "sha256": "7e435f8356cb0fd39322ad14dcd80413caf81e064505751c7fedfb2c6910b4f1",
+    "characters": 1934
+  },
+  {
+    "resume": "U20",
+    "file": "artifacts/U20/source.txt",
+    "bytes": 1939,
+    "sha256": "69ea6982c069af32730763e1f15b2cd87a0047d88fb3489c6617611a4d5f9db7",
+    "characters": 1913
+  },
+  {
+    "resume": "U20",
+    "file": "artifacts/U20/normalized.txt",
+    "bytes": 1917,
+    "sha256": "88af1290f3bd212bdc969ce73342fe47052aec3dbc8ddada19565a8488f253fc",
+    "characters": 1891
+  },
+  {
+    "resume": "U20",
+    "file": "artifacts/U20/structured.txt",
+    "bytes": 1848,
+    "sha256": "c0aba815b0e672e0c732af75094166ab1a708c8d29e1446a6193585f0c0e8689",
+    "characters": 1844
+  },
+  {
+    "resume": "U20",
+    "file": "artifacts/U20/quality.json",
+    "bytes": 283,
+    "sha256": "0cdd05f009b9117e2fc26f966c63d6720cf02a4cce35e61080f76a74ffc5baf0",
+    "characters": 283,
+    "keys": [
+      "completeness",
+      "schema_errors",
+      "warnings",
+      "suppressed_exact_repeats"
+    ],
+    "json_valid": true
+  }
+]

@@ -1,0 +1,6842 @@
+{
+  "understanding_schema_version": "1.0.0",
+  "engine": "offline_rule_ner",
+  "source": {
+    "filename": "06_PDF_Horizontal_Hero_Two_Blocks.pdf",
+    "sha256": "6bb643e81a789bc8107dc98567907237d271c123b5c7030e2b63a363d4c4baaf",
+    "type": "pdf",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": 1,
+    "reference_method": "pdftotext_raw"
+  },
+  "artifact_sha256": "ce8c1622f95c1098d078da4e95a68b6157f405f0409a1fe80113df0196513474",
+  "section_order": [
+    "personal_details",
+    "summary",
+    "education",
+    "work_experience",
+    "internships",
+    "projects",
+    "skills",
+    "certifications",
+    "training",
+    "awards",
+    "publications",
+    "languages",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "profile": {
+    "personal_details": {
+      "name": {
+        "value": "TARIQ AL-HASSAN",
+        "confidence": 0.92,
+        "source_line_ids": [
+          "l00000"
+        ]
+      },
+      "emails": [
+        {
+          "value": "tariq.alhassan@example.com",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalization": "none",
+          "raw": "Seattle, WA • +1 (206) 555-0184 • tariq.alhassan@example.com • linkedin.com/in/tariq-ai-dummy"
+        }
+      ],
+      "phones": [
+        {
+          "value": "+1 (206) 555-0184",
+          "confidence": 0.95,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalized": "+12065550184",
+          "valid": true
+        }
+      ],
+      "locations": [
+        {
+          "value": "Seattle, WA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00002"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "value": "linkedin.com/in/tariq-ai-dummy",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "kind": "linkedin"
+        }
+      ],
+      "headline": {
+        "value": "VP OF ARTIFICIAL INTELLIGENCE & MACHINE LEARNING PLATFORMS",
+        "source_line_ids": [
+          "l00001"
+        ],
+        "confidence": 0.7
+      }
+    },
+    "summary": [
+      {
+        "text": "Technology Executive with 12+ years scaling deep learning systems, ML infrastructure, and distributed GPU compute platforms. Led engineering teams of 70+ engineers and research scientists while delivering generative AI models serving 25M+ active users.",
+        "source_line_ids": [
+          "l00003",
+          "l00004",
+          "l00005"
+        ],
+        "value": "Technology Executive with 12+ years scaling deep learning systems, ML infrastructure, and distributed GPU compute platforms. Led engineering teams of 70+ engineers and research scientists while delivering generative AI models serving 25M+ active users."
+      }
+    ],
+    "education": [
+      {
+        "text": "Ph.D. in Computer Science (Machine Learning)\nUniversity of Washington (2018)",
+        "source_line_ids": [
+          "l00029",
+          "l00030"
+        ],
+        "degree": {
+          "value": "Ph.D. in Computer Science (Machine Learning)",
+          "source_line_ids": [
+            "l00029"
+          ],
+          "confidence": 0.85
+        },
+        "institution": {
+          "value": "University of Washington",
+          "source_line_ids": [
+            "l00030"
+          ],
+          "confidence": 0.85
+        },
+        "dates": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "graduation": {
+          "value": "2018",
+          "source_line_ids": [
+            "l00030"
+          ],
+          "confidence": 0.85
+        },
+        "location": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "gpa": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "normalized_dates": {
+          "start": {
+            "raw": null,
+            "value": null,
+            "precision": null
+          },
+          "end": {
+            "raw": null,
+            "value": null,
+            "precision": null
+          }
+        }
+      },
+      {
+        "text": "B.S. in Electrical Engineering\nGeorgia Institute of Technology (2013)",
+        "source_line_ids": [
+          "l00031",
+          "l00032"
+        ],
+        "degree": {
+          "value": "B.S. in Electrical Engineering",
+          "source_line_ids": [
+            "l00031"
+          ],
+          "confidence": 0.85
+        },
+        "institution": {
+          "value": "Georgia Institute of Technology",
+          "source_line_ids": [
+            "l00032"
+          ],
+          "confidence": 0.85
+        },
+        "dates": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "graduation": {
+          "value": "2013",
+          "source_line_ids": [
+            "l00032"
+          ],
+          "confidence": 0.85
+        },
+        "location": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "gpa": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "normalized_dates": {
+          "start": {
+            "raw": null,
+            "value": null,
+            "precision": null
+          },
+          "end": {
+            "raw": null,
+            "value": null,
+            "precision": null
+          }
+        }
+      }
+    ],
+    "work_experience": [
+      {
+        "title": {
+          "value": "VP of Machine Learning Platform",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00007"
+          ]
+        },
+        "company": {
+          "value": "Cerebro Analytics",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00007"
+          ]
+        },
+        "location": {
+          "value": "Seattle, WA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00008"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2022",
+            "end": "Present"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00008"
+          ]
+        },
+        "bullets": [
+          "• Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD clusters.",
+          "• Directed engineering of high-throughput LLM serving stack, cutting model latency by 55%.",
+          "• Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research."
+        ],
+        "text": "VP of Machine Learning Platform — Cerebro Analytics\n2022 – Present | Seattle, WA\n• Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD clusters.\n• Directed engineering of high-throughput LLM serving stack, cutting model latency by 55%.\n• Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00007",
+          "l00008",
+          "l00009",
+          "l00010",
+          "l00011",
+          "l00012",
+          "l00013"
+        ],
+        "normalized_dates": {
+          "start": {
+            "raw": "2022",
+            "value": "2022",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "Present",
+            "value": null,
+            "precision": "open"
+          }
+        }
+      },
+      {
+        "title": {
+          "value": "Director of Applied AI",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00014"
+          ]
+        },
+        "company": {
+          "value": "Horizon Autonomous Systems",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00014"
+          ]
+        },
+        "location": {
+          "value": "San Francisco, CA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00015"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2018",
+            "end": "2022"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00015"
+          ]
+        },
+        "bullets": [
+          "• Built real-time computer vision inference stack operating at 60 FPS on edge hardware.",
+          "• Filed 6 patents in neural network quantization and sparse attention mechanisms."
+        ],
+        "text": "Director of Applied AI — Horizon Autonomous Systems\n2018 – 2022 | San Francisco, CA\n• Built real-time computer vision inference stack operating at 60 FPS on edge hardware.\n• Filed 6 patents in neural network quantization and sparse attention mechanisms.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00014",
+          "l00015",
+          "l00016",
+          "l00017"
+        ],
+        "normalized_dates": {
+          "start": {
+            "raw": "2018",
+            "value": "2018",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "2022",
+            "value": "2022",
+            "precision": "year"
+          }
+        }
+      }
+    ],
+    "internships": [],
+    "projects": [],
+    "skills": [
+      {
+        "text": "• PyTorch, Triton Inference Server, Ray",
+        "source_line_ids": [
+          "l00024"
+        ],
+        "category": null,
+        "items": [
+          "PyTorch",
+          "Triton Inference Server",
+          "Ray"
+        ]
+      },
+      {
+        "text": "• CUDA Optimization, TensorRT, vLLM",
+        "source_line_ids": [
+          "l00025"
+        ],
+        "category": null,
+        "items": [
+          "CUDA Optimization",
+          "TensorRT",
+          "vLLM"
+        ]
+      },
+      {
+        "text": "• Large-Scale Foundation Model Training",
+        "source_line_ids": [
+          "l00026"
+        ],
+        "category": null,
+        "items": [
+          "Large-Scale Foundation Model Training"
+        ]
+      },
+      {
+        "text": "• AI Safety, Red Teaming, Governance",
+        "source_line_ids": [
+          "l00027"
+        ],
+        "category": null,
+        "items": [
+          "AI Safety",
+          "Red Teaming",
+          "Governance"
+        ]
+      }
+    ],
+    "certifications": [],
+    "training": [],
+    "awards": [],
+    "publications": [],
+    "languages": [],
+    "other_sections": [
+      {
+        "canonical": "metrics",
+        "original_heading": "KEY LEADERSHIP METRICS",
+        "text": "• $22M Annual Compute Budget Managed\n• 72 Engineers & Researchers Led\n• 6 Granted US Patents in ML / Vision\n• 25M+ Generative AI End-Users",
+        "source_line_ids": [
+          "l00019",
+          "l00020",
+          "l00021",
+          "l00022"
+        ]
+      }
+    ],
+    "unassigned_links": []
+  },
+  "entities": [
+    {
+      "id": "e00000",
+      "label": "PERSON",
+      "text": "TARIQ AL-HASSAN",
+      "normalized": "TARIQ AL-HASSAN",
+      "source_line_id": "l00000",
+      "start": 0,
+      "end": 15,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        50.0,
+        57.726,
+        216.98600000000002,
+        75.726
+      ],
+      "section": "preamble",
+      "rule": "preamble_title",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.7
+    },
+    {
+      "id": "e00001",
+      "label": "SKILL",
+      "text": "MACHINE LEARNING",
+      "normalized": "Machine Learning",
+      "source_line_id": "l00001",
+      "start": 32,
+      "end": 48,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        50.0,
+        76.07000000000005,
+        393.9,
+        86.07000000000005
+      ],
+      "section": "preamble",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00002",
+      "label": "EMAIL",
+      "text": "tariq.alhassan@example.com",
+      "normalized": "tariq.alhassan@example.com",
+      "source_line_id": "l00002",
+      "start": 34,
+      "end": 60,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        50.0,
+        82.65599999999995,
+        385.57599999999996,
+        90.65599999999995
+      ],
+      "section": "preamble",
+      "rule": "regex:email",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00003",
+      "label": "PHONE",
+      "text": "+1 (206) 555-0184",
+      "normalized": "+1 (206) 555-0184",
+      "source_line_id": "l00002",
+      "start": 14,
+      "end": 31,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        50.0,
+        82.65599999999995,
+        385.57599999999996,
+        90.65599999999995
+      ],
+      "section": "preamble",
+      "rule": "regex:phone",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00004",
+      "label": "URL",
+      "text": "linkedin.com/in/tariq-ai-dummy",
+      "normalized": "linkedin.com/in/tariq-ai-dummy",
+      "source_line_id": "l00002",
+      "start": 63,
+      "end": 93,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        50.0,
+        82.65599999999995,
+        385.57599999999996,
+        90.65599999999995
+      ],
+      "section": "preamble",
+      "rule": "literal_url",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00005",
+      "label": "SKILL",
+      "text": "deep learning",
+      "normalized": "Deep Learning",
+      "source_line_id": "l00003",
+      "start": 63,
+      "end": 76,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        50.0,
+        98.7595,
+        556.1579999999997,
+        107.2595
+      ],
+      "section": "summary",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00006",
+      "label": "SKILL",
+      "text": "Machine Learning",
+      "normalized": "Machine Learning",
+      "source_line_id": "l00007",
+      "start": 6,
+      "end": 22,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        38.0,
+        181.07000000000005,
+        289.17,
+        191.07000000000005
+      ],
+      "section": "experience",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00007",
+      "label": "DATE_RANGE",
+      "text": "2022 – Present",
+      "normalized": "2022 – Present",
+      "source_line_id": "l00008",
+      "start": 0,
+      "end": 14,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        38.0,
+        193.07000000000005,
+        166.78,
+        203.07000000000005
+      ],
+      "section": "experience",
+      "rule": "regex:date_range",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00008",
+      "label": "SKILL",
+      "text": "AWS",
+      "normalized": "AWS",
+      "source_line_id": "l00009",
+      "start": 45,
+      "end": 48,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        38.0,
+        204.65599999999995,
+        334.576,
+        212.65599999999995
+      ],
+      "section": "experience",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00009",
+      "label": "JOB_TITLE",
+      "text": "Director of Applied AI — Horizon Autonomous Systems",
+      "normalized": "Director of Applied AI — Horizon Autonomous Systems",
+      "source_line_id": "l00014",
+      "start": 0,
+      "end": 51,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        38.0,
+        271.07000000000005,
+        290.84000000000003,
+        281.07
+      ],
+      "section": "experience",
+      "rule": "role_header",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.7
+    },
+    {
+      "id": "e00010",
+      "label": "DATE_RANGE",
+      "text": "2018 – 2022",
+      "normalized": "2018 – 2022",
+      "source_line_id": "l00015",
+      "start": 0,
+      "end": 11,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        38.0,
+        283.07,
+        185.12,
+        293.07
+      ],
+      "section": "experience",
+      "rule": "regex:date_range",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00011",
+      "label": "SKILL",
+      "text": "computer vision",
+      "normalized": "Computer Vision",
+      "source_line_id": "l00016",
+      "start": 18,
+      "end": 33,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        38.0,
+        294.656,
+        345.6879999999998,
+        302.656
+      ],
+      "section": "experience",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00012",
+      "label": "SKILL",
+      "text": "PyTorch",
+      "normalized": "PyTorch",
+      "source_line_id": "l00024",
+      "start": 2,
+      "end": 9,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        378.0,
+        252.65599999999995,
+        514.936,
+        260.65599999999995
+      ],
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00013",
+      "label": "SKILL",
+      "text": "Triton",
+      "normalized": "Triton",
+      "source_line_id": "l00024",
+      "start": 11,
+      "end": 17,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        378.0,
+        252.65599999999995,
+        514.936,
+        260.65599999999995
+      ],
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00014",
+      "label": "SKILL",
+      "text": "Ray",
+      "normalized": "Ray",
+      "source_line_id": "l00024",
+      "start": 36,
+      "end": 39,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        378.0,
+        252.65599999999995,
+        514.936,
+        260.65599999999995
+      ],
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00015",
+      "label": "SKILL",
+      "text": "TensorRT",
+      "normalized": "TensorRT",
+      "source_line_id": "l00025",
+      "start": 21,
+      "end": 29,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        378.0,
+        264.65599999999995,
+        513.5840000000001,
+        272.65599999999995
+      ],
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00016",
+      "label": "SKILL",
+      "text": "CUDA",
+      "normalized": "CUDA",
+      "source_line_id": "l00025",
+      "start": 2,
+      "end": 6,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        378.0,
+        264.65599999999995,
+        513.5840000000001,
+        272.65599999999995
+      ],
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00017",
+      "label": "SKILL",
+      "text": "vLLM",
+      "normalized": "vLLM",
+      "source_line_id": "l00025",
+      "start": 31,
+      "end": 35,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        378.0,
+        264.65599999999995,
+        513.5840000000001,
+        272.65599999999995
+      ],
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00018",
+      "label": "DEGREE",
+      "text": "Ph.D. in Computer Science ",
+      "normalized": "Ph.D. in Computer Science ",
+      "source_line_id": "l00029",
+      "start": 0,
+      "end": 26,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        378.0,
+        324.656,
+        555.816,
+        332.656
+      ],
+      "section": "education",
+      "rule": "education_degree",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00019",
+      "label": "SKILL",
+      "text": "Machine Learning",
+      "normalized": "Machine Learning",
+      "source_line_id": "l00029",
+      "start": 27,
+      "end": 43,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        378.0,
+        324.656,
+        555.816,
+        332.656
+      ],
+      "section": "education",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00020",
+      "label": "INSTITUTION",
+      "text": "University of Washington",
+      "normalized": "University of Washington",
+      "source_line_id": "l00030",
+      "start": 0,
+      "end": 24,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        378.0,
+        336.656,
+        491.81600000000003,
+        344.656
+      ],
+      "section": "education",
+      "rule": "education_institution",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00021",
+      "label": "DEGREE",
+      "text": "B.S. in Electrical Engineering",
+      "normalized": "B.S. in Electrical Engineering",
+      "source_line_id": "l00031",
+      "start": 0,
+      "end": 30,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        378.0,
+        348.656,
+        489.15200000000004,
+        356.656
+      ],
+      "section": "education",
+      "rule": "education_degree",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00022",
+      "label": "INSTITUTION",
+      "text": "Georgia Institute of Technology",
+      "normalized": "Georgia Institute of Technology",
+      "source_line_id": "l00032",
+      "start": 0,
+      "end": 31,
+      "source_kind": "text",
+      "run_index": null,
+      "page": 1,
+      "bbox": [
+        378.0,
+        360.656,
+        514.5120000000001,
+        368.656
+      ],
+      "section": "education",
+      "rule": "education_institution",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    }
+  ],
+  "records": [
+    {
+      "record_id": "summary:0",
+      "section": "summary",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00003",
+        "l00004",
+        "l00005"
+      ],
+      "entity_ids": [
+        "e00005"
+      ]
+    },
+    {
+      "record_id": "education:0",
+      "section": "education",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00029",
+        "l00030"
+      ],
+      "entity_ids": [
+        "e00018",
+        "e00019",
+        "e00020"
+      ]
+    },
+    {
+      "record_id": "education:1",
+      "section": "education",
+      "ordinal": 1,
+      "source_line_ids": [
+        "l00031",
+        "l00032"
+      ],
+      "entity_ids": [
+        "e00021",
+        "e00022"
+      ]
+    },
+    {
+      "record_id": "work_experience:0",
+      "section": "work_experience",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00007",
+        "l00008",
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00013"
+      ],
+      "entity_ids": [
+        "e00006",
+        "e00007",
+        "e00008"
+      ]
+    },
+    {
+      "record_id": "work_experience:1",
+      "section": "work_experience",
+      "ordinal": 1,
+      "source_line_ids": [
+        "l00014",
+        "l00015",
+        "l00016",
+        "l00017"
+      ],
+      "entity_ids": [
+        "e00009",
+        "e00010",
+        "e00011"
+      ]
+    },
+    {
+      "record_id": "skills:0",
+      "section": "skills",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00024"
+      ],
+      "entity_ids": [
+        "e00012",
+        "e00013",
+        "e00014"
+      ]
+    },
+    {
+      "record_id": "skills:1",
+      "section": "skills",
+      "ordinal": 1,
+      "source_line_ids": [
+        "l00025"
+      ],
+      "entity_ids": [
+        "e00015",
+        "e00016",
+        "e00017"
+      ]
+    },
+    {
+      "record_id": "skills:2",
+      "section": "skills",
+      "ordinal": 2,
+      "source_line_ids": [
+        "l00026"
+      ],
+      "entity_ids": []
+    },
+    {
+      "record_id": "skills:3",
+      "section": "skills",
+      "ordinal": 3,
+      "source_line_ids": [
+        "l00027"
+      ],
+      "entity_ids": []
+    },
+    {
+      "record_id": "other_sections:0",
+      "section": "other_sections",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022"
+      ],
+      "entity_ids": []
+    }
+  ],
+  "evidence": {
+    "personal_details.name.value": {
+      "source_refs": [
+        {
+          "line_id": "l00000",
+          "start": 0,
+          "end": 15,
+          "text": "TARIQ AL-HASSAN",
+          "page": 1,
+          "bbox": [
+            50.0,
+            57.726,
+            216.98600000000002,
+            75.726
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.emails[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 34,
+          "end": 60,
+          "text": "tariq.alhassan@example.com",
+          "page": 1,
+          "bbox": [
+            50.0,
+            82.65599999999995,
+            385.57599999999996,
+            90.65599999999995
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.emails[0].normalization": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 93,
+          "text": "Seattle, WA • +1 (206) 555-0184 • tariq.alhassan@example.com • linkedin.com/in/tariq-ai-dummy",
+          "page": 1,
+          "bbox": [
+            50.0,
+            82.65599999999995,
+            385.57599999999996,
+            90.65599999999995
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.emails[0].raw": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 93,
+          "text": "Seattle, WA • +1 (206) 555-0184 • tariq.alhassan@example.com • linkedin.com/in/tariq-ai-dummy",
+          "page": 1,
+          "bbox": [
+            50.0,
+            82.65599999999995,
+            385.57599999999996,
+            90.65599999999995
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.phones[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 14,
+          "end": 31,
+          "text": "+1 (206) 555-0184",
+          "page": 1,
+          "bbox": [
+            50.0,
+            82.65599999999995,
+            385.57599999999996,
+            90.65599999999995
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.phones[0].normalized": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 93,
+          "text": "Seattle, WA • +1 (206) 555-0184 • tariq.alhassan@example.com • linkedin.com/in/tariq-ai-dummy",
+          "page": 1,
+          "bbox": [
+            50.0,
+            82.65599999999995,
+            385.57599999999996,
+            90.65599999999995
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.phones[0].valid": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 93,
+          "text": "Seattle, WA • +1 (206) 555-0184 • tariq.alhassan@example.com • linkedin.com/in/tariq-ai-dummy",
+          "page": 1,
+          "bbox": [
+            50.0,
+            82.65599999999995,
+            385.57599999999996,
+            90.65599999999995
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.locations[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 11,
+          "text": "Seattle, WA",
+          "page": 1,
+          "bbox": [
+            50.0,
+            82.65599999999995,
+            385.57599999999996,
+            90.65599999999995
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.links[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 63,
+          "end": 93,
+          "text": "linkedin.com/in/tariq-ai-dummy",
+          "page": 1,
+          "bbox": [
+            50.0,
+            82.65599999999995,
+            385.57599999999996,
+            90.65599999999995
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.links[0].kind": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 63,
+          "end": 71,
+          "text": "linkedin",
+          "page": 1,
+          "bbox": [
+            50.0,
+            82.65599999999995,
+            385.57599999999996,
+            90.65599999999995
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.headline.value": {
+      "source_refs": [
+        {
+          "line_id": "l00001",
+          "start": 0,
+          "end": 58,
+          "text": "VP OF ARTIFICIAL INTELLIGENCE & MACHINE LEARNING PLATFORMS",
+          "page": 1,
+          "bbox": [
+            50.0,
+            76.07000000000005,
+            393.9,
+            86.07000000000005
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "summary[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00003",
+          "start": 0,
+          "end": 124,
+          "text": "EXECUTIVE SUMMARY: Technology Executive with 12+ years scaling deep learning systems, ML infrastructure, and distributed GPU",
+          "page": 1,
+          "bbox": [
+            50.0,
+            98.7595,
+            556.1579999999997,
+            107.2595
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00004",
+          "start": 0,
+          "end": 132,
+          "text": "compute platforms. Led engineering teams of 70+ engineers and research scientists while delivering generative AI models serving 25M+",
+          "page": 1,
+          "bbox": [
+            50.0,
+            110.7595,
+            561.9999989999998,
+            119.2595
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00005",
+          "start": 0,
+          "end": 13,
+          "text": "active users.",
+          "page": 1,
+          "bbox": [
+            50.0,
+            122.7595,
+            97.7105,
+            131.2595
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "summary[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00003",
+          "start": 0,
+          "end": 124,
+          "text": "EXECUTIVE SUMMARY: Technology Executive with 12+ years scaling deep learning systems, ML infrastructure, and distributed GPU",
+          "page": 1,
+          "bbox": [
+            50.0,
+            98.7595,
+            556.1579999999997,
+            107.2595
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00004",
+          "start": 0,
+          "end": 132,
+          "text": "compute platforms. Led engineering teams of 70+ engineers and research scientists while delivering generative AI models serving 25M+",
+          "page": 1,
+          "bbox": [
+            50.0,
+            110.7595,
+            561.9999989999998,
+            119.2595
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00005",
+          "start": 0,
+          "end": 13,
+          "text": "active users.",
+          "page": 1,
+          "bbox": [
+            50.0,
+            122.7595,
+            97.7105,
+            131.2595
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00029",
+          "start": 0,
+          "end": 44,
+          "text": "Ph.D. in Computer Science (Machine Learning)",
+          "page": 1,
+          "bbox": [
+            378.0,
+            324.656,
+            555.816,
+            332.656
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00030",
+          "start": 0,
+          "end": 31,
+          "text": "University of Washington (2018)",
+          "page": 1,
+          "bbox": [
+            378.0,
+            336.656,
+            491.81600000000003,
+            344.656
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].degree.value": {
+      "source_refs": [
+        {
+          "line_id": "l00029",
+          "start": 0,
+          "end": 44,
+          "text": "Ph.D. in Computer Science (Machine Learning)",
+          "page": 1,
+          "bbox": [
+            378.0,
+            324.656,
+            555.816,
+            332.656
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].institution.value": {
+      "source_refs": [
+        {
+          "line_id": "l00030",
+          "start": 0,
+          "end": 24,
+          "text": "University of Washington",
+          "page": 1,
+          "bbox": [
+            378.0,
+            336.656,
+            491.81600000000003,
+            344.656
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].graduation.value": {
+      "source_refs": [
+        {
+          "line_id": "l00030",
+          "start": 26,
+          "end": 30,
+          "text": "2018",
+          "page": 1,
+          "bbox": [
+            378.0,
+            336.656,
+            491.81600000000003,
+            344.656
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].text": {
+      "source_refs": [
+        {
+          "line_id": "l00031",
+          "start": 0,
+          "end": 30,
+          "text": "B.S. in Electrical Engineering",
+          "page": 1,
+          "bbox": [
+            378.0,
+            348.656,
+            489.15200000000004,
+            356.656
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00032",
+          "start": 0,
+          "end": 38,
+          "text": "Georgia Institute of Technology (2013)",
+          "page": 1,
+          "bbox": [
+            378.0,
+            360.656,
+            514.5120000000001,
+            368.656
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].degree.value": {
+      "source_refs": [
+        {
+          "line_id": "l00031",
+          "start": 0,
+          "end": 30,
+          "text": "B.S. in Electrical Engineering",
+          "page": 1,
+          "bbox": [
+            378.0,
+            348.656,
+            489.15200000000004,
+            356.656
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].institution.value": {
+      "source_refs": [
+        {
+          "line_id": "l00032",
+          "start": 0,
+          "end": 31,
+          "text": "Georgia Institute of Technology",
+          "page": 1,
+          "bbox": [
+            378.0,
+            360.656,
+            514.5120000000001,
+            368.656
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].graduation.value": {
+      "source_refs": [
+        {
+          "line_id": "l00032",
+          "start": 33,
+          "end": 37,
+          "text": "2013",
+          "page": 1,
+          "bbox": [
+            378.0,
+            360.656,
+            514.5120000000001,
+            368.656
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].title.value": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 31,
+          "text": "VP of Machine Learning Platform",
+          "page": 1,
+          "bbox": [
+            38.0,
+            181.07000000000005,
+            289.17,
+            191.07000000000005
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].company.value": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 34,
+          "end": 51,
+          "text": "Cerebro Analytics",
+          "page": 1,
+          "bbox": [
+            38.0,
+            181.07000000000005,
+            289.17,
+            191.07000000000005
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].location.value": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 17,
+          "end": 28,
+          "text": "Seattle, WA",
+          "page": 1,
+          "bbox": [
+            38.0,
+            193.07000000000005,
+            166.78,
+            203.07000000000005
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].dates.value.start": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 4,
+          "text": "2022",
+          "page": 1,
+          "bbox": [
+            38.0,
+            193.07000000000005,
+            166.78,
+            203.07000000000005
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].dates.value.end": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 7,
+          "end": 14,
+          "text": "Present",
+          "page": 1,
+          "bbox": [
+            38.0,
+            193.07000000000005,
+            166.78,
+            203.07000000000005
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].bullets[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 51,
+          "text": "VP of Machine Learning Platform — Cerebro Analytics",
+          "page": 1,
+          "bbox": [
+            38.0,
+            181.07000000000005,
+            289.17,
+            191.07000000000005
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 28,
+          "text": "2022 – Present | Seattle, WA",
+          "page": 1,
+          "bbox": [
+            38.0,
+            193.07000000000005,
+            166.78,
+            203.07000000000005
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 72,
+          "text": "• Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD",
+          "page": 1,
+          "bbox": [
+            38.0,
+            204.65599999999995,
+            334.576,
+            212.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 9,
+          "text": "clusters.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            216.65599999999995,
+            67.784,
+            224.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 85,
+          "text": "• Directed engineering of high-throughput LLM serving stack, cutting model latency by",
+          "page": 1,
+          "bbox": [
+            38.0,
+            228.65599999999995,
+            338.1359999999999,
+            236.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 4,
+          "text": "55%.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            240.65599999999995,
+            56.232,
+            248.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 84,
+          "text": "• Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            252.65599999999995,
+            347.01599999999985,
+            260.65599999999995
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].bullets[1]": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 51,
+          "text": "VP of Machine Learning Platform — Cerebro Analytics",
+          "page": 1,
+          "bbox": [
+            38.0,
+            181.07000000000005,
+            289.17,
+            191.07000000000005
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 28,
+          "text": "2022 – Present | Seattle, WA",
+          "page": 1,
+          "bbox": [
+            38.0,
+            193.07000000000005,
+            166.78,
+            203.07000000000005
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 72,
+          "text": "• Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD",
+          "page": 1,
+          "bbox": [
+            38.0,
+            204.65599999999995,
+            334.576,
+            212.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 9,
+          "text": "clusters.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            216.65599999999995,
+            67.784,
+            224.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 85,
+          "text": "• Directed engineering of high-throughput LLM serving stack, cutting model latency by",
+          "page": 1,
+          "bbox": [
+            38.0,
+            228.65599999999995,
+            338.1359999999999,
+            236.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 4,
+          "text": "55%.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            240.65599999999995,
+            56.232,
+            248.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 84,
+          "text": "• Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            252.65599999999995,
+            347.01599999999985,
+            260.65599999999995
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].bullets[2]": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 51,
+          "text": "VP of Machine Learning Platform — Cerebro Analytics",
+          "page": 1,
+          "bbox": [
+            38.0,
+            181.07000000000005,
+            289.17,
+            191.07000000000005
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 28,
+          "text": "2022 – Present | Seattle, WA",
+          "page": 1,
+          "bbox": [
+            38.0,
+            193.07000000000005,
+            166.78,
+            203.07000000000005
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 72,
+          "text": "• Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD",
+          "page": 1,
+          "bbox": [
+            38.0,
+            204.65599999999995,
+            334.576,
+            212.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 9,
+          "text": "clusters.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            216.65599999999995,
+            67.784,
+            224.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 85,
+          "text": "• Directed engineering of high-throughput LLM serving stack, cutting model latency by",
+          "page": 1,
+          "bbox": [
+            38.0,
+            228.65599999999995,
+            338.1359999999999,
+            236.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 4,
+          "text": "55%.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            240.65599999999995,
+            56.232,
+            248.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 84,
+          "text": "• Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            252.65599999999995,
+            347.01599999999985,
+            260.65599999999995
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 51,
+          "text": "VP of Machine Learning Platform — Cerebro Analytics",
+          "page": 1,
+          "bbox": [
+            38.0,
+            181.07000000000005,
+            289.17,
+            191.07000000000005
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 28,
+          "text": "2022 – Present | Seattle, WA",
+          "page": 1,
+          "bbox": [
+            38.0,
+            193.07000000000005,
+            166.78,
+            203.07000000000005
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 72,
+          "text": "• Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD",
+          "page": 1,
+          "bbox": [
+            38.0,
+            204.65599999999995,
+            334.576,
+            212.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 9,
+          "text": "clusters.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            216.65599999999995,
+            67.784,
+            224.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 85,
+          "text": "• Directed engineering of high-throughput LLM serving stack, cutting model latency by",
+          "page": 1,
+          "bbox": [
+            38.0,
+            228.65599999999995,
+            338.1359999999999,
+            236.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 4,
+          "text": "55%.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            240.65599999999995,
+            56.232,
+            248.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 84,
+          "text": "• Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            252.65599999999995,
+            347.01599999999985,
+            260.65599999999995
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.start.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 51,
+          "text": "VP of Machine Learning Platform — Cerebro Analytics",
+          "page": 1,
+          "bbox": [
+            38.0,
+            181.07000000000005,
+            289.17,
+            191.07000000000005
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 4,
+          "text": "2022",
+          "page": 1,
+          "bbox": [
+            38.0,
+            193.07000000000005,
+            166.78,
+            203.07000000000005
+          ],
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 72,
+          "text": "• Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD",
+          "page": 1,
+          "bbox": [
+            38.0,
+            204.65599999999995,
+            334.576,
+            212.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 9,
+          "text": "clusters.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            216.65599999999995,
+            67.784,
+            224.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 85,
+          "text": "• Directed engineering of high-throughput LLM serving stack, cutting model latency by",
+          "page": 1,
+          "bbox": [
+            38.0,
+            228.65599999999995,
+            338.1359999999999,
+            236.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 4,
+          "text": "55%.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            240.65599999999995,
+            56.232,
+            248.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 84,
+          "text": "• Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            252.65599999999995,
+            347.01599999999985,
+            260.65599999999995
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.start.value": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 51,
+          "text": "VP of Machine Learning Platform — Cerebro Analytics",
+          "page": 1,
+          "bbox": [
+            38.0,
+            181.07000000000005,
+            289.17,
+            191.07000000000005
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 4,
+          "text": "2022",
+          "page": 1,
+          "bbox": [
+            38.0,
+            193.07000000000005,
+            166.78,
+            203.07000000000005
+          ],
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 72,
+          "text": "• Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD",
+          "page": 1,
+          "bbox": [
+            38.0,
+            204.65599999999995,
+            334.576,
+            212.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 9,
+          "text": "clusters.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            216.65599999999995,
+            67.784,
+            224.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 85,
+          "text": "• Directed engineering of high-throughput LLM serving stack, cutting model latency by",
+          "page": 1,
+          "bbox": [
+            38.0,
+            228.65599999999995,
+            338.1359999999999,
+            236.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 4,
+          "text": "55%.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            240.65599999999995,
+            56.232,
+            248.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 84,
+          "text": "• Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            252.65599999999995,
+            347.01599999999985,
+            260.65599999999995
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.start.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 51,
+          "text": "VP of Machine Learning Platform — Cerebro Analytics",
+          "page": 1,
+          "bbox": [
+            38.0,
+            181.07000000000005,
+            289.17,
+            191.07000000000005
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 28,
+          "text": "2022 – Present | Seattle, WA",
+          "page": 1,
+          "bbox": [
+            38.0,
+            193.07000000000005,
+            166.78,
+            203.07000000000005
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 72,
+          "text": "• Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD",
+          "page": 1,
+          "bbox": [
+            38.0,
+            204.65599999999995,
+            334.576,
+            212.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 9,
+          "text": "clusters.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            216.65599999999995,
+            67.784,
+            224.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 85,
+          "text": "• Directed engineering of high-throughput LLM serving stack, cutting model latency by",
+          "page": 1,
+          "bbox": [
+            38.0,
+            228.65599999999995,
+            338.1359999999999,
+            236.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 4,
+          "text": "55%.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            240.65599999999995,
+            56.232,
+            248.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 84,
+          "text": "• Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            252.65599999999995,
+            347.01599999999985,
+            260.65599999999995
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.end.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 51,
+          "text": "VP of Machine Learning Platform — Cerebro Analytics",
+          "page": 1,
+          "bbox": [
+            38.0,
+            181.07000000000005,
+            289.17,
+            191.07000000000005
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 7,
+          "end": 14,
+          "text": "Present",
+          "page": 1,
+          "bbox": [
+            38.0,
+            193.07000000000005,
+            166.78,
+            203.07000000000005
+          ],
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 72,
+          "text": "• Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD",
+          "page": 1,
+          "bbox": [
+            38.0,
+            204.65599999999995,
+            334.576,
+            212.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 9,
+          "text": "clusters.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            216.65599999999995,
+            67.784,
+            224.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 85,
+          "text": "• Directed engineering of high-throughput LLM serving stack, cutting model latency by",
+          "page": 1,
+          "bbox": [
+            38.0,
+            228.65599999999995,
+            338.1359999999999,
+            236.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 4,
+          "text": "55%.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            240.65599999999995,
+            56.232,
+            248.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 84,
+          "text": "• Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            252.65599999999995,
+            347.01599999999985,
+            260.65599999999995
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.end.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 51,
+          "text": "VP of Machine Learning Platform — Cerebro Analytics",
+          "page": 1,
+          "bbox": [
+            38.0,
+            181.07000000000005,
+            289.17,
+            191.07000000000005
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 28,
+          "text": "2022 – Present | Seattle, WA",
+          "page": 1,
+          "bbox": [
+            38.0,
+            193.07000000000005,
+            166.78,
+            203.07000000000005
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 72,
+          "text": "• Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD",
+          "page": 1,
+          "bbox": [
+            38.0,
+            204.65599999999995,
+            334.576,
+            212.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 9,
+          "text": "clusters.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            216.65599999999995,
+            67.784,
+            224.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 85,
+          "text": "• Directed engineering of high-throughput LLM serving stack, cutting model latency by",
+          "page": 1,
+          "bbox": [
+            38.0,
+            228.65599999999995,
+            338.1359999999999,
+            236.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 4,
+          "text": "55%.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            240.65599999999995,
+            56.232,
+            248.65599999999995
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 84,
+          "text": "• Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            252.65599999999995,
+            347.01599999999985,
+            260.65599999999995
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].title.value": {
+      "source_refs": [
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 22,
+          "text": "Director of Applied AI",
+          "page": 1,
+          "bbox": [
+            38.0,
+            271.07000000000005,
+            290.84000000000003,
+            281.07
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].company.value": {
+      "source_refs": [
+        {
+          "line_id": "l00014",
+          "start": 25,
+          "end": 51,
+          "text": "Horizon Autonomous Systems",
+          "page": 1,
+          "bbox": [
+            38.0,
+            271.07000000000005,
+            290.84000000000003,
+            281.07
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].location.value": {
+      "source_refs": [
+        {
+          "line_id": "l00015",
+          "start": 14,
+          "end": 31,
+          "text": "San Francisco, CA",
+          "page": 1,
+          "bbox": [
+            38.0,
+            283.07,
+            185.12,
+            293.07
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].dates.value.start": {
+      "source_refs": [
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 4,
+          "text": "2018",
+          "page": 1,
+          "bbox": [
+            38.0,
+            283.07,
+            185.12,
+            293.07
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].dates.value.end": {
+      "source_refs": [
+        {
+          "line_id": "l00015",
+          "start": 7,
+          "end": 11,
+          "text": "2022",
+          "page": 1,
+          "bbox": [
+            38.0,
+            283.07,
+            185.12,
+            293.07
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].bullets[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 51,
+          "text": "Director of Applied AI — Horizon Autonomous Systems",
+          "page": 1,
+          "bbox": [
+            38.0,
+            271.07000000000005,
+            290.84000000000003,
+            281.07
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 31,
+          "text": "2018 – 2022 | San Francisco, CA",
+          "page": 1,
+          "bbox": [
+            38.0,
+            283.07,
+            185.12,
+            293.07
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 87,
+          "text": "• Built real-time computer vision inference stack operating at 60 FPS on edge hardware.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            294.656,
+            345.6879999999998,
+            302.656
+          ],
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 81,
+          "text": "• Filed 6 patents in neural network quantization and sparse attention mechanisms.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            306.656,
+            325.24800000000005,
+            314.656
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].bullets[1]": {
+      "source_refs": [
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 51,
+          "text": "Director of Applied AI — Horizon Autonomous Systems",
+          "page": 1,
+          "bbox": [
+            38.0,
+            271.07000000000005,
+            290.84000000000003,
+            281.07
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 31,
+          "text": "2018 – 2022 | San Francisco, CA",
+          "page": 1,
+          "bbox": [
+            38.0,
+            283.07,
+            185.12,
+            293.07
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 87,
+          "text": "• Built real-time computer vision inference stack operating at 60 FPS on edge hardware.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            294.656,
+            345.6879999999998,
+            302.656
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 81,
+          "text": "• Filed 6 patents in neural network quantization and sparse attention mechanisms.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            306.656,
+            325.24800000000005,
+            314.656
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].text": {
+      "source_refs": [
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 51,
+          "text": "Director of Applied AI — Horizon Autonomous Systems",
+          "page": 1,
+          "bbox": [
+            38.0,
+            271.07000000000005,
+            290.84000000000003,
+            281.07
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 31,
+          "text": "2018 – 2022 | San Francisco, CA",
+          "page": 1,
+          "bbox": [
+            38.0,
+            283.07,
+            185.12,
+            293.07
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 87,
+          "text": "• Built real-time computer vision inference stack operating at 60 FPS on edge hardware.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            294.656,
+            345.6879999999998,
+            302.656
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 81,
+          "text": "• Filed 6 patents in neural network quantization and sparse attention mechanisms.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            306.656,
+            325.24800000000005,
+            314.656
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.start.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 51,
+          "text": "Director of Applied AI — Horizon Autonomous Systems",
+          "page": 1,
+          "bbox": [
+            38.0,
+            271.07000000000005,
+            290.84000000000003,
+            281.07
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 4,
+          "text": "2018",
+          "page": 1,
+          "bbox": [
+            38.0,
+            283.07,
+            185.12,
+            293.07
+          ],
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 87,
+          "text": "• Built real-time computer vision inference stack operating at 60 FPS on edge hardware.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            294.656,
+            345.6879999999998,
+            302.656
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 81,
+          "text": "• Filed 6 patents in neural network quantization and sparse attention mechanisms.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            306.656,
+            325.24800000000005,
+            314.656
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.start.value": {
+      "source_refs": [
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 51,
+          "text": "Director of Applied AI — Horizon Autonomous Systems",
+          "page": 1,
+          "bbox": [
+            38.0,
+            271.07000000000005,
+            290.84000000000003,
+            281.07
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 4,
+          "text": "2018",
+          "page": 1,
+          "bbox": [
+            38.0,
+            283.07,
+            185.12,
+            293.07
+          ],
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 87,
+          "text": "• Built real-time computer vision inference stack operating at 60 FPS on edge hardware.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            294.656,
+            345.6879999999998,
+            302.656
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 81,
+          "text": "• Filed 6 patents in neural network quantization and sparse attention mechanisms.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            306.656,
+            325.24800000000005,
+            314.656
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.start.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 51,
+          "text": "Director of Applied AI — Horizon Autonomous Systems",
+          "page": 1,
+          "bbox": [
+            38.0,
+            271.07000000000005,
+            290.84000000000003,
+            281.07
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 31,
+          "text": "2018 – 2022 | San Francisco, CA",
+          "page": 1,
+          "bbox": [
+            38.0,
+            283.07,
+            185.12,
+            293.07
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 87,
+          "text": "• Built real-time computer vision inference stack operating at 60 FPS on edge hardware.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            294.656,
+            345.6879999999998,
+            302.656
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 81,
+          "text": "• Filed 6 patents in neural network quantization and sparse attention mechanisms.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            306.656,
+            325.24800000000005,
+            314.656
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.end.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 51,
+          "text": "Director of Applied AI — Horizon Autonomous Systems",
+          "page": 1,
+          "bbox": [
+            38.0,
+            271.07000000000005,
+            290.84000000000003,
+            281.07
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 7,
+          "end": 11,
+          "text": "2022",
+          "page": 1,
+          "bbox": [
+            38.0,
+            283.07,
+            185.12,
+            293.07
+          ],
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 87,
+          "text": "• Built real-time computer vision inference stack operating at 60 FPS on edge hardware.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            294.656,
+            345.6879999999998,
+            302.656
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 81,
+          "text": "• Filed 6 patents in neural network quantization and sparse attention mechanisms.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            306.656,
+            325.24800000000005,
+            314.656
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.end.value": {
+      "source_refs": [
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 51,
+          "text": "Director of Applied AI — Horizon Autonomous Systems",
+          "page": 1,
+          "bbox": [
+            38.0,
+            271.07000000000005,
+            290.84000000000003,
+            281.07
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 7,
+          "end": 11,
+          "text": "2022",
+          "page": 1,
+          "bbox": [
+            38.0,
+            283.07,
+            185.12,
+            293.07
+          ],
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 87,
+          "text": "• Built real-time computer vision inference stack operating at 60 FPS on edge hardware.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            294.656,
+            345.6879999999998,
+            302.656
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 81,
+          "text": "• Filed 6 patents in neural network quantization and sparse attention mechanisms.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            306.656,
+            325.24800000000005,
+            314.656
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.end.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 51,
+          "text": "Director of Applied AI — Horizon Autonomous Systems",
+          "page": 1,
+          "bbox": [
+            38.0,
+            271.07000000000005,
+            290.84000000000003,
+            281.07
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 31,
+          "text": "2018 – 2022 | San Francisco, CA",
+          "page": 1,
+          "bbox": [
+            38.0,
+            283.07,
+            185.12,
+            293.07
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 87,
+          "text": "• Built real-time computer vision inference stack operating at 60 FPS on edge hardware.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            294.656,
+            345.6879999999998,
+            302.656
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 81,
+          "text": "• Filed 6 patents in neural network quantization and sparse attention mechanisms.",
+          "page": 1,
+          "bbox": [
+            38.0,
+            306.656,
+            325.24800000000005,
+            314.656
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00024",
+          "start": 0,
+          "end": 39,
+          "text": "• PyTorch, Triton Inference Server, Ray",
+          "page": 1,
+          "bbox": [
+            378.0,
+            252.65599999999995,
+            514.936,
+            260.65599999999995
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00024",
+          "start": 2,
+          "end": 9,
+          "text": "PyTorch",
+          "page": 1,
+          "bbox": [
+            378.0,
+            252.65599999999995,
+            514.936,
+            260.65599999999995
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].items[1]": {
+      "source_refs": [
+        {
+          "line_id": "l00024",
+          "start": 11,
+          "end": 34,
+          "text": "Triton Inference Server",
+          "page": 1,
+          "bbox": [
+            378.0,
+            252.65599999999995,
+            514.936,
+            260.65599999999995
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].items[2]": {
+      "source_refs": [
+        {
+          "line_id": "l00024",
+          "start": 36,
+          "end": 39,
+          "text": "Ray",
+          "page": 1,
+          "bbox": [
+            378.0,
+            252.65599999999995,
+            514.936,
+            260.65599999999995
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].text": {
+      "source_refs": [
+        {
+          "line_id": "l00025",
+          "start": 0,
+          "end": 35,
+          "text": "• CUDA Optimization, TensorRT, vLLM",
+          "page": 1,
+          "bbox": [
+            378.0,
+            264.65599999999995,
+            513.5840000000001,
+            272.65599999999995
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00025",
+          "start": 2,
+          "end": 19,
+          "text": "CUDA Optimization",
+          "page": 1,
+          "bbox": [
+            378.0,
+            264.65599999999995,
+            513.5840000000001,
+            272.65599999999995
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].items[1]": {
+      "source_refs": [
+        {
+          "line_id": "l00025",
+          "start": 21,
+          "end": 29,
+          "text": "TensorRT",
+          "page": 1,
+          "bbox": [
+            378.0,
+            264.65599999999995,
+            513.5840000000001,
+            272.65599999999995
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].items[2]": {
+      "source_refs": [
+        {
+          "line_id": "l00025",
+          "start": 31,
+          "end": 35,
+          "text": "vLLM",
+          "page": 1,
+          "bbox": [
+            378.0,
+            264.65599999999995,
+            513.5840000000001,
+            272.65599999999995
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[2].text": {
+      "source_refs": [
+        {
+          "line_id": "l00026",
+          "start": 0,
+          "end": 39,
+          "text": "• Large-Scale Foundation Model Training",
+          "page": 1,
+          "bbox": [
+            378.0,
+            276.65599999999995,
+            520.7280000000001,
+            284.656
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[2].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00026",
+          "start": 2,
+          "end": 39,
+          "text": "Large-Scale Foundation Model Training",
+          "page": 1,
+          "bbox": [
+            378.0,
+            276.65599999999995,
+            520.7280000000001,
+            284.656
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[3].text": {
+      "source_refs": [
+        {
+          "line_id": "l00027",
+          "start": 0,
+          "end": 36,
+          "text": "• AI Safety, Red Teaming, Governance",
+          "page": 1,
+          "bbox": [
+            378.0,
+            288.656,
+            513.176,
+            296.656
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[3].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00027",
+          "start": 2,
+          "end": 11,
+          "text": "AI Safety",
+          "page": 1,
+          "bbox": [
+            378.0,
+            288.656,
+            513.176,
+            296.656
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[3].items[1]": {
+      "source_refs": [
+        {
+          "line_id": "l00027",
+          "start": 13,
+          "end": 24,
+          "text": "Red Teaming",
+          "page": 1,
+          "bbox": [
+            378.0,
+            288.656,
+            513.176,
+            296.656
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[3].items[2]": {
+      "source_refs": [
+        {
+          "line_id": "l00027",
+          "start": 26,
+          "end": 36,
+          "text": "Governance",
+          "page": 1,
+          "bbox": [
+            378.0,
+            288.656,
+            513.176,
+            296.656
+          ],
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "other_sections[0].canonical": {
+      "source_refs": [
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 36,
+          "text": "• $22M Annual Compute Budget Managed",
+          "page": 1,
+          "bbox": [
+            378.0,
+            180.7595,
+            534.3915,
+            189.2595
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00020",
+          "start": 0,
+          "end": 32,
+          "text": "• 72 Engineers & Researchers Led",
+          "page": 1,
+          "bbox": [
+            378.0,
+            192.7595,
+            505.55949999999996,
+            201.2595
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00021",
+          "start": 0,
+          "end": 37,
+          "text": "• 6 Granted US Patents in ML / Vision",
+          "page": 1,
+          "bbox": [
+            378.0,
+            204.7595,
+            516.8985,
+            213.2595
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00022",
+          "start": 0,
+          "end": 30,
+          "text": "• 25M+ Generative AI End-Users",
+          "page": 1,
+          "bbox": [
+            378.0,
+            216.7595,
+            498.7,
+            225.2595
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "other_sections[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 36,
+          "text": "• $22M Annual Compute Budget Managed",
+          "page": 1,
+          "bbox": [
+            378.0,
+            180.7595,
+            534.3915,
+            189.2595
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00020",
+          "start": 0,
+          "end": 32,
+          "text": "• 72 Engineers & Researchers Led",
+          "page": 1,
+          "bbox": [
+            378.0,
+            192.7595,
+            505.55949999999996,
+            201.2595
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00021",
+          "start": 0,
+          "end": 37,
+          "text": "• 6 Granted US Patents in ML / Vision",
+          "page": 1,
+          "bbox": [
+            378.0,
+            204.7595,
+            516.8985,
+            213.2595
+          ],
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00022",
+          "start": 0,
+          "end": 30,
+          "text": "• 25M+ Generative AI End-Users",
+          "page": 1,
+          "bbox": [
+            378.0,
+            216.7595,
+            498.7,
+            225.2595
+          ],
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    }
+  },
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "TARIQ AL-HASSAN\nVP OF ARTIFICIAL INTELLIGENCE & MACHINE LEARNING PLATFORMS\nSeattle, WA • +1 (206) 555-0184 • tariq.alhassan@example.com • linkedin.com/in/tariq-ai-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "summary",
+      "original_heading": "EXECUTIVE SUMMARY:",
+      "heading_line_id": "l00003:h",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00003:b"
+      ],
+      "text": "Technology Executive with 12+ years scaling deep learning systems, ML infrastructure, and distributed GPU compute platforms. Led engineering teams of 70+ engineers and research scientists while delivering generative AI models serving 25M+ active users."
+    },
+    {
+      "id": "s002",
+      "canonical": "experience",
+      "original_heading": "EXECUTIVE LEADERSHIP & IMPACT",
+      "heading_line_id": "l00006",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00007",
+        "l00008",
+        "l00009",
+        "l00011",
+        "l00013",
+        "l00014",
+        "l00015",
+        "l00016",
+        "l00017"
+      ],
+      "text": "VP of Machine Learning Platform — Cerebro Analytics\n2022 – Present | Seattle, WA\n• Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD clusters.\n• Directed engineering of high-throughput LLM serving stack, cutting model latency by 55%.\n• Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research.\nDirector of Applied AI — Horizon Autonomous Systems\n2018 – 2022 | San Francisco, CA\n• Built real-time computer vision inference stack operating at 60 FPS on edge hardware.\n• Filed 6 patents in neural network quantization and sparse attention mechanisms."
+    },
+    {
+      "id": "s003",
+      "canonical": "metrics",
+      "original_heading": "KEY LEADERSHIP METRICS",
+      "heading_line_id": "l00018",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022"
+      ],
+      "text": "• $22M Annual Compute Budget Managed\n• 72 Engineers & Researchers Led\n• 6 Granted US Patents in ML / Vision\n• 25M+ Generative AI End-Users"
+    },
+    {
+      "id": "s004",
+      "canonical": "skills",
+      "original_heading": "TECHNICAL GOVERNANCE",
+      "heading_line_id": "l00023",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00024",
+        "l00025",
+        "l00026",
+        "l00027"
+      ],
+      "text": "• PyTorch, Triton Inference Server, Ray\n• CUDA Optimization, TensorRT, vLLM\n• Large-Scale Foundation Model Training\n• AI Safety, Red Teaming, Governance"
+    },
+    {
+      "id": "s005",
+      "canonical": "education",
+      "original_heading": "EDUCATION",
+      "heading_line_id": "l00028",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00029",
+        "l00030",
+        "l00031",
+        "l00032"
+      ],
+      "text": "Ph.D. in Computer Science (Machine Learning)\nUniversity of Washington (2018)\nB.S. in Electrical Engineering\nGeorgia Institute of Technology (2013)"
+    }
+  ],
+  "unclassified": [],
+  "raw_lines": [
+    {
+      "id": "l00000",
+      "text": "TARIQ AL-HASSAN",
+      "runs": [
+        {
+          "text": "TARIQ",
+          "bold": true,
+          "size": 18.0,
+          "color": "(1.0, 1.0, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "TARIQ"
+        },
+        {
+          "text": " AL-HASSAN",
+          "bold": true,
+          "size": 18.0,
+          "color": "(1.0, 1.0, 1.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "AL-HASSAN"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        50.0,
+        57.726,
+        216.98600000000002,
+        75.726
+      ],
+      "part": "body",
+      "flow": "p1T",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00000"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00001",
+      "text": "VP OF ARTIFICIAL INTELLIGENCE & MACHINE LEARNING PLATFORMS",
+      "runs": [
+        {
+          "text": "VP",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.219608, 0.741176, 0.972549)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "VP"
+        },
+        {
+          "text": " OF",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.219608, 0.741176, 0.972549)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "OF"
+        },
+        {
+          "text": " ARTIFICIAL",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.219608, 0.741176, 0.972549)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "ARTIFICIAL"
+        },
+        {
+          "text": " INTELLIGENCE",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.219608, 0.741176, 0.972549)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "INTELLIGENCE"
+        },
+        {
+          "text": " &",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.219608, 0.741176, 0.972549)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " MACHINE",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.219608, 0.741176, 0.972549)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "MACHINE"
+        },
+        {
+          "text": " LEARNING",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.219608, 0.741176, 0.972549)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "LEARNING"
+        },
+        {
+          "text": " PLATFORMS",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.219608, 0.741176, 0.972549)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "PLATFORMS"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        50.0,
+        76.07000000000005,
+        393.9,
+        86.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1T",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00001"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00002",
+      "text": "Seattle, WA • +1 (206) 555-0184 • tariq.alhassan@example.com • linkedin.com/in/tariq-ai-dummy",
+      "runs": [
+        {
+          "text": "Seattle,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.886275, 0.909804, 0.941176)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Seattle,"
+        },
+        {
+          "text": " WA",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.886275, 0.909804, 0.941176)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "WA"
+        },
+        {
+          "text": " •",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.886275, 0.909804, 0.941176)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " +1",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.886275, 0.909804, 0.941176)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "+1"
+        },
+        {
+          "text": " (206)",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.886275, 0.909804, 0.941176)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(206)"
+        },
+        {
+          "text": " 555-0184",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.886275, 0.909804, 0.941176)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "555-0184"
+        },
+        {
+          "text": " •",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.886275, 0.909804, 0.941176)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " tariq.alhassan@example.com",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.886275, 0.909804, 0.941176)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "tariq.alhassan@example.com"
+        },
+        {
+          "text": " •",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.886275, 0.909804, 0.941176)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " linkedin.com/in/tariq-ai-dummy",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.886275, 0.909804, 0.941176)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "linkedin.com/in/tariq-ai-dummy"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        50.0,
+        82.65599999999995,
+        385.57599999999996,
+        90.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1T",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00002"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00003",
+      "text": "EXECUTIVE SUMMARY: Technology Executive with 12+ years scaling deep learning systems, ML infrastructure, and distributed GPU",
+      "runs": [
+        {
+          "text": "EXECUTIVE",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "EXECUTIVE"
+        },
+        {
+          "text": " SUMMARY:",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "SUMMARY:"
+        },
+        {
+          "text": " Technology",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Technology"
+        },
+        {
+          "text": " Executive",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Executive"
+        },
+        {
+          "text": " with",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "with"
+        },
+        {
+          "text": " 12+",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "12+"
+        },
+        {
+          "text": " years",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "years"
+        },
+        {
+          "text": " scaling",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "scaling"
+        },
+        {
+          "text": " deep",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "deep"
+        },
+        {
+          "text": " learning",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "learning"
+        },
+        {
+          "text": " systems,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "systems,"
+        },
+        {
+          "text": " ML",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "ML"
+        },
+        {
+          "text": " infrastructure,",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "infrastructure,"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " distributed",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "distributed"
+        },
+        {
+          "text": " GPU",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "GPU"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        50.0,
+        98.7595,
+        556.1579999999997,
+        107.2595
+      ],
+      "part": "body",
+      "flow": "p1T",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00003"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00004",
+      "text": "compute platforms. Led engineering teams of 70+ engineers and research scientists while delivering generative AI models serving 25M+",
+      "runs": [
+        {
+          "text": "compute",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "compute"
+        },
+        {
+          "text": " platforms.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "platforms."
+        },
+        {
+          "text": " Led",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Led"
+        },
+        {
+          "text": " engineering",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "engineering"
+        },
+        {
+          "text": " teams",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "teams"
+        },
+        {
+          "text": " of",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "of"
+        },
+        {
+          "text": " 70+",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "70+"
+        },
+        {
+          "text": " engineers",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "engineers"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " research",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "research"
+        },
+        {
+          "text": " scientists",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "scientists"
+        },
+        {
+          "text": " while",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "while"
+        },
+        {
+          "text": " delivering",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "delivering"
+        },
+        {
+          "text": " generative",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "generative"
+        },
+        {
+          "text": " AI",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "AI"
+        },
+        {
+          "text": " models",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "models"
+        },
+        {
+          "text": " serving",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "serving"
+        },
+        {
+          "text": " 25M+",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "25M+"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        50.0,
+        110.7595,
+        561.9999989999998,
+        119.2595
+      ],
+      "part": "body",
+      "flow": "p1T",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00004"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00005",
+      "text": "active users.",
+      "runs": [
+        {
+          "text": "active",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "active"
+        },
+        {
+          "text": " users.",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.945098, 0.960784, 0.976471)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "users."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        50.0,
+        122.7595,
+        97.7105,
+        131.2595
+      ],
+      "part": "body",
+      "flow": "p1T",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00005"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00006",
+      "text": "EXECUTIVE LEADERSHIP & IMPACT",
+      "runs": [
+        {
+          "text": "EXECUTIVE",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "EXECUTIVE"
+        },
+        {
+          "text": " LEADERSHIP",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "LEADERSHIP"
+        },
+        {
+          "text": " &",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " IMPACT",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "IMPACT"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        38.0,
+        165.07000000000005,
+        213.01999999999998,
+        175.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1BLT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00006"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00007",
+      "text": "VP of Machine Learning Platform — Cerebro Analytics",
+      "runs": [
+        {
+          "text": "VP",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "VP"
+        },
+        {
+          "text": " of",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "of"
+        },
+        {
+          "text": " Machine",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Machine"
+        },
+        {
+          "text": " Learning",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Learning"
+        },
+        {
+          "text": " Platform",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Platform"
+        },
+        {
+          "text": " —",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "—"
+        },
+        {
+          "text": " Cerebro",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Cerebro"
+        },
+        {
+          "text": " Analytics",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Analytics"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        38.0,
+        181.07000000000005,
+        289.17,
+        191.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1BLT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00007"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00008",
+      "text": "2022 – Present | Seattle, WA",
+      "runs": [
+        {
+          "text": "2022",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2022"
+        },
+        {
+          "text": " –",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "–"
+        },
+        {
+          "text": " Present",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "Present"
+        },
+        {
+          "text": " |",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "|"
+        },
+        {
+          "text": " Seattle,",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "Seattle,"
+        },
+        {
+          "text": " WA",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "WA"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        38.0,
+        193.07000000000005,
+        166.78,
+        203.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1BLT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00008"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00009",
+      "text": "• Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Governed",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Governed"
+        },
+        {
+          "text": " $22M",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "$22M"
+        },
+        {
+          "text": " annual",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "annual"
+        },
+        {
+          "text": " compute",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "compute"
+        },
+        {
+          "text": " budget",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "budget"
+        },
+        {
+          "text": " across",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "across"
+        },
+        {
+          "text": " AWS",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "AWS"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " NVIDIA",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "NVIDIA"
+        },
+        {
+          "text": " DGX",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "DGX"
+        },
+        {
+          "text": " SuperPOD",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "SuperPOD"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        38.0,
+        204.65599999999995,
+        334.576,
+        212.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BLT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00009"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00010",
+      "text": "clusters.",
+      "runs": [
+        {
+          "text": "clusters.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "clusters."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        38.0,
+        216.65599999999995,
+        67.784,
+        224.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BLT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00010"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00011",
+      "text": "• Directed engineering of high-throughput LLM serving stack, cutting model latency by",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Directed",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Directed"
+        },
+        {
+          "text": " engineering",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "engineering"
+        },
+        {
+          "text": " of",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "of"
+        },
+        {
+          "text": " high-throughput",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "high-throughput"
+        },
+        {
+          "text": " LLM",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "LLM"
+        },
+        {
+          "text": " serving",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "serving"
+        },
+        {
+          "text": " stack,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "stack,"
+        },
+        {
+          "text": " cutting",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "cutting"
+        },
+        {
+          "text": " model",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "model"
+        },
+        {
+          "text": " latency",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "latency"
+        },
+        {
+          "text": " by",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "by"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        38.0,
+        228.65599999999995,
+        338.1359999999999,
+        236.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BLT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00011"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00012",
+      "text": "55%.",
+      "runs": [
+        {
+          "text": "55%.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "55%."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        38.0,
+        240.65599999999995,
+        56.232,
+        248.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BLT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00012"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00013",
+      "text": "• Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Scaled",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Scaled"
+        },
+        {
+          "text": " org",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "org"
+        },
+        {
+          "text": " from",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "from"
+        },
+        {
+          "text": " 18",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "18"
+        },
+        {
+          "text": " to",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "to"
+        },
+        {
+          "text": " 72",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "72"
+        },
+        {
+          "text": " engineers",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "engineers"
+        },
+        {
+          "text": " across",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "across"
+        },
+        {
+          "text": " ML",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "ML"
+        },
+        {
+          "text": " Systems,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Systems,"
+        },
+        {
+          "text": " Data",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Data"
+        },
+        {
+          "text": " Platform,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Platform,"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " Research.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Research."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        38.0,
+        252.65599999999995,
+        347.01599999999985,
+        260.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BLT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00013"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00014",
+      "text": "Director of Applied AI — Horizon Autonomous Systems",
+      "runs": [
+        {
+          "text": "Director",
+          "bold": true,
+          "size": 9.999999999999943,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Director"
+        },
+        {
+          "text": " of",
+          "bold": true,
+          "size": 9.999999999999943,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "of"
+        },
+        {
+          "text": " Applied",
+          "bold": true,
+          "size": 9.999999999999943,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Applied"
+        },
+        {
+          "text": " AI",
+          "bold": true,
+          "size": 9.999999999999943,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "AI"
+        },
+        {
+          "text": " —",
+          "bold": false,
+          "size": 9.999999999999943,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "—"
+        },
+        {
+          "text": " Horizon",
+          "bold": false,
+          "size": 9.999999999999943,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Horizon"
+        },
+        {
+          "text": " Autonomous",
+          "bold": false,
+          "size": 9.999999999999943,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Autonomous"
+        },
+        {
+          "text": " Systems",
+          "bold": false,
+          "size": 9.999999999999943,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Systems"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        38.0,
+        271.07000000000005,
+        290.84000000000003,
+        281.07
+      ],
+      "part": "body",
+      "flow": "p1BLB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00014"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00015",
+      "text": "2018 – 2022 | San Francisco, CA",
+      "runs": [
+        {
+          "text": "2018",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2018"
+        },
+        {
+          "text": " –",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "–"
+        },
+        {
+          "text": " 2022",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "2022"
+        },
+        {
+          "text": " |",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "|"
+        },
+        {
+          "text": " San",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "San"
+        },
+        {
+          "text": " Francisco,",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "Francisco,"
+        },
+        {
+          "text": " CA",
+          "bold": false,
+          "size": 10.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Oblique",
+          "hyperlink": null,
+          "original_text": "CA"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        38.0,
+        283.07,
+        185.12,
+        293.07
+      ],
+      "part": "body",
+      "flow": "p1BLB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00015"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00016",
+      "text": "• Built real-time computer vision inference stack operating at 60 FPS on edge hardware.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Built",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Built"
+        },
+        {
+          "text": " real-time",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "real-time"
+        },
+        {
+          "text": " computer",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "computer"
+        },
+        {
+          "text": " vision",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "vision"
+        },
+        {
+          "text": " inference",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "inference"
+        },
+        {
+          "text": " stack",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "stack"
+        },
+        {
+          "text": " operating",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "operating"
+        },
+        {
+          "text": " at",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "at"
+        },
+        {
+          "text": " 60",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "60"
+        },
+        {
+          "text": " FPS",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "FPS"
+        },
+        {
+          "text": " on",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "on"
+        },
+        {
+          "text": " edge",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "edge"
+        },
+        {
+          "text": " hardware.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "hardware."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        38.0,
+        294.656,
+        345.6879999999998,
+        302.656
+      ],
+      "part": "body",
+      "flow": "p1BLB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00016"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00017",
+      "text": "• Filed 6 patents in neural network quantization and sparse attention mechanisms.",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Filed",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Filed"
+        },
+        {
+          "text": " 6",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "6"
+        },
+        {
+          "text": " patents",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "patents"
+        },
+        {
+          "text": " in",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "in"
+        },
+        {
+          "text": " neural",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "neural"
+        },
+        {
+          "text": " network",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "network"
+        },
+        {
+          "text": " quantization",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "quantization"
+        },
+        {
+          "text": " and",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "and"
+        },
+        {
+          "text": " sparse",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "sparse"
+        },
+        {
+          "text": " attention",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "attention"
+        },
+        {
+          "text": " mechanisms.",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "mechanisms."
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        38.0,
+        306.656,
+        325.24800000000005,
+        314.656
+      ],
+      "part": "body",
+      "flow": "p1BLB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00017"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00018",
+      "text": "KEY LEADERSHIP METRICS",
+      "runs": [
+        {
+          "text": "KEY",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "KEY"
+        },
+        {
+          "text": " LEADERSHIP",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "LEADERSHIP"
+        },
+        {
+          "text": " METRICS",
+          "bold": true,
+          "size": 10.0,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "METRICS"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        378.0,
+        165.07000000000005,
+        513.5699999999999,
+        175.07000000000005
+      ],
+      "part": "body",
+      "flow": "p1BRTT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00018"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00019",
+      "text": "• $22M Annual Compute Budget Managed",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " $22M",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "$22M"
+        },
+        {
+          "text": " Annual",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Annual"
+        },
+        {
+          "text": " Compute",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Compute"
+        },
+        {
+          "text": " Budget",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Budget"
+        },
+        {
+          "text": " Managed",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Managed"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        378.0,
+        180.7595,
+        534.3915,
+        189.2595
+      ],
+      "part": "body",
+      "flow": "p1BRTT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00019"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00020",
+      "text": "• 72 Engineers & Researchers Led",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " 72",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "72"
+        },
+        {
+          "text": " Engineers",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Engineers"
+        },
+        {
+          "text": " &",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "&"
+        },
+        {
+          "text": " Researchers",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Researchers"
+        },
+        {
+          "text": " Led",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Led"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        378.0,
+        192.7595,
+        505.55949999999996,
+        201.2595
+      ],
+      "part": "body",
+      "flow": "p1BRTT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00020"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00021",
+      "text": "• 6 Granted US Patents in ML / Vision",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " 6",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "6"
+        },
+        {
+          "text": " Granted",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Granted"
+        },
+        {
+          "text": " US",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "US"
+        },
+        {
+          "text": " Patents",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Patents"
+        },
+        {
+          "text": " in",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "in"
+        },
+        {
+          "text": " ML",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "ML"
+        },
+        {
+          "text": " /",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "/"
+        },
+        {
+          "text": " Vision",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Vision"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        378.0,
+        204.7595,
+        516.8985,
+        213.2595
+      ],
+      "part": "body",
+      "flow": "p1BRTT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00021"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00022",
+      "text": "• 25M+ Generative AI End-Users",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " 25M+",
+          "bold": true,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "25M+"
+        },
+        {
+          "text": " Generative",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Generative"
+        },
+        {
+          "text": " AI",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "AI"
+        },
+        {
+          "text": " End-Users",
+          "bold": false,
+          "size": 8.5,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "End-Users"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        378.0,
+        216.7595,
+        498.7,
+        225.2595
+      ],
+      "part": "body",
+      "flow": "p1BRTT",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00022"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00023",
+      "text": "TECHNICAL GOVERNANCE",
+      "runs": [
+        {
+          "text": "TECHNICAL",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "TECHNICAL"
+        },
+        {
+          "text": " GOVERNANCE",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "GOVERNANCE"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        378.0,
+        236.9665,
+        503.609,
+        246.4665
+      ],
+      "part": "body",
+      "flow": "p1BRTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00023"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00024",
+      "text": "• PyTorch, Triton Inference Server, Ray",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " PyTorch,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "PyTorch,"
+        },
+        {
+          "text": " Triton",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Triton"
+        },
+        {
+          "text": " Inference",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Inference"
+        },
+        {
+          "text": " Server,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Server,"
+        },
+        {
+          "text": " Ray",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Ray"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        378.0,
+        252.65599999999995,
+        514.936,
+        260.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BRTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00024"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00025",
+      "text": "• CUDA Optimization, TensorRT, vLLM",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " CUDA",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "CUDA"
+        },
+        {
+          "text": " Optimization,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Optimization,"
+        },
+        {
+          "text": " TensorRT,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "TensorRT,"
+        },
+        {
+          "text": " vLLM",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "vLLM"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        378.0,
+        264.65599999999995,
+        513.5840000000001,
+        272.65599999999995
+      ],
+      "part": "body",
+      "flow": "p1BRTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00025"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00026",
+      "text": "• Large-Scale Foundation Model Training",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.000000000000057,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " Large-Scale",
+          "bold": false,
+          "size": 8.000000000000057,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Large-Scale"
+        },
+        {
+          "text": " Foundation",
+          "bold": false,
+          "size": 8.000000000000057,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Foundation"
+        },
+        {
+          "text": " Model",
+          "bold": false,
+          "size": 8.000000000000057,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Model"
+        },
+        {
+          "text": " Training",
+          "bold": false,
+          "size": 8.000000000000057,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Training"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        378.0,
+        276.65599999999995,
+        520.7280000000001,
+        284.656
+      ],
+      "part": "body",
+      "flow": "p1BRTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00026"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00027",
+      "text": "• AI Safety, Red Teaming, Governance",
+      "runs": [
+        {
+          "text": "•",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(cid:127)"
+        },
+        {
+          "text": " AI",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "AI"
+        },
+        {
+          "text": " Safety,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Safety,"
+        },
+        {
+          "text": " Red",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Red"
+        },
+        {
+          "text": " Teaming,",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Teaming,"
+        },
+        {
+          "text": " Governance",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Governance"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        378.0,
+        288.656,
+        513.176,
+        296.656
+      ],
+      "part": "body",
+      "flow": "p1BRTB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00027"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00028",
+      "text": "EDUCATION",
+      "runs": [
+        {
+          "text": "EDUCATION",
+          "bold": true,
+          "size": 9.5,
+          "color": "(0.058824, 0.090196, 0.164706)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "EDUCATION"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        378.0,
+        308.9665,
+        434.46799999999996,
+        318.4665
+      ],
+      "part": "body",
+      "flow": "p1BRB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00028"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00029",
+      "text": "Ph.D. in Computer Science (Machine Learning)",
+      "runs": [
+        {
+          "text": "Ph.D.",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Ph.D."
+        },
+        {
+          "text": " in",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "in"
+        },
+        {
+          "text": " Computer",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Computer"
+        },
+        {
+          "text": " Science",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Science"
+        },
+        {
+          "text": " (Machine",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "(Machine"
+        },
+        {
+          "text": " Learning)",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Learning)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        378.0,
+        324.656,
+        555.816,
+        332.656
+      ],
+      "part": "body",
+      "flow": "p1BRB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00029"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00030",
+      "text": "University of Washington (2018)",
+      "runs": [
+        {
+          "text": "University",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "University"
+        },
+        {
+          "text": " of",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "of"
+        },
+        {
+          "text": " Washington",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Washington"
+        },
+        {
+          "text": " (2018)",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(2018)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        378.0,
+        336.656,
+        491.81600000000003,
+        344.656
+      ],
+      "part": "body",
+      "flow": "p1BRB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00030"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00031",
+      "text": "B.S. in Electrical Engineering",
+      "runs": [
+        {
+          "text": "B.S.",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "B.S."
+        },
+        {
+          "text": " in",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "in"
+        },
+        {
+          "text": " Electrical",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Electrical"
+        },
+        {
+          "text": " Engineering",
+          "bold": true,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica-Bold",
+          "hyperlink": null,
+          "original_text": "Engineering"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        378.0,
+        348.656,
+        489.15200000000004,
+        356.656
+      ],
+      "part": "body",
+      "flow": "p1BRB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00031"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00032",
+      "text": "Georgia Institute of Technology (2013)",
+      "runs": [
+        {
+          "text": "Georgia",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Georgia"
+        },
+        {
+          "text": " Institute",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Institute"
+        },
+        {
+          "text": " of",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "of"
+        },
+        {
+          "text": " Technology",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "Technology"
+        },
+        {
+          "text": " (2013)",
+          "bold": false,
+          "size": 8.0,
+          "color": "(0.0, 0.0, 0.0)",
+          "caps": false,
+          "font": "Helvetica",
+          "hyperlink": null,
+          "original_text": "(2013)"
+        }
+      ],
+      "page": 1,
+      "bbox": [
+        378.0,
+        360.656,
+        514.5120000000001,
+        368.656
+      ],
+      "part": "body",
+      "flow": "p1BRB",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00032"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    }
+  ],
+  "raw_text": "TARIQ AL-HASSAN\nVP OF ARTIFICIAL INTELLIGENCE & MACHINE LEARNING PLATFORMS\nSeattle, WA • +1 (206) 555-0184 • tariq.alhassan@example.com • linkedin.com/in/tariq-ai-dummy\nEXECUTIVE SUMMARY: Technology Executive with 12+ years scaling deep learning systems, ML infrastructure, and distributed GPU\ncompute platforms. Led engineering teams of 70+ engineers and research scientists while delivering generative AI models serving 25M+\nactive users.\nEXECUTIVE LEADERSHIP & IMPACT\nVP of Machine Learning Platform — Cerebro Analytics\n2022 – Present | Seattle, WA\n• Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD\nclusters.\n• Directed engineering of high-throughput LLM serving stack, cutting model latency by\n55%.\n• Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research.\nDirector of Applied AI — Horizon Autonomous Systems\n2018 – 2022 | San Francisco, CA\n• Built real-time computer vision inference stack operating at 60 FPS on edge hardware.\n• Filed 6 patents in neural network quantization and sparse attention mechanisms.\nKEY LEADERSHIP METRICS\n• $22M Annual Compute Budget Managed\n• 72 Engineers & Researchers Led\n• 6 Granted US Patents in ML / Vision\n• 25M+ Generative AI End-Users\nTECHNICAL GOVERNANCE\n• PyTorch, Triton Inference Server, Ray\n• CUDA Optimization, TensorRT, vLLM\n• Large-Scale Foundation Model Training\n• AI Safety, Red Teaming, Governance\nEDUCATION\nPh.D. in Computer Science (Machine Learning)\nUniversity of Washington (2018)\nB.S. in Electrical Engineering\nGeorgia Institute of Technology (2013)",
+  "validation": {
+    "issues": [],
+    "legacy_schema_errors": [],
+    "completeness": {
+      "status": "pass",
+      "reference_words": 219,
+      "extracted_words": 219,
+      "matched_words": 219,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "semantic_accuracy": "not_established_by_schema_validation"
+  },
+  "review_status": "mapped_unverified",
+  "comparison": {
+    "provided": true,
+    "changed": false,
+    "ground_truth": false
+  }
+}

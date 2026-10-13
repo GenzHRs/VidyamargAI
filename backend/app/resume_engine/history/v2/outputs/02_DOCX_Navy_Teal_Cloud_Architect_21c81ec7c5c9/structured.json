@@ -1,0 +1,490 @@
+{
+  "schema_version": "2.0.0",
+  "section_order": [
+    "contact",
+    "summary",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "certifications",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "contact": {
+    "name": {
+      "value": "DARIUS K. VANCE",
+      "confidence": 0.92,
+      "source_line_ids": [
+        "l00019"
+      ]
+    },
+    "emails": [
+      {
+        "value": "darius.vance@example.com",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00004"
+        ],
+        "normalization": "none",
+        "raw": "darius.vance@example.com"
+      }
+    ],
+    "phones": [
+      {
+        "value": "(555) 304-9182",
+        "confidence": 0.7,
+        "source_line_ids": [
+          "l00003"
+        ],
+        "normalized": "+15553049182",
+        "valid": false
+      }
+    ],
+    "locations": [
+      {
+        "value": "Denver, CO",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00002"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "value": "github.com/darius-cloud",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00005"
+        ],
+        "kind": "github"
+      },
+      {
+        "value": "linkedin.com/in/dariusvance-dummy",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00006"
+        ],
+        "kind": "linkedin"
+      }
+    ]
+  },
+  "summary": [
+    {
+      "text": "Principal Cloud Architect with 11+ years engineering multi-tenant enterprise platforms, cloud migrations, and distributed data fabrics. Orchestrated zero-downtime infrastructure powering $100M+ ARR SaaS portfolios while lowering annual cloud run-rates by 35%.",
+      "source_line_ids": [
+        "l00022"
+      ],
+      "value": "Principal Cloud Architect with 11+ years engineering multi-tenant enterprise platforms, cloud migrations, and distributed data fabrics. Orchestrated zero-downtime infrastructure powering $100M+ ARR SaaS portfolios while lowering annual cloud run-rates by 35%."
+    }
+  ],
+  "experience": [
+    {
+      "title": {
+        "value": "Principal Cloud Solutions Architect",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00024"
+        ]
+      },
+      "company": {
+        "value": "StrataCore Cloud Systems",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00025"
+        ]
+      },
+      "location": {
+        "value": "Denver, CO",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00025"
+        ]
+      },
+      "dates": {
+        "value": {
+          "start": "2021",
+          "end": "Present"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00025"
+        ]
+      },
+      "bullets": [
+        "• Directed migration of 140 on-premise microservices to AWS EKS with zero client downtime, reducing annual hosting overhead by $1.8M.",
+        "• Authored disaster recovery strategy achieving RPO < 15 seconds and RTO < 2 minutes across multi-region clusters.",
+        "• Governed engineering standards across 45 platform engineers and SREs."
+      ],
+      "text": "Principal Cloud Solutions Architect\nStrataCore Cloud Systems (Denver, CO) | 2021 – Present\n• Directed migration of 140 on-premise microservices to AWS EKS with zero client downtime, reducing annual hosting overhead by $1.8M.\n• Authored disaster recovery strategy achieving RPO < 15 seconds and RTO < 2 minutes across multi-region clusters.\n• Governed engineering standards across 45 platform engineers and SREs.",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00024",
+        "l00025",
+        "l00026",
+        "l00027",
+        "l00028"
+      ]
+    },
+    {
+      "title": {
+        "value": "Lead Infrastructure Architect",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00029"
+        ]
+      },
+      "company": {
+        "value": "Apex Financial Technologies",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00030"
+        ]
+      },
+      "location": {
+        "value": "Boulder, CO",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00030"
+        ]
+      },
+      "dates": {
+        "value": {
+          "start": "2017",
+          "end": "2021"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00030"
+        ]
+      },
+      "bullets": [
+        "• Built automated compliance-as-code pipelines enabling rapid SOC2 Type II and FedRAMP readiness.",
+        "• Standardized infrastructure provisioning with reusable Terraform modules across 12 application teams."
+      ],
+      "text": "Lead Infrastructure Architect\nApex Financial Technologies (Boulder, CO) | 2017 – 2021\n• Built automated compliance-as-code pipelines enabling rapid SOC2 Type II and FedRAMP readiness.\n• Standardized infrastructure provisioning with reusable Terraform modules across 12 application teams.",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00029",
+        "l00030",
+        "l00031",
+        "l00032"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "text": "M.S. in Computer Science — University of Colorado Boulder (2017)",
+      "source_line_ids": [
+        "l00034"
+      ],
+      "degree": {
+        "value": "M.S. in Computer Science",
+        "source_line_ids": [
+          "l00034"
+        ],
+        "confidence": 0.85
+      },
+      "institution": {
+        "value": "University of Colorado Boulder",
+        "source_line_ids": [
+          "l00034"
+        ],
+        "confidence": 0.85
+      },
+      "dates": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "graduation": {
+        "value": "2017",
+        "source_line_ids": [
+          "l00034"
+        ],
+        "confidence": 0.85
+      },
+      "location": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "gpa": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      }
+    },
+    {
+      "text": "B.S. in Computer Engineering — Colorado State University (2014)",
+      "source_line_ids": [
+        "l00035"
+      ],
+      "degree": {
+        "value": "B.S. in Computer Engineering",
+        "source_line_ids": [
+          "l00035"
+        ],
+        "confidence": 0.85
+      },
+      "institution": {
+        "value": "Colorado State University",
+        "source_line_ids": [
+          "l00035"
+        ],
+        "confidence": 0.85
+      },
+      "dates": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "graduation": {
+        "value": "2014",
+        "source_line_ids": [
+          "l00035"
+        ],
+        "confidence": 0.85
+      },
+      "location": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "gpa": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      }
+    }
+  ],
+  "projects": [],
+  "skills": [
+    {
+      "text": "• Cloud: AWS & Azure Cloud",
+      "source_line_ids": [
+        "l00008"
+      ],
+      "category": "Cloud",
+      "items": [
+        "AWS & Azure Cloud"
+      ]
+    },
+    {
+      "text": "• Containers: Kubernetes (EKS)",
+      "source_line_ids": [
+        "l00009"
+      ],
+      "category": "Containers",
+      "items": [
+        "Kubernetes (EKS)"
+      ]
+    },
+    {
+      "text": "• Microservices Architecture",
+      "source_line_ids": [
+        "l00010"
+      ],
+      "category": null,
+      "items": [
+        "Microservices Architecture"
+      ]
+    },
+    {
+      "text": "• Terraform / GitOps (ArgoCD)",
+      "source_line_ids": [
+        "l00011"
+      ],
+      "category": null,
+      "items": [
+        "Terraform / GitOps (ArgoCD)"
+      ]
+    },
+    {
+      "text": "• Kafka & Event-Driven Systems",
+      "source_line_ids": [
+        "l00012"
+      ],
+      "category": null,
+      "items": [
+        "Kafka & Event-Driven Systems"
+      ]
+    },
+    {
+      "text": "• PostgreSQL, Snowflake, Redis",
+      "source_line_ids": [
+        "l00013"
+      ],
+      "category": null,
+      "items": [
+        "PostgreSQL",
+        "Snowflake",
+        "Redis"
+      ]
+    },
+    {
+      "text": "• SOC2 & Cloud Security",
+      "source_line_ids": [
+        "l00014"
+      ],
+      "category": null,
+      "items": [
+        "SOC2 & Cloud Security"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "text": "• AWS Solutions Architect Pro",
+      "source_line_ids": [
+        "l00016"
+      ],
+      "name": {
+        "value": "AWS Solutions Architect Pro",
+        "source_line_ids": [
+          "l00016"
+        ],
+        "confidence": 0.85
+      },
+      "details": ""
+    },
+    {
+      "text": "• Certified Kubernetes Admin (CKA)",
+      "source_line_ids": [
+        "l00017"
+      ],
+      "name": {
+        "value": "Certified Kubernetes Admin (CKA)",
+        "source_line_ids": [
+          "l00017"
+        ],
+        "confidence": 0.85
+      },
+      "details": ""
+    },
+    {
+      "text": "• HashiCorp Terraform Pro",
+      "source_line_ids": [
+        "l00018"
+      ],
+      "name": {
+        "value": "HashiCorp Terraform Pro",
+        "source_line_ids": [
+          "l00018"
+        ],
+        "confidence": 0.85
+      },
+      "details": ""
+    }
+  ],
+  "other_sections": [],
+  "review": [
+    {
+      "path": "fields.phones[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.7
+    }
+  ],
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "contact",
+      "original_heading": "CONTACT",
+      "heading_line_id": "l00000",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00001",
+        "l00002",
+        "l00003",
+        "l00004",
+        "l00005",
+        "l00006"
+      ],
+      "text": "Darius K. Vance\nDenver, CO\n(555) 304-9182\ndarius.vance@example.com\ngithub.com/darius-cloud\nlinkedin.com/in/dariusvance-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "skills",
+      "original_heading": "ARCHITECTURE SKILLS",
+      "heading_line_id": "l00007",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00008",
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014"
+      ],
+      "text": "• Cloud: AWS & Azure Cloud\n• Containers: Kubernetes (EKS)\n• Microservices Architecture\n• Terraform / GitOps (ArgoCD)\n• Kafka & Event-Driven Systems\n• PostgreSQL, Snowflake, Redis\n• SOC2 & Cloud Security"
+    },
+    {
+      "id": "s002",
+      "canonical": "certifications",
+      "original_heading": "CERTIFICATIONS",
+      "heading_line_id": "l00015",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00016",
+        "l00017",
+        "l00018"
+      ],
+      "text": "• AWS Solutions Architect Pro\n• Certified Kubernetes Admin (CKA)\n• HashiCorp Terraform Pro"
+    },
+    {
+      "id": "s003",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00019",
+        "l00020"
+      ],
+      "text": "DARIUS K. VANCE\nPRINCIPAL CLOUD ARCHITECT & INFRASTRUCTURE DIRECTOR"
+    },
+    {
+      "id": "s004",
+      "canonical": "summary",
+      "original_heading": "EXECUTIVE SUMMARY",
+      "heading_line_id": "l00021",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00022"
+      ],
+      "text": "Principal Cloud Architect with 11+ years engineering multi-tenant enterprise platforms, cloud migrations, and distributed data fabrics. Orchestrated zero-downtime infrastructure powering $100M+ ARR SaaS portfolios while lowering annual cloud run-rates by 35%."
+    },
+    {
+      "id": "s005",
+      "canonical": "experience",
+      "original_heading": "LEADERSHIP & ARCHITECTURE EXPERIENCE",
+      "heading_line_id": "l00023",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00024",
+        "l00025",
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030",
+        "l00031",
+        "l00032"
+      ],
+      "text": "Principal Cloud Solutions Architect\nStrataCore Cloud Systems (Denver, CO) | 2021 – Present\n• Directed migration of 140 on-premise microservices to AWS EKS with zero client downtime, reducing annual hosting overhead by $1.8M.\n• Authored disaster recovery strategy achieving RPO < 15 seconds and RTO < 2 minutes across multi-region clusters.\n• Governed engineering standards across 45 platform engineers and SREs.\nLead Infrastructure Architect\nApex Financial Technologies (Boulder, CO) | 2017 – 2021\n• Built automated compliance-as-code pipelines enabling rapid SOC2 Type II and FedRAMP readiness.\n• Standardized infrastructure provisioning with reusable Terraform modules across 12 application teams."
+    },
+    {
+      "id": "s006",
+      "canonical": "education",
+      "original_heading": "EDUCATION",
+      "heading_line_id": "l00033",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00034",
+        "l00035"
+      ],
+      "text": "M.S. in Computer Science — University of Colorado Boulder (2017)\nB.S. in Computer Engineering — Colorado State University (2014)"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "U12",
+  "file": "comprehensive_resume_test_suite/05_PDF_Strict_Table_Grid_Resume.pdf",
+  "sha256": "c0621a20f19acdfc3e731f6db1768795081d7314d2adb69983b15fdfb91c6186",
+  "previous_reference": "R10",
+  "artifact": "artifacts/U12/resume.json",
+  "selected_from": "upload/resume(3).json",
+  "selected_sha256": "ba5481c861297ed0846e6f0d60155b105fda03fcdb8ba529d33a2cf89b86f6db",
+  "reason": "Full raw lines, layout and hyperlink metadata; uploaded artifact preferred when available. Structured output is baseline comparison only."
+}

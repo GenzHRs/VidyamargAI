@@ -1,0 +1,410 @@
+{
+  "schema_version": "3.0.0",
+  "section_order": [
+    "contact",
+    "summary",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "certifications",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "contact": {
+    "name": {
+      "value": "TARIQ AL-HASSAN",
+      "confidence": 0.92,
+      "source_line_ids": [
+        "l00000"
+      ]
+    },
+    "emails": [
+      {
+        "value": "tariq.alhassan@example.com",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalization": "none",
+        "raw": "Seattle, WA • +1 (206) 555-0184 • tariq.alhassan@example.com • linkedin.com/in/tariq-ai-dummy"
+      }
+    ],
+    "phones": [
+      {
+        "value": "+1 (206) 555-0184",
+        "confidence": 0.95,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalized": "+12065550184",
+        "valid": true
+      }
+    ],
+    "locations": [
+      {
+        "value": "Seattle, WA",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00002"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "value": "linkedin.com/in/tariq-ai-dummy",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "kind": "linkedin"
+      }
+    ]
+  },
+  "summary": [
+    {
+      "text": "Technology Executive with 12+ years scaling deep learning systems, ML infrastructure, and distributed GPU compute platforms. Led engineering teams of 70+ engineers and research scientists while delivering generative AI models serving 25M+ active users.",
+      "source_line_ids": [
+        "l00003",
+        "l00004",
+        "l00005"
+      ],
+      "value": "Technology Executive with 12+ years scaling deep learning systems, ML infrastructure, and distributed GPU compute platforms. Led engineering teams of 70+ engineers and research scientists while delivering generative AI models serving 25M+ active users."
+    }
+  ],
+  "experience": [
+    {
+      "title": {
+        "value": "VP of Machine Learning Platform",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00007"
+        ]
+      },
+      "company": {
+        "value": "Cerebro Analytics",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00007"
+        ]
+      },
+      "location": {
+        "value": "Seattle, WA",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00008"
+        ]
+      },
+      "dates": {
+        "value": {
+          "start": "2022",
+          "end": "Present"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00008"
+        ]
+      },
+      "bullets": [
+        "• Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD clusters.",
+        "• Directed engineering of high-throughput LLM serving stack, cutting model latency by 55%.",
+        "• Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research."
+      ],
+      "text": "VP of Machine Learning Platform — Cerebro Analytics\n2022 – Present | Seattle, WA\n• Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD clusters.\n• Directed engineering of high-throughput LLM serving stack, cutting model latency by 55%.\n• Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research.",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00007",
+        "l00008",
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00013"
+      ]
+    },
+    {
+      "title": {
+        "value": "Director of Applied AI",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00014"
+        ]
+      },
+      "company": {
+        "value": "Horizon Autonomous Systems",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00014"
+        ]
+      },
+      "location": {
+        "value": "San Francisco, CA",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00015"
+        ]
+      },
+      "dates": {
+        "value": {
+          "start": "2018",
+          "end": "2022"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00015"
+        ]
+      },
+      "bullets": [
+        "• Built real-time computer vision inference stack operating at 60 FPS on edge hardware.",
+        "• Filed 6 patents in neural network quantization and sparse attention mechanisms."
+      ],
+      "text": "Director of Applied AI — Horizon Autonomous Systems\n2018 – 2022 | San Francisco, CA\n• Built real-time computer vision inference stack operating at 60 FPS on edge hardware.\n• Filed 6 patents in neural network quantization and sparse attention mechanisms.",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00014",
+        "l00015",
+        "l00016",
+        "l00017"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "text": "Ph.D. in Computer Science (Machine Learning)\nUniversity of Washington (2018)",
+      "source_line_ids": [
+        "l00029",
+        "l00030"
+      ],
+      "degree": {
+        "value": "Ph.D. in Computer Science (Machine Learning)",
+        "source_line_ids": [
+          "l00029"
+        ],
+        "confidence": 0.85
+      },
+      "institution": {
+        "value": "University of Washington",
+        "source_line_ids": [
+          "l00030"
+        ],
+        "confidence": 0.85
+      },
+      "dates": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "graduation": {
+        "value": "2018",
+        "source_line_ids": [
+          "l00030"
+        ],
+        "confidence": 0.85
+      },
+      "location": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "gpa": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      }
+    },
+    {
+      "text": "B.S. in Electrical Engineering\nGeorgia Institute of Technology (2013)",
+      "source_line_ids": [
+        "l00031",
+        "l00032"
+      ],
+      "degree": {
+        "value": "B.S. in Electrical Engineering",
+        "source_line_ids": [
+          "l00031"
+        ],
+        "confidence": 0.85
+      },
+      "institution": {
+        "value": "Georgia Institute of Technology",
+        "source_line_ids": [
+          "l00032"
+        ],
+        "confidence": 0.85
+      },
+      "dates": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "graduation": {
+        "value": "2013",
+        "source_line_ids": [
+          "l00032"
+        ],
+        "confidence": 0.85
+      },
+      "location": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "gpa": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      }
+    }
+  ],
+  "projects": [],
+  "skills": [
+    {
+      "text": "• PyTorch, Triton Inference Server, Ray",
+      "source_line_ids": [
+        "l00024"
+      ],
+      "category": null,
+      "items": [
+        "PyTorch",
+        "Triton Inference Server",
+        "Ray"
+      ]
+    },
+    {
+      "text": "• CUDA Optimization, TensorRT, vLLM",
+      "source_line_ids": [
+        "l00025"
+      ],
+      "category": null,
+      "items": [
+        "CUDA Optimization",
+        "TensorRT",
+        "vLLM"
+      ]
+    },
+    {
+      "text": "• Large-Scale Foundation Model Training",
+      "source_line_ids": [
+        "l00026"
+      ],
+      "category": null,
+      "items": [
+        "Large-Scale Foundation Model Training"
+      ]
+    },
+    {
+      "text": "• AI Safety, Red Teaming, Governance",
+      "source_line_ids": [
+        "l00027"
+      ],
+      "category": null,
+      "items": [
+        "AI Safety",
+        "Red Teaming",
+        "Governance"
+      ]
+    }
+  ],
+  "certifications": [],
+  "other_sections": [
+    {
+      "canonical": "metrics",
+      "original_heading": "KEY LEADERSHIP METRICS",
+      "text": "• $22M Annual Compute Budget Managed\n• 72 Engineers & Researchers Led\n• 6 Granted US Patents in ML / Vision\n• 25M+ Generative AI End-Users",
+      "source_line_ids": [
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022"
+      ]
+    }
+  ],
+  "review": [],
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "TARIQ AL-HASSAN\nVP OF ARTIFICIAL INTELLIGENCE & MACHINE LEARNING PLATFORMS\nSeattle, WA • +1 (206) 555-0184 • tariq.alhassan@example.com • linkedin.com/in/tariq-ai-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "summary",
+      "original_heading": "EXECUTIVE SUMMARY:",
+      "heading_line_id": "l00003:h",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00003:b"
+      ],
+      "text": "Technology Executive with 12+ years scaling deep learning systems, ML infrastructure, and distributed GPU compute platforms. Led engineering teams of 70+ engineers and research scientists while delivering generative AI models serving 25M+ active users."
+    },
+    {
+      "id": "s002",
+      "canonical": "experience",
+      "original_heading": "EXECUTIVE LEADERSHIP & IMPACT",
+      "heading_line_id": "l00006",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00007",
+        "l00008",
+        "l00009",
+        "l00011",
+        "l00013",
+        "l00014",
+        "l00015",
+        "l00016",
+        "l00017"
+      ],
+      "text": "VP of Machine Learning Platform — Cerebro Analytics\n2022 – Present | Seattle, WA\n• Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD clusters.\n• Directed engineering of high-throughput LLM serving stack, cutting model latency by 55%.\n• Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research.\nDirector of Applied AI — Horizon Autonomous Systems\n2018 – 2022 | San Francisco, CA\n• Built real-time computer vision inference stack operating at 60 FPS on edge hardware.\n• Filed 6 patents in neural network quantization and sparse attention mechanisms."
+    },
+    {
+      "id": "s003",
+      "canonical": "metrics",
+      "original_heading": "KEY LEADERSHIP METRICS",
+      "heading_line_id": "l00018",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022"
+      ],
+      "text": "• $22M Annual Compute Budget Managed\n• 72 Engineers & Researchers Led\n• 6 Granted US Patents in ML / Vision\n• 25M+ Generative AI End-Users"
+    },
+    {
+      "id": "s004",
+      "canonical": "skills",
+      "original_heading": "TECHNICAL GOVERNANCE",
+      "heading_line_id": "l00023",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00024",
+        "l00025",
+        "l00026",
+        "l00027"
+      ],
+      "text": "• PyTorch, Triton Inference Server, Ray\n• CUDA Optimization, TensorRT, vLLM\n• Large-Scale Foundation Model Training\n• AI Safety, Red Teaming, Governance"
+    },
+    {
+      "id": "s005",
+      "canonical": "education",
+      "original_heading": "EDUCATION",
+      "heading_line_id": "l00028",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00029",
+        "l00030",
+        "l00031",
+        "l00032"
+      ],
+      "text": "Ph.D. in Computer Science (Machine Learning)\nUniversity of Washington (2018)\nB.S. in Electrical Engineering\nGeorgia Institute of Technology (2013)"
+    }
+  ]
+}

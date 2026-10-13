@@ -1,0 +1,870 @@
+{
+  "mapping_schema_version": "1.0.0",
+  "record_id": "66e78d7f87cf5f338f8621a64de5d9063ebb47ef1630ad7b2f9d3394527621dd",
+  "document_id": "2a72ffbeecb5dde4df82c996261ea24f562c5b526b83d19f4faa8189b40c0204",
+  "candidate_id": null,
+  "extraction_id": "45c67a06aaa27788b61c63b49b2126f9d583446d442377d708a2b85866ad008d",
+  "mapper_sha256": "99064aec1206cbb49df51cf0e73a239fd615aee01b0aa7e99c2aa2d2a3479451",
+  "source": {
+    "filename": "07_DOCX_Modern_Tech_Software_Engineer.docx",
+    "sha256": "2a72ffbeecb5dde4df82c996261ea24f562c5b526b83d19f4faa8189b40c0204",
+    "type": "docx",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": null,
+    "reference_method": "docx_xml_text"
+  },
+  "section_order": [
+    "contact",
+    "summary",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "certifications",
+    "publications",
+    "awards",
+    "metrics",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "profile": {
+    "contact": {
+      "full_name": "ALEX CHEN",
+      "headline": "Senior Full Stack Software Engineer | Distributed Systems & Cloud Architecture",
+      "emails": [
+        "alex.chen.dev@example.com"
+      ],
+      "phones": [
+        {
+          "raw": "(555) 019-2834",
+          "normalized": "+15550192834",
+          "valid": false
+        }
+      ],
+      "locations": [
+        "San Francisco, CA"
+      ],
+      "links": [
+        "github.com/alexchen-dev",
+        "linkedin.com/in/alexchen-dummy"
+      ]
+    },
+    "summary": [
+      "High-performing Full Stack Engineer with 7+ years of experience engineering high-throughput distributed microservices, fault-tolerant cloud infrastructure, and modern responsive front-ends. Proven record of scaling systems to 15M+ active users, optimizing API latency by 42%, and spearheading zero-downtime database migrations. Passionate about developer tooling, Clean Architecture, and CI/CD automation."
+    ],
+    "experience": [
+      {
+        "source_text": "Lead Backend Software Engineer  |  Nexus Cloud Technologies\nMar 2023 – Present  •  San Francisco, CA\nArchitected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.\nDecomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.\nReduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.\nMentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices.",
+        "source_line_ids": [
+          "l00011",
+          "l00012",
+          "l00013",
+          "l00014",
+          "l00015",
+          "l00016"
+        ],
+        "ordinal": 0,
+        "title": "Lead Backend Software Engineer",
+        "company": "Nexus Cloud Technologies",
+        "location": "San Francisco, CA",
+        "dates": {
+          "start": {
+            "raw": "Mar 2023",
+            "normalized": "2023-03",
+            "precision": "month"
+          },
+          "end": {
+            "raw": "Present",
+            "normalized": null,
+            "precision": "open"
+          },
+          "ongoing_as_reported": true
+        },
+        "bullets": [
+          "Architected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.",
+          "Decomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.",
+          "Reduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.",
+          "Mentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices."
+        ],
+        "links": [],
+        "work_mode": null
+      },
+      {
+        "source_text": "Full Stack Software Engineer  |  Vanguard Digital Labs\nAug 2020 – Feb 2023  •  Austin, TX (Remote)\nBuilt customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.\nAuthored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.\nCreated reusable UI component library used across 5 internal products, reducing developer delivery time by 30%.",
+        "source_line_ids": [
+          "l00017",
+          "l00018",
+          "l00019",
+          "l00020",
+          "l00021"
+        ],
+        "ordinal": 1,
+        "title": "Full Stack Software Engineer",
+        "company": "Vanguard Digital Labs",
+        "location": "Austin, TX",
+        "dates": {
+          "start": {
+            "raw": "Aug 2020",
+            "normalized": "2020-08",
+            "precision": "month"
+          },
+          "end": {
+            "raw": "Feb 2023",
+            "normalized": "2023-02",
+            "precision": "month"
+          },
+          "ongoing_as_reported": false
+        },
+        "bullets": [
+          "Built customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.",
+          "Authored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.",
+          "Created reusable UI component library used across 5 internal products, reducing developer delivery time by 30%."
+        ],
+        "links": [],
+        "work_mode": "Remote"
+      },
+      {
+        "source_text": "Junior Software Engineer  |  Apex Software Solutions\nJun 2018 – Jul 2020  •  Austin, TX\nDeveloped responsive single-page web applications with React and Redux.\nWrote unit and integration tests achieving 88% overall code test coverage.",
+        "source_line_ids": [
+          "l00022",
+          "l00023",
+          "l00024",
+          "l00025"
+        ],
+        "ordinal": 2,
+        "title": "Junior Software Engineer",
+        "company": "Apex Software Solutions",
+        "location": "Austin, TX",
+        "dates": {
+          "start": {
+            "raw": "Jun 2018",
+            "normalized": "2018-06",
+            "precision": "month"
+          },
+          "end": {
+            "raw": "Jul 2020",
+            "normalized": "2020-07",
+            "precision": "month"
+          },
+          "ongoing_as_reported": false
+        },
+        "bullets": [
+          "Developed responsive single-page web applications with React and Redux.",
+          "Wrote unit and integration tests achieving 88% overall code test coverage."
+        ],
+        "links": [],
+        "work_mode": null
+      }
+    ],
+    "education": [
+      {
+        "source_text": "B.S. in Computer Science\nUniversity of California, Berkeley (2014 – 2018)",
+        "source_line_ids": [
+          "l00027"
+        ],
+        "ordinal": 0,
+        "degree": "B.S. in Computer Science",
+        "institution": "University of California, Berkeley",
+        "location": null,
+        "dates": {
+          "start": {
+            "raw": "2014",
+            "normalized": "2014",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "2018",
+            "normalized": "2018",
+            "precision": "year"
+          },
+          "ongoing_as_reported": false
+        },
+        "graduation": {
+          "raw": null,
+          "normalized": null,
+          "precision": null
+        },
+        "gpa": null,
+        "dissertation_or_thesis": null
+      }
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "category": "Languages",
+        "items": [
+          "Go",
+          "Python",
+          "TypeScript",
+          "Java",
+          "SQL",
+          "Rust (intermediate)"
+        ],
+        "source_records": [
+          {
+            "text": "• Languages: Go, Python, TypeScript, Java, SQL, Rust (intermediate)",
+            "source_line_ids": [
+              "l00006"
+            ],
+            "category": "Languages",
+            "items": [
+              "Go",
+              "Python",
+              "TypeScript",
+              "Java",
+              "SQL",
+              "Rust (intermediate)"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Backend & Data",
+        "items": [
+          "Node.js",
+          "FastAPI",
+          "Spring Boot",
+          "PostgreSQL",
+          "Redis",
+          "Apache Kafka",
+          "GraphQL"
+        ],
+        "source_records": [
+          {
+            "text": "• Backend & Data: Node.js, FastAPI, Spring Boot, PostgreSQL, Redis, Apache Kafka, GraphQL",
+            "source_line_ids": [
+              "l00007"
+            ],
+            "category": "Backend & Data",
+            "items": [
+              "Node.js",
+              "FastAPI",
+              "Spring Boot",
+              "PostgreSQL",
+              "Redis",
+              "Apache Kafka",
+              "GraphQL"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Cloud & DevOps",
+        "items": [
+          "AWS (ECS, Lambda, EKS, RDS)",
+          "Docker",
+          "Kubernetes",
+          "Terraform",
+          "GitHub Actions",
+          "Prometheus"
+        ],
+        "source_records": [
+          {
+            "text": "• Cloud & DevOps: AWS (ECS, Lambda, EKS, RDS), Docker, Kubernetes, Terraform, GitHub Actions, Prometheus",
+            "source_line_ids": [
+              "l00008"
+            ],
+            "category": "Cloud & DevOps",
+            "items": [
+              "AWS (ECS, Lambda, EKS, RDS)",
+              "Docker",
+              "Kubernetes",
+              "Terraform",
+              "GitHub Actions",
+              "Prometheus"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Frontend & Tools",
+        "items": [
+          "React 18",
+          "Next.js",
+          "Tailwind CSS",
+          "Jest",
+          "Datadog",
+          "Git",
+          "Linux"
+        ],
+        "source_records": [
+          {
+            "text": "• Frontend & Tools: React 18, Next.js, Tailwind CSS, Jest, Datadog, Git, Linux",
+            "source_line_ids": [
+              "l00009"
+            ],
+            "category": "Frontend & Tools",
+            "items": [
+              "React 18",
+              "Next.js",
+              "Tailwind CSS",
+              "Jest",
+              "Datadog",
+              "Git",
+              "Linux"
+            ]
+          }
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "source_text": "AWS Certified Solutions Architect – Associate (2024), Certified Kubernetes Administrator (CKA, 2023)",
+        "source_line_ids": [
+          "l00028"
+        ],
+        "ordinal": 0,
+        "name": "AWS Certified Solutions Architect – Associate (2024)",
+        "issuer": null,
+        "details": "",
+        "license_id": null,
+        "status_as_reported": null,
+        "links": []
+      },
+      {
+        "source_text": "AWS Certified Solutions Architect – Associate (2024), Certified Kubernetes Administrator (CKA, 2023)",
+        "source_line_ids": [
+          "l00028"
+        ],
+        "ordinal": 1,
+        "name": "Certified Kubernetes Administrator (CKA, 2023)",
+        "issuer": null,
+        "details": "",
+        "license_id": null,
+        "status_as_reported": null,
+        "links": []
+      }
+    ],
+    "publications": [],
+    "awards": [],
+    "metrics": [],
+    "other_sections": []
+  },
+  "evidence": {
+    "contact.full_name": {
+      "source_line_ids": [
+        "l00000"
+      ],
+      "confidence": 0.92,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.headline": {
+      "source_line_ids": [
+        "l00001"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.emails[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.phones[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.7,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.locations[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "summary[0]": {
+      "source_line_ids": [
+        "l00004"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0]": {
+      "source_line_ids": [
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015",
+        "l00016"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].title": {
+      "source_line_ids": [
+        "l00011"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].company": {
+      "source_line_ids": [
+        "l00012"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].location": {
+      "source_line_ids": [
+        "l00012"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].dates": {
+      "source_line_ids": [
+        "l00012"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[0]": {
+      "source_line_ids": [
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015",
+        "l00016"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[1]": {
+      "source_line_ids": [
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015",
+        "l00016"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[2]": {
+      "source_line_ids": [
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015",
+        "l00016"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[3]": {
+      "source_line_ids": [
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015",
+        "l00016"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1]": {
+      "source_line_ids": [
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].title": {
+      "source_line_ids": [
+        "l00017"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].company": {
+      "source_line_ids": [
+        "l00018"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].location": {
+      "source_line_ids": [
+        "l00018"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].dates": {
+      "source_line_ids": [
+        "l00018"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].bullets[0]": {
+      "source_line_ids": [
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].bullets[1]": {
+      "source_line_ids": [
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].bullets[2]": {
+      "source_line_ids": [
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].work_mode": {
+      "source_line_ids": [
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[2]": {
+      "source_line_ids": [
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[2].title": {
+      "source_line_ids": [
+        "l00022"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[2].company": {
+      "source_line_ids": [
+        "l00023"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[2].location": {
+      "source_line_ids": [
+        "l00023"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[2].dates": {
+      "source_line_ids": [
+        "l00023"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[2].bullets[0]": {
+      "source_line_ids": [
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[2].bullets[1]": {
+      "source_line_ids": [
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0]": {
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].degree": {
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].institution": {
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].location": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].dates": {
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": 0.95,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].graduation": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].gpa": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0]": {
+      "source_line_ids": [
+        "l00006"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1]": {
+      "source_line_ids": [
+        "l00007"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[2]": {
+      "source_line_ids": [
+        "l00008"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[3]": {
+      "source_line_ids": [
+        "l00009"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0]": {
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].name": {
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].issuer": {
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].details": {
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[1]": {
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[1].name": {
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[1].issuer": {
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[1].details": {
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.links[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.links[1]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    }
+  },
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "ALEX CHEN\nSenior Full Stack Software Engineer | Distributed Systems & Cloud Architecture\nSan Francisco, CA  •  (555) 019-2834  •  alex.chen.dev@example.com  •  github.com/alexchen-dev  •  linkedin.com/in/alexchen-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "summary",
+      "original_heading": "PROFESSIONAL SUMMARY",
+      "heading_line_id": "l00003",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00004"
+      ],
+      "text": "High-performing Full Stack Engineer with 7+ years of experience engineering high-throughput distributed microservices, fault-tolerant cloud infrastructure, and modern responsive front-ends. Proven record of scaling systems to 15M+ active users, optimizing API latency by 42%, and spearheading zero-downtime database migrations. Passionate about developer tooling, Clean Architecture, and CI/CD automation."
+    },
+    {
+      "id": "s002",
+      "canonical": "skills",
+      "original_heading": "TECHNICAL SKILLS",
+      "heading_line_id": "l00005",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00006",
+        "l00007",
+        "l00008",
+        "l00009"
+      ],
+      "text": "• Languages: Go, Python, TypeScript, Java, SQL, Rust (intermediate)\n• Backend & Data: Node.js, FastAPI, Spring Boot, PostgreSQL, Redis, Apache Kafka, GraphQL\n• Cloud & DevOps: AWS (ECS, Lambda, EKS, RDS), Docker, Kubernetes, Terraform, GitHub Actions, Prometheus\n• Frontend & Tools: React 18, Next.js, Tailwind CSS, Jest, Datadog, Git, Linux"
+    },
+    {
+      "id": "s003",
+      "canonical": "experience",
+      "original_heading": "PROFESSIONAL EXPERIENCE",
+      "heading_line_id": "l00010",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015",
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025"
+      ],
+      "text": "Lead Backend Software Engineer  |  Nexus Cloud Technologies\nMar 2023 – Present  •  San Francisco, CA\nArchitected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.\nDecomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.\nReduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.\nMentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices.\nFull Stack Software Engineer  |  Vanguard Digital Labs\nAug 2020 – Feb 2023  •  Austin, TX (Remote)\nBuilt customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.\nAuthored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.\nCreated reusable UI component library used across 5 internal products, reducing developer delivery time by 30%.\nJunior Software Engineer  |  Apex Software Solutions\nJun 2018 – Jul 2020  •  Austin, TX\nDeveloped responsive single-page web applications with React and Redux.\nWrote unit and integration tests achieving 88% overall code test coverage."
+    },
+    {
+      "id": "s004",
+      "canonical": "education",
+      "original_heading": "EDUCATION & CERTIFICATIONS",
+      "heading_line_id": "l00026",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00027"
+      ],
+      "text": "B.S. in Computer Science  •  University of California, Berkeley (2014 – 2018)"
+    },
+    {
+      "id": "s005",
+      "canonical": "certifications",
+      "original_heading": "Certifications:",
+      "heading_line_id": "l00028:h",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00028:b"
+      ],
+      "text": "AWS Certified Solutions Architect – Associate (2024), Certified Kubernetes Administrator (CKA, 2023)"
+    }
+  ],
+  "quality": {
+    "completeness": {
+      "status": "pass",
+      "reference_words": 357,
+      "extracted_words": 357,
+      "matched_words": 357,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "schema_errors": [],
+    "warnings": [],
+    "suppressed_exact_repeats": []
+  },
+  "review_status": "needs_review",
+  "review": [
+    {
+      "path": "fields.phones[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.7
+    }
+  ],
+  "mapping_changes": []
+}

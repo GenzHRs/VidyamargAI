@@ -1,0 +1,10 @@
+{
+  "id": "U15",
+  "file": "comprehensive_resume_test_suite/08_DOCX_Executive_Corporate_Director.docx",
+  "sha256": "2b267dd0393ba6c14bc7123228cb38ef079f0237d0dd9b3db584c334b58b6146",
+  "previous_reference": "R17",
+  "artifact": "artifacts/U15/resume.json",
+  "selected_from": "upload/resume(6).json",
+  "selected_sha256": "405a777767c276b0304a0977fe047f783a6e55912ff9033a742ee3ca499fe31a",
+  "reason": "Full raw lines, layout and hyperlink metadata; uploaded artifact preferred when available. Structured output is baseline comparison only."
+}

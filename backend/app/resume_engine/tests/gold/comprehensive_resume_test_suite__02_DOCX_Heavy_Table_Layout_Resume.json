@@ -1,0 +1,80 @@
+{
+  "file": "comprehensive_resume_test_suite/02_DOCX_Heavy_Table_Layout_Resume.docx",
+  "sha256": "1f10e01c7b313902ed4bddfbf1998100e42d16962f820ca11293372f686e9911",
+  "persona": "devon",
+  "annotation_origin": "source-reviewed development labels authored for this task; not user gold or held out",
+  "headings": [
+    {
+      "text": "CORE COMPETENCIES & FINANCIAL SYSTEMS",
+      "canonical": "skills"
+    },
+    {
+      "text": "CAREER HISTORY",
+      "canonical": "experience"
+    },
+    {
+      "text": "EDUCATION & CERTIFICATIONS",
+      "canonical": "education"
+    }
+  ],
+  "fields": {
+    "name": "DEVON M. HASTINGS",
+    "emails": [
+      "devon.hastings@example.com"
+    ],
+    "phones": [
+      "(555) 839-2041"
+    ],
+    "locations": [
+      "Chicago, IL"
+    ],
+    "urls": [
+      "linkedin.com/in/devon-hastings-dummy"
+    ],
+    "date_ranges": [
+      {
+        "start": "2021",
+        "end": "Present"
+      },
+      {
+        "start": "2018",
+        "end": "2021"
+      }
+    ],
+    "degrees": [
+      "B.S. in Finance & Accounting"
+    ],
+    "gpas": [],
+    "skills": [
+      "Financial Modeling",
+      "SAP S/4HANA",
+      "Oracle NetSuite",
+      "GAAP",
+      "IFRS",
+      "Budgeting",
+      "Forecasting",
+      "Tableau",
+      "Power BI",
+      "SQL",
+      "Excel",
+      "VBA",
+      "Power Query"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Senior FP&A Controller",
+      "company": "Sterling Horizon Capital",
+      "start": "2021",
+      "end": "Present",
+      "bullet_count": 3
+    },
+    {
+      "title": "Financial Analyst",
+      "company": "Pinnacle Advisory Partners",
+      "start": "2018",
+      "end": "2021",
+      "bullet_count": 2
+    }
+  ]
+}

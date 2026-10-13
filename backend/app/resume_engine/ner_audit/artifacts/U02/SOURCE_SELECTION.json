@@ -1,0 +1,10 @@
+{
+  "id": "U02",
+  "file": "CV_Jayavarapu-siva-Tejachary.pdf",
+  "sha256": "89b836400f8f5192c5b902c03b8ded9982d844b6f2ad1078b9fa9ff5f8cd4c87",
+  "previous_reference": null,
+  "artifact": "artifacts/U02/resume.json",
+  "selected_from": "upload/resume(1).json",
+  "selected_sha256": "ed342eb38bb65117b9ccd55535318f034798c11b9f104d04f2c839c432a86434",
+  "reason": "Full raw lines, layout and hyperlink metadata; uploaded artifact preferred when available. Structured output is baseline comparison only."
+}

@@ -1,0 +1,484 @@
+{
+  "mapping_schema_version": "1.0.0",
+  "record_id": "10ea6f529e0ab276f52ff5c30b3f15d249ec41acbc2d12b173620fc953820004",
+  "document_id": "5830bdf1799ece64b8e44ef8b773300cf1305bbd793a6e973eb669c6491ca40c",
+  "candidate_id": null,
+  "extraction_id": "19cbdc91a69e96e9437c52db56e2b49abab830f75712214a2f6804743d72599b",
+  "mapper_sha256": "99064aec1206cbb49df51cf0e73a239fd615aee01b0aa7e99c2aa2d2a3479451",
+  "source": {
+    "filename": "09_DOCX_Academic_Research_CV.docx",
+    "sha256": "5830bdf1799ece64b8e44ef8b773300cf1305bbd793a6e973eb669c6491ca40c",
+    "type": "docx",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": null,
+    "reference_method": "docx_xml_text"
+  },
+  "section_order": [
+    "contact",
+    "summary",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "certifications",
+    "publications",
+    "awards",
+    "metrics",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "profile": {
+    "contact": {
+      "full_name": "DR. SOPHIA AL-MANSOOR, PH.D.",
+      "headline": "Department of Computational Biology  •  Stanford University",
+      "emails": [
+        "s.almansoor.phd@example.edu"
+      ],
+      "phones": [
+        {
+          "raw": "+1 (650) 555-0143",
+          "normalized": "+16505550143",
+          "valid": true
+        }
+      ],
+      "locations": [
+        "Stanford, CA 94305"
+      ],
+      "links": [
+        "scholar.example.com/salmansoor"
+      ]
+    },
+    "summary": [],
+    "experience": [
+      {
+        "source_text": "Postdoctoral Research Fellow  —  Department of Bioengineering, Stanford University (2023 – Present)\n• Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support.",
+        "source_line_ids": [
+          "l00010",
+          "l00011"
+        ],
+        "ordinal": 0,
+        "title": "Postdoctoral Research Fellow",
+        "company": "Department of Bioengineering, Stanford University",
+        "location": null,
+        "dates": {
+          "start": {
+            "raw": "2023",
+            "normalized": "2023",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "Present",
+            "normalized": null,
+            "precision": "open"
+          },
+          "ongoing_as_reported": true
+        },
+        "bullets": [
+          "Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support."
+        ],
+        "links": [],
+        "work_mode": null
+      }
+    ],
+    "education": [
+      {
+        "source_text": "Ph.D. in Computational Biology & Bioinformatics\nStanford University, Stanford, CA  (2018 – 2023)\nDissertation: Deep Learning Approaches to High-Dimensional Single-Cell Transcriptomics",
+        "source_line_ids": [
+          "l00004",
+          "l00005",
+          "l00006"
+        ],
+        "ordinal": 0,
+        "degree": "Ph.D. in Computational Biology & Bioinformatics",
+        "institution": "Stanford University",
+        "location": "Stanford, CA",
+        "dates": {
+          "start": {
+            "raw": "2018",
+            "normalized": "2018",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "2023",
+            "normalized": "2023",
+            "precision": "year"
+          },
+          "ongoing_as_reported": false
+        },
+        "graduation": {
+          "raw": null,
+          "normalized": null,
+          "precision": null
+        },
+        "gpa": null,
+        "dissertation_or_thesis": "Deep Learning Approaches to High-Dimensional Single-Cell Transcriptomics"
+      },
+      {
+        "source_text": "B.S. in Molecular Biology & Computer Science (Summa Cum Laude)\nMIT – Massachusetts Institute of Technology, Cambridge, MA  (2014 – 2018)",
+        "source_line_ids": [
+          "l00007",
+          "l00008"
+        ],
+        "ordinal": 1,
+        "degree": "B.S. in Molecular Biology & Computer Science (Summa Cum Laude)",
+        "institution": "MIT – Massachusetts Institute of Technology",
+        "location": "Cambridge, MA",
+        "dates": {
+          "start": {
+            "raw": "2014",
+            "normalized": "2014",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "2018",
+            "normalized": "2018",
+            "precision": "year"
+          },
+          "ongoing_as_reported": false
+        },
+        "graduation": {
+          "raw": null,
+          "normalized": null,
+          "precision": null
+        },
+        "gpa": null,
+        "dissertation_or_thesis": null
+      }
+    ],
+    "projects": [],
+    "skills": [],
+    "certifications": [],
+    "publications": [
+      {
+        "canonical": "publications",
+        "original_heading": "SELECTED PEER-REVIEWED PUBLICATIONS",
+        "text": "Al-Mansoor, S., Zhang, K., & Miller, D. R. (2025). Latent Diffusion Architectures for Scalable Single-Cell RNA Sequence Reconstruction. Nature Machine Intelligence, 7(3), 215-228.\nAl-Mansoor, S. & Vance, P. K. (2023). Benchmark Evaluations of Graph Neural Networks across Spatial Transcriptomic Datasets. Journal of Computational Biology, 30(8), 842-859.\nRoberts, C. M., Al-Mansoor, S., & Thorne, J. (2021). Unsupervised Embedding of Multi-Omics Cancer Biomarkers. Bioinformatics, 37(14), 1980-1988.",
+        "source_line_ids": [
+          "l00013",
+          "l00014",
+          "l00015"
+        ],
+        "ordinal": 0,
+        "links": []
+      }
+    ],
+    "awards": [
+      {
+        "canonical": "awards",
+        "original_heading": "HONORS, GRANTS & FELLOWSHIPS",
+        "text": "• NIH Postdoctoral National Research Service Award (F32) — $155,000 (2024 – 2026)\n• Stanford Bio-X Graduate Student Fellowship (2020 – 2023)\n• MIT Outstanding Undergraduate Research Opportunity Program (UROP) Award (2018)",
+        "source_line_ids": [
+          "l00017",
+          "l00018",
+          "l00019"
+        ],
+        "ordinal": 0,
+        "links": []
+      }
+    ],
+    "metrics": [],
+    "other_sections": []
+  },
+  "evidence": {
+    "contact.full_name": {
+      "source_line_ids": [
+        "l00000"
+      ],
+      "confidence": 0.92,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.headline": {
+      "source_line_ids": [
+        "l00001"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.emails[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.phones[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.95,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.locations[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0]": {
+      "source_line_ids": [
+        "l00010",
+        "l00011"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].title": {
+      "source_line_ids": [
+        "l00010"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].company": {
+      "source_line_ids": [
+        "l00010"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].location": {
+      "source_line_ids": [
+        "l00010"
+      ],
+      "confidence": 0.65,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].dates": {
+      "source_line_ids": [
+        "l00010"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[0]": {
+      "source_line_ids": [
+        "l00010",
+        "l00011"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0]": {
+      "source_line_ids": [
+        "l00004",
+        "l00005",
+        "l00006"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].degree": {
+      "source_line_ids": [
+        "l00004"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].institution": {
+      "source_line_ids": [
+        "l00005"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].location": {
+      "source_line_ids": [
+        "l00005"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].dates": {
+      "source_line_ids": [
+        "l00005"
+      ],
+      "confidence": 0.95,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].graduation": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].gpa": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].dissertation_or_thesis": {
+      "source_line_ids": [
+        "l00004",
+        "l00005",
+        "l00006"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1]": {
+      "source_line_ids": [
+        "l00007",
+        "l00008"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].degree": {
+      "source_line_ids": [
+        "l00007"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].institution": {
+      "source_line_ids": [
+        "l00008"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].location": {
+      "source_line_ids": [
+        "l00008"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].dates": {
+      "source_line_ids": [
+        "l00008"
+      ],
+      "confidence": 0.95,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].graduation": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].gpa": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "publications[0]": {
+      "source_line_ids": [
+        "l00013",
+        "l00014",
+        "l00015"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "awards[0]": {
+      "source_line_ids": [
+        "l00017",
+        "l00018",
+        "l00019"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.links[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    }
+  },
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "DR. SOPHIA AL-MANSOOR, PH.D.\nDepartment of Computational Biology  •  Stanford University\nStanford, CA 94305  •  +1 (650) 555-0143  •  s.almansoor.phd@example.edu  •  scholar.example.com/salmansoor"
+    },
+    {
+      "id": "s001",
+      "canonical": "education",
+      "original_heading": "EDUCATION",
+      "heading_line_id": "l00003",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00004",
+        "l00005",
+        "l00006",
+        "l00007",
+        "l00008"
+      ],
+      "text": "Ph.D. in Computational Biology & Bioinformatics\nStanford University, Stanford, CA  (2018 – 2023)\nDissertation: Deep Learning Approaches to High-Dimensional Single-Cell Transcriptomics\nB.S. in Molecular Biology & Computer Science (Summa Cum Laude)\nMIT – Massachusetts Institute of Technology, Cambridge, MA  (2014 – 2018)"
+    },
+    {
+      "id": "s002",
+      "canonical": "experience",
+      "original_heading": "ACADEMIC & RESEARCH APPOINTMENTS",
+      "heading_line_id": "l00009",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00010",
+        "l00011"
+      ],
+      "text": "Postdoctoral Research Fellow  —  Department of Bioengineering, Stanford University (2023 – Present)\n• Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support."
+    },
+    {
+      "id": "s003",
+      "canonical": "publications",
+      "original_heading": "SELECTED PEER-REVIEWED PUBLICATIONS",
+      "heading_line_id": "l00012",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00013",
+        "l00014",
+        "l00015"
+      ],
+      "text": "Al-Mansoor, S., Zhang, K., & Miller, D. R. (2025). Latent Diffusion Architectures for Scalable Single-Cell RNA Sequence Reconstruction. Nature Machine Intelligence, 7(3), 215-228.\nAl-Mansoor, S. & Vance, P. K. (2023). Benchmark Evaluations of Graph Neural Networks across Spatial Transcriptomic Datasets. Journal of Computational Biology, 30(8), 842-859.\nRoberts, C. M., Al-Mansoor, S., & Thorne, J. (2021). Unsupervised Embedding of Multi-Omics Cancer Biomarkers. Bioinformatics, 37(14), 1980-1988."
+    },
+    {
+      "id": "s004",
+      "canonical": "awards",
+      "original_heading": "HONORS, GRANTS & FELLOWSHIPS",
+      "heading_line_id": "l00016",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00017",
+        "l00018",
+        "l00019"
+      ],
+      "text": "• NIH Postdoctoral National Research Service Award (F32) — $155,000 (2024 – 2026)\n• Stanford Bio-X Graduate Student Fellowship (2020 – 2023)\n• MIT Outstanding Undergraduate Research Opportunity Program (UROP) Award (2018)"
+    }
+  ],
+  "quality": {
+    "completeness": {
+      "status": "pass",
+      "reference_words": 204,
+      "extracted_words": 204,
+      "matched_words": 204,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "schema_errors": [],
+    "warnings": [],
+    "suppressed_exact_repeats": []
+  },
+  "review_status": "needs_review",
+  "review": [
+    {
+      "path": "fields.experience[0].location",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.65
+    }
+  ],
+  "mapping_changes": []
+}

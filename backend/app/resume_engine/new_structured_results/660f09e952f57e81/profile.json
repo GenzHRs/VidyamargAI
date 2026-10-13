@@ -1,0 +1,603 @@
+{
+  "mapping_schema_version": "1.0.0",
+  "record_id": "c2e320cf2673c44c98364a4d5337b1e6ee171ccfc26438be5dd6523064b34e92",
+  "document_id": "660f09e952f57e81c68954cb8f7097c29b6021b3a3152fa90114933b9ffc62d9",
+  "candidate_id": null,
+  "extraction_id": "e1f5987f7c9f676d099bba17e90a6c5a5c311f216657003d08c738e950abf57d",
+  "mapper_sha256": "99064aec1206cbb49df51cf0e73a239fd615aee01b0aa7e99c2aa2d2a3479451",
+  "source": {
+    "filename": "10_DOCX_Entry_Level_Business_Analyst.docx",
+    "sha256": "660f09e952f57e81c68954cb8f7097c29b6021b3a3152fa90114933b9ffc62d9",
+    "type": "docx",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": null,
+    "reference_method": "docx_xml_text"
+  },
+  "section_order": [
+    "contact",
+    "summary",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "certifications",
+    "publications",
+    "awards",
+    "metrics",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "profile": {
+    "contact": {
+      "full_name": "JORDAN TAYLOR",
+      "headline": "Junior Business Analyst  |  Data Visualization & Process Modeling",
+      "emails": [
+        "jordan.taylor.analyst@example.com"
+      ],
+      "phones": [
+        {
+          "raw": "(555) 762-9013",
+          "normalized": "+15557629013",
+          "valid": false
+        }
+      ],
+      "locations": [
+        "Seattle, WA"
+      ],
+      "links": [
+        "linkedin.com/in/jordan-taylor-dummy"
+      ]
+    },
+    "summary": [],
+    "experience": [
+      {
+        "source_text": "Business Analyst Intern  |  Cascade Financial Services\nJun 2024 – Sep 2024  •  Seattle, WA\nConducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.\nDesigned and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.\nFacilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal.",
+        "source_line_ids": [
+          "l00011",
+          "l00012",
+          "l00013",
+          "l00014",
+          "l00015"
+        ],
+        "ordinal": 0,
+        "title": "Business Analyst Intern",
+        "company": "Cascade Financial Services",
+        "location": "Seattle, WA",
+        "dates": {
+          "start": {
+            "raw": "Jun 2024",
+            "normalized": "2024-06",
+            "precision": "month"
+          },
+          "end": {
+            "raw": "Sep 2024",
+            "normalized": "2024-09",
+            "precision": "month"
+          },
+          "ongoing_as_reported": false
+        },
+        "bullets": [
+          "Conducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.",
+          "Designed and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.",
+          "Facilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal."
+        ],
+        "links": [],
+        "work_mode": null
+      },
+      {
+        "source_text": "Operations Data Intern  |  Evergreen Supply Partners\nJan 2024 – May 2024  •  Bellevue, WA\nCleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.\nSynthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director.",
+        "source_line_ids": [
+          "l00016",
+          "l00017",
+          "l00018",
+          "l00019"
+        ],
+        "ordinal": 1,
+        "title": "Operations Data Intern",
+        "company": "Evergreen Supply Partners",
+        "location": "Bellevue, WA",
+        "dates": {
+          "start": {
+            "raw": "Jan 2024",
+            "normalized": "2024-01",
+            "precision": "month"
+          },
+          "end": {
+            "raw": "May 2024",
+            "normalized": "2024-05",
+            "precision": "month"
+          },
+          "ongoing_as_reported": false
+        },
+        "bullets": [
+          "Cleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.",
+          "Synthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director."
+        ],
+        "links": [],
+        "work_mode": null
+      }
+    ],
+    "education": [
+      {
+        "source_text": "University of Washington, Foster School of Business  —  Seattle, WA\nBachelor of Arts in Information Systems & Operations Management | GPA: 3.82 / 4.0\nGraduation: June 2025\nDean's List (6 Consecutive Quarters)\nAlpha Kappa Psi Business Fraternity",
+        "source_line_ids": [
+          "l00004",
+          "l00005",
+          "l00006"
+        ],
+        "ordinal": 0,
+        "degree": "Bachelor of Arts in Information Systems & Operations Management",
+        "institution": "University of Washington, Foster School of Business",
+        "location": "Seattle, WA",
+        "dates": {
+          "start": {
+            "raw": null,
+            "normalized": null,
+            "precision": null
+          },
+          "end": {
+            "raw": null,
+            "normalized": null,
+            "precision": null
+          },
+          "ongoing_as_reported": false
+        },
+        "graduation": {
+          "raw": "June 2025",
+          "normalized": "2025-06",
+          "precision": "month"
+        },
+        "gpa": {
+          "score": "3.82",
+          "scale": "4.0"
+        },
+        "dissertation_or_thesis": null
+      }
+    ],
+    "projects": [
+      {
+        "source_text": "Supply Chain Simulation Project (Senior Capstone):\nModeled distribution logistics for regional retail network in Python; predicted stockouts with 89% accuracy and won 2nd Place in Foster Business Case Showcase.",
+        "source_line_ids": [
+          "l00021",
+          "l00022"
+        ],
+        "ordinal": 0,
+        "name": "Supply Chain Simulation Project (Senior Capstone):",
+        "dates": {
+          "start": {
+            "raw": null,
+            "normalized": null,
+            "precision": null
+          },
+          "end": {
+            "raw": null,
+            "normalized": null,
+            "precision": null
+          },
+          "ongoing_as_reported": false
+        },
+        "bullets": [],
+        "links": [],
+        "description": "Modeled distribution logistics for regional retail network in Python; predicted stockouts with 89% accuracy and won 2nd Place in Foster Business Case Showcase.",
+        "technologies": []
+      }
+    ],
+    "skills": [
+      {
+        "category": "Analysis & Tools",
+        "items": [
+          "Tableau",
+          "Power BI",
+          "Advanced Excel (VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query)",
+          "SQL (PostgreSQL)",
+          "Python (Pandas)"
+        ],
+        "source_records": [
+          {
+            "text": "• Analysis & Tools: Tableau, Power BI, Advanced Excel (VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query), SQL (PostgreSQL), Python (Pandas)",
+            "source_line_ids": [
+              "l00008"
+            ],
+            "category": "Analysis & Tools",
+            "items": [
+              "Tableau",
+              "Power BI",
+              "Advanced Excel (VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query)",
+              "SQL (PostgreSQL)",
+              "Python (Pandas)"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Business Process",
+        "items": [
+          "Agile/Scrum",
+          "User Stories",
+          "BPMN Diagramming",
+          "JIRA",
+          "Confluence",
+          "Requirement Gathering",
+          "Root Cause Analysis"
+        ],
+        "source_records": [
+          {
+            "text": "• Business Process: Agile/Scrum, User Stories, BPMN Diagramming, JIRA, Confluence, Requirement Gathering, Root Cause Analysis",
+            "source_line_ids": [
+              "l00009"
+            ],
+            "category": "Business Process",
+            "items": [
+              "Agile/Scrum",
+              "User Stories",
+              "BPMN Diagramming",
+              "JIRA",
+              "Confluence",
+              "Requirement Gathering",
+              "Root Cause Analysis"
+            ]
+          }
+        ]
+      }
+    ],
+    "certifications": [],
+    "publications": [],
+    "awards": [],
+    "metrics": [],
+    "other_sections": []
+  },
+  "evidence": {
+    "contact.full_name": {
+      "source_line_ids": [
+        "l00000"
+      ],
+      "confidence": 0.92,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.headline": {
+      "source_line_ids": [
+        "l00001"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.emails[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.phones[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.7,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.locations[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0]": {
+      "source_line_ids": [
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].title": {
+      "source_line_ids": [
+        "l00011"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].company": {
+      "source_line_ids": [
+        "l00012"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].location": {
+      "source_line_ids": [
+        "l00012"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].dates": {
+      "source_line_ids": [
+        "l00012"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[0]": {
+      "source_line_ids": [
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[1]": {
+      "source_line_ids": [
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[2]": {
+      "source_line_ids": [
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1]": {
+      "source_line_ids": [
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].title": {
+      "source_line_ids": [
+        "l00016"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].company": {
+      "source_line_ids": [
+        "l00017"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].location": {
+      "source_line_ids": [
+        "l00017"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].dates": {
+      "source_line_ids": [
+        "l00017"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].bullets[0]": {
+      "source_line_ids": [
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].bullets[1]": {
+      "source_line_ids": [
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0]": {
+      "source_line_ids": [
+        "l00004",
+        "l00005",
+        "l00006"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].degree": {
+      "source_line_ids": [
+        "l00005"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].institution": {
+      "source_line_ids": [
+        "l00004"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].location": {
+      "source_line_ids": [
+        "l00004"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].dates": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].graduation": {
+      "source_line_ids": [
+        "l00006"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].gpa": {
+      "source_line_ids": [
+        "l00005"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0]": {
+      "source_line_ids": [
+        "l00021",
+        "l00022"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].name": {
+      "source_line_ids": [
+        "l00021"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].dates": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0]": {
+      "source_line_ids": [
+        "l00008"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1]": {
+      "source_line_ids": [
+        "l00009"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.links[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    }
+  },
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "JORDAN TAYLOR\nJunior Business Analyst  |  Data Visualization & Process Modeling\nSeattle, WA  •  (555) 762-9013  •  jordan.taylor.analyst@example.com  •  linkedin.com/in/jordan-taylor-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "education",
+      "original_heading": "EDUCATION",
+      "heading_line_id": "l00003",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00004",
+        "l00005",
+        "l00006"
+      ],
+      "text": "University of Washington, Foster School of Business  —  Seattle, WA\nBachelor of Arts in Information Systems & Operations Management | GPA: 3.82 / 4.0\nGraduation: June 2025  •  Dean's List (6 Consecutive Quarters)  •  Alpha Kappa Psi Business Fraternity"
+    },
+    {
+      "id": "s002",
+      "canonical": "skills",
+      "original_heading": "TECHNICAL & ANALYTICAL SKILLS",
+      "heading_line_id": "l00007",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00008",
+        "l00009"
+      ],
+      "text": "• Analysis & Tools: Tableau, Power BI, Advanced Excel (VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query), SQL (PostgreSQL), Python (Pandas)\n• Business Process: Agile/Scrum, User Stories, BPMN Diagramming, JIRA, Confluence, Requirement Gathering, Root Cause Analysis"
+    },
+    {
+      "id": "s003",
+      "canonical": "experience",
+      "original_heading": "INTERNSHIP EXPERIENCE",
+      "heading_line_id": "l00010",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015",
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019"
+      ],
+      "text": "Business Analyst Intern  |  Cascade Financial Services\nJun 2024 – Sep 2024  •  Seattle, WA\nConducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.\nDesigned and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.\nFacilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal.\nOperations Data Intern  |  Evergreen Supply Partners\nJan 2024 – May 2024  •  Bellevue, WA\nCleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.\nSynthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director."
+    },
+    {
+      "id": "s004",
+      "canonical": "projects",
+      "original_heading": "ACADEMIC PROJECT & LEADERSHIP",
+      "heading_line_id": "l00020",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00021",
+        "l00022"
+      ],
+      "text": "Supply Chain Simulation Project (Senior Capstone):\nModeled distribution logistics for regional retail network in Python; predicted stockouts with 89% accuracy and won 2nd Place in Foster Business Case Showcase."
+    }
+  ],
+  "quality": {
+    "completeness": {
+      "status": "pass",
+      "reference_words": 247,
+      "extracted_words": 247,
+      "matched_words": 247,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "schema_errors": [],
+    "warnings": [],
+    "suppressed_exact_repeats": []
+  },
+  "review_status": "needs_review",
+  "review": [
+    {
+      "path": "fields.phones[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.7
+    }
+  ],
+  "mapping_changes": []
+}

@@ -1,0 +1,200 @@
+[
+  {
+    "input": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U01/resume.json",
+    "output": "9ba86722016ea942",
+    "document_sha256": "9ba86722016ea9427a4ae36c2f2b7ef54f9598e70c2cad0918e8c4f50ce237cc",
+    "status": "needs_review",
+    "completeness": "fail",
+    "entities": 49,
+    "records": 14,
+    "issues": 0,
+    "unclassified_lines": 0
+  },
+  {
+    "input": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U02/resume.json",
+    "output": "89b836400f8f5192",
+    "document_sha256": "89b836400f8f5192c5b902c03b8ded9982d844b6f2ad1078b9fa9ff5f8cd4c87",
+    "status": "needs_review",
+    "completeness": "fail",
+    "entities": 36,
+    "records": 12,
+    "issues": 0,
+    "unclassified_lines": 1
+  },
+  {
+    "input": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U03/resume.json",
+    "output": "bdb2f38e41ac1fe9",
+    "document_sha256": "bdb2f38e41ac1fe979557ef27f8c98ba3a1f312e5b99e8f117d120a90b7cb826",
+    "status": "needs_review",
+    "completeness": "fail",
+    "entities": 55,
+    "records": 15,
+    "issues": 0,
+    "unclassified_lines": 0
+  },
+  {
+    "input": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U04/resume.json",
+    "output": "5f77f4e59d977937",
+    "document_sha256": "5f77f4e59d97793795089e0b99f6f360f55d6f12d75e7af6693fae044d6a2730",
+    "status": "needs_review",
+    "completeness": "pass",
+    "entities": 16,
+    "records": 14,
+    "issues": 0,
+    "unclassified_lines": 0
+  },
+  {
+    "input": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U05/resume.json",
+    "output": "14b052f3cdc07a57",
+    "document_sha256": "14b052f3cdc07a57f163a8498230e2ed0c81e3e72cd91a059631fadfdf382e35",
+    "status": "needs_review",
+    "completeness": "pass",
+    "entities": 33,
+    "records": 15,
+    "issues": 0,
+    "unclassified_lines": 1
+  },
+  {
+    "input": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U06/resume.json",
+    "output": "c46b14d76878b810",
+    "document_sha256": "c46b14d76878b810ea8052349edc50bf54f58e087c5c015b92bcecce83a74ada",
+    "status": "needs_review",
+    "completeness": "pass",
+    "entities": 25,
+    "records": 11,
+    "issues": 0,
+    "unclassified_lines": 0
+  },
+  {
+    "input": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U07/resume.json",
+    "output": "8a28114c043883f5",
+    "document_sha256": "8a28114c043883f515bb055f3cb0c0cbfee3d13134a2eba717a7a0cfbf12a44f",
+    "status": "needs_review",
+    "completeness": "pass",
+    "entities": 15,
+    "records": 14,
+    "issues": 0,
+    "unclassified_lines": 0
+  },
+  {
+    "input": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U08/resume.json",
+    "output": "05b7670962483386",
+    "document_sha256": "05b76709624833861cab54350575e9a76917f332fca0ccbf292d06b0ab116bbb",
+    "status": "needs_review",
+    "completeness": "pass",
+    "entities": 24,
+    "records": 12,
+    "issues": 0,
+    "unclassified_lines": 5
+  },
+  {
+    "input": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U09/resume.json",
+    "output": "1f10e01c7b313902",
+    "document_sha256": "1f10e01c7b313902ed4bddfbf1998100e42d16962f820ca11293372f686e9911",
+    "status": "needs_review",
+    "completeness": "pass",
+    "entities": 23,
+    "records": 13,
+    "issues": 0,
+    "unclassified_lines": 0
+  },
+  {
+    "input": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U10/resume.json",
+    "output": "9c87168b6d529336",
+    "document_sha256": "9c87168b6d529336eca1dd27db234421f6110eba8e06e979d65291dc29e75096",
+    "status": "needs_review",
+    "completeness": "pass",
+    "entities": 13,
+    "records": 11,
+    "issues": 0,
+    "unclassified_lines": 0
+  },
+  {
+    "input": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U11/resume.json",
+    "output": "c1f2680437323350",
+    "document_sha256": "c1f2680437323350f4bd296f66d809cc6ef983a60f24d03b8fd91779535df82f",
+    "status": "needs_review",
+    "completeness": "pass",
+    "entities": 42,
+    "records": 14,
+    "issues": 0,
+    "unclassified_lines": 0
+  },
+  {
+    "input": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U12/resume.json",
+    "output": "c0621a20f19acdfc",
+    "document_sha256": "c0621a20f19acdfc3e731f6db1768795081d7314d2adb69983b15fdfb91c6186",
+    "status": "needs_review",
+    "completeness": "pass",
+    "entities": 20,
+    "records": 13,
+    "issues": 0,
+    "unclassified_lines": 6
+  },
+  {
+    "input": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U13/resume.json",
+    "output": "6bb643e81a789bc8",
+    "document_sha256": "6bb643e81a789bc8107dc98567907237d271c123b5c7030e2b63a363d4c4baaf",
+    "status": "mapped_unverified",
+    "completeness": "pass",
+    "entities": 23,
+    "records": 10,
+    "issues": 0,
+    "unclassified_lines": 0
+  },
+  {
+    "input": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U14/resume.json",
+    "output": "2a72ffbeecb5dde4",
+    "document_sha256": "2a72ffbeecb5dde4df82c996261ea24f562c5b526b83d19f4faa8189b40c0204",
+    "status": "needs_review",
+    "completeness": "pass",
+    "entities": 58,
+    "records": 11,
+    "issues": 0,
+    "unclassified_lines": 0
+  },
+  {
+    "input": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U15/resume.json",
+    "output": "2b267dd0393ba6c1",
+    "document_sha256": "2b267dd0393ba6c14bc7123228cb38ef079f0237d0dd9b3db584c334b58b6146",
+    "status": "mapped_unverified",
+    "completeness": "pass",
+    "entities": 24,
+    "records": 16,
+    "issues": 0,
+    "unclassified_lines": 0
+  },
+  {
+    "input": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U16/resume.json",
+    "output": "5830bdf1799ece64",
+    "document_sha256": "5830bdf1799ece64b8e44ef8b773300cf1305bbd793a6e973eb669c6491ca40c",
+    "status": "needs_review",
+    "completeness": "pass",
+    "entities": 17,
+    "records": 7,
+    "issues": 0,
+    "unclassified_lines": 0
+  },
+  {
+    "input": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U17/resume.json",
+    "output": "660f09e952f57e81",
+    "document_sha256": "660f09e952f57e81c68954cb8f7097c29b6021b3a3152fa90114933b9ffc62d9",
+    "status": "needs_review",
+    "completeness": "pass",
+    "entities": 32,
+    "records": 6,
+    "issues": 0,
+    "unclassified_lines": 0
+  },
+  {
+    "input": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U20/resume.json",
+    "output": "4a72c3875570e7aa",
+    "document_sha256": "4a72c3875570e7aa813cc0fe5c0bb0c59548859f011389924b4eecb362c49e8c",
+    "status": "needs_review",
+    "completeness": "pass",
+    "entities": 25,
+    "records": 7,
+    "issues": 0,
+    "unclassified_lines": 0
+  }
+]

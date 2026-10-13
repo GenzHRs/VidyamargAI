@@ -1,0 +1,792 @@
+{
+  "mapping_schema_version": "1.0.0",
+  "record_id": "af535618335268d39a17f1ffd08dc2467e7ec575a37079df3f16c42157c094dc",
+  "document_id": "c0621a20f19acdfc3e731f6db1768795081d7314d2adb69983b15fdfb91c6186",
+  "candidate_id": null,
+  "extraction_id": "cc39e8acc997942e157ca933ed0e5c88eb6a27f16585afc7a0073f25aea41290",
+  "mapper_sha256": "99064aec1206cbb49df51cf0e73a239fd615aee01b0aa7e99c2aa2d2a3479451",
+  "source": {
+    "filename": "05_PDF_Strict_Table_Grid_Resume.pdf",
+    "sha256": "c0621a20f19acdfc3e731f6db1768795081d7314d2adb69983b15fdfb91c6186",
+    "type": "pdf",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": 1,
+    "reference_method": "pdftotext_raw"
+  },
+  "section_order": [
+    "contact",
+    "summary",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "certifications",
+    "publications",
+    "awards",
+    "metrics",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "profile": {
+    "contact": {
+      "full_name": "NATALIE CHOW, CPA",
+      "headline": "Senior Corporate Controller & Internal Audit Lead",
+      "emails": [
+        "natalie.chow.cpa@example.com"
+      ],
+      "phones": [
+        {
+          "raw": "(555) 918-2045",
+          "normalized": "+15559182045",
+          "valid": false
+        }
+      ],
+      "locations": [
+        "New York, NY"
+      ],
+      "links": [
+        "linkedin.com/in/nataliechow-dummy"
+      ]
+    },
+    "summary": [],
+    "experience": [
+      {
+        "source_text": "2021 – Present\nAudit Controller\nVanguard Trust Partners\n(New York, NY)\n• Supervised end-to-end SOX testing across 12 business units, identifying and remediation 14 material control deficiencies prior to external audit.\n• Led audit engagement with Big 4 firm, resulting in clean unqualified audit opinion 3 consecutive years.\n• Streamlined reconciliation of $4.2B custodial accounts through automated Alteryx workflows.",
+        "source_line_ids": [
+          "l00023",
+          "l00024",
+          "l00025",
+          "l00026",
+          "l00027",
+          "l00028",
+          "l00029",
+          "l00030",
+          "l00031",
+          "l00032",
+          "l00033",
+          "l00034"
+        ],
+        "ordinal": 0,
+        "title": "Audit Controller",
+        "company": "Vanguard Trust Partners",
+        "location": "New York, NY",
+        "dates": {
+          "start": {
+            "raw": "2021",
+            "normalized": "2021",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "Present",
+            "normalized": null,
+            "precision": "open"
+          },
+          "ongoing_as_reported": true
+        },
+        "bullets": [
+          "Supervised end-to-end SOX testing across 12 business units, identifying and remediation 14 material control deficiencies prior to external audit.",
+          "Led audit engagement with Big 4 firm, resulting in clean unqualified audit opinion 3 consecutive years.",
+          "Streamlined reconciliation of $4.2B custodial accounts through automated Alteryx workflows."
+        ],
+        "links": [],
+        "work_mode": null
+      },
+      {
+        "source_text": "2018 – 2021\nSenior Accountant\nDeloitte & Touche LLP\n(Boston, MA)\n• Performed statutory financial statement audits for mid-cap publicly listed fintech and healthcare corporations.\n• Executed substantive test procedures over revenue recognition (ASC 606) and goodwill impairment testing.",
+        "source_line_ids": [
+          "l00035",
+          "l00036",
+          "l00037",
+          "l00038",
+          "l00039",
+          "l00040",
+          "l00041",
+          "l00042"
+        ],
+        "ordinal": 1,
+        "title": "Senior Accountant",
+        "company": "Deloitte & Touche LLP",
+        "location": "Boston, MA",
+        "dates": {
+          "start": {
+            "raw": "2018",
+            "normalized": "2018",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "2021",
+            "normalized": "2021",
+            "precision": "year"
+          },
+          "ongoing_as_reported": false
+        },
+        "bullets": [
+          "Performed statutory financial statement audits for mid-cap publicly listed fintech and healthcare corporations.",
+          "Executed substantive test procedures over revenue recognition (ASC 606) and goodwill impairment testing."
+        ],
+        "links": [],
+        "work_mode": null
+      }
+    ],
+    "education": [
+      {
+        "source_text": "B.S. in Accounting & Information Systems\nBoston College — Carroll School of\nManagement\nGraduated Magna\nCum Laude (2018)",
+        "source_line_ids": [
+          "l00047",
+          "l00048",
+          "l00049",
+          "l00050",
+          "l00051"
+        ],
+        "ordinal": 0,
+        "degree": "B.S. in Accounting & Information Systems",
+        "institution": "Boston College — Carroll School of Management",
+        "location": null,
+        "dates": {
+          "start": {
+            "raw": null,
+            "normalized": null,
+            "precision": null
+          },
+          "end": {
+            "raw": null,
+            "normalized": null,
+            "precision": null
+          },
+          "ongoing_as_reported": false
+        },
+        "graduation": {
+          "raw": "2018",
+          "normalized": "2018",
+          "precision": "year"
+        },
+        "gpa": null,
+        "dissertation_or_thesis": null
+      }
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "category": "Financial Controls & Audit",
+        "items": [
+          "Sarbanes-Oxley (SOX 404)",
+          "Risk & Control Matrices (RCM)",
+          "Forensic Audit Investigations"
+        ],
+        "source_records": [
+          {
+            "text": "Financial Controls & Audit\n• Sarbanes-Oxley (SOX 404)",
+            "source_line_ids": [
+              "l00007",
+              "l00010"
+            ],
+            "category": "Financial Controls & Audit",
+            "items": [
+              "Sarbanes-Oxley (SOX 404)"
+            ]
+          },
+          {
+            "text": "Financial Controls & Audit\n• Risk & Control Matrices (RCM)",
+            "source_line_ids": [
+              "l00007",
+              "l00011"
+            ],
+            "category": "Financial Controls & Audit",
+            "items": [
+              "Risk & Control Matrices (RCM)"
+            ]
+          },
+          {
+            "text": "Financial Controls & Audit\n• Forensic Audit Investigations",
+            "source_line_ids": [
+              "l00007",
+              "l00012"
+            ],
+            "category": "Financial Controls & Audit",
+            "items": [
+              "Forensic Audit Investigations"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Tax & Compliance Standards",
+        "items": [
+          "US GAAP & SEC Form 10-K/Q",
+          "Transfer Pricing Regulation",
+          "Anti-Money Laundering (AML)"
+        ],
+        "source_records": [
+          {
+            "text": "Tax & Compliance Standards\n• US GAAP & SEC Form 10-K/Q",
+            "source_line_ids": [
+              "l00008",
+              "l00013"
+            ],
+            "category": "Tax & Compliance Standards",
+            "items": [
+              "US GAAP & SEC Form 10-K/Q"
+            ]
+          },
+          {
+            "text": "Tax & Compliance Standards\n• Transfer Pricing Regulation",
+            "source_line_ids": [
+              "l00008",
+              "l00014"
+            ],
+            "category": "Tax & Compliance Standards",
+            "items": [
+              "Transfer Pricing Regulation"
+            ]
+          },
+          {
+            "text": "Tax & Compliance Standards\n• Anti-Money Laundering (AML)",
+            "source_line_ids": [
+              "l00008",
+              "l00015"
+            ],
+            "category": "Tax & Compliance Standards",
+            "items": [
+              "Anti-Money Laundering (AML)"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Software & Systems",
+        "items": [
+          "Workday Financials",
+          "NetSuite ERP",
+          "Alteryx & Advanced SQL"
+        ],
+        "source_records": [
+          {
+            "text": "Software & Systems\n• Workday Financials",
+            "source_line_ids": [
+              "l00009",
+              "l00016"
+            ],
+            "category": "Software & Systems",
+            "items": [
+              "Workday Financials"
+            ]
+          },
+          {
+            "text": "Software & Systems\n• NetSuite ERP",
+            "source_line_ids": [
+              "l00009",
+              "l00017"
+            ],
+            "category": "Software & Systems",
+            "items": [
+              "NetSuite ERP"
+            ]
+          },
+          {
+            "text": "Software & Systems\n• Alteryx & Advanced SQL",
+            "source_line_ids": [
+              "l00009",
+              "l00018"
+            ],
+            "category": "Software & Systems",
+            "items": [
+              "Alteryx & Advanced SQL"
+            ]
+          }
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "source_text": "Certified Public Accountant (CPA)\nAICPA / New York Board of Accountancy\nLicense #83921\n(Active)",
+        "source_line_ids": [
+          "l00052",
+          "l00053",
+          "l00054",
+          "l00055"
+        ],
+        "ordinal": 0,
+        "name": "Certified Public Accountant (CPA)",
+        "issuer": "AICPA / New York Board of Accountancy",
+        "details": "AICPA / New York Board of Accountancy License #83921 (Active)",
+        "license_id": "83921",
+        "status_as_reported": "Active",
+        "links": []
+      }
+    ],
+    "publications": [],
+    "awards": [],
+    "metrics": [],
+    "other_sections": []
+  },
+  "evidence": {
+    "contact.full_name": {
+      "source_line_ids": [
+        "l00000"
+      ],
+      "confidence": 0.65,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.headline": {
+      "source_line_ids": [
+        "l00001"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.emails[0]": {
+      "source_line_ids": [
+        "l00004"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.phones[0]": {
+      "source_line_ids": [
+        "l00003"
+      ],
+      "confidence": 0.7,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.locations[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0]": {
+      "source_line_ids": [
+        "l00023",
+        "l00024",
+        "l00025",
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030",
+        "l00031",
+        "l00032",
+        "l00033",
+        "l00034"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].title": {
+      "source_line_ids": [
+        "l00025"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].company": {
+      "source_line_ids": [
+        "l00026"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].location": {
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].dates": {
+      "source_line_ids": [
+        "l00023",
+        "l00024"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[0]": {
+      "source_line_ids": [
+        "l00023",
+        "l00024",
+        "l00025",
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030",
+        "l00031",
+        "l00032",
+        "l00033",
+        "l00034"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[1]": {
+      "source_line_ids": [
+        "l00023",
+        "l00024",
+        "l00025",
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030",
+        "l00031",
+        "l00032",
+        "l00033",
+        "l00034"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[2]": {
+      "source_line_ids": [
+        "l00023",
+        "l00024",
+        "l00025",
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030",
+        "l00031",
+        "l00032",
+        "l00033",
+        "l00034"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1]": {
+      "source_line_ids": [
+        "l00035",
+        "l00036",
+        "l00037",
+        "l00038",
+        "l00039",
+        "l00040",
+        "l00041",
+        "l00042"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].title": {
+      "source_line_ids": [
+        "l00036"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].company": {
+      "source_line_ids": [
+        "l00037"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].location": {
+      "source_line_ids": [
+        "l00038"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].dates": {
+      "source_line_ids": [
+        "l00035"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].bullets[0]": {
+      "source_line_ids": [
+        "l00035",
+        "l00036",
+        "l00037",
+        "l00038",
+        "l00039",
+        "l00040",
+        "l00041",
+        "l00042"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].bullets[1]": {
+      "source_line_ids": [
+        "l00035",
+        "l00036",
+        "l00037",
+        "l00038",
+        "l00039",
+        "l00040",
+        "l00041",
+        "l00042"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0]": {
+      "source_line_ids": [
+        "l00047",
+        "l00048",
+        "l00049",
+        "l00050",
+        "l00051"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].degree": {
+      "source_line_ids": [
+        "l00047"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].institution": {
+      "source_line_ids": [
+        "l00048",
+        "l00049"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].location": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].dates": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].graduation": {
+      "source_line_ids": [
+        "l00051"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].gpa": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0]": {
+      "source_line_ids": [
+        "l00007",
+        "l00010",
+        "l00011",
+        "l00012"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1]": {
+      "source_line_ids": [
+        "l00008",
+        "l00013",
+        "l00014",
+        "l00015"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[2]": {
+      "source_line_ids": [
+        "l00009",
+        "l00016",
+        "l00017",
+        "l00018"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0]": {
+      "source_line_ids": [
+        "l00052",
+        "l00053",
+        "l00054",
+        "l00055"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].name": {
+      "source_line_ids": [
+        "l00052"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].issuer": {
+      "source_line_ids": [
+        "l00052",
+        "l00053",
+        "l00054",
+        "l00055"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].details": {
+      "source_line_ids": [
+        "l00052",
+        "l00053",
+        "l00054",
+        "l00055"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.links[0]": {
+      "source_line_ids": [
+        "l00005"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    }
+  },
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002",
+        "l00003",
+        "l00004",
+        "l00005"
+      ],
+      "text": "NATALIE CHOW, CPA\nSenior Corporate Controller & Internal Audit Lead\nNew York, NY\n(555) 918-2045\nnatalie.chow.cpa@example.com\nlinkedin.com/in/nataliechow-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "skills",
+      "original_heading": "CORE COMPETENCIES & AUDIT CAPABILITIES",
+      "heading_line_id": "l00006",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00007",
+        "l00008",
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015",
+        "l00016",
+        "l00017",
+        "l00018"
+      ],
+      "text": "Financial Controls & Audit\nTax & Compliance Standards\nSoftware & Systems\n• Sarbanes-Oxley (SOX 404)\n• Risk & Control Matrices (RCM)\n• Forensic Audit Investigations\n• US GAAP & SEC Form 10-K/Q\n• Transfer Pricing Regulation\n• Anti-Money Laundering (AML)\n• Workday Financials\n• NetSuite ERP\n• Alteryx & Advanced SQL"
+    },
+    {
+      "id": "s002",
+      "canonical": "experience",
+      "original_heading": "PROFESSIONAL AUDIT & ACCOUNTING EXPERIENCE",
+      "heading_line_id": "l00019",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00025",
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00031",
+        "l00033",
+        "l00035",
+        "l00036",
+        "l00037",
+        "l00038",
+        "l00039",
+        "l00041"
+      ],
+      "text": "Dates\nTitle & Company\nKey Responsibilities & Quantified Impact\n2021 – Present\nAudit Controller\nVanguard Trust Partners\n(New York, NY)\n• Supervised end-to-end SOX testing across 12 business units, identifying and remediation 14 material control deficiencies prior to external audit.\n• Led audit engagement with Big 4 firm, resulting in clean unqualified audit opinion 3 consecutive years.\n• Streamlined reconciliation of $4.2B custodial accounts through automated Alteryx workflows.\n2018 – 2021\nSenior Accountant\nDeloitte & Touche LLP\n(Boston, MA)\n• Performed statutory financial statement audits for mid-cap publicly listed fintech and healthcare corporations.\n• Executed substantive test procedures over revenue recognition (ASC 606) and goodwill impairment testing."
+    },
+    {
+      "id": "s003",
+      "canonical": "education",
+      "original_heading": "EDUCATION & CREDENTIALS",
+      "heading_line_id": "l00043",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00044",
+        "l00045",
+        "l00046",
+        "l00047",
+        "l00048",
+        "l00049",
+        "l00050",
+        "l00051",
+        "l00052",
+        "l00053",
+        "l00054",
+        "l00055"
+      ],
+      "text": "Degree / Credential\nInstitution\nStatus / Date\nB.S. in Accounting & Information Systems\nBoston College — Carroll School of\nManagement\nGraduated Magna\nCum Laude (2018)\nCertified Public Accountant (CPA)\nAICPA / New York Board of Accountancy\nLicense #83921\n(Active)"
+    }
+  ],
+  "quality": {
+    "completeness": {
+      "status": "pass",
+      "reference_words": 211,
+      "extracted_words": 211,
+      "matched_words": 211,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "schema_errors": [],
+    "warnings": [],
+    "suppressed_exact_repeats": []
+  },
+  "review_status": "needs_review",
+  "review": [
+    {
+      "path": "fields.name",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.65
+    },
+    {
+      "path": "fields.phones[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.7
+    }
+  ],
+  "mapping_changes": [
+    {
+      "path": "certifications[0]",
+      "before": {
+        "name": "Certified Public Accountant (CPA)",
+        "issuer": null,
+        "details": "AICPA / New York Board of Accountancy License #83921 (Active)"
+      },
+      "after": {
+        "name": "Certified Public Accountant (CPA)",
+        "issuer": "AICPA / New York Board of Accountancy",
+        "details": "AICPA / New York Board of Accountancy License #83921 (Active)"
+      },
+      "reason": "Separate explicitly indicated credential title, issuer and training details",
+      "source_line_ids": [
+        "l00052",
+        "l00053",
+        "l00054",
+        "l00055"
+      ]
+    }
+  ]
+}

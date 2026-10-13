@@ -1,0 +1,380 @@
+PERSONAL_DETAILS
+{
+  "name": {
+    "value": "MAYA LIN-VAZQUEZ",
+    "confidence": 0.92,
+    "source_line_ids": [
+      "l00000"
+    ]
+  },
+  "emails": [
+    {
+      "value": "maya.lin.design@example.com",
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "normalization": "none",
+      "raw": "Los Angeles, CA  •  (555) 781-9920  •  maya.lin.design@example.com  •  mayadesign.example.studio"
+    }
+  ],
+  "phones": [
+    {
+      "value": "(555) 781-9920",
+      "confidence": 0.7,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "normalized": "+15557819920",
+      "valid": false
+    }
+  ],
+  "locations": [
+    {
+      "value": "Los Angeles, CA",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00002"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "value": "mayadesign.example.studio",
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "kind": "website"
+    }
+  ],
+  "headline": {
+    "value": "SENIOR BRAND DESIGNER & ART DIRECTOR",
+    "source_line_ids": [
+      "l00001"
+    ],
+    "confidence": 0.7
+  }
+}
+
+SUMMARY
+[
+  {
+    "text": "Award-winning Senior Brand Designer with 6+ years driving identity redesigns, international omnichannel brand campaigns, and packaging systems for global consumer lifestyle brands. Adept at fusing strategic business goals with striking visual storytelling.",
+    "source_line_ids": [
+      "l00020"
+    ],
+    "value": "Award-winning Senior Brand Designer with 6+ years driving identity redesigns, international omnichannel brand campaigns, and packaging systems for global consumer lifestyle brands. Adept at fusing strategic business goals with striking visual storytelling."
+  }
+]
+
+EDUCATION
+[
+  {
+    "text": "B.F.A. in Graphic Design\nArtCenter College of Design\nGraduated: 2019 (Honors)",
+    "source_line_ids": [
+      "l00016",
+      "l00017",
+      "l00018"
+    ],
+    "degree": {
+      "value": "B.F.A. in Graphic Design",
+      "source_line_ids": [
+        "l00016"
+      ],
+      "confidence": 0.85
+    },
+    "institution": {
+      "value": "ArtCenter College of Design",
+      "source_line_ids": [
+        "l00017"
+      ],
+      "confidence": 0.85
+    },
+    "dates": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "graduation": {
+      "value": "2019",
+      "source_line_ids": [
+        "l00018"
+      ],
+      "confidence": 0.85
+    },
+    "location": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "gpa": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "normalized_dates": {
+      "start": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      },
+      "end": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      }
+    }
+  }
+]
+
+WORK_EXPERIENCE
+[
+  {
+    "title": {
+      "value": "Senior Brand Designer",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00022"
+      ]
+    },
+    "company": {
+      "value": "Lumina Creative Studio",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00023"
+      ]
+    },
+    "location": {
+      "value": "Los Angeles, CA",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00023"
+      ]
+    },
+    "dates": {
+      "value": {
+        "start": "2022",
+        "end": "Present"
+      },
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00023"
+      ]
+    },
+    "bullets": [
+      "• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.",
+      "• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.",
+      "• Managed 4 junior graphic designers, motion animators, and external packaging vendors."
+    ],
+    "text": "Senior Brand Designer\nLumina Creative Studio (Los Angeles, CA) | 2022 – Present\n• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.\n• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.\n• Managed 4 junior graphic designers, motion animators, and external packaging vendors.",
+    "confidence": 0.88,
+    "source_line_ids": [
+      "l00022",
+      "l00023",
+      "l00024",
+      "l00025",
+      "l00026"
+    ],
+    "normalized_dates": {
+      "start": {
+        "raw": "2022",
+        "value": "2022",
+        "precision": "year"
+      },
+      "end": {
+        "raw": "Present",
+        "value": null,
+        "precision": "open"
+      }
+    }
+  },
+  {
+    "title": {
+      "value": "Visual & Packaging Designer",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00027"
+      ]
+    },
+    "company": {
+      "value": "Verve Labs",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00028"
+      ]
+    },
+    "location": {
+      "value": "San Francisco, CA",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00028"
+      ]
+    },
+    "dates": {
+      "value": {
+        "start": "2019",
+        "end": "2022"
+      },
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00028"
+      ]
+    },
+    "bullets": [
+      "• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.",
+      "• Produced digital campaign assets generating 12M+ social media impressions."
+    ],
+    "text": "Visual & Packaging Designer\nVerve Labs (San Francisco, CA) | 2019 – 2022\n• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.\n• Produced digital campaign assets generating 12M+ social media impressions.",
+    "confidence": 0.88,
+    "source_line_ids": [
+      "l00027",
+      "l00028",
+      "l00029",
+      "l00030"
+    ],
+    "normalized_dates": {
+      "start": {
+        "raw": "2019",
+        "value": "2019",
+        "precision": "year"
+      },
+      "end": {
+        "raw": "2022",
+        "value": "2022",
+        "precision": "year"
+      }
+    }
+  }
+]
+
+INTERNSHIPS
+[]
+
+PROJECTS
+[]
+
+SKILLS
+[
+  {
+    "text": "• Brand Identity & Systems",
+    "source_line_ids": [
+      "l00004"
+    ],
+    "category": null,
+    "items": [
+      "Brand Identity & Systems"
+    ]
+  },
+  {
+    "text": "• Art Direction & Campaigns",
+    "source_line_ids": [
+      "l00005"
+    ],
+    "category": null,
+    "items": [
+      "Art Direction & Campaigns"
+    ]
+  },
+  {
+    "text": "• Packaging & Print Spec",
+    "source_line_ids": [
+      "l00006"
+    ],
+    "category": null,
+    "items": [
+      "Packaging & Print Spec"
+    ]
+  },
+  {
+    "text": "• Figma, Illustrator, Photoshop",
+    "source_line_ids": [
+      "l00007"
+    ],
+    "category": null,
+    "items": [
+      "Figma",
+      "Illustrator",
+      "Photoshop"
+    ]
+  },
+  {
+    "text": "• After Effects & Motion",
+    "source_line_ids": [
+      "l00008"
+    ],
+    "category": null,
+    "items": [
+      "After Effects & Motion"
+    ]
+  },
+  {
+    "text": "• Creative Team Mentorship",
+    "source_line_ids": [
+      "l00009"
+    ],
+    "category": null,
+    "items": [
+      "Creative Team Mentorship"
+    ]
+  },
+  {
+    "text": "• Design Sprint Facilitation",
+    "source_line_ids": [
+      "l00010"
+    ],
+    "category": null,
+    "items": [
+      "Design Sprint Facilitation"
+    ]
+  }
+]
+
+CERTIFICATIONS
+[]
+
+TRAINING
+[]
+
+AWARDS
+[
+  {
+    "text": "• 2024 D&AD Wood Pencil",
+    "source_line_ids": [
+      "l00012"
+    ],
+    "original_heading": "AWARDS & HONORS",
+    "name": "2024 D&AD Wood Pencil",
+    "details": ""
+  },
+  {
+    "text": "• 2023 AIGA Design Excellence",
+    "source_line_ids": [
+      "l00013"
+    ],
+    "original_heading": "AWARDS & HONORS",
+    "name": "2023 AIGA Design Excellence",
+    "details": ""
+  },
+  {
+    "text": "• 2021 Adobe Design Achievement",
+    "source_line_ids": [
+      "l00014"
+    ],
+    "original_heading": "AWARDS & HONORS",
+    "name": "2021 Adobe Design Achievement",
+    "details": ""
+  }
+]
+
+PUBLICATIONS
+[]
+
+LANGUAGES
+[]
+
+OTHER_SECTIONS
+[]
+
+UNCLASSIFIED
+[]

@@ -1,0 +1,3150 @@
+{
+  "schema_version": "3.0.0",
+  "source": {
+    "filename": "02_DOCX_Navy_Teal_Cloud_Architect.docx",
+    "sha256": "14b052f3cdc07a57f163a8498230e2ed0c81e3e72cd91a059631fadfdf382e35",
+    "type": "docx",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": null,
+    "reference_method": "docx_xml_text"
+  },
+  "config_sha256": "6f498014d4fb63f781cf628405710e332e4770668d670b4c7df47f65e11c5b54",
+  "raw_text": "CONTACT\nDarius K. Vance\nDenver, CO\n(555) 304-9182\ndarius.vance@example.com\ngithub.com/darius-cloud\nlinkedin.com/in/dariusvance-dummy\nARCHITECTURE SKILLS\n• Cloud: AWS & Azure Cloud\n• Containers: Kubernetes (EKS)\n• Microservices Architecture\n• Terraform / GitOps (ArgoCD)\n• Kafka & Event-Driven Systems\n• PostgreSQL, Snowflake, Redis\n• SOC2 & Cloud Security\nCERTIFICATIONS\n• AWS Solutions Architect Pro\n• Certified Kubernetes Admin (CKA)\n• HashiCorp Terraform Pro\nDARIUS K. VANCE\nPRINCIPAL CLOUD ARCHITECT & INFRASTRUCTURE DIRECTOR\nEXECUTIVE SUMMARY\nPrincipal Cloud Architect with 11+ years engineering multi-tenant enterprise platforms, cloud migrations, and distributed data fabrics. Orchestrated zero-downtime infrastructure powering $100M+ ARR SaaS portfolios while lowering annual cloud run-rates by 35%.\nLEADERSHIP & ARCHITECTURE EXPERIENCE\nPrincipal Cloud Solutions Architect\nStrataCore Cloud Systems (Denver, CO) | 2021 – Present\n• Directed migration of 140 on-premise microservices to AWS EKS with zero client downtime, reducing annual hosting overhead by $1.8M.\n• Authored disaster recovery strategy achieving RPO < 15 seconds and RTO < 2 minutes across multi-region clusters.\n• Governed engineering standards across 45 platform engineers and SREs.\nLead Infrastructure Architect\nApex Financial Technologies (Boulder, CO) | 2017 – 2021\n• Built automated compliance-as-code pipelines enabling rapid SOC2 Type II and FedRAMP readiness.\n• Standardized infrastructure provisioning with reusable Terraform modules across 12 application teams.\nEDUCATION\nM.S. in Computer Science — University of Colorado Boulder (2017)\nB.S. in Computer Engineering — Colorado State University (2014)",
+  "source_text": "\n\nCONTACT\n\nDarius K. Vance\nDenver, CO\n(555) 304-9182\ndarius.vance@example.com\ngithub.com/darius-cloud\nlinkedin.com/in/dariusvance-dummy\n\nARCHITECTURE SKILLS\n\n• Cloud: AWS & Azure Cloud\n• Containers: Kubernetes (EKS)\n• Microservices Architecture\n• Terraform / GitOps (ArgoCD)\n• Kafka & Event-Driven Systems\n• PostgreSQL, Snowflake, Redis\n• SOC2 & Cloud Security\n\nCERTIFICATIONS\n\n• AWS Solutions Architect Pro\n• Certified Kubernetes Admin (CKA)\n• HashiCorp Terraform Pro\n\n\n\nDARIUS K. VANCE\nPRINCIPAL CLOUD ARCHITECT & INFRASTRUCTURE DIRECTOR\n\nEXECUTIVE SUMMARY\nPrincipal Cloud Architect with 11+ years engineering multi-tenant enterprise platforms, cloud migrations, and distributed data fabrics. Orchestrated zero-downtime infrastructure powering $100M+ ARR SaaS portfolios while lowering annual cloud run-rates by 35%.\n\nLEADERSHIP & ARCHITECTURE EXPERIENCE\n\nPrincipal Cloud Solutions Architect\nStrataCore Cloud Systems (Denver, CO) | 2021 – Present\n\n• Directed migration of 140 on-premise microservices to AWS EKS with zero client downtime, reducing annual hosting overhead by $1.8M.\n\n• Authored disaster recovery strategy achieving RPO < 15 seconds and RTO < 2 minutes across multi-region clusters.\n\n• Governed engineering standards across 45 platform engineers and SREs.\n\nLead Infrastructure Architect\nApex Financial Technologies (Boulder, CO) | 2017 – 2021\n\n• Built automated compliance-as-code pipelines enabling rapid SOC2 Type II and FedRAMP readiness.\n\n• Standardized infrastructure provisioning with reusable Terraform modules across 12 application teams.\n\nEDUCATION\nM.S. in Computer Science — University of Colorado Boulder (2017)\nB.S. in Computer Engineering — Colorado State University (2014)\n\n",
+  "normalized_text": "CONTACT\nDarius K. Vance\nDenver, CO\n(555) 304-9182\ndarius.vance@example.com\ngithub.com/darius-cloud\nlinkedin.com/in/dariusvance-dummy\nARCHITECTURE SKILLS\n• Cloud: AWS & Azure Cloud\n• Containers: Kubernetes (EKS)\n• Microservices Architecture\n• Terraform / GitOps (ArgoCD)\n• Kafka & Event-Driven Systems\n• PostgreSQL, Snowflake, Redis\n• SOC2 & Cloud Security\nCERTIFICATIONS\n• AWS Solutions Architect Pro\n• Certified Kubernetes Admin (CKA)\n• HashiCorp Terraform Pro\nDARIUS K. VANCE\nPRINCIPAL CLOUD ARCHITECT & INFRASTRUCTURE DIRECTOR\nEXECUTIVE SUMMARY\nPrincipal Cloud Architect with 11+ years engineering multi-tenant enterprise platforms, cloud migrations, and distributed data fabrics. Orchestrated zero-downtime infrastructure powering $100M+ ARR SaaS portfolios while lowering annual cloud run-rates by 35%.\nLEADERSHIP & ARCHITECTURE EXPERIENCE\nPrincipal Cloud Solutions Architect\nStrataCore Cloud Systems (Denver, CO) | 2021 – Present\n• Directed migration of 140 on-premise microservices to AWS EKS with zero client downtime, reducing annual hosting overhead by $1.8M.\n• Authored disaster recovery strategy achieving RPO < 15 seconds and RTO < 2 minutes across multi-region clusters.\n• Governed engineering standards across 45 platform engineers and SREs.\nLead Infrastructure Architect\nApex Financial Technologies (Boulder, CO) | 2017 – 2021\n• Built automated compliance-as-code pipelines enabling rapid SOC2 Type II and FedRAMP readiness.\n• Standardized infrastructure provisioning with reusable Terraform modules across 12 application teams.\nEDUCATION\nM.S. in Computer Science — University of Colorado Boulder (2017)\nB.S. in Computer Engineering — Colorado State University (2014)",
+  "raw_lines": [
+    {
+      "id": "l00000",
+      "text": "CONTACT",
+      "runs": [
+        {
+          "text": "CONTACT",
+          "bold": true,
+          "size": 9.5,
+          "color": "2DD4BF",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00000"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00001",
+      "text": "Darius K. Vance",
+      "runs": [
+        {
+          "text": "Darius K. Vance",
+          "bold": false,
+          "size": 8.5,
+          "color": "E2E8F0",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00001"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00002",
+      "text": "Denver, CO",
+      "runs": [
+        {
+          "text": "Denver, CO",
+          "bold": false,
+          "size": 8.5,
+          "color": "E2E8F0",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00002"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00003",
+      "text": "(555) 304-9182",
+      "runs": [
+        {
+          "text": "(555) 304-9182",
+          "bold": false,
+          "size": 8.5,
+          "color": "E2E8F0",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00003"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00004",
+      "text": "darius.vance@example.com",
+      "runs": [
+        {
+          "text": "darius.vance@example.com",
+          "bold": false,
+          "size": 8.5,
+          "color": "E2E8F0",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00004"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00005",
+      "text": "github.com/darius-cloud",
+      "runs": [
+        {
+          "text": "github.com/darius-cloud",
+          "bold": false,
+          "size": 8.5,
+          "color": "E2E8F0",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00005"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00006",
+      "text": "linkedin.com/in/dariusvance-dummy",
+      "runs": [
+        {
+          "text": "linkedin.com/in/dariusvance-dummy",
+          "bold": false,
+          "size": 8.5,
+          "color": "E2E8F0",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00006"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00007",
+      "text": "ARCHITECTURE SKILLS",
+      "runs": [
+        {
+          "text": "ARCHITECTURE SKILLS",
+          "bold": true,
+          "size": 9.5,
+          "color": "2DD4BF",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00007"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00008",
+      "text": "• Cloud: AWS & Azure Cloud",
+      "runs": [
+        {
+          "text": "• Cloud: AWS & Azure Cloud",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00008"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00009",
+      "text": "• Containers: Kubernetes (EKS)",
+      "runs": [
+        {
+          "text": "• Containers: Kubernetes (EKS)",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00009"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00010",
+      "text": "• Microservices Architecture",
+      "runs": [
+        {
+          "text": "• Microservices Architecture",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00010"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00011",
+      "text": "• Terraform / GitOps (ArgoCD)",
+      "runs": [
+        {
+          "text": "• Terraform / GitOps (ArgoCD)",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00011"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00012",
+      "text": "• Kafka & Event-Driven Systems",
+      "runs": [
+        {
+          "text": "• Kafka & Event-Driven Systems",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00012"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00013",
+      "text": "• PostgreSQL, Snowflake, Redis",
+      "runs": [
+        {
+          "text": "• PostgreSQL, Snowflake, Redis",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00013"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00014",
+      "text": "• SOC2 & Cloud Security",
+      "runs": [
+        {
+          "text": "• SOC2 & Cloud Security",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00014"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00015",
+      "text": "CERTIFICATIONS",
+      "runs": [
+        {
+          "text": "CERTIFICATIONS",
+          "bold": true,
+          "size": 9.5,
+          "color": "2DD4BF",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00015"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00016",
+      "text": "• AWS Solutions Architect Pro",
+      "runs": [
+        {
+          "text": "• AWS Solutions Architect Pro",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00016"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00017",
+      "text": "• Certified Kubernetes Admin (CKA)",
+      "runs": [
+        {
+          "text": "• Certified Kubernetes Admin (CKA)",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00017"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00018",
+      "text": "• HashiCorp Terraform Pro",
+      "runs": [
+        {
+          "text": "• HashiCorp Terraform Pro",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00018"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00019",
+      "text": "DARIUS K. VANCE",
+      "runs": [
+        {
+          "text": "DARIUS K. VANCE",
+          "bold": true,
+          "size": 20.0,
+          "color": "0F172A",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00019"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00020",
+      "text": "PRINCIPAL CLOUD ARCHITECT & INFRASTRUCTURE DIRECTOR",
+      "runs": [
+        {
+          "text": "PRINCIPAL CLOUD ARCHITECT & INFRASTRUCTURE DIRECTOR",
+          "bold": true,
+          "size": 10.0,
+          "color": "0D9488",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00020"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00021",
+      "text": "EXECUTIVE SUMMARY",
+      "runs": [
+        {
+          "text": "EXECUTIVE SUMMARY",
+          "bold": true,
+          "size": 10.0,
+          "color": "0D9488",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00021"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00022",
+      "text": "Principal Cloud Architect with 11+ years engineering multi-tenant enterprise platforms, cloud migrations, and distributed data fabrics. Orchestrated zero-downtime infrastructure powering $100M+ ARR SaaS portfolios while lowering annual cloud run-rates by 35%.",
+      "runs": [
+        {
+          "text": "Principal Cloud Architect with 11+ years engineering multi-tenant enterprise platforms, cloud migrations, and distributed data fabrics. Orchestrated zero-downtime infrastructure powering $100M+ ARR SaaS portfolios while lowering annual cloud run-rates by 35%.",
+          "bold": false,
+          "size": 9.0,
+          "color": "334155",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00022"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00023",
+      "text": "LEADERSHIP & ARCHITECTURE EXPERIENCE",
+      "runs": [
+        {
+          "text": "LEADERSHIP & ARCHITECTURE EXPERIENCE",
+          "bold": true,
+          "size": 10.0,
+          "color": "0D9488",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00023"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00024",
+      "text": "Principal Cloud Solutions Architect",
+      "runs": [
+        {
+          "text": "Principal Cloud Solutions Architect",
+          "bold": true,
+          "size": 9.0,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00024"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00025",
+      "text": "StrataCore Cloud Systems (Denver, CO) | 2021 – Present",
+      "runs": [
+        {
+          "text": "StrataCore Cloud Systems (Denver, CO) | 2021 – Present",
+          "bold": true,
+          "size": 9.0,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00025"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00026",
+      "text": "• Directed migration of 140 on-premise microservices to AWS EKS with zero client downtime, reducing annual hosting overhead by $1.8M.",
+      "runs": [
+        {
+          "text": "• Directed migration of 140 on-premise microservices to AWS EKS with zero client downtime, reducing annual hosting overhead by $1.8M.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00026"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00027",
+      "text": "• Authored disaster recovery strategy achieving RPO < 15 seconds and RTO < 2 minutes across multi-region clusters.",
+      "runs": [
+        {
+          "text": "• Authored disaster recovery strategy achieving RPO < 15 seconds and RTO < 2 minutes across multi-region clusters.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00027"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00028",
+      "text": "• Governed engineering standards across 45 platform engineers and SREs.",
+      "runs": [
+        {
+          "text": "• Governed engineering standards across 45 platform engineers and SREs.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00028"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00029",
+      "text": "Lead Infrastructure Architect",
+      "runs": [
+        {
+          "text": "Lead Infrastructure Architect",
+          "bold": true,
+          "size": 9.0,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00029"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00030",
+      "text": "Apex Financial Technologies (Boulder, CO) | 2017 – 2021",
+      "runs": [
+        {
+          "text": "Apex Financial Technologies (Boulder, CO) | 2017 – 2021",
+          "bold": true,
+          "size": 9.0,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00030"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00031",
+      "text": "• Built automated compliance-as-code pipelines enabling rapid SOC2 Type II and FedRAMP readiness.",
+      "runs": [
+        {
+          "text": "• Built automated compliance-as-code pipelines enabling rapid SOC2 Type II and FedRAMP readiness.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00031"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00032",
+      "text": "• Standardized infrastructure provisioning with reusable Terraform modules across 12 application teams.",
+      "runs": [
+        {
+          "text": "• Standardized infrastructure provisioning with reusable Terraform modules across 12 application teams.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00032"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00033",
+      "text": "EDUCATION",
+      "runs": [
+        {
+          "text": "EDUCATION",
+          "bold": true,
+          "size": 10.0,
+          "color": "0D9488",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00033"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00034",
+      "text": "M.S. in Computer Science — University of Colorado Boulder (2017)",
+      "runs": [
+        {
+          "text": "M.S. in Computer Science — University of Colorado Boulder (2017)",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": null,
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00034"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00035",
+      "text": "B.S. in Computer Engineering — Colorado State University (2014)",
+      "runs": [
+        {
+          "text": "B.S. in Computer Engineering — Colorado State University (2014)",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": null,
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00035"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    }
+  ],
+  "lines": [
+    {
+      "id": "l00000",
+      "text": "CONTACT",
+      "runs": [
+        {
+          "text": "CONTACT",
+          "bold": true,
+          "size": 9.5,
+          "color": "2DD4BF",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00000"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00001",
+      "text": "Darius K. Vance",
+      "runs": [
+        {
+          "text": "Darius K. Vance",
+          "bold": false,
+          "size": 8.5,
+          "color": "E2E8F0",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00001"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00002",
+      "text": "Denver, CO",
+      "runs": [
+        {
+          "text": "Denver, CO",
+          "bold": false,
+          "size": 8.5,
+          "color": "E2E8F0",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00002"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00003",
+      "text": "(555) 304-9182",
+      "runs": [
+        {
+          "text": "(555) 304-9182",
+          "bold": false,
+          "size": 8.5,
+          "color": "E2E8F0",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00003"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00004",
+      "text": "darius.vance@example.com",
+      "runs": [
+        {
+          "text": "darius.vance@example.com",
+          "bold": false,
+          "size": 8.5,
+          "color": "E2E8F0",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00004"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00005",
+      "text": "github.com/darius-cloud",
+      "runs": [
+        {
+          "text": "github.com/darius-cloud",
+          "bold": false,
+          "size": 8.5,
+          "color": "E2E8F0",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00005"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00006",
+      "text": "linkedin.com/in/dariusvance-dummy",
+      "runs": [
+        {
+          "text": "linkedin.com/in/dariusvance-dummy",
+          "bold": false,
+          "size": 8.5,
+          "color": "E2E8F0",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00006"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00007",
+      "text": "ARCHITECTURE SKILLS",
+      "runs": [
+        {
+          "text": "ARCHITECTURE SKILLS",
+          "bold": true,
+          "size": 9.5,
+          "color": "2DD4BF",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00007"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00008",
+      "text": "• Cloud: AWS & Azure Cloud",
+      "runs": [
+        {
+          "text": "• Cloud: AWS & Azure Cloud",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00008"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00009",
+      "text": "• Containers: Kubernetes (EKS)",
+      "runs": [
+        {
+          "text": "• Containers: Kubernetes (EKS)",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00009"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00010",
+      "text": "• Microservices Architecture",
+      "runs": [
+        {
+          "text": "• Microservices Architecture",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00010"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00011",
+      "text": "• Terraform / GitOps (ArgoCD)",
+      "runs": [
+        {
+          "text": "• Terraform / GitOps (ArgoCD)",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00011"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00012",
+      "text": "• Kafka & Event-Driven Systems",
+      "runs": [
+        {
+          "text": "• Kafka & Event-Driven Systems",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00012"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00013",
+      "text": "• PostgreSQL, Snowflake, Redis",
+      "runs": [
+        {
+          "text": "• PostgreSQL, Snowflake, Redis",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00013"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00014",
+      "text": "• SOC2 & Cloud Security",
+      "runs": [
+        {
+          "text": "• SOC2 & Cloud Security",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00014"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00015",
+      "text": "CERTIFICATIONS",
+      "runs": [
+        {
+          "text": "CERTIFICATIONS",
+          "bold": true,
+          "size": 9.5,
+          "color": "2DD4BF",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00015"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00016",
+      "text": "• AWS Solutions Architect Pro",
+      "runs": [
+        {
+          "text": "• AWS Solutions Architect Pro",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00016"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00017",
+      "text": "• Certified Kubernetes Admin (CKA)",
+      "runs": [
+        {
+          "text": "• Certified Kubernetes Admin (CKA)",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00017"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00018",
+      "text": "• HashiCorp Terraform Pro",
+      "runs": [
+        {
+          "text": "• HashiCorp Terraform Pro",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00018"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00019",
+      "text": "DARIUS K. VANCE",
+      "runs": [
+        {
+          "text": "DARIUS K. VANCE",
+          "bold": true,
+          "size": 20.0,
+          "color": "0F172A",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TITLE",
+      "source_ids": [
+        "l00019"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.92
+    },
+    {
+      "id": "l00020",
+      "text": "PRINCIPAL CLOUD ARCHITECT & INFRASTRUCTURE DIRECTOR",
+      "runs": [
+        {
+          "text": "PRINCIPAL CLOUD ARCHITECT & INFRASTRUCTURE DIRECTOR",
+          "bold": true,
+          "size": 10.0,
+          "color": "0D9488",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "SUBTITLE",
+      "source_ids": [
+        "l00020"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00021",
+      "text": "EXECUTIVE SUMMARY",
+      "runs": [
+        {
+          "text": "EXECUTIVE SUMMARY",
+          "bold": true,
+          "size": 10.0,
+          "color": "0D9488",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00021"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00022",
+      "text": "Principal Cloud Architect with 11+ years engineering multi-tenant enterprise platforms, cloud migrations, and distributed data fabrics. Orchestrated zero-downtime infrastructure powering $100M+ ARR SaaS portfolios while lowering annual cloud run-rates by 35%.",
+      "runs": [
+        {
+          "text": "Principal Cloud Architect with 11+ years engineering multi-tenant enterprise platforms, cloud migrations, and distributed data fabrics. Orchestrated zero-downtime infrastructure powering $100M+ ARR SaaS portfolios while lowering annual cloud run-rates by 35%.",
+          "bold": false,
+          "size": 9.0,
+          "color": "334155",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00022"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00023",
+      "text": "LEADERSHIP & ARCHITECTURE EXPERIENCE",
+      "runs": [
+        {
+          "text": "LEADERSHIP & ARCHITECTURE EXPERIENCE",
+          "bold": true,
+          "size": 10.0,
+          "color": "0D9488",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00023"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00024",
+      "text": "Principal Cloud Solutions Architect",
+      "runs": [
+        {
+          "text": "Principal Cloud Solutions Architect",
+          "bold": true,
+          "size": 9.0,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00024"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00025",
+      "text": "StrataCore Cloud Systems (Denver, CO) | 2021 – Present",
+      "runs": [
+        {
+          "text": "StrataCore Cloud Systems (Denver, CO) | 2021 – Present",
+          "bold": true,
+          "size": 9.0,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00025"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00026",
+      "text": "• Directed migration of 140 on-premise microservices to AWS EKS with zero client downtime, reducing annual hosting overhead by $1.8M.",
+      "runs": [
+        {
+          "text": "• Directed migration of 140 on-premise microservices to AWS EKS with zero client downtime, reducing annual hosting overhead by $1.8M.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00026"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00027",
+      "text": "• Authored disaster recovery strategy achieving RPO < 15 seconds and RTO < 2 minutes across multi-region clusters.",
+      "runs": [
+        {
+          "text": "• Authored disaster recovery strategy achieving RPO < 15 seconds and RTO < 2 minutes across multi-region clusters.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00027"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00028",
+      "text": "• Governed engineering standards across 45 platform engineers and SREs.",
+      "runs": [
+        {
+          "text": "• Governed engineering standards across 45 platform engineers and SREs.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00028"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00029",
+      "text": "Lead Infrastructure Architect",
+      "runs": [
+        {
+          "text": "Lead Infrastructure Architect",
+          "bold": true,
+          "size": 9.0,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00029"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00030",
+      "text": "Apex Financial Technologies (Boulder, CO) | 2017 – 2021",
+      "runs": [
+        {
+          "text": "Apex Financial Technologies (Boulder, CO) | 2017 – 2021",
+          "bold": true,
+          "size": 9.0,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00030"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00031",
+      "text": "• Built automated compliance-as-code pipelines enabling rapid SOC2 Type II and FedRAMP readiness.",
+      "runs": [
+        {
+          "text": "• Built automated compliance-as-code pipelines enabling rapid SOC2 Type II and FedRAMP readiness.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00031"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00032",
+      "text": "• Standardized infrastructure provisioning with reusable Terraform modules across 12 application teams.",
+      "runs": [
+        {
+          "text": "• Standardized infrastructure provisioning with reusable Terraform modules across 12 application teams.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00032"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00033",
+      "text": "EDUCATION",
+      "runs": [
+        {
+          "text": "EDUCATION",
+          "bold": true,
+          "size": 10.0,
+          "color": "0D9488",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00033"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00034",
+      "text": "M.S. in Computer Science — University of Colorado Boulder (2017)",
+      "runs": [
+        {
+          "text": "M.S. in Computer Science — University of Colorado Boulder (2017)",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": null,
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00034"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00035",
+      "text": "B.S. in Computer Engineering — Colorado State University (2014)",
+      "runs": [
+        {
+          "text": "B.S. in Computer Engineering — Colorado State University (2014)",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": null,
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c1",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00035"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    }
+  ],
+  "sections": [
+    {
+      "id": "s000",
+      "canonical": "contact",
+      "original_heading": "CONTACT",
+      "heading_line_id": "l00000",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00001",
+        "l00002",
+        "l00003",
+        "l00004",
+        "l00005",
+        "l00006"
+      ],
+      "text": "Darius K. Vance\nDenver, CO\n(555) 304-9182\ndarius.vance@example.com\ngithub.com/darius-cloud\nlinkedin.com/in/dariusvance-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "skills",
+      "original_heading": "ARCHITECTURE SKILLS",
+      "heading_line_id": "l00007",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00008",
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014"
+      ],
+      "text": "• Cloud: AWS & Azure Cloud\n• Containers: Kubernetes (EKS)\n• Microservices Architecture\n• Terraform / GitOps (ArgoCD)\n• Kafka & Event-Driven Systems\n• PostgreSQL, Snowflake, Redis\n• SOC2 & Cloud Security"
+    },
+    {
+      "id": "s002",
+      "canonical": "certifications",
+      "original_heading": "CERTIFICATIONS",
+      "heading_line_id": "l00015",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00016",
+        "l00017",
+        "l00018"
+      ],
+      "text": "• AWS Solutions Architect Pro\n• Certified Kubernetes Admin (CKA)\n• HashiCorp Terraform Pro"
+    },
+    {
+      "id": "s003",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00019",
+        "l00020"
+      ],
+      "text": "DARIUS K. VANCE\nPRINCIPAL CLOUD ARCHITECT & INFRASTRUCTURE DIRECTOR"
+    },
+    {
+      "id": "s004",
+      "canonical": "summary",
+      "original_heading": "EXECUTIVE SUMMARY",
+      "heading_line_id": "l00021",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00022"
+      ],
+      "text": "Principal Cloud Architect with 11+ years engineering multi-tenant enterprise platforms, cloud migrations, and distributed data fabrics. Orchestrated zero-downtime infrastructure powering $100M+ ARR SaaS portfolios while lowering annual cloud run-rates by 35%."
+    },
+    {
+      "id": "s005",
+      "canonical": "experience",
+      "original_heading": "LEADERSHIP & ARCHITECTURE EXPERIENCE",
+      "heading_line_id": "l00023",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00024",
+        "l00025",
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030",
+        "l00031",
+        "l00032"
+      ],
+      "text": "Principal Cloud Solutions Architect\nStrataCore Cloud Systems (Denver, CO) | 2021 – Present\n• Directed migration of 140 on-premise microservices to AWS EKS with zero client downtime, reducing annual hosting overhead by $1.8M.\n• Authored disaster recovery strategy achieving RPO < 15 seconds and RTO < 2 minutes across multi-region clusters.\n• Governed engineering standards across 45 platform engineers and SREs.\nLead Infrastructure Architect\nApex Financial Technologies (Boulder, CO) | 2017 – 2021\n• Built automated compliance-as-code pipelines enabling rapid SOC2 Type II and FedRAMP readiness.\n• Standardized infrastructure provisioning with reusable Terraform modules across 12 application teams."
+    },
+    {
+      "id": "s006",
+      "canonical": "education",
+      "original_heading": "EDUCATION",
+      "heading_line_id": "l00033",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00034",
+        "l00035"
+      ],
+      "text": "M.S. in Computer Science — University of Colorado Boulder (2017)\nB.S. in Computer Engineering — Colorado State University (2014)"
+    }
+  ],
+  "fields": {
+    "name": {
+      "value": "DARIUS K. VANCE",
+      "confidence": 0.92,
+      "source_line_ids": [
+        "l00019"
+      ]
+    },
+    "emails": [
+      {
+        "value": "darius.vance@example.com",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00004"
+        ],
+        "normalization": "none",
+        "raw": "darius.vance@example.com"
+      }
+    ],
+    "phones": [
+      {
+        "value": "(555) 304-9182",
+        "confidence": 0.7,
+        "source_line_ids": [
+          "l00003"
+        ],
+        "normalized": "+15553049182",
+        "valid": false
+      }
+    ],
+    "urls": [
+      {
+        "value": "github.com/darius-cloud",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00005"
+        ],
+        "kind": "github"
+      },
+      {
+        "value": "linkedin.com/in/dariusvance-dummy",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00006"
+        ],
+        "kind": "linkedin"
+      }
+    ],
+    "locations": [
+      {
+        "value": "Denver, CO",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00002"
+        ]
+      }
+    ],
+    "date_ranges": [
+      {
+        "value": {
+          "start": "2021",
+          "end": "Present"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00025"
+        ],
+        "raw": "2021 – Present"
+      },
+      {
+        "value": {
+          "start": "2017",
+          "end": "2021"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00030"
+        ],
+        "raw": "2017 – 2021"
+      }
+    ],
+    "degrees": [
+      {
+        "value": "M.S. in Computer Science",
+        "confidence": 0.94,
+        "source_line_ids": [
+          "l00034"
+        ]
+      },
+      {
+        "value": "B.S. in Computer Engineering",
+        "confidence": 0.94,
+        "source_line_ids": [
+          "l00035"
+        ]
+      }
+    ],
+    "gpas": [],
+    "skills": [
+      {
+        "value": "Azure",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00008"
+        ],
+        "matched_alias": "Azure"
+      },
+      {
+        "value": "AWS",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00008"
+        ],
+        "matched_alias": "AWS"
+      },
+      {
+        "value": "Kubernetes",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00009"
+        ],
+        "matched_alias": "Kubernetes"
+      },
+      {
+        "value": "Terraform",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00011"
+        ],
+        "matched_alias": "Terraform"
+      },
+      {
+        "value": "GitOps",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00011"
+        ],
+        "matched_alias": "GitOps"
+      },
+      {
+        "value": "ArgoCD",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00011"
+        ],
+        "matched_alias": "ArgoCD"
+      },
+      {
+        "value": "Apache Kafka",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00012"
+        ],
+        "matched_alias": "Kafka"
+      },
+      {
+        "value": "PostgreSQL",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00013"
+        ],
+        "matched_alias": "PostgreSQL"
+      },
+      {
+        "value": "Snowflake",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00013"
+        ],
+        "matched_alias": "Snowflake"
+      },
+      {
+        "value": "Redis",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00013"
+        ],
+        "matched_alias": "Redis"
+      },
+      {
+        "value": "SOC2",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00014"
+        ],
+        "matched_alias": "SOC2"
+      }
+    ],
+    "experience": [
+      {
+        "title": {
+          "value": "Principal Cloud Solutions Architect",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00024"
+          ]
+        },
+        "company": {
+          "value": "StrataCore Cloud Systems",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00025"
+          ]
+        },
+        "location": {
+          "value": "Denver, CO",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00025"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2021",
+            "end": "Present"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00025"
+          ]
+        },
+        "bullets": [
+          "• Directed migration of 140 on-premise microservices to AWS EKS with zero client downtime, reducing annual hosting overhead by $1.8M.",
+          "• Authored disaster recovery strategy achieving RPO < 15 seconds and RTO < 2 minutes across multi-region clusters.",
+          "• Governed engineering standards across 45 platform engineers and SREs."
+        ],
+        "text": "Principal Cloud Solutions Architect\nStrataCore Cloud Systems (Denver, CO) | 2021 – Present\n• Directed migration of 140 on-premise microservices to AWS EKS with zero client downtime, reducing annual hosting overhead by $1.8M.\n• Authored disaster recovery strategy achieving RPO < 15 seconds and RTO < 2 minutes across multi-region clusters.\n• Governed engineering standards across 45 platform engineers and SREs.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00024",
+          "l00025",
+          "l00026",
+          "l00027",
+          "l00028"
+        ]
+      },
+      {
+        "title": {
+          "value": "Lead Infrastructure Architect",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00029"
+          ]
+        },
+        "company": {
+          "value": "Apex Financial Technologies",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00030"
+          ]
+        },
+        "location": {
+          "value": "Boulder, CO",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00030"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2017",
+            "end": "2021"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00030"
+          ]
+        },
+        "bullets": [
+          "• Built automated compliance-as-code pipelines enabling rapid SOC2 Type II and FedRAMP readiness.",
+          "• Standardized infrastructure provisioning with reusable Terraform modules across 12 application teams."
+        ],
+        "text": "Lead Infrastructure Architect\nApex Financial Technologies (Boulder, CO) | 2017 – 2021\n• Built automated compliance-as-code pipelines enabling rapid SOC2 Type II and FedRAMP readiness.\n• Standardized infrastructure provisioning with reusable Terraform modules across 12 application teams.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00029",
+          "l00030",
+          "l00031",
+          "l00032"
+        ]
+      }
+    ]
+  },
+  "structured": {
+    "schema_version": "3.0.0",
+    "section_order": [
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections"
+    ],
+    "entry_order": "source",
+    "contact": {
+      "name": {
+        "value": "DARIUS K. VANCE",
+        "confidence": 0.92,
+        "source_line_ids": [
+          "l00019"
+        ]
+      },
+      "emails": [
+        {
+          "value": "darius.vance@example.com",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00004"
+          ],
+          "normalization": "none",
+          "raw": "darius.vance@example.com"
+        }
+      ],
+      "phones": [
+        {
+          "value": "(555) 304-9182",
+          "confidence": 0.7,
+          "source_line_ids": [
+            "l00003"
+          ],
+          "normalized": "+15553049182",
+          "valid": false
+        }
+      ],
+      "locations": [
+        {
+          "value": "Denver, CO",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00002"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "value": "github.com/darius-cloud",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00005"
+          ],
+          "kind": "github"
+        },
+        {
+          "value": "linkedin.com/in/dariusvance-dummy",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00006"
+          ],
+          "kind": "linkedin"
+        }
+      ]
+    },
+    "summary": [
+      {
+        "text": "Principal Cloud Architect with 11+ years engineering multi-tenant enterprise platforms, cloud migrations, and distributed data fabrics. Orchestrated zero-downtime infrastructure powering $100M+ ARR SaaS portfolios while lowering annual cloud run-rates by 35%.",
+        "source_line_ids": [
+          "l00022"
+        ],
+        "value": "Principal Cloud Architect with 11+ years engineering multi-tenant enterprise platforms, cloud migrations, and distributed data fabrics. Orchestrated zero-downtime infrastructure powering $100M+ ARR SaaS portfolios while lowering annual cloud run-rates by 35%."
+      }
+    ],
+    "experience": [
+      {
+        "title": {
+          "value": "Principal Cloud Solutions Architect",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00024"
+          ]
+        },
+        "company": {
+          "value": "StrataCore Cloud Systems",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00025"
+          ]
+        },
+        "location": {
+          "value": "Denver, CO",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00025"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2021",
+            "end": "Present"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00025"
+          ]
+        },
+        "bullets": [
+          "• Directed migration of 140 on-premise microservices to AWS EKS with zero client downtime, reducing annual hosting overhead by $1.8M.",
+          "• Authored disaster recovery strategy achieving RPO < 15 seconds and RTO < 2 minutes across multi-region clusters.",
+          "• Governed engineering standards across 45 platform engineers and SREs."
+        ],
+        "text": "Principal Cloud Solutions Architect\nStrataCore Cloud Systems (Denver, CO) | 2021 – Present\n• Directed migration of 140 on-premise microservices to AWS EKS with zero client downtime, reducing annual hosting overhead by $1.8M.\n• Authored disaster recovery strategy achieving RPO < 15 seconds and RTO < 2 minutes across multi-region clusters.\n• Governed engineering standards across 45 platform engineers and SREs.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00024",
+          "l00025",
+          "l00026",
+          "l00027",
+          "l00028"
+        ]
+      },
+      {
+        "title": {
+          "value": "Lead Infrastructure Architect",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00029"
+          ]
+        },
+        "company": {
+          "value": "Apex Financial Technologies",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00030"
+          ]
+        },
+        "location": {
+          "value": "Boulder, CO",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00030"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2017",
+            "end": "2021"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00030"
+          ]
+        },
+        "bullets": [
+          "• Built automated compliance-as-code pipelines enabling rapid SOC2 Type II and FedRAMP readiness.",
+          "• Standardized infrastructure provisioning with reusable Terraform modules across 12 application teams."
+        ],
+        "text": "Lead Infrastructure Architect\nApex Financial Technologies (Boulder, CO) | 2017 – 2021\n• Built automated compliance-as-code pipelines enabling rapid SOC2 Type II and FedRAMP readiness.\n• Standardized infrastructure provisioning with reusable Terraform modules across 12 application teams.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00029",
+          "l00030",
+          "l00031",
+          "l00032"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "text": "M.S. in Computer Science — University of Colorado Boulder (2017)",
+        "source_line_ids": [
+          "l00034"
+        ],
+        "degree": {
+          "value": "M.S. in Computer Science",
+          "source_line_ids": [
+            "l00034"
+          ],
+          "confidence": 0.85
+        },
+        "institution": {
+          "value": "University of Colorado Boulder",
+          "source_line_ids": [
+            "l00034"
+          ],
+          "confidence": 0.85
+        },
+        "dates": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "graduation": {
+          "value": "2017",
+          "source_line_ids": [
+            "l00034"
+          ],
+          "confidence": 0.85
+        },
+        "location": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "gpa": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        }
+      },
+      {
+        "text": "B.S. in Computer Engineering — Colorado State University (2014)",
+        "source_line_ids": [
+          "l00035"
+        ],
+        "degree": {
+          "value": "B.S. in Computer Engineering",
+          "source_line_ids": [
+            "l00035"
+          ],
+          "confidence": 0.85
+        },
+        "institution": {
+          "value": "Colorado State University",
+          "source_line_ids": [
+            "l00035"
+          ],
+          "confidence": 0.85
+        },
+        "dates": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "graduation": {
+          "value": "2014",
+          "source_line_ids": [
+            "l00035"
+          ],
+          "confidence": 0.85
+        },
+        "location": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "gpa": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        }
+      }
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "text": "• Cloud: AWS & Azure Cloud",
+        "source_line_ids": [
+          "l00008"
+        ],
+        "category": "Cloud",
+        "items": [
+          "AWS & Azure Cloud"
+        ]
+      },
+      {
+        "text": "• Containers: Kubernetes (EKS)",
+        "source_line_ids": [
+          "l00009"
+        ],
+        "category": "Containers",
+        "items": [
+          "Kubernetes (EKS)"
+        ]
+      },
+      {
+        "text": "• Microservices Architecture",
+        "source_line_ids": [
+          "l00010"
+        ],
+        "category": null,
+        "items": [
+          "Microservices Architecture"
+        ]
+      },
+      {
+        "text": "• Terraform / GitOps (ArgoCD)",
+        "source_line_ids": [
+          "l00011"
+        ],
+        "category": null,
+        "items": [
+          "Terraform / GitOps (ArgoCD)"
+        ]
+      },
+      {
+        "text": "• Kafka & Event-Driven Systems",
+        "source_line_ids": [
+          "l00012"
+        ],
+        "category": null,
+        "items": [
+          "Kafka & Event-Driven Systems"
+        ]
+      },
+      {
+        "text": "• PostgreSQL, Snowflake, Redis",
+        "source_line_ids": [
+          "l00013"
+        ],
+        "category": null,
+        "items": [
+          "PostgreSQL",
+          "Snowflake",
+          "Redis"
+        ]
+      },
+      {
+        "text": "• SOC2 & Cloud Security",
+        "source_line_ids": [
+          "l00014"
+        ],
+        "category": null,
+        "items": [
+          "SOC2 & Cloud Security"
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "text": "• AWS Solutions Architect Pro",
+        "source_line_ids": [
+          "l00016"
+        ],
+        "name": {
+          "value": "AWS Solutions Architect Pro",
+          "source_line_ids": [
+            "l00016"
+          ],
+          "confidence": 0.85
+        },
+        "details": ""
+      },
+      {
+        "text": "• Certified Kubernetes Admin (CKA)",
+        "source_line_ids": [
+          "l00017"
+        ],
+        "name": {
+          "value": "Certified Kubernetes Admin (CKA)",
+          "source_line_ids": [
+            "l00017"
+          ],
+          "confidence": 0.85
+        },
+        "details": ""
+      },
+      {
+        "text": "• HashiCorp Terraform Pro",
+        "source_line_ids": [
+          "l00018"
+        ],
+        "name": {
+          "value": "HashiCorp Terraform Pro",
+          "source_line_ids": [
+            "l00018"
+          ],
+          "confidence": 0.85
+        },
+        "details": ""
+      }
+    ],
+    "other_sections": [],
+    "review": [
+      {
+        "path": "fields.phones[0]",
+        "reason": "missing or low-confidence candidate",
+        "confidence": 0.7
+      }
+    ],
+    "source_sections": [
+      {
+        "id": "s000",
+        "canonical": "contact",
+        "original_heading": "CONTACT",
+        "heading_line_id": "l00000",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00001",
+          "l00002",
+          "l00003",
+          "l00004",
+          "l00005",
+          "l00006"
+        ],
+        "text": "Darius K. Vance\nDenver, CO\n(555) 304-9182\ndarius.vance@example.com\ngithub.com/darius-cloud\nlinkedin.com/in/dariusvance-dummy"
+      },
+      {
+        "id": "s001",
+        "canonical": "skills",
+        "original_heading": "ARCHITECTURE SKILLS",
+        "heading_line_id": "l00007",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00008",
+          "l00009",
+          "l00010",
+          "l00011",
+          "l00012",
+          "l00013",
+          "l00014"
+        ],
+        "text": "• Cloud: AWS & Azure Cloud\n• Containers: Kubernetes (EKS)\n• Microservices Architecture\n• Terraform / GitOps (ArgoCD)\n• Kafka & Event-Driven Systems\n• PostgreSQL, Snowflake, Redis\n• SOC2 & Cloud Security"
+      },
+      {
+        "id": "s002",
+        "canonical": "certifications",
+        "original_heading": "CERTIFICATIONS",
+        "heading_line_id": "l00015",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00016",
+          "l00017",
+          "l00018"
+        ],
+        "text": "• AWS Solutions Architect Pro\n• Certified Kubernetes Admin (CKA)\n• HashiCorp Terraform Pro"
+      },
+      {
+        "id": "s003",
+        "canonical": "preamble",
+        "original_heading": null,
+        "heading_line_id": null,
+        "confidence": 1.0,
+        "line_ids": [
+          "l00019",
+          "l00020"
+        ],
+        "text": "DARIUS K. VANCE\nPRINCIPAL CLOUD ARCHITECT & INFRASTRUCTURE DIRECTOR"
+      },
+      {
+        "id": "s004",
+        "canonical": "summary",
+        "original_heading": "EXECUTIVE SUMMARY",
+        "heading_line_id": "l00021",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00022"
+        ],
+        "text": "Principal Cloud Architect with 11+ years engineering multi-tenant enterprise platforms, cloud migrations, and distributed data fabrics. Orchestrated zero-downtime infrastructure powering $100M+ ARR SaaS portfolios while lowering annual cloud run-rates by 35%."
+      },
+      {
+        "id": "s005",
+        "canonical": "experience",
+        "original_heading": "LEADERSHIP & ARCHITECTURE EXPERIENCE",
+        "heading_line_id": "l00023",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00024",
+          "l00025",
+          "l00026",
+          "l00027",
+          "l00028",
+          "l00029",
+          "l00030",
+          "l00031",
+          "l00032"
+        ],
+        "text": "Principal Cloud Solutions Architect\nStrataCore Cloud Systems (Denver, CO) | 2021 – Present\n• Directed migration of 140 on-premise microservices to AWS EKS with zero client downtime, reducing annual hosting overhead by $1.8M.\n• Authored disaster recovery strategy achieving RPO < 15 seconds and RTO < 2 minutes across multi-region clusters.\n• Governed engineering standards across 45 platform engineers and SREs.\nLead Infrastructure Architect\nApex Financial Technologies (Boulder, CO) | 2017 – 2021\n• Built automated compliance-as-code pipelines enabling rapid SOC2 Type II and FedRAMP readiness.\n• Standardized infrastructure provisioning with reusable Terraform modules across 12 application teams."
+      },
+      {
+        "id": "s006",
+        "canonical": "education",
+        "original_heading": "EDUCATION",
+        "heading_line_id": "l00033",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00034",
+          "l00035"
+        ],
+        "text": "M.S. in Computer Science — University of Colorado Boulder (2017)\nB.S. in Computer Engineering — Colorado State University (2014)"
+      }
+    ]
+  },
+  "needs_review": [
+    {
+      "path": "fields.phones[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.7
+    }
+  ],
+  "quality": {
+    "completeness": {
+      "status": "pass",
+      "reference_words": 217,
+      "extracted_words": 217,
+      "matched_words": 217,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "schema_errors": [],
+    "warnings": [],
+    "suppressed_exact_repeats": []
+  }
+}

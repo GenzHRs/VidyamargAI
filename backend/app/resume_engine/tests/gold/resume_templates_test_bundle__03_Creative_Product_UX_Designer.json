@@ -1,0 +1,82 @@
+{
+  "file": "resume_templates_test_bundle/03_Creative_Product_UX_Designer.docx",
+  "sha256": "4a72c3875570e7aa813cc0fe5c0bb0c59548859f011389924b4eecb362c49e8c",
+  "persona": "marcus",
+  "annotation_origin": "source-reviewed development labels authored for this task; not user gold or held out",
+  "headings": [
+    {
+      "text": "DESIGN PHILOSOPHY & SUMMARY",
+      "canonical": "summary"
+    },
+    {
+      "text": "TOOLKIT & METHODOLOGIES",
+      "canonical": "skills"
+    },
+    {
+      "text": "WORK EXPERIENCE",
+      "canonical": "experience"
+    },
+    {
+      "text": "EDUCATION",
+      "canonical": "education"
+    }
+  ],
+  "fields": {
+    "name": "MARCUS BRODY",
+    "emails": [
+      "m.brody.design@example.com"
+    ],
+    "phones": [
+      "(555) 392-7104"
+    ],
+    "locations": [
+      "New York, NY"
+    ],
+    "urls": [],
+    "date_ranges": [
+      {
+        "start": "Jan 2022",
+        "end": "Present"
+      },
+      {
+        "start": "Jun 2019",
+        "end": "Dec 2021"
+      }
+    ],
+    "degrees": [
+      "B.F.A. in Graphic & Interactive Media Design"
+    ],
+    "gpas": [],
+    "skills": [
+      "Design Systems",
+      "WCAG",
+      "Figma",
+      "Prototyping",
+      "Principle",
+      "Adobe Creative Cloud",
+      "Framer",
+      "User Research",
+      "Journey Mapping",
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "Git"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Lead Product Designer",
+      "company": "Kinetix Health App",
+      "start": "Jan 2022",
+      "end": "Present",
+      "bullet_count": 3
+    },
+    {
+      "title": "Senior UX/UI Designer",
+      "company": "Studio Pixel & Form",
+      "start": "Jun 2019",
+      "end": "Dec 2021",
+      "bullet_count": 2
+    }
+  ]
+}

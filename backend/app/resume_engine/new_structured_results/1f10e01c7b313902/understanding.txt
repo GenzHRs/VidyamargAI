@@ -1,0 +1,381 @@
+PERSONAL_DETAILS
+{
+  "name": {
+    "value": "DEVON M. HASTINGS",
+    "confidence": 0.92,
+    "source_line_ids": [
+      "l00000"
+    ]
+  },
+  "emails": [
+    {
+      "value": "devon.hastings@example.com",
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00004"
+      ],
+      "normalization": "none",
+      "raw": "devon.hastings@example.com"
+    }
+  ],
+  "phones": [
+    {
+      "value": "(555) 839-2041",
+      "confidence": 0.7,
+      "source_line_ids": [
+        "l00003"
+      ],
+      "normalized": "+15558392041",
+      "valid": false
+    }
+  ],
+  "locations": [
+    {
+      "value": "Chicago, IL",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00002"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "value": "linkedin.com/in/devon-hastings-dummy",
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00005"
+      ],
+      "kind": "linkedin"
+    }
+  ],
+  "headline": {
+    "value": "Senior Financial Analyst & Investment Controller",
+    "source_line_ids": [
+      "l00001"
+    ],
+    "confidence": 0.7
+  }
+}
+
+SUMMARY
+[]
+
+EDUCATION
+[
+  {
+    "text": "B.S. in Finance & Accounting | Northwestern University\nGraduated: 2018 | Magna Cum Laude",
+    "source_line_ids": [
+      "l00029",
+      "l00030"
+    ],
+    "degree": {
+      "value": "B.S. in Finance & Accounting",
+      "source_line_ids": [
+        "l00029"
+      ],
+      "confidence": 0.85
+    },
+    "institution": {
+      "value": "Northwestern University",
+      "source_line_ids": [
+        "l00029"
+      ],
+      "confidence": 0.85
+    },
+    "dates": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "graduation": {
+      "value": "2018",
+      "source_line_ids": [
+        "l00030"
+      ],
+      "confidence": 0.85
+    },
+    "location": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "gpa": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "normalized_dates": {
+      "start": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      },
+      "end": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      }
+    }
+  }
+]
+
+WORK_EXPERIENCE
+[
+  {
+    "title": {
+      "value": "Senior FP&A Controller",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00018"
+      ]
+    },
+    "company": {
+      "value": "Sterling Horizon Capital",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00019"
+      ]
+    },
+    "location": {
+      "value": "Chicago, IL",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00019"
+      ]
+    },
+    "dates": {
+      "value": {
+        "start": "2021",
+        "end": "Present"
+      },
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00017"
+      ]
+    },
+    "bullets": [
+      "• Directed quarterly forecast cadence for $180M commercial asset portfolio with 98.4% variance accuracy.",
+      "• Automated monthly executive slide generation via SQL & Power Query, saving 18 manual work-hours per cycle.",
+      "• Assessed financial underwriting for 5 successful acquisitions totaling $44M."
+    ],
+    "text": "2021 – Present\nSenior FP&A Controller\nSterling Horizon Capital (Chicago, IL)\n• Directed quarterly forecast cadence for $180M commercial asset portfolio with 98.4% variance accuracy.\n• Automated monthly executive slide generation via SQL & Power Query, saving 18 manual work-hours per cycle.\n• Assessed financial underwriting for 5 successful acquisitions totaling $44M.",
+    "confidence": 0.88,
+    "source_line_ids": [
+      "l00017",
+      "l00018",
+      "l00019",
+      "l00020",
+      "l00021",
+      "l00022"
+    ],
+    "normalized_dates": {
+      "start": {
+        "raw": "2021",
+        "value": "2021",
+        "precision": "year"
+      },
+      "end": {
+        "raw": "Present",
+        "value": null,
+        "precision": "open"
+      }
+    }
+  },
+  {
+    "title": {
+      "value": "Financial Analyst",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00024"
+      ]
+    },
+    "company": {
+      "value": "Pinnacle Advisory Partners",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00025"
+      ]
+    },
+    "location": {
+      "value": "Milwaukee, WI",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00025"
+      ]
+    },
+    "dates": {
+      "value": {
+        "start": "2018",
+        "end": "2021"
+      },
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00023"
+      ]
+    },
+    "bullets": [
+      "• Maintained 3-statement operating models and liquidity sensitivity stress tests.",
+      "• Streamlined SG&A operational expenditures across 12 branch locations, recovering $1.2M in annual cost leakage."
+    ],
+    "text": "2018 – 2021\nFinancial Analyst\nPinnacle Advisory Partners (Milwaukee, WI)\n• Maintained 3-statement operating models and liquidity sensitivity stress tests.\n• Streamlined SG&A operational expenditures across 12 branch locations, recovering $1.2M in annual cost leakage.",
+    "confidence": 0.88,
+    "source_line_ids": [
+      "l00023",
+      "l00024",
+      "l00025",
+      "l00026",
+      "l00027"
+    ],
+    "normalized_dates": {
+      "start": {
+        "raw": "2018",
+        "value": "2018",
+        "precision": "year"
+      },
+      "end": {
+        "raw": "2021",
+        "value": "2021",
+        "precision": "year"
+      }
+    }
+  }
+]
+
+INTERNSHIPS
+[]
+
+PROJECTS
+[]
+
+SKILLS
+[
+  {
+    "text": "• Financial Modeling (DCF, LBO)",
+    "source_line_ids": [
+      "l00007"
+    ],
+    "category": null,
+    "items": [
+      "Financial Modeling (DCF, LBO)"
+    ]
+  },
+  {
+    "text": "• ERP: SAP S/4HANA & Oracle NetSuite",
+    "source_line_ids": [
+      "l00008"
+    ],
+    "category": "ERP",
+    "items": [
+      "SAP S/4HANA & Oracle NetSuite"
+    ]
+  },
+  {
+    "text": "• US GAAP & IFRS Reporting",
+    "source_line_ids": [
+      "l00009"
+    ],
+    "category": null,
+    "items": [
+      "US GAAP & IFRS Reporting"
+    ]
+  },
+  {
+    "text": "• Budgeting & Multi-Year Forecasting",
+    "source_line_ids": [
+      "l00010"
+    ],
+    "category": null,
+    "items": [
+      "Budgeting & Multi-Year Forecasting"
+    ]
+  },
+  {
+    "text": "• BI & Data: Tableau, Power BI, SQL",
+    "source_line_ids": [
+      "l00011"
+    ],
+    "category": "BI & Data",
+    "items": [
+      "Tableau",
+      "Power BI",
+      "SQL"
+    ]
+  },
+  {
+    "text": "• Capital Allocation & Debt Restructuring",
+    "source_line_ids": [
+      "l00012"
+    ],
+    "category": null,
+    "items": [
+      "Capital Allocation & Debt Restructuring"
+    ]
+  },
+  {
+    "text": "• Variance & P&L Analysis",
+    "source_line_ids": [
+      "l00013"
+    ],
+    "category": null,
+    "items": [
+      "Variance & P&L Analysis"
+    ]
+  },
+  {
+    "text": "• Advanced Excel (VBA, Power Query)",
+    "source_line_ids": [
+      "l00014"
+    ],
+    "category": null,
+    "items": [
+      "Advanced Excel (VBA, Power Query)"
+    ]
+  },
+  {
+    "text": "• M&A Due Diligence & Audit Defense",
+    "source_line_ids": [
+      "l00015"
+    ],
+    "category": null,
+    "items": [
+      "M&A Due Diligence & Audit Defense"
+    ]
+  }
+]
+
+CERTIFICATIONS
+[
+  {
+    "text": "Chartered Financial Analyst (CFA) — Level III Candidate\nActive License / Enrollment",
+    "source_line_ids": [
+      "l00031",
+      "l00032"
+    ],
+    "name": {
+      "value": "Chartered Financial Analyst (CFA) — Level III Candidate",
+      "source_line_ids": [
+        "l00031"
+      ],
+      "confidence": 0.85
+    },
+    "details": "Active License / Enrollment"
+  }
+]
+
+TRAINING
+[]
+
+AWARDS
+[]
+
+PUBLICATIONS
+[]
+
+LANGUAGES
+[]
+
+OTHER_SECTIONS
+[]
+
+UNCLASSIFIED
+[]

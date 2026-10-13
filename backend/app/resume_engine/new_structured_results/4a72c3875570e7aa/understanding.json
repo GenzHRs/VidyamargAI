@@ -1,0 +1,3154 @@
+{
+  "understanding_schema_version": "1.0.0",
+  "engine": "offline_rule_ner",
+  "source": {
+    "filename": "03_Creative_Product_UX_Designer.docx",
+    "sha256": "4a72c3875570e7aa813cc0fe5c0bb0c59548859f011389924b4eecb362c49e8c",
+    "type": "docx",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": null,
+    "reference_method": "docx_xml_text"
+  },
+  "artifact_sha256": "56fd25774c82c907ed21db1d6bb0076e9d3f25a89e6b29fe521257015f8146c6",
+  "section_order": [
+    "personal_details",
+    "summary",
+    "education",
+    "work_experience",
+    "internships",
+    "projects",
+    "skills",
+    "certifications",
+    "training",
+    "awards",
+    "publications",
+    "languages",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "profile": {
+    "personal_details": {
+      "name": {
+        "value": "MARCUS BRODY",
+        "confidence": 0.92,
+        "source_line_ids": [
+          "l00000"
+        ]
+      },
+      "emails": [
+        {
+          "value": "m.brody.design@example.com",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalization": "none",
+          "raw": "New York, NY  •  (555) 392-7104  •  m.brody.design@example.com  •  marcusbrodydesign.example.com  •  dribbble.com/marcusb-dummy"
+        }
+      ],
+      "phones": [
+        {
+          "value": "(555) 392-7104",
+          "confidence": 0.7,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalized": "+15553927104",
+          "valid": false
+        }
+      ],
+      "locations": [
+        {
+          "value": "New York, NY",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00002"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "value": "marcusbrodydesign.example.com",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "kind": "website"
+        },
+        {
+          "value": "dribbble.com/marcusb-dummy",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "kind": "website"
+        }
+      ],
+      "headline": {
+        "value": "Lead Product & UX Designer  •  Design Systems & Mobile Experiences",
+        "source_line_ids": [
+          "l00001"
+        ],
+        "confidence": 0.7
+      }
+    },
+    "summary": [
+      {
+        "text": "Human-centered Lead Product Designer with 6+ years specializing in complex multi-platform SaaS products, consumer mobile apps, and scalable design systems. Expert at translating user empathy and quantitative telemetry into high-converting, intuitive digital journeys. Champion of WCAG 2.1 AA accessibility and cross-functional alignment between engineering and product.",
+        "source_line_ids": [
+          "l00004"
+        ],
+        "value": "Human-centered Lead Product Designer with 6+ years specializing in complex multi-platform SaaS products, consumer mobile apps, and scalable design systems. Expert at translating user empathy and quantitative telemetry into high-converting, intuitive digital journeys. Champion of WCAG 2.1 AA accessibility and cross-functional alignment between engineering and product."
+      }
+    ],
+    "education": [
+      {
+        "text": "B.F.A. in Graphic & Interactive Media Design\nRhode Island School of Design (RISD), 2019",
+        "source_line_ids": [
+          "l00020"
+        ],
+        "degree": {
+          "value": "B.F.A. in Graphic & Interactive Media Design",
+          "source_line_ids": [
+            "l00020"
+          ],
+          "confidence": 0.85
+        },
+        "institution": {
+          "value": "Rhode Island School of Design (RISD)",
+          "source_line_ids": [
+            "l00020"
+          ],
+          "confidence": 0.85
+        },
+        "dates": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "graduation": {
+          "value": "2019",
+          "source_line_ids": [
+            "l00020"
+          ],
+          "confidence": 0.85
+        },
+        "location": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "gpa": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "normalized_dates": {
+          "start": {
+            "raw": null,
+            "value": null,
+            "precision": null
+          },
+          "end": {
+            "raw": null,
+            "value": null,
+            "precision": null
+          }
+        }
+      }
+    ],
+    "work_experience": [
+      {
+        "title": {
+          "value": "Lead Product Designer",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00010"
+          ]
+        },
+        "company": {
+          "value": "Kinetix Health App",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00011"
+          ]
+        },
+        "location": {
+          "value": "New York, NY",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00011"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "Jan 2022",
+            "end": "Present"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00011"
+          ]
+        },
+        "bullets": [
+          "Led end-to-end redesign of patient onboarding flow on iOS and Android, boosting first-week retention by 27% and customer satisfaction (CSAT) to 4.8/5.",
+          "Architected and governed the 'Kinetix Canvas' multi-brand design system with 250+ accessible components, decreasing engineering sprint turnaround by 35%.",
+          "Conducted 45+ bi-weekly moderated user testing sessions, turning qualitative insights into high-impact roadmap bets."
+        ],
+        "text": "Lead Product Designer  |  Kinetix Health App\nJan 2022 – Present  •  New York, NY\nLed end-to-end redesign of patient onboarding flow on iOS and Android, boosting first-week retention by 27% and customer satisfaction (CSAT) to 4.8/5.\nArchitected and governed the 'Kinetix Canvas' multi-brand design system with 250+ accessible components, decreasing engineering sprint turnaround by 35%.\nConducted 45+ bi-weekly moderated user testing sessions, turning qualitative insights into high-impact roadmap bets.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00010",
+          "l00011",
+          "l00012",
+          "l00013",
+          "l00014"
+        ],
+        "normalized_dates": {
+          "start": {
+            "raw": "Jan 2022",
+            "value": "2022-01",
+            "precision": "month"
+          },
+          "end": {
+            "raw": "Present",
+            "value": null,
+            "precision": "open"
+          }
+        }
+      },
+      {
+        "title": {
+          "value": "Senior UX/UI Designer",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00015"
+          ]
+        },
+        "company": {
+          "value": "Studio Pixel & Form",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00016"
+          ]
+        },
+        "location": {
+          "value": "Brooklyn, NY",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00016"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "Jun 2019",
+            "end": "Dec 2021"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00016"
+          ]
+        },
+        "bullets": [
+          "Delivered comprehensive responsive web platforms for 12 fintech and direct-to-consumer clients, winning 2 Webby nominations.",
+          "Facilitated 3-day Design Sprint workshops with client founders and engineering directors to align on MVP features."
+        ],
+        "text": "Senior UX/UI Designer  |  Studio Pixel & Form\nJun 2019 – Dec 2021  •  Brooklyn, NY\nDelivered comprehensive responsive web platforms for 12 fintech and direct-to-consumer clients, winning 2 Webby nominations.\nFacilitated 3-day Design Sprint workshops with client founders and engineering directors to align on MVP features.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00015",
+          "l00016",
+          "l00017",
+          "l00018"
+        ],
+        "normalized_dates": {
+          "start": {
+            "raw": "Jun 2019",
+            "value": "2019-06",
+            "precision": "month"
+          },
+          "end": {
+            "raw": "Dec 2021",
+            "value": "2021-12",
+            "precision": "month"
+          }
+        }
+      }
+    ],
+    "internships": [],
+    "projects": [],
+    "skills": [
+      {
+        "text": "• Design & Prototyping: Figma (Variables, Auto-Layout, Components), Principle, Adobe Creative Cloud, Framer",
+        "source_line_ids": [
+          "l00006"
+        ],
+        "category": "Design & Prototyping",
+        "items": [
+          "Figma (Variables, Auto-Layout, Components)",
+          "Principle",
+          "Adobe Creative Cloud",
+          "Framer"
+        ]
+      },
+      {
+        "text": "• User Research & Testing: UserTesting.com, Maze, Moderated Usability Interviews, Card Sorting, Journey Mapping, Heatmaps",
+        "source_line_ids": [
+          "l00007"
+        ],
+        "category": "User Research & Testing",
+        "items": [
+          "UserTesting.com",
+          "Maze",
+          "Moderated Usability Interviews",
+          "Card Sorting",
+          "Journey Mapping",
+          "Heatmaps"
+        ]
+      },
+      {
+        "text": "• Front-End Knowledge: HTML5, CSS3, Tailwind CSS, Component Architecture, Git workflows",
+        "source_line_ids": [
+          "l00008"
+        ],
+        "category": "Front-End Knowledge",
+        "items": [
+          "HTML5",
+          "CSS3",
+          "Tailwind CSS",
+          "Component Architecture",
+          "Git workflows"
+        ]
+      }
+    ],
+    "certifications": [],
+    "training": [],
+    "awards": [],
+    "publications": [],
+    "languages": [],
+    "other_sections": [],
+    "unassigned_links": []
+  },
+  "entities": [
+    {
+      "id": "e00000",
+      "label": "PERSON",
+      "text": "MARCUS BRODY",
+      "normalized": "MARCUS BRODY",
+      "source_line_id": "l00000",
+      "start": 0,
+      "end": 12,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "preamble_title",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.7
+    },
+    {
+      "id": "e00001",
+      "label": "SKILL",
+      "text": "Design Systems",
+      "normalized": "Design Systems",
+      "source_line_id": "l00001",
+      "start": 31,
+      "end": 45,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00002",
+      "label": "EMAIL",
+      "text": "m.brody.design@example.com",
+      "normalized": "m.brody.design@example.com",
+      "source_line_id": "l00002",
+      "start": 36,
+      "end": 62,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "regex:email",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00003",
+      "label": "PHONE",
+      "text": "(555) 392-7104",
+      "normalized": "(555) 392-7104",
+      "source_line_id": "l00002",
+      "start": 17,
+      "end": 31,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "regex:phone",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00004",
+      "label": "URL",
+      "text": "m.brody",
+      "normalized": "m.brody",
+      "source_line_id": "l00002",
+      "start": 36,
+      "end": 43,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "literal_url",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00005",
+      "label": "URL",
+      "text": "marcusbrodydesign.example.com",
+      "normalized": "marcusbrodydesign.example.com",
+      "source_line_id": "l00002",
+      "start": 67,
+      "end": 96,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "literal_url",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00006",
+      "label": "URL",
+      "text": "dribbble.com/marcusb-dummy",
+      "normalized": "dribbble.com/marcusb-dummy",
+      "source_line_id": "l00002",
+      "start": 101,
+      "end": 127,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "literal_url",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00007",
+      "label": "SKILL",
+      "text": "design systems",
+      "normalized": "Design Systems",
+      "source_line_id": "l00004",
+      "start": 140,
+      "end": 154,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "summary",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00008",
+      "label": "SKILL",
+      "text": "WCAG",
+      "normalized": "WCAG",
+      "source_line_id": "l00004",
+      "start": 280,
+      "end": 284,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "summary",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00009",
+      "label": "SKILL",
+      "text": "Adobe Creative Cloud",
+      "normalized": "Adobe Creative Cloud",
+      "source_line_id": "l00006",
+      "start": 79,
+      "end": 99,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00010",
+      "label": "SKILL",
+      "text": "Prototyping",
+      "normalized": "Prototyping",
+      "source_line_id": "l00006",
+      "start": 11,
+      "end": 22,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00011",
+      "label": "SKILL",
+      "text": "Principle",
+      "normalized": "Principle",
+      "source_line_id": "l00006",
+      "start": 68,
+      "end": 77,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00012",
+      "label": "SKILL",
+      "text": "Framer",
+      "normalized": "Framer",
+      "source_line_id": "l00006",
+      "start": 101,
+      "end": 107,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00013",
+      "label": "SKILL",
+      "text": "Figma",
+      "normalized": "Figma",
+      "source_line_id": "l00006",
+      "start": 24,
+      "end": 29,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00014",
+      "label": "SKILL",
+      "text": "Journey Mapping",
+      "normalized": "Journey Mapping",
+      "source_line_id": "l00007",
+      "start": 96,
+      "end": 111,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00015",
+      "label": "SKILL",
+      "text": "User Research",
+      "normalized": "User Research",
+      "source_line_id": "l00007",
+      "start": 2,
+      "end": 15,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00016",
+      "label": "SKILL",
+      "text": "Tailwind CSS",
+      "normalized": "Tailwind CSS",
+      "source_line_id": "l00008",
+      "start": 36,
+      "end": 48,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00017",
+      "label": "SKILL",
+      "text": "HTML5",
+      "normalized": "HTML",
+      "source_line_id": "l00008",
+      "start": 23,
+      "end": 28,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00018",
+      "label": "SKILL",
+      "text": "CSS3",
+      "normalized": "CSS",
+      "source_line_id": "l00008",
+      "start": 30,
+      "end": 34,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00019",
+      "label": "SKILL",
+      "text": "Git",
+      "normalized": "Git",
+      "source_line_id": "l00008",
+      "start": 74,
+      "end": 77,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00020",
+      "label": "JOB_TITLE",
+      "text": "Lead Product Designer",
+      "normalized": "Lead Product Designer",
+      "source_line_id": "l00010",
+      "start": 0,
+      "end": 21,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "role_header",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.7
+    },
+    {
+      "id": "e00021",
+      "label": "DATE_RANGE",
+      "text": "Jan 2022 – Present",
+      "normalized": "Jan 2022 – Present",
+      "source_line_id": "l00011",
+      "start": 0,
+      "end": 18,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "regex:date_range",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00022",
+      "label": "JOB_TITLE",
+      "text": "Senior UX/UI Designer",
+      "normalized": "Senior UX/UI Designer",
+      "source_line_id": "l00015",
+      "start": 0,
+      "end": 21,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "role_header",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.7
+    },
+    {
+      "id": "e00023",
+      "label": "DATE_RANGE",
+      "text": "Jun 2019 – Dec 2021",
+      "normalized": "Jun 2019 – Dec 2021",
+      "source_line_id": "l00016",
+      "start": 0,
+      "end": 19,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "regex:date_range",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00024",
+      "label": "DEGREE",
+      "text": "B.F.A. in Graphic & Interactive Media Design  ",
+      "normalized": "B.F.A. in Graphic & Interactive Media Design  ",
+      "source_line_id": "l00020",
+      "start": 0,
+      "end": 46,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "education",
+      "rule": "education_degree",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    }
+  ],
+  "records": [
+    {
+      "record_id": "summary:0",
+      "section": "summary",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00004"
+      ],
+      "entity_ids": [
+        "e00007",
+        "e00008"
+      ]
+    },
+    {
+      "record_id": "education:0",
+      "section": "education",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00020"
+      ],
+      "entity_ids": [
+        "e00024"
+      ]
+    },
+    {
+      "record_id": "work_experience:0",
+      "section": "work_experience",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014"
+      ],
+      "entity_ids": [
+        "e00020",
+        "e00021"
+      ]
+    },
+    {
+      "record_id": "work_experience:1",
+      "section": "work_experience",
+      "ordinal": 1,
+      "source_line_ids": [
+        "l00015",
+        "l00016",
+        "l00017",
+        "l00018"
+      ],
+      "entity_ids": [
+        "e00022",
+        "e00023"
+      ]
+    },
+    {
+      "record_id": "skills:0",
+      "section": "skills",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00006"
+      ],
+      "entity_ids": [
+        "e00009",
+        "e00010",
+        "e00011",
+        "e00012",
+        "e00013"
+      ]
+    },
+    {
+      "record_id": "skills:1",
+      "section": "skills",
+      "ordinal": 1,
+      "source_line_ids": [
+        "l00007"
+      ],
+      "entity_ids": [
+        "e00014",
+        "e00015"
+      ]
+    },
+    {
+      "record_id": "skills:2",
+      "section": "skills",
+      "ordinal": 2,
+      "source_line_ids": [
+        "l00008"
+      ],
+      "entity_ids": [
+        "e00016",
+        "e00017",
+        "e00018",
+        "e00019"
+      ]
+    }
+  ],
+  "evidence": {
+    "personal_details.name.value": {
+      "source_refs": [
+        {
+          "line_id": "l00000",
+          "start": 0,
+          "end": 12,
+          "text": "MARCUS BRODY",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.emails[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 36,
+          "end": 62,
+          "text": "m.brody.design@example.com",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.emails[0].normalization": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 127,
+          "text": "New York, NY  •  (555) 392-7104  •  m.brody.design@example.com  •  marcusbrodydesign.example.com  •  dribbble.com/marcusb-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.emails[0].raw": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 127,
+          "text": "New York, NY  •  (555) 392-7104  •  m.brody.design@example.com  •  marcusbrodydesign.example.com  •  dribbble.com/marcusb-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.phones[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 17,
+          "end": 31,
+          "text": "(555) 392-7104",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.phones[0].normalized": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 127,
+          "text": "New York, NY  •  (555) 392-7104  •  m.brody.design@example.com  •  marcusbrodydesign.example.com  •  dribbble.com/marcusb-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.phones[0].valid": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 127,
+          "text": "New York, NY  •  (555) 392-7104  •  m.brody.design@example.com  •  marcusbrodydesign.example.com  •  dribbble.com/marcusb-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.locations[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 12,
+          "text": "New York, NY",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.links[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 67,
+          "end": 96,
+          "text": "marcusbrodydesign.example.com",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.links[0].kind": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 127,
+          "text": "New York, NY  •  (555) 392-7104  •  m.brody.design@example.com  •  marcusbrodydesign.example.com  •  dribbble.com/marcusb-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.links[1].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 101,
+          "end": 127,
+          "text": "dribbble.com/marcusb-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.links[1].kind": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 127,
+          "text": "New York, NY  •  (555) 392-7104  •  m.brody.design@example.com  •  marcusbrodydesign.example.com  •  dribbble.com/marcusb-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.headline.value": {
+      "source_refs": [
+        {
+          "line_id": "l00001",
+          "start": 0,
+          "end": 66,
+          "text": "Lead Product & UX Designer  •  Design Systems & Mobile Experiences",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "summary[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00004",
+          "start": 0,
+          "end": 369,
+          "text": "Human-centered Lead Product Designer with 6+ years specializing in complex multi-platform SaaS products, consumer mobile apps, and scalable design systems. Expert at translating user empathy and quantitative telemetry into high-converting, intuitive digital journeys. Champion of WCAG 2.1 AA accessibility and cross-functional alignment between engineering and product.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "summary[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00004",
+          "start": 0,
+          "end": 369,
+          "text": "Human-centered Lead Product Designer with 6+ years specializing in complex multi-platform SaaS products, consumer mobile apps, and scalable design systems. Expert at translating user empathy and quantitative telemetry into high-converting, intuitive digital journeys. Champion of WCAG 2.1 AA accessibility and cross-functional alignment between engineering and product.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00020",
+          "start": 0,
+          "end": 91,
+          "text": "B.F.A. in Graphic & Interactive Media Design  •  Rhode Island School of Design (RISD), 2019",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].degree.value": {
+      "source_refs": [
+        {
+          "line_id": "l00020",
+          "start": 0,
+          "end": 44,
+          "text": "B.F.A. in Graphic & Interactive Media Design",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].institution.value": {
+      "source_refs": [
+        {
+          "line_id": "l00020",
+          "start": 49,
+          "end": 85,
+          "text": "Rhode Island School of Design (RISD)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].graduation.value": {
+      "source_refs": [
+        {
+          "line_id": "l00020",
+          "start": 87,
+          "end": 91,
+          "text": "2019",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].title.value": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 21,
+          "text": "Lead Product Designer",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].company.value": {
+      "source_refs": [
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 35,
+          "text": "Jan 2022 – Present  •  New York, NY",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].location.value": {
+      "source_refs": [
+        {
+          "line_id": "l00011",
+          "start": 23,
+          "end": 35,
+          "text": "New York, NY",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].dates.value.start": {
+      "source_refs": [
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 8,
+          "text": "Jan 2022",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].dates.value.end": {
+      "source_refs": [
+        {
+          "line_id": "l00011",
+          "start": 11,
+          "end": 18,
+          "text": "Present",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].bullets[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 44,
+          "text": "Lead Product Designer  |  Kinetix Health App",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 35,
+          "text": "Jan 2022 – Present  •  New York, NY",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 150,
+          "text": "Led end-to-end redesign of patient onboarding flow on iOS and Android, boosting first-week retention by 27% and customer satisfaction (CSAT) to 4.8/5.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 153,
+          "text": "Architected and governed the 'Kinetix Canvas' multi-brand design system with 250+ accessible components, decreasing engineering sprint turnaround by 35%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 116,
+          "text": "Conducted 45+ bi-weekly moderated user testing sessions, turning qualitative insights into high-impact roadmap bets.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].bullets[1]": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 44,
+          "text": "Lead Product Designer  |  Kinetix Health App",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 35,
+          "text": "Jan 2022 – Present  •  New York, NY",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 150,
+          "text": "Led end-to-end redesign of patient onboarding flow on iOS and Android, boosting first-week retention by 27% and customer satisfaction (CSAT) to 4.8/5.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 153,
+          "text": "Architected and governed the 'Kinetix Canvas' multi-brand design system with 250+ accessible components, decreasing engineering sprint turnaround by 35%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 116,
+          "text": "Conducted 45+ bi-weekly moderated user testing sessions, turning qualitative insights into high-impact roadmap bets.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].bullets[2]": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 44,
+          "text": "Lead Product Designer  |  Kinetix Health App",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 35,
+          "text": "Jan 2022 – Present  •  New York, NY",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 150,
+          "text": "Led end-to-end redesign of patient onboarding flow on iOS and Android, boosting first-week retention by 27% and customer satisfaction (CSAT) to 4.8/5.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 153,
+          "text": "Architected and governed the 'Kinetix Canvas' multi-brand design system with 250+ accessible components, decreasing engineering sprint turnaround by 35%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 116,
+          "text": "Conducted 45+ bi-weekly moderated user testing sessions, turning qualitative insights into high-impact roadmap bets.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 44,
+          "text": "Lead Product Designer  |  Kinetix Health App",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 35,
+          "text": "Jan 2022 – Present  •  New York, NY",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 150,
+          "text": "Led end-to-end redesign of patient onboarding flow on iOS and Android, boosting first-week retention by 27% and customer satisfaction (CSAT) to 4.8/5.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 153,
+          "text": "Architected and governed the 'Kinetix Canvas' multi-brand design system with 250+ accessible components, decreasing engineering sprint turnaround by 35%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 116,
+          "text": "Conducted 45+ bi-weekly moderated user testing sessions, turning qualitative insights into high-impact roadmap bets.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.start.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 44,
+          "text": "Lead Product Designer  |  Kinetix Health App",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 8,
+          "text": "Jan 2022",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 150,
+          "text": "Led end-to-end redesign of patient onboarding flow on iOS and Android, boosting first-week retention by 27% and customer satisfaction (CSAT) to 4.8/5.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 153,
+          "text": "Architected and governed the 'Kinetix Canvas' multi-brand design system with 250+ accessible components, decreasing engineering sprint turnaround by 35%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 116,
+          "text": "Conducted 45+ bi-weekly moderated user testing sessions, turning qualitative insights into high-impact roadmap bets.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.start.value": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 44,
+          "text": "Lead Product Designer  |  Kinetix Health App",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 35,
+          "text": "Jan 2022 – Present  •  New York, NY",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 150,
+          "text": "Led end-to-end redesign of patient onboarding flow on iOS and Android, boosting first-week retention by 27% and customer satisfaction (CSAT) to 4.8/5.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 153,
+          "text": "Architected and governed the 'Kinetix Canvas' multi-brand design system with 250+ accessible components, decreasing engineering sprint turnaround by 35%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 116,
+          "text": "Conducted 45+ bi-weekly moderated user testing sessions, turning qualitative insights into high-impact roadmap bets.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.start.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 44,
+          "text": "Lead Product Designer  |  Kinetix Health App",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 35,
+          "text": "Jan 2022 – Present  •  New York, NY",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 150,
+          "text": "Led end-to-end redesign of patient onboarding flow on iOS and Android, boosting first-week retention by 27% and customer satisfaction (CSAT) to 4.8/5.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 153,
+          "text": "Architected and governed the 'Kinetix Canvas' multi-brand design system with 250+ accessible components, decreasing engineering sprint turnaround by 35%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 116,
+          "text": "Conducted 45+ bi-weekly moderated user testing sessions, turning qualitative insights into high-impact roadmap bets.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.end.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 44,
+          "text": "Lead Product Designer  |  Kinetix Health App",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 11,
+          "end": 18,
+          "text": "Present",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 150,
+          "text": "Led end-to-end redesign of patient onboarding flow on iOS and Android, boosting first-week retention by 27% and customer satisfaction (CSAT) to 4.8/5.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 153,
+          "text": "Architected and governed the 'Kinetix Canvas' multi-brand design system with 250+ accessible components, decreasing engineering sprint turnaround by 35%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 116,
+          "text": "Conducted 45+ bi-weekly moderated user testing sessions, turning qualitative insights into high-impact roadmap bets.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.end.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 44,
+          "text": "Lead Product Designer  |  Kinetix Health App",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 35,
+          "text": "Jan 2022 – Present  •  New York, NY",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 150,
+          "text": "Led end-to-end redesign of patient onboarding flow on iOS and Android, boosting first-week retention by 27% and customer satisfaction (CSAT) to 4.8/5.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00013",
+          "start": 0,
+          "end": 153,
+          "text": "Architected and governed the 'Kinetix Canvas' multi-brand design system with 250+ accessible components, decreasing engineering sprint turnaround by 35%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 116,
+          "text": "Conducted 45+ bi-weekly moderated user testing sessions, turning qualitative insights into high-impact roadmap bets.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].title.value": {
+      "source_refs": [
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 21,
+          "text": "Senior UX/UI Designer",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].company.value": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 36,
+          "text": "Jun 2019 – Dec 2021  •  Brooklyn, NY",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].location.value": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 24,
+          "end": 36,
+          "text": "Brooklyn, NY",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].dates.value.start": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 8,
+          "text": "Jun 2019",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].dates.value.end": {
+      "source_refs": [
+        {
+          "line_id": "l00016",
+          "start": 11,
+          "end": 19,
+          "text": "Dec 2021",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].bullets[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 45,
+          "text": "Senior UX/UI Designer  |  Studio Pixel & Form",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 36,
+          "text": "Jun 2019 – Dec 2021  •  Brooklyn, NY",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 124,
+          "text": "Delivered comprehensive responsive web platforms for 12 fintech and direct-to-consumer clients, winning 2 Webby nominations.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 114,
+          "text": "Facilitated 3-day Design Sprint workshops with client founders and engineering directors to align on MVP features.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].bullets[1]": {
+      "source_refs": [
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 45,
+          "text": "Senior UX/UI Designer  |  Studio Pixel & Form",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 36,
+          "text": "Jun 2019 – Dec 2021  •  Brooklyn, NY",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 124,
+          "text": "Delivered comprehensive responsive web platforms for 12 fintech and direct-to-consumer clients, winning 2 Webby nominations.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 114,
+          "text": "Facilitated 3-day Design Sprint workshops with client founders and engineering directors to align on MVP features.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].text": {
+      "source_refs": [
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 45,
+          "text": "Senior UX/UI Designer  |  Studio Pixel & Form",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 36,
+          "text": "Jun 2019 – Dec 2021  •  Brooklyn, NY",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 124,
+          "text": "Delivered comprehensive responsive web platforms for 12 fintech and direct-to-consumer clients, winning 2 Webby nominations.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 114,
+          "text": "Facilitated 3-day Design Sprint workshops with client founders and engineering directors to align on MVP features.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.start.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 45,
+          "text": "Senior UX/UI Designer  |  Studio Pixel & Form",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 8,
+          "text": "Jun 2019",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 124,
+          "text": "Delivered comprehensive responsive web platforms for 12 fintech and direct-to-consumer clients, winning 2 Webby nominations.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 114,
+          "text": "Facilitated 3-day Design Sprint workshops with client founders and engineering directors to align on MVP features.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.start.value": {
+      "source_refs": [
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 45,
+          "text": "Senior UX/UI Designer  |  Studio Pixel & Form",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 36,
+          "text": "Jun 2019 – Dec 2021  •  Brooklyn, NY",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 124,
+          "text": "Delivered comprehensive responsive web platforms for 12 fintech and direct-to-consumer clients, winning 2 Webby nominations.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 114,
+          "text": "Facilitated 3-day Design Sprint workshops with client founders and engineering directors to align on MVP features.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.start.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 45,
+          "text": "Senior UX/UI Designer  |  Studio Pixel & Form",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 36,
+          "text": "Jun 2019 – Dec 2021  •  Brooklyn, NY",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 124,
+          "text": "Delivered comprehensive responsive web platforms for 12 fintech and direct-to-consumer clients, winning 2 Webby nominations.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 114,
+          "text": "Facilitated 3-day Design Sprint workshops with client founders and engineering directors to align on MVP features.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.end.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 45,
+          "text": "Senior UX/UI Designer  |  Studio Pixel & Form",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00016",
+          "start": 11,
+          "end": 19,
+          "text": "Dec 2021",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 124,
+          "text": "Delivered comprehensive responsive web platforms for 12 fintech and direct-to-consumer clients, winning 2 Webby nominations.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 114,
+          "text": "Facilitated 3-day Design Sprint workshops with client founders and engineering directors to align on MVP features.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.end.value": {
+      "source_refs": [
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 45,
+          "text": "Senior UX/UI Designer  |  Studio Pixel & Form",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 36,
+          "text": "Jun 2019 – Dec 2021  •  Brooklyn, NY",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 124,
+          "text": "Delivered comprehensive responsive web platforms for 12 fintech and direct-to-consumer clients, winning 2 Webby nominations.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 114,
+          "text": "Facilitated 3-day Design Sprint workshops with client founders and engineering directors to align on MVP features.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.end.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 45,
+          "text": "Senior UX/UI Designer  |  Studio Pixel & Form",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 36,
+          "text": "Jun 2019 – Dec 2021  •  Brooklyn, NY",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 124,
+          "text": "Delivered comprehensive responsive web platforms for 12 fintech and direct-to-consumer clients, winning 2 Webby nominations.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00018",
+          "start": 0,
+          "end": 114,
+          "text": "Facilitated 3-day Design Sprint workshops with client founders and engineering directors to align on MVP features.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00006",
+          "start": 0,
+          "end": 107,
+          "text": "• Design & Prototyping: Figma (Variables, Auto-Layout, Components), Principle, Adobe Creative Cloud, Framer",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].category": {
+      "source_refs": [
+        {
+          "line_id": "l00006",
+          "start": 2,
+          "end": 22,
+          "text": "Design & Prototyping",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00006",
+          "start": 24,
+          "end": 66,
+          "text": "Figma (Variables, Auto-Layout, Components)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].items[1]": {
+      "source_refs": [
+        {
+          "line_id": "l00006",
+          "start": 68,
+          "end": 77,
+          "text": "Principle",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].items[2]": {
+      "source_refs": [
+        {
+          "line_id": "l00006",
+          "start": 79,
+          "end": 99,
+          "text": "Adobe Creative Cloud",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].items[3]": {
+      "source_refs": [
+        {
+          "line_id": "l00006",
+          "start": 101,
+          "end": 107,
+          "text": "Framer",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].text": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 121,
+          "text": "• User Research & Testing: UserTesting.com, Maze, Moderated Usability Interviews, Card Sorting, Journey Mapping, Heatmaps",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].category": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 2,
+          "end": 25,
+          "text": "User Research & Testing",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 27,
+          "end": 42,
+          "text": "UserTesting.com",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].items[1]": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 44,
+          "end": 48,
+          "text": "Maze",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].items[2]": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 50,
+          "end": 80,
+          "text": "Moderated Usability Interviews",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].items[3]": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 82,
+          "end": 94,
+          "text": "Card Sorting",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].items[4]": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 96,
+          "end": 111,
+          "text": "Journey Mapping",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].items[5]": {
+      "source_refs": [
+        {
+          "line_id": "l00007",
+          "start": 113,
+          "end": 121,
+          "text": "Heatmaps",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[2].text": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 87,
+          "text": "• Front-End Knowledge: HTML5, CSS3, Tailwind CSS, Component Architecture, Git workflows",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[2].category": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 2,
+          "end": 21,
+          "text": "Front-End Knowledge",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[2].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 23,
+          "end": 28,
+          "text": "HTML5",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[2].items[1]": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 30,
+          "end": 34,
+          "text": "CSS3",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[2].items[2]": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 36,
+          "end": 48,
+          "text": "Tailwind CSS",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[2].items[3]": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 50,
+          "end": 72,
+          "text": "Component Architecture",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[2].items[4]": {
+      "source_refs": [
+        {
+          "line_id": "l00008",
+          "start": 74,
+          "end": 87,
+          "text": "Git workflows",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    }
+  },
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "MARCUS BRODY\nLead Product & UX Designer  •  Design Systems & Mobile Experiences\nNew York, NY  •  (555) 392-7104  •  m.brody.design@example.com  •  marcusbrodydesign.example.com  •  dribbble.com/marcusb-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "summary",
+      "original_heading": "DESIGN PHILOSOPHY & SUMMARY",
+      "heading_line_id": "l00003",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00004"
+      ],
+      "text": "Human-centered Lead Product Designer with 6+ years specializing in complex multi-platform SaaS products, consumer mobile apps, and scalable design systems. Expert at translating user empathy and quantitative telemetry into high-converting, intuitive digital journeys. Champion of WCAG 2.1 AA accessibility and cross-functional alignment between engineering and product."
+    },
+    {
+      "id": "s002",
+      "canonical": "skills",
+      "original_heading": "TOOLKIT & METHODOLOGIES",
+      "heading_line_id": "l00005",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00006",
+        "l00007",
+        "l00008"
+      ],
+      "text": "• Design & Prototyping: Figma (Variables, Auto-Layout, Components), Principle, Adobe Creative Cloud, Framer\n• User Research & Testing: UserTesting.com, Maze, Moderated Usability Interviews, Card Sorting, Journey Mapping, Heatmaps\n• Front-End Knowledge: HTML5, CSS3, Tailwind CSS, Component Architecture, Git workflows"
+    },
+    {
+      "id": "s003",
+      "canonical": "experience",
+      "original_heading": "WORK EXPERIENCE",
+      "heading_line_id": "l00009",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015",
+        "l00016",
+        "l00017",
+        "l00018"
+      ],
+      "text": "Lead Product Designer  |  Kinetix Health App\nJan 2022 – Present  •  New York, NY\nLed end-to-end redesign of patient onboarding flow on iOS and Android, boosting first-week retention by 27% and customer satisfaction (CSAT) to 4.8/5.\nArchitected and governed the 'Kinetix Canvas' multi-brand design system with 250+ accessible components, decreasing engineering sprint turnaround by 35%.\nConducted 45+ bi-weekly moderated user testing sessions, turning qualitative insights into high-impact roadmap bets.\nSenior UX/UI Designer  |  Studio Pixel & Form\nJun 2019 – Dec 2021  •  Brooklyn, NY\nDelivered comprehensive responsive web platforms for 12 fintech and direct-to-consumer clients, winning 2 Webby nominations.\nFacilitated 3-day Design Sprint workshops with client founders and engineering directors to align on MVP features."
+    },
+    {
+      "id": "s004",
+      "canonical": "education",
+      "original_heading": "EDUCATION",
+      "heading_line_id": "l00019",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00020"
+      ],
+      "text": "B.F.A. in Graphic & Interactive Media Design  •  Rhode Island School of Design (RISD), 2019"
+    }
+  ],
+  "unclassified": [],
+  "raw_lines": [
+    {
+      "id": "l00000",
+      "text": "MARCUS BRODY",
+      "runs": [
+        {
+          "text": "MARCUS BRODY",
+          "bold": true,
+          "size": 22.0,
+          "color": "0F766E",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00000"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00001",
+      "text": "Lead Product & UX Designer  •  Design Systems & Mobile Experiences",
+      "runs": [
+        {
+          "text": "Lead Product & UX Designer  •  Design Systems & Mobile Experiences",
+          "bold": true,
+          "size": 11.0,
+          "color": "374151",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00001"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00002",
+      "text": "New York, NY  •  (555) 392-7104  •  m.brody.design@example.com  •  marcusbrodydesign.example.com  •  dribbble.com/marcusb-dummy",
+      "runs": [
+        {
+          "text": "New York, NY  •  (555) 392-7104  •  m.brody.design@example.com  •  marcusbrodydesign.example.com  •  dribbble.com/marcusb-dummy",
+          "bold": false,
+          "size": 9.0,
+          "color": "6B7280",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00002"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00003",
+      "text": "DESIGN PHILOSOPHY & SUMMARY",
+      "runs": [
+        {
+          "text": "DESIGN PHILOSOPHY & SUMMARY",
+          "bold": true,
+          "size": 10.5,
+          "color": "0F766E",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00003"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00004",
+      "text": "Human-centered Lead Product Designer with 6+ years specializing in complex multi-platform SaaS products, consumer mobile apps, and scalable design systems. Expert at translating user empathy and quantitative telemetry into high-converting, intuitive digital journeys. Champion of WCAG 2.1 AA accessibility and cross-functional alignment between engineering and product.",
+      "runs": [
+        {
+          "text": "Human-centered Lead Product Designer with 6+ years specializing in complex multi-platform SaaS products, consumer mobile apps, and scalable design systems. Expert at translating user empathy and quantitative telemetry into high-converting, intuitive digital journeys. Champion of WCAG 2.1 AA accessibility and cross-functional alignment between engineering and product.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00004"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00005",
+      "text": "TOOLKIT & METHODOLOGIES",
+      "runs": [
+        {
+          "text": "TOOLKIT & METHODOLOGIES",
+          "bold": true,
+          "size": 10.5,
+          "color": "0F766E",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00005"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00006",
+      "text": "• Design & Prototyping: Figma (Variables, Auto-Layout, Components), Principle, Adobe Creative Cloud, Framer",
+      "runs": [
+        {
+          "text": "• Design & Prototyping: ",
+          "bold": true,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        },
+        {
+          "text": "Figma (Variables, Auto-Layout, Components), Principle, Adobe Creative Cloud, Framer",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00006"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00007",
+      "text": "• User Research & Testing: UserTesting.com, Maze, Moderated Usability Interviews, Card Sorting, Journey Mapping, Heatmaps",
+      "runs": [
+        {
+          "text": "• User Research & Testing: ",
+          "bold": true,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        },
+        {
+          "text": "UserTesting.com, Maze, Moderated Usability Interviews, Card Sorting, Journey Mapping, Heatmaps",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00007"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00008",
+      "text": "• Front-End Knowledge: HTML5, CSS3, Tailwind CSS, Component Architecture, Git workflows",
+      "runs": [
+        {
+          "text": "• Front-End Knowledge: ",
+          "bold": true,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        },
+        {
+          "text": "HTML5, CSS3, Tailwind CSS, Component Architecture, Git workflows",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00008"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00009",
+      "text": "WORK EXPERIENCE",
+      "runs": [
+        {
+          "text": "WORK EXPERIENCE",
+          "bold": true,
+          "size": 10.5,
+          "color": "0F766E",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00009"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00010",
+      "text": "Lead Product Designer  |  Kinetix Health App",
+      "runs": [
+        {
+          "text": "Lead Product Designer  |  Kinetix Health App",
+          "bold": true,
+          "size": 10.0,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00010"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00011",
+      "text": "Jan 2022 – Present  •  New York, NY",
+      "runs": [
+        {
+          "text": "Jan 2022 – Present  •  New York, NY",
+          "bold": false,
+          "size": 8.5,
+          "color": "6B7280",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00011"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00012",
+      "text": "Led end-to-end redesign of patient onboarding flow on iOS and Android, boosting first-week retention by 27% and customer satisfaction (CSAT) to 4.8/5.",
+      "runs": [
+        {
+          "text": "Led end-to-end redesign of patient onboarding flow on iOS and Android, boosting first-week retention by 27% and customer satisfaction (CSAT) to 4.8/5.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00012"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00013",
+      "text": "Architected and governed the 'Kinetix Canvas' multi-brand design system with 250+ accessible components, decreasing engineering sprint turnaround by 35%.",
+      "runs": [
+        {
+          "text": "Architected and governed the 'Kinetix Canvas' multi-brand design system with 250+ accessible components, decreasing engineering sprint turnaround by 35%.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00013"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00014",
+      "text": "Conducted 45+ bi-weekly moderated user testing sessions, turning qualitative insights into high-impact roadmap bets.",
+      "runs": [
+        {
+          "text": "Conducted 45+ bi-weekly moderated user testing sessions, turning qualitative insights into high-impact roadmap bets.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00014"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00015",
+      "text": "Senior UX/UI Designer  |  Studio Pixel & Form",
+      "runs": [
+        {
+          "text": "Senior UX/UI Designer  |  Studio Pixel & Form",
+          "bold": true,
+          "size": 10.0,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00015"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00016",
+      "text": "Jun 2019 – Dec 2021  •  Brooklyn, NY",
+      "runs": [
+        {
+          "text": "Jun 2019 – Dec 2021  •  Brooklyn, NY",
+          "bold": false,
+          "size": 8.5,
+          "color": "6B7280",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00016"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00017",
+      "text": "Delivered comprehensive responsive web platforms for 12 fintech and direct-to-consumer clients, winning 2 Webby nominations.",
+      "runs": [
+        {
+          "text": "Delivered comprehensive responsive web platforms for 12 fintech and direct-to-consumer clients, winning 2 Webby nominations.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00017"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00018",
+      "text": "Facilitated 3-day Design Sprint workshops with client founders and engineering directors to align on MVP features.",
+      "runs": [
+        {
+          "text": "Facilitated 3-day Design Sprint workshops with client founders and engineering directors to align on MVP features.",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": "ListBullet",
+      "bullet": true,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00018"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00019",
+      "text": "EDUCATION",
+      "runs": [
+        {
+          "text": "EDUCATION",
+          "bold": true,
+          "size": 10.5,
+          "color": "0F766E",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00019"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00020",
+      "text": "B.F.A. in Graphic & Interactive Media Design  •  Rhode Island School of Design (RISD), 2019",
+      "runs": [
+        {
+          "text": "B.F.A. in Graphic & Interactive Media Design  •  Rhode Island School of Design (RISD), 2019",
+          "bold": false,
+          "size": 9.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml",
+      "table": null,
+      "row": null,
+      "cell": null,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00020"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    }
+  ],
+  "raw_text": "MARCUS BRODY\nLead Product & UX Designer  •  Design Systems & Mobile Experiences\nNew York, NY  •  (555) 392-7104  •  m.brody.design@example.com  •  marcusbrodydesign.example.com  •  dribbble.com/marcusb-dummy\nDESIGN PHILOSOPHY & SUMMARY\nHuman-centered Lead Product Designer with 6+ years specializing in complex multi-platform SaaS products, consumer mobile apps, and scalable design systems. Expert at translating user empathy and quantitative telemetry into high-converting, intuitive digital journeys. Champion of WCAG 2.1 AA accessibility and cross-functional alignment between engineering and product.\nTOOLKIT & METHODOLOGIES\n• Design & Prototyping: Figma (Variables, Auto-Layout, Components), Principle, Adobe Creative Cloud, Framer\n• User Research & Testing: UserTesting.com, Maze, Moderated Usability Interviews, Card Sorting, Journey Mapping, Heatmaps\n• Front-End Knowledge: HTML5, CSS3, Tailwind CSS, Component Architecture, Git workflows\nWORK EXPERIENCE\nLead Product Designer  |  Kinetix Health App\nJan 2022 – Present  •  New York, NY\nLed end-to-end redesign of patient onboarding flow on iOS and Android, boosting first-week retention by 27% and customer satisfaction (CSAT) to 4.8/5.\nArchitected and governed the 'Kinetix Canvas' multi-brand design system with 250+ accessible components, decreasing engineering sprint turnaround by 35%.\nConducted 45+ bi-weekly moderated user testing sessions, turning qualitative insights into high-impact roadmap bets.\nSenior UX/UI Designer  |  Studio Pixel & Form\nJun 2019 – Dec 2021  •  Brooklyn, NY\nDelivered comprehensive responsive web platforms for 12 fintech and direct-to-consumer clients, winning 2 Webby nominations.\nFacilitated 3-day Design Sprint workshops with client founders and engineering directors to align on MVP features.\nEDUCATION\nB.F.A. in Graphic & Interactive Media Design  •  Rhode Island School of Design (RISD), 2019",
+  "validation": {
+    "issues": [],
+    "legacy_schema_errors": [],
+    "completeness": {
+      "status": "pass",
+      "reference_words": 261,
+      "extracted_words": 261,
+      "matched_words": 261,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "semantic_accuracy": "not_established_by_schema_validation"
+  },
+  "review_status": "needs_review",
+  "comparison": {
+    "provided": true,
+    "changed": false,
+    "ground_truth": false
+  }
+}

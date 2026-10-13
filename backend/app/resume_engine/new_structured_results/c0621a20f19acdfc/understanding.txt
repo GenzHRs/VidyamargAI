@@ -1,0 +1,447 @@
+PERSONAL_DETAILS
+{
+  "name": {
+    "value": "NATALIE CHOW, CPA",
+    "confidence": 0.65,
+    "source_line_ids": [
+      "l00000"
+    ]
+  },
+  "emails": [
+    {
+      "value": "natalie.chow.cpa@example.com",
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00004"
+      ],
+      "normalization": "none",
+      "raw": "natalie.chow.cpa@example.com"
+    }
+  ],
+  "phones": [
+    {
+      "value": "(555) 918-2045",
+      "confidence": 0.7,
+      "source_line_ids": [
+        "l00003"
+      ],
+      "normalized": "+15559182045",
+      "valid": false
+    }
+  ],
+  "locations": [
+    {
+      "value": "New York, NY",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00002"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "value": "linkedin.com/in/nataliechow-dummy",
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00005"
+      ],
+      "kind": "linkedin"
+    }
+  ],
+  "headline": {
+    "value": "Senior Corporate Controller & Internal Audit Lead",
+    "source_line_ids": [
+      "l00001"
+    ],
+    "confidence": 0.7
+  }
+}
+
+SUMMARY
+[]
+
+EDUCATION
+[
+  {
+    "text": "B.S. in Accounting & Information Systems\nBoston College — Carroll School of\nManagement\nGraduated Magna\nCum Laude (2018)",
+    "source_line_ids": [
+      "l00047",
+      "l00048",
+      "l00049",
+      "l00050",
+      "l00051"
+    ],
+    "degree": {
+      "value": "B.S. in Accounting & Information Systems",
+      "source_line_ids": [
+        "l00047"
+      ],
+      "confidence": 0.85
+    },
+    "institution": {
+      "value": "Boston College — Carroll School of Management",
+      "source_line_ids": [
+        "l00048",
+        "l00049"
+      ],
+      "confidence": 0.85
+    },
+    "dates": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "graduation": {
+      "value": "2018",
+      "source_line_ids": [
+        "l00051"
+      ],
+      "confidence": 0.85
+    },
+    "location": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "gpa": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "normalized_dates": {
+      "start": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      },
+      "end": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      }
+    }
+  }
+]
+
+WORK_EXPERIENCE
+[
+  {
+    "title": {
+      "value": "Audit Controller",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00025"
+      ]
+    },
+    "company": {
+      "value": "Vanguard Trust Partners",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00026"
+      ]
+    },
+    "location": {
+      "value": "New York, NY",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00027"
+      ]
+    },
+    "dates": {
+      "value": {
+        "start": "2021",
+        "end": "Present"
+      },
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00023",
+        "l00024"
+      ]
+    },
+    "bullets": [
+      "• Supervised end-to-end SOX testing across 12 business units, identifying and remediation 14 material control deficiencies prior to external audit.",
+      "• Led audit engagement with Big 4 firm, resulting in clean unqualified audit opinion 3 consecutive years.",
+      "• Streamlined reconciliation of $4.2B custodial accounts through automated Alteryx workflows."
+    ],
+    "text": "2021 – Present\nAudit Controller\nVanguard Trust Partners\n(New York, NY)\n• Supervised end-to-end SOX testing across 12 business units, identifying and remediation 14 material control deficiencies prior to external audit.\n• Led audit engagement with Big 4 firm, resulting in clean unqualified audit opinion 3 consecutive years.\n• Streamlined reconciliation of $4.2B custodial accounts through automated Alteryx workflows.",
+    "confidence": 0.88,
+    "source_line_ids": [
+      "l00023",
+      "l00024",
+      "l00025",
+      "l00026",
+      "l00027",
+      "l00028",
+      "l00029",
+      "l00030",
+      "l00031",
+      "l00032",
+      "l00033",
+      "l00034"
+    ],
+    "normalized_dates": {
+      "start": {
+        "raw": "2021",
+        "value": "2021",
+        "precision": "year"
+      },
+      "end": {
+        "raw": "Present",
+        "value": null,
+        "precision": "open"
+      }
+    }
+  },
+  {
+    "title": {
+      "value": "Senior Accountant",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00036"
+      ]
+    },
+    "company": {
+      "value": "Deloitte & Touche LLP",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00037"
+      ]
+    },
+    "location": {
+      "value": "Boston, MA",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00038"
+      ]
+    },
+    "dates": {
+      "value": {
+        "start": "2018",
+        "end": "2021"
+      },
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00035"
+      ]
+    },
+    "bullets": [
+      "• Performed statutory financial statement audits for mid-cap publicly listed fintech and healthcare corporations.",
+      "• Executed substantive test procedures over revenue recognition (ASC 606) and goodwill impairment testing."
+    ],
+    "text": "2018 – 2021\nSenior Accountant\nDeloitte & Touche LLP\n(Boston, MA)\n• Performed statutory financial statement audits for mid-cap publicly listed fintech and healthcare corporations.\n• Executed substantive test procedures over revenue recognition (ASC 606) and goodwill impairment testing.",
+    "confidence": 0.88,
+    "source_line_ids": [
+      "l00035",
+      "l00036",
+      "l00037",
+      "l00038",
+      "l00039",
+      "l00040",
+      "l00041",
+      "l00042"
+    ],
+    "normalized_dates": {
+      "start": {
+        "raw": "2018",
+        "value": "2018",
+        "precision": "year"
+      },
+      "end": {
+        "raw": "2021",
+        "value": "2021",
+        "precision": "year"
+      }
+    }
+  }
+]
+
+INTERNSHIPS
+[]
+
+PROJECTS
+[]
+
+SKILLS
+[
+  {
+    "text": "Financial Controls & Audit\n• Sarbanes-Oxley (SOX 404)",
+    "source_line_ids": [
+      "l00007",
+      "l00010"
+    ],
+    "category": "Financial Controls & Audit",
+    "items": [
+      "Sarbanes-Oxley (SOX 404)"
+    ]
+  },
+  {
+    "text": "Financial Controls & Audit\n• Risk & Control Matrices (RCM)",
+    "source_line_ids": [
+      "l00007",
+      "l00011"
+    ],
+    "category": "Financial Controls & Audit",
+    "items": [
+      "Risk & Control Matrices (RCM)"
+    ]
+  },
+  {
+    "text": "Financial Controls & Audit\n• Forensic Audit Investigations",
+    "source_line_ids": [
+      "l00007",
+      "l00012"
+    ],
+    "category": "Financial Controls & Audit",
+    "items": [
+      "Forensic Audit Investigations"
+    ]
+  },
+  {
+    "text": "Tax & Compliance Standards\n• US GAAP & SEC Form 10-K/Q",
+    "source_line_ids": [
+      "l00008",
+      "l00013"
+    ],
+    "category": "Tax & Compliance Standards",
+    "items": [
+      "US GAAP & SEC Form 10-K/Q"
+    ]
+  },
+  {
+    "text": "Tax & Compliance Standards\n• Transfer Pricing Regulation",
+    "source_line_ids": [
+      "l00008",
+      "l00014"
+    ],
+    "category": "Tax & Compliance Standards",
+    "items": [
+      "Transfer Pricing Regulation"
+    ]
+  },
+  {
+    "text": "Tax & Compliance Standards\n• Anti-Money Laundering (AML)",
+    "source_line_ids": [
+      "l00008",
+      "l00015"
+    ],
+    "category": "Tax & Compliance Standards",
+    "items": [
+      "Anti-Money Laundering (AML)"
+    ]
+  },
+  {
+    "text": "Software & Systems\n• Workday Financials",
+    "source_line_ids": [
+      "l00009",
+      "l00016"
+    ],
+    "category": "Software & Systems",
+    "items": [
+      "Workday Financials"
+    ]
+  },
+  {
+    "text": "Software & Systems\n• NetSuite ERP",
+    "source_line_ids": [
+      "l00009",
+      "l00017"
+    ],
+    "category": "Software & Systems",
+    "items": [
+      "NetSuite ERP"
+    ]
+  },
+  {
+    "text": "Software & Systems\n• Alteryx & Advanced SQL",
+    "source_line_ids": [
+      "l00009",
+      "l00018"
+    ],
+    "category": "Software & Systems",
+    "items": [
+      "Alteryx & Advanced SQL"
+    ]
+  }
+]
+
+CERTIFICATIONS
+[
+  {
+    "text": "Certified Public Accountant (CPA)\nAICPA / New York Board of Accountancy\nLicense #83921\n(Active)",
+    "source_line_ids": [
+      "l00052",
+      "l00053",
+      "l00054",
+      "l00055"
+    ],
+    "name": {
+      "value": "Certified Public Accountant (CPA)",
+      "source_line_ids": [
+        "l00052"
+      ],
+      "confidence": 0.85
+    },
+    "details": "AICPA / New York Board of Accountancy License #83921 (Active)"
+  }
+]
+
+TRAINING
+[]
+
+AWARDS
+[]
+
+PUBLICATIONS
+[]
+
+LANGUAGES
+[]
+
+OTHER_SECTIONS
+[]
+
+UNCLASSIFIED
+[
+  {
+    "text": "Dates",
+    "source_line_ids": [
+      "l00020"
+    ],
+    "reason": "No mapped field; retained verbatim"
+  },
+  {
+    "text": "Title & Company",
+    "source_line_ids": [
+      "l00021"
+    ],
+    "reason": "No mapped field; retained verbatim"
+  },
+  {
+    "text": "Key Responsibilities & Quantified Impact",
+    "source_line_ids": [
+      "l00022"
+    ],
+    "reason": "No mapped field; retained verbatim"
+  },
+  {
+    "text": "Degree / Credential",
+    "source_line_ids": [
+      "l00044"
+    ],
+    "reason": "No mapped field; retained verbatim"
+  },
+  {
+    "text": "Institution",
+    "source_line_ids": [
+      "l00045"
+    ],
+    "reason": "No mapped field; retained verbatim"
+  },
+  {
+    "text": "Status / Date",
+    "source_line_ids": [
+      "l00046"
+    ],
+    "reason": "No mapped field; retained verbatim"
+  }
+]

@@ -1,0 +1,224 @@
+{
+  "R08": [
+    [
+      "Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1.",
+      "Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%."
+    ],
+    [
+      "Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).",
+      "Trained 180+ global field sales engineers on solution messaging and pricing tiers."
+    ]
+  ],
+  "R03": [
+    [
+      "Directed migration of 140 on-premise microservices to AWS EKS with zero client downtime, reducing annual hosting overhead by $1.8M.",
+      "Authored disaster recovery strategy achieving RPO < 15 seconds and RTO < 2 minutes across multi-region clusters.",
+      "Governed engineering standards across 45 platform engineers and SREs."
+    ],
+    [
+      "Built automated compliance-as-code pipelines enabling rapid SOC2 Type II and FedRAMP readiness.",
+      "Standardized infrastructure provisioning with reusable Terraform modules across 12 application teams."
+    ]
+  ],
+  "R12": [
+    [
+      "Architected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.",
+      "Decomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.",
+      "Reduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.",
+      "Mentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices."
+    ],
+    [
+      "Built customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.",
+      "Authored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.",
+      "Created reusable UI component library used across 5 internal products, reducing developer delivery time by 30%."
+    ],
+    [
+      "Developed responsive single-page web applications with React and Redux.",
+      "Wrote unit and integration tests achieving 88% overall code test coverage."
+    ]
+  ],
+  "R02": [
+    [
+      "Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.",
+      "Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.",
+      "Managed 4 junior graphic designers, motion animators, and external packaging vendors."
+    ],
+    [
+      "Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.",
+      "Produced digital campaign assets generating 12M+ social media impressions."
+    ]
+  ],
+  "R14": [
+    [
+      "Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support."
+    ]
+  ],
+  "R13": [
+    [
+      "Oversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.",
+      "Instituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.",
+      "Led cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.",
+      "Presented quarterly strategic updates, operational KPIs, and risk evaluations directly to the Executive Committee and Board of Directors."
+    ],
+    [
+      "Spearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.",
+      "Renegotiated key Tier-1 carrier contracts delivering $9.6M in recurring freight savings over a 3-year agreement cycle.",
+      "Achieved OSHA voluntary protection status across all sites, improving team safety records by 64%."
+    ]
+  ],
+  "R20": [
+    [
+      "Conducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.",
+      "Designed and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.",
+      "Facilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal."
+    ],
+    [
+      "Cleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.",
+      "Synthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director."
+    ]
+  ],
+  "R04": [
+    [
+      "Managed $1.1M monthly budget across Meta, Google, TikTok, and Apple Search Ads.",
+      "Built creative testing pipeline producing 40+ iterative ad variations weekly, lowering customer acquisition cost (CAC) by 42%.",
+      "Partnered with product and engineering teams to optimize subscription paywall conversion by 19%."
+    ],
+    [
+      "Scaled e-commerce customer base from 25,000 to 220,000 paying users within 24 months.",
+      "Designed multi-touch attribution model in BigQuery & Tableau to track ROAS across paid, organic, and influencer channels."
+    ]
+  ],
+  "R09": [
+    [
+      "Built GitOps deployment pipelines via ArgoCD, shortening production release cycles from 3 hours to 4 minutes.",
+      "Cut monthly AWS infrastructure spend by 32% ($45,000/mo) through spot instance orchestration and Karpenter autoscaling.",
+      "Designed multi-region failover architecture on AWS across us-east-1 and us-west-2."
+    ],
+    [
+      "Administered 14 production Kubernetes clusters hosting 400+ Docker pods.",
+      "Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce MTTR from 45 mins to 8 mins."
+    ]
+  ],
+  "R11": [
+    [
+      "Governed $22M annual compute budget across AWS and NVIDIA DGX SuperPOD clusters.",
+      "Directed engineering of high-throughput LLM serving stack, cutting model latency by 55%.",
+      "Scaled org from 18 to 72 engineers across ML Systems, Data Platform, and Research."
+    ],
+    [
+      "Built real-time computer vision inference stack operating at 60 FPS on edge hardware.",
+      "Filed 6 patents in neural network quantization and sparse attention mechanisms."
+    ]
+  ],
+  "R05": [
+    [
+      "Spearheaded enterprise transformation plan across 5 regional clinical branches, capturing $11.4M in recurring SG&A; cost savings.",
+      "Standardized clinical procurement workflows, reducing vendor contract turnaround from 35 days to 8 days.",
+      "Reported monthly operating review and corporate risk updates directly to Chief Operating Officer and Board."
+    ],
+    [
+      "Led 7-member management consulting teams advising Fortune 100 enterprise clients on carve-outs and M&A; integration.",
+      "Designed organizational restructurings for global manufacturing companies with 4,000+ employees."
+    ]
+  ],
+  "R18": [
+    [
+      "Led end-to-end redesign of patient onboarding flow on iOS and Android, boosting first-week retention by 27% and customer satisfaction (CSAT) to 4.8/5.",
+      "Architected and governed the 'Kinetix Canvas' multi-brand design system with 250+ accessible components, decreasing engineering sprint turnaround by 35%.",
+      "Conducted 45+ bi-weekly moderated user testing sessions, turning qualitative insights into high-impact roadmap bets."
+    ],
+    [
+      "Delivered comprehensive responsive web platforms for 12 fintech and direct-to-consumer clients, winning 2 Webby nominations.",
+      "Facilitated 3-day Design Sprint workshops with client founders and engineering directors to align on MVP features."
+    ]
+  ],
+  "R10": [
+    [
+      "Supervised end-to-end SOX testing across 12 business units, identifying and remediation 14 material control deficiencies prior to external audit.",
+      "Led audit engagement with Big 4 firm, resulting in clean unqualified audit opinion 3 consecutive years.",
+      "Streamlined reconciliation of $4.2B custodial accounts through automated Alteryx workflows."
+    ],
+    [
+      "Performed statutory financial statement audits for mid-cap publicly listed fintech and healthcare corporations.",
+      "Executed substantive test procedures over revenue recognition (ASC 606) and goodwill impairment testing."
+    ]
+  ],
+  "R17": [
+    [
+      "Oversee operating strategy and continuous performance across 18 manufacturing facilities and 1,200+ personnel worldwide, maintaining direct oversight of a $320M operational budget.",
+      "Instituted standardized Lean manufacturing methodologies that yielded a $28.4M operating cost reduction within 24 months without head-count reduction.",
+      "Led cross-border logistics restructuring through the COVID-19 and post-pandemic disruptions, cutting order fulfillment cycle times from 19 days to 11 days.",
+      "Presented quarterly strategic updates, operational KPIs, and risk evaluations directly to the Executive Committee and Board of Directors."
+    ],
+    [
+      "Spearheaded enterprise-wide rollout of SAP S/4HANA migration across 6 distribution hubs, completed 2 months ahead of schedule and 8% under budget.",
+      "Renegotiated key Tier-1 carrier contracts delivering $9.6M in recurring freight savings over a 3-year agreement cycle.",
+      "Achieved OSHA voluntary protection status across all sites, improving team safety records by 64%."
+    ]
+  ],
+  "R07": [
+    [
+      "Directed quarterly forecast cadence for $180M commercial asset portfolio with 98.4% variance accuracy.",
+      "Automated monthly executive slide generation via SQL & Power Query, saving 18 manual work-hours per cycle.",
+      "Assessed financial underwriting for 5 successful acquisitions totaling $44M."
+    ],
+    [
+      "Maintained 3-statement operating models and liquidity sensitivity stress tests.",
+      "Streamlined SG&A operational expenditures across 12 branch locations, recovering $1.2M in annual cost leakage."
+    ]
+  ],
+  "R06": [
+    [
+      "Architected enterprise monitoring dashboard serving 4,000+ enterprise accounts, increasing Daily Active Users (DAU) by 29%.",
+      "Unified 3 disparate web apps under a single Figma token library, cutting engineering UI handoff churn by 40%.",
+      "Conducted 50+ customer interviews and usability audits with Fortune 500 network administrators."
+    ],
+    [
+      "Led 0-to-1 redesign of data pipeline visualization tools, achieving a System Usability Scale (SUS) score increase from 62 to 84.",
+      "Collaborated daily with frontend engineers in React and Storybook to ensure zero visual regression."
+    ]
+  ],
+  "R16": [
+    [
+      "Architected and deployed a multi-tenant event ingestion pipeline handling 120,000 requests/sec using Go, Apache Kafka, and AWS RDS.",
+      "Decomposed legacy monolithic services into 14 containerized microservices managed on Kubernetes (EKS), reducing deployment cycle time from 5 days to 15 minutes.",
+      "Reduced p99 API latency across public endpoints from 310ms to 48ms via multi-tiered Redis caching and query indexing.",
+      "Mentored team of 8 junior and mid-level software engineers; instituted automated code linting and standard test-driven development (TDD) practices."
+    ],
+    [
+      "Built customer checkout & subscription billing gateway utilizing React, TypeScript, and Stripe APIs, processing $8.2M in annual transactions.",
+      "Authored backend RESTful microservices in Python (FastAPI) and PostgreSQL, maintaining 99.98% service uptime across three regional availability zones.",
+      "Created reusable UI component library used across 5 internal products, reducing developer delivery time by 30%."
+    ],
+    [
+      "Developed responsive single-page web applications with React and Redux.",
+      "Wrote unit and integration tests achieving 88% overall code test coverage."
+    ]
+  ],
+  "R01": [
+    [
+      "Developed AI-powered applications using Python, FastAPI, NLP, LLMs (OpenAI,Gemini), and Retrieval-Augmented Generation (RAG).",
+      "Built scalable REST APIs for AI-based document processing and intelligent automation.",
+      "Integrated OpenAI and Gemini APIs for document summarization and AI workflows using prompt engineering.",
+      "Worked on OCR, NER, embeddings, and data preprocessing for document analysis.",
+      "Developed backend services using FastAPI and PostgreSQL for real-time event-driven processing.",
+      "Collaborated with cross-functional teams to build and deploy production-ready AI solutions."
+    ]
+  ],
+  "R19": [
+    [
+      "Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support."
+    ]
+  ],
+  "R15": [
+    [
+      "Conducted quantitative variance analysis on quarterly retail banking transactions across 45 branches, uncovering $120K in unallocated service charges.",
+      "Designed and published 4 automated Tableau dashboards monitoring daily loan processing throughput, saving operations team 6 manual hours each week.",
+      "Facilitated discovery workshops with 12 business stakeholders to document 35+ user stories and acceptance criteria for a new mobile deposit portal."
+    ],
+    [
+      "Cleaned and reconciled historical vendor invoice data using Excel and SQL, improving catalog data accuracy from 84% to 98%.",
+      "Synthesized warehouse inventory flow bottleneck data and presented actionable findings to Senior Operations Director."
+    ]
+  ]
+}

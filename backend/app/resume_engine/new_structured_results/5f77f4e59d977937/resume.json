@@ -1,0 +1,2661 @@
+{
+  "schema_version": "3.0.0",
+  "source": {
+    "filename": "01_DOCX_Vibrant_Coral_Creative_Resume.docx",
+    "sha256": "5f77f4e59d97793795089e0b99f6f360f55d6f12d75e7af6693fae044d6a2730",
+    "type": "docx",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": null,
+    "reference_method": "docx_xml_text"
+  },
+  "config_sha256": "51e026c7251f9611337e090d4eba61224bb788a0e7eba4dae289ac8670369f38",
+  "raw_text": "MAYA LIN-VAZQUEZ\nSENIOR BRAND DESIGNER & ART DIRECTOR\nLos Angeles, CA  •  (555) 781-9920  •  maya.lin.design@example.com  •  mayadesign.example.studio\nCREATIVE SKILLS\n• Brand Identity & Systems\n• Art Direction & Campaigns\n• Packaging & Print Spec\n• Figma, Illustrator, Photoshop\n• After Effects & Motion\n• Creative Team Mentorship\n• Design Sprint Facilitation\nAWARDS & HONORS\n• 2024 D&AD Wood Pencil\n• 2023 AIGA Design Excellence\n• 2021 Adobe Design Achievement\nEDUCATION\nB.F.A. in Graphic Design\nArtCenter College of Design\nGraduated: 2019 (Honors)\nCREATIVE PROFILE\nAward-winning Senior Brand Designer with 6+ years driving identity redesigns, international omnichannel brand campaigns, and packaging systems for global consumer lifestyle brands. Adept at fusing strategic business goals with striking visual storytelling.\nEXPERIENCE\nSenior Brand Designer\nLumina Creative Studio (Los Angeles, CA) | 2022 – Present\n• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.\n• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.\n• Managed 4 junior graphic designers, motion animators, and external packaging vendors.\nVisual & Packaging Designer\nVerve Labs (San Francisco, CA) | 2019 – 2022\n• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.\n• Produced digital campaign assets generating 12M+ social media impressions.",
+  "source_text": "\n\nMAYA LIN-VAZQUEZ\nSENIOR BRAND DESIGNER & ART DIRECTOR\nLos Angeles, CA  •  (555) 781-9920  •  maya.lin.design@example.com  •  mayadesign.example.studio\n\n\n\n\n\nCREATIVE SKILLS\n\n\n• Brand Identity & Systems\n• Art Direction & Campaigns\n• Packaging & Print Spec\n• Figma, Illustrator, Photoshop\n• After Effects & Motion\n• Creative Team Mentorship\n• Design Sprint Facilitation\n\nAWARDS & HONORS\n\n\n• 2024 D&AD Wood Pencil\n• 2023 AIGA Design Excellence\n• 2021 Adobe Design Achievement\n\nEDUCATION\n\n\nB.F.A. in Graphic Design\nArtCenter College of Design\nGraduated: 2019 (Honors)\n\n\n\nCREATIVE PROFILE\nAward-winning Senior Brand Designer with 6+ years driving identity redesigns, international omnichannel brand campaigns, and packaging systems for global consumer lifestyle brands. Adept at fusing strategic business goals with striking visual storytelling.\n\nEXPERIENCE\n\nSenior Brand Designer\nLumina Creative Studio (Los Angeles, CA) | 2022 – Present\n\n• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.\n\n• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.\n\n• Managed 4 junior graphic designers, motion animators, and external packaging vendors.\n\nVisual & Packaging Designer\nVerve Labs (San Francisco, CA) | 2019 – 2022\n\n• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.\n\n• Produced digital campaign assets generating 12M+ social media impressions.\n\n",
+  "normalized_text": "MAYA LIN-VAZQUEZ\nSENIOR BRAND DESIGNER & ART DIRECTOR\nLos Angeles, CA  •  (555) 781-9920  •  maya.lin.design@example.com  •  mayadesign.example.studio\nCREATIVE SKILLS\n• Brand Identity & Systems\n• Art Direction & Campaigns\n• Packaging & Print Spec\n• Figma, Illustrator, Photoshop\n• After Effects & Motion\n• Creative Team Mentorship\n• Design Sprint Facilitation\nAWARDS & HONORS\n• 2024 D&AD Wood Pencil\n• 2023 AIGA Design Excellence\n• 2021 Adobe Design Achievement\nEDUCATION\nB.F.A. in Graphic Design\nArtCenter College of Design\nGraduated: 2019 (Honors)\nCREATIVE PROFILE\nAward-winning Senior Brand Designer with 6+ years driving identity redesigns, international omnichannel brand campaigns, and packaging systems for global consumer lifestyle brands. Adept at fusing strategic business goals with striking visual storytelling.\nEXPERIENCE\nSenior Brand Designer\nLumina Creative Studio (Los Angeles, CA) | 2022 – Present\n• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.\n• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.\n• Managed 4 junior graphic designers, motion animators, and external packaging vendors.\nVisual & Packaging Designer\nVerve Labs (San Francisco, CA) | 2019 – 2022\n• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.\n• Produced digital campaign assets generating 12M+ social media impressions.",
+  "raw_lines": [
+    {
+      "id": "l00000",
+      "text": "MAYA LIN-VAZQUEZ",
+      "runs": [
+        {
+          "text": "MAYA LIN-VAZQUEZ",
+          "bold": true,
+          "size": 20.0,
+          "color": "FFFFFF",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00000"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00001",
+      "text": "SENIOR BRAND DESIGNER & ART DIRECTOR",
+      "runs": [
+        {
+          "text": "SENIOR BRAND DESIGNER & ART DIRECTOR",
+          "bold": true,
+          "size": 10.0,
+          "color": "FEE2E2",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00001"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00002",
+      "text": "Los Angeles, CA  •  (555) 781-9920  •  maya.lin.design@example.com  •  mayadesign.example.studio",
+      "runs": [
+        {
+          "text": "Los Angeles, CA  •  (555) 781-9920  •  maya.lin.design@example.com  •  mayadesign.example.studio",
+          "bold": false,
+          "size": 8.5,
+          "color": "FFFFFF",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00002"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00003",
+      "text": "CREATIVE SKILLS",
+      "runs": [
+        {
+          "text": "CREATIVE SKILLS",
+          "bold": true,
+          "size": 9.5,
+          "color": "E11D48",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00003"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00004",
+      "text": "• Brand Identity & Systems",
+      "runs": [
+        {
+          "text": "• Brand Identity & Systems",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00004"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00005",
+      "text": "• Art Direction & Campaigns",
+      "runs": [
+        {
+          "text": "• Art Direction & Campaigns",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00005"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00006",
+      "text": "• Packaging & Print Spec",
+      "runs": [
+        {
+          "text": "• Packaging & Print Spec",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00006"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00007",
+      "text": "• Figma, Illustrator, Photoshop",
+      "runs": [
+        {
+          "text": "• Figma, Illustrator, Photoshop",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00007"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00008",
+      "text": "• After Effects & Motion",
+      "runs": [
+        {
+          "text": "• After Effects & Motion",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00008"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00009",
+      "text": "• Creative Team Mentorship",
+      "runs": [
+        {
+          "text": "• Creative Team Mentorship",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00009"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00010",
+      "text": "• Design Sprint Facilitation",
+      "runs": [
+        {
+          "text": "• Design Sprint Facilitation",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00010"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00011",
+      "text": "AWARDS & HONORS",
+      "runs": [
+        {
+          "text": "AWARDS & HONORS",
+          "bold": true,
+          "size": 9.5,
+          "color": "E11D48",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00011"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00012",
+      "text": "• 2024 D&AD Wood Pencil",
+      "runs": [
+        {
+          "text": "• 2024 D&AD Wood Pencil",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00012"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00013",
+      "text": "• 2023 AIGA Design Excellence",
+      "runs": [
+        {
+          "text": "• 2023 AIGA Design Excellence",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00013"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00014",
+      "text": "• 2021 Adobe Design Achievement",
+      "runs": [
+        {
+          "text": "• 2021 Adobe Design Achievement",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00014"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00015",
+      "text": "EDUCATION",
+      "runs": [
+        {
+          "text": "EDUCATION",
+          "bold": true,
+          "size": 9.5,
+          "color": "E11D48",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00015"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00016",
+      "text": "B.F.A. in Graphic Design",
+      "runs": [
+        {
+          "text": "B.F.A. in Graphic Design",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00016"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00017",
+      "text": "ArtCenter College of Design",
+      "runs": [
+        {
+          "text": "ArtCenter College of Design",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00017"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00018",
+      "text": "Graduated: 2019 (Honors)",
+      "runs": [
+        {
+          "text": "Graduated: 2019 (Honors)",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00018"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00019",
+      "text": "CREATIVE PROFILE",
+      "runs": [
+        {
+          "text": "CREATIVE PROFILE",
+          "bold": true,
+          "size": 10.0,
+          "color": "E11D48",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00019"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00020",
+      "text": "Award-winning Senior Brand Designer with 6+ years driving identity redesigns, international omnichannel brand campaigns, and packaging systems for global consumer lifestyle brands. Adept at fusing strategic business goals with striking visual storytelling.",
+      "runs": [
+        {
+          "text": "Award-winning Senior Brand Designer with 6+ years driving identity redesigns, international omnichannel brand campaigns, and packaging systems for global consumer lifestyle brands. Adept at fusing strategic business goals with striking visual storytelling.",
+          "bold": false,
+          "size": 9.0,
+          "color": "1E293B",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00020"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00021",
+      "text": "EXPERIENCE",
+      "runs": [
+        {
+          "text": "EXPERIENCE",
+          "bold": true,
+          "size": 10.0,
+          "color": "E11D48",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00021"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00022",
+      "text": "Senior Brand Designer",
+      "runs": [
+        {
+          "text": "Senior Brand Designer",
+          "bold": true,
+          "size": 9.0,
+          "color": null,
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00022"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00023",
+      "text": "Lumina Creative Studio (Los Angeles, CA) | 2022 – Present",
+      "runs": [
+        {
+          "text": "Lumina Creative Studio (Los Angeles, CA) | 2022 – Present",
+          "bold": true,
+          "size": 9.0,
+          "color": null,
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00023"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00024",
+      "text": "• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.",
+      "runs": [
+        {
+          "text": "• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00024"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00025",
+      "text": "• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.",
+      "runs": [
+        {
+          "text": "• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00025"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00026",
+      "text": "• Managed 4 junior graphic designers, motion animators, and external packaging vendors.",
+      "runs": [
+        {
+          "text": "• Managed 4 junior graphic designers, motion animators, and external packaging vendors.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00026"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00027",
+      "text": "Visual & Packaging Designer",
+      "runs": [
+        {
+          "text": "Visual & Packaging Designer",
+          "bold": true,
+          "size": 9.0,
+          "color": null,
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00027"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00028",
+      "text": "Verve Labs (San Francisco, CA) | 2019 – 2022",
+      "runs": [
+        {
+          "text": "Verve Labs (San Francisco, CA) | 2019 – 2022",
+          "bold": true,
+          "size": 9.0,
+          "color": null,
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00028"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00029",
+      "text": "• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.",
+      "runs": [
+        {
+          "text": "• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00029"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00030",
+      "text": "• Produced digital campaign assets generating 12M+ social media impressions.",
+      "runs": [
+        {
+          "text": "• Produced digital campaign assets generating 12M+ social media impressions.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00030"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    }
+  ],
+  "lines": [
+    {
+      "id": "l00000",
+      "text": "MAYA LIN-VAZQUEZ",
+      "runs": [
+        {
+          "text": "MAYA LIN-VAZQUEZ",
+          "bold": true,
+          "size": 20.0,
+          "color": "FFFFFF",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TITLE",
+      "source_ids": [
+        "l00000"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.92
+    },
+    {
+      "id": "l00001",
+      "text": "SENIOR BRAND DESIGNER & ART DIRECTOR",
+      "runs": [
+        {
+          "text": "SENIOR BRAND DESIGNER & ART DIRECTOR",
+          "bold": true,
+          "size": 10.0,
+          "color": "FEE2E2",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "SUBTITLE",
+      "source_ids": [
+        "l00001"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00002",
+      "text": "Los Angeles, CA  •  (555) 781-9920  •  maya.lin.design@example.com  •  mayadesign.example.studio",
+      "runs": [
+        {
+          "text": "Los Angeles, CA  •  (555) 781-9920  •  maya.lin.design@example.com  •  mayadesign.example.studio",
+          "bold": false,
+          "size": 8.5,
+          "color": "FFFFFF",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00002"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00003",
+      "text": "CREATIVE SKILLS",
+      "runs": [
+        {
+          "text": "CREATIVE SKILLS",
+          "bold": true,
+          "size": 9.5,
+          "color": "E11D48",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00003"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00004",
+      "text": "• Brand Identity & Systems",
+      "runs": [
+        {
+          "text": "• Brand Identity & Systems",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00004"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00005",
+      "text": "• Art Direction & Campaigns",
+      "runs": [
+        {
+          "text": "• Art Direction & Campaigns",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00005"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00006",
+      "text": "• Packaging & Print Spec",
+      "runs": [
+        {
+          "text": "• Packaging & Print Spec",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00006"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00007",
+      "text": "• Figma, Illustrator, Photoshop",
+      "runs": [
+        {
+          "text": "• Figma, Illustrator, Photoshop",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00007"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00008",
+      "text": "• After Effects & Motion",
+      "runs": [
+        {
+          "text": "• After Effects & Motion",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00008"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00009",
+      "text": "• Creative Team Mentorship",
+      "runs": [
+        {
+          "text": "• Creative Team Mentorship",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00009"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00010",
+      "text": "• Design Sprint Facilitation",
+      "runs": [
+        {
+          "text": "• Design Sprint Facilitation",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00010"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00011",
+      "text": "AWARDS & HONORS",
+      "runs": [
+        {
+          "text": "AWARDS & HONORS",
+          "bold": true,
+          "size": 9.5,
+          "color": "E11D48",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00011"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00012",
+      "text": "• 2024 D&AD Wood Pencil",
+      "runs": [
+        {
+          "text": "• 2024 D&AD Wood Pencil",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00012"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00013",
+      "text": "• 2023 AIGA Design Excellence",
+      "runs": [
+        {
+          "text": "• 2023 AIGA Design Excellence",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00013"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00014",
+      "text": "• 2021 Adobe Design Achievement",
+      "runs": [
+        {
+          "text": "• 2021 Adobe Design Achievement",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00014"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00015",
+      "text": "EDUCATION",
+      "runs": [
+        {
+          "text": "EDUCATION",
+          "bold": true,
+          "size": 9.5,
+          "color": "E11D48",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00015"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00016",
+      "text": "B.F.A. in Graphic Design",
+      "runs": [
+        {
+          "text": "B.F.A. in Graphic Design",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00016"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00017",
+      "text": "ArtCenter College of Design",
+      "runs": [
+        {
+          "text": "ArtCenter College of Design",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00017"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00018",
+      "text": "Graduated: 2019 (Honors)",
+      "runs": [
+        {
+          "text": "Graduated: 2019 (Honors)",
+          "bold": false,
+          "size": 8.5,
+          "color": "334155",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00018"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00019",
+      "text": "CREATIVE PROFILE",
+      "runs": [
+        {
+          "text": "CREATIVE PROFILE",
+          "bold": true,
+          "size": 10.0,
+          "color": "E11D48",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00019"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00020",
+      "text": "Award-winning Senior Brand Designer with 6+ years driving identity redesigns, international omnichannel brand campaigns, and packaging systems for global consumer lifestyle brands. Adept at fusing strategic business goals with striking visual storytelling.",
+      "runs": [
+        {
+          "text": "Award-winning Senior Brand Designer with 6+ years driving identity redesigns, international omnichannel brand campaigns, and packaging systems for global consumer lifestyle brands. Adept at fusing strategic business goals with striking visual storytelling.",
+          "bold": false,
+          "size": 9.0,
+          "color": "1E293B",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00020"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00021",
+      "text": "EXPERIENCE",
+      "runs": [
+        {
+          "text": "EXPERIENCE",
+          "bold": true,
+          "size": 10.0,
+          "color": "E11D48",
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "H1",
+      "source_ids": [
+        "l00021"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": 0.98
+    },
+    {
+      "id": "l00022",
+      "text": "Senior Brand Designer",
+      "runs": [
+        {
+          "text": "Senior Brand Designer",
+          "bold": true,
+          "size": 9.0,
+          "color": null,
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00022"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00023",
+      "text": "Lumina Creative Studio (Los Angeles, CA) | 2022 – Present",
+      "runs": [
+        {
+          "text": "Lumina Creative Studio (Los Angeles, CA) | 2022 – Present",
+          "bold": true,
+          "size": 9.0,
+          "color": null,
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00023"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00024",
+      "text": "• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.",
+      "runs": [
+        {
+          "text": "• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00024"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00025",
+      "text": "• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.",
+      "runs": [
+        {
+          "text": "• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00025"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00026",
+      "text": "• Managed 4 junior graphic designers, motion animators, and external packaging vendors.",
+      "runs": [
+        {
+          "text": "• Managed 4 junior graphic designers, motion animators, and external packaging vendors.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00026"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00027",
+      "text": "Visual & Packaging Designer",
+      "runs": [
+        {
+          "text": "Visual & Packaging Designer",
+          "bold": true,
+          "size": 9.0,
+          "color": null,
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00027"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00028",
+      "text": "Verve Labs (San Francisco, CA) | 2019 – 2022",
+      "runs": [
+        {
+          "text": "Verve Labs (San Francisco, CA) | 2019 – 2022",
+          "bold": true,
+          "size": 9.0,
+          "color": null,
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "H2",
+      "source_ids": [
+        "l00028"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00029",
+      "text": "• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.",
+      "runs": [
+        {
+          "text": "• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00029"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00030",
+      "text": "• Produced digital campaign assets generating 12M+ social media impressions.",
+      "runs": [
+        {
+          "text": "• Produced digital campaign assets generating 12M+ social media impressions.",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Century Gothic",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": true,
+      "tag": "BULLET",
+      "source_ids": [
+        "l00030"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    }
+  ],
+  "sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "MAYA LIN-VAZQUEZ\nSENIOR BRAND DESIGNER & ART DIRECTOR\nLos Angeles, CA  •  (555) 781-9920  •  maya.lin.design@example.com  •  mayadesign.example.studio"
+    },
+    {
+      "id": "s001",
+      "canonical": "skills",
+      "original_heading": "CREATIVE SKILLS",
+      "heading_line_id": "l00003",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00004",
+        "l00005",
+        "l00006",
+        "l00007",
+        "l00008",
+        "l00009",
+        "l00010"
+      ],
+      "text": "• Brand Identity & Systems\n• Art Direction & Campaigns\n• Packaging & Print Spec\n• Figma, Illustrator, Photoshop\n• After Effects & Motion\n• Creative Team Mentorship\n• Design Sprint Facilitation"
+    },
+    {
+      "id": "s002",
+      "canonical": "awards",
+      "original_heading": "AWARDS & HONORS",
+      "heading_line_id": "l00011",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00012",
+        "l00013",
+        "l00014"
+      ],
+      "text": "• 2024 D&AD Wood Pencil\n• 2023 AIGA Design Excellence\n• 2021 Adobe Design Achievement"
+    },
+    {
+      "id": "s003",
+      "canonical": "education",
+      "original_heading": "EDUCATION",
+      "heading_line_id": "l00015",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00016",
+        "l00017",
+        "l00018"
+      ],
+      "text": "B.F.A. in Graphic Design\nArtCenter College of Design\nGraduated: 2019 (Honors)"
+    },
+    {
+      "id": "s004",
+      "canonical": "summary",
+      "original_heading": "CREATIVE PROFILE",
+      "heading_line_id": "l00019",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00020"
+      ],
+      "text": "Award-winning Senior Brand Designer with 6+ years driving identity redesigns, international omnichannel brand campaigns, and packaging systems for global consumer lifestyle brands. Adept at fusing strategic business goals with striking visual storytelling."
+    },
+    {
+      "id": "s005",
+      "canonical": "experience",
+      "original_heading": "EXPERIENCE",
+      "heading_line_id": "l00021",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025",
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030"
+      ],
+      "text": "Senior Brand Designer\nLumina Creative Studio (Los Angeles, CA) | 2022 – Present\n• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.\n• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.\n• Managed 4 junior graphic designers, motion animators, and external packaging vendors.\nVisual & Packaging Designer\nVerve Labs (San Francisco, CA) | 2019 – 2022\n• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.\n• Produced digital campaign assets generating 12M+ social media impressions."
+    }
+  ],
+  "fields": {
+    "name": {
+      "value": "MAYA LIN-VAZQUEZ",
+      "confidence": 0.92,
+      "source_line_ids": [
+        "l00000"
+      ]
+    },
+    "emails": [
+      {
+        "value": "maya.lin.design@example.com",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalization": "none",
+        "raw": "Los Angeles, CA  •  (555) 781-9920  •  maya.lin.design@example.com  •  mayadesign.example.studio"
+      }
+    ],
+    "phones": [
+      {
+        "value": "(555) 781-9920",
+        "confidence": 0.7,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalized": "+15557819920",
+        "valid": false
+      }
+    ],
+    "urls": [
+      {
+        "value": "mayadesign.example.studio",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "kind": "website"
+      }
+    ],
+    "locations": [
+      {
+        "value": "Los Angeles, CA",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00002"
+        ]
+      }
+    ],
+    "date_ranges": [
+      {
+        "value": {
+          "start": "2022",
+          "end": "Present"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00023"
+        ],
+        "raw": "2022 – Present"
+      },
+      {
+        "value": {
+          "start": "2019",
+          "end": "2022"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00028"
+        ],
+        "raw": "2019 – 2022"
+      }
+    ],
+    "degrees": [
+      {
+        "value": "B.F.A. in Graphic Design",
+        "confidence": 0.94,
+        "source_line_ids": [
+          "l00016"
+        ]
+      }
+    ],
+    "gpas": [],
+    "skills": [
+      {
+        "value": "Adobe Illustrator",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00007"
+        ],
+        "matched_alias": "Illustrator"
+      },
+      {
+        "value": "Adobe Photoshop",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00007"
+        ],
+        "matched_alias": "Photoshop"
+      },
+      {
+        "value": "Figma",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00007"
+        ],
+        "matched_alias": "Figma"
+      },
+      {
+        "value": "Adobe After Effects",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00008"
+        ],
+        "matched_alias": "After Effects"
+      }
+    ],
+    "experience": [
+      {
+        "title": {
+          "value": "Senior Brand Designer",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00022"
+          ]
+        },
+        "company": {
+          "value": "Lumina Creative Studio",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00023"
+          ]
+        },
+        "location": {
+          "value": "Los Angeles, CA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00023"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2022",
+            "end": "Present"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00023"
+          ]
+        },
+        "bullets": [
+          "• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.",
+          "• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.",
+          "• Managed 4 junior graphic designers, motion animators, and external packaging vendors."
+        ],
+        "text": "Senior Brand Designer\nLumina Creative Studio (Los Angeles, CA) | 2022 – Present\n• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.\n• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.\n• Managed 4 junior graphic designers, motion animators, and external packaging vendors.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00022",
+          "l00023",
+          "l00024",
+          "l00025",
+          "l00026"
+        ]
+      },
+      {
+        "title": {
+          "value": "Visual & Packaging Designer",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00027"
+          ]
+        },
+        "company": {
+          "value": "Verve Labs",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00028"
+          ]
+        },
+        "location": {
+          "value": "San Francisco, CA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00028"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2019",
+            "end": "2022"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00028"
+          ]
+        },
+        "bullets": [
+          "• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.",
+          "• Produced digital campaign assets generating 12M+ social media impressions."
+        ],
+        "text": "Visual & Packaging Designer\nVerve Labs (San Francisco, CA) | 2019 – 2022\n• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.\n• Produced digital campaign assets generating 12M+ social media impressions.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00027",
+          "l00028",
+          "l00029",
+          "l00030"
+        ]
+      }
+    ]
+  },
+  "structured": {
+    "schema_version": "3.0.0",
+    "section_order": [
+      "contact",
+      "summary",
+      "experience",
+      "education",
+      "projects",
+      "skills",
+      "certifications",
+      "other_sections"
+    ],
+    "entry_order": "source",
+    "contact": {
+      "name": {
+        "value": "MAYA LIN-VAZQUEZ",
+        "confidence": 0.92,
+        "source_line_ids": [
+          "l00000"
+        ]
+      },
+      "emails": [
+        {
+          "value": "maya.lin.design@example.com",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalization": "none",
+          "raw": "Los Angeles, CA  •  (555) 781-9920  •  maya.lin.design@example.com  •  mayadesign.example.studio"
+        }
+      ],
+      "phones": [
+        {
+          "value": "(555) 781-9920",
+          "confidence": 0.7,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalized": "+15557819920",
+          "valid": false
+        }
+      ],
+      "locations": [
+        {
+          "value": "Los Angeles, CA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00002"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "value": "mayadesign.example.studio",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "kind": "website"
+        }
+      ]
+    },
+    "summary": [
+      {
+        "text": "Award-winning Senior Brand Designer with 6+ years driving identity redesigns, international omnichannel brand campaigns, and packaging systems for global consumer lifestyle brands. Adept at fusing strategic business goals with striking visual storytelling.",
+        "source_line_ids": [
+          "l00020"
+        ],
+        "value": "Award-winning Senior Brand Designer with 6+ years driving identity redesigns, international omnichannel brand campaigns, and packaging systems for global consumer lifestyle brands. Adept at fusing strategic business goals with striking visual storytelling."
+      }
+    ],
+    "experience": [
+      {
+        "title": {
+          "value": "Senior Brand Designer",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00022"
+          ]
+        },
+        "company": {
+          "value": "Lumina Creative Studio",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00023"
+          ]
+        },
+        "location": {
+          "value": "Los Angeles, CA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00023"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2022",
+            "end": "Present"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00023"
+          ]
+        },
+        "bullets": [
+          "• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.",
+          "• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.",
+          "• Managed 4 junior graphic designers, motion animators, and external packaging vendors."
+        ],
+        "text": "Senior Brand Designer\nLumina Creative Studio (Los Angeles, CA) | 2022 – Present\n• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.\n• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.\n• Managed 4 junior graphic designers, motion animators, and external packaging vendors.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00022",
+          "l00023",
+          "l00024",
+          "l00025",
+          "l00026"
+        ]
+      },
+      {
+        "title": {
+          "value": "Visual & Packaging Designer",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00027"
+          ]
+        },
+        "company": {
+          "value": "Verve Labs",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00028"
+          ]
+        },
+        "location": {
+          "value": "San Francisco, CA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00028"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2019",
+            "end": "2022"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00028"
+          ]
+        },
+        "bullets": [
+          "• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.",
+          "• Produced digital campaign assets generating 12M+ social media impressions."
+        ],
+        "text": "Visual & Packaging Designer\nVerve Labs (San Francisco, CA) | 2019 – 2022\n• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.\n• Produced digital campaign assets generating 12M+ social media impressions.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00027",
+          "l00028",
+          "l00029",
+          "l00030"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "text": "B.F.A. in Graphic Design\nArtCenter College of Design\nGraduated: 2019 (Honors)",
+        "source_line_ids": [
+          "l00016",
+          "l00017",
+          "l00018"
+        ],
+        "degree": {
+          "value": "B.F.A. in Graphic Design",
+          "source_line_ids": [
+            "l00016"
+          ],
+          "confidence": 0.85
+        },
+        "institution": {
+          "value": "ArtCenter College of Design",
+          "source_line_ids": [
+            "l00017"
+          ],
+          "confidence": 0.85
+        },
+        "dates": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "graduation": {
+          "value": "2019",
+          "source_line_ids": [
+            "l00018"
+          ],
+          "confidence": 0.85
+        },
+        "location": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "gpa": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        }
+      }
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "text": "• Brand Identity & Systems",
+        "source_line_ids": [
+          "l00004"
+        ],
+        "category": null,
+        "items": [
+          "Brand Identity & Systems"
+        ]
+      },
+      {
+        "text": "• Art Direction & Campaigns",
+        "source_line_ids": [
+          "l00005"
+        ],
+        "category": null,
+        "items": [
+          "Art Direction & Campaigns"
+        ]
+      },
+      {
+        "text": "• Packaging & Print Spec",
+        "source_line_ids": [
+          "l00006"
+        ],
+        "category": null,
+        "items": [
+          "Packaging & Print Spec"
+        ]
+      },
+      {
+        "text": "• Figma, Illustrator, Photoshop",
+        "source_line_ids": [
+          "l00007"
+        ],
+        "category": null,
+        "items": [
+          "Figma",
+          "Illustrator",
+          "Photoshop"
+        ]
+      },
+      {
+        "text": "• After Effects & Motion",
+        "source_line_ids": [
+          "l00008"
+        ],
+        "category": null,
+        "items": [
+          "After Effects & Motion"
+        ]
+      },
+      {
+        "text": "• Creative Team Mentorship",
+        "source_line_ids": [
+          "l00009"
+        ],
+        "category": null,
+        "items": [
+          "Creative Team Mentorship"
+        ]
+      },
+      {
+        "text": "• Design Sprint Facilitation",
+        "source_line_ids": [
+          "l00010"
+        ],
+        "category": null,
+        "items": [
+          "Design Sprint Facilitation"
+        ]
+      }
+    ],
+    "certifications": [],
+    "other_sections": [
+      {
+        "canonical": "awards",
+        "original_heading": "AWARDS & HONORS",
+        "text": "• 2024 D&AD Wood Pencil\n• 2023 AIGA Design Excellence\n• 2021 Adobe Design Achievement",
+        "source_line_ids": [
+          "l00012",
+          "l00013",
+          "l00014"
+        ]
+      }
+    ],
+    "review": [
+      {
+        "path": "fields.phones[0]",
+        "reason": "missing or low-confidence candidate",
+        "confidence": 0.7
+      }
+    ],
+    "source_sections": [
+      {
+        "id": "s000",
+        "canonical": "preamble",
+        "original_heading": null,
+        "heading_line_id": null,
+        "confidence": 1.0,
+        "line_ids": [
+          "l00000",
+          "l00001",
+          "l00002"
+        ],
+        "text": "MAYA LIN-VAZQUEZ\nSENIOR BRAND DESIGNER & ART DIRECTOR\nLos Angeles, CA  •  (555) 781-9920  •  maya.lin.design@example.com  •  mayadesign.example.studio"
+      },
+      {
+        "id": "s001",
+        "canonical": "skills",
+        "original_heading": "CREATIVE SKILLS",
+        "heading_line_id": "l00003",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00004",
+          "l00005",
+          "l00006",
+          "l00007",
+          "l00008",
+          "l00009",
+          "l00010"
+        ],
+        "text": "• Brand Identity & Systems\n• Art Direction & Campaigns\n• Packaging & Print Spec\n• Figma, Illustrator, Photoshop\n• After Effects & Motion\n• Creative Team Mentorship\n• Design Sprint Facilitation"
+      },
+      {
+        "id": "s002",
+        "canonical": "awards",
+        "original_heading": "AWARDS & HONORS",
+        "heading_line_id": "l00011",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00012",
+          "l00013",
+          "l00014"
+        ],
+        "text": "• 2024 D&AD Wood Pencil\n• 2023 AIGA Design Excellence\n• 2021 Adobe Design Achievement"
+      },
+      {
+        "id": "s003",
+        "canonical": "education",
+        "original_heading": "EDUCATION",
+        "heading_line_id": "l00015",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00016",
+          "l00017",
+          "l00018"
+        ],
+        "text": "B.F.A. in Graphic Design\nArtCenter College of Design\nGraduated: 2019 (Honors)"
+      },
+      {
+        "id": "s004",
+        "canonical": "summary",
+        "original_heading": "CREATIVE PROFILE",
+        "heading_line_id": "l00019",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00020"
+        ],
+        "text": "Award-winning Senior Brand Designer with 6+ years driving identity redesigns, international omnichannel brand campaigns, and packaging systems for global consumer lifestyle brands. Adept at fusing strategic business goals with striking visual storytelling."
+      },
+      {
+        "id": "s005",
+        "canonical": "experience",
+        "original_heading": "EXPERIENCE",
+        "heading_line_id": "l00021",
+        "confidence": 0.98,
+        "line_ids": [
+          "l00022",
+          "l00023",
+          "l00024",
+          "l00025",
+          "l00026",
+          "l00027",
+          "l00028",
+          "l00029",
+          "l00030"
+        ],
+        "text": "Senior Brand Designer\nLumina Creative Studio (Los Angeles, CA) | 2022 – Present\n• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.\n• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.\n• Managed 4 junior graphic designers, motion animators, and external packaging vendors.\nVisual & Packaging Designer\nVerve Labs (San Francisco, CA) | 2019 – 2022\n• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.\n• Produced digital campaign assets generating 12M+ social media impressions."
+      }
+    ]
+  },
+  "needs_review": [
+    {
+      "path": "fields.phones[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.7
+    }
+  ],
+  "quality": {
+    "completeness": {
+      "status": "pass",
+      "reference_words": 197,
+      "extracted_words": 197,
+      "matched_words": 197,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "schema_errors": [],
+    "warnings": [],
+    "suppressed_exact_repeats": []
+  }
+}

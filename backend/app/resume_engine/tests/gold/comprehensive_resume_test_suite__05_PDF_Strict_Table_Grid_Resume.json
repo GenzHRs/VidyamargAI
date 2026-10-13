@@ -1,0 +1,74 @@
+{
+  "file": "comprehensive_resume_test_suite/05_PDF_Strict_Table_Grid_Resume.pdf",
+  "sha256": "c0621a20f19acdfc3e731f6db1768795081d7314d2adb69983b15fdfb91c6186",
+  "persona": "natalie",
+  "annotation_origin": "source-reviewed development labels authored for this task; not user gold or held out",
+  "headings": [
+    {
+      "text": "CORE COMPETENCIES & AUDIT CAPABILITIES",
+      "canonical": "skills"
+    },
+    {
+      "text": "PROFESSIONAL AUDIT & ACCOUNTING EXPERIENCE",
+      "canonical": "experience"
+    },
+    {
+      "text": "EDUCATION & CREDENTIALS",
+      "canonical": "education"
+    }
+  ],
+  "fields": {
+    "name": "NATALIE CHOW, CPA",
+    "emails": [
+      "natalie.chow.cpa@example.com"
+    ],
+    "phones": [
+      "(555) 918-2045"
+    ],
+    "locations": [
+      "New York, NY"
+    ],
+    "urls": [
+      "linkedin.com/in/nataliechow-dummy"
+    ],
+    "date_ranges": [
+      {
+        "start": "2021",
+        "end": "Present"
+      },
+      {
+        "start": "2018",
+        "end": "2021"
+      }
+    ],
+    "degrees": [
+      "B.S. in Accounting & Information Systems"
+    ],
+    "gpas": [],
+    "skills": [
+      "SOX",
+      "GAAP",
+      "AML",
+      "Workday",
+      "Oracle NetSuite",
+      "Alteryx",
+      "SQL"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Audit Controller",
+      "company": "Vanguard Trust Partners",
+      "start": "2021",
+      "end": "Present",
+      "bullet_count": 3
+    },
+    {
+      "title": "Senior Accountant",
+      "company": "Deloitte & Touche LLP",
+      "start": "2018",
+      "end": "2021",
+      "bullet_count": 2
+    }
+  ]
+}

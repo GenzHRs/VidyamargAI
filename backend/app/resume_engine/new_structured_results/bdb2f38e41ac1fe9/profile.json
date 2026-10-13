@@ -1,0 +1,1254 @@
+{
+  "mapping_schema_version": "1.0.0",
+  "record_id": "562d010bf444512317e1f298be20795644eed8dda6edf5a4872d03b51229b1dc",
+  "document_id": "bdb2f38e41ac1fe979557ef27f8c98ba3a1f312e5b99e8f117d120a90b7cb826",
+  "candidate_id": null,
+  "extraction_id": "4cb015bef91b685c4ab7dede8181274c65bbe4b407146812e2d5c269f14b9897",
+  "mapper_sha256": "99064aec1206cbb49df51cf0e73a239fd615aee01b0aa7e99c2aa2d2a3479451",
+  "source": {
+    "filename": "Jayavarapu-Siva-Tejachary-AIML.pdf",
+    "sha256": "bdb2f38e41ac1fe979557ef27f8c98ba3a1f312e5b99e8f117d120a90b7cb826",
+    "type": "pdf",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": 1,
+    "reference_method": "pdftotext_raw"
+  },
+  "section_order": [
+    "contact",
+    "summary",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "certifications",
+    "publications",
+    "awards",
+    "metrics",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "profile": {
+    "contact": {
+      "full_name": "JAYAVARAPU SIVA TEJACHARY",
+      "headline": "AI/ML Engineer",
+      "emails": [
+        "j.shivachary@gmail.com"
+      ],
+      "phones": [
+        {
+          "raw": "+91-9866862016",
+          "normalized": "+919866862016",
+          "valid": true
+        }
+      ],
+      "locations": [],
+      "links": [
+        "https://www.linkedin.com/in/jayavarapu-siva-tejachary",
+        "https://github.com/sivatejachary"
+      ]
+    },
+    "summary": [
+      "AI/ML Engineer with 2 years of experience developing scalable AI applications using Python, FastAPI, NLP, Large Language Models (OpenAI, Gemini), and Retrieval-Augmented Generation (RAG). Skilled in backend API development, machine learning pipelines, and intelligent automation solutions."
+    ],
+    "experience": [
+      {
+        "source_text": "AI/ML Engineer June 2024 – Present\nAvataa Solutions Pvt. Ltd. Hyderabad, India\n– Developed AI-powered applications using Python, FastAPI, NLP, LLMs (OpenAI,Gemini), and Retrieval-Augmented Generation (RAG).\n– Built scalable REST APIs for AI-based document processing and intelligent automation.\n– Integrated OpenAI and Gemini APIs for document summarization and AI workflows using prompt engineering.\n– Worked on OCR, NER, embeddings, and data preprocessing for document analysis.\n– Developed backend services using FastAPI and PostgreSQL for real-time event-driven processing.\n– Collaborated with cross-functional teams to build and deploy production-ready AI solutions.",
+        "source_line_ids": [
+          "l00016",
+          "l00017",
+          "l00018",
+          "l00019",
+          "l00020",
+          "l00021",
+          "l00022",
+          "l00023",
+          "l00024"
+        ],
+        "ordinal": 0,
+        "title": "AI/ML Engineer",
+        "company": "Avataa Solutions Pvt. Ltd.",
+        "location": "Hyderabad, India",
+        "dates": {
+          "start": {
+            "raw": "June 2024",
+            "normalized": "2024-06",
+            "precision": "month"
+          },
+          "end": {
+            "raw": "Present",
+            "normalized": null,
+            "precision": "open"
+          },
+          "ongoing_as_reported": true
+        },
+        "bullets": [
+          "Developed AI-powered applications using Python, FastAPI, NLP, LLMs (OpenAI,Gemini), and Retrieval-Augmented Generation (RAG).",
+          "Built scalable REST APIs for AI-based document processing and intelligent automation.",
+          "Integrated OpenAI and Gemini APIs for document summarization and AI workflows using prompt engineering.",
+          "Worked on OCR, NER, embeddings, and data preprocessing for document analysis.",
+          "Developed backend services using FastAPI and PostgreSQL for real-time event-driven processing.",
+          "Collaborated with cross-functional teams to build and deploy production-ready AI solutions."
+        ],
+        "links": [],
+        "work_mode": null
+      }
+    ],
+    "education": [
+      {
+        "source_text": "B.Tech in Computer Science and Engineering\nChalapathi Institute of Engineering and Technology, Guntur, Andhra Pradesh\nSep 2020 – Apr 2024\nCGPA: 7.9 / 10",
+        "source_line_ids": [
+          "l00047",
+          "l00048",
+          "l00049",
+          "l00050"
+        ],
+        "ordinal": 0,
+        "degree": "B.Tech in Computer Science and Engineering",
+        "institution": "Chalapathi Institute of Engineering and Technology",
+        "location": "Guntur, Andhra Pradesh",
+        "dates": {
+          "start": {
+            "raw": "Sep 2020",
+            "normalized": "2020-09",
+            "precision": "month"
+          },
+          "end": {
+            "raw": "Apr 2024",
+            "normalized": "2024-04",
+            "precision": "month"
+          },
+          "ongoing_as_reported": false
+        },
+        "graduation": {
+          "raw": null,
+          "normalized": null,
+          "precision": null
+        },
+        "gpa": {
+          "score": "7.9",
+          "scale": "10"
+        },
+        "dissertation_or_thesis": null
+      }
+    ],
+    "projects": [
+      {
+        "source_text": "Enterprise RAG Platform Jan 2026 – Present\nTech: Python, FastAPI, LangChain, LangGraph, OpenAI, Qdrant, PostgreSQL, Azure Document Intelligence\n– Built an AI platform to chat with company PDF and Word documents using RAG.\n– Extracted text and tables from documents, generated embeddings, and stored them in Qdrant for semantic search.\n– Used LangChain for the RAG pipeline, LangGraph for workflow management.",
+        "source_line_ids": [
+          "l00026",
+          "l00027",
+          "l00028",
+          "l00029",
+          "l00030"
+        ],
+        "ordinal": 0,
+        "name": "Enterprise RAG Platform",
+        "dates": {
+          "start": {
+            "raw": "Jan 2026",
+            "normalized": "2026-01",
+            "precision": "month"
+          },
+          "end": {
+            "raw": "Present",
+            "normalized": null,
+            "precision": "open"
+          },
+          "ongoing_as_reported": true
+        },
+        "bullets": [
+          "Built an AI platform to chat with company PDF and Word documents using RAG.",
+          "Extracted text and tables from documents, generated embeddings, and stored them in Qdrant for semantic search.",
+          "Used LangChain for the RAG pipeline, LangGraph for workflow management."
+        ],
+        "links": [],
+        "description": "Tech: Python, FastAPI, LangChain, LangGraph, OpenAI, Qdrant, PostgreSQL, Azure Document Intelligence Built an AI platform to chat with company PDF and Word documents using RAG. Extracted text and tables from documents, generated embeddings, and stored them in Qdrant for semantic search. Used LangChain for the RAG pipeline, LangGraph for workflow management.",
+        "technologies": [
+          "Python",
+          "FastAPI",
+          "LangChain",
+          "LangGraph",
+          "OpenAI",
+          "Qdrant",
+          "PostgreSQL",
+          "Azure Document Intelligence"
+        ]
+      },
+      {
+        "source_text": "Enterprise Document AI & Compliance Automation Oct 2024 – Jan 2026\nTech: FastAPI, Python, PostgreSQL, Azure OCR, NER, Gemini LLM\n– Built an AI system to extract invoice data from scanned PDFs using Azure OCR and NER.\n– Integrated Gemini LLM and developed FastAPI APIs for document processing and compliance automation.\n– Reduced manual document review effort by 70–85% through AI-powered automation.",
+        "source_line_ids": [
+          "l00031",
+          "l00032",
+          "l00033",
+          "l00034",
+          "l00035"
+        ],
+        "ordinal": 1,
+        "name": "Enterprise Document AI & Compliance Automation",
+        "dates": {
+          "start": {
+            "raw": "Oct 2024",
+            "normalized": "2024-10",
+            "precision": "month"
+          },
+          "end": {
+            "raw": "Jan 2026",
+            "normalized": "2026-01",
+            "precision": "month"
+          },
+          "ongoing_as_reported": false
+        },
+        "bullets": [
+          "Built an AI system to extract invoice data from scanned PDFs using Azure OCR and NER.",
+          "Integrated Gemini LLM and developed FastAPI APIs for document processing and compliance automation.",
+          "Reduced manual document review effort by 70–85% through AI-powered automation."
+        ],
+        "links": [],
+        "description": "Tech: FastAPI, Python, PostgreSQL, Azure OCR, NER, Gemini LLM Built an AI system to extract invoice data from scanned PDFs using Azure OCR and NER. Integrated Gemini LLM and developed FastAPI APIs for document processing and compliance automation. Reduced manual document review effort by 70–85% through AI-powered automation.",
+        "technologies": [
+          "FastAPI",
+          "Python",
+          "PostgreSQL",
+          "Azure OCR",
+          "NER",
+          "Gemini LLM"
+        ]
+      },
+      {
+        "source_text": "AI Resume Screening System Aug 2024 – Sept 2024\nTech: Python, NLP, FastAPI, Transformers\n– Built an NLP-based resume screening system using TF-IDF and embeddings to analyze 500+ resumes.\n– Developed a ranking algorithm with 85%+ matching accuracy, reducing manual screening by 60%.\n– Developed FastAPI APIs for real-time resume processing.",
+        "source_line_ids": [
+          "l00036",
+          "l00037",
+          "l00038",
+          "l00039",
+          "l00040"
+        ],
+        "ordinal": 2,
+        "name": "AI Resume Screening System",
+        "dates": {
+          "start": {
+            "raw": "Aug 2024",
+            "normalized": "2024-08",
+            "precision": "month"
+          },
+          "end": {
+            "raw": "Sept 2024",
+            "normalized": "2024-09",
+            "precision": "month"
+          },
+          "ongoing_as_reported": false
+        },
+        "bullets": [
+          "Built an NLP-based resume screening system using TF-IDF and embeddings to analyze 500+ resumes.",
+          "Developed a ranking algorithm with 85%+ matching accuracy, reducing manual screening by 60%.",
+          "Developed FastAPI APIs for real-time resume processing."
+        ],
+        "links": [],
+        "description": "Tech: Python, NLP, FastAPI, Transformers Built an NLP-based resume screening system using TF-IDF and embeddings to analyze 500+ resumes. Developed a ranking algorithm with 85%+ matching accuracy, reducing manual screening by 60%. Developed FastAPI APIs for real-time resume processing.",
+        "technologies": [
+          "Python",
+          "NLP",
+          "FastAPI",
+          "Transformers"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "category": "Programming & Backend",
+        "items": [
+          "Python",
+          "FastAPI",
+          "REST APIs"
+        ],
+        "source_records": [
+          {
+            "text": "Programming & Backend: Python, FastAPI, REST APIs",
+            "source_line_ids": [
+              "l00008"
+            ],
+            "category": "Programming & Backend",
+            "items": [
+              "Python",
+              "FastAPI",
+              "REST APIs"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Generative AI",
+        "items": [
+          "LLMs",
+          "OpenAI",
+          "Gemini",
+          "RAG",
+          "Prompt Engineering",
+          "LangChain",
+          "LangGraph",
+          "Transformers"
+        ],
+        "source_records": [
+          {
+            "text": "Generative AI: LLMs, OpenAI, Gemini, RAG, Prompt Engineering, LangChain, LangGraph, Transformers",
+            "source_line_ids": [
+              "l00009"
+            ],
+            "category": "Generative AI",
+            "items": [
+              "LLMs",
+              "OpenAI",
+              "Gemini",
+              "RAG",
+              "Prompt Engineering",
+              "LangChain",
+              "LangGraph",
+              "Transformers"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "NLP & Document AI",
+        "items": [
+          "NER",
+          "OCR",
+          "TF-IDF",
+          "Embeddings"
+        ],
+        "source_records": [
+          {
+            "text": "NLP & Document AI: NER, OCR, TF-IDF, Embeddings",
+            "source_line_ids": [
+              "l00010"
+            ],
+            "category": "NLP & Document AI",
+            "items": [
+              "NER",
+              "OCR",
+              "TF-IDF",
+              "Embeddings"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Machine Learning",
+        "items": [
+          "Scikit-learn",
+          "TensorFlow",
+          "PyTorch",
+          "Supervised Learning",
+          "Unsupervised Learning"
+        ],
+        "source_records": [
+          {
+            "text": "Machine Learning: Scikit-learn, TensorFlow, PyTorch, Supervised Learning, Unsupervised Learning",
+            "source_line_ids": [
+              "l00011"
+            ],
+            "category": "Machine Learning",
+            "items": [
+              "Scikit-learn",
+              "TensorFlow",
+              "PyTorch",
+              "Supervised Learning",
+              "Unsupervised Learning"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Computer Vision & Data Science",
+        "items": [
+          "OpenCV",
+          "Pandas",
+          "NumPy"
+        ],
+        "source_records": [
+          {
+            "text": "Computer Vision & Data Science: OpenCV, Pandas, NumPy",
+            "source_line_ids": [
+              "l00012"
+            ],
+            "category": "Computer Vision & Data Science",
+            "items": [
+              "OpenCV",
+              "Pandas",
+              "NumPy"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Databases",
+        "items": [
+          "MySQL",
+          "PostgreSQL",
+          "Qdrant",
+          "Chroma",
+          "FAISS"
+        ],
+        "source_records": [
+          {
+            "text": "Databases: MySQL, PostgreSQL, Qdrant, Chroma, FAISS",
+            "source_line_ids": [
+              "l00013"
+            ],
+            "category": "Databases",
+            "items": [
+              "MySQL",
+              "PostgreSQL",
+              "Qdrant",
+              "Chroma",
+              "FAISS"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Tools & Platforms",
+        "items": [
+          "Git",
+          "GitHub",
+          "Docker",
+          "Azure",
+          "Jupyter Notebook"
+        ],
+        "source_records": [
+          {
+            "text": "Tools & Platforms: Git, GitHub, Docker, Azure, Jupyter Notebook",
+            "source_line_ids": [
+              "l00014"
+            ],
+            "category": "Tools & Platforms",
+            "items": [
+              "Git",
+              "GitHub",
+              "Docker",
+              "Azure",
+              "Jupyter Notebook"
+            ]
+          }
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "source_text": "• Data Science & Machine Learning Certification – Cranes Varsity, Bengaluru: Completed hands-on training in Python, RDBMS, EDA, and core ML techniques through applied projects.",
+        "source_line_ids": [
+          "l00042",
+          "l00043"
+        ],
+        "ordinal": 0,
+        "name": "Data Science & Machine Learning Certification",
+        "issuer": "Cranes Varsity, Bengaluru",
+        "details": "Completed hands-on training in Python, RDBMS, EDA, and core ML techniques through applied projects.",
+        "license_id": null,
+        "status_as_reported": null,
+        "links": []
+      }
+    ],
+    "publications": [],
+    "awards": [
+      {
+        "canonical": "awards",
+        "original_heading": "Awards & Certifications",
+        "text": "• Top 5, College Hackathon (2024): Built a CNN-powered plant disease detection system to help farmers identify crop diseases early from leaf images, ranking top 5 among 250+ participants.",
+        "source_line_ids": [
+          "l00044",
+          "l00045"
+        ],
+        "ordinal": 0,
+        "links": []
+      }
+    ],
+    "metrics": [],
+    "other_sections": []
+  },
+  "evidence": {
+    "contact.full_name": {
+      "source_line_ids": [
+        "l00000"
+      ],
+      "confidence": 0.92,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.headline": {
+      "source_line_ids": [
+        "l00001"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.emails[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.phones[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.95,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "summary[0]": {
+      "source_line_ids": [
+        "l00004",
+        "l00005",
+        "l00006"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0]": {
+      "source_line_ids": [
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].title": {
+      "source_line_ids": [
+        "l00016"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].company": {
+      "source_line_ids": [
+        "l00017"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].location": {
+      "source_line_ids": [
+        "l00017"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].dates": {
+      "source_line_ids": [
+        "l00016"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[0]": {
+      "source_line_ids": [
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[1]": {
+      "source_line_ids": [
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[2]": {
+      "source_line_ids": [
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[3]": {
+      "source_line_ids": [
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[4]": {
+      "source_line_ids": [
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[5]": {
+      "source_line_ids": [
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0]": {
+      "source_line_ids": [
+        "l00047",
+        "l00048",
+        "l00049",
+        "l00050"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].degree": {
+      "source_line_ids": [
+        "l00047"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].institution": {
+      "source_line_ids": [
+        "l00048"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].location": {
+      "source_line_ids": [
+        "l00048"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].dates": {
+      "source_line_ids": [
+        "l00049"
+      ],
+      "confidence": 0.95,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].graduation": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].gpa": {
+      "source_line_ids": [
+        "l00050"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0]": {
+      "source_line_ids": [
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].name": {
+      "source_line_ids": [
+        "l00026"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].dates": {
+      "source_line_ids": [
+        "l00026"
+      ],
+      "confidence": 0.95,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].bullets[0]": {
+      "source_line_ids": [
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].bullets[1]": {
+      "source_line_ids": [
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].bullets[2]": {
+      "source_line_ids": [
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].technologies[0]": {
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].technologies[1]": {
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].technologies[2]": {
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].technologies[3]": {
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].technologies[4]": {
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].technologies[5]": {
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].technologies[6]": {
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[0].technologies[7]": {
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[1]": {
+      "source_line_ids": [
+        "l00031",
+        "l00032",
+        "l00033",
+        "l00034",
+        "l00035"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[1].name": {
+      "source_line_ids": [
+        "l00031"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[1].dates": {
+      "source_line_ids": [
+        "l00031"
+      ],
+      "confidence": 0.95,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[1].bullets[0]": {
+      "source_line_ids": [
+        "l00031",
+        "l00032",
+        "l00033",
+        "l00034",
+        "l00035"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[1].bullets[1]": {
+      "source_line_ids": [
+        "l00031",
+        "l00032",
+        "l00033",
+        "l00034",
+        "l00035"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[1].bullets[2]": {
+      "source_line_ids": [
+        "l00031",
+        "l00032",
+        "l00033",
+        "l00034",
+        "l00035"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[1].technologies[0]": {
+      "source_line_ids": [
+        "l00032"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[1].technologies[1]": {
+      "source_line_ids": [
+        "l00032"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[1].technologies[2]": {
+      "source_line_ids": [
+        "l00032"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[1].technologies[3]": {
+      "source_line_ids": [
+        "l00032"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[1].technologies[4]": {
+      "source_line_ids": [
+        "l00032"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[1].technologies[5]": {
+      "source_line_ids": [
+        "l00032"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[2]": {
+      "source_line_ids": [
+        "l00036",
+        "l00037",
+        "l00038",
+        "l00039",
+        "l00040"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[2].name": {
+      "source_line_ids": [
+        "l00036"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[2].dates": {
+      "source_line_ids": [
+        "l00036"
+      ],
+      "confidence": 0.95,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[2].bullets[0]": {
+      "source_line_ids": [
+        "l00036",
+        "l00037",
+        "l00038",
+        "l00039",
+        "l00040"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[2].bullets[1]": {
+      "source_line_ids": [
+        "l00036",
+        "l00037",
+        "l00038",
+        "l00039",
+        "l00040"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[2].bullets[2]": {
+      "source_line_ids": [
+        "l00036",
+        "l00037",
+        "l00038",
+        "l00039",
+        "l00040"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[2].technologies[0]": {
+      "source_line_ids": [
+        "l00037"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[2].technologies[1]": {
+      "source_line_ids": [
+        "l00037"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[2].technologies[2]": {
+      "source_line_ids": [
+        "l00037"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "projects[2].technologies[3]": {
+      "source_line_ids": [
+        "l00037"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0]": {
+      "source_line_ids": [
+        "l00008"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1]": {
+      "source_line_ids": [
+        "l00009"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[2]": {
+      "source_line_ids": [
+        "l00010"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[3]": {
+      "source_line_ids": [
+        "l00011"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[4]": {
+      "source_line_ids": [
+        "l00012"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[5]": {
+      "source_line_ids": [
+        "l00013"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[6]": {
+      "source_line_ids": [
+        "l00014"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0]": {
+      "source_line_ids": [
+        "l00042",
+        "l00043"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].name": {
+      "source_line_ids": [
+        "l00042",
+        "l00043"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].issuer": {
+      "source_line_ids": [
+        "l00042",
+        "l00043"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].details": {
+      "source_line_ids": [
+        "l00042",
+        "l00043"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "awards[0]": {
+      "source_line_ids": [
+        "l00044",
+        "l00045"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.links[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.links[1]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    }
+  },
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "JAYAVARAPU SIVA TEJACHARY\nAI/ML Engineer\n• +91-9866862016 # j.shivachary@gmail.com • jayavarapu-siva-tejachary § sivatejachary"
+    },
+    {
+      "id": "s001",
+      "canonical": "summary",
+      "original_heading": "Summary",
+      "heading_line_id": "l00003",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00004",
+        "l00005"
+      ],
+      "text": "AI/ML Engineer with 2 years of experience developing scalable AI applications using Python, FastAPI, NLP, Large\nLanguage Models (OpenAI, Gemini), and Retrieval-Augmented Generation (RAG). Skilled in backend API development, machine learning pipelines, and intelligent automation solutions."
+    },
+    {
+      "id": "s002",
+      "canonical": "skills",
+      "original_heading": "Skills",
+      "heading_line_id": "l00007",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00008",
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014"
+      ],
+      "text": "Programming & Backend: Python, FastAPI, REST APIs\nGenerative AI: LLMs, OpenAI, Gemini, RAG, Prompt Engineering, LangChain, LangGraph, Transformers\nNLP & Document AI: NER, OCR, TF-IDF, Embeddings\nMachine Learning: Scikit-learn, TensorFlow, PyTorch, Supervised Learning, Unsupervised Learning\nComputer Vision & Data Science: OpenCV, Pandas, NumPy\nDatabases: MySQL, PostgreSQL, Qdrant, Chroma, FAISS\nTools & Platforms: Git, GitHub, Docker, Azure, Jupyter Notebook"
+    },
+    {
+      "id": "s003",
+      "canonical": "experience",
+      "original_heading": "Experience",
+      "heading_line_id": "l00015",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024"
+      ],
+      "text": "AI/ML Engineer June 2024 – Present\nAvataa Solutions Pvt. Ltd. Hyderabad, India\n– Developed AI-powered applications using Python, FastAPI, NLP, LLMs (OpenAI,Gemini), and Retrieval-Augmented Generation (RAG).\n– Built scalable REST APIs for AI-based document processing and intelligent automation.\n– Integrated OpenAI and Gemini APIs for document summarization and AI workflows using prompt engineering.\n– Worked on OCR, NER, embeddings, and data preprocessing for document analysis.\n– Developed backend services using FastAPI and PostgreSQL for real-time event-driven processing.\n– Collaborated with cross-functional teams to build and deploy production-ready AI solutions."
+    },
+    {
+      "id": "s004",
+      "canonical": "projects",
+      "original_heading": "Projects",
+      "heading_line_id": "l00025",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030",
+        "l00031",
+        "l00032",
+        "l00033",
+        "l00034",
+        "l00035",
+        "l00036",
+        "l00037",
+        "l00038",
+        "l00039",
+        "l00040"
+      ],
+      "text": "Enterprise RAG Platform Jan 2026 – Present\nTech: Python, FastAPI, LangChain, LangGraph, OpenAI, Qdrant, PostgreSQL, Azure Document Intelligence\n– Built an AI platform to chat with company PDF and Word documents using RAG.\n– Extracted text and tables from documents, generated embeddings, and stored them in Qdrant for semantic search.\n– Used LangChain for the RAG pipeline, LangGraph for workflow management.\nEnterprise Document AI & Compliance Automation Oct 2024 – Jan 2026\nTech: FastAPI, Python, PostgreSQL, Azure OCR, NER, Gemini LLM\n– Built an AI system to extract invoice data from scanned PDFs using Azure OCR and NER.\n– Integrated Gemini LLM and developed FastAPI APIs for document processing and compliance automation.\n– Reduced manual document review effort by 70–85% through AI-powered automation.\nAI Resume Screening System Aug 2024 – Sept 2024\nTech: Python, NLP, FastAPI, Transformers\n– Built an NLP-based resume screening system using TF-IDF and embeddings to analyze 500+ resumes.\n– Developed a ranking algorithm with 85%+ matching accuracy, reducing manual screening by 60%.\n– Developed FastAPI APIs for real-time resume processing."
+    },
+    {
+      "id": "s005",
+      "canonical": "awards_and_certifications",
+      "original_heading": "Awards & Certifications",
+      "heading_line_id": "l00041",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00042",
+        "l00044"
+      ],
+      "text": "• Data Science & Machine Learning Certification – Cranes Varsity, Bengaluru: Completed hands-on training in Python, RDBMS, EDA, and core ML techniques through applied projects.\n• Top 5, College Hackathon (2024): Built a CNN-powered plant disease detection system to help farmers identify crop diseases early from leaf images, ranking top 5 among 250+ participants."
+    },
+    {
+      "id": "s006",
+      "canonical": "education",
+      "original_heading": "Education",
+      "heading_line_id": "l00046",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00047",
+        "l00048",
+        "l00049",
+        "l00050"
+      ],
+      "text": "B.Tech in Computer Science and Engineering\nChalapathi Institute of Engineering and Technology, Guntur, Andhra Pradesh\nSep 2020 – Apr 2024\nCGPA: 7.9 / 10"
+    }
+  ],
+  "quality": {
+    "completeness": {
+      "status": "fail",
+      "reference_words": 451,
+      "extracted_words": 450,
+      "matched_words": 450,
+      "recall": 0.9977827050997783,
+      "precision": 1.0,
+      "missing": {
+        "ï": 1
+      },
+      "extra": {}
+    },
+    "schema_errors": [],
+    "warnings": [],
+    "suppressed_exact_repeats": []
+  },
+  "review_status": "needs_review",
+  "review": [
+    {
+      "path": "raw_text",
+      "reason": "Completeness fail",
+      "confidence": 0.0
+    }
+  ],
+  "mapping_changes": [
+    {
+      "path": "certifications[0]",
+      "before": {
+        "name": "Data Science & Machine Learning Certification",
+        "issuer": null,
+        "details": "Cranes Varsity, Bengaluru: Completed hands-on training in Python, RDBMS, EDA, and core ML techniques through applied projects."
+      },
+      "after": {
+        "name": "Data Science & Machine Learning Certification",
+        "issuer": "Cranes Varsity, Bengaluru",
+        "details": "Completed hands-on training in Python, RDBMS, EDA, and core ML techniques through applied projects."
+      },
+      "reason": "Separate explicitly indicated credential title, issuer and training details",
+      "source_line_ids": [
+        "l00042",
+        "l00043"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+PERSONAL_DETAILS
+{
+  "name": {
+    "value": "JULIAN A. MERCER",
+    "confidence": 0.92,
+    "source_line_ids": [
+      "l00000"
+    ]
+  },
+  "emails": [
+    {
+      "value": "julian.mercer@example.com",
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "normalization": "none",
+      "raw": "Boston, MA • (555) 481-0294 • julian.mercer@example.com • linkedin.com/in/julianmercer-dummy"
+    }
+  ],
+  "phones": [
+    {
+      "value": "(555) 481-0294",
+      "confidence": 0.7,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "normalized": "+15554810294",
+      "valid": false
+    }
+  ],
+  "locations": [
+    {
+      "value": "Boston, MA",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00002"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "value": "linkedin.com/in/julianmercer-dummy",
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "kind": "linkedin"
+    }
+  ],
+  "headline": {
+    "value": "DIRECTOR OF BUSINESS OPERATIONS & STRATEGIC INITIATIVES",
+    "source_line_ids": [
+      "l00001"
+    ],
+    "confidence": 0.7
+  }
+}
+
+SUMMARY
+[]
+
+EDUCATION
+[
+  {
+    "text": "Master of Business Administration (MBA) — Harvard Business School (2017)",
+    "source_line_ids": [
+      "l00027"
+    ],
+    "degree": {
+      "value": "Master of Business Administration (MBA)",
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": 0.85
+    },
+    "institution": {
+      "value": "Harvard Business School",
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": 0.85
+    },
+    "dates": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "graduation": {
+      "value": "2017",
+      "source_line_ids": [
+        "l00027"
+      ],
+      "confidence": 0.85
+    },
+    "location": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "gpa": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "normalized_dates": {
+      "start": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      },
+      "end": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      }
+    }
+  },
+  {
+    "text": "B.A. in Economics — Dartmouth College (2013)",
+    "source_line_ids": [
+      "l00028"
+    ],
+    "degree": {
+      "value": "B.A. in Economics",
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": 0.85
+    },
+    "institution": {
+      "value": "Dartmouth College",
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": 0.85
+    },
+    "dates": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "graduation": {
+      "value": "2013",
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": 0.85
+    },
+    "location": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "gpa": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "normalized_dates": {
+      "start": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      },
+      "end": {
+        "raw": null,
+        "value": null,
+        "precision": null
+      }
+    }
+  }
+]
+
+WORK_EXPERIENCE
+[
+  {
+    "title": {
+      "value": "Director of Business Operations",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00017"
+      ]
+    },
+    "company": {
+      "value": "Beacon Healthcare Technologies",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00017"
+      ]
+    },
+    "location": {
+      "value": "Boston, MA",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00017"
+      ]
+    },
+    "dates": {
+      "value": {
+        "start": "2021",
+        "end": "Present"
+      },
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00018"
+      ]
+    },
+    "bullets": [
+      "• Spearheaded enterprise transformation plan across 5 regional clinical branches, capturing $11.4M in recurring SG&A; cost savings.",
+      "• Standardized clinical procurement workflows, reducing vendor contract turnaround from 35 days to 8 days.",
+      "• Reported monthly operating review and corporate risk updates directly to Chief Operating Officer and Board."
+    ],
+    "text": "Director of Business Operations — Beacon Healthcare Technologies (Boston, MA)\n2021 – Present\n• Spearheaded enterprise transformation plan across 5 regional clinical branches, capturing $11.4M in recurring SG&A; cost savings.\n• Standardized clinical procurement workflows, reducing vendor contract turnaround from 35 days to 8 days.\n• Reported monthly operating review and corporate risk updates directly to Chief Operating Officer and Board.",
+    "confidence": 0.88,
+    "source_line_ids": [
+      "l00017",
+      "l00018",
+      "l00019",
+      "l00020",
+      "l00021"
+    ],
+    "normalized_dates": {
+      "start": {
+        "raw": "2021",
+        "value": "2021",
+        "precision": "year"
+      },
+      "end": {
+        "raw": "Present",
+        "value": null,
+        "precision": "open"
+      }
+    }
+  },
+  {
+    "title": {
+      "value": "Engagement Manager (Strategy & Operations)",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00022"
+      ]
+    },
+    "company": {
+      "value": "Bain & Company",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00022"
+      ]
+    },
+    "location": {
+      "value": "New York, NY",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00022"
+      ]
+    },
+    "dates": {
+      "value": {
+        "start": "2017",
+        "end": "2021"
+      },
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00023"
+      ]
+    },
+    "bullets": [
+      "• Led 7-member management consulting teams advising Fortune 100 enterprise clients on carve-outs and M&A; integration.",
+      "• Designed organizational restructurings for global manufacturing companies with 4,000+ employees."
+    ],
+    "text": "Engagement Manager (Strategy & Operations) — Bain & Company (New York, NY)\n2017 – 2021\n• Led 7-member management consulting teams advising Fortune 100 enterprise clients on carve-outs and M&A; integration.\n• Designed organizational restructurings for global manufacturing companies with 4,000+ employees.",
+    "confidence": 0.88,
+    "source_line_ids": [
+      "l00022",
+      "l00023",
+      "l00024",
+      "l00025"
+    ],
+    "normalized_dates": {
+      "start": {
+        "raw": "2017",
+        "value": "2017",
+        "precision": "year"
+      },
+      "end": {
+        "raw": "2021",
+        "value": "2021",
+        "precision": "year"
+      }
+    }
+  }
+]
+
+INTERNSHIPS
+[]
+
+PROJECTS
+[]
+
+SKILLS
+[
+  {
+    "text": "Operational Strategy\n• Post-Merger PMI Integration",
+    "source_line_ids": [
+      "l00004",
+      "l00007"
+    ],
+    "category": "Operational Strategy",
+    "items": [
+      "Post-Merger PMI Integration"
+    ]
+  },
+  {
+    "text": "Operational Strategy\n• Lean Six Sigma Process Design",
+    "source_line_ids": [
+      "l00004",
+      "l00008"
+    ],
+    "category": "Operational Strategy",
+    "items": [
+      "Lean Six Sigma Process Design"
+    ]
+  },
+  {
+    "text": "Operational Strategy\n• Operating Model Redesign",
+    "source_line_ids": [
+      "l00004",
+      "l00009"
+    ],
+    "category": "Operational Strategy",
+    "items": [
+      "Operating Model Redesign"
+    ]
+  },
+  {
+    "text": "Financial Optimization\n• $85M Budget & OPEX Oversight",
+    "source_line_ids": [
+      "l00005",
+      "l00010"
+    ],
+    "category": "Financial Optimization",
+    "items": [
+      "$85M Budget & OPEX Oversight"
+    ]
+  },
+  {
+    "text": "Financial Optimization\n• Vendor Procurement Negotiations",
+    "source_line_ids": [
+      "l00005",
+      "l00011"
+    ],
+    "category": "Financial Optimization",
+    "items": [
+      "Vendor Procurement Negotiations"
+    ]
+  },
+  {
+    "text": "Financial Optimization\n• Capital Allocation Modeling",
+    "source_line_ids": [
+      "l00005",
+      "l00012"
+    ],
+    "category": "Financial Optimization",
+    "items": [
+      "Capital Allocation Modeling"
+    ]
+  },
+  {
+    "text": "Cross-Functional Leadership\n• Executive Stakeholder Alignment",
+    "source_line_ids": [
+      "l00006",
+      "l00013"
+    ],
+    "category": "Cross-Functional Leadership",
+    "items": [
+      "Executive Stakeholder Alignment"
+    ]
+  },
+  {
+    "text": "Cross-Functional Leadership\n• OKR Governance & Tracking",
+    "source_line_ids": [
+      "l00006",
+      "l00014"
+    ],
+    "category": "Cross-Functional Leadership",
+    "items": [
+      "OKR Governance & Tracking"
+    ]
+  },
+  {
+    "text": "Cross-Functional Leadership\n• Org Structuring & Hiring",
+    "source_line_ids": [
+      "l00006",
+      "l00015"
+    ],
+    "category": "Cross-Functional Leadership",
+    "items": [
+      "Org Structuring & Hiring"
+    ]
+  }
+]
+
+CERTIFICATIONS
+[
+  {
+    "text": "Lean Six Sigma Green Belt",
+    "source_line_ids": [
+      "l00028"
+    ],
+    "name": {
+      "value": "Lean Six Sigma Green Belt",
+      "source_line_ids": [
+        "l00028"
+      ],
+      "confidence": 0.85
+    },
+    "details": ""
+  }
+]
+
+TRAINING
+[]
+
+AWARDS
+[]
+
+PUBLICATIONS
+[]
+
+LANGUAGES
+[]
+
+OTHER_SECTIONS
+[]
+
+UNCLASSIFIED
+[]

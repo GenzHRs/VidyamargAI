@@ -1,0 +1,9 @@
+{
+  "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U03/resume.json",
+  "artifact_sha256": "ded9c2c6e9f9644d687337ea5a8f34a9195bb3e2be33eedf0af4f7aa336ca78c",
+  "document_sha256": "bdb2f38e41ac1fe979557ef27f8c98ba3a1f312e5b99e8f117d120a90b7cb826",
+  "reason": "Highest evidence rank for source identity within folder; structured content is comparison only",
+  "alternatives": [
+    "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U03/audit_original_resume.json"
+  ]
+}

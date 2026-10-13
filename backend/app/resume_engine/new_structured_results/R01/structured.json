@@ -1,0 +1,662 @@
+{
+  "schema_version": "3.0.0",
+  "section_order": [
+    "contact",
+    "summary",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "certifications",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "contact": {
+    "name": {
+      "value": "JAYAVARAPU SIVA TEJACHARY",
+      "confidence": 0.92,
+      "source_line_ids": [
+        "l00000"
+      ]
+    },
+    "emails": [
+      {
+        "value": "j.shivachary@gmail.com",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalization": "none",
+        "raw": "• +91-9866862016 # j.shivachary@gmail.com • jayavarapu-siva-tejachary § sivatejachary"
+      }
+    ],
+    "phones": [
+      {
+        "value": "+91-9866862016",
+        "confidence": 0.95,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalized": "+919866862016",
+        "valid": true
+      }
+    ],
+    "locations": [],
+    "links": [
+      {
+        "value": "https://www.linkedin.com/in/jayavarapu-siva-tejachary",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "kind": "linkedin"
+      },
+      {
+        "value": "https://github.com/sivatejachary",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "kind": "github"
+      }
+    ]
+  },
+  "summary": [
+    {
+      "text": "AI/ML Engineer with 2 years of experience developing scalable AI applications using Python, FastAPI, NLP, Large\nLanguage Models (OpenAI, Gemini), and Retrieval-Augmented Generation (RAG). Skilled in backend API development, machine learning pipelines, and intelligent automation solutions.",
+      "source_line_ids": [
+        "l00004",
+        "l00005",
+        "l00006"
+      ],
+      "value": "AI/ML Engineer with 2 years of experience developing scalable AI applications using Python, FastAPI, NLP, Large Language Models (OpenAI, Gemini), and Retrieval-Augmented Generation (RAG). Skilled in backend API development, machine learning pipelines, and intelligent automation solutions."
+    }
+  ],
+  "experience": [
+    {
+      "title": {
+        "value": "AI/ML Engineer",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00016"
+        ]
+      },
+      "company": {
+        "value": "Avataa Solutions Pvt. Ltd.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00017"
+        ]
+      },
+      "location": {
+        "value": "Hyderabad, India",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00017"
+        ]
+      },
+      "dates": {
+        "value": {
+          "start": "June 2024",
+          "end": "Present"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00016"
+        ]
+      },
+      "bullets": [
+        "– Developed AI-powered applications using Python, FastAPI, NLP, LLMs (OpenAI,Gemini), and Retrieval-Augmented Generation (RAG).",
+        "– Built scalable REST APIs for AI-based document processing and intelligent automation.",
+        "– Integrated OpenAI and Gemini APIs for document summarization and AI workflows using prompt engineering.",
+        "– Worked on OCR, NER, embeddings, and data preprocessing for document analysis.",
+        "– Developed backend services using FastAPI and PostgreSQL for real-time event-driven processing.",
+        "– Collaborated with cross-functional teams to build and deploy production-ready AI solutions."
+      ],
+      "text": "AI/ML Engineer June 2024 – Present\nAvataa Solutions Pvt. Ltd. Hyderabad, India\n– Developed AI-powered applications using Python, FastAPI, NLP, LLMs (OpenAI,Gemini), and Retrieval-Augmented Generation (RAG).\n– Built scalable REST APIs for AI-based document processing and intelligent automation.\n– Integrated OpenAI and Gemini APIs for document summarization and AI workflows using prompt engineering.\n– Worked on OCR, NER, embeddings, and data preprocessing for document analysis.\n– Developed backend services using FastAPI and PostgreSQL for real-time event-driven processing.\n– Collaborated with cross-functional teams to build and deploy production-ready AI solutions.",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "text": "B.Tech in Computer Science and Engineering\nChalapathi Institute of Engineering and Technology, Guntur, Andhra Pradesh\nSep 2020 – Apr 2024\nCGPA: 7.9 / 10",
+      "source_line_ids": [
+        "l00047",
+        "l00048",
+        "l00049",
+        "l00050"
+      ],
+      "degree": {
+        "value": "B.Tech in Computer Science and Engineering",
+        "source_line_ids": [
+          "l00047"
+        ],
+        "confidence": 0.85
+      },
+      "institution": {
+        "value": "Chalapathi Institute of Engineering and Technology",
+        "source_line_ids": [
+          "l00048"
+        ],
+        "confidence": 0.85
+      },
+      "dates": {
+        "value": {
+          "start": "Sep 2020",
+          "end": "Apr 2024"
+        },
+        "source_line_ids": [
+          "l00049"
+        ],
+        "confidence": 0.95
+      },
+      "graduation": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "location": {
+        "value": "Guntur, Andhra Pradesh",
+        "source_line_ids": [
+          "l00048"
+        ],
+        "confidence": 0.85
+      },
+      "gpa": {
+        "value": {
+          "score": "7.9",
+          "scale": "10"
+        },
+        "source_line_ids": [
+          "l00050"
+        ],
+        "confidence": 0.85
+      }
+    }
+  ],
+  "projects": [
+    {
+      "text": "Enterprise RAG Platform Jan 2026 – Present\nTech: Python, FastAPI, LangChain, LangGraph, OpenAI, Qdrant, PostgreSQL, Azure Document Intelligence\n– Built an AI platform to chat with company PDF and Word documents using RAG.\n– Extracted text and tables from documents, generated embeddings, and stored them in Qdrant for semantic search.\n– Used LangChain for the RAG pipeline, LangGraph for workflow management.",
+      "source_line_ids": [
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030"
+      ],
+      "name": {
+        "value": "Enterprise RAG Platform",
+        "source_line_ids": [
+          "l00026"
+        ],
+        "confidence": 0.85
+      },
+      "dates": {
+        "value": {
+          "start": "Jan 2026",
+          "end": "Present"
+        },
+        "source_line_ids": [
+          "l00026"
+        ],
+        "confidence": 0.95
+      },
+      "technologies": [
+        {
+          "value": "Python",
+          "source_line_ids": [
+            "l00027"
+          ],
+          "confidence": 0.85
+        },
+        {
+          "value": "FastAPI",
+          "source_line_ids": [
+            "l00027"
+          ],
+          "confidence": 0.85
+        },
+        {
+          "value": "LangChain",
+          "source_line_ids": [
+            "l00027"
+          ],
+          "confidence": 0.85
+        },
+        {
+          "value": "LangGraph",
+          "source_line_ids": [
+            "l00027"
+          ],
+          "confidence": 0.85
+        },
+        {
+          "value": "OpenAI",
+          "source_line_ids": [
+            "l00027"
+          ],
+          "confidence": 0.85
+        },
+        {
+          "value": "Qdrant",
+          "source_line_ids": [
+            "l00027"
+          ],
+          "confidence": 0.85
+        },
+        {
+          "value": "PostgreSQL",
+          "source_line_ids": [
+            "l00027"
+          ],
+          "confidence": 0.85
+        },
+        {
+          "value": "Azure Document Intelligence",
+          "source_line_ids": [
+            "l00027"
+          ],
+          "confidence": 0.85
+        }
+      ],
+      "description": "Tech: Python, FastAPI, LangChain, LangGraph, OpenAI, Qdrant, PostgreSQL, Azure Document Intelligence Built an AI platform to chat with company PDF and Word documents using RAG. Extracted text and tables from documents, generated embeddings, and stored them in Qdrant for semantic search. Used LangChain for the RAG pipeline, LangGraph for workflow management.",
+      "bullets": [
+        "Built an AI platform to chat with company PDF and Word documents using RAG.",
+        "Extracted text and tables from documents, generated embeddings, and stored them in Qdrant for semantic search.",
+        "Used LangChain for the RAG pipeline, LangGraph for workflow management."
+      ]
+    },
+    {
+      "text": "Enterprise Document AI & Compliance Automation Oct 2024 – Jan 2026\nTech: FastAPI, Python, PostgreSQL, Azure OCR, NER, Gemini LLM\n– Built an AI system to extract invoice data from scanned PDFs using Azure OCR and NER.\n– Integrated Gemini LLM and developed FastAPI APIs for document processing and compliance automation.\n– Reduced manual document review effort by 70–85% through AI-powered automation.",
+      "source_line_ids": [
+        "l00031",
+        "l00032",
+        "l00033",
+        "l00034",
+        "l00035"
+      ],
+      "name": {
+        "value": "Enterprise Document AI & Compliance Automation",
+        "source_line_ids": [
+          "l00031"
+        ],
+        "confidence": 0.85
+      },
+      "dates": {
+        "value": {
+          "start": "Oct 2024",
+          "end": "Jan 2026"
+        },
+        "source_line_ids": [
+          "l00031"
+        ],
+        "confidence": 0.95
+      },
+      "technologies": [
+        {
+          "value": "FastAPI",
+          "source_line_ids": [
+            "l00032"
+          ],
+          "confidence": 0.85
+        },
+        {
+          "value": "Python",
+          "source_line_ids": [
+            "l00032"
+          ],
+          "confidence": 0.85
+        },
+        {
+          "value": "PostgreSQL",
+          "source_line_ids": [
+            "l00032"
+          ],
+          "confidence": 0.85
+        },
+        {
+          "value": "Azure OCR",
+          "source_line_ids": [
+            "l00032"
+          ],
+          "confidence": 0.85
+        },
+        {
+          "value": "NER",
+          "source_line_ids": [
+            "l00032"
+          ],
+          "confidence": 0.85
+        },
+        {
+          "value": "Gemini LLM",
+          "source_line_ids": [
+            "l00032"
+          ],
+          "confidence": 0.85
+        }
+      ],
+      "description": "Tech: FastAPI, Python, PostgreSQL, Azure OCR, NER, Gemini LLM Built an AI system to extract invoice data from scanned PDFs using Azure OCR and NER. Integrated Gemini LLM and developed FastAPI APIs for document processing and compliance automation. Reduced manual document review effort by 70–85% through AI-powered automation.",
+      "bullets": [
+        "Built an AI system to extract invoice data from scanned PDFs using Azure OCR and NER.",
+        "Integrated Gemini LLM and developed FastAPI APIs for document processing and compliance automation.",
+        "Reduced manual document review effort by 70–85% through AI-powered automation."
+      ]
+    },
+    {
+      "text": "AI Resume Screening System Aug 2024 – Sept 2024\nTech: Python, NLP, FastAPI, Transformers\n– Built an NLP-based resume screening system using TF-IDF and embeddings to analyze 500+ resumes .\n– Developed a ranking algorithm with 85%+ matching accuracy, reducing manual screening by 60% .\n– Developed FastAPI APIs for real-time resume processing.",
+      "source_line_ids": [
+        "l00036",
+        "l00037",
+        "l00038",
+        "l00039",
+        "l00040"
+      ],
+      "name": {
+        "value": "AI Resume Screening System",
+        "source_line_ids": [
+          "l00036"
+        ],
+        "confidence": 0.85
+      },
+      "dates": {
+        "value": {
+          "start": "Aug 2024",
+          "end": "Sept 2024"
+        },
+        "source_line_ids": [
+          "l00036"
+        ],
+        "confidence": 0.95
+      },
+      "technologies": [
+        {
+          "value": "Python",
+          "source_line_ids": [
+            "l00037"
+          ],
+          "confidence": 0.85
+        },
+        {
+          "value": "NLP",
+          "source_line_ids": [
+            "l00037"
+          ],
+          "confidence": 0.85
+        },
+        {
+          "value": "FastAPI",
+          "source_line_ids": [
+            "l00037"
+          ],
+          "confidence": 0.85
+        },
+        {
+          "value": "Transformers",
+          "source_line_ids": [
+            "l00037"
+          ],
+          "confidence": 0.85
+        }
+      ],
+      "description": "Tech: Python, NLP, FastAPI, Transformers Built an NLP-based resume screening system using TF-IDF and embeddings to analyze 500+ resumes . Developed a ranking algorithm with 85%+ matching accuracy, reducing manual screening by 60% . Developed FastAPI APIs for real-time resume processing.",
+      "bullets": [
+        "Built an NLP-based resume screening system using TF-IDF and embeddings to analyze 500+ resumes .",
+        "Developed a ranking algorithm with 85%+ matching accuracy, reducing manual screening by 60% .",
+        "Developed FastAPI APIs for real-time resume processing."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "text": "Programming & Backend: Python, FastAPI, REST APIs",
+      "source_line_ids": [
+        "l00008"
+      ],
+      "category": "Programming & Backend",
+      "items": [
+        "Python",
+        "FastAPI",
+        "REST APIs"
+      ]
+    },
+    {
+      "text": "Generative AI: LLMs, OpenAI, Gemini, RAG, Prompt Engineering, LangChain, LangGraph, Transformers",
+      "source_line_ids": [
+        "l00009"
+      ],
+      "category": "Generative AI",
+      "items": [
+        "LLMs",
+        "OpenAI",
+        "Gemini",
+        "RAG",
+        "Prompt Engineering",
+        "LangChain",
+        "LangGraph",
+        "Transformers"
+      ]
+    },
+    {
+      "text": "NLP & Document AI: NER, OCR, TF-IDF, Embeddings",
+      "source_line_ids": [
+        "l00010"
+      ],
+      "category": "NLP & Document AI",
+      "items": [
+        "NER",
+        "OCR",
+        "TF-IDF",
+        "Embeddings"
+      ]
+    },
+    {
+      "text": "Machine Learning: Scikit-learn, TensorFlow, PyTorch, Supervised Learning, Unsupervised Learning",
+      "source_line_ids": [
+        "l00011"
+      ],
+      "category": "Machine Learning",
+      "items": [
+        "Scikit-learn",
+        "TensorFlow",
+        "PyTorch",
+        "Supervised Learning",
+        "Unsupervised Learning"
+      ]
+    },
+    {
+      "text": "Computer Vision & Data Science: OpenCV, Pandas, NumPy",
+      "source_line_ids": [
+        "l00012"
+      ],
+      "category": "Computer Vision & Data Science",
+      "items": [
+        "OpenCV",
+        "Pandas",
+        "NumPy"
+      ]
+    },
+    {
+      "text": "Databases: MySQL, PostgreSQL, Qdrant, Chroma, FAISS",
+      "source_line_ids": [
+        "l00013"
+      ],
+      "category": "Databases",
+      "items": [
+        "MySQL",
+        "PostgreSQL",
+        "Qdrant",
+        "Chroma",
+        "FAISS"
+      ]
+    },
+    {
+      "text": "Tools & Platforms: Git, GitHub, Docker, Azure, Jupyter Notebook",
+      "source_line_ids": [
+        "l00014"
+      ],
+      "category": "Tools & Platforms",
+      "items": [
+        "Git",
+        "GitHub",
+        "Docker",
+        "Azure",
+        "Jupyter Notebook"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "text": "• Data Science & Machine Learning Certification – Cranes Varsity, Bengaluru: Completed hands-on training in Python, RDBMS, EDA, and core ML techniques through applied projects.",
+      "source_line_ids": [
+        "l00042",
+        "l00043"
+      ],
+      "name": {
+        "value": "Data Science & Machine Learning Certification",
+        "source_line_ids": [
+          "l00042",
+          "l00043"
+        ],
+        "confidence": 0.85
+      },
+      "details": "Cranes Varsity, Bengaluru: Completed hands-on training in Python, RDBMS, EDA, and core ML techniques through applied projects."
+    }
+  ],
+  "other_sections": [
+    {
+      "canonical": "awards",
+      "original_heading": "Awards & Certifications",
+      "text": "• Top 5, College Hackathon (2024): Built a CNN-powered plant disease detection system to help farmers identify crop diseases early from leaf images, ranking top 5 among 250+ participants.",
+      "source_line_ids": [
+        "l00044",
+        "l00045"
+      ]
+    }
+  ],
+  "review": [],
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "JAYAVARAPU SIVA TEJACHARY\nAI/ML Engineer\n• +91-9866862016 # j.shivachary@gmail.com • jayavarapu-siva-tejachary § sivatejachary"
+    },
+    {
+      "id": "s001",
+      "canonical": "summary",
+      "original_heading": "Summary",
+      "heading_line_id": "l00003",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00004",
+        "l00005"
+      ],
+      "text": "AI/ML Engineer with 2 years of experience developing scalable AI applications using Python, FastAPI, NLP, Large\nLanguage Models (OpenAI, Gemini), and Retrieval-Augmented Generation (RAG). Skilled in backend API development, machine learning pipelines, and intelligent automation solutions."
+    },
+    {
+      "id": "s002",
+      "canonical": "skills",
+      "original_heading": "Skills",
+      "heading_line_id": "l00007",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00008",
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014"
+      ],
+      "text": "Programming & Backend: Python, FastAPI, REST APIs\nGenerative AI: LLMs, OpenAI, Gemini, RAG, Prompt Engineering, LangChain, LangGraph, Transformers\nNLP & Document AI: NER, OCR, TF-IDF, Embeddings\nMachine Learning: Scikit-learn, TensorFlow, PyTorch, Supervised Learning, Unsupervised Learning\nComputer Vision & Data Science: OpenCV, Pandas, NumPy\nDatabases: MySQL, PostgreSQL, Qdrant, Chroma, FAISS\nTools & Platforms: Git, GitHub, Docker, Azure, Jupyter Notebook"
+    },
+    {
+      "id": "s003",
+      "canonical": "experience",
+      "original_heading": "Experience",
+      "heading_line_id": "l00015",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00016",
+        "l00017",
+        "l00018",
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024"
+      ],
+      "text": "AI/ML Engineer June 2024 – Present\nAvataa Solutions Pvt. Ltd. Hyderabad, India\n– Developed AI-powered applications using Python, FastAPI, NLP, LLMs (OpenAI,Gemini), and Retrieval-Augmented Generation (RAG).\n– Built scalable REST APIs for AI-based document processing and intelligent automation.\n– Integrated OpenAI and Gemini APIs for document summarization and AI workflows using prompt engineering.\n– Worked on OCR, NER, embeddings, and data preprocessing for document analysis.\n– Developed backend services using FastAPI and PostgreSQL for real-time event-driven processing.\n– Collaborated with cross-functional teams to build and deploy production-ready AI solutions."
+    },
+    {
+      "id": "s004",
+      "canonical": "projects",
+      "original_heading": "Projects",
+      "heading_line_id": "l00025",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030",
+        "l00031",
+        "l00032",
+        "l00033",
+        "l00034",
+        "l00035",
+        "l00036",
+        "l00037",
+        "l00038",
+        "l00039",
+        "l00040"
+      ],
+      "text": "Enterprise RAG Platform Jan 2026 – Present\nTech: Python, FastAPI, LangChain, LangGraph, OpenAI, Qdrant, PostgreSQL, Azure Document Intelligence\n– Built an AI platform to chat with company PDF and Word documents using RAG.\n– Extracted text and tables from documents, generated embeddings, and stored them in Qdrant for semantic search.\n– Used LangChain for the RAG pipeline, LangGraph for workflow management.\nEnterprise Document AI & Compliance Automation Oct 2024 – Jan 2026\nTech: FastAPI, Python, PostgreSQL, Azure OCR, NER, Gemini LLM\n– Built an AI system to extract invoice data from scanned PDFs using Azure OCR and NER.\n– Integrated Gemini LLM and developed FastAPI APIs for document processing and compliance automation.\n– Reduced manual document review effort by 70–85% through AI-powered automation.\nAI Resume Screening System Aug 2024 – Sept 2024\nTech: Python, NLP, FastAPI, Transformers\n– Built an NLP-based resume screening system using TF-IDF and embeddings to analyze 500+ resumes .\n– Developed a ranking algorithm with 85%+ matching accuracy, reducing manual screening by 60% .\n– Developed FastAPI APIs for real-time resume processing."
+    },
+    {
+      "id": "s005",
+      "canonical": "awards_and_certifications",
+      "original_heading": "Awards & Certifications",
+      "heading_line_id": "l00041",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00042",
+        "l00044"
+      ],
+      "text": "• Data Science & Machine Learning Certification – Cranes Varsity, Bengaluru: Completed hands-on training in Python, RDBMS, EDA, and core ML techniques through applied projects.\n• Top 5, College Hackathon (2024): Built a CNN-powered plant disease detection system to help farmers identify crop diseases early from leaf images, ranking top 5 among 250+ participants."
+    },
+    {
+      "id": "s006",
+      "canonical": "education",
+      "original_heading": "Education",
+      "heading_line_id": "l00046",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00047",
+        "l00048",
+        "l00049",
+        "l00050"
+      ],
+      "text": "B.Tech in Computer Science and Engineering\nChalapathi Institute of Engineering and Technology, Guntur, Andhra Pradesh\nSep 2020 – Apr 2024\nCGPA: 7.9 / 10"
+    }
+  ]
+}

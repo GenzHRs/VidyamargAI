@@ -1,0 +1,398 @@
+{
+  "schema_version": "3.0.0",
+  "section_order": [
+    "contact",
+    "summary",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "certifications",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "contact": {
+    "name": {
+      "value": "DEVON M. HASTINGS",
+      "confidence": 0.92,
+      "source_line_ids": [
+        "l00000"
+      ]
+    },
+    "emails": [
+      {
+        "value": "devon.hastings@example.com",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00004"
+        ],
+        "normalization": "none",
+        "raw": "devon.hastings@example.com"
+      }
+    ],
+    "phones": [
+      {
+        "value": "(555) 839-2041",
+        "confidence": 0.7,
+        "source_line_ids": [
+          "l00003"
+        ],
+        "normalized": "+15558392041",
+        "valid": false
+      }
+    ],
+    "locations": [
+      {
+        "value": "Chicago, IL",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00002"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "value": "linkedin.com/in/devon-hastings-dummy",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00005"
+        ],
+        "kind": "linkedin"
+      }
+    ]
+  },
+  "summary": [],
+  "experience": [
+    {
+      "title": {
+        "value": "Senior FP&A Controller",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00018"
+        ]
+      },
+      "company": {
+        "value": "Sterling Horizon Capital",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00019"
+        ]
+      },
+      "location": {
+        "value": "Chicago, IL",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00019"
+        ]
+      },
+      "dates": {
+        "value": {
+          "start": "2021",
+          "end": "Present"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00017"
+        ]
+      },
+      "bullets": [
+        "• Directed quarterly forecast cadence for $180M commercial asset portfolio with 98.4% variance accuracy.",
+        "• Automated monthly executive slide generation via SQL & Power Query, saving 18 manual work-hours per cycle.",
+        "• Assessed financial underwriting for 5 successful acquisitions totaling $44M."
+      ],
+      "text": "2021 – Present\nSenior FP&A Controller\nSterling Horizon Capital (Chicago, IL)\n• Directed quarterly forecast cadence for $180M commercial asset portfolio with 98.4% variance accuracy.\n• Automated monthly executive slide generation via SQL & Power Query, saving 18 manual work-hours per cycle.\n• Assessed financial underwriting for 5 successful acquisitions totaling $44M.",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022"
+      ]
+    },
+    {
+      "title": {
+        "value": "Financial Analyst",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00024"
+        ]
+      },
+      "company": {
+        "value": "Pinnacle Advisory Partners",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00025"
+        ]
+      },
+      "location": {
+        "value": "Milwaukee, WI",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00025"
+        ]
+      },
+      "dates": {
+        "value": {
+          "start": "2018",
+          "end": "2021"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00023"
+        ]
+      },
+      "bullets": [
+        "• Maintained 3-statement operating models and liquidity sensitivity stress tests.",
+        "• Streamlined SG&A operational expenditures across 12 branch locations, recovering $1.2M in annual cost leakage."
+      ],
+      "text": "2018 – 2021\nFinancial Analyst\nPinnacle Advisory Partners (Milwaukee, WI)\n• Maintained 3-statement operating models and liquidity sensitivity stress tests.\n• Streamlined SG&A operational expenditures across 12 branch locations, recovering $1.2M in annual cost leakage.",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00023",
+        "l00024",
+        "l00025",
+        "l00026",
+        "l00027"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "text": "B.S. in Finance & Accounting | Northwestern University\nGraduated: 2018 | Magna Cum Laude",
+      "source_line_ids": [
+        "l00029",
+        "l00030"
+      ],
+      "degree": {
+        "value": "B.S. in Finance & Accounting",
+        "source_line_ids": [
+          "l00029"
+        ],
+        "confidence": 0.85
+      },
+      "institution": {
+        "value": "Northwestern University",
+        "source_line_ids": [
+          "l00029"
+        ],
+        "confidence": 0.85
+      },
+      "dates": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "graduation": {
+        "value": "2018",
+        "source_line_ids": [
+          "l00030"
+        ],
+        "confidence": 0.85
+      },
+      "location": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "gpa": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      }
+    }
+  ],
+  "projects": [],
+  "skills": [
+    {
+      "text": "• Financial Modeling (DCF, LBO)",
+      "source_line_ids": [
+        "l00007"
+      ],
+      "category": null,
+      "items": [
+        "Financial Modeling (DCF, LBO)"
+      ]
+    },
+    {
+      "text": "• ERP: SAP S/4HANA & Oracle NetSuite",
+      "source_line_ids": [
+        "l00008"
+      ],
+      "category": "ERP",
+      "items": [
+        "SAP S/4HANA & Oracle NetSuite"
+      ]
+    },
+    {
+      "text": "• US GAAP & IFRS Reporting",
+      "source_line_ids": [
+        "l00009"
+      ],
+      "category": null,
+      "items": [
+        "US GAAP & IFRS Reporting"
+      ]
+    },
+    {
+      "text": "• Budgeting & Multi-Year Forecasting",
+      "source_line_ids": [
+        "l00010"
+      ],
+      "category": null,
+      "items": [
+        "Budgeting & Multi-Year Forecasting"
+      ]
+    },
+    {
+      "text": "• BI & Data: Tableau, Power BI, SQL",
+      "source_line_ids": [
+        "l00011"
+      ],
+      "category": "BI & Data",
+      "items": [
+        "Tableau",
+        "Power BI",
+        "SQL"
+      ]
+    },
+    {
+      "text": "• Capital Allocation & Debt Restructuring",
+      "source_line_ids": [
+        "l00012"
+      ],
+      "category": null,
+      "items": [
+        "Capital Allocation & Debt Restructuring"
+      ]
+    },
+    {
+      "text": "• Variance & P&L Analysis",
+      "source_line_ids": [
+        "l00013"
+      ],
+      "category": null,
+      "items": [
+        "Variance & P&L Analysis"
+      ]
+    },
+    {
+      "text": "• Advanced Excel (VBA, Power Query)",
+      "source_line_ids": [
+        "l00014"
+      ],
+      "category": null,
+      "items": [
+        "Advanced Excel (VBA, Power Query)"
+      ]
+    },
+    {
+      "text": "• M&A Due Diligence & Audit Defense",
+      "source_line_ids": [
+        "l00015"
+      ],
+      "category": null,
+      "items": [
+        "M&A Due Diligence & Audit Defense"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "text": "Chartered Financial Analyst (CFA) — Level III Candidate\nActive License / Enrollment",
+      "source_line_ids": [
+        "l00031",
+        "l00032"
+      ],
+      "name": {
+        "value": "Chartered Financial Analyst (CFA) — Level III Candidate",
+        "source_line_ids": [
+          "l00031"
+        ],
+        "confidence": 0.85
+      },
+      "details": "Active License / Enrollment"
+    }
+  ],
+  "other_sections": [],
+  "review": [
+    {
+      "path": "fields.phones[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.7
+    }
+  ],
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002",
+        "l00003",
+        "l00004",
+        "l00005"
+      ],
+      "text": "DEVON M. HASTINGS\nSenior Financial Analyst & Investment Controller\nChicago, IL\n(555) 839-2041\ndevon.hastings@example.com\nlinkedin.com/in/devon-hastings-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "skills",
+      "original_heading": "CORE COMPETENCIES & FINANCIAL SYSTEMS",
+      "heading_line_id": "l00006",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00007",
+        "l00008",
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015"
+      ],
+      "text": "• Financial Modeling (DCF, LBO)\n• ERP: SAP S/4HANA & Oracle NetSuite\n• US GAAP & IFRS Reporting\n• Budgeting & Multi-Year Forecasting\n• BI & Data: Tableau, Power BI, SQL\n• Capital Allocation & Debt Restructuring\n• Variance & P&L Analysis\n• Advanced Excel (VBA, Power Query)\n• M&A Due Diligence & Audit Defense"
+    },
+    {
+      "id": "s002",
+      "canonical": "experience",
+      "original_heading": "CAREER HISTORY",
+      "heading_line_id": "l00016",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025",
+        "l00026",
+        "l00027"
+      ],
+      "text": "2021 – Present\nSenior FP&A Controller\nSterling Horizon Capital (Chicago, IL)\n• Directed quarterly forecast cadence for $180M commercial asset portfolio with 98.4% variance accuracy.\n• Automated monthly executive slide generation via SQL & Power Query, saving 18 manual work-hours per cycle.\n• Assessed financial underwriting for 5 successful acquisitions totaling $44M.\n2018 – 2021\nFinancial Analyst\nPinnacle Advisory Partners (Milwaukee, WI)\n• Maintained 3-statement operating models and liquidity sensitivity stress tests.\n• Streamlined SG&A operational expenditures across 12 branch locations, recovering $1.2M in annual cost leakage."
+    },
+    {
+      "id": "s003",
+      "canonical": "education",
+      "original_heading": "EDUCATION & CERTIFICATIONS",
+      "heading_line_id": "l00028",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00029",
+        "l00030",
+        "l00031",
+        "l00032"
+      ],
+      "text": "B.S. in Finance & Accounting | Northwestern University\nGraduated: 2018 | Magna Cum Laude\nChartered Financial Analyst (CFA) — Level III Candidate\nActive License / Enrollment"
+    }
+  ]
+}

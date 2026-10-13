@@ -1,0 +1,10 @@
+{
+  "id": "U01",
+  "file": "AIML- JAYAVARAPU SIVA TEJACHARY.pdf",
+  "sha256": "9ba86722016ea9427a4ae36c2f2b7ef54f9598e70c2cad0918e8c4f50ce237cc",
+  "previous_reference": null,
+  "artifact": "artifacts/U01/resume.json",
+  "selected_from": "upload_accuracy/results/U01/resume.json",
+  "selected_sha256": "19a1c408dbc24bfc89b32a944aa32fab87149303d72e6100e5df3c8e8f1ecf2e",
+  "reason": "Full raw lines, layout and hyperlink metadata; uploaded artifact preferred when available. Structured output is baseline comparison only."
+}

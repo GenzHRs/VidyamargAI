@@ -1,0 +1,389 @@
+{
+  "schema_version": "2.0.0",
+  "section_order": [
+    "contact",
+    "summary",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "certifications",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "contact": {
+    "name": {
+      "value": "MAYA LIN-VAZQUEZ",
+      "confidence": 0.92,
+      "source_line_ids": [
+        "l00000"
+      ]
+    },
+    "emails": [
+      {
+        "value": "maya.lin.design@example.com",
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalization": "none",
+        "raw": "Los Angeles, CA  •  (555) 781-9920  •  maya.lin.design@example.com  •  mayadesign.example.studio"
+      }
+    ],
+    "phones": [
+      {
+        "value": "(555) 781-9920",
+        "confidence": 0.7,
+        "source_line_ids": [
+          "l00002"
+        ],
+        "normalized": "+15557819920",
+        "valid": false
+      }
+    ],
+    "locations": [
+      {
+        "value": "Los Angeles, CA",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00002"
+        ]
+      }
+    ],
+    "links": []
+  },
+  "summary": [
+    {
+      "text": "Award-winning Senior Brand Designer with 6+ years driving identity redesigns, international omnichannel brand campaigns, and packaging systems for global consumer lifestyle brands. Adept at fusing strategic business goals with striking visual storytelling.",
+      "source_line_ids": [
+        "l00020"
+      ],
+      "value": "Award-winning Senior Brand Designer with 6+ years driving identity redesigns, international omnichannel brand campaigns, and packaging systems for global consumer lifestyle brands. Adept at fusing strategic business goals with striking visual storytelling."
+    }
+  ],
+  "experience": [
+    {
+      "title": {
+        "value": "Senior Brand Designer",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00022"
+        ]
+      },
+      "company": {
+        "value": "Lumina Creative Studio",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00023"
+        ]
+      },
+      "location": {
+        "value": "Los Angeles, CA",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00023"
+        ]
+      },
+      "dates": {
+        "value": {
+          "start": "2022",
+          "end": "Present"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00023"
+        ]
+      },
+      "bullets": [
+        "• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.",
+        "• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.",
+        "• Managed 4 junior graphic designers, motion animators, and external packaging vendors."
+      ],
+      "text": "Senior Brand Designer\nLumina Creative Studio (Los Angeles, CA) | 2022 – Present\n• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.\n• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.\n• Managed 4 junior graphic designers, motion animators, and external packaging vendors.",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025",
+        "l00026"
+      ]
+    },
+    {
+      "title": {
+        "value": "Visual & Packaging Designer",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00027"
+        ]
+      },
+      "company": {
+        "value": "Verve Labs",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00028"
+        ]
+      },
+      "location": {
+        "value": "San Francisco, CA",
+        "confidence": 0.9,
+        "source_line_ids": [
+          "l00028"
+        ]
+      },
+      "dates": {
+        "value": {
+          "start": "2019",
+          "end": "2022"
+        },
+        "confidence": 0.99,
+        "source_line_ids": [
+          "l00028"
+        ]
+      },
+      "bullets": [
+        "• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.",
+        "• Produced digital campaign assets generating 12M+ social media impressions."
+      ],
+      "text": "Visual & Packaging Designer\nVerve Labs (San Francisco, CA) | 2019 – 2022\n• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.\n• Produced digital campaign assets generating 12M+ social media impressions.",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "text": "B.F.A. in Graphic Design\nArtCenter College of Design\nGraduated: 2019 (Honors)",
+      "source_line_ids": [
+        "l00016",
+        "l00017",
+        "l00018"
+      ],
+      "degree": {
+        "value": "B.F.A. in Graphic Design",
+        "source_line_ids": [
+          "l00016"
+        ],
+        "confidence": 0.85
+      },
+      "institution": {
+        "value": "B.F.A. in Graphic Design ArtCenter College of Design Graduated: 2019 (Honors)",
+        "source_line_ids": [
+          "l00016",
+          "l00017",
+          "l00018"
+        ],
+        "confidence": 0.85
+      },
+      "dates": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "graduation": {
+        "value": "2019",
+        "source_line_ids": [
+          "l00018"
+        ],
+        "confidence": 0.85
+      },
+      "location": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      },
+      "gpa": {
+        "value": null,
+        "source_line_ids": [],
+        "confidence": 0.0
+      }
+    }
+  ],
+  "projects": [],
+  "skills": [
+    {
+      "text": "• Brand Identity & Systems",
+      "source_line_ids": [
+        "l00004"
+      ],
+      "category": null,
+      "items": [
+        "Brand Identity & Systems"
+      ]
+    },
+    {
+      "text": "• Art Direction & Campaigns",
+      "source_line_ids": [
+        "l00005"
+      ],
+      "category": null,
+      "items": [
+        "Art Direction & Campaigns"
+      ]
+    },
+    {
+      "text": "• Packaging & Print Spec",
+      "source_line_ids": [
+        "l00006"
+      ],
+      "category": null,
+      "items": [
+        "Packaging & Print Spec"
+      ]
+    },
+    {
+      "text": "• Figma, Illustrator, Photoshop",
+      "source_line_ids": [
+        "l00007"
+      ],
+      "category": null,
+      "items": [
+        "Figma",
+        "Illustrator",
+        "Photoshop"
+      ]
+    },
+    {
+      "text": "• After Effects & Motion",
+      "source_line_ids": [
+        "l00008"
+      ],
+      "category": null,
+      "items": [
+        "After Effects & Motion"
+      ]
+    },
+    {
+      "text": "• Creative Team Mentorship",
+      "source_line_ids": [
+        "l00009"
+      ],
+      "category": null,
+      "items": [
+        "Creative Team Mentorship"
+      ]
+    },
+    {
+      "text": "• Design Sprint Facilitation",
+      "source_line_ids": [
+        "l00010"
+      ],
+      "category": null,
+      "items": [
+        "Design Sprint Facilitation"
+      ]
+    }
+  ],
+  "certifications": [],
+  "other_sections": [
+    {
+      "canonical": "awards",
+      "original_heading": "AWARDS & HONORS",
+      "text": "• 2024 D&AD Wood Pencil\n• 2023 AIGA Design Excellence\n• 2021 Adobe Design Achievement",
+      "source_line_ids": [
+        "l00012",
+        "l00013",
+        "l00014"
+      ]
+    }
+  ],
+  "review": [
+    {
+      "path": "fields.phones[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.7
+    }
+  ],
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "MAYA LIN-VAZQUEZ\nSENIOR BRAND DESIGNER & ART DIRECTOR\nLos Angeles, CA  •  (555) 781-9920  •  maya.lin.design@example.com  •  mayadesign.example.studio"
+    },
+    {
+      "id": "s001",
+      "canonical": "skills",
+      "original_heading": "CREATIVE SKILLS",
+      "heading_line_id": "l00003",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00004",
+        "l00005",
+        "l00006",
+        "l00007",
+        "l00008",
+        "l00009",
+        "l00010"
+      ],
+      "text": "• Brand Identity & Systems\n• Art Direction & Campaigns\n• Packaging & Print Spec\n• Figma, Illustrator, Photoshop\n• After Effects & Motion\n• Creative Team Mentorship\n• Design Sprint Facilitation"
+    },
+    {
+      "id": "s002",
+      "canonical": "awards",
+      "original_heading": "AWARDS & HONORS",
+      "heading_line_id": "l00011",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00012",
+        "l00013",
+        "l00014"
+      ],
+      "text": "• 2024 D&AD Wood Pencil\n• 2023 AIGA Design Excellence\n• 2021 Adobe Design Achievement"
+    },
+    {
+      "id": "s003",
+      "canonical": "education",
+      "original_heading": "EDUCATION",
+      "heading_line_id": "l00015",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00016",
+        "l00017",
+        "l00018"
+      ],
+      "text": "B.F.A. in Graphic Design\nArtCenter College of Design\nGraduated: 2019 (Honors)"
+    },
+    {
+      "id": "s004",
+      "canonical": "summary",
+      "original_heading": "CREATIVE PROFILE",
+      "heading_line_id": "l00019",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00020"
+      ],
+      "text": "Award-winning Senior Brand Designer with 6+ years driving identity redesigns, international omnichannel brand campaigns, and packaging systems for global consumer lifestyle brands. Adept at fusing strategic business goals with striking visual storytelling."
+    },
+    {
+      "id": "s005",
+      "canonical": "experience",
+      "original_heading": "EXPERIENCE",
+      "heading_line_id": "l00021",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025",
+        "l00026",
+        "l00027",
+        "l00028",
+        "l00029",
+        "l00030"
+      ],
+      "text": "Senior Brand Designer\nLumina Creative Studio (Los Angeles, CA) | 2022 – Present\n• Directed visual overhaul of flagship beverage brand, accelerating shelf-pull rate by 34% across 1,800 retail stores.\n• Created scalable brand guidelines across print, digital ads, web, and physical retail spaces.\n• Managed 4 junior graphic designers, motion animators, and external packaging vendors.\nVisual & Packaging Designer\nVerve Labs (San Francisco, CA) | 2019 – 2022\n• Designed packaging architecture and tactile unboxing experience for 8 direct-to-consumer consumer tech products.\n• Produced digital campaign assets generating 12M+ social media impressions."
+    }
+  ]
+}

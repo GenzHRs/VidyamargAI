@@ -1,0 +1,318 @@
+PERSONAL_DETAILS
+{
+  "name": {
+    "value": "DR. SOPHIA AL-MANSOOR, PH.D.",
+    "confidence": 0.92,
+    "source_line_ids": [
+      "l00000"
+    ]
+  },
+  "emails": [
+    {
+      "value": "s.almansoor.phd@example.edu",
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "normalization": "none",
+      "raw": "Stanford, CA 94305  •  +1 (650) 555-0143  •  s.almansoor.phd@example.edu  •  scholar.example.com/salmansoor"
+    }
+  ],
+  "phones": [
+    {
+      "value": "+1 (650) 555-0143",
+      "confidence": 0.95,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "normalized": "+16505550143",
+      "valid": true
+    }
+  ],
+  "locations": [
+    {
+      "value": "Stanford, CA 94305",
+      "confidence": 0.9,
+      "source_line_ids": [
+        "l00002"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "value": "scholar.example.com/salmansoor",
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00002"
+      ],
+      "kind": "website"
+    }
+  ],
+  "headline": {
+    "value": "Department of Computational Biology  •  Stanford University",
+    "source_line_ids": [
+      "l00001"
+    ],
+    "confidence": 0.7
+  }
+}
+
+SUMMARY
+[]
+
+EDUCATION
+[
+  {
+    "text": "Ph.D. in Computational Biology & Bioinformatics\nStanford University, Stanford, CA  (2018 – 2023)\nDissertation: Deep Learning Approaches to High-Dimensional Single-Cell Transcriptomics",
+    "source_line_ids": [
+      "l00004",
+      "l00005",
+      "l00006"
+    ],
+    "degree": {
+      "value": "Ph.D. in Computational Biology & Bioinformatics",
+      "source_line_ids": [
+        "l00004"
+      ],
+      "confidence": 0.85
+    },
+    "institution": {
+      "value": "Stanford University",
+      "source_line_ids": [
+        "l00005"
+      ],
+      "confidence": 0.85
+    },
+    "dates": {
+      "value": {
+        "start": "2018",
+        "end": "2023"
+      },
+      "source_line_ids": [
+        "l00005"
+      ],
+      "confidence": 0.95
+    },
+    "graduation": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "location": {
+      "value": "Stanford, CA",
+      "source_line_ids": [
+        "l00005"
+      ],
+      "confidence": 0.85
+    },
+    "gpa": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "normalized_dates": {
+      "start": {
+        "raw": "2018",
+        "value": "2018",
+        "precision": "year"
+      },
+      "end": {
+        "raw": "2023",
+        "value": "2023",
+        "precision": "year"
+      }
+    }
+  },
+  {
+    "text": "B.S. in Molecular Biology & Computer Science (Summa Cum Laude)\nMIT – Massachusetts Institute of Technology, Cambridge, MA  (2014 – 2018)",
+    "source_line_ids": [
+      "l00007",
+      "l00008"
+    ],
+    "degree": {
+      "value": "B.S. in Molecular Biology & Computer Science (Summa Cum Laude)",
+      "source_line_ids": [
+        "l00007"
+      ],
+      "confidence": 0.85
+    },
+    "institution": {
+      "value": "MIT – Massachusetts Institute of Technology",
+      "source_line_ids": [
+        "l00008"
+      ],
+      "confidence": 0.85
+    },
+    "dates": {
+      "value": {
+        "start": "2014",
+        "end": "2018"
+      },
+      "source_line_ids": [
+        "l00008"
+      ],
+      "confidence": 0.95
+    },
+    "graduation": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "location": {
+      "value": "Cambridge, MA",
+      "source_line_ids": [
+        "l00008"
+      ],
+      "confidence": 0.85
+    },
+    "gpa": {
+      "value": null,
+      "source_line_ids": [],
+      "confidence": 0.0
+    },
+    "normalized_dates": {
+      "start": {
+        "raw": "2014",
+        "value": "2014",
+        "precision": "year"
+      },
+      "end": {
+        "raw": "2018",
+        "value": "2018",
+        "precision": "year"
+      }
+    }
+  }
+]
+
+WORK_EXPERIENCE
+[
+  {
+    "title": {
+      "value": "Postdoctoral Research Fellow",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00010"
+      ]
+    },
+    "company": {
+      "value": "Department of Bioengineering, Stanford University",
+      "confidence": 0.88,
+      "source_line_ids": [
+        "l00010"
+      ]
+    },
+    "location": {
+      "value": null,
+      "confidence": 0.65,
+      "source_line_ids": [
+        "l00010"
+      ]
+    },
+    "dates": {
+      "value": {
+        "start": "2023",
+        "end": "Present"
+      },
+      "confidence": 0.99,
+      "source_line_ids": [
+        "l00010"
+      ]
+    },
+    "bullets": [
+      "• Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support."
+    ],
+    "text": "Postdoctoral Research Fellow  —  Department of Bioengineering, Stanford University (2023 – Present)\n• Developing transformer-based latent models for single-cell perturbation prediction with NIH grant support.",
+    "confidence": 0.88,
+    "source_line_ids": [
+      "l00010",
+      "l00011"
+    ],
+    "normalized_dates": {
+      "start": {
+        "raw": "2023",
+        "value": "2023",
+        "precision": "year"
+      },
+      "end": {
+        "raw": "Present",
+        "value": null,
+        "precision": "open"
+      }
+    }
+  }
+]
+
+INTERNSHIPS
+[]
+
+PROJECTS
+[]
+
+SKILLS
+[]
+
+CERTIFICATIONS
+[]
+
+TRAINING
+[]
+
+AWARDS
+[
+  {
+    "text": "• NIH Postdoctoral National Research Service Award (F32) — $155,000 (2024 – 2026)",
+    "source_line_ids": [
+      "l00017"
+    ],
+    "original_heading": "HONORS, GRANTS & FELLOWSHIPS",
+    "name": "NIH Postdoctoral National Research Service Award (F32) — $155,000 (2024 – 2026)",
+    "details": ""
+  },
+  {
+    "text": "• Stanford Bio-X Graduate Student Fellowship (2020 – 2023)",
+    "source_line_ids": [
+      "l00018"
+    ],
+    "original_heading": "HONORS, GRANTS & FELLOWSHIPS",
+    "name": "Stanford Bio-X Graduate Student Fellowship (2020 – 2023)",
+    "details": ""
+  },
+  {
+    "text": "• MIT Outstanding Undergraduate Research Opportunity Program (UROP) Award (2018)",
+    "source_line_ids": [
+      "l00019"
+    ],
+    "original_heading": "HONORS, GRANTS & FELLOWSHIPS",
+    "name": "MIT Outstanding Undergraduate Research Opportunity Program (UROP) Award (2018)",
+    "details": ""
+  }
+]
+
+PUBLICATIONS
+[
+  {
+    "text": "Al-Mansoor, S., Zhang, K., & Miller, D. R. (2025). Latent Diffusion Architectures for Scalable Single-Cell RNA Sequence Reconstruction. Nature Machine Intelligence, 7(3), 215-228.\nAl-Mansoor, S. & Vance, P. K. (2023). Benchmark Evaluations of Graph Neural Networks across Spatial Transcriptomic Datasets. Journal of Computational Biology, 30(8), 842-859.\nRoberts, C. M., Al-Mansoor, S., & Thorne, J. (2021). Unsupervised Embedding of Multi-Omics Cancer Biomarkers. Bioinformatics, 37(14), 1980-1988.",
+    "source_line_ids": [
+      "l00013",
+      "l00014",
+      "l00015"
+    ],
+    "original_heading": "SELECTED PEER-REVIEWED PUBLICATIONS",
+    "name": "Al-Mansoor, S., Zhang, K., & Miller, D. R. (2025). Latent Diffusion Architectures for Scalable Single-Cell RNA Sequence Reconstruction. Nature Machine Intelligence, 7(3), 215-228.",
+    "details": "Al-Mansoor, S. & Vance, P. K. (2023). Benchmark Evaluations of Graph Neural Networks across Spatial Transcriptomic Datasets. Journal of Computational Biology, 30(8), 842-859. Roberts, C. M., Al-Mansoor, S., & Thorne, J. (2021). Unsupervised Embedding of Multi-Omics Cancer Biomarkers. Bioinformatics, 37(14), 1980-1988.",
+    "citation": "Al-Mansoor, S., Zhang, K., & Miller, D. R. (2025). Latent Diffusion Architectures for Scalable Single-Cell RNA Sequence Reconstruction. Nature Machine Intelligence, 7(3), 215-228.\nAl-Mansoor, S. & Vance, P. K. (2023). Benchmark Evaluations of Graph Neural Networks across Spatial Transcriptomic Datasets. Journal of Computational Biology, 30(8), 842-859.\nRoberts, C. M., Al-Mansoor, S., & Thorne, J. (2021). Unsupervised Embedding of Multi-Omics Cancer Biomarkers. Bioinformatics, 37(14), 1980-1988.",
+    "authors": null,
+    "venue": null,
+    "doi": null
+  }
+]
+
+LANGUAGES
+[]
+
+OTHER_SECTIONS
+[]
+
+UNCLASSIFIED
+[]

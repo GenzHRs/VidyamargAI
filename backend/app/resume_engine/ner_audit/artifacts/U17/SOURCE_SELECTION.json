@@ -1,0 +1,10 @@
+{
+  "id": "U17",
+  "file": "comprehensive_resume_test_suite/10_DOCX_Entry_Level_Business_Analyst.docx",
+  "sha256": "660f09e952f57e81c68954cb8f7097c29b6021b3a3152fa90114933b9ffc62d9",
+  "previous_reference": "R20",
+  "artifact": "artifacts/U17/resume.json",
+  "selected_from": "upload_accuracy/results/U17/resume.json",
+  "selected_sha256": "26f74d03b76921ed737e29b895bbaf7b7b5a1207c00e5e90f65fc786c8a7aad5",
+  "reason": "Full raw lines, layout and hyperlink metadata; uploaded artifact preferred when available. Structured output is baseline comparison only."
+}

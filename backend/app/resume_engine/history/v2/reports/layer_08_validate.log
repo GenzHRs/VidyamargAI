@@ -1,0 +1,8 @@
+test_multiset_no_dedup_cheat (test_08_validate.ValidationTests.test_multiset_no_dedup_cheat) ... ok
+test_nested_field_types_and_confidence_range (test_08_validate.ValidationTests.test_nested_field_types_and_confidence_range) ... ok
+test_review_and_schema (test_08_validate.ValidationTests.test_review_and_schema) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.010s
+
+OK

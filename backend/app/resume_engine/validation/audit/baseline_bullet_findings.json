@@ -1,0 +1,96 @@
+[
+  {
+    "resume": "R01",
+    "job_index": 0,
+    "bullet_index": 0,
+    "expected": "Developed AI-powered applications using Python, FastAPI, NLP, LLMs (OpenAI,Gemini), and Retrieval-Augmented Generation (RAG).",
+    "actual": null,
+    "source_line_ids": [
+      "l00018",
+      "l00019"
+    ]
+  },
+  {
+    "resume": "R01",
+    "job_index": 0,
+    "bullet_index": 1,
+    "expected": "Built scalable REST APIs for AI-based document processing and intelligent automation.",
+    "actual": null,
+    "source_line_ids": [
+      "l00020"
+    ]
+  },
+  {
+    "resume": "R01",
+    "job_index": 0,
+    "bullet_index": 2,
+    "expected": "Integrated OpenAI and Gemini APIs for document summarization and AI workflows using prompt engineering.",
+    "actual": null,
+    "source_line_ids": [
+      "l00021"
+    ]
+  },
+  {
+    "resume": "R01",
+    "job_index": 0,
+    "bullet_index": 3,
+    "expected": "Worked on OCR, NER, embeddings, and data preprocessing for document analysis.",
+    "actual": null,
+    "source_line_ids": [
+      "l00022"
+    ]
+  },
+  {
+    "resume": "R01",
+    "job_index": 0,
+    "bullet_index": 4,
+    "expected": "Developed backend services using FastAPI and PostgreSQL for real-time event-driven processing.",
+    "actual": null,
+    "source_line_ids": [
+      "l00023"
+    ]
+  },
+  {
+    "resume": "R01",
+    "job_index": 0,
+    "bullet_index": 5,
+    "expected": "Collaborated with cross-functional teams to build and deploy production-ready AI solutions.",
+    "actual": null,
+    "source_line_ids": [
+      "l00024"
+    ]
+  },
+  {
+    "resume": "R04",
+    "job_index": 0,
+    "bullet_index": 2,
+    "expected": "Partnered with product and engineering teams to optimize subscription paywall conversion by 19%.",
+    "actual": "Partnered with product and engineering teams to optimize subscription paywall conversion by",
+    "source_line_ids": [
+      "l00030",
+      "l00031"
+    ]
+  },
+  {
+    "resume": "R09",
+    "job_index": 1,
+    "bullet_index": 1,
+    "expected": "Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce MTTR from 45 mins to 8 mins.",
+    "actual": "Instrumented distributed tracing with OpenTelemetry, Prometheus, and Grafana to reduce",
+    "source_line_ids": [
+      "l00039",
+      "l00040"
+    ]
+  },
+  {
+    "resume": "R11",
+    "job_index": 0,
+    "bullet_index": 1,
+    "expected": "Directed engineering of high-throughput LLM serving stack, cutting model latency by 55%.",
+    "actual": "Directed engineering of high-throughput LLM serving stack, cutting model latency by",
+    "source_line_ids": [
+      "l00011",
+      "l00012"
+    ]
+  }
+]

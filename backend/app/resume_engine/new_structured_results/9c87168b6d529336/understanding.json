@@ -1,0 +1,3087 @@
+{
+  "understanding_schema_version": "1.0.0",
+  "engine": "offline_rule_ner",
+  "source": {
+    "filename": "03_DOCX_Horizontal_Hero_Two_Blocks.docx",
+    "sha256": "9c87168b6d529336eca1dd27db234421f6110eba8e06e979d65291dc29e75096",
+    "type": "docx",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": null,
+    "reference_method": "docx_xml_text"
+  },
+  "artifact_sha256": "cefc855abcc7c8ff0b846eb0526ee683166fe6fc0647b812a3bb539f1f624ee2",
+  "section_order": [
+    "personal_details",
+    "summary",
+    "education",
+    "work_experience",
+    "internships",
+    "projects",
+    "skills",
+    "certifications",
+    "training",
+    "awards",
+    "publications",
+    "languages",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "profile": {
+    "personal_details": {
+      "name": {
+        "value": "KAVITA RAMANATHAN",
+        "confidence": 0.92,
+        "source_line_ids": [
+          "l00000"
+        ]
+      },
+      "emails": [
+        {
+          "value": "kavita.ramanathan@example.com",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalization": "none",
+          "raw": "San Jose, CA  •  (555) 234-8761  •  kavita.ramanathan@example.com  •  linkedin.com/in/kavita-ramanathan-dummy"
+        }
+      ],
+      "phones": [
+        {
+          "value": "(555) 234-8761",
+          "confidence": 0.7,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "normalized": "+15552348761",
+          "valid": false
+        }
+      ],
+      "locations": [
+        {
+          "value": "San Jose, CA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00002"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "value": "linkedin.com/in/kavita-ramanathan-dummy",
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00002"
+          ],
+          "kind": "linkedin"
+        }
+      ],
+      "headline": {
+        "value": "SENIOR PRODUCT MARKETING MANAGER (PMM) — B2B CLOUD & AI SOLUTIONS",
+        "source_line_ids": [
+          "l00001"
+        ],
+        "confidence": 0.7
+      }
+    },
+    "summary": [
+      {
+        "text": "Growth-oriented Product Marketing leader with 8+ years driving Go-To-Market (GTM) launches, competitive positioning, and buyer enablement for enterprise cloud and AI infrastructure. Generated $35M+ in qualified pipeline across Tier-1 enterprise accounts.",
+        "source_line_ids": [
+          "l00003"
+        ],
+        "value": "Growth-oriented Product Marketing leader with 8+ years driving Go-To-Market (GTM) launches, competitive positioning, and buyer enablement for enterprise cloud and AI infrastructure. Generated $35M+ in qualified pipeline across Tier-1 enterprise accounts."
+      }
+    ],
+    "education": [
+      {
+        "text": "MBA — UC Berkeley Haas (2019)",
+        "source_line_ids": [
+          "l00025"
+        ],
+        "degree": {
+          "value": "MBA",
+          "source_line_ids": [
+            "l00025"
+          ],
+          "confidence": 0.85
+        },
+        "institution": {
+          "value": "UC Berkeley Haas",
+          "source_line_ids": [
+            "l00025"
+          ],
+          "confidence": 0.85
+        },
+        "dates": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "graduation": {
+          "value": "2019",
+          "source_line_ids": [
+            "l00025"
+          ],
+          "confidence": 0.85
+        },
+        "location": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "gpa": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "normalized_dates": {
+          "start": {
+            "raw": null,
+            "value": null,
+            "precision": null
+          },
+          "end": {
+            "raw": null,
+            "value": null,
+            "precision": null
+          }
+        }
+      },
+      {
+        "text": "B.S. in Economics — UCLA (2015)",
+        "source_line_ids": [
+          "l00026"
+        ],
+        "degree": {
+          "value": "B.S. in Economics",
+          "source_line_ids": [
+            "l00026"
+          ],
+          "confidence": 0.85
+        },
+        "institution": {
+          "value": "UCLA",
+          "source_line_ids": [
+            "l00026"
+          ],
+          "confidence": 0.85
+        },
+        "dates": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "graduation": {
+          "value": "2015",
+          "source_line_ids": [
+            "l00026"
+          ],
+          "confidence": 0.85
+        },
+        "location": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "gpa": {
+          "value": null,
+          "source_line_ids": [],
+          "confidence": 0.0
+        },
+        "normalized_dates": {
+          "start": {
+            "raw": null,
+            "value": null,
+            "precision": null
+          },
+          "end": {
+            "raw": null,
+            "value": null,
+            "precision": null
+          }
+        }
+      }
+    ],
+    "work_experience": [
+      {
+        "title": {
+          "value": "Director of Product Marketing",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00005"
+          ]
+        },
+        "company": {
+          "value": "Synthetix AI",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00006"
+          ]
+        },
+        "location": {
+          "value": "Palo Alto, CA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00006"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2022",
+            "end": "Present"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00006"
+          ]
+        },
+        "bullets": [
+          "• Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1.",
+          "• Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%."
+        ],
+        "text": "Director of Product Marketing\nSynthetix AI (Palo Alto, CA) | 2022 – Present\n• Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1.\n• Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00005",
+          "l00006",
+          "l00007",
+          "l00008"
+        ],
+        "normalized_dates": {
+          "start": {
+            "raw": "2022",
+            "value": "2022",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "Present",
+            "value": null,
+            "precision": "open"
+          }
+        }
+      },
+      {
+        "title": {
+          "value": "Senior Product Marketing Manager",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00009"
+          ]
+        },
+        "company": {
+          "value": "Datastream Cloud",
+          "confidence": 0.88,
+          "source_line_ids": [
+            "l00010"
+          ]
+        },
+        "location": {
+          "value": "San Jose, CA",
+          "confidence": 0.9,
+          "source_line_ids": [
+            "l00010"
+          ]
+        },
+        "dates": {
+          "value": {
+            "start": "2019",
+            "end": "2022"
+          },
+          "confidence": 0.99,
+          "source_line_ids": [
+            "l00010"
+          ]
+        },
+        "bullets": [
+          "• Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).",
+          "• Trained 180+ global field sales engineers on solution messaging and pricing tiers."
+        ],
+        "text": "Senior Product Marketing Manager\nDatastream Cloud (San Jose, CA) | 2019 – 2022\n• Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).\n• Trained 180+ global field sales engineers on solution messaging and pricing tiers.",
+        "confidence": 0.88,
+        "source_line_ids": [
+          "l00009",
+          "l00010",
+          "l00011",
+          "l00012"
+        ],
+        "normalized_dates": {
+          "start": {
+            "raw": "2019",
+            "value": "2019",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "2022",
+            "value": "2022",
+            "precision": "year"
+          }
+        }
+      }
+    ],
+    "internships": [],
+    "projects": [],
+    "skills": [
+      {
+        "text": "• Category Creation & Positioning",
+        "source_line_ids": [
+          "l00019"
+        ],
+        "category": null,
+        "items": [
+          "Category Creation & Positioning"
+        ]
+      },
+      {
+        "text": "• Competitive Intelligence (Klue)",
+        "source_line_ids": [
+          "l00020"
+        ],
+        "category": null,
+        "items": [
+          "Competitive Intelligence (Klue)"
+        ]
+      },
+      {
+        "text": "• Customer Case Studies & Webinars",
+        "source_line_ids": [
+          "l00021"
+        ],
+        "category": null,
+        "items": [
+          "Customer Case Studies & Webinars"
+        ]
+      },
+      {
+        "text": "• HubSpot, Salesforce, Marketo",
+        "source_line_ids": [
+          "l00022"
+        ],
+        "category": null,
+        "items": [
+          "HubSpot",
+          "Salesforce",
+          "Marketo"
+        ]
+      },
+      {
+        "text": "• Pricing & Packaging Strategy",
+        "source_line_ids": [
+          "l00023"
+        ],
+        "category": null,
+        "items": [
+          "Pricing & Packaging Strategy"
+        ]
+      }
+    ],
+    "certifications": [],
+    "training": [],
+    "awards": [],
+    "publications": [],
+    "languages": [],
+    "other_sections": [
+      {
+        "canonical": "metrics",
+        "original_heading": "KEY GTM METRICS",
+        "text": "• $35M+ Attributed Enterprise Pipeline\n• 65+ Tier-1 Enterprise Wins\n• 26% Higher Win-Rate Post-Launch\n• 180+ Field Reps Certified",
+        "source_line_ids": [
+          "l00014",
+          "l00015",
+          "l00016",
+          "l00017"
+        ]
+      }
+    ],
+    "unassigned_links": []
+  },
+  "entities": [
+    {
+      "id": "e00000",
+      "label": "PERSON",
+      "text": "KAVITA RAMANATHAN",
+      "normalized": "KAVITA RAMANATHAN",
+      "source_line_id": "l00000",
+      "start": 0,
+      "end": 17,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "preamble_title",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.7
+    },
+    {
+      "id": "e00001",
+      "label": "EMAIL",
+      "text": "kavita.ramanathan@example.com",
+      "normalized": "kavita.ramanathan@example.com",
+      "source_line_id": "l00002",
+      "start": 36,
+      "end": 65,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "regex:email",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00002",
+      "label": "PHONE",
+      "text": "(555) 234-8761",
+      "normalized": "(555) 234-8761",
+      "source_line_id": "l00002",
+      "start": 17,
+      "end": 31,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "regex:phone",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00003",
+      "label": "URL",
+      "text": "linkedin.com/in/kavita-ramanathan-dummy",
+      "normalized": "linkedin.com/in/kavita-ramanathan-dummy",
+      "source_line_id": "l00002",
+      "start": 70,
+      "end": 109,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "preamble",
+      "rule": "literal_url",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00004",
+      "label": "JOB_TITLE",
+      "text": "Director of Product Marketing",
+      "normalized": "Director of Product Marketing",
+      "source_line_id": "l00005",
+      "start": 0,
+      "end": 29,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "role_header",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.7
+    },
+    {
+      "id": "e00005",
+      "label": "DATE_RANGE",
+      "text": "2022 – Present",
+      "normalized": "2022 – Present",
+      "source_line_id": "l00006",
+      "start": 31,
+      "end": 45,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "regex:date_range",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00006",
+      "label": "JOB_TITLE",
+      "text": "Senior Product Marketing Manager",
+      "normalized": "Senior Product Marketing Manager",
+      "source_line_id": "l00009",
+      "start": 0,
+      "end": 32,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "role_header",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.7
+    },
+    {
+      "id": "e00007",
+      "label": "DATE_RANGE",
+      "text": "2019 – 2022",
+      "normalized": "2019 – 2022",
+      "source_line_id": "l00010",
+      "start": 34,
+      "end": 45,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "experience",
+      "rule": "regex:date_range",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00008",
+      "label": "SKILL",
+      "text": "Salesforce",
+      "normalized": "Salesforce",
+      "source_line_id": "l00022",
+      "start": 11,
+      "end": 21,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00009",
+      "label": "SKILL",
+      "text": "HubSpot",
+      "normalized": "HubSpot",
+      "source_line_id": "l00022",
+      "start": 2,
+      "end": 9,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00010",
+      "label": "SKILL",
+      "text": "Marketo",
+      "normalized": "Marketo",
+      "source_line_id": "l00022",
+      "start": 23,
+      "end": 30,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "skills",
+      "rule": "gazetteer_longest_match",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00011",
+      "label": "DEGREE",
+      "text": "MBA",
+      "normalized": "MBA",
+      "source_line_id": "l00025",
+      "start": 0,
+      "end": 3,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "education",
+      "rule": "education_degree",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    },
+    {
+      "id": "e00012",
+      "label": "DEGREE",
+      "text": "B.S. in Economics ",
+      "normalized": "B.S. in Economics ",
+      "source_line_id": "l00026",
+      "start": 0,
+      "end": 18,
+      "source_kind": "text",
+      "run_index": null,
+      "page": null,
+      "bbox": null,
+      "section": "education",
+      "rule": "education_degree",
+      "confidence_kind": "uncalibrated_rule_score",
+      "confidence": 0.9
+    }
+  ],
+  "records": [
+    {
+      "record_id": "summary:0",
+      "section": "summary",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00003"
+      ],
+      "entity_ids": []
+    },
+    {
+      "record_id": "education:0",
+      "section": "education",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00025"
+      ],
+      "entity_ids": [
+        "e00011"
+      ]
+    },
+    {
+      "record_id": "education:1",
+      "section": "education",
+      "ordinal": 1,
+      "source_line_ids": [
+        "l00026"
+      ],
+      "entity_ids": [
+        "e00012"
+      ]
+    },
+    {
+      "record_id": "work_experience:0",
+      "section": "work_experience",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00005",
+        "l00006",
+        "l00007",
+        "l00008"
+      ],
+      "entity_ids": [
+        "e00004",
+        "e00005"
+      ]
+    },
+    {
+      "record_id": "work_experience:1",
+      "section": "work_experience",
+      "ordinal": 1,
+      "source_line_ids": [
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012"
+      ],
+      "entity_ids": [
+        "e00006",
+        "e00007"
+      ]
+    },
+    {
+      "record_id": "skills:0",
+      "section": "skills",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00019"
+      ],
+      "entity_ids": []
+    },
+    {
+      "record_id": "skills:1",
+      "section": "skills",
+      "ordinal": 1,
+      "source_line_ids": [
+        "l00020"
+      ],
+      "entity_ids": []
+    },
+    {
+      "record_id": "skills:2",
+      "section": "skills",
+      "ordinal": 2,
+      "source_line_ids": [
+        "l00021"
+      ],
+      "entity_ids": []
+    },
+    {
+      "record_id": "skills:3",
+      "section": "skills",
+      "ordinal": 3,
+      "source_line_ids": [
+        "l00022"
+      ],
+      "entity_ids": [
+        "e00008",
+        "e00009",
+        "e00010"
+      ]
+    },
+    {
+      "record_id": "skills:4",
+      "section": "skills",
+      "ordinal": 4,
+      "source_line_ids": [
+        "l00023"
+      ],
+      "entity_ids": []
+    },
+    {
+      "record_id": "other_sections:0",
+      "section": "other_sections",
+      "ordinal": 0,
+      "source_line_ids": [
+        "l00014",
+        "l00015",
+        "l00016",
+        "l00017"
+      ],
+      "entity_ids": []
+    }
+  ],
+  "evidence": {
+    "personal_details.name.value": {
+      "source_refs": [
+        {
+          "line_id": "l00000",
+          "start": 0,
+          "end": 17,
+          "text": "KAVITA RAMANATHAN",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.emails[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 36,
+          "end": 65,
+          "text": "kavita.ramanathan@example.com",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.emails[0].normalization": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 109,
+          "text": "San Jose, CA  •  (555) 234-8761  •  kavita.ramanathan@example.com  •  linkedin.com/in/kavita-ramanathan-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.emails[0].raw": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 109,
+          "text": "San Jose, CA  •  (555) 234-8761  •  kavita.ramanathan@example.com  •  linkedin.com/in/kavita-ramanathan-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.phones[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 17,
+          "end": 31,
+          "text": "(555) 234-8761",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.phones[0].normalized": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 109,
+          "text": "San Jose, CA  •  (555) 234-8761  •  kavita.ramanathan@example.com  •  linkedin.com/in/kavita-ramanathan-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.phones[0].valid": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 109,
+          "text": "San Jose, CA  •  (555) 234-8761  •  kavita.ramanathan@example.com  •  linkedin.com/in/kavita-ramanathan-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.locations[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 0,
+          "end": 12,
+          "text": "San Jose, CA",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.links[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 70,
+          "end": 109,
+          "text": "linkedin.com/in/kavita-ramanathan-dummy",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.links[0].kind": {
+      "source_refs": [
+        {
+          "line_id": "l00002",
+          "start": 70,
+          "end": 78,
+          "text": "linkedin",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "personal_details.headline.value": {
+      "source_refs": [
+        {
+          "line_id": "l00001",
+          "start": 0,
+          "end": 65,
+          "text": "SENIOR PRODUCT MARKETING MANAGER (PMM) — B2B CLOUD & AI SOLUTIONS",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "summary[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00003",
+          "start": 19,
+          "end": 273,
+          "text": "Growth-oriented Product Marketing leader with 8+ years driving Go-To-Market (GTM) launches, competitive positioning, and buyer enablement for enterprise cloud and AI infrastructure. Generated $35M+ in qualified pipeline across Tier-1 enterprise accounts.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "summary[0].value": {
+      "source_refs": [
+        {
+          "line_id": "l00003",
+          "start": 19,
+          "end": 273,
+          "text": "Growth-oriented Product Marketing leader with 8+ years driving Go-To-Market (GTM) launches, competitive positioning, and buyer enablement for enterprise cloud and AI infrastructure. Generated $35M+ in qualified pipeline across Tier-1 enterprise accounts.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00025",
+          "start": 0,
+          "end": 29,
+          "text": "MBA — UC Berkeley Haas (2019)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].degree.value": {
+      "source_refs": [
+        {
+          "line_id": "l00025",
+          "start": 0,
+          "end": 3,
+          "text": "MBA",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].institution.value": {
+      "source_refs": [
+        {
+          "line_id": "l00025",
+          "start": 6,
+          "end": 22,
+          "text": "UC Berkeley Haas",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].graduation.value": {
+      "source_refs": [
+        {
+          "line_id": "l00025",
+          "start": 24,
+          "end": 28,
+          "text": "2019",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].text": {
+      "source_refs": [
+        {
+          "line_id": "l00026",
+          "start": 0,
+          "end": 31,
+          "text": "B.S. in Economics — UCLA (2015)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].degree.value": {
+      "source_refs": [
+        {
+          "line_id": "l00026",
+          "start": 0,
+          "end": 17,
+          "text": "B.S. in Economics",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].institution.value": {
+      "source_refs": [
+        {
+          "line_id": "l00026",
+          "start": 20,
+          "end": 24,
+          "text": "UCLA",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[1].graduation.value": {
+      "source_refs": [
+        {
+          "line_id": "l00026",
+          "start": 26,
+          "end": 30,
+          "text": "2015",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].title.value": {
+      "source_refs": [
+        {
+          "line_id": "l00005",
+          "start": 0,
+          "end": 29,
+          "text": "Director of Product Marketing",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].company.value": {
+      "source_refs": [
+        {
+          "line_id": "l00006",
+          "start": 0,
+          "end": 12,
+          "text": "Synthetix AI",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].location.value": {
+      "source_refs": [
+        {
+          "line_id": "l00006",
+          "start": 14,
+          "end": 27,
+          "text": "Palo Alto, CA",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].dates.value.start": {
+      "source_refs": [
+        {
+          "line_id": "l00006",
+          "start": 31,
+          "end": 35,
+          "text": "2022",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].dates.value.end": {
+      "source_refs": [
+        {
+          "line_id": "l00006",
+          "start": 38,
+          "end": 45,
+          "text": "Present",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].bullets[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00005",
+          "start": 0,
+          "end": 29,
+          "text": "Director of Product Marketing",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00006",
+          "start": 0,
+          "end": 45,
+          "text": "Synthetix AI (Palo Alto, CA) | 2022 – Present",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 117,
+          "text": "• Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 105,
+          "text": "• Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].bullets[1]": {
+      "source_refs": [
+        {
+          "line_id": "l00005",
+          "start": 0,
+          "end": 29,
+          "text": "Director of Product Marketing",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00006",
+          "start": 0,
+          "end": 45,
+          "text": "Synthetix AI (Palo Alto, CA) | 2022 – Present",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 117,
+          "text": "• Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 105,
+          "text": "• Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00005",
+          "start": 0,
+          "end": 29,
+          "text": "Director of Product Marketing",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00006",
+          "start": 0,
+          "end": 45,
+          "text": "Synthetix AI (Palo Alto, CA) | 2022 – Present",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 117,
+          "text": "• Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 105,
+          "text": "• Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.start.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00005",
+          "start": 0,
+          "end": 29,
+          "text": "Director of Product Marketing",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00006",
+          "start": 31,
+          "end": 35,
+          "text": "2022",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 117,
+          "text": "• Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 105,
+          "text": "• Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.start.value": {
+      "source_refs": [
+        {
+          "line_id": "l00005",
+          "start": 0,
+          "end": 29,
+          "text": "Director of Product Marketing",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00006",
+          "start": 31,
+          "end": 35,
+          "text": "2022",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 117,
+          "text": "• Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 105,
+          "text": "• Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.start.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00005",
+          "start": 0,
+          "end": 29,
+          "text": "Director of Product Marketing",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00006",
+          "start": 0,
+          "end": 45,
+          "text": "Synthetix AI (Palo Alto, CA) | 2022 – Present",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00007",
+          "start": 110,
+          "end": 114,
+          "text": "year",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 105,
+          "text": "• Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.end.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00005",
+          "start": 0,
+          "end": 29,
+          "text": "Director of Product Marketing",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00006",
+          "start": 38,
+          "end": 45,
+          "text": "Present",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 117,
+          "text": "• Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 105,
+          "text": "• Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[0].normalized_dates.end.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00005",
+          "start": 0,
+          "end": 29,
+          "text": "Director of Product Marketing",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00006",
+          "start": 0,
+          "end": 45,
+          "text": "Synthetix AI (Palo Alto, CA) | 2022 – Present",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00007",
+          "start": 0,
+          "end": 117,
+          "text": "• Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00008",
+          "start": 0,
+          "end": 105,
+          "text": "• Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].title.value": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 32,
+          "text": "Senior Product Marketing Manager",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].company.value": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 16,
+          "text": "Datastream Cloud",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].location.value": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 18,
+          "end": 30,
+          "text": "San Jose, CA",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].dates.value.start": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 34,
+          "end": 38,
+          "text": "2019",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].dates.value.end": {
+      "source_refs": [
+        {
+          "line_id": "l00010",
+          "start": 41,
+          "end": 45,
+          "text": "2022",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].bullets[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 32,
+          "text": "Senior Product Marketing Manager",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 45,
+          "text": "Datastream Cloud (San Jose, CA) | 2019 – 2022",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 133,
+          "text": "• Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 84,
+          "text": "• Trained 180+ global field sales engineers on solution messaging and pricing tiers.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].bullets[1]": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 32,
+          "text": "Senior Product Marketing Manager",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 45,
+          "text": "Datastream Cloud (San Jose, CA) | 2019 – 2022",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 133,
+          "text": "• Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 84,
+          "text": "• Trained 180+ global field sales engineers on solution messaging and pricing tiers.",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].text": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 32,
+          "text": "Senior Product Marketing Manager",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 45,
+          "text": "Datastream Cloud (San Jose, CA) | 2019 – 2022",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 133,
+          "text": "• Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 84,
+          "text": "• Trained 180+ global field sales engineers on solution messaging and pricing tiers.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.start.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 32,
+          "text": "Senior Product Marketing Manager",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00010",
+          "start": 34,
+          "end": 38,
+          "text": "2019",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 133,
+          "text": "• Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 84,
+          "text": "• Trained 180+ global field sales engineers on solution messaging and pricing tiers.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.start.value": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 32,
+          "text": "Senior Product Marketing Manager",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00010",
+          "start": 34,
+          "end": 38,
+          "text": "2019",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 133,
+          "text": "• Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 84,
+          "text": "• Trained 180+ global field sales engineers on solution messaging and pricing tiers.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.start.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 32,
+          "text": "Senior Product Marketing Manager",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 45,
+          "text": "Datastream Cloud (San Jose, CA) | 2019 – 2022",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 133,
+          "text": "• Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 84,
+          "text": "• Trained 180+ global field sales engineers on solution messaging and pricing tiers.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.end.raw": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 32,
+          "text": "Senior Product Marketing Manager",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00010",
+          "start": 41,
+          "end": 45,
+          "text": "2022",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 133,
+          "text": "• Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 84,
+          "text": "• Trained 180+ global field sales engineers on solution messaging and pricing tiers.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.end.value": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 32,
+          "text": "Senior Product Marketing Manager",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00010",
+          "start": 41,
+          "end": 45,
+          "text": "2022",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 133,
+          "text": "• Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 84,
+          "text": "• Trained 180+ global field sales engineers on solution messaging and pricing tiers.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "work_experience[1].normalized_dates.end.precision": {
+      "source_refs": [
+        {
+          "line_id": "l00009",
+          "start": 0,
+          "end": 32,
+          "text": "Senior Product Marketing Manager",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00010",
+          "start": 0,
+          "end": 45,
+          "text": "Datastream Cloud (San Jose, CA) | 2019 – 2022",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00011",
+          "start": 0,
+          "end": 133,
+          "text": "• Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00012",
+          "start": 0,
+          "end": 84,
+          "text": "• Trained 180+ global field sales engineers on solution messaging and pricing tiers.",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00019",
+          "start": 0,
+          "end": 33,
+          "text": "• Category Creation & Positioning",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00019",
+          "start": 2,
+          "end": 33,
+          "text": "Category Creation & Positioning",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].text": {
+      "source_refs": [
+        {
+          "line_id": "l00020",
+          "start": 0,
+          "end": 33,
+          "text": "• Competitive Intelligence (Klue)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00020",
+          "start": 2,
+          "end": 33,
+          "text": "Competitive Intelligence (Klue)",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[2].text": {
+      "source_refs": [
+        {
+          "line_id": "l00021",
+          "start": 0,
+          "end": 34,
+          "text": "• Customer Case Studies & Webinars",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[2].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00021",
+          "start": 2,
+          "end": 34,
+          "text": "Customer Case Studies & Webinars",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[3].text": {
+      "source_refs": [
+        {
+          "line_id": "l00022",
+          "start": 0,
+          "end": 30,
+          "text": "• HubSpot, Salesforce, Marketo",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[3].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00022",
+          "start": 2,
+          "end": 9,
+          "text": "HubSpot",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[3].items[1]": {
+      "source_refs": [
+        {
+          "line_id": "l00022",
+          "start": 11,
+          "end": 21,
+          "text": "Salesforce",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[3].items[2]": {
+      "source_refs": [
+        {
+          "line_id": "l00022",
+          "start": 23,
+          "end": 30,
+          "text": "Marketo",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[4].text": {
+      "source_refs": [
+        {
+          "line_id": "l00023",
+          "start": 0,
+          "end": 30,
+          "text": "• Pricing & Packaging Strategy",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[4].items[0]": {
+      "source_refs": [
+        {
+          "line_id": "l00023",
+          "start": 2,
+          "end": 30,
+          "text": "Pricing & Packaging Strategy",
+          "page": null,
+          "bbox": null,
+          "granularity": "exact_span"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "other_sections[0].canonical": {
+      "source_refs": [
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 38,
+          "text": "• $35M+ Attributed Enterprise Pipeline",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 28,
+          "text": "• 65+ Tier-1 Enterprise Wins",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 33,
+          "text": "• 26% Higher Win-Rate Post-Launch",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 27,
+          "text": "• 180+ Field Reps Certified",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "other_sections[0].text": {
+      "source_refs": [
+        {
+          "line_id": "l00014",
+          "start": 0,
+          "end": 38,
+          "text": "• $35M+ Attributed Enterprise Pipeline",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00015",
+          "start": 0,
+          "end": 28,
+          "text": "• 65+ Tier-1 Enterprise Wins",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00016",
+          "start": 0,
+          "end": 33,
+          "text": "• 26% Higher Win-Rate Post-Launch",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        },
+        {
+          "line_id": "l00017",
+          "start": 0,
+          "end": 27,
+          "text": "• 180+ Field Reps Certified",
+          "page": null,
+          "bbox": null,
+          "granularity": "supporting_line"
+        }
+      ],
+      "confidence_kind": "uncalibrated_rule_score"
+    }
+  },
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002"
+      ],
+      "text": "KAVITA RAMANATHAN\nSENIOR PRODUCT MARKETING MANAGER (PMM) — B2B CLOUD & AI SOLUTIONS\nSan Jose, CA  •  (555) 234-8761  •  kavita.ramanathan@example.com  •  linkedin.com/in/kavita-ramanathan-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "summary",
+      "original_heading": "STRATEGIC SUMMARY:",
+      "heading_line_id": "l00003:h",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00003:b"
+      ],
+      "text": "Growth-oriented Product Marketing leader with 8+ years driving Go-To-Market (GTM) launches, competitive positioning, and buyer enablement for enterprise cloud and AI infrastructure. Generated $35M+ in qualified pipeline across Tier-1 enterprise accounts."
+    },
+    {
+      "id": "s002",
+      "canonical": "experience",
+      "original_heading": "SELECT GTM LEADERSHIP & EXPERIENCE",
+      "heading_line_id": "l00004",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00005",
+        "l00006",
+        "l00007",
+        "l00008",
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012"
+      ],
+      "text": "Director of Product Marketing\nSynthetix AI (Palo Alto, CA) | 2022 – Present\n• Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1.\n• Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%.\nSenior Product Marketing Manager\nDatastream Cloud (San Jose, CA) | 2019 – 2022\n• Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).\n• Trained 180+ global field sales engineers on solution messaging and pricing tiers."
+    },
+    {
+      "id": "s003",
+      "canonical": "metrics",
+      "original_heading": "KEY GTM METRICS",
+      "heading_line_id": "l00013",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00014",
+        "l00015",
+        "l00016",
+        "l00017"
+      ],
+      "text": "• $35M+ Attributed Enterprise Pipeline\n• 65+ Tier-1 Enterprise Wins\n• 26% Higher Win-Rate Post-Launch\n• 180+ Field Reps Certified"
+    },
+    {
+      "id": "s004",
+      "canonical": "skills",
+      "original_heading": "SKILLS & METHODOLOGIES",
+      "heading_line_id": "l00018",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023"
+      ],
+      "text": "• Category Creation & Positioning\n• Competitive Intelligence (Klue)\n• Customer Case Studies & Webinars\n• HubSpot, Salesforce, Marketo\n• Pricing & Packaging Strategy"
+    },
+    {
+      "id": "s005",
+      "canonical": "education",
+      "original_heading": "EDUCATION",
+      "heading_line_id": "l00024",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00025",
+        "l00026"
+      ],
+      "text": "MBA — UC Berkeley Haas (2019)\nB.S. in Economics — UCLA (2015)"
+    }
+  ],
+  "unclassified": [],
+  "raw_lines": [
+    {
+      "id": "l00000",
+      "text": "KAVITA RAMANATHAN",
+      "runs": [
+        {
+          "text": "KAVITA RAMANATHAN",
+          "bold": true,
+          "size": 18.0,
+          "color": "FFFFFF",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00000"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00001",
+      "text": "SENIOR PRODUCT MARKETING MANAGER (PMM) — B2B CLOUD & AI SOLUTIONS",
+      "runs": [
+        {
+          "text": "SENIOR PRODUCT MARKETING MANAGER (PMM) — B2B CLOUD & AI SOLUTIONS",
+          "bold": true,
+          "size": 9.5,
+          "color": "94A3B8",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00001"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00002",
+      "text": "San Jose, CA  •  (555) 234-8761  •  kavita.ramanathan@example.com  •  linkedin.com/in/kavita-ramanathan-dummy",
+      "runs": [
+        {
+          "text": "San Jose, CA  •  (555) 234-8761  •  kavita.ramanathan@example.com  •  linkedin.com/in/kavita-ramanathan-dummy",
+          "bold": false,
+          "size": 8.5,
+          "color": "CBD5E1",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00002"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00003",
+      "text": "STRATEGIC SUMMARY: Growth-oriented Product Marketing leader with 8+ years driving Go-To-Market (GTM) launches, competitive positioning, and buyer enablement for enterprise cloud and AI infrastructure. Generated $35M+ in qualified pipeline across Tier-1 enterprise accounts.",
+      "runs": [
+        {
+          "text": "STRATEGIC SUMMARY: ",
+          "bold": true,
+          "size": 8.5,
+          "color": "38BDF8",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        },
+        {
+          "text": "Growth-oriented Product Marketing leader with 8+ years driving Go-To-Market (GTM) launches, competitive positioning, and buyer enablement for enterprise cloud and AI infrastructure. Generated $35M+ in qualified pipeline across Tier-1 enterprise accounts.",
+          "bold": false,
+          "size": 8.5,
+          "color": "F1F5F9",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t1:r0:c0",
+      "table": "word/document.xml:t1",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00003"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00004",
+      "text": "SELECT GTM LEADERSHIP & EXPERIENCE",
+      "runs": [
+        {
+          "text": "SELECT GTM LEADERSHIP & EXPERIENCE",
+          "bold": true,
+          "size": 10.0,
+          "color": "0F172A",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00004"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00005",
+      "text": "Director of Product Marketing",
+      "runs": [
+        {
+          "text": "Director of Product Marketing",
+          "bold": true,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00005"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00006",
+      "text": "Synthetix AI (Palo Alto, CA) | 2022 – Present",
+      "runs": [
+        {
+          "text": "Synthetix AI (Palo Alto, CA) | 2022 – Present",
+          "bold": true,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00006"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00007",
+      "text": "• Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1.",
+      "runs": [
+        {
+          "text": "• Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1.",
+          "bold": false,
+          "size": 8.0,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00007"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00008",
+      "text": "• Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%.",
+      "runs": [
+        {
+          "text": "• Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%.",
+          "bold": false,
+          "size": 8.0,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00008"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00009",
+      "text": "Senior Product Marketing Manager",
+      "runs": [
+        {
+          "text": "Senior Product Marketing Manager",
+          "bold": true,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00009"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00010",
+      "text": "Datastream Cloud (San Jose, CA) | 2019 – 2022",
+      "runs": [
+        {
+          "text": "Datastream Cloud (San Jose, CA) | 2019 – 2022",
+          "bold": true,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00010"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00011",
+      "text": "• Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).",
+      "runs": [
+        {
+          "text": "• Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).",
+          "bold": false,
+          "size": 8.0,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00011"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00012",
+      "text": "• Trained 180+ global field sales engineers on solution messaging and pricing tiers.",
+      "runs": [
+        {
+          "text": "• Trained 180+ global field sales engineers on solution messaging and pricing tiers.",
+          "bold": false,
+          "size": 8.0,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c0",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 0,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00012"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00013",
+      "text": "KEY GTM METRICS",
+      "runs": [
+        {
+          "text": "KEY GTM METRICS",
+          "bold": true,
+          "size": 10.0,
+          "color": "0F172A",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00013"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00014",
+      "text": "• $35M+ Attributed Enterprise Pipeline",
+      "runs": [
+        {
+          "text": "• $35M+ Attributed Enterprise Pipeline",
+          "bold": false,
+          "size": 8.5,
+          "color": "1E293B",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00014"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00015",
+      "text": "• 65+ Tier-1 Enterprise Wins",
+      "runs": [
+        {
+          "text": "• 65+ Tier-1 Enterprise Wins",
+          "bold": false,
+          "size": 8.5,
+          "color": "1E293B",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00015"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00016",
+      "text": "• 26% Higher Win-Rate Post-Launch",
+      "runs": [
+        {
+          "text": "• 26% Higher Win-Rate Post-Launch",
+          "bold": false,
+          "size": 8.5,
+          "color": "1E293B",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00016"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00017",
+      "text": "• 180+ Field Reps Certified",
+      "runs": [
+        {
+          "text": "• 180+ Field Reps Certified",
+          "bold": false,
+          "size": 8.5,
+          "color": "1E293B",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00017"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00018",
+      "text": "SKILLS & METHODOLOGIES",
+      "runs": [
+        {
+          "text": "SKILLS & METHODOLOGIES",
+          "bold": true,
+          "size": 9.5,
+          "color": "0F172A",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00018"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00019",
+      "text": "• Category Creation & Positioning",
+      "runs": [
+        {
+          "text": "• Category Creation & Positioning",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00019"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00020",
+      "text": "• Competitive Intelligence (Klue)",
+      "runs": [
+        {
+          "text": "• Competitive Intelligence (Klue)",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00020"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00021",
+      "text": "• Customer Case Studies & Webinars",
+      "runs": [
+        {
+          "text": "• Customer Case Studies & Webinars",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00021"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00022",
+      "text": "• HubSpot, Salesforce, Marketo",
+      "runs": [
+        {
+          "text": "• HubSpot, Salesforce, Marketo",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00022"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00023",
+      "text": "• Pricing & Packaging Strategy",
+      "runs": [
+        {
+          "text": "• Pricing & Packaging Strategy",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00023"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00024",
+      "text": "EDUCATION",
+      "runs": [
+        {
+          "text": "EDUCATION",
+          "bold": true,
+          "size": 9.5,
+          "color": "0F172A",
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00024"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00025",
+      "text": "MBA — UC Berkeley Haas (2019)",
+      "runs": [
+        {
+          "text": "MBA — UC Berkeley Haas (2019)",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00025"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    },
+    {
+      "id": "l00026",
+      "text": "B.S. in Economics — UCLA (2015)",
+      "runs": [
+        {
+          "text": "B.S. in Economics — UCLA (2015)",
+          "bold": false,
+          "size": 8.5,
+          "color": null,
+          "caps": false,
+          "font": "Arial",
+          "hyperlink": null,
+          "original_text": null
+        }
+      ],
+      "page": null,
+      "bbox": null,
+      "part": "word/document.xml",
+      "flow": "word/document.xml:t2:r0:c1",
+      "table": "word/document.xml:t2",
+      "row": 0,
+      "cell": 1,
+      "style": null,
+      "bullet": false,
+      "tag": "TEXT",
+      "source_ids": [
+        "l00026"
+      ],
+      "duplicate_of": null,
+      "heading_confidence": null
+    }
+  ],
+  "raw_text": "KAVITA RAMANATHAN\nSENIOR PRODUCT MARKETING MANAGER (PMM) — B2B CLOUD & AI SOLUTIONS\nSan Jose, CA  •  (555) 234-8761  •  kavita.ramanathan@example.com  •  linkedin.com/in/kavita-ramanathan-dummy\nSTRATEGIC SUMMARY: Growth-oriented Product Marketing leader with 8+ years driving Go-To-Market (GTM) launches, competitive positioning, and buyer enablement for enterprise cloud and AI infrastructure. Generated $35M+ in qualified pipeline across Tier-1 enterprise accounts.\nSELECT GTM LEADERSHIP & EXPERIENCE\nDirector of Product Marketing\nSynthetix AI (Palo Alto, CA) | 2022 – Present\n• Orchestrated global launch of enterprise generative AI SDK, capturing 65 enterprise clients and $14M ARR in year 1.\n• Authored buyer journey whitepapers and sales pitch decks, lifting SDR-to-opportunity conversion by 26%.\nSenior Product Marketing Manager\nDatastream Cloud (San Jose, CA) | 2019 – 2022\n• Repositioned core database platform against top competitors, driving a 44% surge in analyst ranking mentions (Gartner & Forrester).\n• Trained 180+ global field sales engineers on solution messaging and pricing tiers.\nKEY GTM METRICS\n• $35M+ Attributed Enterprise Pipeline\n• 65+ Tier-1 Enterprise Wins\n• 26% Higher Win-Rate Post-Launch\n• 180+ Field Reps Certified\nSKILLS & METHODOLOGIES\n• Category Creation & Positioning\n• Competitive Intelligence (Klue)\n• Customer Case Studies & Webinars\n• HubSpot, Salesforce, Marketo\n• Pricing & Packaging Strategy\nEDUCATION\nMBA — UC Berkeley Haas (2019)\nB.S. in Economics — UCLA (2015)",
+  "validation": {
+    "issues": [],
+    "legacy_schema_errors": [],
+    "completeness": {
+      "status": "pass",
+      "reference_words": 204,
+      "extracted_words": 204,
+      "matched_words": 204,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "semantic_accuracy": "not_established_by_schema_validation"
+  },
+  "review_status": "needs_review",
+  "comparison": {
+    "provided": true,
+    "changed": false,
+    "ground_truth": false
+  }
+}

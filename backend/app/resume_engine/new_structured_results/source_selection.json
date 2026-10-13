@@ -1,0 +1,142 @@
+[
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U01/resume.json",
+    "artifact_sha256": "19a1c408dbc24bfc89b32a944aa32fab87149303d72e6100e5df3c8e8f1ecf2e",
+    "document_sha256": "9ba86722016ea9427a4ae36c2f2b7ef54f9598e70c2cad0918e8c4f50ce237cc",
+    "reason": "Highest evidence rank for source identity within folder; structured content is comparison only",
+    "alternatives": []
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U02/resume.json",
+    "artifact_sha256": "ed342eb38bb65117b9ccd55535318f034798c11b9f104d04f2c839c432a86434",
+    "document_sha256": "89b836400f8f5192c5b902c03b8ded9982d844b6f2ad1078b9fa9ff5f8cd4c87",
+    "reason": "Highest evidence rank for source identity within folder; structured content is comparison only",
+    "alternatives": [
+      "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U02/audit_original_resume.json"
+    ]
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U03/resume.json",
+    "artifact_sha256": "ded9c2c6e9f9644d687337ea5a8f34a9195bb3e2be33eedf0af4f7aa336ca78c",
+    "document_sha256": "bdb2f38e41ac1fe979557ef27f8c98ba3a1f312e5b99e8f117d120a90b7cb826",
+    "reason": "Highest evidence rank for source identity within folder; structured content is comparison only",
+    "alternatives": [
+      "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U03/audit_original_resume.json"
+    ]
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U04/resume.json",
+    "artifact_sha256": "dda46aa3ab7de4c1b166102e3a0224dae7e080f5aa24ff2b0c24cd04f293fd32",
+    "document_sha256": "5f77f4e59d97793795089e0b99f6f360f55d6f12d75e7af6693fae044d6a2730",
+    "reason": "Highest evidence rank for source identity within folder; structured content is comparison only",
+    "alternatives": []
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U05/resume.json",
+    "artifact_sha256": "e4be4e7f2e90b7526d29a90d1b203b909d820fa1ac856e1ccce0f23e4aee91d3",
+    "document_sha256": "14b052f3cdc07a57f163a8498230e2ed0c81e3e72cd91a059631fadfdf382e35",
+    "reason": "Highest evidence rank for source identity within folder; structured content is comparison only",
+    "alternatives": []
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U06/resume.json",
+    "artifact_sha256": "059718e53bd5acf81f546afc75a4490ce14ef8a1ca52ef098be814f87cb3589b",
+    "document_sha256": "c46b14d76878b810ea8052349edc50bf54f58e087c5c015b92bcecce83a74ada",
+    "reason": "Highest evidence rank for source identity within folder; structured content is comparison only",
+    "alternatives": []
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U07/resume.json",
+    "artifact_sha256": "caac7c1f2fd36f835e121aeee43e6caa4d82510717d10bcca68ef0a26a82758c",
+    "document_sha256": "8a28114c043883f515bb055f3cb0c0cbfee3d13134a2eba717a7a0cfbf12a44f",
+    "reason": "Highest evidence rank for source identity within folder; structured content is comparison only",
+    "alternatives": []
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U08/resume.json",
+    "artifact_sha256": "187023dac26507f51b0f1196c9dce278aae3453de39f7cf68419733430c11b02",
+    "document_sha256": "05b76709624833861cab54350575e9a76917f332fca0ccbf292d06b0ab116bbb",
+    "reason": "Highest evidence rank for source identity within folder; structured content is comparison only",
+    "alternatives": []
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U09/resume.json",
+    "artifact_sha256": "441082850450dc8b45a58153e4e1562f038daa629309039426e40c3217c1e24e",
+    "document_sha256": "1f10e01c7b313902ed4bddfbf1998100e42d16962f820ca11293372f686e9911",
+    "reason": "Highest evidence rank for source identity within folder; structured content is comparison only",
+    "alternatives": []
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U10/resume.json",
+    "artifact_sha256": "cefc855abcc7c8ff0b846eb0526ee683166fe6fc0647b812a3bb539f1f624ee2",
+    "document_sha256": "9c87168b6d529336eca1dd27db234421f6110eba8e06e979d65291dc29e75096",
+    "reason": "Highest evidence rank for source identity within folder; structured content is comparison only",
+    "alternatives": []
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U11/resume.json",
+    "artifact_sha256": "b9b76deaf9820294d2865c3814aa694dad7b060e31a63c6cb8a3d13a77b2e5b1",
+    "document_sha256": "c1f2680437323350f4bd296f66d809cc6ef983a60f24d03b8fd91779535df82f",
+    "reason": "Highest evidence rank for source identity within folder; structured content is comparison only",
+    "alternatives": []
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U12/resume.json",
+    "artifact_sha256": "ba5481c861297ed0846e6f0d60155b105fda03fcdb8ba529d33a2cf89b86f6db",
+    "document_sha256": "c0621a20f19acdfc3e731f6db1768795081d7314d2adb69983b15fdfb91c6186",
+    "reason": "Highest evidence rank for source identity within folder; structured content is comparison only",
+    "alternatives": [
+      "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U12/audit_original_resume.json"
+    ]
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U13/resume.json",
+    "artifact_sha256": "ce8c1622f95c1098d078da4e95a68b6157f405f0409a1fe80113df0196513474",
+    "document_sha256": "6bb643e81a789bc8107dc98567907237d271c123b5c7030e2b63a363d4c4baaf",
+    "reason": "Highest evidence rank for source identity within folder; structured content is comparison only",
+    "alternatives": [
+      "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U13/audit_original_resume.json"
+    ]
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U14/resume.json",
+    "artifact_sha256": "84811c0bd0e2c5ba7507678f1ce7426b25ebeeef80238dc6ff219c4850b992d9",
+    "document_sha256": "2a72ffbeecb5dde4df82c996261ea24f562c5b526b83d19f4faa8189b40c0204",
+    "reason": "Highest evidence rank for source identity within folder; structured content is comparison only",
+    "alternatives": [
+      "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U14/audit_original_resume.json"
+    ]
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U15/resume.json",
+    "artifact_sha256": "405a777767c276b0304a0977fe047f783a6e55912ff9033a742ee3ca499fe31a",
+    "document_sha256": "2b267dd0393ba6c14bc7123228cb38ef079f0237d0dd9b3db584c334b58b6146",
+    "reason": "Highest evidence rank for source identity within folder; structured content is comparison only",
+    "alternatives": [
+      "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U15/audit_original_resume.json"
+    ]
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U16/resume.json",
+    "artifact_sha256": "f0a2642ed0a7cacb468e973393088a48721788e3d5a24ac16989af75b52099d9",
+    "document_sha256": "5830bdf1799ece64b8e44ef8b773300cf1305bbd793a6e973eb669c6491ca40c",
+    "reason": "Highest evidence rank for source identity within folder; structured content is comparison only",
+    "alternatives": [
+      "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U16/audit_original_resume.json"
+    ]
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U17/resume.json",
+    "artifact_sha256": "26f74d03b76921ed737e29b895bbaf7b7b5a1207c00e5e90f65fc786c8a7aad5",
+    "document_sha256": "660f09e952f57e81c68954cb8f7097c29b6021b3a3152fa90114933b9ffc62d9",
+    "reason": "Highest evidence rank for source identity within folder; structured content is comparison only",
+    "alternatives": []
+  },
+  {
+    "path": "/workspace/scratch/d86c07978574/work/ner_implementation/resume_engine/ner_audit/artifacts/U20/resume.json",
+    "artifact_sha256": "56fd25774c82c907ed21db1d6bb0076e9d3f25a89e6b29fe521257015f8146c6",
+    "document_sha256": "4a72c3875570e7aa813cc0fe5c0bb0c59548859f011389924b4eecb362c49e8c",
+    "reason": "Highest evidence rank for source identity within folder; structured content is comparison only",
+    "alternatives": []
+  }
+]

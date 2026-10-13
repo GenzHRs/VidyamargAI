@@ -1,0 +1,189 @@
+{
+  "engine_version": "3.0.0",
+  "audit_date": "2026-10-12",
+  "file_count": 20,
+  "unique_files": 16,
+  "all_files": {
+    "field_micro": {
+      "tp": 732,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "by_group": {
+      "certifications": {
+        "tp": 18,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "contact": {
+        "tp": 106,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "education": {
+        "tp": 109,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "experience": {
+        "tp": 230,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "headings": {
+        "tp": 92,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "project_technologies": {
+        "tp": 18,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "projects": {
+        "tp": 16,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "skills": {
+        "tp": 235,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  "unique_only": {
+    "field_micro": {
+      "tp": 585,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "by_group": {
+      "certifications": {
+        "tp": 14,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "contact": {
+        "tp": 85,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "education": {
+        "tp": 83,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "experience": {
+        "tp": 183,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "headings": {
+        "tp": 74,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "project_technologies": {
+        "tp": 18,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "projects": {
+        "tp": 14,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "skills": {
+        "tp": 188,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  "word_counts": {
+    "reference_words": 5066,
+    "extracted_words": 5065,
+    "matched_words": 5065
+  },
+  "unique_word_counts": {
+    "reference_words": 3919,
+    "extracted_words": 3918,
+    "matched_words": 3918
+  },
+  "labels_sha256": "fd069ac3a35544f0115f21f9a1ee91c5e62989c88cd6d58776aea26d46db5e7e"
+}
+R01 100.0 []
+R02 100.0 []
+R03 100.0 []
+R04 100.0 []
+R05 100.0 []
+R06 100.0 []
+R07 100.0 []
+R08 100.0 []
+R09 100.0 []
+R10 100.0 []
+R11 100.0 []
+R12 100.0 []
+R13 100.0 []
+R14 100.0 []
+R15 100.0 []
+R16 100.0 []
+R17 100.0 []
+R18 100.0 []
+R19 100.0 []
+R20 100.0 []

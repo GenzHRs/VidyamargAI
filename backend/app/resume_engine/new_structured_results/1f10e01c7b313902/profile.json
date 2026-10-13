@@ -1,0 +1,684 @@
+{
+  "mapping_schema_version": "1.0.0",
+  "record_id": "85a603cf241c1bd995635bb933963cbbbcb5d28e71e90e2c329b2de9f2f2b6a1",
+  "document_id": "1f10e01c7b313902ed4bddfbf1998100e42d16962f820ca11293372f686e9911",
+  "candidate_id": null,
+  "extraction_id": "849accd4183268c24501514d3ed7d134c5719b3611584fff3402b9170c66461b",
+  "mapper_sha256": "99064aec1206cbb49df51cf0e73a239fd615aee01b0aa7e99c2aa2d2a3479451",
+  "source": {
+    "filename": "02_DOCX_Heavy_Table_Layout_Resume.docx",
+    "sha256": "1f10e01c7b313902ed4bddfbf1998100e42d16962f820ca11293372f686e9911",
+    "type": "docx",
+    "duplicate_of": null,
+    "ocr": false,
+    "ocr_pages": [],
+    "pages": null,
+    "reference_method": "docx_xml_text"
+  },
+  "section_order": [
+    "contact",
+    "summary",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "certifications",
+    "publications",
+    "awards",
+    "metrics",
+    "other_sections"
+  ],
+  "entry_order": "source",
+  "profile": {
+    "contact": {
+      "full_name": "DEVON M. HASTINGS",
+      "headline": "Senior Financial Analyst & Investment Controller",
+      "emails": [
+        "devon.hastings@example.com"
+      ],
+      "phones": [
+        {
+          "raw": "(555) 839-2041",
+          "normalized": "+15558392041",
+          "valid": false
+        }
+      ],
+      "locations": [
+        "Chicago, IL"
+      ],
+      "links": [
+        "linkedin.com/in/devon-hastings-dummy"
+      ]
+    },
+    "summary": [],
+    "experience": [
+      {
+        "source_text": "2021 – Present\nSenior FP&A Controller\nSterling Horizon Capital (Chicago, IL)\n• Directed quarterly forecast cadence for $180M commercial asset portfolio with 98.4% variance accuracy.\n• Automated monthly executive slide generation via SQL & Power Query, saving 18 manual work-hours per cycle.\n• Assessed financial underwriting for 5 successful acquisitions totaling $44M.",
+        "source_line_ids": [
+          "l00017",
+          "l00018",
+          "l00019",
+          "l00020",
+          "l00021",
+          "l00022"
+        ],
+        "ordinal": 0,
+        "title": "Senior FP&A Controller",
+        "company": "Sterling Horizon Capital",
+        "location": "Chicago, IL",
+        "dates": {
+          "start": {
+            "raw": "2021",
+            "normalized": "2021",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "Present",
+            "normalized": null,
+            "precision": "open"
+          },
+          "ongoing_as_reported": true
+        },
+        "bullets": [
+          "Directed quarterly forecast cadence for $180M commercial asset portfolio with 98.4% variance accuracy.",
+          "Automated monthly executive slide generation via SQL & Power Query, saving 18 manual work-hours per cycle.",
+          "Assessed financial underwriting for 5 successful acquisitions totaling $44M."
+        ],
+        "links": [],
+        "work_mode": null
+      },
+      {
+        "source_text": "2018 – 2021\nFinancial Analyst\nPinnacle Advisory Partners (Milwaukee, WI)\n• Maintained 3-statement operating models and liquidity sensitivity stress tests.\n• Streamlined SG&A operational expenditures across 12 branch locations, recovering $1.2M in annual cost leakage.",
+        "source_line_ids": [
+          "l00023",
+          "l00024",
+          "l00025",
+          "l00026",
+          "l00027"
+        ],
+        "ordinal": 1,
+        "title": "Financial Analyst",
+        "company": "Pinnacle Advisory Partners",
+        "location": "Milwaukee, WI",
+        "dates": {
+          "start": {
+            "raw": "2018",
+            "normalized": "2018",
+            "precision": "year"
+          },
+          "end": {
+            "raw": "2021",
+            "normalized": "2021",
+            "precision": "year"
+          },
+          "ongoing_as_reported": false
+        },
+        "bullets": [
+          "Maintained 3-statement operating models and liquidity sensitivity stress tests.",
+          "Streamlined SG&A operational expenditures across 12 branch locations, recovering $1.2M in annual cost leakage."
+        ],
+        "links": [],
+        "work_mode": null
+      }
+    ],
+    "education": [
+      {
+        "source_text": "B.S. in Finance & Accounting | Northwestern University\nGraduated: 2018 | Magna Cum Laude",
+        "source_line_ids": [
+          "l00029",
+          "l00030"
+        ],
+        "ordinal": 0,
+        "degree": "B.S. in Finance & Accounting",
+        "institution": "Northwestern University",
+        "location": null,
+        "dates": {
+          "start": {
+            "raw": null,
+            "normalized": null,
+            "precision": null
+          },
+          "end": {
+            "raw": null,
+            "normalized": null,
+            "precision": null
+          },
+          "ongoing_as_reported": false
+        },
+        "graduation": {
+          "raw": "2018",
+          "normalized": "2018",
+          "precision": "year"
+        },
+        "gpa": null,
+        "dissertation_or_thesis": null
+      }
+    ],
+    "projects": [],
+    "skills": [
+      {
+        "category": null,
+        "items": [
+          "Financial Modeling (DCF, LBO)",
+          "US GAAP & IFRS Reporting",
+          "Budgeting & Multi-Year Forecasting",
+          "Capital Allocation & Debt Restructuring",
+          "Variance & P&L Analysis",
+          "Advanced Excel (VBA, Power Query)",
+          "M&A Due Diligence & Audit Defense"
+        ],
+        "source_records": [
+          {
+            "text": "• Financial Modeling (DCF, LBO)",
+            "source_line_ids": [
+              "l00007"
+            ],
+            "category": null,
+            "items": [
+              "Financial Modeling (DCF, LBO)"
+            ]
+          },
+          {
+            "text": "• US GAAP & IFRS Reporting",
+            "source_line_ids": [
+              "l00009"
+            ],
+            "category": null,
+            "items": [
+              "US GAAP & IFRS Reporting"
+            ]
+          },
+          {
+            "text": "• Budgeting & Multi-Year Forecasting",
+            "source_line_ids": [
+              "l00010"
+            ],
+            "category": null,
+            "items": [
+              "Budgeting & Multi-Year Forecasting"
+            ]
+          },
+          {
+            "text": "• Capital Allocation & Debt Restructuring",
+            "source_line_ids": [
+              "l00012"
+            ],
+            "category": null,
+            "items": [
+              "Capital Allocation & Debt Restructuring"
+            ]
+          },
+          {
+            "text": "• Variance & P&L Analysis",
+            "source_line_ids": [
+              "l00013"
+            ],
+            "category": null,
+            "items": [
+              "Variance & P&L Analysis"
+            ]
+          },
+          {
+            "text": "• Advanced Excel (VBA, Power Query)",
+            "source_line_ids": [
+              "l00014"
+            ],
+            "category": null,
+            "items": [
+              "Advanced Excel (VBA, Power Query)"
+            ]
+          },
+          {
+            "text": "• M&A Due Diligence & Audit Defense",
+            "source_line_ids": [
+              "l00015"
+            ],
+            "category": null,
+            "items": [
+              "M&A Due Diligence & Audit Defense"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "ERP",
+        "items": [
+          "SAP S/4HANA & Oracle NetSuite"
+        ],
+        "source_records": [
+          {
+            "text": "• ERP: SAP S/4HANA & Oracle NetSuite",
+            "source_line_ids": [
+              "l00008"
+            ],
+            "category": "ERP",
+            "items": [
+              "SAP S/4HANA & Oracle NetSuite"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "BI & Data",
+        "items": [
+          "Tableau",
+          "Power BI",
+          "SQL"
+        ],
+        "source_records": [
+          {
+            "text": "• BI & Data: Tableau, Power BI, SQL",
+            "source_line_ids": [
+              "l00011"
+            ],
+            "category": "BI & Data",
+            "items": [
+              "Tableau",
+              "Power BI",
+              "SQL"
+            ]
+          }
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "source_text": "Chartered Financial Analyst (CFA) — Level III Candidate\nActive License / Enrollment",
+        "source_line_ids": [
+          "l00031",
+          "l00032"
+        ],
+        "ordinal": 0,
+        "name": "Chartered Financial Analyst (CFA) — Level III Candidate",
+        "issuer": null,
+        "details": "Active License / Enrollment",
+        "license_id": null,
+        "status_as_reported": null,
+        "links": []
+      }
+    ],
+    "publications": [],
+    "awards": [],
+    "metrics": [],
+    "other_sections": []
+  },
+  "evidence": {
+    "contact.full_name": {
+      "source_line_ids": [
+        "l00000"
+      ],
+      "confidence": 0.92,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.headline": {
+      "source_line_ids": [
+        "l00001"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.emails[0]": {
+      "source_line_ids": [
+        "l00004"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.phones[0]": {
+      "source_line_ids": [
+        "l00003"
+      ],
+      "confidence": 0.7,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.locations[0]": {
+      "source_line_ids": [
+        "l00002"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0]": {
+      "source_line_ids": [
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].title": {
+      "source_line_ids": [
+        "l00018"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].company": {
+      "source_line_ids": [
+        "l00019"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].location": {
+      "source_line_ids": [
+        "l00019"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].dates": {
+      "source_line_ids": [
+        "l00017"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[0]": {
+      "source_line_ids": [
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[1]": {
+      "source_line_ids": [
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[0].bullets[2]": {
+      "source_line_ids": [
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1]": {
+      "source_line_ids": [
+        "l00023",
+        "l00024",
+        "l00025",
+        "l00026",
+        "l00027"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].title": {
+      "source_line_ids": [
+        "l00024"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].company": {
+      "source_line_ids": [
+        "l00025"
+      ],
+      "confidence": 0.88,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].location": {
+      "source_line_ids": [
+        "l00025"
+      ],
+      "confidence": 0.9,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].dates": {
+      "source_line_ids": [
+        "l00023"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].bullets[0]": {
+      "source_line_ids": [
+        "l00023",
+        "l00024",
+        "l00025",
+        "l00026",
+        "l00027"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "experience[1].bullets[1]": {
+      "source_line_ids": [
+        "l00023",
+        "l00024",
+        "l00025",
+        "l00026",
+        "l00027"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0]": {
+      "source_line_ids": [
+        "l00029",
+        "l00030"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].degree": {
+      "source_line_ids": [
+        "l00029"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].institution": {
+      "source_line_ids": [
+        "l00029"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].location": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].dates": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].graduation": {
+      "source_line_ids": [
+        "l00030"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "education[0].gpa": {
+      "source_line_ids": [],
+      "confidence": 0.0,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[0]": {
+      "source_line_ids": [
+        "l00007",
+        "l00009",
+        "l00010",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[1]": {
+      "source_line_ids": [
+        "l00008"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "skills[2]": {
+      "source_line_ids": [
+        "l00011"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0]": {
+      "source_line_ids": [
+        "l00031",
+        "l00032"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].name": {
+      "source_line_ids": [
+        "l00031"
+      ],
+      "confidence": 0.85,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].issuer": {
+      "source_line_ids": [
+        "l00031",
+        "l00032"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "certifications[0].details": {
+      "source_line_ids": [
+        "l00031",
+        "l00032"
+      ],
+      "confidence": null,
+      "confidence_kind": "uncalibrated_rule_score"
+    },
+    "contact.links[0]": {
+      "source_line_ids": [
+        "l00005"
+      ],
+      "confidence": 0.99,
+      "confidence_kind": "uncalibrated_rule_score"
+    }
+  },
+  "source_sections": [
+    {
+      "id": "s000",
+      "canonical": "preamble",
+      "original_heading": null,
+      "heading_line_id": null,
+      "confidence": 1.0,
+      "line_ids": [
+        "l00000",
+        "l00001",
+        "l00002",
+        "l00003",
+        "l00004",
+        "l00005"
+      ],
+      "text": "DEVON M. HASTINGS\nSenior Financial Analyst & Investment Controller\nChicago, IL\n(555) 839-2041\ndevon.hastings@example.com\nlinkedin.com/in/devon-hastings-dummy"
+    },
+    {
+      "id": "s001",
+      "canonical": "skills",
+      "original_heading": "CORE COMPETENCIES & FINANCIAL SYSTEMS",
+      "heading_line_id": "l00006",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00007",
+        "l00008",
+        "l00009",
+        "l00010",
+        "l00011",
+        "l00012",
+        "l00013",
+        "l00014",
+        "l00015"
+      ],
+      "text": "• Financial Modeling (DCF, LBO)\n• ERP: SAP S/4HANA & Oracle NetSuite\n• US GAAP & IFRS Reporting\n• Budgeting & Multi-Year Forecasting\n• BI & Data: Tableau, Power BI, SQL\n• Capital Allocation & Debt Restructuring\n• Variance & P&L Analysis\n• Advanced Excel (VBA, Power Query)\n• M&A Due Diligence & Audit Defense"
+    },
+    {
+      "id": "s002",
+      "canonical": "experience",
+      "original_heading": "CAREER HISTORY",
+      "heading_line_id": "l00016",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00017",
+        "l00018",
+        "l00019",
+        "l00020",
+        "l00021",
+        "l00022",
+        "l00023",
+        "l00024",
+        "l00025",
+        "l00026",
+        "l00027"
+      ],
+      "text": "2021 – Present\nSenior FP&A Controller\nSterling Horizon Capital (Chicago, IL)\n• Directed quarterly forecast cadence for $180M commercial asset portfolio with 98.4% variance accuracy.\n• Automated monthly executive slide generation via SQL & Power Query, saving 18 manual work-hours per cycle.\n• Assessed financial underwriting for 5 successful acquisitions totaling $44M.\n2018 – 2021\nFinancial Analyst\nPinnacle Advisory Partners (Milwaukee, WI)\n• Maintained 3-statement operating models and liquidity sensitivity stress tests.\n• Streamlined SG&A operational expenditures across 12 branch locations, recovering $1.2M in annual cost leakage."
+    },
+    {
+      "id": "s003",
+      "canonical": "education",
+      "original_heading": "EDUCATION & CERTIFICATIONS",
+      "heading_line_id": "l00028",
+      "confidence": 0.98,
+      "line_ids": [
+        "l00029",
+        "l00030",
+        "l00031",
+        "l00032"
+      ],
+      "text": "B.S. in Finance & Accounting | Northwestern University\nGraduated: 2018 | Magna Cum Laude\nChartered Financial Analyst (CFA) — Level III Candidate\nActive License / Enrollment"
+    }
+  ],
+  "quality": {
+    "completeness": {
+      "status": "pass",
+      "reference_words": 181,
+      "extracted_words": 181,
+      "matched_words": 181,
+      "recall": 1.0,
+      "precision": 1.0,
+      "missing": {},
+      "extra": {}
+    },
+    "schema_errors": [],
+    "warnings": [],
+    "suppressed_exact_repeats": []
+  },
+  "review_status": "needs_review",
+  "review": [
+    {
+      "path": "fields.phones[0]",
+      "reason": "missing or low-confidence candidate",
+      "confidence": 0.7
+    }
+  ],
+  "mapping_changes": []
+}

@@ -1,0 +1,87 @@
+%PDF-1.3
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [ 4 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Page
+/Resources <<
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+>>
+>>
+/MediaBox [ 0.0 0.0 612 792 ]
+/Parent 2 0 R
+/Contents 7 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Courier
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Courier-Bold
+>>
+endobj
+7 0 obj
+<<
+/Length 797
+>>
+stream
+BT /F2 24 Tf 1 0 0 1 40 750 Tm (JANE DOE) Tj ET
+BT /F1 14 Tf 1 0 0 1 40 712 Tm (Software Engineer) Tj ET
+BT /F1 14 Tf 1 0 0 1 40 674 Tm (jane@example.com) Tj ET
+BT /F1 14 Tf 1 0 0 1 40 636 Tm (Seattle, WA) Tj ET
+BT /F1 14 Tf 1 0 0 1 40 598 Tm (SUMMARY) Tj ET
+BT /F1 14 Tf 1 0 0 1 40 560 Tm (Experienced software engineer building reliable services.) Tj ET
+BT /F1 14 Tf 1 0 0 1 40 522 Tm (SKILLS) Tj ET
+BT /F1 14 Tf 1 0 0 1 40 484 Tm (Python SQL Docker Linux) Tj ET
+BT /F1 14 Tf 1 0 0 1 40 446 Tm (EXPERIENCE) Tj ET
+BT /F1 14 Tf 1 0 0 1 40 408 Tm (Engineer at Example Systems) Tj ET
+BT /F1 14 Tf 1 0 0 1 40 370 Tm (2021 - Present) Tj ET
+BT /F1 14 Tf 1 0 0 1 40 332 Tm (Built reliable services for customers.) Tj ET
+BT /F1 14 Tf 1 0 0 1 40 294 Tm (Led a team of engineers on cloud migrations.) Tj ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000113 00000 n 
+0000000162 00000 n 
+0000000304 00000 n 
+0000000372 00000 n 
+0000000445 00000 n 
+trailer
+<<
+/Size 8
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+1293
+%%EOF

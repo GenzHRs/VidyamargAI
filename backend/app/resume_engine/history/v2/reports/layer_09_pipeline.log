@@ -1,0 +1,6 @@
+test_determinism_outputs_schema_and_source (test_09_pipeline.PipelineTests.test_determinism_outputs_schema_and_source) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.017s
+
+OK

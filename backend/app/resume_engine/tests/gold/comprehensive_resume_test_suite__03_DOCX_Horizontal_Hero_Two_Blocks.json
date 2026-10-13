@@ -1,0 +1,79 @@
+{
+  "file": "comprehensive_resume_test_suite/03_DOCX_Horizontal_Hero_Two_Blocks.docx",
+  "sha256": "9c87168b6d529336eca1dd27db234421f6110eba8e06e979d65291dc29e75096",
+  "persona": "kavita",
+  "annotation_origin": "source-reviewed development labels authored for this task; not user gold or held out",
+  "headings": [
+    {
+      "text": "STRATEGIC SUMMARY:",
+      "canonical": "summary"
+    },
+    {
+      "text": "SELECT GTM LEADERSHIP & EXPERIENCE",
+      "canonical": "experience"
+    },
+    {
+      "text": "KEY GTM METRICS",
+      "canonical": "metrics"
+    },
+    {
+      "text": "SKILLS & METHODOLOGIES",
+      "canonical": "skills"
+    },
+    {
+      "text": "EDUCATION",
+      "canonical": "education"
+    }
+  ],
+  "fields": {
+    "name": "KAVITA RAMANATHAN",
+    "emails": [
+      "kavita.ramanathan@example.com"
+    ],
+    "phones": [
+      "(555) 234-8761"
+    ],
+    "locations": [
+      "San Jose, CA"
+    ],
+    "urls": [
+      "linkedin.com/in/kavita-ramanathan-dummy"
+    ],
+    "date_ranges": [
+      {
+        "start": "2022",
+        "end": "Present"
+      },
+      {
+        "start": "2019",
+        "end": "2022"
+      }
+    ],
+    "degrees": [
+      "MBA",
+      "B.S. in Economics"
+    ],
+    "gpas": [],
+    "skills": [
+      "HubSpot",
+      "Salesforce",
+      "Marketo"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Director of Product Marketing",
+      "company": "Synthetix AI",
+      "start": "2022",
+      "end": "Present",
+      "bullet_count": 2
+    },
+    {
+      "title": "Senior Product Marketing Manager",
+      "company": "Datastream Cloud",
+      "start": "2019",
+      "end": "2022",
+      "bullet_count": 2
+    }
+  ]
+}

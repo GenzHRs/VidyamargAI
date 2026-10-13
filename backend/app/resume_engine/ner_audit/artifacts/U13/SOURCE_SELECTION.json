@@ -1,0 +1,10 @@
+{
+  "id": "U13",
+  "file": "comprehensive_resume_test_suite/06_PDF_Horizontal_Hero_Two_Blocks.pdf",
+  "sha256": "6bb643e81a789bc8107dc98567907237d271c123b5c7030e2b63a363d4c4baaf",
+  "previous_reference": "R11",
+  "artifact": "artifacts/U13/resume.json",
+  "selected_from": "upload/resume(4).json",
+  "selected_sha256": "ce8c1622f95c1098d078da4e95a68b6157f405f0409a1fe80113df0196513474",
+  "reason": "Full raw lines, layout and hyperlink metadata; uploaded artifact preferred when available. Structured output is baseline comparison only."
+}

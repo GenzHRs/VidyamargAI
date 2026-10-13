@@ -1,0 +1,10 @@
+{
+  "id": "U16",
+  "file": "comprehensive_resume_test_suite/09_DOCX_Academic_Research_CV.docx",
+  "sha256": "5830bdf1799ece64b8e44ef8b773300cf1305bbd793a6e973eb669c6491ca40c",
+  "previous_reference": "R19",
+  "artifact": "artifacts/U16/resume.json",
+  "selected_from": "upload/resume(7).json",
+  "selected_sha256": "f0a2642ed0a7cacb468e973393088a48721788e3d5a24ac16989af75b52099d9",
+  "reason": "Full raw lines, layout and hyperlink metadata; uploaded artifact preferred when available. Structured output is baseline comparison only."
+}

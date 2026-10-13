@@ -1,0 +1,118 @@
+{
+  "file": "resume_templates_test_bundle/01_Modern_Tech_Software_Engineer.docx",
+  "sha256": "2a72ffbeecb5dde4df82c996261ea24f562c5b526b83d19f4faa8189b40c0204",
+  "persona": "alex",
+  "annotation_origin": "source-reviewed development labels authored for this task; not user gold or held out",
+  "headings": [
+    {
+      "text": "PROFESSIONAL SUMMARY",
+      "canonical": "summary"
+    },
+    {
+      "text": "TECHNICAL SKILLS",
+      "canonical": "skills"
+    },
+    {
+      "text": "PROFESSIONAL EXPERIENCE",
+      "canonical": "experience"
+    },
+    {
+      "text": "EDUCATION & CERTIFICATIONS",
+      "canonical": "education"
+    },
+    {
+      "text": "Certifications:",
+      "canonical": "certifications"
+    }
+  ],
+  "fields": {
+    "name": "ALEX CHEN",
+    "emails": [
+      "alex.chen.dev@example.com"
+    ],
+    "phones": [
+      "(555) 019-2834"
+    ],
+    "locations": [
+      "San Francisco, CA"
+    ],
+    "urls": [
+      "github.com/alexchen-dev",
+      "linkedin.com/in/alexchen-dummy"
+    ],
+    "date_ranges": [
+      {
+        "start": "Mar 2023",
+        "end": "Present"
+      },
+      {
+        "start": "Aug 2020",
+        "end": "Feb 2023"
+      },
+      {
+        "start": "Jun 2018",
+        "end": "Jul 2020"
+      },
+      {
+        "start": "2014",
+        "end": "2018"
+      }
+    ],
+    "degrees": [
+      "B.S. in Computer Science"
+    ],
+    "gpas": [],
+    "skills": [
+      "Go",
+      "Python",
+      "TypeScript",
+      "Java",
+      "SQL",
+      "Rust",
+      "Node.js",
+      "FastAPI",
+      "Spring Boot",
+      "PostgreSQL",
+      "Redis",
+      "Apache Kafka",
+      "GraphQL",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "GitHub Actions",
+      "Prometheus",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Jest",
+      "Datadog",
+      "Git",
+      "Linux",
+      "Redux"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Lead Backend Software Engineer",
+      "company": "Nexus Cloud Technologies",
+      "start": "Mar 2023",
+      "end": "Present",
+      "bullet_count": 4
+    },
+    {
+      "title": "Full Stack Software Engineer",
+      "company": "Vanguard Digital Labs",
+      "start": "Aug 2020",
+      "end": "Feb 2023",
+      "bullet_count": 3
+    },
+    {
+      "title": "Junior Software Engineer",
+      "company": "Apex Software Solutions",
+      "start": "Jun 2018",
+      "end": "Jul 2020",
+      "bullet_count": 2
+    }
+  ]
+}
